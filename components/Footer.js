@@ -93,7 +93,7 @@ export default function Footer() {
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
-                                        <Link href="/">
+                                        <Link href="/politica">
                                             Política de calidad
                                             y seguridad
                                         </Link>
