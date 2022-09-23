@@ -1,14 +1,14 @@
 [
   {
-    "title": "Atención Virtual",
+    "title": "Atención por videollamada",
     "image": {
       "url": "videocall.png",
       "width": 520,
       "height": 340
     },
     "key": "videocall", 
-    "main": "Conecta a tus clientes con los ejecutivos por videollamada para que no deban acercarse a una sucursal. ",
-    "secu": "Mantén el contacto humano y mejora los tiempos de atención sin descargar una APP adicional.",
+    "main": "Conecta a los colaboradores y clientes por videollamada para que no deban acercarse a las sucursales. ",
+    "secu": "Mejora los tiempos de atención y disminuye procesos costosos y poco efectivos.",
     "url": "/atencion-virtual"
   },
   {

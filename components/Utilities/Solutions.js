@@ -44,7 +44,7 @@ export default function Solutions(props) {
                             </div>
 
                             <h4 className="solutions-indus-section_title">
-                            Integra los canales de atención
+                            Integra los canales
                             </h4>
                             <p>y ofrece una atención omnicanal.</p>
                         </Col>
@@ -72,7 +72,7 @@ export default function Solutions(props) {
                                     height={60} className={'img-fluid'} />
                             </div>
                             <h4 className="solutions-indus-section_title">
-                            Digitaliza los procesos<br/> de atención
+                            Digitaliza los procesos
                             </h4>
                             <p>  y mejora su experiencia.</p>
                         </Col>
@@ -104,8 +104,7 @@ export default function Solutions(props) {
                     <Row>
                         <Col className="solutions-indus-tabs_title">
                             <h2>
-                                <b> Personaliza</b>  cada punto de interacción  <br className="d-none d-sm-none" />
-                                 y <b>ofrece una atención omnicanal</b>
+                            Soluciones de <b> Debmedia </b> para empresas de Utilities
                             </h2>
                         </Col>
                     </Row>

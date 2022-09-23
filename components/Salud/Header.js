@@ -16,7 +16,7 @@ export default function Header() {
                         <Row>
                             <Col className="mainTitles">
                                 <h1 className="header-salud_title">
-                                    <b>Mejora la experiencia<br /> de los pacientes</b> dentro<br className="d-none d-sm-none" /> de los centros.
+                                    <b>Mejora la experiencia<br /> de los pacientes</b> dentro<br className="d-none d-sm-none" /> de los  centros de atención.
                                 </h1>
                                 <Link href="/contacto">
                                     <button className="header-salud_demobutton">

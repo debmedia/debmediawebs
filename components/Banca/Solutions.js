@@ -105,8 +105,8 @@ export default function Solutions(props) {
                     <Row>
                         <Col className="solutions-indus-tabs_title mb-sm-5 mb-3">
                             <h2>
-                                <b> Personaliza</b> cada punto de interacción <br className="d-none d-sm-none" />
-                                y <b>ofrece una atención omnicanal</b>
+                            Soluciones de <b> Debmedia </b> para personalizar cada punto <br className="d-none d-sm-none" />
+                            de  <b>interacción entre bancos y clientes. </b>
                             </h2>
                         </Col>
                     </Row>

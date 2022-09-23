@@ -1,77 +1,29 @@
 [
   {
-    "title": "Cartelería",
-    "image": {
-      "url": "debsign.png",
-      "width": 540,
-      "height": 330
-    },
-    "key": "debsign", 
-    "main": "Controla lo que comunicas en tus sucursales y gestiona el contenido de forma centralizada.",
-    "secu": " Planifica el contenido, segmenta por locación, grupos de pantallas o sucursales y actualízalo en tiempo real.",
-    "url": "/debsign"
-  },
-  {
     "title": "Atención Virtual",
     "image": {
       "url": "videocall.png",
       "width": 520,
       "height": 340
     },
-    "key": "videocall", 
-    "main": "Conecta a tus clientes con los ejecutivos por videollamada para que no deban acercarse a una sucursal.",
-    "secu": "Mantén el contacto humano y mejora los tiempos de atención sin descargar una APP adicional.",
+    "key": "videocall",
+    "main": "Conecta clientes y colaboradores por videollamada para que no deban acercarse a las sucursales. ",
+    "secu": "Mejora los tiempos de atención y disminuye procesos costosos y poco efectivos en sucursales.",
     "url": "/atencion-virtual"
   },
   {
-    "title": "Encuestas ",
-    "image": {
-      "url": "encuesta.png",
-      "width": 540,
-      "height": 380
-    },
-    "key": "encuesta", 
-    "main": "Obtén el feedback de tus clientes luego de ser atendidos o durante el proceso de atención. ",
-    "secu": "Mantente al tanto de su opinión y del rendimiento de tu equipo para mejorar el proceso de atención según los resultados.",
-    "url": "/encuestas"
-  },
-  {
-    "title": "Citas",
-    "image": {
-      "url": "citas.png",
-      "width": 540,
-      "height": 380
-    },
-    "key": "citas", 
-    "main": "Normaliza y organiza el flujo de clientes que llegan a tus sucursales. ",
-    "secu": "Permíteles agendar su cita desde canales digitales para una fecha y hora determinada a través de una experiencia simple.",
-    "url": "/citasonline"
-  },
-  
-  {
-    "title": "Fila virtual",
-    "image": {
-      "url": "filavirtual.png",
-      "width": 540,
-      "height": 380
-    },
-    "key": "filavirtual", 
-    "main": "Reduce el tiempo que tus clientes pasan dentro de las sucursales a través del sistema de fila virtual. ",
-    "secu": "Administra mejor el flujo, reduce la tasa de abandono y haz más eficiente la labor de tu personal.",
-    "url": "/fila-virtual"
-  },
-  {
-    "title": "Chatbot de WhatsApp",
+    "title": "Chatbot para retail",
     "image": {
       "url": "wapp.png",
       "width": 540,
       "height": 380
     },
-    "key": "wapp", 
-    "main": "Automatiza conversaciones con tus clientes, agiliza la comunicación,  ",
-    "secu": "aumenta la capacidad de respuesta y atiende consultas de forma rápida, personalizada y en cualquier horario.",
+    "key": "wapp",
+    "main": "Automatiza las conversaciones con los clientes, aumenta la capacidad de respuesta y atiende  ",
+    "secu": "consultas de forma rápida, personalizada y en cualquier horario con el chatbot.",
     "url": "/preatendedor"
-  },
+  }
+  ,  
   {
     "title": "Pre atendedor",
     "image": {
@@ -79,9 +31,57 @@
       "width": 540,
       "height": 380
     },
-    "key": "preaten", 
+    "key": "preaten",
     "main": "Deriva a tus clientes a un portal de pre atención personalizable que los guía a la elección de su trámite fácilmente. ",
     "secu": " Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
     "url": "/preatendedor"
+  },
+  {
+    "title": "Sistema de citas online ",
+    "image": {
+      "url": "citas.png",
+      "width": 540,
+      "height": 380
+    },
+    "key": "citas",
+    "main": "Deja que los clientes reserven una cita online  desde canales digitales para un horario y día ",
+    "secu": "determinado y conoce con anticipación qué clientes te visitarán y sus necesidades.",
+    "url": "/citasonline"
+  },
+  {
+    "title": "Fila virtual",
+    "image": {
+      "url": "filavirtual.png",
+      "width": 540,
+      "height": 380
+    },
+    "key": "filavirtual",
+    "main": "Deja que los clientes soliciten un turno desde el móvil para ser atendidos en un tiempo cercano ",
+    "secu": "a través de videollamadas o en sucursal y disminuye el tiempo de espera para su atención.    ",
+    "url": "/fila-virtual"
+  },
+  {
+    "title": "Cartelería digital para retail",
+    "image": {
+      "url": "debsign.png",
+      "width": 540,
+      "height": 330
+    },
+    "key": "debsign",
+    "main": "Administra el contenido de la red de pantallas dentro de las sucursales.",
+    "secu": " Planifica el contenido, segmenta por sede, grupos de pantallas y actualízalo en tiempo real con mensajes efectivos.",
+    "url": "/debsign"
+  },
+  {
+    "title": "Encuestas de satisfacción ",
+    "image": {
+      "url": "encuesta.png",
+      "width": 540,
+      "height": 380
+    },
+    "key": "encuesta",
+    "main": "Envía a los clientes encuestas de satisfacción una vez han sido atendidos, ",
+    "secu": "eleva la tasa de respuesta y utiliza los resultados para mejorar los procesos de atención dentro de tu empresa retail.",
+    "url": "/encuestas"
   }
 ]

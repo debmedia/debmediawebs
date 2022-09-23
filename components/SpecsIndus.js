@@ -11,41 +11,40 @@ export default function SpecsIndus(props) {
     const TITLES = {
         banca: {
             title: ` <h3 className="text-center">
-            <b> Una solución moderna y escalable  <br className="d-none d-sm-none" />
-            para bancos y aseguradoras.</b>
+            <b> Compite con entidades digitalizadas </b>
             <br />
-            Ofrece los canales de atención correctos y compite <br className="d-none d-sm-none" />
-            con entidades 100 % digitalizadas
+            de la Industria de la Banca y Finanzas.
         </h3> `
         },
         salud: {
             title: ` <h3 className="text-center">
-            <b>  Una solución moderna y escalable para <br className="d-none d-sm-none" />
-                laboratorios, clínicas, farmacias y  hospitales</b>
+            <b>  Compite con entidades digitalizadas
+            </b>
             <br />
-            Ofrece los canales de atención correctos y compite <br className="d-none d-sm-none" />
-            con entidades 100 % digitalizadas
+            de la Industria de la salud
         </h3> `,
         },
         gobierno: {
             title: ` <h3 className="text-center">
-            <b>  Una solución moderna y escalable</b>
+            <b>  Escala los procesos en 
+            </b>
             <br />
-            para organizaciones del gobierno
+            Instituciones del Gobierno y ONGs
+
         </h3> `,
         },
         retail: {
             title: ` <h3 className="text-center">
-            <b>  Una solución moderna y escalable</b>
+            <b> Escala los procesos en</b>
             <br />
-            para organizaciones del gobierno
+            empresas retail y de servicios.
         </h3> `,
         },
         telcos: {
             title: ` <h3 className="text-center">
-            <b>  Una solución moderna y escalable</b>
+            <b>  Mejora la experiencia</b>
             <br />
-            para organizaciones del gobierno
+            y escala los procesos.
         </h3> `,
         },
         utilites: {

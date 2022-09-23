@@ -25,7 +25,7 @@ export default function Solutions(props) {
                     <Col className="solutions-indus-section_maintitle">
                         <h3 className="text-center">
                             <b>Entrega a tus clientes </b> <br />
-                            la ateción que se merecen
+                            la atención que se merecen
                         </h3>
                     </Col>
                 </Row>
@@ -105,8 +105,7 @@ export default function Solutions(props) {
                     <Row>
                         <Col className="solutions-indus-tabs_title">
                             <h2>
-                                <b> Personaliza</b>  cada punto de interacción  <br className="d-none d-sm-none" />
-                                 y <b>ofrece una atención omnicanal</b>
+                            Soluciones de <b> Debmedia </b>  para ofrecer una atención omnicanal
                             </h2>
                         </Col>
                     </Row>

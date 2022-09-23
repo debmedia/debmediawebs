@@ -45,9 +45,10 @@ export default function Solutions(props) {
                             </div>
 
                             <h4 className="solutions-indus-section_title">
-                                Integra los canales  <br className="d-none d-sm-block" /> de atención
+                               Integra los canales
+ <br className="d-none d-sm-block" /> 
                             </h4>
-                            <p> y ofrece una atención omnicanal</p>
+                            <p> y ofrece una atención.</p>
                         </Col>
                         <Col sm={4} xs={4} className="solutions-indus-section_div">
                             <div className="solutions-indus-section_div-img  d-none d-sm-block">
@@ -73,10 +74,11 @@ export default function Solutions(props) {
                                     height={60} className={'img-fluid'} />
                             </div>
                             <h4 className="solutions-indus-section_title">
-                                Mejora los tiempos
+                            Mejora los tiempos
+
                             </h4>
-                            <p> de respuesta y agiliza <br />
-                                la atención.</p>
+                            <p> de respuesta.
+</p>
                         </Col>
                     </Row>
                 </Container>
@@ -106,8 +108,9 @@ export default function Solutions(props) {
                     <Row>
                         <Col className="solutions-indus-tabs_title">
                             <h2>
-                                <b> Personaliza</b> cada punto de interacción con <br className="d-none d-sm-none" />
-                                los usuarios y <b>ofrece una atención omnicanal</b>
+                            Soluciones de   <b> Debmedia </b> para personalizar puntos de interacción  <br className="d-none d-sm-none" />
+                            en oficinas gubernamentales
+
                             </h2>
                         </Col>
                     </Row>

@@ -76,8 +76,7 @@ export default function Solutions(props) {
                             <h4 className="solutions-indus-section_title">
                             Métricas de performance 
                             </h4>
-                            <p> para conocer el rendimiento  <br />
-                            del equipo</p>
+                            <p> para conocer el rendimiento.</p>
                         </Col>
                     </Row>
                 </Container>
@@ -107,8 +106,8 @@ export default function Solutions(props) {
                     <Row>
                         <Col className="solutions-indus-tabs_title mb-sm-5 mb-3">
                             <h2>
-                                <b> Personaliza</b> cada punto de interacción  <br className="d-none d-sm-none" />
-                                con tus pacientes y <b>ofrece una atención omnicanal</b>
+                            Soluciones de<b> Debmedia </b>para clínicas, <br/>laboratorios y farmacias
+
                             </h2>
                         </Col>
                     </Row>
