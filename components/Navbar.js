@@ -38,7 +38,7 @@ export default function Home(props) {
                         <Nav activeKey={router.pathname} className="ml-auto">
                             <Nav.Link href="/">Home</Nav.Link>
                             <NavDropdown title="Soluciones" id="basic-nav-dropdown">
-                                <NavDropdown.Item onClick={() => setExpanded(false)}>
+                                <NavDropdown.Item  onClick={() => setExpanded(false)}>
                                     <Link className="fulllink" href="/atencion-virtual">
                                         Atención virtual
                                     </Link>

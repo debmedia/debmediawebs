@@ -490,10 +490,15 @@
 .solutions-tabs_content-nav.active {
     background-color: transparent !important;
     color: #2F9FEE !important;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
+    @media (max-width: 1280px) {
+        font-size: 1.1rem;
+    }
+
+
 }
 
 .modern-section {
@@ -605,4 +610,8 @@
 a.dropdown-item a {
     width: 100%;
     display: block;
+}
+
+.fixZindex {
+    z-index: 4;
 }

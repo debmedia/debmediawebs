@@ -39,7 +39,7 @@ export default function Header() {
                     />
                     <Container>
                         <Row>
-                            <Col className="mainTitles">
+                            <Col className="mainTitles fixZindex">
                                 <span className="header-home_product">Customer Journey Manager</span>
                                 <h1 className="header-home_title">
                                     Haz más eficientes tus<br className="d-none d-sm-block" /> canales de atención
@@ -49,7 +49,7 @@ export default function Header() {
                                 </p>
                                 <Link href="/contacto">
                                     <button className="header-home_demobutton">
-                                        Solicita un demo
+                                        Solicita una demo
                                     </button>
                                 </Link>
                             </Col>

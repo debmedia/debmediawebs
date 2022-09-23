@@ -49,7 +49,7 @@ nav.navScroll {
 
 nav.navbar.navbar-expand-lg {
     background-color: #f6f7fb;
-    z-index: 5;
+    z-index: 15;
 
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
@@ -60,6 +60,10 @@ nav.navbar.navbar-expand-lg {
     }
 }
 
+.nav-item.show.dropdown a#basic-nav-dropdown {
+    color: #232C61 ;
+    font-weight: 600 !important;
+}
 
 .brands-slider {
     margin-top: 3em;

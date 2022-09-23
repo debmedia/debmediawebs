@@ -57,7 +57,7 @@ export default function Brands() {
                                 clickable: true,
                                 dynamicBullets: false,
                             }}
-                            autoplay={false}
+                            autoplay={true}
                             breakpoints={{
                                 500: {
                                     slidesPerView: 1,

@@ -16,7 +16,7 @@ export default function Flow() {
                     <Row>
                         <Col sm="12" className="wapp-preatendedor-section_maintitle">
                             <h3 className="text-center">
-                                <b>Implementa un portal de pre atención personalizable</b> que los <br />
+                                <b>Implementa un portal de pre atención personalizable</b> que los <br className="d-none d-sm-block" />
                                 guía a la elección de su trámite.
                             </h3>
                         </Col>

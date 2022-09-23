@@ -6,7 +6,7 @@
     background-position: left;
     padding-top: 3em;
     padding-bottom: 3em;
-
+   
     @media (min-width: 992px) {
         padding-top: 4em;
         padding-bottom: 4em;
@@ -19,7 +19,12 @@
             border-radius: 15px;
             height: 190px;
             margin-bottom: 20px;
-
+            transition: background-size .5s ease-in;
+            -moz-transition: background-size .5s ease-in;
+            -ms-transition: background-size .5s ease-in;
+            -o-transition: background-size .5s ease-in;
+            -webkit-transition: background-size .5s ease-in;
+            background-size: 100%;
             @media (min-width: 992px) {
                 margin: 1.5% !important;
                 width: 30% !important;
@@ -90,4 +95,13 @@
         }
     }
 
+}
+
+.industries-section_divs-indu:hover{
+    background-size: 110%;
+    transition: background-size .5s ease-in;
+-moz-transition: background-size .5s ease-in;
+-ms-transition: background-size .5s ease-in;
+-o-transition: background-size .5s ease-in;
+-webkit-transition: background-size .5s ease-in;
 }
