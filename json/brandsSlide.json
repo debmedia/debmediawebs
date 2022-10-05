@@ -30,6 +30,16 @@
     }
   },
   {
+    "name": "scotia",
+    "home": true,
+    "category": "banca",
+    "image": {
+      "url": "scotia.png",
+      "width": 250,
+      "height": 110
+    }
+  },
+  {
     "name": "comeva",
     "home": true,
     "category": "banca",
@@ -245,6 +255,16 @@
     "category": "retail",
     "image": {
       "url": "Farmacity_logo.png",
+      "width": 250,
+      "height": 110
+    }
+  },
+  {
+    "name": "Benavides",
+    "home": true,
+    "category": "retail",
+    "image": {
+      "url": "benavides.png",
       "width": 250,
       "height": 110
     }
