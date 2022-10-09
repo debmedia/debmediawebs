@@ -14,7 +14,7 @@ export default function debQ() {
             <div className="container mt-4">
                 <div className="row">
                     <div className="col-12">
-                        <h1 className="titSection text-center">Politica de Calidad y Seguridad</h1>
+                        <h1 className="titSection text-center">Política de Calidad y Seguridad</h1>
                     </div>
                 </div>
                 <div className="row">
