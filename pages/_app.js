@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import '../styles/globals.css'
 import '../styles/main.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,15 +8,31 @@ import Script from 'next/script'
 import Layout from "../components/layout";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import { useRouter } from 'next/router'
+import Meta from '../json/meta.json';
 
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  const [metainfo, setMeta] = useState({});
+
+  useEffect(() => {
+      let result = Meta[0][router.pathname];
+      if(result === undefined) {
+        result = Meta[0]["/"];
+      } else {
+        setMeta(result);
+      }
+  }, [router.pathname]);
+
   return (
     <>
       <Layout>
         <Head>
-          <title>Debmedia</title>
+          <title>{metainfo.title}</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content={metainfo.description} />
           <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap"
             rel="stylesheet"

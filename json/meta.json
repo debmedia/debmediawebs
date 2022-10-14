@@ -1,0 +1,64 @@
+[
+  {
+    "/": {
+      "title": "Debmedia | Software de atención al cliente virtual y presencial.",
+      "description": "Optimiza el viaje de tus clientes | Mejora la atención y su experiencia | Aumenta la productividad | Soluciones de CX | Solicita una demo"
+    },
+    "/atencion-virtual": {
+      "title": "Atención virtual | Software para brindar atención por videollamada",
+      "description": "Disminuye las visitas innecesarias a las sucursales | Reduce los costos | Atiende a tus clientes sin perder el contacto humano | Agenda una demo"
+    },
+    "/preatendedor": {
+      "title": "Integra el chatbot de WhastApp al flujo de atención | Debmedia",
+      "description": "Aumenta la capacidad de respuesta | Atiende consultas rápido y de forma personalizada | Facilita la autogestión de tus clientes | Agenda una demo"
+    },
+    "/fila-virtual": {
+      "title": "Sistema de fila virtual | Personalizable e integrado en tu web",
+      "description": "Deja que tus clientes reserven un turno desde su celular | Agiliza los tiempos de espera y descongestiona las sucursales | Agenda una demo"
+    },
+    "/citasonline": {
+      "title": "Sistema de citas online | Organiza el flujo de cliente",
+      "description": "Deja que tus clientes agenden desde canales digitales | Envía notificaciones por email, SMS, WhatsApp | Personaliza el sistema | Pide una demo"
+    },
+    "/debq": {
+      "title": "Sistema de gestión de filas | Optimiza el flujo de atención",
+      "description": "Personaliza el viaje para diversos tipos de cliente y mide el rendimiento de tus equipos | Fácil de configurar |100% cloud |100% autogestionable"
+    },
+    "/encuestas": {
+      "title": "Sistema de encuestas de satisfacción | Debmedia",
+      "description": "Conoce la opinión de tu cliente luego de la atención | Envía distintos tipos de encuestas | Asocia el resultado al usuario y proceso | Pide una demo"
+    },
+    "/debsign": {
+      "title": "Sistema de cartelería digital | Debsign",
+      "description": "Administra el contenido de tu red de pantallas de forma centralizada | Genera contenido dinámico y ajústalo en tiempo real | Agenda una demo"
+    },
+    "/bancosyfinanzas": {
+      "title": "Software para mejorar la experiencia de los clientes",
+      "description": "Integra los canales de atención de tu banco | Optimiza el flujo de atención dentro y fuera de las sucursales | Agenda una demo y conoce Debmedia"
+    },
+    "/salud": {
+      "title": "Software para mejorar la experiencia de los pacientes",
+      "description": "Mejora la experiencia de los pacientes y optimiza tus recursos | Soluciones tecnológicas para clínicas, laboratorios y farmacias  | Conócelas"
+    },
+    "/gobierno": {
+      "title": "Software para mejorar la experiencia en Oficinas del gobierno y ONGs",
+      "description": "Reduce las filas extensas y los tiempos largos de espera | Digitaliza los procesos, agiliza la atención y optimiza los procesos | Agenda una demo"
+    },
+    "/retail": {
+      "title": "Software para mejorar la experiencia en empresas retail",
+      "description": "Mejora la experiencia de los clientes | Optimiza el flujo de atención dentro y fuera de las sucursales y aumenta la productividad | Conoce Debmedia"
+    },
+    "/telcos": {
+      "title": "Software para mejorar la experiencia de los clientes de telcos",
+      "description": "Reduce los tiempos de espera | Optimiza el flujo de atención dentro y fuera de las sucursales | Aumenta la productividad del equipo | Conoce Debmedia"
+    },
+    "/utilities": {
+      "title": "Software para mejorar la experiencia de los clientes de Utilities",
+      "description": "Reduce los tiempos de espera | Optimiza el flujo de atención dentro y fuera de las sucursales | Aumenta la productividad del equipo | Conoce Debmedia"
+    },
+    "/partners": {
+      "title": "Conviértete en un Debmedia Partner",
+      "description": "Entrega más valor a tus clientes, ayúdales a optimizar su customer journey manager y a ofrecer una experiencia diferente| Da clic aquí y conoce cómo"
+    }
+}
+]
