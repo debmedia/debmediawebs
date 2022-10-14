@@ -21,9 +21,8 @@ function MyApp({ Component, pageProps }) {
       let result = Meta[0][router.pathname];
       if(result === undefined) {
         result = Meta[0]["/"];
-      } else {
-        setMeta(result);
-      }
+      } 
+      setMeta(result);
   }, [router.pathname]);
 
   return (
