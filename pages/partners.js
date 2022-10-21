@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Partners/Header"
 import Market from "../components/Partners/Market"
 import Steps from "../components/Partners/Steps"
-import Contact from "../components/Contact"
+import ContactPartners from "../components/ContactPartners"
 
 
 export default function Partners() {
@@ -13,7 +13,7 @@ export default function Partners() {
       <Header /> 
       <Market />
       <Steps />
-      <Contact />
+      <ContactPartners />
     </>
   );
 }
