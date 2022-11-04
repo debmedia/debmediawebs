@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const webpack = require("webpack");
+const { i18n } = require('./next-i18next.config');
 
 const nextConfig = {
   reactStrictMode: false,
@@ -18,6 +19,7 @@ module.exports = {
   images: {
     domains: ['debmedia.com'],
   },
+  i18n,
   async redirects() {
     return [
       {

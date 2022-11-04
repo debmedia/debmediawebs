@@ -10,6 +10,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import { useRouter } from 'next/router'
 import Meta from '../json/meta.json';
+import { appWithTranslation } from 'next-i18next';
 
 
 function MyApp({ Component, pageProps }) {
@@ -56,4 +57,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscr
 }
 
 
-export default MyApp
+export default appWithTranslation(MyApp);
