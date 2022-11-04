@@ -8,10 +8,11 @@ import videoSm from '../../asset/imgs/home/debqSm.svg'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import Link from 'next/link'
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Header() {
     const [modalShow, setModalShow] = React.useState(false);
-
+    const { t } = useTranslation(['home', 'common']);
     return (
         <>
             <header>
@@ -40,16 +41,30 @@ export default function Header() {
                     <Container>
                         <Row>
                             <Col className="mainTitles fixZindex">
-                                <span className="header-home_product">Customer Journey Manager</span>
-                                <h1 className="header-home_title">
-                                    Haz más eficientes tus<br className="d-none d-sm-block" /> canales de atención
+                                <span className="header-home_product">{t("common:CUSTOMER_JOURNEY_MANAGER")}</span>
+                                <h1 className="header-home_title" >
+                                    <Trans t={t} i18nKey={"HEADER.TITLE"}>
+                                        Haz más eficientes tus<br className="d-none d-sm-block" /> canales de atención
+                                    </Trans>
                                 </h1>
                                 <p className="header-home_parraf">
-                                    Software para <b>gestionar la atención<br className="d-none d-sm-block" /> al cliente virtual</b> y presencial.
+                                    <Trans t={t} i18nKey={"HEADER.SUBTITLE"}>
+                                        Software para 
+                                        <b>gestionar la atención
+                                            <br className="d-none d-sm-block" /> 
+                                            al cliente virtual
+                                        </b>
+                                        y presencial. 
+                                        <b>Organizaciones líderes</b> 
+                                        ya gestionan la
+                                        <br className="d-none d-sm-block" />
+                                        experiencia de sus clientes con 
+                                        <b> Debmedia</b>
+                                    </Trans>
                                 </p>
                                 <Link href="/contacto">
                                     <button className="header-home_demobutton">
-                                        Solicita una demo
+                                        {t("common:REQUEST_A_DEMO")}
                                     </button>
                                 </Link>
                             </Col>
@@ -60,8 +75,12 @@ export default function Header() {
             <Container className="d-flex justify-content-center header-home_text">
                 <Row>
                     <Col>
-                        <h3><b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
-                            experiencia de sus clientes con <b> Debmedia</b></h3>
+                        <h3>
+                            <Trans t={t} i18nKey="HEADER.CAPTION">
+                            <b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
+                            experiencia de sus clientes con <b> Debmedia</b>
+                            </Trans>
+                        </h3>
                     </Col>
                 </Row>
             </Container>

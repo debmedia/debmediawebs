@@ -11,7 +11,16 @@ import Level from "../components/Level"
 import Contact from "../components/Contact"
 import Posts from "../components/Posts"
 import Footer from "../components/Footer"
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['home','common'])),
+      // Will be passed to the page component as props
+    },
+  };
+}
 
 export default function Home() {
 
