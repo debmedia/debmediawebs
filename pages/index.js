@@ -12,17 +12,19 @@ import Contact from "../components/Contact"
 import Posts from "../components/Posts"
 import Footer from "../components/Footer"
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import solutionsHomeData from '../json/solutions-home.json';
+
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ['home','common'])),
-      // Will be passed to the page component as props
+      solutionsHomeData: solutionsHomeData[locale]
     },
   };
 }
 
-export default function Home() {
+export default function Home({solutionsHomeData}) {
 
 
   return (
@@ -30,7 +32,7 @@ export default function Home() {
       <Header />
       <Brands />
       <Market />
-      <Solutions />
+      <Solutions dataJson={solutionsHomeData}/>
       <Modern />
       <Review />
       <Map />

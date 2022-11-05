@@ -1,85 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col, Tab, Nav, Accordion } from "react-bootstrap";
 import Image from 'next/image'
-import check_blue from '../../asset/imgs/home/check_blue.svg'
-import check_white from '../../asset/imgs/home/check-m.svg'
-import fila_virtual from '../../asset/imgs/home/fila-virtual.png'
-import Data from '../../json/solutions-home.json';
 import Link from 'next/link'
+import { useTranslation, Trans } from 'next-i18next';
+import TitleWithIcons from "../TitleWithIcons";
 
 
-export default function Solutions() {
 
-    const [dataJson, setData] = useState([]);
-
-    useEffect(() => {
-        setData(Data);
-    }, []);
+export default function Solutions({dataJson}) {
+    const { t } = useTranslation(['home', 'common']);
 
     return (
         <>
-            <Container className="solutions-top">
-                <Row>
-                    <Col className="solutions-section_maintitle">
-                        <h3 className="text-center">
-                            Obtén lo máximo de todos tus <b>canales de atención</b>
-                        </h3>
-                    </Col>
-                </Row>
-            </Container>
-            <Container fluid className="solutions-section">
-                <Container>
-                    <Row>
-                        <Col sm={4} xs={4} className="solutions-section_div">
-                            <div className="solutions-section_div-img  d-none d-sm-block">
-                                <Image src={check_blue.src} width={110}
-                                    height={90} className={'img-fluid'} />
-                            </div>
-                            <div className="solutions-section_div-img  d-block d-sm-none">
-                                <Image src={check_white.src} width={60}
-                                    height={60} className={'img-fluid'} />
-                            </div>
-
-                            <h4 className="solutions-section_title">
-                                Mejora la atención <br className="d-none d-sm-block" /> y la experiencia
-                            </h4>
-                        </Col>
-                        <Col sm={4} xs={4} className="solutions-section_div">
-                            <div className="solutions-section_div-img  d-none d-sm-block">
-                                <Image src={check_blue.src} width={110}
-                                    height={90} className={'img-fluid'} />
-                            </div>
-                            <div className="solutions-section_div-img  d-block d-sm-none">
-                                <Image src={check_white.src} width={60}
-                                    height={60} className={'img-fluid'} />
-                            </div>
-                            <h4 className="solutions-section_title">
-                                Aumenta la productividad<br /> de tus equipos
-                            </h4>
-                        </Col>
-                        <Col sm={4} xs={4} className="solutions-section_div">
-                            <div className="solutions-section_div-img  d-none d-sm-block">
-                                <Image src={check_blue.src} width={110}
-                                    height={90} className={'img-fluid'} />
-                            </div>
-                            <div className="solutions-section_div-img  d-block d-sm-none">
-                                <Image src={check_white.src} width={60}
-                                    height={60} className={'img-fluid'} />
-                            </div>
-                            <h4 className="solutions-section_title">
-                                Diferénciate de  <br className="d-none d-sm-block" />
-                                la competencia
-                            </h4>
-                        </Col>
-                    </Row>
-                </Container>
-            </Container>
+            <TitleWithIcons 
+                t={t}
+                title="SOLUTIONS.TITLE"
+                captions={['SOLUTIONS.CAPTION_1', 'SOLUTIONS.CAPTION_2', 'SOLUTIONS.CAPTION_3']}
+            />
             <Container fluid className="solutions-tabs">
                 <Container>
                     <Row>
                         <Col className="solutions-tabs_title">
                             <h2>
-                                <b>Anticípate a las necesidades</b> y optimiza el <br />flujo de atención de tus clientes
+                                <Trans t={t} i18nKey={"SOLUTIONS.FEATURES_TITLE"}></Trans>
                             </h2>
                         </Col>
                     </Row>
@@ -112,7 +55,7 @@ export default function Solutions() {
                                                             </h2>
                                                             <Link href={item.url}>
                                                                 <button className="buttonSolutions">
-                                                                    Ver más
+                                                                    {t("common:LEARN_MORE")}
                                                                 </button>
                                                             </Link>
                                                         </Col>
@@ -141,7 +84,7 @@ export default function Solutions() {
                                                 </h2>
                                                 <Link href={item.url}>
                                                     <button className="buttonSolutions">
-                                                        Ver más
+                                                    {t("common:LEARN_MORE")}
                                                     </button>
                                                 </Link>
                                             </Col>
