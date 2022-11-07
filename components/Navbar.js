@@ -108,6 +108,12 @@ export default function Home(props) {
                             <Link href="/contacto">
                                 <Nav.Link href="#link" className="demo">Solicita una demo</Nav.Link>
                             </Link>
+                            <Link href="/" locale="es">
+                                ES
+                            </Link>
+                            <Link href="/" locale="pt">
+                                PT
+                            </Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
