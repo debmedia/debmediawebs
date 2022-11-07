@@ -16,6 +16,21 @@
     "CAPTION_2": "Aumenta la productividad<br/> de tus equipos",
     "CAPTION_3": "Diferénciate de <br/>la competencia",
     "FEATURES_TITLE":"<strong>Anticípate a las necesidades</strong> y optimiza el <br />flujo de atención de tus clientes"
+  }, 
+  "MODERN": {
+    "TITLE":"Una solución<br /><strong>moderna y escalable</strong>",
+    "CAPTION_1": {
+      "TITLE": "Integración Sencilla",
+      "PARAGRAPH": "Integrable por API o iframe."
+    },
+    "CAPTION_2": {
+      "TITLE": "Métricas de performance",
+      "PARAGRAPH": "Conoce el rendimiento de tus canales <br /> de atención."
+    },
+    "CAPTION_3": {
+      "TITLE": "Comunicación centralizada con tus clientes",
+      "PARAGRAPH": "Envía el mensaje correcto a través de SMS, email, WhatsApp o pantallas."
+    }
   }
   
 }
