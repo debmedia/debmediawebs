@@ -18,7 +18,7 @@ import solutionsHomeData from '../json/solutions-home.json';
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['home','common'])),
+      ...(await serverSideTranslations(locale, ['home','components','common'])),
       solutionsHomeData: solutionsHomeData[locale]
     },
   };

@@ -19,7 +19,8 @@ import quote2 from '../asset/imgs/quote2.png'
 import SwiperCore, { Autoplay, FreeMode, Pagination } from 'swiper';
 import { Navigation } from "swiper";
 
-
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from 'next/router'
 // install Swiper modules
 SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
@@ -27,10 +28,12 @@ SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
 export default function Brands() {
     const [review, setreview] = useState([]);
+    const { t } = useTranslation(['components', 'common']);
+    const { locale } = useRouter();
 
     useEffect(() => {
-        setreview(Review);
-    }, []);
+        setreview(Review[locale]);
+    }, [locale]);
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
@@ -42,8 +45,8 @@ export default function Brands() {
                     <Row>
                         <Col sm={5} xs={12} >
                             <Col>
-                                <h3>
-                                    Más de 300<br className="d-none d-sm-block" /> organizaciones<br className="d-none d-sm-block" /><span> ya confían en<br className="d-none d-sm-block" /> Debmedia</span>
+                                <h3 className="no-br-sm">
+                                    <Trans t={t} i18nKey="REVIEW.TITLE"/>
                                 </h3>
                             </Col>
                             <Col className=" d-none d-sm-block">
