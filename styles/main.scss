@@ -311,3 +311,9 @@ div#basic-navbar-nav .dropdown-item:active {
 .logoDiv {
     max-width: 140px;
 }
+
+.no-br-sm br{
+    @media (max-width: 576px) {
+        display: none!important;
+    }
+}
