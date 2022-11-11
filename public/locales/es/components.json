@@ -20,5 +20,25 @@
   },
   "CONTACT":{
     "TITLE": "¡Contáctate con nuestro equipo y <br />mejora la experiencia de tus clientes!"
+  },
+  "POSTS":{
+    "BANKING":{
+      "TITLE": "Explora contenidos<br/>relacionados al <b>sector financiero</b>"
+    },
+    "HEALTH": {
+      "TITLE": "Explora contenidos  <br /> relacionados al la industria health"
+    },
+    "GOVERNMENT": {
+      "TITLE": "Explora contenidos  <br /> relacionados al sector gubernamental"
+    },
+    "RETAIL": {
+      "TITLE": "Explora contenidos relacionados al <br /> sector retail y de servicios"
+    },
+    "TELECOMMUNICATIONS": {
+      "TITLE": "$t(POST.RETAIL.TITLE)"
+    },
+    "UTILITIES": {
+      "TITLE": "$t(POST.RETAIL.TITLE)"
+    }
   }
 }
