@@ -4,9 +4,10 @@ import Image from 'next/image'
 import shape1 from '../asset/imgs/contact/left.svg'
 import shape2 from '../asset/imgs/contact/right.svg'
 import HubspotForm from 'react-hubspot-form'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Contact() {
+    const { t } = useTranslation(['components', 'common']);
     return (
         <>
             <Container fluid className="contact-section my-5">
@@ -19,7 +20,7 @@ export default function Contact() {
                 <Container>
                     <Row>
                         <Col className="contact-section_mainTitle text-center mb-4">
-                            <h2>¡Contáctate con nuestro equipo y <br />mejora la experiencia de tus clientes!</h2>
+                            <Trans t={t} i18nKey="CONTACT.TITLE"/>
                         </Col>
                     </Row>
                     <Row>
@@ -29,12 +30,11 @@ export default function Contact() {
                                 formId='785d8021-b2ab-4e9d-af43-4060e376d5fc'
                                 onSubmit={() => console.log('Submit!')}
                                 onReady={(form) => console.log('Form ready!')}
-                                loading={<div>Loading...</div>}
+                                loading={<div>{t("common:LOADING_ELIPSIS")}</div>}
                             />
                         </Col>
                     </Row>
                 </Container>
-
             </Container>
         </>
     );

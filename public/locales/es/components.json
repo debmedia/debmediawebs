@@ -17,5 +17,8 @@
     "STEP_3": "<b> Configura</b> <br /> el sistema",
     "STEP_4": "Atiende  de   <br /> <b>forma eficiente</b>",
     "BUTTON": "$t(common:REQUEST_A_DEMO)"
+  },
+  "CONTACT":{
+    "TITLE": "¡Contáctate con nuestro equipo y <br />mejora la experiencia de tus clientes!"
   }
 }
