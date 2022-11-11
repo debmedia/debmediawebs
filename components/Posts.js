@@ -34,7 +34,6 @@ export default function Brands(props) {
     useEffect(() => {
         BlogData.forEach((value) => {
             if (props.indistry) {
-                console.log(value);
 
             }
         });

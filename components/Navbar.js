@@ -16,7 +16,6 @@ export default function Home(props) {
 
     const [expanded, setExpanded] = useState(false);
     const router = useRouter();
-    console.log(router);
 
     return (
         <>
