@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
-import map from '../asset/imgs/map/map.svg'
-import iso from '../asset/imgs/isonew.svg'
-import left from '../asset/imgs/map/left-map.svg'
-import right from '../asset/imgs/map/right-map.svg'
+import map from '../asset/imgs/map/map.svg';
+import iso from '../asset/imgs/isonew.svg';
+import left from '../asset/imgs/map/left-map.svg';
+import right from '../asset/imgs/map/right-map.svg';
 import CountUp from "react-countup";
 import VisibilitySensor from 'react-visibility-sensor';
 import { useMediaQuery } from 'react-responsive'
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Map() {
-    const isMobile = useMediaQuery({ query: '(max-width:899px)' })
+    const isMobile = useMediaQuery({ query: '(max-width:899px)' });
+    const { t } = useTranslation(['components', 'common']);
     return (
         <>
-
             <Container fluid className="map-section relative">
                 <img src={left.src} className="img-fluid map-section_leftshape  d-none d-sm-block" alt="Shape" />
                 <img src={right.src} className="img-fluid map-section_rightshape  d-none d-sm-block" alt="Shape" />
@@ -21,7 +21,7 @@ export default function Map() {
                     <Row>
                         <Col className="map-section_mapcontent text-center">
                             <h3 className="map-section_mapcontent-text">
-                                Debmedia lleva más de 15 años desarrollando software para gestionar la experiencia del cliente.
+                                <Trans t={t} i18nKey="MAP.CAPTION"/>
                             </h3>
                              <img src={iso.src} className="img-fluid isoImg" alt="Iso" />
 
@@ -34,7 +34,9 @@ export default function Map() {
                                         </VisibilitySensor>
                                     )}
                                 </CountUp></span>
-                                <span className="type">Clientes</span>
+                                <span className="type">
+                                    <Trans t={t} i18nKey="common:CLIENTS"/>
+                                </span>
                             </div>
                             <div className="numbers number2 text-center">
                                 <span className="quntity">+ <CountUp end={100} redraw={true}>
@@ -44,7 +46,9 @@ export default function Map() {
                                         </VisibilitySensor>
                                     )}
                                 </CountUp>M</span>
-                                <span className="type">Interacciones</span>
+                                <span className="type">
+                                    <Trans t={t} i18nKey="common:INTERACTIONS"/>
+                                </span>
                             </div>
                             <div className="numbers number3 text-center">
                                 <span className="quntity">+ <CountUp end={50} redraw={true}>
@@ -54,7 +58,9 @@ export default function Map() {
                                         </VisibilitySensor>
                                     )}
                                 </CountUp></span>
-                                <span className="type">Partners</span>
+                                <span className="type">
+                                    <Trans t={t} i18nKey="common:PARTNERS"/>
+                                </span>
                             </div>
                             <div className="numbers number4 text-center">
                                 <span className="quntity">+ <CountUp end={3000} redraw={true}>
@@ -64,15 +70,14 @@ export default function Map() {
                                         </VisibilitySensor>
                                     )}
                                 </CountUp></span>
-                                <span className="type">Sucursales implementadas</span>
+                                <span className="type">
+                                    <Trans t={t} i18nKey="common:BRANCHES_IMPLEMENTED"/>
+                                </span>
                             </div>
                         </Col>
-
                     </Row>
                 </Container>
             </Container>
-
-
         </>
     );
 }
