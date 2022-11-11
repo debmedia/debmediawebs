@@ -4,5 +4,10 @@
   },
   "MAP": {
     "CAPTION": "Debmedia lleva más de 15 años desarrollando software para gestionar la experiencia del cliente."
+  },
+  "PARTNER":{
+    "TITLE":"¿Quieres ser partner de Debmedia?",
+    "CAPTION":"Conoce cómo generar nuevos negocios a través de nuestro programa.",
+    "BUTTON":"Quiero ser partner"
   }
 }
