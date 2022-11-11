@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col, ListGroup } from "react-bootstrap";
 import Link from 'next/link';
 import Image from 'next/image'
@@ -6,9 +6,11 @@ import partners from '../asset/imgs/partners.svg'
 import face from '../asset/imgs/facebook.svg'
 import insta from '../asset/imgs/insta.svg'
 import lkedin from '../asset/imgs/lkedin.svg'
+import { useTranslation, Trans } from 'next-i18next';
 
 
 export default function Footer() {
+    const { t } = useTranslation(['components', 'common']);
     return (
         <>
             <footer>
@@ -16,86 +18,87 @@ export default function Footer() {
                     <Container>
                         <Row>
                             <Col sm="3" xs="6">
-                                <h6 className="footer-section_title">Soluciones</h6>
+                                <h6 className="footer-section_title">
+                                    <Trans t={t} i18nKey="FOOTER.SOLUTIONS"/>
+                                    </h6>
                                 <hr />
                                 <ListGroup className="footer-section_list">
                                     <ListGroup.Item>
                                         <Link href="/debq">
-                                            Gestión de filas
-
+                                            <Trans t={t} i18nKey="FOOTER.QUEUE_MANAGEMENT"/>
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/citasonline">
-                                            Citas online
+                                            <Trans t={t} i18nKey="FOOTER.ONLINE_APPOINTMENTS"/>
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/fila-virtual">
-                                            Fila virtual
+                                            <Trans t={t} i18nKey="FOOTER.VIRTUAL_QUEUE"/>
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/debsign">
-                                            Cartelería digital
+                                            <Trans t={t} i18nKey="FOOTER.DIGITAL_SIGNAGE"/>
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/atencion-virtual">
-                                            Atención virtual
+                                            <Trans t={t} i18nKey="FOOTER.VIRTUAL_ATTENTION"/>
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/encuestas">
-                                            Encuestas
+                                            <Trans t={t} i18nKey="FOOTER.SURVEYS"/>
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/preatendedor">
-                                            Preatendedor
+                                            <Trans t={t} i18nKey="FOOTER.PRE_SERVICE"/>
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/preatendedor">
-                                            Chatbot de WhatsApp 
+                                            <Trans t={t} i18nKey="FOOTER.WHATSAPP_CHATBOT"/>
                                         </Link>
                                     </ListGroup.Item>
                                 </ListGroup>
                             </Col>
                             <Col sm="3" xs="6">
-                                <h6 className="footer-section_title">Empresa</h6>
+                                <h6 className="footer-section_title">
+                                    <Trans t={t} i18nKey="FOOTER.SOLUTIONS"/>
+                                </h6>
                                 <hr />
                                 <ListGroup className="footer-section_list">
                                     <ListGroup.Item>
                                         <Link href="/clientes">
-                                            Clientes
+                                            <Trans t={t} i18nKey="FOOTER.CLIENTS"/>
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/nosotros">
-                                            Nosotros
+                                            <Trans t={t} i18nKey="FOOTER.US"/>
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/partners">
-                                            Partners
+                                            <Trans t={t} i18nKey="FOOTER.PARTNERS"/>
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="https://blog.debmedia.com">
-                                            Blog
-
+                                            <Trans t={t} i18nKey="FOOTER.BLOG"/>
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/politica">
-                                            Política de calidad
-                                            y seguridad
+                                            <Trans t={t} i18nKey="FOOTER.QUALITY_AND_SECURITY_POLICY"/>
                                         </Link>
                                     </ListGroup.Item>
 
@@ -103,37 +106,39 @@ export default function Footer() {
                                 </ListGroup>
                             </Col>
                             <Col sm="3" xs="6">
-                                <h6 className="footer-section_title">Industrias</h6>
+                                <h6 className="footer-section_title">
+                                    <Trans t={t} i18nKey="FOOTER.INDUSTRIES"/>
+                                </h6>
                                 <hr />
                                 <ListGroup className="footer-section_list">
                                     <ListGroup.Item>
                                         <Link href="/bancosyfinanzas">
-                                            Banca y aseguradoras
+                                            <Trans t={t} i18nKey="FOOTER.BANKING_AND_INSURANCE"/>
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/salud">
-                                            Salud
+                                            <Trans t={t} i18nKey="FOOTER.HEALTH"/>
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/gobierno">
-                                            Gobierno
+                                            <Trans t={t} i18nKey="FOOTER.GOVERNMENT"/>
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/utilities">
-                                            Utilities y corporaciones
+                                            <Trans t={t} i18nKey="FOOTER.UTILITIES_AND_CORPORATIONS"/>
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/retail">
-                                            Servicios y retail
+                                            <Trans t={t} i18nKey="FOOTER.SERVICES_AND_RETAIL"/>
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/telcos">
-                                            Telecomunicaciones
+                                            <Trans t={t} i18nKey="FOOTER.TELECOMMUNICATIONS"/>
                                         </Link>
                                     </ListGroup.Item>
 
@@ -141,7 +146,9 @@ export default function Footer() {
                                 </ListGroup>
                             </Col>
                             <Col sm="3" xs="6">
-                                <h6 className="footer-section_title">Avalados por</h6>
+                                <h6 className="footer-section_title">
+                                    <Trans t={t} i18nKey="FOOTER.ENDORSED_BY"/>
+                                </h6>
                                 <hr />
                                 <Image src={partners.src} width={100}
                                     height={130} />

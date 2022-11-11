@@ -40,5 +40,30 @@
     "UTILITIES": {
       "TITLE": "$t(POST.RETAIL.TITLE)"
     }
+  },
+  "FOOTER":{
+    "SOLUTIONS": "$t(common:SOLUTIONS)",
+    "QUEUE_MANAGEMENT": "$t(common:QUEUE_MANAGEMENT)",
+    "ONLINE_APPOINTMENTS": "$t(common:ONLINE_APPOINTMENTS)",
+    "VIRTUAL_QUEUE": "$t(common:VIRTUAL_QUEUE)",
+    "DIGITAL_SIGNAGE": "$t(common:DIGITAL_SIGNAGE)",
+    "VIRTUAL_ATTENTION": "$t(common:VIRTUAL_ATTENTION)",
+    "SURVEYS": "$t(common:SURVEYS)",
+    "PRE_SERVICE": "$t(common:PRE_SERVICE)",
+    "WHATSAPP_CHATBOT": "$t(common:WHATSAPP_CHATBOT)",
+    "CLIENTS": "$t(common:CLIENTS)",
+    "US": "$t(common:US)",
+    "PARTNERS": "$t(common:PARTNERS)",
+    "BLOG": "$t(common:BLOG)",
+    "QUALITY_AND_SECURITY_POLICY": "$t(common:QUALITY_AND_SECURITY_POLICY)",
+    "BANKING_AND_INSURANCE": "$t(common:BANKING_AND_INSURANCE)",
+    "HEALTH": "$t(common:HEALTH)",
+    "GOVERNMENT": "$t(common:GOVERNMENT)",
+    "UTILITIES_AND_CORPORATIONS": "$t(common:UTILITIES_AND_CORPORATIONS)",
+    "SERVICES_AND_RETAIL": "$t(common:SERVICES_AND_RETAIL)",
+    "TELECOMMUNICATIONS": "$t(common:TELECOMMUNICATIONS)",
+    "INDUSTRIES": "$t(common:INDUSTRIES)",
+    "COMPANY": "$t(common:COMPANY)",
+    "ENDORSED_BY": "$t(common:ENDORSED_BY)"
   }
 }
