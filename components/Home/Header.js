@@ -1,25 +1,35 @@
-import React, { useState, useEffect } from "react";
-import { Row, Container, Col, Modal, Button } from "react-bootstrap";
+import React from "react";
+import { Row, Container, Col, Modal} from "react-bootstrap";
 import Image from 'next/image'
 import mypic from '../../asset/imgs/home/newVideoShape.svg'
 import mypicxs from '../../asset/imgs/home/videoShape-xs.png'
 import video from '../../asset/imgs/home/debq.svg'
-import videoSm from '../../asset/imgs/home/debqSm.svg'
+import videoSm_es from '../../asset/imgs/home/debqSm.svg'
+import videoSm_pt from '../../asset/imgs/home/debqSm-pt.svg'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import Link from 'next/link'
 import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/router";
+
+// Imágenes con versiones para los locales
+const videoSm = {
+    es: videoSm_es,
+    pt: videoSm_pt
+};
 
 export default function Header() {
     const [modalShow, setModalShow] = React.useState(false);
     const { t } = useTranslation(['home', 'common']);
+    const {locale} = useRouter();
+    
     return (
         <>
             <header>
                 <Container fluid className="header-home">
                     <div className={'image-container'} onClick={() => setModalShow(true)}>
-                        <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} />
-                        <Image src={mypicxs.src} layout="fill" className={'image d-block d-sm-none'} />
+                        <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} alt=""/>
+                        <Image src={mypicxs.src} layout="fill" className={'image d-block d-sm-none'} alt=""/>
                     </div>
                     {/* <div className="d-none d-sm-block">
                         <img src={shape3.src} className="header-home_shape3" />
@@ -28,11 +38,11 @@ export default function Header() {
                         <img src={video.src} className="header-home_mainNoti" />
                     </div>
                      <div className="d-none d-sm-block header-home_viewVideo"  onClick={() => setModalShow(true)}>
-                        <Image src={videoSm.src} layout="fill" className="header-home_mainNoti" />
+                        <Image src={videoSm[locale]} layout="fill" className="header-home_mainNoti" alt=""/>
                     </div>
                     <div className="d-none d-sm-block">
-                        <img src={shape1.src} className="header-home_shape1" />
-                        <img src={shape2.src} className="header-home_shape2" />
+                        <img src={shape1.src} className="header-home_shape1" alt=""/>
+                        <img src={shape2.src} className="header-home_shape2" alt=""/>
                     </div>
                     <MyVerticallyCenteredModal
                         show={modalShow}
