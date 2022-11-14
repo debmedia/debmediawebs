@@ -107,10 +107,10 @@ export default function Home(props) {
                             <Link href="/contacto">
                                 <Nav.Link href="#link" className="demo">Solicita una demo</Nav.Link>
                             </Link>
-                            <Link href="/" locale="es">
+                            <Link href={router.pathname} locale="es">
                                 ES
                             </Link>
-                            <Link href="/" locale="pt">
+                            <Link href={router.pathname} locale="pt">
                                 PT
                             </Link>
                         </Nav>
