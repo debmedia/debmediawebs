@@ -4,12 +4,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslation, Trans } from 'next-i18next';
 import TitleWithIcons from "../TitleWithIcons";
+import solutionsHomeData from '../../json/solutions-home.json';
+import { useRouter } from "next/router";
 
 
 
-export default function Solutions({dataJson}) {
+export default function Solutions() {
     const { t } = useTranslation(['home', 'common']);
-
+    const { locale } = useRouter();
+    
     return (
         <>
             <TitleWithIcons 
@@ -33,7 +36,7 @@ export default function Solutions({dataJson}) {
                                 <Row>
                                     <Col sm={3}>
                                         <Nav variant="pills" className="flex-column">
-                                            {dataJson.map((item, index) => (
+                                            {solutionsHomeData[locale].map((item, index) => (
                                                 <Nav.Item key={index}>
                                                     <Nav.Link eventKey={item.key} className="solutions-tabs_content-nav">{item.title}</Nav.Link>
                                                 </Nav.Item>
@@ -42,12 +45,12 @@ export default function Solutions({dataJson}) {
                                     </Col>
                                     <Col sm={9}>
                                         <Tab.Content>
-                                            {dataJson.map((item, index) => (
+                                            {solutionsHomeData[locale].map((item, index) => (
                                                 <Tab.Pane key={index} eventKey={item.key}>
                                                     <Row>
                                                         <Col className="text-center">
                                                             <Image src={`/hometabs/${item.image.url}`} width={item.image.width}
-                                                                height={item.image.height} className={'img-fluid'} />
+                                                                height={item.image.height} className={'img-fluid'} alt=""/>
                                                         </Col>
                                                         <Col className="solutions-tabs_content-title">
                                                             <h2>
@@ -70,7 +73,7 @@ export default function Solutions({dataJson}) {
                     </Row>
                     <Row className="solutions-accordion_content d-block d-sm-none">
                         <Accordion defaultActiveKey="0">
-                            {dataJson.map((item, index) => (
+                            {solutionsHomeData[locale].map((item, index) => (
                                 <Accordion.Item key={index} eventKey={item.key} className="solutions-accordion_content-nav">
                                     <Accordion.Header >{item.title}</Accordion.Header>
                                     <Accordion.Body>
