@@ -1,13 +1,18 @@
 import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import api from '../../asset/imgs/home/api.svg'
-import graficos from '../../asset/imgs/home/graficos.svg'
+import graficos_es from '../../asset/imgs/home/graficos.svg'
 import channel from '../../asset/imgs/home/channels.svg'
 import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/router";
 
-
+const graficos_lang = {
+    es: graficos_es
+}
 export default function Modern() {
     const { t } = useTranslation(['home', 'common']);
+    const {locale} = useRouter();
+    const graficos = graficos_lang[locale] || graficos_lang["es"];
     return (
         <>
             <Container fluid className="modern-section">
