@@ -1,23 +1,45 @@
 import React, { useState, useEffect } from "react";
 import { Row, Container, Col, Accordion } from "react-bootstrap";
-import flow from '../../asset/imgs/videollamada/flow.png'
-import totem from '../../asset/imgs/videollamada/totem.png'
-import sistema from '../../asset/imgs/videollamada/sistema.png'
-import sistematotemmobie from '../../asset/imgs/videollamada/totemnew.png'
-import sistemaxs from '../../asset/imgs/videollamada/sistemaxs.jpg'
+import flow_es from '../../asset/imgs/videollamada/flow.png'
+import totem_es from '../../asset/imgs/videollamada/totem.png'
+import sistema_es from '../../asset/imgs/videollamada/sistema.png'
+import sistematotemmobie_es from '../../asset/imgs/videollamada/totemnew.png'
+import sistemaxs_es from '../../asset/imgs/videollamada/sistemaxs.jpg'
 
 import Data from '../../json/flow-videocall.json';
 import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/router";
 
-
+const flow_lang = {
+    es: flow_es,
+};
+const totem_lang = {
+    es: totem_es,
+};
+const sistema_lang = {
+    es: sistema_es
+};
+const sistematotemmobie_lang = {
+    es: sistematotemmobie_es
+};
+const sistemaxs_lang = {
+    es: sistemaxs_es
+};
 
 export default function Market() {
     const { t } = useTranslation(['videoCall', 'common']);
     const [dataJson, setData] = useState([]);
+    const { locale } = useRouter();
+
+    const flow = flow_lang[locale] || flow_es;
+    const totem = totem_lang[locale] || totem_es;
+    const sistema = sistema_lang[locale] || sistema_es;
+    const sistematotemmobie = sistematotemmobie_lang[locale] || sistematotemmobie_es;
+    const sistemaxs = sistemaxs_lang[locale] || sistemaxs_es;
 
     useEffect(() => {
-        setData(Data);
-    }, []);
+        setData(Data[locale] || Data.es);
+    }, [locale]);
 
     return (
         <>
@@ -52,7 +74,7 @@ export default function Market() {
                     <Accordion defaultActiveKey="0">
                         {dataJson.map((item, index) => (
                             <Accordion.Item key={index} eventKey={item.key} className="setps-accordion_content-nav">
-                                <Accordion.Header className="inter2_button"><div className="inter2_button-step">{index + 1}</div> <div className="inter2_button-text">{item.text}</div></Accordion.Header>
+                                <Accordion.Header className="inter2_button"><div className="inter2_button-step">{index + 1}</div> <div className="inter2_button-text">{t(item.text)}</div></Accordion.Header>
                                 <Accordion.Body>
                                     <Row>
                                         <Col xs={12} className="text-center">

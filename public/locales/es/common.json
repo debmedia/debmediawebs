@@ -27,5 +27,9 @@
   "TELECOMMUNICATIONS": "Telecomunicaciones",
   "INDUSTRIES": "Industrias",
   "COMPANY": "Compañía",
-  "ENDORSED_BY": "Avalados por"
+  "ENDORSED_BY": "Avalados por",
+  "REQUEST": "Solicitud",
+  "SELECTION": "Selección",
+  "ATTENTION": "Atención",
+  "QUALIFICATION": "Calificación"
 }

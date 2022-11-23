@@ -1,38 +1,40 @@
-[
-  {
-    "text": "Solicitud",
-    "key":"1",
-    "image": {
-      "url": "step1.png",
-      "width": 700,
-      "height": 500
+{
+  "es": [
+    {
+      "text": "common:REQUEST",
+      "key": "1",
+      "image": {
+        "url": "step1.png",
+        "width": 700,
+        "height": 500
+      }
+    },
+    {
+      "text": "common:SELECTION",
+      "key": "2",
+      "image": {
+        "url": "step2.png",
+        "width": 400,
+        "height": 450
+      }
+    },
+    {
+      "text": "common:ATTENTION",
+      "key": "3",
+      "image": {
+        "url": "step3.png",
+        "width": 400,
+        "height": 550
+      }
+    },
+    {
+      "text": "common:QUALIFICATION",
+      "key": "4",
+      "image": {
+        "url": "step4.png",
+        "width": 700,
+        "height": 800
+      }
     }
-  },
-  {
-    "text": "Selección",
-    "key":"2",
-    "image": {
-      "url": "step2.png",
-      "width": 400,
-      "height": 450
-    }
-  },
-  {
-    "text": "Atención",
-    "key":"3",
-    "image": {
-      "url": "step3.png",
-      "width": 400,
-      "height": 550
-    }
-  },
-  {
-    "text": "Calificación",
-    "key":"4",
-    "image": {
-      "url": "step4.png",
-      "width": 700,
-      "height": 800
-    }
-  }
-]
+  ]
+}
