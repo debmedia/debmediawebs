@@ -59,7 +59,7 @@ export default function Brands(props) {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     return (
-        <>
+        <>{locale === "es" && 
             <Container fluid className={"posts-slider " + (props.indistry ? 'noGrey' : '')}>
                 <Container>
                     {
@@ -143,6 +143,7 @@ export default function Brands(props) {
                     </Row>
                 </Container>
             </Container>
+        }
         </>
     );
 }
