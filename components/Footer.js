@@ -7,10 +7,12 @@ import face from '../asset/imgs/facebook.svg'
 import insta from '../asset/imgs/insta.svg'
 import lkedin from '../asset/imgs/lkedin.svg'
 import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/router";
 
 
 export default function Footer() {
     const { t } = useTranslation(['components', 'common']);
+    const { locale } = useRouter();
     return (
         <>
             <footer>
@@ -91,11 +93,13 @@ export default function Footer() {
                                             <Trans t={t} i18nKey="FOOTER.PARTNERS"/>
                                         </Link>
                                     </ListGroup.Item>
+                                    { locale === "es" && 
                                     <ListGroup.Item>
                                         <Link href="https://blog.debmedia.com">
                                             <Trans t={t} i18nKey="FOOTER.BLOG"/>
                                         </Link>
                                     </ListGroup.Item>
+                                    }
                                     <ListGroup.Item>
                                         <Link href="/politica">
                                             <Trans t={t} i18nKey="FOOTER.QUALITY_AND_SECURITY_POLICY"/>
@@ -171,10 +175,8 @@ export default function Footer() {
                             </Col>
                         </Row>
                     </Container>
-
                 </Container>
             </footer>
-
         </>
     );
 }
