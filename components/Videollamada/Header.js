@@ -7,10 +7,13 @@ import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import shape3 from '../../asset/imgs/home/headershape3.svg'
 import { useMediaQuery } from 'react-responsive'
+import { useTranslation, Trans } from 'next-i18next';
+import Link from "next/link";
 
 
 export default function Header() {
     const isMobile = useMediaQuery({ query: '(max-width:899px)' })
+    const { t } = useTranslation(['videoCall', 'common']);
 
     return (
         <>
@@ -31,17 +34,17 @@ export default function Header() {
                     <Container>
                         <Row>
                             <Col className="mainTitles">
-                                <h1 className="videocall-home_title">
-                                    Digitaliza la atención
-                                    <br className="d-none d-sm-block" />de tus clientes
+                                <h1 className="videocall-home_title no-br-sm">
+                                    <Trans t={t} i18nKey="HEADER.TITLE"/>
                                 </h1>
                                 <p className="videocall-home_parraf">
-                                    Software para brindar <b>atención <br />
-                                        por videollamada </b>
+                                    <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
                                 </p>
+                                <Link href="/contacto">
                                 <button className="videocall-home_demobutton">
-                                    Solicita una demo
+                                    <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                 </button>
+                                </Link>
                             </Col>
                         </Row>
                     </Container>
@@ -50,8 +53,9 @@ export default function Header() {
             <Container className="d-flex justify-content-center videocall-home_text">
                 <Row>
                     <Col>
-                        <h3><b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
-                            experiencia de sus clientes con <b> Debmedia</b></h3>
+                        <h3 className="no-br-sm">
+                            <Trans t={t} i18nKey="HEADER.CAPTION"/>
+                        </h3>
                     </Col>
                 </Row>
             </Container>
