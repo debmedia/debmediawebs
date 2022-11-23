@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Row, Container, Col, Tab, Nav, Accordion } from "react-bootstrap";
-import Image from 'next/image'
+import { Row, Container, Col, Accordion } from "react-bootstrap";
 import flow from '../../asset/imgs/videollamada/flow.png'
 import totem from '../../asset/imgs/videollamada/totem.png'
 import sistema from '../../asset/imgs/videollamada/sistema.png'
@@ -8,11 +7,12 @@ import sistematotemmobie from '../../asset/imgs/videollamada/totemnew.png'
 import sistemaxs from '../../asset/imgs/videollamada/sistemaxs.jpg'
 
 import Data from '../../json/flow-videocall.json';
+import { useTranslation, Trans } from 'next-i18next';
 
 
 
 export default function Market() {
-
+    const { t } = useTranslation(['videoCall', 'common']);
     const [dataJson, setData] = useState([]);
 
     useEffect(() => {
@@ -25,16 +25,17 @@ export default function Market() {
                 <Container>
                     <Col>
                         <div className="flow-videocall-section_floatdiv-title text-center">
-                            <h2><b>Un flujo sencillo pensado para distintos<br /> modelos de atención en tu organización. </b>
+                            <h2>
+                                <Trans t={t} i18nKey="FLOW.TITLE"/>
                             </h2>
                         </div>
                     </Col>
                 </Container>
                 <div className="flow-videocall-section_floatdiv">
                     <div className="flow-videocall-section_floatdiv-div">
-                        <h4>Tus clientes pueden tomar una cita
-                            o un turno desde tu web para <b>conectarse con un representante
-                                por videollamada.</b></h4>
+                        <h4>
+                            <Trans t={t} i18nKey="FLOW.CAPTION"/>
+                        </h4>
 
                     </div>
                 </div>
@@ -71,8 +72,11 @@ export default function Market() {
                     </div>
                     <div className="greyBlock">
                         <div className="greyBlock_text">
-                            <h3>Utiliza el sistema de Atención Virtual también dentro de las sucursales.</h3>
-                            <p><b> Tus clientes pueden conectarse a una videollamada con un representante desde un Kiosko </b> y reducir el tiempo que pasan dentro de las sucursales.
+                            <h3>
+                                <Trans t={t} i18nKey="FLOW.BLOCK_1.TITLE"/>
+                            </h3>
+                            <p>
+                                <Trans t={t} i18nKey="FLOW.BLOCK_1.CAPTION"/>
                             </p>
                         </div>
                     </div>
@@ -81,13 +85,12 @@ export default function Market() {
             </Container>
             <Container fluid className="relative d-none d-sm-block mb-5">
                 <div className="floatDiv text-center">
-                    <h4>Aprovecha tus <br />
-                        recursos al máximo.
+                    <h4>
+                        <Trans t={t} i18nKey="FLOW.BLOCK_2.TITLE"/>
                     </h4>
                     <p>
-                        Permite a tus colaboradores atender a los clientes desde cualquier lugar.
+                        <Trans t={t} i18nKey="FLOW.BLOCK_2.CAPTION"/>
                     </p>
-
                 </div>
                 <Row>
                     <Col xs={6} className="p-0 mb-5">
@@ -100,20 +103,23 @@ export default function Market() {
                     <Col className="p-0" xs={12}>
                         <div className="greyBlock">
                             <div className="greyBlock_text">
-                                <h3>Utiliza el sistema de Atención Virtual también dentro de las sucursales.</h3>
-                                <p><b> Tus clientes pueden conectarse a una videollamada con un representante desde un Kiosko </b> y reducir el tiempo que pasan dentro de las sucursales.
-                            </p>
+                                <h3>
+                                    <Trans t={t} i18nKey="FLOW.BLOCK_1.TITLE"/>
+                                </h3>
+                                <p>
+                                    <Trans t={t} i18nKey="FLOW.BLOCK_1.CAPTION"/>
+                                </p>
                             </div>
                             <img src={sistematotemmobie.src} className="img-fluid w-100" alt="sistematotemmobie" />
                         </div>
 
                     </Col>
                     <Col xs={12} className="blueBlock">
-                        <h2>Aprovecha tus <br />
-                            recursos al máximo.
+                        <h2>
+                            <Trans t={t} i18nKey="FLOW.BLOCK_2.TITLE"/>
                         </h2>
                         <p>
-                            Permite a tus colaboradores<br /> atender a los clientes <br />desde cualquier lugar.
+                            <Trans t={t} i18nKey="FLOW.BLOCK_2.CAPTION"/>
                         </p>
                         <img src={sistemaxs.src} className="img-fluid w-100 mt-5" alt="sistemaxs" />
                     </Col>

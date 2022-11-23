@@ -9,5 +9,17 @@
     "CAPTION_1": "<strong>Valora su tiempo</strong>Ofrece una atención<br />ágil y eficiente",
     "CAPTION_2": "<strong>Humaniza la atención </strong>A través de encuentros<br /> especializados y cercanos.",
     "CAPTION_3": "<strong>Diferénciate de<br />la competencia</strong>Consigue una ventaja <br />tecnológica."
+  },
+  "FLOW": {
+    "TITLE": "<b>Un flujo sencillo pensado para distintos<br /> modelos de atención en tu organización. </b>",
+    "CAPTION": " Tus clientes pueden tomar una cita o un turno desde tu web para <b>conectarse con un representante por videollamada.</b>",
+    "BLOCK_1": {
+      "TITLE": "Utiliza el sistema de Atención Virtual también dentro de las sucursales.",
+      "CAPTION": "<b>Tus clientes pueden conectarse a una videollamada con un representante desde un Kiosko </b> y reducir el tiempo que pasan dentro de las sucursales."
+    },
+    "BLOCK_2": {
+      "TITLE": "Aprovecha tus <br />recursos al máximo.",
+      "CAPTION": "Permite a tus colaboradores atender a los clientes desde cualquier lugar."
+    }
   }
 }
