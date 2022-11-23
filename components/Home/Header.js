@@ -64,12 +64,7 @@ export default function Header() {
                                             <br className="d-none d-sm-block" /> 
                                             al cliente virtual
                                         </b>
-                                        y presencial. 
-                                        <b>Organizaciones líderes</b> 
-                                        ya gestionan la
-                                        <br className="d-none d-sm-block" />
-                                        experiencia de sus clientes con 
-                                        <b> Debmedia</b>
+                                        y presencial.
                                     </Trans>
                                 </p>
                                 <Link href="/contacto">
