@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 
-export default function Home(props) {
+export default function Home() {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -107,11 +107,15 @@ export default function Home(props) {
                             <Link href="/contacto">
                                 <Nav.Link href="#link" className="demo">Solicita una demo</Nav.Link>
                             </Link>
-                            <Link href={router.pathname} locale="es">
-                                ES
+                            <Link href={router.pathname} locale="es" scroll={false} >
+                                <div>
+                                <div style={{backgroundColor: router.locale == "es" ? "#232C61": "white", color: router.locale != "es" ? "#232C61": "white", padding: "0.1rem 0.25rem", margin: "0.25rem",borderRadius: "0.5rem",height: "auto", cursor:"pointer"}}>ES</div>
+                                </div>
                             </Link>
-                            <Link href={router.pathname} locale="pt">
-                                PT
+                            <Link href={router.pathname} locale="pt" scroll={false} >
+                                <div>
+                                <div style={{backgroundColor: router.locale == "pt" ? "#232C61": "white", color: router.locale != "pt" ? "#232C61": "white", padding: "0.1rem 0.25rem", margin: "0.25rem",borderRadius: "0.5rem",height: "auto", cursor:"pointer"}}>PT</div>
+                                </div>
                             </Link>
                         </Nav>
                     </Navbar.Collapse>
