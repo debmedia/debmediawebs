@@ -6,7 +6,7 @@ import partners from '../asset/imgs/partners.svg'
 import face from '../asset/imgs/facebook.svg'
 import insta from '../asset/imgs/insta.svg'
 import lkedin from '../asset/imgs/lkedin.svg'
-import { useTranslation, Trans } from 'next-i18next';
+import { useTranslation } from 'next-i18next';
 import { useRouter } from "next/router";
 
 
@@ -21,88 +21,88 @@ export default function Footer() {
                         <Row>
                             <Col sm="3" xs="6">
                                 <h6 className="footer-section_title">
-                                    <Trans t={t} i18nKey="FOOTER.SOLUTIONS"/>
+                                    { t("FOOTER.SOLUTIONS") }
                                     </h6>
                                 <hr />
                                 <ListGroup className="footer-section_list">
                                     <ListGroup.Item>
                                         <Link href="/debq">
-                                            <Trans t={t} i18nKey="FOOTER.QUEUE_MANAGEMENT"/>
+                                            { t("FOOTER.QUEUE_MANAGEMENT") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/citasonline">
-                                            <Trans t={t} i18nKey="FOOTER.ONLINE_APPOINTMENTS"/>
+                                            { t("FOOTER.ONLINE_APPOINTMENTS") }
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/fila-virtual">
-                                            <Trans t={t} i18nKey="FOOTER.VIRTUAL_QUEUE"/>
+                                            { t("FOOTER.VIRTUAL_QUEUE") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/debsign">
-                                            <Trans t={t} i18nKey="FOOTER.DIGITAL_SIGNAGE"/>
+                                            { t("FOOTER.DIGITAL_SIGNAGE") }
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/atencion-virtual">
-                                            <Trans t={t} i18nKey="FOOTER.VIRTUAL_ATTENTION"/>
+                                            { t("FOOTER.VIRTUAL_ATTENTION") }
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/encuestas">
-                                            <Trans t={t} i18nKey="FOOTER.SURVEYS"/>
+                                            { t("FOOTER.SURVEYS") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/preatendedor">
-                                            <Trans t={t} i18nKey="FOOTER.PRE_SERVICE"/>
+                                            { t("FOOTER.PRE_SERVICE") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/preatendedor">
-                                            <Trans t={t} i18nKey="FOOTER.WHATSAPP_CHATBOT"/>
+                                            { t("FOOTER.WHATSAPP_CHATBOT") }
                                         </Link>
                                     </ListGroup.Item>
                                 </ListGroup>
                             </Col>
                             <Col sm="3" xs="6">
                                 <h6 className="footer-section_title">
-                                    <Trans t={t} i18nKey="FOOTER.SOLUTIONS"/>
+                                    { t("FOOTER.SOLUTIONS") }
                                 </h6>
                                 <hr />
                                 <ListGroup className="footer-section_list">
                                     <ListGroup.Item>
                                         <Link href="/clientes">
-                                            <Trans t={t} i18nKey="FOOTER.CLIENTS"/>
+                                            { t("FOOTER.CLIENTS") }
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/nosotros">
-                                            <Trans t={t} i18nKey="FOOTER.US"/>
+                                            { t("FOOTER.US") }
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/partners">
-                                            <Trans t={t} i18nKey="FOOTER.PARTNERS"/>
+                                            { t("FOOTER.PARTNERS") }
                                         </Link>
                                     </ListGroup.Item>
                                     { locale === "es" && 
                                     <ListGroup.Item>
                                         <Link href="https://blog.debmedia.com">
-                                            <Trans t={t} i18nKey="FOOTER.BLOG"/>
+                                            { t("FOOTER.BLOG") }
                                         </Link>
                                     </ListGroup.Item>
                                     }
                                     <ListGroup.Item>
                                         <Link href="/politica">
-                                            <Trans t={t} i18nKey="FOOTER.QUALITY_AND_SECURITY_POLICY"/>
+                                            { t("FOOTER.QUALITY_AND_SECURITY_POLICY") }
                                         </Link>
                                     </ListGroup.Item>
 
@@ -111,38 +111,38 @@ export default function Footer() {
                             </Col>
                             <Col sm="3" xs="6">
                                 <h6 className="footer-section_title">
-                                    <Trans t={t} i18nKey="FOOTER.INDUSTRIES"/>
+                                    { t("FOOTER.INDUSTRIES") }
                                 </h6>
                                 <hr />
                                 <ListGroup className="footer-section_list">
                                     <ListGroup.Item>
                                         <Link href="/bancosyfinanzas">
-                                            <Trans t={t} i18nKey="FOOTER.BANKING_AND_INSURANCE"/>
+                                            { t("FOOTER.BANKING_AND_INSURANCE") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/salud">
-                                            <Trans t={t} i18nKey="FOOTER.HEALTH"/>
+                                            { t("FOOTER.HEALTH") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/gobierno">
-                                            <Trans t={t} i18nKey="FOOTER.GOVERNMENT"/>
+                                            { t("FOOTER.GOVERNMENT") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/utilities">
-                                            <Trans t={t} i18nKey="FOOTER.UTILITIES_AND_CORPORATIONS"/>
+                                            { t("FOOTER.UTILITIES_AND_CORPORATIONS") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/retail">
-                                            <Trans t={t} i18nKey="FOOTER.SERVICES_AND_RETAIL"/>
+                                            { t("FOOTER.SERVICES_AND_RETAIL") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/telcos">
-                                            <Trans t={t} i18nKey="FOOTER.TELECOMMUNICATIONS"/>
+                                            { t("FOOTER.TELECOMMUNICATIONS") }
                                         </Link>
                                     </ListGroup.Item>
 
@@ -151,7 +151,7 @@ export default function Footer() {
                             </Col>
                             <Col sm="3" xs="6">
                                 <h6 className="footer-section_title">
-                                    <Trans t={t} i18nKey="FOOTER.ENDORSED_BY"/>
+                                    { t("FOOTER.ENDORSED_BY") }
                                 </h6>
                                 <hr />
                                 <Image src={partners.src} width={100}
