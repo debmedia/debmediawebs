@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import spec1 from '../../asset/imgs/videollamada/spec1.svg'
 import spec2 from '../../asset/imgs/videollamada/spec2.svg'
 import spec3 from '../../asset/imgs/videollamada/spec3.svg'
 import spec4 from '../../asset/imgs/videollamada/spec4.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
@@ -24,8 +24,10 @@ import SwiperCore, { Autoplay, FreeMode, Pagination } from 'swiper';
 // install Swiper modules
 SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
+const spec = [spec1, spec2, spec3, spec4];
 
 export default function Modern() {
+    const { t } = useTranslation(['videoCall', 'common']);
     return (
         <>
             <Container fluid className="specs-section_videocall">
@@ -34,104 +36,38 @@ export default function Modern() {
                         <Row>
                             <Col xs={12} className="specs-section_videocall_text">
                                 <div>
-                                    <h2>¿Cómo funciona el Sistema <br />de <b>Atención Virtual de Debmedia</b>? </h2>
-                                    {/* <p><b> al flujo de atención de tu empresa</b></p> */}
+                                    <h2>
+                                        ¿Cómo funciona el Sistema <br />de <b>Atención Virtual de Debmedia</b>?
+                                    </h2>
                                 </div>
                             </Col>
                         </Row>
                     </Col>
                     <Row>
-                        <Col sm={3}>
+                       { spec.map((elem, index) => {
+                        return (
+                       <Col sm={3} key={index}>
                             <Row>
                                 <Col xs={12} className="specs-section_videocall_div-img d-flex justify-content-center">
-                                    <Image src={spec1.src} width={200}
+                                    <Image src={elem.src} width={200}
                                         height={250} />
-
                                 </Col>
                                 <Col xs={12} className="specs-section_videocall_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_videocall_title">
-                                            Múltiples viajes <br /> del cliente
-
-
+                                            <Trans t={t} i18nKey={t("SPEC.CAPTIONS", {returnObjects: true})[index]["TITLE"]}/>
                                         </h4>
                                         <p className="specs-section_videocall_parraf">
-                                            Tus clientes pueden iniciar en
-                                            tu web, App o WhatsApp.
-
+                                            <Trans t={t} i18nKey={t("SPEC.CAPTIONS", {returnObjects: true})[index]["SUBTITLE"]}/>
                                         </p>
                                     </div>
 
                                 </Col>
                             </Row>
                         </Col>
-                        <Col sm={3}>
-                            <Row>
-                                <Col xs={12} className="specs-section_videocall_div-img d-flex justify-content-center">
-                                    <Image src={spec2.src} width={200}
-                                        height={250} />
-
-                                </Col>
-                                <Col xs={12} className="specs-section_videocall_div-text text-center d-flex justify-content-center my-3">
-                                    <div>
-                                        <h4 className="specs-section_videocall_title">
-                                            Métricas de performance
-                                        </h4>
-                                        <p className="specs-section_videocall_parraf">
-                                            Mide tiempos y rendimiento <br />
-                                            de tus equipos.
-
-
-                                        </p>
-                                    </div>
-
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col sm={3}>
-                            <Row>
-                                <Col xs={12} className="specs-section_videocall_div-img d-flex justify-content-center">
-                                    <Image src={spec3.src} width={200}
-                                        height={250} />
-
-                                </Col>
-                                <Col xs={12} className="specs-section_videocall_div-text text-center d-flex justify-content-center my-3">
-                                    <div>
-                                        <h4 className="specs-section_videocall_title">
-                                            Integración <br /> sencilla
-                                        </h4>
-                                        <p className="specs-section_videocall_parraf">
-                                            Una herramienta integrable por API o Iframe
-
-                                        </p>
-                                    </div>
-
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col sm={3}>
-                            <Row>
-                                <Col xs={12} className="specs-section_videocall_div-img d-flex justify-content-center">
-                                    <Image src={spec4.src} width={200}
-                                        height={250} />
-
-                                </Col>
-                                <Col xs={12} className="specs-section_videocall_div-text text-center d-flex justify-content-center my-3">
-                                    <div>
-                                        <h4 className="specs-section_videocall_title">
-                                            Los clientes pueden
-                                        </h4>
-                                        <p className="specs-section_videocall_parraf">
-                                            Conectarse de forma espontánea
-                                            o programada.
-
-
-                                        </p>
-                                    </div>
-
-                                </Col>
-                            </Row>
-                        </Col>
+                        )
+                       })
+                        }
                     </Row>
 
                 </Container>
@@ -171,25 +107,23 @@ export default function Modern() {
                             },
                         }}
                     >
-                        <SwiperSlide >
+                        {spec.map((elem, index) => {
+                            return (
+                        <SwiperSlide key={index} >
                             <Col sm={4}>
                                 <Row>
                                     <Col xs={12} className="specs-section_videocall_div-img d-flex justify-content-center">
-                                        <Image src={spec1.src} width={200}
+                                        <Image src={elem.src} width={200}
                                             height={250} />
 
                                     </Col>
                                     <Col xs={12} className="specs-section_videocall_div-text text-center d-flex justify-content-center my-3">
                                         <div>
                                             <h4 className="specs-section_videocall_title">
-                                                Múltiples viajes del cliente
-
-
+                                                <Trans t={t} i18nKey={t("SPEC.CAPTIONS", {returnObjects: true})[index]["TITLE"]}/>
                                             </h4>
                                             <p className="specs-section_videocall_parraf">
-                                                Tus clientes pueden iniciar en<br />
-                                                tu web, App o WhatsApp.
-
+                                                <Trans t={t} i18nKey={t("SPEC.CAPTIONS", {returnObjects: true})[index]["SUBTITLE"]}/>
                                             </p>
                                         </div>
 
@@ -197,79 +131,8 @@ export default function Modern() {
                                 </Row>
                             </Col>
                         </SwiperSlide>
-                        <SwiperSlide >
-                            <Col sm={4}>
-                                <Row>
-                                    <Col xs={12} className="specs-section_videocall_div-img d-flex justify-content-center">
-                                        <Image src={spec2.src} width={200}
-                                            height={250} />
-
-                                    </Col>
-                                    <Col xs={12} className="specs-section_videocall_div-text text-center d-flex justify-content-center my-3">
-                                        <div>
-                                            <h4 className="specs-section_videocall_title">
-                                                Métricas de performance
-                                            </h4>
-                                            <p className="specs-section_videocall_parraf">
-                                                Mide tiempos y rendimiento <br />
-                                                de tus equipos.
-
-
-                                            </p>
-                                        </div>
-
-                                    </Col>
-                                </Row>
-                            </Col>
-                        </SwiperSlide>
-                        <SwiperSlide >
-                            <Col sm={4}>
-                                <Row>
-                                    <Col xs={12} className="specs-section_videocall_div-img d-flex justify-content-center">
-                                        <Image src={spec3.src} width={200}
-                                            height={250} />
-
-                                    </Col>
-                                    <Col xs={12} className="specs-section_videocall_div-text text-center d-flex justify-content-center my-3">
-                                        <div>
-                                            <h4 className="specs-section_videocall_title">
-                                                Integración sencilla
-                                            </h4>
-                                            <p className="specs-section_videocall_parraf">
-                                                Una herramienta integrable por API o Iframe
-
-                                            </p>
-                                        </div>
-
-                                    </Col>
-                                </Row>
-                            </Col>
-                        </SwiperSlide>
-                        <SwiperSlide >
-                            <Col sm={4}>
-                                <Row>
-                                    <Col xs={12} className="specs-section_videocall_div-img d-flex justify-content-center">
-                                        <Image src={spec4.src} width={200}
-                                            height={250} />
-
-                                    </Col>
-                                    <Col xs={12} className="specs-section_videocall_div-text text-center d-flex justify-content-center my-3">
-                                        <div>
-                                            <h4 className="specs-section_videocall_title">
-                                                Los clientes pueden
-                                            </h4>
-                                            <p className="specs-section_videocall_parraf">
-                                                Conectarse de forma espontánea
-                                                o programada.
-
-
-                                            </p>
-                                        </div>
-
-                                    </Col>
-                                </Row>
-                            </Col>
-                        </SwiperSlide>
+                            )
+                        })}
                     </Swiper>
                 </Container>
             </Container>
