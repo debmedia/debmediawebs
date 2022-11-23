@@ -11,6 +11,10 @@ const nextConfig = {
         jQuery: "jquery",
         "window.jQuery": "jquery",
       }));
+      config.module.rules.push({
+        test: /\.md$/,
+        use: 'raw-loader',
+      });
     return config;
   }
 }
@@ -19,6 +23,7 @@ module.exports = {
   images: {
     domains: ['debmedia.com'],
   },
+  webpack: nextConfig.webpack,
   i18n,
   async redirects() {
     return [
