@@ -16,5 +16,22 @@
       "TITLE": "Se cambiarían de banco",
       "SUBTITLE": "si consiguen una experiencia<br /> más consistente."
     }
+  },
+  "SOLUTIONS": {
+    "TITLE": "<b> Entrega a tus clientes la</b> <br/> atención que se merecen",
+    "CAPTION_1": {
+      "TITLE": "Integra los canales  <br  /> de atención",
+      "SUBTITLE": " y ofrece una atención omnicanal"
+    },
+    "CAPTION_2": {
+      "TITLE": "Optimiza los procesos",
+      "SUBTITLE": "con datos y agiliza la atención"
+    },
+    "CAPTION_3": {
+      "TITLE": "Mejora su experiencia",
+      "SUBTITLE": "en cada punto de contacto."
+    },
+    "ORGANIZATIONS": "<b> Organizaciones líderes</b> confían <br />en las soluciones de<b> Debmedia</b> <br />",
+    "SOLUTIONS": "Soluciones de <b> Debmedia </b> para personalizar cada punto <br />de  <b>interacción entre bancos y clientes. </b>"
   }
 }
