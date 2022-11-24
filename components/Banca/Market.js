@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import inter from '../../asset/imgs/banca/inter.svg'
 import resp from '../../asset/imgs/banca/resp.svg'
 import banco from '../../asset/imgs/banca/banco.svg'
 import arrow from '../../asset/imgs/home/arrow.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
+    const { t } = useTranslation(['banking', 'common']);
     return (
         <>
             <Container fluid className="market-banca-section">
@@ -15,8 +16,9 @@ export default function Market() {
                     <Row>
                         <Col className="market-banca-section_maintitle">
                             <h3 className="text-center">
-                                Los clientes de la banca de hoy <br />
-                                <b>no se  <br className="d-block d-sm-none" /> conforman con cualquier cosa</b>
+                                <Trans t={t} i18nKey="MARKET.TITLE">
+                                    0 <br /><b> 0 <br className="d-block d-sm-none" /> 2</b>
+                                </Trans>
                             </h3>
                         </Col>
                     </Row>
@@ -28,11 +30,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-banca-section_title">
-                                Quieren interactuar
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-banca-section_parraf">
-                                cuándo, dónde y <br />
-                                cómo quieran.
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-banca-section_div">
@@ -42,10 +43,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-banca-section_title">
-                                Necesitan respuestas
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-banca-section_parraf">
-                                rápidas y efectivas.
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-banca-section_div">
@@ -55,10 +56,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-banca-section_title">
-                                Se cambiarían de banco
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-banca-section_parraf">
-                                si consiguen una experiencia<br /> más consistente.
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>

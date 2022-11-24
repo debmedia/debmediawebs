@@ -1,5 +1,20 @@
 {
   "HEADER":{
     "TITLE": "<0> Mejora la experiencia<1/> de los clientes</0> dentro y  <2/> fuera de las sucursales"
+  },
+  "MARKET": {
+    "TITLE": "Los clientes de la banca de hoy <1 /><2>no se<1/> conforman con cualquier cosa</2>",
+    "CAPTION_1": {
+      "TITLE": "Quieren interactuar",
+      "SUBTITLE": " cuándo, dónde y <br />cómo quieran."
+    },
+    "CAPTION_2": {
+      "TITLE": "Necesitan respuestas",
+      "SUBTITLE": "rápidas y efectivas."
+    },
+    "CAPTION_3": {
+      "TITLE": "Se cambiarían de banco",
+      "SUBTITLE": "si consiguen una experiencia<br /> más consistente."
+    }
   }
 }
