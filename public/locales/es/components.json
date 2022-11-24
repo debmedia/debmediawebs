@@ -68,5 +68,27 @@
   },
   "SERVICES":{
     "TITLE": "<b>Tecnología que mejora</b> <br />la experiencia de tus clientes"
+  },
+  "SPECS_INDUS":{
+    "TITLE":{
+      "BANKING": "<b> Compite con entidades digitalizadas </b> <br /> de la Industria de la Banca y Finanzas.",
+      "HEALTH":"<b> Compite con entidades digitalizadas </b> <br /> de la Industria de la salud",
+      "GOVERNMENT":"<b> Escala los procesos en </b> <br /> Instituciones del Gobierno y ONGs",
+      "RETAIL":"<b> Escala los procesos en</b> <br /> empresas retail y de servicios.",
+      "TELECOMMUNICATIONS":"<b> Mejora la experiencia</b> <br /> y escala los procesos.",
+      "UTILITIES":  "<b> Una solución moderna y escalable</b> <br /> para organizaciones del gobierno"
+    },
+    "CAPTION_1":{
+      "TITLE": "Integración <br /> Sencilla",
+      "SUBTITLE": "Integrable por API <br /> o iframe."
+    },
+    "CAPTION_2":{
+      "TITLE": "Métricas de <br /> performance",
+      "SUBTITLE": "Conoce el rendimiento de <br /> tus canales de atención."
+    },
+    "CAPTION_3":{
+      "TITLE": "Comunicación<br /> centralizada",
+      "SUBTITLE": "Envía el mensaje correcto <br /> a través de SMS, email, <br /> WhatsApp o pantallas."
+    }
   }
 }

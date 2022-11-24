@@ -1,58 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
-import api from '../asset/imgs/salud/api.svg'
-import metricas from '../asset/imgs/salud/metricas.svg'
-import comu from '../asset/imgs/salud/comu.svg'
-
+import Image from 'next/image';
+import api from '../asset/imgs/salud/api.svg';
+import metricas from '../asset/imgs/salud/metricas.svg';
+import comu from '../asset/imgs/salud/comu.svg';
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function SpecsIndus(props) {
+    const { t } = useTranslation(['components', 'common']);
 
     const TITLES = {
         banca: {
-            title: ` <h3 className="text-center">
-            <b> Compite con entidades digitalizadas </b>
-            <br />
-            de la Industria de la Banca y Finanzas.
-        </h3> `
+            title: "SPECS_INDUS.TITLE.BANKING"
         },
         salud: {
-            title: ` <h3 className="text-center">
-            <b>  Compite con entidades digitalizadas
-            </b>
-            <br />
-            de la Industria de la salud
-        </h3> `,
+            title: "SPECS_INDUS.TITLE.HEALTH",
         },
         gobierno: {
-            title: ` <h3 className="text-center">
-            <b>  Escala los procesos en 
-            </b>
-            <br />
-            Instituciones del Gobierno y ONGs
-
-        </h3> `,
+            title: "SPECS_INDUS.TITLE.GOVERNMENT",
         },
         retail: {
-            title: ` <h3 className="text-center">
-            <b> Escala los procesos en</b>
-            <br />
-            empresas retail y de servicios.
-        </h3> `,
+            title: "SPECS_INDUS.TITLE.RETAIL",
         },
         telcos: {
-            title: ` <h3 className="text-center">
-            <b>  Mejora la experiencia</b>
-            <br />
-            y escala los procesos.
-        </h3> `,
+            title: "SPECS_INDUS.TITLE.TELECOMMUNICATIONS",
         },
         utilites: {
-            title: ` <h3 className="text-center">
-            <b>  Una solución moderna y escalable</b>
-            <br />
-            para organizaciones del gobierno
-        </h3> `,
+            title: "SPECS_INDUS.TITLE.UTILITIES",
         }
     }
 
@@ -61,7 +35,10 @@ export default function SpecsIndus(props) {
             <Container fluid className="modern-banca-section">
                 <Container>
                     <Row>
-                        <Col className="modern-banca-section_maintitle text-center" dangerouslySetInnerHTML={{ __html: TITLES[props.indus].title }}>
+                        <Col className="modern-banca-section_maintitle text-center">
+                            <h3 className="text-center">
+                                <Trans t={t} i18nKey={TITLES[props.indus].title}/>
+                            </h3>
                         </Col>
                     </Row>
                     <Row className=" d-flex justify-content-center">
@@ -73,12 +50,10 @@ export default function SpecsIndus(props) {
                                 </Col>
                                 <Col xs="12" className="modern-banca-section_feature-text text-center">
                                     <h5>
-                                        Integración <br />
-                                        Sencilla
+                                    <Trans t={t} i18nKey="SPECS_INDUS.CAPTION_1.TITLE"/>
                                     </h5>
                                     <p>
-                                        Integrable por API <br />
-                                        o iframe.
+                                    <Trans t={t} i18nKey="SPECS_INDUS.CAPTION_1.SUBTITLE"/>
                                     </p>
                                 </Col>
                             </Row>
@@ -91,12 +66,10 @@ export default function SpecsIndus(props) {
                                 </Col>
                                 <Col xs="12" className="modern-banca-section_feature-text text-center">
                                     <h5>
-                                        Métricas de <br />
-                                        performance
+                                        <Trans t={t} i18nKey="SPECS_INDUS.CAPTION_2.TITLE"/>
                                     </h5>
                                     <p>
-                                        Conoce el rendimiento de <br />
-                                        tus canales de atención.
+                                    <Trans t={t} i18nKey="SPECS_INDUS.CAPTION_2.SUBTITLE"/>
                                     </p>
                                 </Col>
                             </Row>
@@ -109,18 +82,14 @@ export default function SpecsIndus(props) {
                                 </Col>
                                 <Col xs="12" className="modern-banca-section_feature-text text-center">
                                     <h5>
-                                        Comunicación<br />
-                                        centralizada
+                                    <Trans t={t} i18nKey="SPECS_INDUS.CAPTION_3.TITLE"/>
                                     </h5>
                                     <p>
-                                        Envía el mensaje correcto <br />
-                                        a través de SMS, email, <br />
-                                        WhatsApp o pantallas.
+                                    <Trans t={t} i18nKey="SPECS_INDUS.CAPTION_3.SUBTITLE"/>
                                     </p>
                                 </Col>
                             </Row>
                         </Col>
-
                     </Row>
                 </Container>
             </Container>
