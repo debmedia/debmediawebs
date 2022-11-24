@@ -127,7 +127,7 @@ export default function Brands(props) {
                                                     </h1>
                                                     <Link href={item.url} passHref className="posts-slider_content-post_link">
                                                         <a target="_blank" rel="noopener noreferrer">
-                                                            <Trans t={t} i18nKey="common:LEARN_MORE"/>
+                                                            <Trans t={t} i18nKey="common:SEE_MORE"/>
                                                         </a>
                                                     </Link>
                                                 </div>

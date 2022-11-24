@@ -82,7 +82,7 @@ export default function Brands() {
                                         <h4 className="services-section_service-title">{item.name}</h4>
                                         <Link href={item.url} passHref>
                                             <a rel="noopener noreferrer" className="services-section_service-link">
-                                                <Trans t={t} i18nKey="common:LEARN_MORE"/>
+                                                <Trans t={t} i18nKey="common:SEE_MORE"/>
                                             </a>
                                         </Link>
                                     </div>

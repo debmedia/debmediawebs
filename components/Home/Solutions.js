@@ -58,7 +58,7 @@ export default function Solutions() {
                                                             </h2>
                                                             <Link href={item.url}>
                                                                 <button className="buttonSolutions">
-                                                                    {t("common:LEARN_MORE")}
+                                                                    {t("common:SEE_MORE")}
                                                                 </button>
                                                             </Link>
                                                         </Col>
@@ -87,7 +87,7 @@ export default function Solutions() {
                                                 </h2>
                                                 <Link href={item.url}>
                                                     <button className="buttonSolutions">
-                                                    {t("common:LEARN_MORE")}
+                                                    {t("common:SEE_MORE")}
                                                     </button>
                                                 </Link>
                                             </Col>
