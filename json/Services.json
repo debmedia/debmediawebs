@@ -1,74 +1,76 @@
-[
-  {
-    "name": "Atención Virtual",
-    "url": "/atencion-virtual",
-    "image": {
-      "url": "videocall.png",
-      "width": 85,
-      "height": 120
+{
+  "es": [
+    {
+      "name": "Atención Virtual",
+      "url": "/atencion-virtual",
+      "image": {
+        "url": "videocall.png",
+        "width": 85,
+        "height": 120
+      }
+    },
+    {
+      "name": "Chatbot de WhatsApp",
+      "url": "/preatendedor",
+      "image": {
+        "url": "wapp.png",
+        "width": 90,
+        "height": 120
+      }
+    },
+    {
+      "name": "Fila Virtual",
+      "url": "/fila-virtual",
+      "image": {
+        "url": "mobile.png",
+        "width": 65,
+        "height": 120
+      }
+    },
+    {
+      "name": "Citas",
+      "url": "/citasonline",
+      "image": {
+        "url": "citas.png",
+        "width": 125,
+        "height": 120
+      }
+    },
+    {
+      "name": "Gestión de filas",
+      "url": "/debq",
+      "image": {
+        "url": "debq.png",
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "Cartelería digital",
+      "url": "/debsign",
+      "image": {
+        "url": "debsign.png",
+        "width": 145,
+        "height": 100
+      }
+    },
+    {
+      "name": "Pre atendedor",
+      "url": "/preatendedor",
+      "image": {
+        "url": "pre.png",
+        "width": 67,
+        "height": 120
+      }
+    },
+    {
+      "name": "Encuestas",
+      "url": "/encuestas",
+      "image": {
+        "url": "encuestas.png",
+        "width": 140,
+        "height": 120
+      }
     }
-  },
-  {
-    "name": "Chatbot de WhatsApp",
-    "url": "/preatendedor",
-    "image": {
-      "url": "wapp.png",
-      "width": 90,
-      "height": 120
-    }
-  },
-  {
-    "name": "Fila Virtual",
-    "url": "/fila-virtual",
-    "image": {
-      "url": "mobile.png",
-      "width": 65,
-      "height": 120
-    }
-  },
-  {
-    "name": "Citas",
-    "url": "/citasonline",
-    "image": {
-      "url": "citas.png",
-      "width": 125,
-      "height": 120
-    }
-  },
-  {
-    "name": "Gestión de filas",
-    "url": "/debq",
-    "image": {
-      "url": "debq.png",
-      "width": 120,
-      "height": 120
-    }
-  },
-  {
-    "name": "Cartelería digital",
-    "url": "/debsign",
-    "image": {
-      "url": "debsign.png",
-      "width": 145,
-      "height": 100
-    }
-  },
-  {
-    "name": "Pre atendedor",
-    "url": "/preatendedor",
-    "image": {
-      "url": "pre.png",
-      "width": 67,
-      "height": 120
-    }
-  },
-  {
-    "name": "Encuestas",
-    "url": "/encuestas",
-    "image": {
-      "url": "encuestas.png",
-      "width": 140,
-      "height": 120
-    }
-  }
-]
+  ]
+}

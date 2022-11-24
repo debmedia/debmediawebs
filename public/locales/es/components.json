@@ -65,5 +65,8 @@
     "INDUSTRIES": "$t(common:INDUSTRIES)",
     "COMPANY": "$t(common:COMPANY)",
     "ENDORSED_BY": "$t(common:ENDORSED_BY)"
+  },
+  "SERVICES":{
+    "TITLE": "<b>Tecnología que mejora</b> <br />la experiencia de tus clientes"
   }
 }
