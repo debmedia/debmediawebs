@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import desco from '../../asset/imgs/citas/desco.svg'
 import espera from '../../asset/imgs/citas/espera.svg'
 import falta from '../../asset/imgs/citas/falta.svg'
 import arrow from '../../asset/imgs/home/arrow.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
+    const { t } = useTranslation(['citas', 'common']);
     return (
         <>
             <Container fluid className="market-citas-section">
@@ -15,8 +16,7 @@ export default function Market() {
                     <Row>
                         <Col className="market-citas-section_maintitle text-center">
                             <h3>
-                                Muchas organizaciones gestionan sus <br />
-                                procesos de atención de forma desordenada.
+                                <Trans t={t} i18nKey="MARKET.TITLE"/>
                             </h3>
                             {/* <p>Que no saben cómo personalizar la atención
                             </p> */}
@@ -26,40 +26,40 @@ export default function Market() {
                         <Col sm={4} xs={4} className="market-citas-section_div">
                             <div className="imageXs">
                                   <Image src={desco.src} width={70}
-                                height={135} className={'img-fluid'} />
+                                height={135} className={'img-fluid'} alt=""/>
                             </div>
                           
                             <h4 className="market-citas-section_title">
-                                Desconocimiento
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-citas-section_parraf">
-                            de los clientes y las necesidades que tienen.
+                            <Trans t={t} i18nKey="MARKET.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-citas-section_div">
                             <div className="imageXs">
                                 <Image src={falta.src} width={70}
-                                height={135} className={'img-fluid'} />
+                                height={135} className={'img-fluid'} alt=""/>
                             </div>
                             
                             <h4 className="market-citas-section_title">
-                                Falta de información
+                            <Trans t={t} i18nKey="MARKET.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="market-citas-section_parraf">
-                                para asignar la cantidad correcta de ejecutivos.
+                            <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-citas-section_div">
                         <div className="imageXs">
                                   <Image src={espera.src} width={70}
-                                height={135} className={'img-fluid'} />
+                                height={135} className={'img-fluid'} alt=""/>
                                 </div>
                           
                             <h4 className="market-citas-section_title">
-                                Largas esperas
+                            <Trans t={t} i18nKey="MARKET.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="market-citas-section_parraf">
-                                y mala experiencia para los clientes.
+                            <Trans t={t} i18nKey="MARKET.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>
