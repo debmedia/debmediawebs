@@ -46,5 +46,21 @@
       "TITLE": " Un sistema integrado a",
       "SUBTITLE": "Outlook y Google Calendar."
     }
+  },
+  "STEPS":{
+    "TITLE": "<b>Organiza el flujo de tus sucursales</b>",
+    "SUBTITLE": "<b>Permite a los clientes agendar</b> <br />sus citas online desde la web",
+    "CAPTION_1": {
+      "TITLE": "Anticípate y conoce <br />qué clientes te visitarán.",
+      "SUBTITLE": " Ofrece una experiencia personalizada y eleva la satisfacción."
+    },
+    "CAPTION_2": {
+      "TITLE": " Conoce cuántos<br />recursos necesitas",
+      "SUBTITLE": "Mejora el proceso de los clientes <br /> que llegan a tus sucursales."
+    },
+    "CAPTION_3": {
+      "TITLE": "Evita esperas  <br />innecesarias",
+      "SUBTITLE": "Acorta el tiempo que tus clientes pasan dentro de las sedes."
+    }
   }
 }

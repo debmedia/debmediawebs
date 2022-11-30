@@ -1,29 +1,60 @@
-[
-  {
-    "text": " El cliente selecciona el trámite, la sucursal, fecha y hora para obtener una cita.",
-    "key":"1",
-    "image": {
-      "url": "step1.png",
-      "width": 780,
-      "height": 600
+{
+  "es": [
+    {
+      "text": " El cliente selecciona el trámite, la sucursal, fecha y hora para obtener una cita.",
+      "key":"1",
+      "image": {
+        "url": "step1.png",
+        "width": 780,
+        "height": 600
+      }
+    },
+    {
+      "text": "Hace el check-in e ingresa al flujo de atención. ",
+      "key":"2",
+      "image": {
+        "url": "step2.png",
+        "width": 620,
+        "height": 550
+      }
+    },
+    {
+      "text": " El cliente es atendido por un ejecutivo.",
+      "key":"3",
+      "image": {
+        "url": "test.png",
+        "width": 400,
+        "height": 500
+      }
     }
-  },
-  {
-    "text": "Hace el check-in e ingresa al flujo de atención. ",
-    "key":"2",
-    "image": {
-      "url": "step2.png",
-      "width": 620,
-      "height": 550
+  ],
+  "pt": [
+    {
+      "text": "Portugués: El cliente selecciona el trámite, la sucursal, fecha y hora para obtener una cita.",
+      "key":"1",
+      "image": {
+        "url": "step1.png",
+        "width": 780,
+        "height": 600
+      }
+    },
+    {
+      "text": "Portugués: Hace el check-in e ingresa al flujo de atención. ",
+      "key":"2",
+      "image": {
+        "url": "step2.png",
+        "width": 620,
+        "height": 550
+      }
+    },
+    {
+      "text": "Portugués: el cliente es atendido por un ejecutivo.",
+      "key":"3",
+      "image": {
+        "url": "test.png",
+        "width": 400,
+        "height": 500
+      }
     }
-  },
-  {
-    "text": " El cliente es atendido por un ejecutivo.",
-    "key":"3",
-    "image": {
-      "url": "test.png",
-      "width": 400,
-      "height": 500
-    }
-  }
-]
+  ]
+}
