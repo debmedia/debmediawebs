@@ -4,9 +4,11 @@ import Image from 'next/image'
 import mypic from '../asset/imgs/logo.svg'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useTranslation } from 'next-i18next';
 
 
 export default function Home() {
+    const { t } = useTranslation(['components', 'common']);
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -35,77 +37,77 @@ export default function Home() {
                     <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                         <Nav activeKey={router.pathname} className="ml-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <NavDropdown title="Soluciones" id="basic-nav-dropdown">
+                            <Nav.Link href="/">
+                                {t("NAVBAR.HOME")}
+                            </Nav.Link>
+                            <NavDropdown title={t("NAVBAR.SOLUTIONS.TITLE")} id="basic-nav-dropdown">
                                 <NavDropdown.Item  onClick={() => setExpanded(false)}>
                                     <Link className="fulllink" href="/atencion-virtual">
-                                        Atención virtual
+                                        {t("NAVBAR.SOLUTIONS.VIRTUAL_ATTENTION")}
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item onClick={() => setExpanded(false)}>
                                     <Link href="/preatendedor">
-                                        Chatbot de WhatsApp
+                                        {t("NAVBAR.SOLUTIONS.WHATSAPP_CHATBOT")}
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item onClick={() => setExpanded(false)}>
                                     <Link href="/fila-virtual">
-                                        Fila Virtual
+                                        {t("NAVBAR.SOLUTIONS.VIRTUAL_QUEUE")}
                                     </Link>
-
                                 </NavDropdown.Item>
-
                                 <NavDropdown.Item onClick={() => setExpanded(false)}>
                                     <Link href="/citasonline">
-                                        Citas
+                                        {t("NAVBAR.SOLUTIONS.APPOINTMENTS")}
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item onClick={() => setExpanded(false)}>
                                     <Link href="/debq">
-                                        Gestion de filas
+                                        {t("NAVBAR.SOLUTIONS.QUEUE_MANAGEMENT")}
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item onClick={() => setExpanded(false)}>
                                     <Link href="/debsign">
-                                        Cartelería digital
-
+                                        {t("NAVBAR.SOLUTIONS.DIGITAL_SIGNAGE")}
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item onClick={() => setExpanded(false)}>
                                     <Link href="/preatendedor">
-                                        Pre atendedor
+                                        {t("NAVBAR.SOLUTIONS.PRE_SERVICE")}
                                     </Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item onClick={() => setExpanded(false)}>
                                     <Link href="/encuestas">
-                                        Encuestas
+                                        {t("NAVBAR.SOLUTIONS.SURVEYS")}
                                     </Link>
-                                </NavDropdown.Item>
-
-                            </NavDropdown>
-                            <Nav.Link href="/clientes">Clientes</Nav.Link>
-                            <Nav.Link href="/nosotros">Nosotros</Nav.Link>
-                            <Nav.Link href="/partners">Partners</Nav.Link>
-                            <NavDropdown title="Recursos" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="https://debmedia.com/blog/">
-                                    <Link href="https://debmedia.com/blog/">
-                                        Blog
-                                    </Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="https://blog.debmedia.com/category/casos-de-exito/" onClick={() => setExpanded(false)}>
-                                    <Link href="https://blog.debmedia.com/category/casos-de-exito/">
-                                        Casos de éxito
-                                    </Link>
-
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="https://blog.debmedia.com/category/casos-de-exito/" onClick={() => setExpanded(false)}>
-                                    <Link href="https://blog.debmedia.com/category/ebooks/">
-                                        Recursos descargables
-                                    </Link>
-
                                 </NavDropdown.Item>
                             </NavDropdown>
+                            <Nav.Link href="/clientes">{t("NAVBAR.CLIENTS")}</Nav.Link>
+                            <Nav.Link href="/nosotros">{t("NAVBAR.US")}</Nav.Link>
+                            <Nav.Link href="/partners">{t("NAVBAR.PARTNERS")}</Nav.Link>
+                            {router.locale === "es" && 
+                                <NavDropdown title={t("NAVBAR.RESOURCES.TITLE")} id="basic-nav-dropdown">
+                                    <NavDropdown.Item href="https://debmedia.com/blog/">
+                                        <Link href="https://debmedia.com/blog/">
+                                            {t("NAVBAR.RESOURCES.BLOG")}
+                                        </Link>
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item href="https://blog.debmedia.com/category/casos-de-exito/" onClick={() => setExpanded(false)}>
+                                        <Link href="https://blog.debmedia.com/category/casos-de-exito/">
+                                            {t("NAVBAR.RESOURCES.SUCCESS_STORIES")}
+                                        </Link>
+
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item href="https://blog.debmedia.com/category/casos-de-exito/" onClick={() => setExpanded(false)}>
+                                        <Link href="https://blog.debmedia.com/category/ebooks/">
+                                            {t("NAVBAR.RESOURCES.DOWNLOADABLE_RESOURCES")}
+                                        </Link>
+
+                                    </NavDropdown.Item>
+                                </NavDropdown>
+                            }
                             <Link href="/contacto">
-                                <Nav.Link href="#link" className="demo">Solicita una demo</Nav.Link>
+                                <Nav.Link href="#link" className="demo">{t("common:REQUEST_A_DEMO")}</Nav.Link>
                             </Link>
                             <Link href={router.pathname} locale="es" scroll={false} >
                                 <div>

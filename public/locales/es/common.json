@@ -32,5 +32,8 @@
   "REQUEST": "Solicitud",
   "SELECTION": "Selección",
   "ATTENTION": "Atención",
-  "QUALIFICATION": "Calificación"
+  "QUALIFICATION": "Calificación",
+  "RESOURCES": "Recursos",
+  "HOME": "Home",
+  "APPOINTMENTS": "Citas"
 }

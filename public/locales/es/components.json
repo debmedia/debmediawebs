@@ -119,5 +119,34 @@
         "SUBTITLE": "Asociaciones, servicios públicos."
       }
     }
+  },
+  "CONTACT_PARTNERS": {
+    "TITLE": "¡Contáctate con nuestro equipo y <br />mejora la experiencia de tus clientes!"
+  },
+  "NAVBAR": {
+    "HOME": "$t(common:HOME)",
+    "SOLUTIONS": {
+      "TITLE": "$t(common:SOLUTIONS)",
+      "VIRTUAL_ATTENTION": "$t(VIRTUAL_ATTENTION)",
+      "WHATSAPP_CHATBOT": "$t(common:WHATSAPP_CHATBOT)",
+      "VIRTUAL_QUEUE": "$t(common:VIRTUAL_QUEUE)",
+      "APPOINTMENTS": "$t(common:APPOINTMENTS)",
+      "ONLINE_APPOINTMENTS": "$t(common:ONLINE_APPOINTMENTS)",
+      "QUEUE_MANAGEMENT": "$t(common:QUEUE_MANAGEMENT)",
+      "DIGITAL_SIGNAGE": "$t(common:DIGITAL_SIGNAGE)",
+      "PRE_SERVICE": "$t(common:PRE_SERVICE)",
+      "SURVEYS": "$t(common:SURVEYS)"
+    },
+    "CLIENTS": "$t(common:CLIENTS)",
+    "US":"$t(common:US)",
+    "PARTNERS":"$t(common:PARTNERS)",
+    "RESOURCES":{
+      "TITLE": "$t(common:RESOURCES)",
+      "BLOG":"$t(common:BLOG)",
+      "SUCCESS_STORIES": "Casos de éxito",
+      "DOWNLOADABLE_RESOURCES": "Recursos descargables"
+    }
+
+
   }
 }
