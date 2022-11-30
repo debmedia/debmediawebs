@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import mypic from '../../asset/imgs/debq/main.png'
@@ -6,12 +6,11 @@ import mypicxs from '../../asset/imgs/debq/main-debq.png'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import mainNoti from '../../asset/imgs/debq/main-noti.png'
-import { useMediaQuery } from 'react-responsive'
 import Link from 'next/link'
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Header() {
-    const isMobile = useMediaQuery({ query: '(max-width:899px)' })
-
+    const { t } = useTranslation(['debq', 'common']);
     return (
         <>
             <header>
@@ -34,16 +33,15 @@ export default function Header() {
                         <Row>
                             <Col className="mainTitles">
 
-                                <h1 className="debq-home_title">
-                                Haz más eficiente y  <br  className="d-none d-sm-block" />  ordenado el flujo de <br  className="d-none d-sm-block" /> 
-                                atención en <br  className="d-none d-sm-block" /> tus sucursales
+                                <h1 className="debq-home_title no-br-sm">
+                                    <Trans t={t} i18nKey="HEADER.TITLE"/>
                                 </h1>
                                 <p className="debq-home_parraf">
-                                    Sistema de <b>gestión de colas</b>
+                                    <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
                                 </p>
                                 <Link href="/contacto">
                                 <button className="debq-home_demobutton">
-                                    Solicita una demo
+                                    <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                 </button>
                                 </Link>
                             </Col>
@@ -54,8 +52,9 @@ export default function Header() {
             <Container className="d-flex justify-content-center debq-home_text">
                 <Row>
                     <Col>
-                        <h3><b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block"/>
-                            experiencia de sus clientes con <b> Debmedia</b></h3>
+                        <h3 className="no-br-sm">
+                            <Trans t={t} i18nKey="HEADER.CAPTION"/>
+                        </h3>
                     </Col>
                 </Row>
             </Container>
