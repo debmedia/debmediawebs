@@ -90,5 +90,34 @@
       "TITLE": "Comunicación<br /> centralizada",
       "SUBTITLE": "Envía el mensaje correcto <br /> a través de SMS, email, <br /> WhatsApp o pantallas."
     }
+  },
+  "INDUSTRIES": {
+    "TITLE": "Organizaciones de múltiples industrias <br /><b>gestionan la experiencia del cliente con Debmedia.</b>",
+    "CARDS": {
+      "BANKING":{
+        "TITLE": "Banca y Seguros",
+        "SUBTITLE": "Instituciones financieras, aseguradoras, cooperativas."
+      },
+      "HEALTH": {
+        "TITLE": "Salud",
+        "SUBTITLE": "Clínicas, hospitales, laboratorios, farmacias, prepagadas."
+      },
+      "GOVERNMENT":{
+        "TITLE": "Gobierno",
+        "SUBTITLE": "Instituciones públicas, municipios, ONGs"
+      },
+      "RETAIL": {
+        "TITLE": "Retail y servicios",
+        "SUBTITLE": "Tiendas retail, cajas de compensación, logística."
+      },
+      "TELECOMMUNICATIONS": {
+        "TITLE": "Telecomunicaciones",
+        "SUBTITLE": "Telefonía móvil, operadores de cable."
+      },
+      "UTILITIES": {
+        "TITLE": "Utilities",
+        "SUBTITLE": "Asociaciones, servicios públicos."
+      }
+    }
   }
 }
