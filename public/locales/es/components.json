@@ -146,7 +146,9 @@
       "SUCCESS_STORIES": "Casos de éxito",
       "DOWNLOADABLE_RESOURCES": "Recursos descargables"
     }
-
-
+  },
+  "THANKYOU": {
+    "MESSAGE": "Mientras tanto, <br /><b> te invitamos</b> <br /> a explorar nuestra <br /> sección de recursos. <br /><b>¡Disfrútalos!</b>",
+    "BUTTON": "Ver recursos"
   }
 }
