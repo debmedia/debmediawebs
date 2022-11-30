@@ -127,7 +127,7 @@
     "HOME": "$t(common:HOME)",
     "SOLUTIONS": {
       "TITLE": "$t(common:SOLUTIONS)",
-      "VIRTUAL_ATTENTION": "$t(VIRTUAL_ATTENTION)",
+      "VIRTUAL_ATTENTION": "$t(common:VIRTUAL_ATTENTION)",
       "WHATSAPP_CHATBOT": "$t(common:WHATSAPP_CHATBOT)",
       "VIRTUAL_QUEUE": "$t(common:VIRTUAL_QUEUE)",
       "APPOINTMENTS": "$t(common:APPOINTMENTS)",
