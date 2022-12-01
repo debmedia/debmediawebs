@@ -19,5 +19,27 @@
       "TITLE": "Falta de métricas",
       "SUBTITLE": "Para decidir mejor."
     }
+  },
+  "MODERN": {
+    "CAPTION_1": {
+      "TITLE": "Algoritmos de <br /> llamado y priorización",
+      "SUBTITLE": " Por llegada, prioridad, <br /> trámite, cliente o <br /> combinación."
+    },
+    "CAPTION_2": {
+      "TITLE": "Inteligencia Artificial <br />y automatización",
+      "SUBTITLE": "Para establecer modelos <br />y de atención dinámicos."
+    },
+    "CAPTION_3": {
+      "TITLE": "Estadísticas y<br /> monitoreo en tiempo real",
+      "SUBTITLE": "Sobre usuarios, trámites, <br /> clientes, entre otros."
+    },
+    "CAPTION_4": {
+      "TITLE": "Integraciones con <br /> otros sistemas",
+      "SUBTITLE": "Api documentada o integraciones <br /> de sistemas preexistentes."
+    },
+    "CAPTION_5": {
+      "TITLE": "Integración con <br /> herramientas de BI",
+      "SUBTITLE": "Para visualizar datos y tomar mejores decisiones."
+    }
   }
 }

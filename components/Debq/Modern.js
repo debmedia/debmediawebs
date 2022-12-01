@@ -7,6 +7,7 @@ import spec3 from "../../asset/imgs/debq/spec3.svg";
 import spec4 from "../../asset/imgs/debq/spec4.svg";
 import spec5 from "../../asset/imgs/debq/spec5.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation, Trans } from "next-i18next";
 
 // Import Swiper styles
 import "swiper/css";
@@ -21,6 +22,7 @@ import SwiperCore, { Autoplay, FreeMode, Pagination } from "swiper";
 SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
 export default function Modern() {
+    const { t } = useTranslation(["debq", "common"]);
     return (
         <>
             <Container fluid className="specs-section">
@@ -42,10 +44,16 @@ export default function Modern() {
                                     className="specs-section_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_title">
-                                            Algoritmos de <br /> llamado y priorización
+                                            <Trans
+                                                t={t}
+                                                i18nKey="MODERN.CAPTION_1.TITLE"
+                                            />
                                         </h4>
                                         <p className="specs-section_parraf">
-                                            Por llegada, prioridad, <br /> trámite, cliente o <br /> combinación.
+                                            <Trans
+                                                t={t}
+                                                i18nKey="MODERN.CAPTION_1.SUBTITLE"
+                                            />
                                         </p>
                                     </div>
                                 </Col>
@@ -67,10 +75,16 @@ export default function Modern() {
                                     className="specs-section_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_title">
-                                            Inteligencia Artificial <br />y automatización
+                                            <Trans
+                                                t={t}
+                                                i18nKey="MODERN.CAPTION_2.TITLE"
+                                            />
                                         </h4>
                                         <p className="specs-section_parraf">
-                                            Para establecer modelos <br />y de atención dinámicos.
+                                            <Trans
+                                                t={t}
+                                                i18nKey="MODERN.CAPTION_3.SUBTITLE"
+                                            />
                                         </p>
                                     </div>
                                 </Col>
@@ -92,10 +106,16 @@ export default function Modern() {
                                     className="specs-section_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_title">
-                                            Estadísticas y<br /> monitoreo en tiempo real
+                                            <Trans
+                                                t={t}
+                                                i18nKey="MODERN.CAPTION_3.TITLE"
+                                            />
                                         </h4>
                                         <p className="specs-section_parraf">
-                                            Sobre usuarios, trámites, <br /> clientes, entre otros.
+                                            <Trans
+                                                t={t}
+                                                i18nKey="MODERN.CAPTION_3.SUBTITLE"
+                                            />
                                         </p>
                                     </div>
                                 </Col>
@@ -117,10 +137,16 @@ export default function Modern() {
                                     className="specs-section_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_title">
-                                            Integraciones con <br /> otros sistemas
+                                            <Trans
+                                                t={t}
+                                                i18nKey="MODERN.CAPTION_4.TITLE"
+                                            />
                                         </h4>
                                         <p className="specs-section_parraf">
-                                            Api documentada o integraciones <br /> de sistemas preexistentes.
+                                            <Trans
+                                                t={t}
+                                                i18nKey="MODERN.CAPTION_4.SUBTITLE"
+                                            />
                                         </p>
                                     </div>
                                 </Col>
@@ -142,10 +168,16 @@ export default function Modern() {
                                     className="specs-section_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_title">
-                                            Integración con <br /> herramientas de BI
+                                            <Trans
+                                                t={t}
+                                                i18nKey="MODERN.CAPTION_5.TITLE"
+                                            />
                                         </h4>
                                         <p className="specs-section_parraf">
-                                            Para visualizar datos y tomar mejores decisiones.
+                                            <Trans
+                                                t={t}
+                                                i18nKey="MODERN.CAPTION_5.SUBTITLE"
+                                            />
                                         </p>
                                     </div>
                                 </Col>
@@ -198,10 +230,16 @@ export default function Modern() {
                                                 className="specs-section_div-text text-center d-flex justify-content-center my-3">
                                                 <div>
                                                     <h4 className="specs-section_title">
-                                                        Algoritmos de <br /> llamado y priorización
+                                                        <Trans
+                                                            t={t}
+                                                            i18nKey="MODERN.CAPTION_1.TITLE"
+                                                        />
                                                     </h4>
                                                     <p className="specs-section_parraf">
-                                                        Por llegada, prioridad, <br /> trámite, cliente o <br /> combinación.
+                                                        <Trans
+                                                            t={t}
+                                                            i18nKey="MODERN.CAPTION_1.SUBTITLE"
+                                                        />
                                                     </p>
                                                 </div>
                                             </Col>
@@ -227,10 +265,16 @@ export default function Modern() {
                                         className="specs-section_div-text text-center d-flex justify-content-center my-3">
                                         <div>
                                             <h4 className="specs-section_title">
-                                                Inteligencia Artificial <br /> y automatización
+                                                <Trans
+                                                    t={t}
+                                                    i18nKey="MODERN.CAPTION_2.TITLE"
+                                                />
                                             </h4>
                                             <p className="specs-section_parraf">
-                                                Para establecer modelos <br /> y de atención dinámicos.
+                                                <Trans
+                                                    t={t}
+                                                    i18nKey="MODERN.CAPTION_2.SUBTITLE"
+                                                />
                                             </p>
                                         </div>
                                     </Col>
@@ -254,10 +298,16 @@ export default function Modern() {
                                         className="specs-section_div-text text-center d-flex justify-content-center my-3">
                                         <div>
                                             <h4 className="specs-section_title">
-                                                Estadísticas y<br /> monitoreo en tiempo real
+                                                <Trans
+                                                    t={t}
+                                                    i18nKey="MODERN.CAPTION_3.TITLE"
+                                                />
                                             </h4>
                                             <p className="specs-section_parraf">
-                                                Sobre usuarios, trámites, <br /> clientes, entre otros.
+                                                <Trans
+                                                    t={t}
+                                                    i18nKey="MODERN.CAPTION_3.SUBTITLE"
+                                                />
                                             </p>
                                         </div>
                                     </Col>
@@ -281,10 +331,16 @@ export default function Modern() {
                                         className="specs-section_div-text text-center d-flex justify-content-center my-3">
                                         <div>
                                             <h4 className="specs-section_title">
-                                                Integraciones con <br /> otros sistemas
+                                                <Trans
+                                                    t={t}
+                                                    i18nKey="MODERN.CAPTION_4.TITLE"
+                                                />
                                             </h4>
                                             <p className="specs-section_parraf">
-                                                Api documentada o integraciones <br /> de sistemas preexistentes.
+                                                <Trans
+                                                    t={t}
+                                                    i18nKey="MODERN.CAPTION_4.SUBTITLE"
+                                                />
                                             </p>
                                         </div>
                                     </Col>
@@ -308,10 +364,16 @@ export default function Modern() {
                                         className="specs-section_div-text text-center d-flex justify-content-center my-3">
                                         <div>
                                             <h4 className="specs-section_title">
-                                                Integración con <br /> herramientas de BI
+                                                <Trans
+                                                    t={t}
+                                                    i18nKey="MODERN.CAPTION_5.TITLE"
+                                                />
                                             </h4>
                                             <p className="specs-section_parraf">
-                                                Para visualizar datos y tomar mejores decisiones.
+                                                <Trans
+                                                    t={t}
+                                                    i18nKey="MODERN.CAPTION_5.SUBTITLE"
+                                                />
                                             </p>
                                         </div>
                                     </Col>
