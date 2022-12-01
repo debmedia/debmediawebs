@@ -41,5 +41,21 @@
       "TITLE": "Integración con <br /> herramientas de BI",
       "SUBTITLE": "Para visualizar datos y tomar mejores decisiones."
     }
+  },
+  "STEPS": {
+    "TITLE": "<b>Automatiza y personaliza el modelo de atención</b>",
+    "SUBTITLE":"<b>Define el Customer Journey y </b> <br /> mejora la atención.",
+    "CAPTION_1": {
+      "TITLE": "Haz más eficientes <br /> tus recursos.",
+      "SUBTITLE": "Para ofrecer un servicio ágil."
+    },
+    "CAPTION_2": {
+      "TITLE": "Ofrece una experiencia simple.",
+      "SUBTITLE": "Sin roces y con menos espera."
+    },
+    "CAPTION_3": {
+      "TITLE": "Mide indicadores clave.",
+      "SUBTITLE": "Para gestionar mejor a tus equipos."
+    }
   }
 }

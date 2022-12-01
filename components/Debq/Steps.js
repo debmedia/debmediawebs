@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { Row, Container, Col, Tab, Nav, Accordion } from "react-bootstrap";
-import Image from 'next/image'
-import check_blue from '../../asset/imgs/home/check_blue.svg'
-import check_white from '../../asset/imgs/home/check-m.svg'
-import Data from '../../json/setps-debq.json';
-import shape1 from '../../asset/imgs/debq/bk_steps.jpg'
-import Link from 'next/link'
+import Image from "next/image";
+import check_blue from "../../asset/imgs/home/check_blue.svg";
+import check_white from "../../asset/imgs/home/check-m.svg";
+import Data from "../../json/setps-debq.json";
+import Link from "next/link";
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/router";
 
 export default function Solutions() {
-
+    const { t } = useTranslation(['debq', 'common']);
     const [dataJson, setData] = useState([]);
-
+    const { locale } = useRouter();
     useEffect(() => {
-        setData(Data);
-    }, []);
-
+        setData(Data[locale] || Data["es"]);
+    }, [locale]);
 
     return (
         <>
@@ -22,7 +22,7 @@ export default function Solutions() {
                 <Row>
                     <Col className="setps-section_maintitle">
                         <h3 className="text-center">
-                            <b>Automatiza y personaliza el modelo de atención</b>
+                            <Trans t={t} i18nKey="STEPS.TITLE"/>
                         </h3>
                     </Col>
                 </Row>
@@ -32,53 +32,75 @@ export default function Solutions() {
                     <Row>
                         <Col sm={4} xs={4} className="setps-section_div">
                             <div className="setps-section_div-img  d-none d-sm-block">
-                                <Image src={check_blue.src} width={120}
-                                    height={100} className={'img-fluid'} />
+                                <Image
+                                    src={check_blue.src}
+                                    width={120}
+                                    height={100}
+                                    className={"img-fluid"}
+                                />
                             </div>
                             <div className="setps-section_div-img  d-block d-sm-none">
-                                <Image src={check_white.src} width={60}
-                                    height={60} className={'img-fluid'} />
+                                <Image
+                                    src={check_white.src}
+                                    width={60}
+                                    height={60}
+                                    className={"img-fluid"}
+                                />
                             </div>
 
-                            <h4 className="setps-section_title">
-                                Haz más eficientes
-                                <br className="d-none d-sm-block" /> tus recursos.
+                            <h4 className="setps-section_title no-br-sm">
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="setps-section_parraf">
-                                Para ofrecer un servicio ágil.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-section_div">
                             <div className="setps-section_div-img  d-none d-sm-block">
-                                <Image src={check_blue.src} width={120}
-                                    height={100} className={'img-fluid'} />
+                                <Image
+                                    src={check_blue.src}
+                                    width={120}
+                                    height={100}
+                                    className={"img-fluid"}
+                                />
                             </div>
                             <div className="setps-section_div-img  d-block d-sm-none">
-                                <Image src={check_white.src} width={60}
-                                    height={60} className={'img-fluid'} />
+                                <Image
+                                    src={check_white.src}
+                                    width={60}
+                                    height={60}
+                                    className={"img-fluid"}
+                                />
                             </div>
                             <h4 className="setps-section_title">
-                                Ofrece una experiencia simple.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="setps-section_parraf">
-                                Sin roces y con menos espera.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-section_div">
                             <div className="setps-section_div-img  d-none d-sm-block">
-                                <Image src={check_blue.src} width={120}
-                                    height={100} className={'img-fluid'} />
+                                <Image
+                                    src={check_blue.src}
+                                    width={120}
+                                    height={100}
+                                    className={"img-fluid"}
+                                />
                             </div>
                             <div className="setps-section_div-img  d-block d-sm-none">
-                                <Image src={check_white.src} width={60}
-                                    height={60} className={'img-fluid'} />
+                                <Image
+                                    src={check_white.src}
+                                    width={60}
+                                    height={60}
+                                    className={"img-fluid"}
+                                />
                             </div>
                             <h4 className="setps-section_title">
-                                Mide indicadores clave.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="setps-section_parraf">
-                                Para gestionar mejor a tus equipos.
-
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>
@@ -91,17 +113,29 @@ export default function Solutions() {
                 <Container>
                     <Row>
                         <Col className="setps-tabs_debq_content d-none d-sm-block">
-                            <Tab.Container id="left-tabs-example" defaultActiveKey="1">
+                            <Tab.Container
+                                id="left-tabs-example"
+                                defaultActiveKey="1">
                                 <Row>
                                     <Col sm={{ span: 5 }} className="mt-5">
                                         <Tab.Content>
                                             {dataJson.map((item, index) => (
-                                                <Tab.Pane key={index} eventKey={item.key}>
+                                                <Tab.Pane
+                                                    key={index}
+                                                    eventKey={item.key}>
                                                     <Row>
                                                         <Col className="text-center">
-                                                            <img src={`/debqtabs/${item.image.url}`} alt={item.image.url} className={'img-fluid'} />
+                                                            <img
+                                                                src={`/debqtabs/${item.image.url}`}
+                                                                alt={
+                                                                    item.image
+                                                                        .url
+                                                                }
+                                                                className={
+                                                                    "img-fluid"
+                                                                }
+                                                            />
                                                         </Col>
-
                                                     </Row>
                                                 </Tab.Pane>
                                             ))}
@@ -109,19 +143,30 @@ export default function Solutions() {
                                     </Col>
                                     <Col sm={7} className="relative">
                                         <h3 className="text-left mb-4">
-                                            <b>Define el Customer Journey y  </b> <br />mejora la atención.
+                                            <Trans t={t} i18nKey="STEPS.SUBTITLE"/>
                                         </h3>
                                         <span className="lineSteps-debq"></span>
-                                        <Nav variant="pills" className="flex-column">
+                                        <Nav
+                                            variant="pills"
+                                            className="flex-column">
                                             {dataJson.map((item, index) => (
                                                 <Nav.Item key={index}>
-                                                    <Nav.Link eventKey={item.key} className="setps-tabs_debq_content-nav"><div className="numberStep">{index + 1}</div> <div className="textStep">{item.text}</div></Nav.Link>
+                                                    <Nav.Link
+                                                        eventKey={item.key}
+                                                        className="setps-tabs_debq_content-nav">
+                                                        <div className="numberStep">
+                                                            {index + 1}
+                                                        </div>{" "}
+                                                        <div className="textStep">
+                                                            {item.text}
+                                                        </div>
+                                                    </Nav.Link>
                                                 </Nav.Item>
                                             ))}
                                         </Nav>
                                         <Link href="/contacto">
                                             <button className="citas-home_demobutton">
-                                                Solicita una demo
+                                                <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                             </button>
                                         </Link>
                                     </Col>
@@ -132,12 +177,28 @@ export default function Solutions() {
                     <Row className="setps-accordion_content intern2 d-block d-sm-none">
                         <Accordion defaultActiveKey="0">
                             {dataJson.map((item, index) => (
-                                <Accordion.Item key={index} eventKey={item.key} className="setps-accordion_content-nav">
-                                    <Accordion.Header className="inter2_button"><div className="inter2_button-step">{index + 1}</div> <div className="inter2_button-text">{item.text}</div></Accordion.Header>
+                                <Accordion.Item
+                                    key={index}
+                                    eventKey={item.key}
+                                    className="setps-accordion_content-nav">
+                                    <Accordion.Header className="inter2_button">
+                                        <div className="inter2_button-step">
+                                            {index + 1}
+                                        </div>{" "}
+                                        <div className="inter2_button-text">
+                                            {item.text}
+                                        </div>
+                                    </Accordion.Header>
                                     <Accordion.Body>
                                         <Row>
-                                            <Col xs={12} className="text-center">
-                                                <img src={`/debqtabs/${item.image.url}`} alt={item.text} className={'img-fluid'} />
+                                            <Col
+                                                xs={12}
+                                                className="text-center">
+                                                <img
+                                                    src={`/debqtabs/${item.image.url}`}
+                                                    alt={item.text}
+                                                    className={"img-fluid"}
+                                                />
                                             </Col>
                                         </Row>
                                     </Accordion.Body>
@@ -145,10 +206,8 @@ export default function Solutions() {
                             ))}
                         </Accordion>
                     </Row>
-
                 </Container>
             </Container>
-
         </>
     );
 }

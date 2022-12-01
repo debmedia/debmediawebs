@@ -1,38 +1,40 @@
-[
-  {
-    "text": " Tu cliente hace el check-in desde Kiosco, tótem o móvil.",
-    "key":"1",
-    "image": {
-      "url": "step1.png",
-      "width": 400,
-      "height": 400
+{
+  "es": [
+    {
+      "text": "Tu cliente hace el check-in desde Kiosco, tótem o móvil.",
+      "key":"1",
+      "image": {
+        "url": "step1.png",
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "text": "El llamado por voz, pantallas, WhatsApp o SMS.    ",
+      "key":"2",
+      "image": {
+        "url": "step2.png",
+        "width": 470,
+        "height": 380
+      }
+    },
+    {
+      "text": "Es atendido por un colaborador que lo conoce.",
+      "key":"3",
+      "image": {
+        "url": "step3.png",
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "text": " Califica el servicio a través del sistema de encuestas.",
+      "key":"4",
+      "image": {
+        "url": "step4.png",
+        "width": 400,
+        "height": 400
+      }
     }
-  },
-  {
-    "text": "El llamado por voz, pantallas, WhatsApp o SMS.    ",
-    "key":"2",
-    "image": {
-      "url": "step2.png",
-      "width": 470,
-      "height": 380
-    }
-  },
-  {
-    "text": "Es atendido por un colaborador que lo conoce.",
-    "key":"3",
-    "image": {
-      "url": "step3.png",
-      "width": 400,
-      "height": 400
-    }
-  },
-  {
-    "text": " Califica el servicio a través del sistema de encuestas.",
-    "key":"4",
-    "image": {
-      "url": "step4.png",
-      "width": 400,
-      "height": 400
-    }
-  }
-]
+  ]
+}
