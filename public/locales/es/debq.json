@@ -3,5 +3,21 @@
     "TITLE": "Haz más eficiente y  <br />  ordenado el flujo de <br /> atención en <br /> tus sucursales",
     "SUBTITLE": "Sistema de <b>gestión de colas</b>",
     "CAPTION": "<b>Organizaciones líderes</b> ya gestionan la <br/> experiencia de sus clientes con <b> Debmedia</b>"
+  },
+  "MARKET": {
+    "TITLE": "Empresas que desconocen cómo optimizar procesos.",
+    "SUBTITLE": "Como consecuencia tienen",
+    "CAPTION_1": {
+      "TITLE": "Gestión ineficiente",
+      "SUBTITLE": "Con recursos desaprovechados"
+    },
+    "CAPTION_2": {
+      "TITLE": "Clientes descontentos",
+      "SUBTITLE": "Que piden mejor atención"
+    },
+    "CAPTION_3": {
+      "TITLE": "Falta de métricas",
+      "SUBTITLE": "Para decidir mejor."
+    }
   }
 }
