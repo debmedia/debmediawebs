@@ -19,5 +19,21 @@
       "TITLE": "Imagen de marca <br />anticuada",
       "SUBTITLE": "que no atrae la atención."
     }
+  },
+  "STEPS": {
+    "TITLE": "<b>Moderniza la forma de comunicación en tus sucursales</b>",
+    "CAPTION_1": {
+      "TITLE": "Ajusta tu contenido <br /> en tiempo real.",
+      "SUBTITLE": "Con mensajes adaptados al<br /> momento que vive tu organización."
+    },
+    "CAPTION_2": {
+      "TITLE": "Transforma los recursos. <br />",
+      "SUBTITLE": "Utiliza componentes amigables para el planeta."
+    },
+    "CAPTION_3": {
+      "TITLE": "Genera contenido dinámico  <br /> y atractivo para los clientes.",
+      "SUBTITLE": "Gana visibilidad en influye en decisiones de compra."
+    },
+    "SUBTITLE": "<b>Define el Customer Journey y  </b> <br />mejora la atención."
   }
 }

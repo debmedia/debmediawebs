@@ -1,56 +1,58 @@
-[
-  {
-    "text": "Planifica el contenido Programa las publicidades con hora y fecha para su publicación.",
-    "key":"1",
-    "image": {
-      "url": "step1.png",
-      "width": 700,
-      "height": 500
+{
+  "es": [
+    {
+      "text": "Planifica el contenido Programa las publicidades con hora y fecha para su publicación.",
+      "key":"1",
+      "image": {
+        "url": "step1.png",
+        "width": 700,
+        "height": 500
+      }
+    },
+    {
+      "text": "Usa diferentes tipos de formatos Videos, imágenes, widgets, webs o redes sociales.",
+      "key":"2",
+      "image": {
+        "url": "step2.png",
+        "width": 400,
+        "height": 450
+      }
+    },
+    {
+      "text": "Segmenta por locación Envía contenido por grupos de pantallas y sucursales.",
+      "key":"3",
+      "image": {
+        "url": "step3.png",
+        "width": 400,
+        "height": 550
+      }
+    },
+    {
+      "text": "Actualiza contenido en tiempo real Aplica cambios instantáneos de forma simple.",
+      "key":"4",
+      "image": {
+        "url": "step4.png",
+        "width": 700,
+        "height": 800
+      }
+    },
+    {
+      "text": "Monitoriza el rendimiento Obtén informes intuitivos en tiempo real. ",
+      "key":"5",
+      "image": {
+        "url": "step5.png",
+        "width": 400,
+        "height": 600
+      }
+    },
+    {
+      "text": "Usa tantos templates Personaliza las publicidades con diferentes elementos como necesites.",
+      "key":"6",
+      "image": {
+        "url": "step6.png",
+        "width": 480,
+        "height": 400
+      }
     }
-  },
-  {
-    "text": "Usa diferentes tipos de formatos Videos, imágenes, widgets, webs o redes sociales.",
-    "key":"2",
-    "image": {
-      "url": "step2.png",
-      "width": 400,
-      "height": 450
-    }
-  },
-  {
-    "text": "Segmenta por locación Envía contenido por grupos de pantallas y sucursales.",
-    "key":"3",
-    "image": {
-      "url": "step3.png",
-      "width": 400,
-      "height": 550
-    }
-  },
-  {
-    "text": "Actualiza contenido en tiempo real Aplica cambios instantáneos de forma simple.",
-    "key":"4",
-    "image": {
-      "url": "step4.png",
-      "width": 700,
-      "height": 800
-    }
-  },
-  {
-    "text": "Monitoriza el rendimiento Obtén informes intuitivos en tiempo real. ",
-    "key":"5",
-    "image": {
-      "url": "step5.png",
-      "width": 400,
-      "height": 600
-    }
-  },
-  {
-    "text": "Usa tantos templates Personaliza las publicidades con diferentes elementos como necesites.",
-    "key":"6",
-    "image": {
-      "url": "step6.png",
-      "width": 480,
-      "height": 400
-    }
-  }
-]
+  ]
+}
