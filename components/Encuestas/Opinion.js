@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
 import mypic from '../../asset/imgs/encuestas/img.png'
 import mypicxs from '../../asset/imgs/encuestas/imgxs.png'
-
-import imgxs from '../../asset/imgs/encuestas/img-xs.png'
-
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
+    const { t } = useTranslation(['encuestas', 'common']);
+
     return (
         <>
             <Container fluid className="opinion-encuestas-section relative d-none d-sm-none d-xl-block">
@@ -20,17 +18,14 @@ export default function Market() {
                     <Row className="d-flex ">
                         <Col sm="5" xs="12" className="opinion-encuestas-section_maintitle">
                             <h3>
-                                Un sistema desarrollado <br />
-                                <b> para conocer la opinión </b><br />
-                                a través de
+                                <Trans t={t} i18nKey="OPINION.TITLE"/>
                             </h3>
                         </Col>
                     </Row>
                 </Container>
                 <div className="opinion-encuestas-section_div">
                     <h3>
-                        Que <b>permite asociar el resultado</b> de cada encuesta<br /> <b>al usuario y proceso <br />
-                            de atención.</b>
+                        <Trans t={t} i18nKey="OPINION.SUBTITLE"/>
                     </h3>
                 </div>
             </Container>
@@ -38,9 +33,7 @@ export default function Market() {
                 <Row>
                     <Col xs="12" className="opinion-encuestas-section_maintitle">
                         <h3>
-                            Un sistema desarrollado <br />
-                            <b> para conocer la opinión </b><br />
-                            a través de
+                            <Trans t={t} i18nKey="OPINION.TITLE"/>
                         </h3>
                     </Col>
                     <Col xs="12" className="p-0">
@@ -53,9 +46,7 @@ export default function Market() {
                     <Row>
                         <Col>
                             <h3>
-                                Que <b>permite asociar el<br/> resultado</b> de cada encuesta <br />
-                                <b>al usuario y proceso <br />
-                                de atención.</b>
+                                <Trans t={t} i18nKey="OPINION.SUBTITLE"/>
                             </h3>
                         </Col>
                     </Row>

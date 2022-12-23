@@ -48,5 +48,9 @@
       "TITLE": "Compara los resultados",
       "SUBTITLE": "por periodos de tiempo, usuario, atención y más."
     }
+  },
+  "OPINION": {
+    "TITLE":"Un sistema desarrollado <br /><b> para conocer la opinión </b><br />a través de",
+    "SUBTITLE": "Que <b>permite asociar el resultado</b> de cada encuesta<br /> <b>al usuario y proceso </b><br /><b>de atención.</b>"
   }
 }
