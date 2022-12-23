@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import mypic from '../../asset/imgs/encuestas/main.png'
@@ -6,10 +6,11 @@ import mypicxs from '../../asset/imgs/encuestas/main-encuestas.png'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import shape3 from '../../asset/imgs/home/headershape3.svg'
-import mainNoti from '../../asset/imgs/citas/main-noti.svg'
 import Link from 'next/link'
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Header() {
+const { t } = useTranslation(['encuestas', 'common']);
 
     return (
         <>
@@ -29,18 +30,15 @@ export default function Header() {
                     <Container>
                         <Row>
                             <Col className="mainTitles">
-                                <h1 className="encuestas-home_title">
-                                    Conoce la opinión  <br className="d-none d-sm-block" />
-                                    de tus clientes y  <br className="d-none d-sm-block" />
-                                    el rendimiento  <br className="d-none d-sm-block" />
-                                    del equipo
+                                <h1 className="encuestas-home_title no-br-sm">
+                                    <Trans t={t} i18nKey="HEADER.TITLE"/>
                                 </h1>
                                 <p className="encuestas-home_parraf">
-                                    Sistema de  <b>encuestas automatizadas</b>  <br />  dentro del flujo de atención 
+                                    <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
                                 </p>
                                 <Link href="/contacto">
                                 <button className="encuestas-home_demobutton">
-                                    Solicita una demo
+                                    <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                 </button>
                                 </Link>
                             </Col>
@@ -51,8 +49,9 @@ export default function Header() {
             <Container className="d-flex justify-content-center encuestas-home_text">
                 <Row>
                     <Col>
-                        <h3><b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
-                            experiencia de sus clientes con <b> Debmedia</b></h3>
+                        <h3 className="no-br-sm">
+                            <Trans t={t} i18nKey="HEADER.CAPTION"/>
+                        </h3>
                     </Col>
                 </Row>
             </Container>
