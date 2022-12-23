@@ -52,5 +52,21 @@
   "OPINION": {
     "TITLE":"Un sistema desarrollado <br /><b> para conocer la opinión </b><br />a través de",
     "SUBTITLE": "Que <b>permite asociar el resultado</b> de cada encuesta<br /> <b>al usuario y proceso </b><br /><b>de atención.</b>"
+  },
+  "STEPS":{
+    "TITLE": "<b>Recibe feedback de tus clientes </b><br />al finalizar su atención y aumenta la satisfacción.<br /><br />",
+    "CAPTION_1": {
+      "TITLE": "Conoce la opinión real",
+      "SUBTITLE": "de lo que perciben tus clientes"
+    },
+    "CAPTION_2": {
+      "TITLE": "Decide mejor",
+      "SUBTITLE": "con base en los datos"
+    },
+    "CAPTION_3": {
+      "TITLE": "Conoce el rendimiento",
+      "SUBTITLE": "de tus equipos de trabajo"
+    },
+    "SUBTITLE": "<b>Envía diferentes</b><br />tipos de encuestas"
   }
 }
