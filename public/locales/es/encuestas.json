@@ -1,0 +1,17 @@
+{
+  "FLOW": {
+    "TITLE": "<b>Crea encuestas </b><br /> en pocos pasos",
+    "CAPTION_1": {
+      "TITLE": "Crea",
+      "SUBTITLE": "la encuesta"
+    },
+    "CAPTION_2": {
+      "TITLE": "Asocia",
+      "SUBTITLE": "el trámite"
+    },
+    "CAPTION_3": {
+      "TITLE": "Escoge la acción",
+      "SUBTITLE": "que dispara el envío."
+    }
+  }
+}

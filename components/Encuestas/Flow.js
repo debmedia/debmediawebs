@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
 import how1 from '../../asset/imgs/encuestas/how1.png'
 import how2 from '../../asset/imgs/encuestas/how2.png'
 import how3 from '../../asset/imgs/encuestas/how3.png'
 import Link from 'next/link'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
+    const { t } = useTranslation(['encuestas', 'common']);
+
     return (
         <>
             <Container fluid className="flow-encuestas-section relative">
@@ -15,20 +16,17 @@ export default function Market() {
                     <Row >
                         <Col sm="12" className="flow-encuestas-section_maintitle text-center">
                             <h3>
-                                <b>Crea encuestas 
-                                </b><br />
-                                en pocos pasos
-
+                                <Trans t={t} i18nKey="FLOW.TITLE"/>
                             </h3>
                         </Col>
                         <Col sm="4" xs="12" className="text-center flow-encuestas-section_how">
                             <img src={how1.src} className="img-fluid" />
                             <figure>
                                 <h5>
-                                    Crea
+                                    <Trans t={t} i18nKey="FLOW.CAPTION_1.TITLE"/>
                                 </h5>
                                 <p>
-                                    la encuesta
+                                    <Trans t={t} i18nKey="FLOW.CAPTION_1.SUBTITLE"/>
                                 </p>
                             </figure>
                         </Col>
@@ -36,10 +34,10 @@ export default function Market() {
                             <img src={how2.src} className="img-fluid" />
                             <figure>
                                 <h5>
-                                    Asocia
+                                    <Trans t={t} i18nKey="FLOW.CAPTION_2.TITLE"/>
                                 </h5>
                                 <p>
-                                    el trámite
+                                    <Trans t={t} i18nKey="FLOW.CAPTION_2.SUBTITLE"/>
                                 </p>
                             </figure>
                         </Col>
@@ -47,16 +45,17 @@ export default function Market() {
                             <img src={how3.src} className="img-fluid" />
                             <figure>
                                 <h5>
-                                    Escoge la acción
+                                    <Trans t={t} i18nKey="FLOW.CAPTION_3.TITLE"/>
                                 </h5>
-                                <p>que dispara el envío.
+                                <p>
+                                    <Trans t={t} i18nKey="FLOW.CAPTION_3.SUBTITLE"/>
                                 </p>
                             </figure>
                         </Col>
                         <Col className="text-center mt-4">
                         <Link href="/contacto">
                             <button className="citas-home_demobutton">
-                                Solicita una demo
+                                <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                             </button>
                             </Link>
                         </Col>
