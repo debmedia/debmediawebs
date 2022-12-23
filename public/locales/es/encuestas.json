@@ -33,5 +33,20 @@
       "TITLE": "Desconocimiento del<br /> rendimiento",
       "SUBTITLE": "de los colaboradores"
     }
+  },
+  "MODERN": {
+    "TITLE": "<b>Eleva la tasa de respuesta </b><br />con encuestas de satisfacción hasta 10 veces más.",
+    "CAPTION_1": {
+      "TITLE": "Personaliza diferentes <br />encuestas",
+      "SUBTITLE": "para cada tipo de trámite."
+    },
+    "CAPTION_2": {
+      "TITLE": "Envía encuestas",
+      "SUBTITLE": "en diferentes momentos del viaje del cliente."
+    },
+    "CAPTION_3": {
+      "TITLE": "Compara los resultados",
+      "SUBTITLE": "por periodos de tiempo, usuario, atención y más."
+    }
   }
 }
