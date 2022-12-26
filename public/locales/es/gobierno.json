@@ -1,6 +1,20 @@
 {
   "HEADER":{
-    "TITLE": "<0>Mejora la experiencia<1/> de los ciudadanos</0> dentro y  <2/>fuera de las sucursales",
-    "SUBTITLE": ""
+    "TITLE": "<0>Mejora la experiencia<1/> de los ciudadanos</0> dentro y  <2/>fuera de las sucursales"
+  },
+  "MARKET":{
+    "TITLE": "Los ciudadanos de hoy  <br /><b>no toleran procesos ineficientes</b>",
+    "CAPTION_1":{
+      "TITLE":"Largas filas",
+      "SUBTITLE": "y esperas"
+    },
+    "CAPTION_2":{
+      "TITLE":"Procesos manuales",
+      "SUBTITLE": "ineficientes"
+    },
+    "CAPTION_3":{
+      "TITLE":"Quejas que",
+      "SUBTITLE": "dañan la imagen"
+    }
   }
 }
