@@ -39,6 +39,21 @@
       "SUBTITLE": "Para mantener la identidad de la organización"
     }
   },
+  "STEPS": {
+    "TITLE": "<b>Permite a tus clientes aprovechar <br /> el tiempo</b> como mejor prefieran.",
+    "CAPTION_1": {
+      "TITLE": "Controla la afluencia <br />  en salas de espera",
+      "SUBTITLE": "Y reduce el flujo innecesario<br /> de clientes."
+    },
+    "CAPTION_2": {
+      "TITLE": "Permite a los clientes<br /> seguir el turno",
+      "SUBTITLE": "y ser llamados a través de SMS o WhatsApp."
+    },
+    "CAPTION_3": {
+      "TITLE": "Deja que aprovechen <br /> su  tiempo",
+      "SUBTITLE": "Y regresen justo a tiempo para ser atendidos."
+    }
+  },
   "CHANNELS":{
     "TITLE": "<b>Permite a tus clientes</b><br /> tomar su turno desde <br /> <b>diferentes canales.</b>"
   }
