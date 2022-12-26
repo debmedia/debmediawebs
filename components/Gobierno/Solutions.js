@@ -2,22 +2,23 @@ import React, { useState, useEffect } from "react";
 import { Row, Container, Col, Tab, Nav, Accordion } from "react-bootstrap";
 import Image from 'next/image'
 import check from '../../asset/imgs/gobierno/check.svg'
-import logosbanca from '../../asset/imgs/gobierno/logos-gob.png'
-import check_white from '../../asset/imgs/home/check-m.svg'
 import Data from '../../json/services-gob.json';
 import Logos from '../../json/brandsSlide.json';
 import Link from 'next/link'
-
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/router";
 
 export default function Solutions(props) {
+    const { t } = useTranslation(['gobierno', 'common']);
+    const { locale } = useRouter();
     const [dataJson, setData] = useState([]);
     const [logos, setLogos] = useState([]);
 
     useEffect(() => {
         const result = Logos.filter(logo => logo.category === "gobierno");
         setLogos(result);
-        setData(Data);
-    }, []);
+        setData(Data[locale] || Data['es']);
+    }, [locale]);
 
     return (
         <>
@@ -25,8 +26,7 @@ export default function Solutions(props) {
                 <Row>
                     <Col className="solutions-indus-section_maintitle">
                         <h3 className="text-center">
-                            <b>Ofréceles la atención </b> <br />
-                            que se merecen
+                            <Trans t={t} i18nKey="SOLUTIONS.TITLE"/>
                         </h3>
                     </Col>
                 </Row>
@@ -44,11 +44,12 @@ export default function Solutions(props) {
                                     height={60} className={'img-fluid'} />
                             </div>
 
-                            <h4 className="solutions-indus-section_title">
-                               Integra los canales
- <br className="d-none d-sm-block" /> 
+                            <h4 className="solutions-indus-section_title no-br-sm">
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_1.TITLE"/>
                             </h4>
-                            <p> y ofrece una atención.</p>
+                            <p>
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_1.SUBTITLE"/>
+                            </p>
                         </Col>
                         <Col sm={4} xs={4} className="solutions-indus-section_div">
                             <div className="solutions-indus-section_div-img  d-none d-sm-block">
@@ -60,9 +61,11 @@ export default function Solutions(props) {
                                     height={60} className={'img-fluid'} />
                             </div>
                             <h4 className="solutions-indus-section_title">
-                                Optimiza los procesos
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_2.TITLE"/>
                             </h4>
-                            <p>con datos y agiliza la atención</p>
+                            <p>
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_2.SUBTITLE"/>
+                            </p>
                         </Col>
                         <Col sm={4} xs={4} className="solutions-indus-section_div">
                             <div className="solutions-indus-section_div-img  d-none d-sm-block">
@@ -74,11 +77,11 @@ export default function Solutions(props) {
                                     height={60} className={'img-fluid'} />
                             </div>
                             <h4 className="solutions-indus-section_title">
-                            Mejora los tiempos
-
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_3.TITLE"/>
                             </h4>
-                            <p> de respuesta.
-</p>
+                            <p>
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_3.SUBTITLE"/>
+                            </p>
                         </Col>
                     </Row>
                 </Container>
@@ -87,8 +90,9 @@ export default function Solutions(props) {
                 <Row>
                     <Col xs="12" className="solutions-indus-section_maintitle">
                         <h3 className="text-center">
-                            <b>Trabajamos con organizaciones </b> <br />
-                            que confían en <br className="d-block d-sm-none" /> nuestro software. <br />
+                            <Trans t={t} i18nKey="SOLUTIONS.SUBTITLE">
+                                <b>0</b><br />2<br className="d-block d-sm-none" />4<br />
+                            </Trans>
                         </h3>
                     </Col>
                     <Col xs="12" className="d-flex justify-content-center">
@@ -107,10 +111,8 @@ export default function Solutions(props) {
                 <Container>
                     <Row>
                         <Col className="solutions-indus-tabs_title">
-                            <h2>
-                            Soluciones de   <b> Debmedia </b> para personalizar puntos de interacción  <br className="d-none d-sm-none" />
-                            en oficinas gubernamentales
-
+                            <h2 className="no-br-sm">
+                            <Trans t={t} i18nKey="SOLUTIONS.FEATURES_TITLE"/>
                             </h2>
                         </Col>
                     </Row>
@@ -143,7 +145,7 @@ export default function Solutions(props) {
                                                             </p>
                                                             <Link href={item.url}>
                                                             <button>
-                                                                Conoce más
+                                                                <Trans t={t} i18nKey="common:LEARN_MORE"/>
                                                             </button>
                                                             </Link>
                                                         </Col>
@@ -172,7 +174,7 @@ export default function Solutions(props) {
                                                 </h2>
                                                 <Link href={item.url}>
                                                     <button>
-                                                        Conoce más
+                                                        <Trans t={t} i18nKey="common:LEARN_MORE"/>
                                                     </button>
                                                 </Link>
                                             </Col>
