@@ -4,6 +4,22 @@
     "SUBTITLE": "Sistema de <b>fila virtual</b>",
     "CAPTION": "<b>Organizaciones líderes</b> ya gestionan la <br/>experiencia de sus clientes con <b> Debmedia</b>"
   },
+  "MARKET": {
+    "TITLE": "Esperas innecesarias dentro de las sucursales",
+    "SUBTITLE": "generan una mala experiencia",
+    "CAPTION_1": {
+      "TITLE": "Aglomeraciones",
+      "SUBTITLE": "dentro de las instalaciones."
+    },
+    "CAPTION_2": {
+      "TITLE": "Clientes con incertidumbre",
+      "SUBTITLE": "sobre el tiempo de espera."
+    },
+    "CAPTION_3": {
+      "TITLE": "Altas tasas de abandono",
+      "SUBTITLE": "de clientes insatisfechos"
+    }
+  },
   "CHANNELS":{
     "TITLE": "<b>Permite a tus clientes</b><br /> tomar su turno desde <br /> <b>diferentes canales.</b>"
   }
