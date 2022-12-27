@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
-import mypic from '../../asset/imgs/home/videoShape.svg'
-import shape1 from '../../asset/imgs/home/headershape1.svg'
-import shape2 from '../../asset/imgs/home/headershape2.svg'
-import shape3 from '../../asset/imgs/home/headershape3.svg'
-import { useMediaQuery } from 'react-responsive'
-import Link from 'next/link'
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Header() {
-    const isMobile = useMediaQuery({ query: '(max-width:899px)' })
+    const { t } = useTranslation(['nosotros', 'common']);
 
     return (
         <>
@@ -22,14 +16,11 @@ export default function Header() {
                         <Row>
                             <Col className="mainTitles text-center">
                                 <h1 className="header-nosotros_title">
-                               Sobre <b> nosotros</b>
+                                    <Trans t={t} i18nKey="HEADER.TITLE"/>
                                 </h1>
                                 <br/>
-                                <p  className="header-nosotros_parraf">
-                                Desde el 2010  <b>mejorando la <br className="d-none d-sm-block"/>
-experiencia</b> de tus clientes.
-
-
+                                <p  className="header-nosotros_parraf no-br-sm">
+                                    <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
                                 </p>
                             </Col>
                         </Row>
