@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import mar1 from '../../asset/imgs/partners/mar1.svg'
 import mar2 from '../../asset/imgs/partners/mar2.svg'
 import mar3 from '../../asset/imgs/partners/mar3.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function SpecsIndus() {
+    const { t } = useTranslation(['partners', 'common']);
     return (
         <>
             <Container fluid className="modern-partners-section">
@@ -14,7 +15,7 @@ export default function SpecsIndus() {
                     <Row>
                         <Col className="modern-partners-section_maintitle">
                             <h3 className="text-center">
-                                <b>  Ayuda a tus clientes a</b>
+                                <Trans t={t} i18nKey="MARKET.TITLE"/>
                             </h3>
                         </Col>
                     </Row>
@@ -27,7 +28,7 @@ export default function SpecsIndus() {
                                 </Col>
                                 <Col xs="12" className="modern-partners-section_feature-text text-center">
                                     <h5>
-                                       <b> Mejorar la<br/> atención y la<br/> experiencia</b> de sus<br/>    clientes.
+                                       <Trans t={t} i18nKey="MARKET.CAPTION_1"/>
                                     </h5>
 
                                 </Col>
@@ -41,9 +42,8 @@ export default function SpecsIndus() {
                                 </Col>
                                 <Col xs="12" className="modern-partners-section_feature-text text-center">
                                     <h5>
-                                    <b>  Optimizar sus<br/> procesos</b> y<br/> hacerlos más <br/>eficientes.
+                                        <Trans t={t} i18nKey="MARKET.CAPTION_1"/>
                                     </h5>
-
                                 </Col>
                             </Row>
                         </Col>
@@ -55,14 +55,11 @@ export default function SpecsIndus() {
                                 </Col>
                                 <Col xs="12" className="modern-partners-section_feature-text text-center">
                                     <h5>
-                                    <b> Unificar sus<br/> canales<br/> </b>
-                                        virtuales y<br/> presenciales.
+                                        <Trans t={t} i18nKey="MARKET.CAPTION_1"/>
                                     </h5>
-
                                 </Col>
                             </Row>
                         </Col>
-
                     </Row>
                 </Container>
             </Container>

@@ -3,5 +3,11 @@
     "TITLE": "Amplía los servicios<br /> de tu empresa.",
     "SUBTITLE": "Conviértete en un <b>Debmedia</b><br /> <b>Partner</b> y agrega más valor a <br />  tus clientes.",
     "BUTTON": "Quiero ser partner"
+  },
+  "MARKET":{
+    "TITLE": "<b>Ayuda a tus clientes a</b>",
+    "CAPTION_1": "<b>Mejorar la </b><br/><b> atención y la </b><br/><b> experiencia </b> de sus <br/> clientes.",
+    "CAPTION_2": "<b>Optimizar sus </b><br/><b> procesos</b> y <br/> hacerlos más <br/> eficientes.",
+    "CAPTION_3": "<b>Unificar sus </b><br/><b> canales</b><br/> virtuales y <br/> presenciales."
   }
 }
