@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import spec1 from '../../asset/imgs/citas/spec1.svg'
@@ -7,7 +7,7 @@ import spec3 from '../../asset/imgs/citas/spec3.svg'
 import spec4 from '../../asset/imgs/citas/spec4.svg'
 import spec5 from '../../asset/imgs/citas/spec5.svg'
 import spec6 from '../../asset/imgs/citas/spec6.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
@@ -28,6 +28,8 @@ SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
 
 export default function Modern() {
+    const { t } = useTranslation(['partners', 'common']);
+
     return (
         <>
             <Container fluid className="specs-section_citas">
@@ -35,8 +37,12 @@ export default function Modern() {
                     <Row>
                         <Col xs={12} className="specs-section_citas_text">
                             <div>
-                                <h2>Múltiples funcionalidades</h2>
-                                <p> para optimizar modelos de atención
+                                <h2>
+                                    
+                                    <Trans t={t} i18nKey="MODERN.CAPTION_1"/>
+                                </h2>
+                                <p> 
+                                    <Trans t={t} i18nKey="MODERN.CAPTION_2"/>
                                 </p>
                             </div>
                         </Col>
@@ -52,15 +58,10 @@ export default function Modern() {
                                 <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_citas_title">
-                                            Integración con el sistema<br /> de gestión de filas.
-
-
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_3"/>
                                         </h4>
                                         <p className="specs-section_citas_parraf">
-                                            Para gestionar todo el flujo <br />
-                                            con algoritmos de llamado <br />
-                                            y priorización.
-
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_4"/>
                                         </p>
                                     </div>
 
@@ -77,13 +78,10 @@ export default function Modern() {
                                 <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_citas_title">
-                                            Check in <br />
-                                            autogestionado.
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_5"/>
                                         </h4>
                                         <p className="specs-section_citas_parraf">
-                                            Los clientes pueden registrarse desde su móvil o en el kiosko.
-
-
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_6"/>
                                         </p>
                                     </div>
 
@@ -100,14 +98,10 @@ export default function Modern() {
                                 <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_citas_title">
-                                            Recordatorios<br /> personalizables enviados <br />
-                                            por mail o SMS.<br />
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_7"/>
                                         </h4>
                                         <p className="specs-section_citas_parraf">
-                                            Diseñados como campos dinámicos en función del
-                                            támite y el cliente.
-
-
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_8"/>
                                         </p>
                                     </div>
 
@@ -125,12 +119,10 @@ export default function Modern() {
                                 <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_citas_title">
-                                            Conectado con múltiples <br />trámites o agendas.
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_9"/>
                                         </h4>
                                         <p className="specs-section_citas_parraf">
-                                        Para definir tiempos de <br/>tolerancia por cada uno.
-
-
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_10"/>
                                         </p>
                                     </div>
 
@@ -147,13 +139,11 @@ export default function Modern() {
                                 <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_citas_title">
-                                            Integrable por API, iframe<br />  o embebido en tu web
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_11"/>
 
                                         </h4>
                                         <p className="specs-section_citas_parraf">
-                                            Con el look &amp; feel <br />
-                                            de tu compañía.
-
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_12"/>
                                         </p>
                                     </div>
 
@@ -170,13 +160,10 @@ export default function Modern() {
                                 <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_citas_title">
-                                            Un sistema integrado a
-
-
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_13"/>
                                         </h4>
                                         <p className="specs-section_citas_parraf">
-                                            Outlook y Google Calendar.
-
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_14"/>
                                         </p>
                                     </div>
 
@@ -192,8 +179,11 @@ export default function Modern() {
                     <Row>
                     <Col xs={12} className="specs-section_citas_text">
                             <div>
-                                <h2>Múltiples funcionalidades</h2>
-                                <p> para optimizar modelos de atención
+                                <h2>
+                                    <Trans t={t} i18nKey="MODERN.CAPTION_1"/>
+                                </h2>
+                                <p> 
+                                    <Trans t={t} i18nKey="MODERN.CAPTION_2"/>
                                 </p>
                             </div>
                         </Col>
@@ -235,15 +225,10 @@ export default function Modern() {
                                     <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                         <div>
                                             <h4 className="specs-section_citas_title">
-                                                Integración con el sistema<br /> de gestión de filas.
-
-
+                                                <Trans t={t} i18nKey="MODERN.CAPTION_3"/>
                                             </h4>
                                             <p className="specs-section_citas_parraf">
-                                                Para gestionar todo el flujo <br />
-                                                con algoritmos de llamado <br />
-                                                y priorización.
-
+                                                <Trans t={t} i18nKey="MODERN.CAPTION_4"/>
                                             </p>
                                         </div>
 
@@ -262,13 +247,10 @@ export default function Modern() {
                                     <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                         <div>
                                             <h4 className="specs-section_citas_title">
-                                                Check in <br />
-                                                autogestionado.
+                                                <Trans t={t} i18nKey="MODERN.CAPTION_5"/>
                                             </h4>
                                             <p className="specs-section_citas_parraf">
-                                                Los clientes pueden registrarse desde su móvil o en el kiosko.
-
-
+                                                <Trans t={t} i18nKey="MODERN.CAPTION_6"/>
                                             </p>
                                         </div>
 
@@ -287,14 +269,10 @@ export default function Modern() {
                                     <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                         <div>
                                             <h4 className="specs-section_citas_title">
-                                                Recordatorios<br /> personalizables enviados <br />
-                                                por mail o SMS.<br />
+                                                <Trans t={t} i18nKey="MODERN.CAPTION_7"/>
                                             </h4>
                                             <p className="specs-section_citas_parraf">
-                                                Diseñados como campos dinámicos en función del
-                                                támite y el cliente.
-
-
+                                                <Trans t={t} i18nKey="MODERN.CAPTION_8"/>
                                             </p>
                                         </div>
 
@@ -313,12 +291,10 @@ export default function Modern() {
                                     <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                         <div>
                                             <h4 className="specs-section_citas_title">
-                                                Conectado con múltiples <br />trámites o agendas.
+                                                <Trans t={t} i18nKey="MODERN.CAPTION_9"/>
                                             </h4>
                                             <p className="specs-section_citas_parraf">
-                                            Para definir tiempos de <br/>tolerancia por cada uno.
-
-
+                                               <Trans t={t} i18nKey="MODERN.CAPTION_10"/>
                                             </p>
                                         </div>
 
@@ -337,13 +313,11 @@ export default function Modern() {
                                     <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                         <div>
                                             <h4 className="specs-section_citas_title">
-                                                Integrable por API,<br /> iframe o embebido <br />en tu web
+                                                <Trans t={t} i18nKey="MODERN.CAPTION_11"/>
 
                                             </h4>
                                             <p className="specs-section_citas_parraf">
-                                                Con el look &amp; feel <br />
-                                                de tu compañía.
-
+                                                <Trans t={t} i18nKey="MODERN.CAPTION_12"/>
                                             </p>
                                         </div>
 
@@ -362,15 +336,12 @@ export default function Modern() {
                                     <Col xs={12} className="specs-section_citas_div-text text-center d-flex justify-content-center my-3">
                                         <div>
                                             <h4 className="specs-section_citas_title">
-                                            Un sistema integrado a
-
-
+                                                <Trans t={t} i18nKey="MODERN.CAPTION_13"/>
                                             </h4>
                                             <p className="specs-section_citas_parraf">
-                                            Outlook y Google Calendar.
+                                                <Trans t={t} i18nKey="MODERN.CAPTION_14"/>
                                             </p>
                                         </div>
-
                                     </Col>
                                 </Row>
                             </Col>
