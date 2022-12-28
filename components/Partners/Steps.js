@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Row, Container, Col, Tab, Nav, Accordion } from "react-bootstrap";
-import Image from 'next/image'
-import check_blue from '../../asset/imgs/home/check_blue.svg'
-import check_white from '../../asset/imgs/home/check-m.svg'
-import shape1 from '../../asset/imgs/mobile/shapeTabs.svg'
-
 import Data from '../../json/setps-partners.json';
 import Link from 'next/link'
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/router";
 
 export default function Solutions() {
-
+    const { t } = useTranslation(['partners', 'common']);
+    const { locale } = useRouter();
     const [dataJson, setData] = useState([]);
 
     useEffect(() => {
-        setData(Data);
-    }, []);
+        setData(Data[locale] || Data['es']);
+    }, [locale]);
 
     return (
         <>
@@ -39,8 +37,8 @@ export default function Solutions() {
                                     </Col>
                                     <Col sm={{ span: 6, offset: 5 }} className="relative">
                                         <h3 className="text-left mb-4 textTitle">
-                                            <b>Cómo ser un<br />
-                                                <span>Debmedia Partner:</span>
+                                            <b>
+                                                <Trans t={t} i18nKey="STEPS.TITLE"/>
                                             </b>
                                         </h3>
                                         <span className="lineSteps-partners"></span>
@@ -53,7 +51,7 @@ export default function Solutions() {
                                         </Nav>
                                         <Link href="/contacto">
                                             <button className="citas-home_demobutton">
-                                                Solicita una demo
+                                                <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                             </button>
                                         </Link>
                                     </Col>
@@ -75,10 +73,8 @@ export default function Solutions() {
                                     </Accordion.Body>
                                 </Accordion.Item>
                             ))}
-
                         </Accordion>
                     </Row>
-
                 </Container>
             </Container>
 
