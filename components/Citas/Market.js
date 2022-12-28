@@ -8,7 +8,7 @@ import arrow from '../../asset/imgs/home/arrow.svg'
 import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
-    const { t } = useTranslation(['citas', 'common']);
+    const { t } = useTranslation(['citasonline', 'common']);
     return (
         <>
             <Container fluid className="market-citas-section">

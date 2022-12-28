@@ -27,7 +27,7 @@ const sistemaxs_lang = {
 };
 
 export default function Market() {
-    const { t } = useTranslation(['videoCall', 'common']);
+    const { t } = useTranslation(['atencion-virtual', 'common']);
     const [dataJson, setData] = useState([]);
     const { locale } = useRouter();
 

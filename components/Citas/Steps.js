@@ -10,7 +10,7 @@ import Link from 'next/link'
 import { useRouter } from "next/router";
 
 export default function Solutions() {
-    const { t } = useTranslation(['citas', 'common']);
+    const { t } = useTranslation(['citasonline', 'common']);
     const [dataJson, setData] = useState([]);
     const { locale } = useRouter();
 

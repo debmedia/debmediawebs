@@ -9,7 +9,7 @@ import market from '../../asset/imgs/videollamada/market.svg'
 import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
-    const { t } = useTranslation(['videoCall', 'common']);
+    const { t } = useTranslation(['atencion-virtual', 'common']);
     return (
         <>
             <Container fluid className="market-videocall-section relative">

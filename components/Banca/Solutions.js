@@ -13,7 +13,7 @@ import { useRouter } from "next/router";
 export default function Solutions(props) {
     const [dataJson, setData] = useState([]);
     const [logos, setLogos] = useState([]);
-    const { t } = useTranslation(['banking', 'common']);
+    const { t } = useTranslation(['bancosyfinanzas', 'common']);
     const { locale } = useRouter();
     useEffect(() => {
         const result = Logos.filter(logo => logo.category === "banca");

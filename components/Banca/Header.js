@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useTranslation, Trans } from 'next-i18next';
 
 export default function Header() {
-    const { t } = useTranslation(['banking', 'common']);
+    const { t } = useTranslation(['bancosyfinanzas', 'common']);
     return (
         <>
             <header>

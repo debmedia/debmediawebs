@@ -11,7 +11,7 @@ import Link from 'next/link';
 import { useTranslation, Trans } from 'next-i18next';
 
 export default function Header() {
-    const { t } = useTranslation(['citas', 'common']);
+    const { t } = useTranslation(['citasonline', 'common']);
     return (
         <>
             <header>

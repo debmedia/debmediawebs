@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Header() {
     const isMobile = useMediaQuery({ query: '(max-width:899px)' })
-    const { t } = useTranslation(['videoCall', 'common']);
+    const { t } = useTranslation(['atencion-virtual', 'common']);
 
     return (
         <>

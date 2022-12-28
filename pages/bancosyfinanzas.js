@@ -13,7 +13,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['banking','components','common'])),
+      ...(await serverSideTranslations(locale, ['bancosyfinanzas','components','common'])),
     },
   };
 }

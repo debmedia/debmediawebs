@@ -27,7 +27,7 @@ SwiperCore.use([Autoplay, FreeMode, Pagination]);
 const spec = [spec1, spec2, spec3, spec4];
 
 export default function Modern() {
-    const { t } = useTranslation(['videoCall', 'common']);
+    const { t } = useTranslation(['atencion-virtual', 'common']);
     return (
         <>
             <Container fluid className="specs-section_videocall">

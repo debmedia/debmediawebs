@@ -23,7 +23,7 @@ import SwiperCore, { Autoplay, FreeMode, Pagination } from "swiper";
 SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
 export default function Modern() {
-  const { t } = useTranslation(["citas", "common"]);
+  const { t } = useTranslation(["citasonline", "common"]);
   function createIcon(translateKey, img) {
     return (
       <Col sm={4}>
