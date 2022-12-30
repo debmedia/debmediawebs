@@ -50,10 +50,10 @@
     }
   },
   "OPINION": {
-    "TITLE":"Un sistema desarrollado <br /><b> para conocer la opinión </b><br />a través de",
+    "TITLE": "Un sistema desarrollado <br /><b> para conocer la opinión </b><br />a través de",
     "SUBTITLE": "Que <b>permite asociar el resultado</b> de cada encuesta<br /> <b>al usuario y proceso </b><br /><b>de atención.</b>"
   },
-  "STEPS":{
+  "STEPS": {
     "TITLE": "<b>Recibe feedback de tus clientes </b><br />al finalizar su atención y aumenta la satisfacción.<br /><br />",
     "CAPTION_1": {
       "TITLE": "Conoce la opinión real",

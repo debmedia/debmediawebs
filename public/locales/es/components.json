@@ -1,28 +1,28 @@
 {
-  "REVIEW":{
+  "REVIEW": {
     "TITLE": "Más de 300<br/> organizaciones<br/><span> ya confían en</span><br/><span> Debmedia</span>"
   },
   "MAP": {
     "CAPTION": "Debmedia lleva más de 15 años desarrollando software para gestionar la experiencia del cliente."
   },
-  "PARTNER":{
-    "TITLE":"¿Quieres ser partner de Debmedia?",
-    "CAPTION":"Conoce cómo generar nuevos negocios a través de nuestro programa.",
-    "BUTTON":"Quiero ser partner"
+  "PARTNER": {
+    "TITLE": "¿Quieres ser partner de Debmedia?",
+    "CAPTION": "Conoce cómo generar nuevos negocios a través de nuestro programa.",
+    "BUTTON": "Quiero ser partner"
   },
   "LEVEL": {
-    "TITLE" : "Mejora la Customer Experience con<br /> la Tecnología de  <b>Debmedia</b>",
+    "TITLE": "Mejora la Customer Experience con<br /> la Tecnología de  <b>Debmedia</b>",
     "STEP_1": "Solicita <br /> una <b>demo</b>",
     "STEP_2": "<b> Selecciona</b>  <br /> los módulos",
     "STEP_3": "<b> Configura</b> <br /> el sistema",
     "STEP_4": "Atiende  de   <br /> <b>forma eficiente</b>",
     "BUTTON": "$t(common:REQUEST_A_DEMO)"
   },
-  "CONTACT":{
+  "CONTACT": {
     "TITLE": "¡Contáctate con nuestro equipo y <br />mejora la experiencia de tus clientes!"
   },
-  "POSTS":{
-    "BANKING":{
+  "POSTS": {
+    "BANKING": {
       "TITLE": "Explora contenidos<br/>relacionados al <b>sector financiero</b>"
     },
     "HEALTH": {
@@ -41,7 +41,7 @@
       "TITLE": "$t(POST.RETAIL.TITLE)"
     }
   },
-  "FOOTER":{
+  "FOOTER": {
     "SOLUTIONS": "$t(common:SOLUTIONS)",
     "QUEUE_MANAGEMENT": "$t(common:QUEUE_MANAGEMENT)",
     "ONLINE_APPOINTMENTS": "$t(common:ONLINE_APPOINTMENTS)",
@@ -66,27 +66,27 @@
     "COMPANY": "$t(common:COMPANY)",
     "ENDORSED_BY": "$t(common:ENDORSED_BY)"
   },
-  "SERVICES":{
+  "SERVICES": {
     "TITLE": "<b>Tecnología que mejora</b> <br />la experiencia de tus clientes"
   },
-  "SPECS_INDUS":{
-    "TITLE":{
+  "SPECS_INDUS": {
+    "TITLE": {
       "BANKING": "<b> Compite con entidades digitalizadas </b> <br /> de la Industria de la Banca y Finanzas.",
-      "HEALTH":"<b> Compite con entidades digitalizadas </b> <br /> de la Industria de la salud",
-      "GOVERNMENT":"<b> Escala los procesos en </b> <br /> Instituciones del Gobierno y ONGs",
-      "RETAIL":"<b> Escala los procesos en</b> <br /> empresas retail y de servicios.",
-      "TELECOMMUNICATIONS":"<b> Mejora la experiencia</b> <br /> y escala los procesos.",
-      "UTILITIES":  "<b> Una solución moderna y escalable</b> <br /> para organizaciones del gobierno"
+      "HEALTH": "<b> Compite con entidades digitalizadas </b> <br /> de la Industria de la salud",
+      "GOVERNMENT": "<b> Escala los procesos en </b> <br /> Instituciones del Gobierno y ONGs",
+      "RETAIL": "<b> Escala los procesos en</b> <br /> empresas retail y de servicios.",
+      "TELECOMMUNICATIONS": "<b> Mejora la experiencia</b> <br /> y escala los procesos.",
+      "UTILITIES": "<b> Una solución moderna y escalable</b> <br /> para organizaciones del gobierno"
     },
-    "CAPTION_1":{
+    "CAPTION_1": {
       "TITLE": "Integración <br /> Sencilla",
       "SUBTITLE": "Integrable por API <br /> o iframe."
     },
-    "CAPTION_2":{
+    "CAPTION_2": {
       "TITLE": "Métricas de <br /> performance",
       "SUBTITLE": "Conoce el rendimiento de <br /> tus canales de atención."
     },
-    "CAPTION_3":{
+    "CAPTION_3": {
       "TITLE": "Comunicación<br /> centralizada",
       "SUBTITLE": "Envía el mensaje correcto <br /> a través de SMS, email, <br /> WhatsApp o pantallas."
     }
@@ -94,7 +94,7 @@
   "INDUSTRIES": {
     "TITLE": "Organizaciones de múltiples industrias <br /><b>gestionan la experiencia del cliente con Debmedia.</b>",
     "CARDS": {
-      "BANKING":{
+      "BANKING": {
         "TITLE": "Banca y Seguros",
         "SUBTITLE": "Instituciones financieras, aseguradoras, cooperativas."
       },
@@ -102,7 +102,7 @@
         "TITLE": "Salud",
         "SUBTITLE": "Clínicas, hospitales, laboratorios, farmacias, prepagadas."
       },
-      "GOVERNMENT":{
+      "GOVERNMENT": {
         "TITLE": "Gobierno",
         "SUBTITLE": "Instituciones públicas, municipios, ONGs"
       },
@@ -138,11 +138,11 @@
       "SURVEYS": "$t(common:SURVEYS)"
     },
     "CLIENTS": "$t(common:CLIENTS)",
-    "US":"$t(common:US)",
-    "PARTNERS":"$t(common:PARTNERS)",
-    "RESOURCES":{
+    "US": "$t(common:US)",
+    "PARTNERS": "$t(common:PARTNERS)",
+    "RESOURCES": {
       "TITLE": "$t(common:RESOURCES)",
-      "BLOG":"$t(common:BLOG)",
+      "BLOG": "$t(common:BLOG)",
       "SUCCESS_STORIES": "Casos de éxito",
       "DOWNLOADABLE_RESOURCES": "Recursos descargables"
     }
