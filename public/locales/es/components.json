@@ -1,6 +1,6 @@
 {
   "REVIEW": {
-    "TITLE": "Más de 300<br/> organizaciones<br/><span> ya confían en</span><br/><span> Debmedia</span>"
+    "TITLE": "Más de 300 <br /> organizaciones <br /> <span> ya confían en </span> <br /> <span> Debmedia </span>"
   },
   "MAP": {
     "CAPTION": "Debmedia lleva más de 15 años desarrollando software para gestionar la experiencia del cliente."
@@ -11,25 +11,25 @@
     "BUTTON": "Quiero ser partner"
   },
   "LEVEL": {
-    "TITLE": "Mejora la Customer Experience con<br /> la Tecnología de  <b>Debmedia</b>",
-    "STEP_1": "Solicita <br /> una <b>demo</b>",
-    "STEP_2": "<b> Selecciona</b>  <br /> los módulos",
-    "STEP_3": "<b> Configura</b> <br /> el sistema",
-    "STEP_4": "Atiende  de   <br /> <b>forma eficiente</b>",
+    "TITLE": "Mejora la Customer Experience con <br /> la Tecnología de <b> Debmedia </b>",
+    "STEP_1": "Solicita <br /> una <b> demo </b>",
+    "STEP_2": "<b> Selecciona </b> <br /> los módulos",
+    "STEP_3": "<b> Configura </b> <br /> el sistema",
+    "STEP_4": "Atiende de <br /> <b> forma eficiente </b>",
     "BUTTON": "$t(common:REQUEST_A_DEMO)"
   },
   "CONTACT": {
-    "TITLE": "¡Contáctate con nuestro equipo y <br />mejora la experiencia de tus clientes!"
+    "TITLE": "¡Contáctate con nuestro equipo y <br /> mejora la experiencia de tus clientes!"
   },
   "POSTS": {
     "BANKING": {
-      "TITLE": "Explora contenidos<br/>relacionados al <b>sector financiero</b>"
+      "TITLE": "Explora contenidos <br /> relacionados al <b> sector financiero </b>"
     },
     "HEALTH": {
-      "TITLE": "Explora contenidos  <br /> relacionados al la industria health"
+      "TITLE": "Explora contenidos <br /> relacionados al la industria health"
     },
     "GOVERNMENT": {
-      "TITLE": "Explora contenidos  <br /> relacionados al sector gubernamental"
+      "TITLE": "Explora contenidos <br /> relacionados al sector gubernamental"
     },
     "RETAIL": {
       "TITLE": "Explora contenidos relacionados al <br /> sector retail y de servicios"
@@ -67,16 +67,16 @@
     "ENDORSED_BY": "$t(common:ENDORSED_BY)"
   },
   "SERVICES": {
-    "TITLE": "<b>Tecnología que mejora</b> <br />la experiencia de tus clientes"
+    "TITLE": "<b> Tecnología que mejora </b> <br /> la experiencia de tus clientes"
   },
   "SPECS_INDUS": {
     "TITLE": {
       "BANKING": "<b> Compite con entidades digitalizadas </b> <br /> de la Industria de la Banca y Finanzas.",
       "HEALTH": "<b> Compite con entidades digitalizadas </b> <br /> de la Industria de la salud",
       "GOVERNMENT": "<b> Escala los procesos en </b> <br /> Instituciones del Gobierno y ONGs",
-      "RETAIL": "<b> Escala los procesos en</b> <br /> empresas retail y de servicios.",
-      "TELECOMMUNICATIONS": "<b> Mejora la experiencia</b> <br /> y escala los procesos.",
-      "UTILITIES": "<b> Una solución moderna y escalable</b> <br /> para organizaciones del gobierno"
+      "RETAIL": "<b> Escala los procesos en </b> <br /> empresas retail y de servicios.",
+      "TELECOMMUNICATIONS": "<b> Mejora la experiencia </b> <br /> y escala los procesos.",
+      "UTILITIES": "<b> Una solución moderna y escalable </b> <br /> para organizaciones del gobierno"
     },
     "CAPTION_1": {
       "TITLE": "Integración <br /> Sencilla",
@@ -87,12 +87,12 @@
       "SUBTITLE": "Conoce el rendimiento de <br /> tus canales de atención."
     },
     "CAPTION_3": {
-      "TITLE": "Comunicación<br /> centralizada",
+      "TITLE": "Comunicación <br /> centralizada",
       "SUBTITLE": "Envía el mensaje correcto <br /> a través de SMS, email, <br /> WhatsApp o pantallas."
     }
   },
   "INDUSTRIES": {
-    "TITLE": "Organizaciones de múltiples industrias <br /><b>gestionan la experiencia del cliente con Debmedia.</b>",
+    "TITLE": "Organizaciones de múltiples industrias <br /> <b> gestionan la experiencia del cliente con Debmedia. </b>",
     "CARDS": {
       "BANKING": {
         "TITLE": "Banca y Seguros",
@@ -121,7 +121,7 @@
     }
   },
   "CONTACT_PARTNERS": {
-    "TITLE": "¡Contáctate con nuestro equipo y <br />mejora la experiencia de tus clientes!"
+    "TITLE": "¡Contáctate con nuestro equipo y <br /> mejora la experiencia de tus clientes!"
   },
   "NAVBAR": {
     "HOME": "$t(common:HOME)",
@@ -148,7 +148,7 @@
     }
   },
   "THANKYOU": {
-    "MESSAGE": "Mientras tanto, <br /><b> te invitamos</b> <br /> a explorar nuestra <br /> sección de recursos. <br /><b>¡Disfrútalos!</b>",
+    "MESSAGE": "Mientras tanto, <br /> <b> te invitamos </b> <br /> a explorar nuestra <br /> sección de recursos. <br /> <b> ¡Disfrútalos! </b>",
     "BUTTON": "Ver recursos"
   }
 }

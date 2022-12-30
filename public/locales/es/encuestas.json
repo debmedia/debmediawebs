@@ -1,6 +1,6 @@
 {
   "FLOW": {
-    "TITLE": "<b>Crea encuestas </b><br /> en pocos pasos",
+    "TITLE": "<b> Crea encuestas </b> <br /> en pocos pasos",
     "CAPTION_1": {
       "TITLE": "Crea",
       "SUBTITLE": "la encuesta"
@@ -16,8 +16,8 @@
   },
   "HEADER": {
     "TITLE": "Conoce la opinión <br /> de tus clientes y <br /> el rendimiento <br /> del equipo",
-    "SUBTITLE": "Sistema de  <b>encuestas automatizadas</b> <br /> dentro del flujo de atención ",
-    "CAPTION": "<b>Organizaciones líderes</b> ya gestionan la <br />experiencia de sus clientes con <b> Debmedia</b>"
+    "SUBTITLE": "Sistema de <b> encuestas automatizadas </b> <br /> dentro del flujo de atención",
+    "CAPTION": "<b> Organizaciones líderes </b> ya gestionan la <br /> experiencia de sus clientes con <b> Debmedia </b>"
   },
   "MARKET": {
     "TITLE": "Puede que estés perdiendo clientes por un mal servicio",
@@ -30,14 +30,14 @@
       "SUBTITLE": "a falta de datos"
     },
     "CAPTION_3": {
-      "TITLE": "Desconocimiento del<br /> rendimiento",
+      "TITLE": "Desconocimiento del <br /> rendimiento",
       "SUBTITLE": "de los colaboradores"
     }
   },
   "MODERN": {
-    "TITLE": "<b>Eleva la tasa de respuesta </b><br />con encuestas de satisfacción hasta 10 veces más.",
+    "TITLE": "<b> Eleva la tasa de respuesta </b> <br /> con encuestas de satisfacción hasta 10 veces más.",
     "CAPTION_1": {
-      "TITLE": "Personaliza diferentes <br />encuestas",
+      "TITLE": "Personaliza diferentes <br /> encuestas",
       "SUBTITLE": "para cada tipo de trámite."
     },
     "CAPTION_2": {
@@ -50,11 +50,11 @@
     }
   },
   "OPINION": {
-    "TITLE": "Un sistema desarrollado <br /><b> para conocer la opinión </b><br />a través de",
-    "SUBTITLE": "Que <b>permite asociar el resultado</b> de cada encuesta<br /> <b>al usuario y proceso </b><br /><b>de atención.</b>"
+    "TITLE": "Un sistema desarrollado <br /> <b> para conocer la opinión </b> <br /> a través de",
+    "SUBTITLE": "Que <b> permite asociar el resultado </b> de cada encuesta <br /> <b> al usuario y proceso </b> <br /> <b> de atención. </b>"
   },
   "STEPS": {
-    "TITLE": "<b>Recibe feedback de tus clientes </b><br />al finalizar su atención y aumenta la satisfacción.<br /><br />",
+    "TITLE": "<b> Recibe feedback de tus clientes </b> <br /> al finalizar su atención y aumenta la satisfacción. <br /> <br />",
     "CAPTION_1": {
       "TITLE": "Conoce la opinión real",
       "SUBTITLE": "de lo que perciben tus clientes"
@@ -67,6 +67,6 @@
       "TITLE": "Conoce el rendimiento",
       "SUBTITLE": "de tus equipos de trabajo"
     },
-    "SUBTITLE": "<b>Envía diferentes</b><br />tipos de encuestas"
+    "SUBTITLE": "<b> Envía diferentes </b> <br /> tipos de encuestas"
   }
 }

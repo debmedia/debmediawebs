@@ -1,8 +1,8 @@
 {
   "HEADER": {
-    "TITLE": "Haz más eficiente y  <br />  ordenado el flujo de <br /> atención en <br /> tus sucursales",
-    "SUBTITLE": "Sistema de <b>gestión de colas</b>",
-    "CAPTION": "<b>Organizaciones líderes</b> ya gestionan la <br/> experiencia de sus clientes con <b> Debmedia</b>"
+    "TITLE": "Haz más eficiente y <br /> ordenado el flujo de <br /> atención en <br /> tus sucursales",
+    "SUBTITLE": "Sistema de <b> gestión de colas </b>",
+    "CAPTION": "<b> Organizaciones líderes </b> ya gestionan la <br /> experiencia de sus clientes con <b> Debmedia </b>"
   },
   "MARKET": {
     "TITLE": "Empresas que desconocen cómo optimizar procesos.",
@@ -23,14 +23,14 @@
   "MODERN": {
     "CAPTION_1": {
       "TITLE": "Algoritmos de <br /> llamado y priorización",
-      "SUBTITLE": " Por llegada, prioridad, <br /> trámite, cliente o <br /> combinación."
+      "SUBTITLE": "Por llegada, prioridad, <br /> trámite, cliente o <br /> combinación."
     },
     "CAPTION_2": {
-      "TITLE": "Inteligencia Artificial <br />y automatización",
-      "SUBTITLE": "Para establecer modelos <br />y de atención dinámicos."
+      "TITLE": "Inteligencia Artificial <br /> y automatización",
+      "SUBTITLE": "Para establecer modelos <br /> y de atención dinámicos."
     },
     "CAPTION_3": {
-      "TITLE": "Estadísticas y<br /> monitoreo en tiempo real",
+      "TITLE": "Estadísticas y <br /> monitoreo en tiempo real",
       "SUBTITLE": "Sobre usuarios, trámites, <br /> clientes, entre otros."
     },
     "CAPTION_4": {
@@ -43,8 +43,8 @@
     }
   },
   "STEPS": {
-    "TITLE": "<b>Automatiza y personaliza el modelo de atención</b>",
-    "SUBTITLE": "<b>Define el Customer Journey y </b> <br /> mejora la atención.",
+    "TITLE": "<b> Automatiza y personaliza el modelo de atención </b>",
+    "SUBTITLE": "<b> Define el Customer Journey y </b> <br /> mejora la atención.",
     "CAPTION_1": {
       "TITLE": "Haz más eficientes <br /> tus recursos.",
       "SUBTITLE": "Para ofrecer un servicio ágil."

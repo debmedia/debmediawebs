@@ -1,11 +1,11 @@
 {
   "HEADER": {
-    "TITLE": "Ordena el flujo<1/> de clientes<3/> que llegan a <5/>las sucursales",
-    "SUBTITLE": " <b>Software de citas online </b>para empresas con <br/> múltiples trámites y tipos de atención",
-    "CAPTION": "<b>Organizaciones líderes</b> ya gestionan la <br />experiencia de sus clientes con <b> Debmedia</b>"
+    "TITLE": "Ordena el flujo <1/> de clientes <3/> que llegan a <5/> las sucursales",
+    "SUBTITLE": "<b> Software de citas online </b> para empresas con <br /> múltiples trámites y tipos de atención",
+    "CAPTION": "<b> Organizaciones líderes </b> ya gestionan la <br /> experiencia de sus clientes con <b> Debmedia </b>"
   },
   "MARKET": {
-    "TITLE": "Muchas organizaciones gestionan sus <br />procesos de atención de forma desordenada.",
+    "TITLE": "Muchas organizaciones gestionan sus <br /> procesos de atención de forma desordenada.",
     "CAPTION_1": {
       "TITLE": "Desconocimiento",
       "SUBTITLE": "de los clientes y las necesidades que tienen."
@@ -23,43 +23,43 @@
     "TITLE": "Múltiples funcionalidades",
     "SUBTITLE": "para optimizar modelos de atención",
     "CAPTION_1": {
-      "TITLE": " Integración con el sistema <br /> de gestión de filas. ",
-      "SUBTITLE": " Para gestionar todo el flujo <br /> con algoritmos de llamado <br />y priorización. "
+      "TITLE": "Integración con el sistema <br /> de gestión de filas.",
+      "SUBTITLE": "Para gestionar todo el flujo <br /> con algoritmos de llamado <br /> y priorización."
     },
     "CAPTION_2": {
-      "TITLE": " Check in <br /> autogestionado. ",
-      "SUBTITLE": " Los clientes pueden registrarse desde su móvil o en el kiosko. "
+      "TITLE": "Check in <br /> autogestionado.",
+      "SUBTITLE": "Los clientes pueden registrarse desde su móvil o en el kiosko."
     },
     "CAPTION_3": {
-      "TITLE": " Recordatorios <br /> personalizables enviados <br /> por mail o SMS. <br /> ",
-      "SUBTITLE": " Diseñados como campos dinámicos en función del támite y el cliente. "
+      "TITLE": "Recordatorios <br /> personalizables enviados <br /> por mail o SMS. <br />",
+      "SUBTITLE": "Diseñados como campos dinámicos en función del támite y el cliente."
     },
     "CAPTION_4": {
-      "TITLE": " Conectado con múltiples <br /> trámites o agendas. ",
-      "SUBTITLE": " Para definir tiempos de <br /> tolerancia por cada uno. "
+      "TITLE": "Conectado con múltiples <br /> trámites o agendas.",
+      "SUBTITLE": "Para definir tiempos de <br /> tolerancia por cada uno."
     },
     "CAPTION_5": {
-      "TITLE": " Integrable por API, iframe <br /> o embebido en tu web ",
-      "SUBTITLE": " Con el look & feel <br /> de tu compañía. "
+      "TITLE": "Integrable por API, iframe <br /> o embebido en tu web",
+      "SUBTITLE": "Con el look & feel <br /> de tu compañía."
     },
     "CAPTION_6": {
-      "TITLE": " Un sistema integrado a",
+      "TITLE": "Un sistema integrado a",
       "SUBTITLE": "Outlook y Google Calendar."
     }
   },
   "STEPS": {
-    "TITLE": "<b>Organiza el flujo de tus sucursales</b>",
-    "SUBTITLE": "<b>Permite a los clientes agendar</b> <br />sus citas online desde la web",
+    "TITLE": "<b> Organiza el flujo de tus sucursales </b>",
+    "SUBTITLE": "<b> Permite a los clientes agendar </b> <br /> sus citas online desde la web",
     "CAPTION_1": {
-      "TITLE": "Anticípate y conoce <br />qué clientes te visitarán.",
-      "SUBTITLE": " Ofrece una experiencia personalizada y eleva la satisfacción."
+      "TITLE": "Anticípate y conoce <br /> qué clientes te visitarán.",
+      "SUBTITLE": "Ofrece una experiencia personalizada y eleva la satisfacción."
     },
     "CAPTION_2": {
-      "TITLE": " Conoce cuántos<br />recursos necesitas",
+      "TITLE": "Conoce cuántos <br /> recursos necesitas",
       "SUBTITLE": "Mejora el proceso de los clientes <br /> que llegan a tus sucursales."
     },
     "CAPTION_3": {
-      "TITLE": "Evita esperas  <br />innecesarias",
+      "TITLE": "Evita esperas <br /> innecesarias",
       "SUBTITLE": "Acorta el tiempo que tus clientes pasan dentro de las sedes."
     }
   }
