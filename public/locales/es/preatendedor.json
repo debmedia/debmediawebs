@@ -33,5 +33,21 @@
       "TITLE": "Integrar con",
       "SUBTITLE": "la base de datos de los clientes o CRM para personalizar su viaje"
     }
+  },
+  "STEPS": {
+    "TITLE": "<b>Direcciona a tus clientes </b> más rápido <br />al canal de atención indicado",
+    "CAPTION_1": {
+      "TITLE": "Automatiza los procesos",
+      "SUBTITLE": "y reduce costos."
+    },
+    "CAPTION_2": {
+      "TITLE": "Simplifica el viaje",
+      "SUBTITLE": "de tus clientes."
+    },
+    "CAPTION_3": {
+      "TITLE": "Mejora los tiempos",
+      "SUBTITLE": "de respuesta y agiliza <br /> la atención."
+    },
+    "CAPTION": "<b>Direcciona a tus clientes a través de WhatsApp </b><br /> para que elijan el canal de atención más adecuado"
   }
 }
