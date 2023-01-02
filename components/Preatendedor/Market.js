@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import humanos from '../../asset/imgs/preatendedor/humanos.svg'
 import atencion from '../../asset/imgs/preatendedor/atencion.svg'
 import tardia from '../../asset/imgs/preatendedor/tardia.svg'
 import arrow from '../../asset/imgs/home/arrow.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
+    const { t } = useTranslation(['preatendedor', 'common']);
+
     return (
         <>
             <Container fluid className="market-preatendedor-section">
@@ -15,8 +17,7 @@ export default function Market() {
                     <Row>
                         <Col className="market-preatendedor-section_maintitle text-center">
                             <h3>
-                                La dificultad para dirigir a tus clientes <br />
-                                al canal adecuado se traduce en
+                                <Trans t={t} i18nKey="MARKET.TITLE"/>
                             </h3>
                         </Col>
                     </Row>
@@ -28,10 +29,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-preatendedor-section_title">
-                                Procesos humanos
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-preatendedor-section_parraf">
-                                más costosos para tu organización
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-preatendedor-section_div">
@@ -41,10 +42,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-preatendedor-section_title">
-                                Procesos de atención
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="market-preatendedor-section_parraf">
-                                complejos para tus clientes
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-preatendedor-section_div">
@@ -54,10 +55,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-preatendedor-section_title">
-                                Respuestas tardías
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="market-preatendedor-section_parraf">
-                                a tus clientes
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>

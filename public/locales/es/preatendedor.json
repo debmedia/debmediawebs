@@ -5,5 +5,20 @@
   },
   "FLOW":{
     "TITLE": "<b>Implementa un portal de pre atención personalizable</b> que los <br /> guía a la elección de su trámite."
+  },
+  "MARKET": {
+    "TITLE": "La dificultad para dirigir a tus clientes <br /> al canal adecuado se traduce en",
+    "CAPTION_1": {
+      "TITLE": "Procesos humanos",
+      "SUBTITLE": "más costosos para tu organización"
+    },
+    "CAPTION_2": {
+      "TITLE": "Procesos de atención",
+      "SUBTITLE": "complejos para tus clientes"
+    },
+    "CAPTION_3": {
+      "TITLE": "Respuestas tardías",
+      "SUBTITLE": "a tus clientes"
+    }
   }
 }
