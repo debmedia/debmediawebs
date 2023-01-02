@@ -1,23 +1,20 @@
-import React, { useState, useEffect } from "react";
-import { Row, Container, Col, Tab, Nav, Accordion } from "react-bootstrap";
-import Image from 'next/image'
-
+import React from "react";
+import { Row, Container, Col} from "react-bootstrap";
 import flow1 from '../../asset/imgs/preatendedor/flow1.png'
 import flow2 from '../../asset/imgs/preatendedor/flow2.png'
-import { useMediaQuery } from 'react-responsive'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Flow() {
-    const isMobile = useMediaQuery({ query: '(max-width:899px)' })
+    const { t } = useTranslation(['preatendedor', 'common']);
+
     return (
         <>
             <Container fluid className="flow-preatendedor-section relative">
                 <Container>
                     <Row>
                         <Col sm="12" className="wapp-preatendedor-section_maintitle">
-                            <h3 className="text-center">
-                                <b>Implementa un portal de pre atención personalizable</b> que los <br className="d-none d-sm-block" />
-                                guía a la elección de su trámite.
+                            <h3 className="text-center no-br-sm">
+                                <Trans t={t} i18nKey="FLOW.TITLE"/>
                             </h3>
                         </Col>
                     </Row>
