@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import spec1 from '../../asset/imgs/preatendedor/spec1.svg'
 import spec2 from '../../asset/imgs/preatendedor/spec2.svg'
 import spec3 from '../../asset/imgs/preatendedor/spec3.svg'
 import Link from 'next/link'
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { useTranslation, Trans } from 'next-i18next';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -25,6 +24,8 @@ import SwiperCore, { Autoplay, FreeMode, Pagination } from 'swiper';
 SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
 export default function Modern() {
+    const { t } = useTranslation(['preatendedor', 'common']);
+
     return (
         <>
             <Container fluid className="specs-section_preatendedor">
@@ -34,7 +35,9 @@ export default function Modern() {
                             <Row>
                                 <Col xs={12} className="specs-section_preatendedor_text mb-5">
                                     <div>
-                                        <h2>¿Qué puedes hacer con el preatendedor?</h2>
+                                        <h2>
+                                                <Trans t={t} i18nKey="MODERN.TITLE"/>
+                                        </h2>
                                     </div>
                                 </Col>
                             </Row>
@@ -51,9 +54,7 @@ export default function Modern() {
                                 <Col xs={12} className="specs-section_preatendedor_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_preatendedor_title">
-                                            <span>Incluir</span><br />
-                                            pop ups
-
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_1.TITLE"/>
                                         </h4>
 
                                     </div>
@@ -71,8 +72,7 @@ export default function Modern() {
                                 <Col xs={12} className="specs-section_preatendedor_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_preatendedor_title">
-                                            <span>Agregar</span><br />
-                                            Formularios
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_2.TITLE"/>
                                         </h4>
 
                                     </div>
@@ -90,11 +90,10 @@ export default function Modern() {
                                 <Col xs={12} className="specs-section_preatendedor_div-text text-center d-flex justify-content-center my-3">
                                     <div>
                                         <h4 className="specs-section_preatendedor_title">
-                                            Integrar con
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_3.TITLE"/>
                                         </h4>
                                         <p className="specs-section_preatendedor_parraf">
-                                            la base de datos de los clientes o CRM para personalizar su viaje
-
+                                            <Trans t={t} i18nKey="MODERN.CAPTION_3.SUBTITLE"/>
                                         </p>
                                     </div>
 
@@ -141,8 +140,7 @@ export default function Modern() {
                                         <Col xs={12} className="specs-section_preatendedor_div-text text-center d-flex justify-content-center my-3">
                                             <div>
                                                 <h4 className="specs-section_preatendedor_title">
-                                                    <span>Incluir</span><br />
-                                                    pop ups
+                                                    <Trans t={t} i18nKey="MODERN.CAPTION_1.TITLE"/>
 
                                                 </h4>
 
@@ -163,8 +161,7 @@ export default function Modern() {
                                         <Col xs={12} className="specs-section_preatendedor_div-text text-center d-flex justify-content-center my-3">
                                             <div>
                                                 <h4 className="specs-section_preatendedor_title">
-                                                    <span>Agregar</span><br />
-                                                    Formularios
+                                                    <Trans t={t} i18nKey="MODERN.CAPTION_2.TITLE"/>
                                                 </h4>
 
                                             </div>
@@ -184,11 +181,10 @@ export default function Modern() {
                                         <Col xs={12} className="specs-section_preatendedor_div-text text-center d-flex justify-content-center my-3">
                                             <div>
                                                 <h4 className="specs-section_preatendedor_title">
-                                                    Integrar con
+                                                    <Trans t={t} i18nKey="MODERN.CAPTION_3.TITLE"/>
                                                 </h4>
                                                 <p className="specs-section_preatendedor_parraf">
-                                                    la base de datos de los clientes o CRM para personalizar su viaje
-
+                                                    <Trans t={t} i18nKey="MODERN.CAPTION_3.SUBTITLE"/>
                                                 </p>
                                             </div>
 
@@ -203,7 +199,7 @@ export default function Modern() {
                         <Col className="text-center mt-4">
                             <Link href="/contacto">
                                 <button className="header-home_demobutton fullbutton">
-                                    Solicita una demo
+                                    <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                 </button>
                             </Link>
                         </Col>

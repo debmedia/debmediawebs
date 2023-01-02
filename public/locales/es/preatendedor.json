@@ -20,5 +20,18 @@
       "TITLE": "Respuestas tardías",
       "SUBTITLE": "a tus clientes"
     }
+  },
+  "MODERN": {
+    "TITLE": "¿Qué puedes hacer con el preatendedor?",
+    "CAPTION_1": {
+      "TITLE": "<span>Incluir</span><br /> pop ups"
+    },
+    "CAPTION_2": {
+      "TITLE": "<span>Agregar</span><br />Formularios"
+    },
+    "CAPTION_3": {
+      "TITLE": "Integrar con",
+      "SUBTITLE": "la base de datos de los clientes o CRM para personalizar su viaje"
+    }
   }
 }
