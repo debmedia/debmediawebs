@@ -1,87 +1,89 @@
-[
-  {
-    "title": "Atención Virtual",
-    "image": {
-      "url": "videocall.png",
-      "width": 520,
-      "height": 340
+{
+  "es": [
+    {
+      "title": "Atención Virtual",
+      "image": {
+        "url": "videocall.png",
+        "width": 520,
+        "height": 340
+      },
+      "key": "videocall",
+      "main": "Conecta clientes y colaboradores por videollamada para que no deban acercarse a las sucursales. ",
+      "secu": "Mejora los tiempos de atención y disminuye procesos costosos y poco efectivos en sucursales.",
+      "url": "/atencion-virtual"
     },
-    "key": "videocall",
-    "main": "Conecta clientes y colaboradores por videollamada para que no deban acercarse a las sucursales. ",
-    "secu": "Mejora los tiempos de atención y disminuye procesos costosos y poco efectivos en sucursales.",
-    "url": "/atencion-virtual"
-  },
-  {
-    "title": "Chatbot para retail",
-    "image": {
-      "url": "wapp.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Chatbot para retail",
+      "image": {
+        "url": "wapp.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "wapp",
+      "main": "Automatiza las conversaciones con los clientes, aumenta la capacidad de respuesta y atiende  ",
+      "secu": "consultas de forma rápida, personalizada y en cualquier horario con el chatbot.",
+      "url": "/preatendedor"
+    }
+    ,  
+    {
+      "title": "Pre atendedor",
+      "image": {
+        "url": "pre.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "preaten",
+      "main": "Deriva a tus clientes a un portal de pre atención personalizable que los guía a la elección de su trámite fácilmente. ",
+      "secu": " Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
+      "url": "/preatendedor"
     },
-    "key": "wapp",
-    "main": "Automatiza las conversaciones con los clientes, aumenta la capacidad de respuesta y atiende  ",
-    "secu": "consultas de forma rápida, personalizada y en cualquier horario con el chatbot.",
-    "url": "/preatendedor"
-  }
-  ,  
-  {
-    "title": "Pre atendedor",
-    "image": {
-      "url": "pre.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Sistema de citas online ",
+      "image": {
+        "url": "citas.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "citas",
+      "main": "Deja que los clientes reserven una cita online  desde canales digitales para un horario y día ",
+      "secu": "determinado y conoce con anticipación qué clientes te visitarán y sus necesidades.",
+      "url": "/citasonline"
     },
-    "key": "preaten",
-    "main": "Deriva a tus clientes a un portal de pre atención personalizable que los guía a la elección de su trámite fácilmente. ",
-    "secu": " Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
-    "url": "/preatendedor"
-  },
-  {
-    "title": "Sistema de citas online ",
-    "image": {
-      "url": "citas.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Fila virtual",
+      "image": {
+        "url": "filavirtual.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "filavirtual",
+      "main": "Deja que los clientes soliciten un turno desde el móvil para ser atendidos en un tiempo cercano ",
+      "secu": "a través de videollamadas o en sucursal y disminuye el tiempo de espera para su atención.    ",
+      "url": "/fila-virtual"
     },
-    "key": "citas",
-    "main": "Deja que los clientes reserven una cita online  desde canales digitales para un horario y día ",
-    "secu": "determinado y conoce con anticipación qué clientes te visitarán y sus necesidades.",
-    "url": "/citasonline"
-  },
-  {
-    "title": "Fila virtual",
-    "image": {
-      "url": "filavirtual.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Cartelería digital para retail",
+      "image": {
+        "url": "debsign.png",
+        "width": 540,
+        "height": 330
+      },
+      "key": "debsign",
+      "main": "Administra el contenido de la red de pantallas dentro de las sucursales.",
+      "secu": " Planifica el contenido, segmenta por sede, grupos de pantallas y actualízalo en tiempo real con mensajes efectivos.",
+      "url": "/debsign"
     },
-    "key": "filavirtual",
-    "main": "Deja que los clientes soliciten un turno desde el móvil para ser atendidos en un tiempo cercano ",
-    "secu": "a través de videollamadas o en sucursal y disminuye el tiempo de espera para su atención.    ",
-    "url": "/fila-virtual"
-  },
-  {
-    "title": "Cartelería digital para retail",
-    "image": {
-      "url": "debsign.png",
-      "width": 540,
-      "height": 330
-    },
-    "key": "debsign",
-    "main": "Administra el contenido de la red de pantallas dentro de las sucursales.",
-    "secu": " Planifica el contenido, segmenta por sede, grupos de pantallas y actualízalo en tiempo real con mensajes efectivos.",
-    "url": "/debsign"
-  },
-  {
-    "title": "Encuestas de satisfacción ",
-    "image": {
-      "url": "encuesta.png",
-      "width": 540,
-      "height": 380
-    },
-    "key": "encuesta",
-    "main": "Envía a los clientes encuestas de satisfacción una vez han sido atendidos, ",
-    "secu": "eleva la tasa de respuesta y utiliza los resultados para mejorar los procesos de atención dentro de tu empresa retail.",
-    "url": "/encuestas"
-  }
-]
+    {
+      "title": "Encuestas de satisfacción ",
+      "image": {
+        "url": "encuesta.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "encuesta",
+      "main": "Envía a los clientes encuestas de satisfacción una vez han sido atendidos, ",
+      "secu": "eleva la tasa de respuesta y utiliza los resultados para mejorar los procesos de atención dentro de tu empresa retail.",
+      "url": "/encuestas"
+    }
+  ]
+}

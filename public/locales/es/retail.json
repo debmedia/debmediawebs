@@ -16,5 +16,23 @@
       "TITLE": "Cambiarían de marca",
       "SUBTITLE": "si consiguen una experiencia<br /> más consistente."
     }
+  },
+  "SOLUTIONS":{
+    "TITLE": "<b>Entrega a tus clientes </b> <br /> la atención que se merecen",
+    "CAPTION_1": {
+      "TITLE": "Integra los canales de atención",
+      "SUBTITLE": "y ofrece una atención omnicanal."
+    },
+    "CAPTION_2": {
+      "TITLE": "Optimiza los procesos con datos",
+      "SUBTITLE": "y agiliza la atención."
+    },
+    "CAPTION_3": {
+      "TITLE": "Mejora su experiencia ",
+      "SUBTITLE": "en cada punto y fidelízalos a tus servicios."
+    },
+    "ORGANIZATION_TITLE": "<0>Trabajamos con organizaciones </0> <1 /> que confían en <3 />  nuestro software. <5 />",
+    "SOLUTIONS_TITLE": "Soluciones de <b> Debmedia </b>  para ofrecer una atención omnicanal"
   }
+
 }
