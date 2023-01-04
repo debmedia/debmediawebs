@@ -1,86 +1,88 @@
-[
-  {
-    "title": "Telemedicina",
-    "image": {
-      "url": "videocall.png",
-      "width": 520,
-      "height": 340
+{
+  "es": [
+    {
+      "title": "Telemedicina",
+      "image": {
+        "url": "videocall.png",
+        "width": 520,
+        "height": 340
+      },
+      "key": "videocall", 
+      "main": "Presta servicios médicos a través de videollamadas ",
+      "secu": "facilita el acceso a los pacientes y utiliza el sistema de atención virtual para compartir documentos, pantalla y grabar la atención.",
+      "url": "/atencion-virtual"
     },
-    "key": "videocall", 
-    "main": "Presta servicios médicos a través de videollamadas ",
-    "secu": "facilita el acceso a los pacientes y utiliza el sistema de atención virtual para compartir documentos, pantalla y grabar la atención.",
-    "url": "/atencion-virtual"
-  },
-  {
-    "title": "Chatbot de WhatsApp",
-    "image": {
-      "url": "wapp.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Chatbot de WhatsApp",
+      "image": {
+        "url": "wapp.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "wapp", 
+      "main": "Automatiza las conversaciones con los pacientes, ",
+      "secu": "aumenta la capacidad de respuesta y atiende consultas de forma rápida, personalizada y en cualquier horario con un chatbot para clínicas.",
+      "url": "/preatendedor"
     },
-    "key": "wapp", 
-    "main": "Automatiza las conversaciones con los pacientes, ",
-    "secu": "aumenta la capacidad de respuesta y atiende consultas de forma rápida, personalizada y en cualquier horario con un chatbot para clínicas.",
-    "url": "/preatendedor"
-  },
-  {
-    "title": "Pre atendedor",
-    "image": {
-      "url": "pre.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Pre atendedor",
+      "image": {
+        "url": "pre.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "preaten", 
+      "main": "Deriva a los pacientes a un portal de pre atención personalizable, ",
+      "secu": "guíalos fácilmente a la elección de su trámite y configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
+      "url": "/preatendedor"
     },
-    "key": "preaten", 
-    "main": "Deriva a los pacientes a un portal de pre atención personalizable, ",
-    "secu": "guíalos fácilmente a la elección de su trámite y configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
-    "url": "/preatendedor"
-  },
-  {
-    "title": "Sistema de citas online",
-    "image": {
-      "url": "citas.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Sistema de citas online",
+      "image": {
+        "url": "citas.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "citas", 
+      "main": "Deja que a través de una experiencia simple los pacientes reserven una cita online ",
+      "secu": "para una fecha y hora específica desde el navegador y conoce con anticipación las necesidades de cada uno de ellos.",
+      "url": "/citasonline"
     },
-    "key": "citas", 
-    "main": "Deja que a través de una experiencia simple los pacientes reserven una cita online ",
-    "secu": "para una fecha y hora específica desde el navegador y conoce con anticipación las necesidades de cada uno de ellos.",
-    "url": "/citasonline"
-  },
-  {
-    "title": "Gestión de filas para salud",
-    "image": {
-      "url": "filavirtual.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Gestión de filas para salud",
+      "image": {
+        "url": "filavirtual.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "filavirtual", 
+      "main": "Deja que los pacientes reserven un turno a través de su móvil para un tiempo cercano, ",
+      "secu": "organiza el flujo de atención y disminuye el tiempo que pasan los pacientes en las salas de espera.",
+      "url": "/fila-virtual"
     },
-    "key": "filavirtual", 
-    "main": "Deja que los pacientes reserven un turno a través de su móvil para un tiempo cercano, ",
-    "secu": "organiza el flujo de atención y disminuye el tiempo que pasan los pacientes en las salas de espera.",
-    "url": "/fila-virtual"
-  },
-  {
-    "title": "Cartelería digital para clínicas",
-    "image": {
-      "url": "debsign.png",
-      "width": 540,
-      "height": 350
+    {
+      "title": "Cartelería digital para clínicas",
+      "image": {
+        "url": "debsign.png",
+        "width": 540,
+        "height": 350
+      },
+      "key": "debsign", 
+      "main": "Administra el contenido de las pantallas en los puntos de atención.   ",
+      "secu": "Planifica el contenido, segmenta por sede, grupos de pantallas y actualízalo en tiempo real para comunicar mensajes efectivos.",
+      "url": "/debsign"
     },
-    "key": "debsign", 
-    "main": "Administra el contenido de las pantallas en los puntos de atención.   ",
-    "secu": "Planifica el contenido, segmenta por sede, grupos de pantallas y actualízalo en tiempo real para comunicar mensajes efectivos.",
-    "url": "/debsign"
-  },
-  {
-    "title": " Encuestas de satisfacción para salud",
-    "image": {
-      "url": "encuesta.png",
-      "width": 540,
-      "height": 380
-    },
-    "key": "encuesta", 
-    "main": "Envía a los pacientes encuestas de satisfacción una vez han recibido los servicios médicos. Eleva la tasa de respuesta,  ",
-    "secu": "conoce su opinión y utiliza los resultados para mejorar los procesos de atención.",
-    "url": "/encuestas"
-  }
-]
+    {
+      "title": " Encuestas de satisfacción para salud",
+      "image": {
+        "url": "encuesta.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "encuesta", 
+      "main": "Envía a los pacientes encuestas de satisfacción una vez han recibido los servicios médicos. Eleva la tasa de respuesta,  ",
+      "secu": "conoce su opinión y utiliza los resultados para mejorar los procesos de atención.",
+      "url": "/encuestas"
+    }
+  ]
+}
