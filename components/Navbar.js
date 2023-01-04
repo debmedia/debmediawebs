@@ -18,6 +18,7 @@ export default function Home() {
 
     const [expanded, setExpanded] = useState(false);
     const router = useRouter();
+    const localePath = router.locale === router.defaultLocale? "" : router.locale;
 
     return (
         <>
@@ -37,7 +38,7 @@ export default function Home() {
                     <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                         <Nav activeKey={router.pathname} className="ml-auto">
-                            <Nav.Link href="/">
+                            <Nav.Link href={`/${localePath}`}>
                                 {t("NAVBAR.HOME")}
                             </Nav.Link>
                             <NavDropdown title={t("NAVBAR.SOLUTIONS.TITLE")} id="basic-nav-dropdown">
@@ -82,9 +83,9 @@ export default function Home() {
                                     </Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="/clientes">{t("NAVBAR.CLIENTS")}</Nav.Link>
-                            <Nav.Link href="/nosotros">{t("NAVBAR.US")}</Nav.Link>
-                            <Nav.Link href="/partners">{t("NAVBAR.PARTNERS")}</Nav.Link>
+                            <Nav.Link href={`${localePath}/clientes`}>{t("NAVBAR.CLIENTS")}</Nav.Link>
+                            <Nav.Link href={`${localePath}/nosotros`}>{t("NAVBAR.US")}</Nav.Link>
+                            <Nav.Link href={`${localePath}/partners`}>{t("NAVBAR.PARTNERS")}</Nav.Link>
                             {router.locale === "es" && 
                                 <NavDropdown title={t("NAVBAR.RESOURCES.TITLE")} id="basic-nav-dropdown">
                                     <NavDropdown.Item href="https://debmedia.com/blog/">
