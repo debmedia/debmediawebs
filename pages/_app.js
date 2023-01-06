@@ -50,6 +50,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscr
         <Component {...pageProps} />
         <Footer />
       </Layout>
+     {/* { <!-- Start of HubSpot Embed Code -->} */}
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/1797020.js"></script>
+      {/* <!-- End of HubSpot Embed Code --> */}
     </>
 
   );
