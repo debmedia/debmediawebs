@@ -5,18 +5,18 @@ import modelos from '../../asset/imgs/telcos/modelos.svg'
 import difi from '../../asset/imgs/telcos/difi.svg'
 import cambian from '../../asset/imgs/telcos/cambian.svg'
 import arrow from '../../asset/imgs/home/arrow.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
+    const { t } = useTranslation(['telcos', 'common']);
     return (
         <>
             <Container fluid className="market-retail-section">
                 <Container>
                     <Row>
                         <Col className="market-retail-section_maintitle">
-                            <h3 className="text-center">
-                                Los clientes hoy <b><br className="d-block d-sm-none"/>no se <br className="d-none d-sm-block"/>
-                                    conforman con cualquier cosa </b>
+                            <h3 className="text-center no-br-sm">
+                                <Trans t={t} i18nKey="MARKET.TITLE"/>
                             </h3>
                         </Col>
                     </Row>
@@ -28,11 +28,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-retail-section_title">
-                                Modelos de <br />
-                                atención
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-retail-section_parraf">
-                                obsoletos
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-retail-section_div">
@@ -42,10 +41,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-retail-section_title">
-                                Dificultad para dirigir
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="market-retail-section_parraf">
-                                un canal de interacción a <br />cada cliente
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-retail-section_div">
@@ -55,10 +54,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-retail-section_title">
-                                Cambiarían de marca
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="market-retail-section_parraf">
-                                si consiguen una experiencia<br /> más consistente.
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>
