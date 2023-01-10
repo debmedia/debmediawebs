@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     },
     formatTranslations: {
       target: {
-        baseInputFiles: "public/locales/es/",
+        src: "public/locales/es/*.json",
       },
     }
   });
