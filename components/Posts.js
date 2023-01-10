@@ -54,12 +54,12 @@ export default function Brands(props) {
         } else {
             setPosts(BlogData[locale]);
         }
-    }, [props]);
+    }, [props, locale]);
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     return (
-        <>{locale === "es" && 
+        <>{locale === "es" && posts.length > 0 &&
             <Container fluid className={"posts-slider " + (props.indistry ? 'noGrey' : '')}>
                 <Container>
                     {
