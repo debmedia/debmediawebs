@@ -144,7 +144,7 @@ export default function Solutions(props) {
                                                             </p>
                                                             <Link href={item.url}>
                                                             <button>
-                                                                Conoce más
+                                                                <Trans t={t} i18nKey="common:LEARN_MORE"/>
                                                             </button>
                                                             </Link>
                                                         </Col>
@@ -173,7 +173,7 @@ export default function Solutions(props) {
                                                 </h2>
                                                 <Link href={item.url}>
                                                     <button>
-                                                        Conoce más
+                                                        <Trans t={t} i18nKey="common:LEARN_MORE"/>
                                                     </button>
                                                 </Link>
                                             </Col>
