@@ -1,8 +1,8 @@
 {
-  "HEADER":{
+  "HEADER": {
     "TITLE": "<b>Mejora la experiencia<br/> de los clientes</b> dentro y  fuera de las sucursales"
   },
-  "MARKET":{
+  "MARKET": {
     "TITLE": "Los clientes hoy <br /><b>no se </b><br /><b>conforman con cualquier cosa </b>",
     "CAPTION_1": {
       "TITLE": "Quieren interactuar",
@@ -17,7 +17,7 @@
       "SUBTITLE": "todos los procesos manuales"
     }
   },
-  "SOLUTIONS":{
+  "SOLUTIONS": {
     "TITLE": "<b>Ofrece a tus clientes </b> <br />la atención que se merecen",
     "CAPTION_1": {
       "TITLE": "Integra los canales",

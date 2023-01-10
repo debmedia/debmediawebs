@@ -1,8 +1,8 @@
 {
-  "HEADER":{
+  "HEADER": {
     "TITLE": "<b>Mejora la experiencia</b><br/><b> de los clientes</b> dentro y  <br />fuera de las sucursales"
   },
-  "MARKET":{
+  "MARKET": {
     "TITLE": "Los clientes hoy <br /><b>no se</b><br /><b>conforman con cualquier cosa </b>",
     "CAPTION_1": {
       "TITLE": "Modelos de <br /> atención",
@@ -17,7 +17,7 @@
       "SUBTITLE": "si consiguen una experiencia<br /> más consistente."
     }
   },
-  "SOLUTIONS":{
+  "SOLUTIONS": {
     "TITLE": "<b>Adapta tu empresa </b> <br />a nuevos modelos",
     "CAPTION_1": {
       "TITLE": "Integra los canales de atención",

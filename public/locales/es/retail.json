@@ -1,8 +1,8 @@
 {
-  "HEADER":{
+  "HEADER": {
     "TITLE": "<0>Mejora la experiencia<1 /> de los clientes</0> dentro y  <2 />fuera de las sucursales"
   },
-  "MARKET":{
+  "MARKET": {
     "TITLE": "Los clientes hoy <b><br />no se <br /> conforman con cualquier cosa </b>",
     "CAPTION_1": {
       "TITLE": "Quieren interactuar",
@@ -17,7 +17,7 @@
       "SUBTITLE": "si consiguen una experiencia<br /> más consistente."
     }
   },
-  "SOLUTIONS":{
+  "SOLUTIONS": {
     "TITLE": "<b>Entrega a tus clientes </b> <br /> la atención que se merecen",
     "CAPTION_1": {
       "TITLE": "Integra los canales de atención",
@@ -34,5 +34,4 @@
     "ORGANIZATION_TITLE": "<0>Trabajamos con organizaciones </0> <1 /> que confían en <3 />  nuestro software. <5 />",
     "SOLUTIONS_TITLE": "Soluciones de <b> Debmedia </b>  para ofrecer una atención omnicanal"
   }
-
 }
