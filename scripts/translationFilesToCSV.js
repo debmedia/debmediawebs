@@ -41,11 +41,11 @@ function objectsToCSV(obj, objs, pName){
     const propName = propNames[i];
     if (typeof obj[propName] ==='string'){
       const value = obj[propName];
-      csv = csv.concat(pName).concat(nestingSeparator).concat(propName).concat(csvSeparator).concat("\""+value +"\"");
+      csv = csv.concat(pName).concat(nestingSeparator).concat(propName).concat(csvSeparator).concat("\""+sanitizeForCSV(value) +"\"");
       for(let subObj of objs){
         if(typeof subObj[propName] === 'string'){
           const subValue = subObj[propName];
-          csv = csv.concat(csvSeparator).concat("\""+ subValue +"\"");
+          csv = csv.concat(csvSeparator).concat("\""+ sanitizeForCSV(subValue) +"\"");
         } else {
           csv = csv.concat(csvSeparator);
         }
@@ -65,4 +65,8 @@ function objectsToCSV(obj, objs, pName){
 
 function loadJSON(path){
   return JSON.parse(fs.readFileSync(path ,{encoding: "utf-8"}));
+}
+
+function sanitizeForCSV(str){
+  return str.replaceAll("\"", "\"\"");
 }
