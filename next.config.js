@@ -21,8 +21,8 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/blog/:path',
-        destination: 'https://blog.debmedia.com/:path',
+        source: '/blog/:path*',
+        destination: 'https://blog.debmedia.com/:path*',
         permanent: true,
       },
       {
