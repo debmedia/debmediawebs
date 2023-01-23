@@ -5,6 +5,7 @@ import mypic from '../asset/imgs/logo.svg'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next';
+import LanguageSelector from "./LanguageSelector";
 
 
 export default function Home() {
@@ -110,16 +111,12 @@ export default function Home() {
                             <Link href="/contacto">
                                 <Nav.Link href="#link" className="demo">{t("common:REQUEST_A_DEMO")}</Nav.Link>
                             </Link>
-                            <Link href={router.pathname} locale="es" scroll={false} >
-                                <div>
-                                <div style={{backgroundColor: router.locale == "es" ? "#232C61": "white", color: router.locale != "es" ? "#232C61": "white", padding: "0.1rem 0.25rem", margin: "0.25rem",borderRadius: "0.5rem",height: "auto", cursor:"pointer"}}>ES</div>
-                                </div>
-                            </Link>
-                            <Link href={router.pathname} locale="pt" scroll={false} >
-                                <div>
-                                <div style={{backgroundColor: router.locale == "pt" ? "#232C61": "white", color: router.locale != "pt" ? "#232C61": "white", padding: "0.1rem 0.25rem", margin: "0.25rem",borderRadius: "0.5rem",height: "auto", cursor:"pointer"}}>PT</div>
-                                </div>
-                            </Link>
+                           <LanguageSelector langs={[
+                            {key: "es", label: "LANGUAGE_SELECTOR.SPANISH"},
+                            {key: "en", label: "LANGUAGE_SELECTOR.ENGLISH"},
+                            {key: "pt", label: "LANGUAGE_SELECTOR.PORTUGUESE"},
+                            {key: "fr", label: "LANGUAGE_SELECTOR.FRENCH"},
+                           ]}/>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

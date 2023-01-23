@@ -150,5 +150,11 @@
   "THANKYOU": {
     "MESSAGE": "Mientras tanto, <br /> <b> te invitamos </b> <br /> a explorar nuestra <br /> sección de recursos. <br /> <b> ¡Disfrútalos! </b>",
     "BUTTON": "Ver recursos"
+  },
+  "LANGUAGE_SELECTOR": {
+    "SPANISH": "Español",
+    "ENGLISH": "Inglés",
+    "PORTUGUESE": "Portugués",
+    "FRENCH": "Francés"
   }
 }
