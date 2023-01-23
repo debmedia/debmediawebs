@@ -30,8 +30,10 @@ export default function Home() {
                             <div className="logoDiv">
                                 <Image
                                     src={mypic}
-                                    alt="Picture of the author"
+                                    alt="Debmedia logo"
                                     className="img-fluid"
+                                    //style={{width: "140px"}}
+                                    //width={140}
                                 />
                             </div>
                         </Link>
@@ -108,10 +110,16 @@ export default function Home() {
                                     </NavDropdown.Item>
                                 </NavDropdown>
                             }
+                            <LanguageSelector className={"d-lg-none"} langs={[
+                            {key: "es", label: "LANGUAGE_SELECTOR.SPANISH"},
+                            {key: "en", label: "LANGUAGE_SELECTOR.ENGLISH"},
+                            {key: "pt", label: "LANGUAGE_SELECTOR.PORTUGUESE"},
+                            {key: "fr", label: "LANGUAGE_SELECTOR.FRENCH"},
+                           ]}/>
                             <Link href="/contacto">
-                                <Nav.Link href="#link" className="demo">{t("common:REQUEST_A_DEMO")}</Nav.Link>
+                                <Nav.Link href="#link" className="demo text-nowrap">{t("common:REQUEST_A_DEMO")}</Nav.Link>
                             </Link>
-                           <LanguageSelector langs={[
+                           <LanguageSelector className={"d-none d-lg-block"} langs={[
                             {key: "es", label: "LANGUAGE_SELECTOR.SPANISH"},
                             {key: "en", label: "LANGUAGE_SELECTOR.ENGLISH"},
                             {key: "pt", label: "LANGUAGE_SELECTOR.PORTUGUESE"},

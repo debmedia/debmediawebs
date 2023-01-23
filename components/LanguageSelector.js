@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "next-i18next";
 
-export default function LanguageSelector({ langs }) {
+export default function LanguageSelector({ langs, className }) {
     const { t } = useTranslation(["components", "common"]);
     const { locale, pathname } = useRouter();
     const [dropdownState, setDropdownState] = useState(false);
@@ -31,14 +31,19 @@ export default function LanguageSelector({ langs }) {
     });
 
     return (
-        <>
-            <div ref={ref} className="language-selector-container">
+            <div ref={ref} className={"language-selector-container "+className}>
                 <button
                     type="button"
                     className="btn lang-selector text-nowrap"
                     onClick={() => setDropdownState(!dropdownState)}>
                     <i className="bi bi-globe"></i>{" "}
-                    {t(langs.filter((lang) => lang.key === locale)[0].label)}{" "}
+                    <span className="d-none d-lg-inline">
+                    {t(langs.filter((lang) => lang.key === locale)[0].label)}
+                    </span>
+                    <span className="d-lg-none">
+                    {locale.toUpperCase()}
+                    </span>
+                    {" "}
                     <i className="bi bi-caret-down-fill"></i>
                 </button>
                 {dropdownState && (
@@ -52,7 +57,8 @@ export default function LanguageSelector({ langs }) {
                                         locale={lang.key}
                                         scroll={false}>
                                         <li className="dropdown-item">
-                                            <span>{t(lang.label)}</span>
+                                            <span className="d-none d-lg-block">{t(lang.label)}</span>
+                                            <span className="d-lg-none">{lang.key.toUpperCase()}</span>
                                             {locale === lang.key && (
                                                 <i className="bi bi-check"></i>
                                             )}
@@ -64,6 +70,5 @@ export default function LanguageSelector({ langs }) {
                     </div>
                 )}
             </div>
-        </>
     );
 }
