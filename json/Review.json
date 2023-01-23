@@ -1,5 +1,6 @@
 {
-  "es": [
+  "es":
+  [
     {
       "name": "testimonio2",
       "image": "person.png",
@@ -12,27 +13,18 @@
       "name": "testimonio1",
       "image": "rebollar.png",
       "company": "hir.png",
-      "comment": "Las pequeñas cosas hacen grandes diferencias en la experiencia que viven nuestros clientes. Debmedia nos ayuda a profesionalizar la atención de una manera personalizada, incluso desde antes de que inicie la atención misma",
+      "comment": "Las pequeñas cosas hacen grandes diferencias en la experiencia que viven nuestros clientes. Debmedia nos ayuda a profesionalizar la atención de una manera personalizada, incluso desde antes de que inicie la atención misma.",
       "person": "Francisco Rebollar",
       "job": "Director de Experiencia del cliente"
-    }
-  ],
-  "pt": [
-    {
-      "name": "testimonio2",
-      "image": "person.png",
-      "company": "itau.png",
-      "comment": "PORTUGUES TRADUCIR ACA Con Debmedia logramos optimizar la atención de nuestros clientes para poder brindarles una atención más eficiente y personalizada, y así aumentar su satisfacción.",
-      "person": "Lionel Baragaño",
-      "job": "PORTUGUES TRADUCIR ACA Gerente de Banco Digital & Transformación"
     },
     {
-      "name": "testimonio1",
-      "image": "rebollar.png",
-      "company": "hir.png",
-      "comment": "PORTUGUES TRADUCIR ACA Las pequeñas cosas hacen grandes diferencias en la experiencia que viven nuestros clientes. Debmedia nos ayuda a profesionalizar la atención de una manera personalizada, incluso desde antes de que inicie la atención misma",
-      "person": "Francisco Rebollar",
-      "job": "PORTUGUES TRADUCIR ACA Director de Experiencia del cliente"
+      "name": "testimonio3",
+      "image": "santos.png",
+      "company": "supervielle.png",
+      "comment": "Nuestros objetivos con la implementación de esta solución se relacionan directamente con nuestra filosofía, su propósito es mantener la cercanía con el cliente y, en ese sentido, la videollamada otorga el toque humano a las interacciones que no se realizan en forma presencial.",
+      "person": "Rodrigo Santos",
+      "job": "Agile Tribe Leader - Modelo de Atención Omnicanal"
     }
+    
   ]
 }
