@@ -28,6 +28,7 @@ export default function Brands(props) {
     const [title, setTitle] = useState("");
 
     useEffect(() => {
+        const localBlogData = BlogData[locale] || BlogData["es"];
         if (props.indistry) {
             switch (props.indistry) {
                 case "banca":
@@ -49,10 +50,10 @@ export default function Brands(props) {
                     setTitle("POSTS.UTILITIES.TITLE");
                     break;
             }
-            const filter = BlogData[locale].filter(post => post.indistry === props.indistry);
+            const filter = localBlogData.filter(post => post.indistry === props.indistry);
             setPosts(filter);
         } else {
-            setPosts(BlogData[locale]);
+            setPosts(localBlogData);
         }
     }, [props, locale]);
 
