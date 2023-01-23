@@ -32,7 +32,7 @@ export default function Brands() {
     const { locale } = useRouter();
 
     useEffect(() => {
-        setreview(Review[locale]);
+        setreview(Review[locale] || Review["es"]);
     }, [locale]);
 
     const prevRef = useRef(null);

@@ -36,7 +36,7 @@ export default function Solutions() {
                                 <Row>
                                     <Col sm={3}>
                                         <Nav variant="pills" className="flex-column">
-                                            {solutionsHomeData[locale].map((item, index) => (
+                                            {(solutionsHomeData[locale] || solutionsHomeData["es"]).map((item, index) => (
                                                 <Nav.Item key={index}>
                                                     <Nav.Link eventKey={item.key} className="solutions-tabs_content-nav">{item.title}</Nav.Link>
                                                 </Nav.Item>
@@ -45,7 +45,7 @@ export default function Solutions() {
                                     </Col>
                                     <Col sm={9}>
                                         <Tab.Content>
-                                            {solutionsHomeData[locale].map((item, index) => (
+                                            {(solutionsHomeData[locale] || solutionsHomeData["es"]).map((item, index) => (
                                                 <Tab.Pane key={index} eventKey={item.key}>
                                                     <Row>
                                                         <Col className="text-center">
@@ -73,7 +73,7 @@ export default function Solutions() {
                     </Row>
                     <Row className="solutions-accordion_content d-block d-sm-none">
                         <Accordion defaultActiveKey="0">
-                            {solutionsHomeData[locale].map((item, index) => (
+                            {(solutionsHomeData[locale] || solutionsHomeData["es"]).map((item, index) => (
                                 <Accordion.Item key={index} eventKey={item.key} className="solutions-accordion_content-nav">
                                     <Accordion.Header >{item.title}</Accordion.Header>
                                     <Accordion.Body>

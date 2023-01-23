@@ -26,8 +26,8 @@ export default function Header() {
     const [modalShow, setModalShow] = React.useState(false);
     const { t } = useTranslation(['home', 'common']);
     const {locale} = useRouter();
-    const video = video_lang[locale];
-    const videoSm = videoSm_lang[locale];
+    const video = video_lang[locale] || video_lang["es"];
+    const videoSm = videoSm_lang[locale] || videoSm_lang["es"];
     return (
         <>
             <header>
