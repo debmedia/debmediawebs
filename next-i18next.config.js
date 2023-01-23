@@ -1,7 +1,7 @@
 module.exports = {
   i18n: {
     defaultLocale: 'es',
-    locales: ['es', 'pt'],
+    locales: ['es', 'pt', 'fr', 'en'],
     reloadOnPrerender: true,//sacar en producción
     debug: true, // sacar en producción
       react: {
