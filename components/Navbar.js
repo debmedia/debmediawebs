@@ -52,9 +52,11 @@ export default function Home() {
                         id="basic-navbar-nav"
                         className="justify-content-end">
                         <Nav activeKey={router.pathname} className="ml-auto">
-                            <Nav.Link href={`/${localePath}`}>
+                            <Link href={"/"} passHref={true}>
+                            <Nav.Link eventKey={"/"}>
                                 {t("NAVBAR.HOME")}
                             </Nav.Link>
+                            </Link>
                             <NavDropdown
                                 title={t("NAVBAR.SOLUTIONS.TITLE")}
                                 id="basic-nav-dropdown">
@@ -112,13 +114,13 @@ export default function Home() {
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <Link href={`/clientes`} passHref={true}>
-                                <Nav.Link>{t("NAVBAR.CLIENTS")}</Nav.Link>
+                                <Nav.Link eventKey={`/clientes`}>{t("NAVBAR.CLIENTS")}</Nav.Link>
                             </Link>
                             <Link href={`/nosotros`} passHref={true}>
-                                <Nav.Link>{t("NAVBAR.US")}</Nav.Link>
+                                <Nav.Link eventKey={`/nosotros`}>{t("NAVBAR.US")}</Nav.Link>
                             </Link>
                             <Link href={`/partners`} passHref={true}>
-                                <Nav.Link>{t("NAVBAR.PARTNERS")}</Nav.Link>
+                                <Nav.Link eventKey={`/partners`}>{t("NAVBAR.PARTNERS")}</Nav.Link>
                             </Link>
                             {router.locale === "es" && (
                                 <NavDropdown
@@ -149,20 +151,24 @@ export default function Home() {
                                     </NavDropdown.Item>
                                 </NavDropdown>
                             )}
+                            {/* Selector par mobile */}
                             <LanguageSelector
                                 className={"d-lg-none"}
                                 langs={[
                                     {
                                         key: "es",
-                                        label: "LANGUAGE_SELECTOR.SPANISH",
+                                        label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.SPANISH",
+                                        dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.SPANISH"
                                     },
                                     {
                                         key: "en",
-                                        label: "LANGUAGE_SELECTOR.ENGLISH",
+                                        label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.ENGLISH",
+                                        dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.ENGLISH"
                                     },
                                     {
                                         key: "pt",
-                                        label: "LANGUAGE_SELECTOR.PORTUGUESE",
+                                        label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.PORTUGUESE",
+                                        dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.PORTUGUESE"
                                     },
                                 ]}
                             />
@@ -173,20 +179,24 @@ export default function Home() {
                                     {t("common:REQUEST_A_DEMO")}
                                 </Nav.Link>
                             </Link>
+                            {/* Selector para desktop */}
                             <LanguageSelector
                                 className={"d-none d-lg-block"}
                                 langs={[
                                     {
                                         key: "es",
-                                        label: "LANGUAGE_SELECTOR.SPANISH",
+                                        label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.SPANISH",
+                                        dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.SPANISH"
                                     },
                                     {
                                         key: "en",
-                                        label: "LANGUAGE_SELECTOR.ENGLISH",
+                                        label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.ENGLISH",
+                                        dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.ENGLISH"
                                     },
                                     {
                                         key: "pt",
-                                        label: "LANGUAGE_SELECTOR.PORTUGUESE",
+                                        label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.PORTUGUESE",
+                                        dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.PORTUGUESE"
                                     },
                                 ]}
                             />

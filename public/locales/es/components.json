@@ -152,8 +152,29 @@
     "BUTTON": "Ver recursos"
   },
   "LANGUAGE_SELECTOR": {
-    "SPANISH": "Español",
-    "ENGLISH": "Inglés",
-    "PORTUGUESE": "Portugués"
+    "MOBILE": {
+      "BUTTON":{
+        "SPANISH": "ES",
+        "ENGLISH": "EN",
+        "PORTUGUESE": "PT"
+      },
+      "DROPDOWN": {
+        "SPANISH": "ES",
+        "ENGLISH": "EN",
+        "PORTUGUESE": "PT"
+      }
+    },
+    "DESKTOP":{
+      "BUTTON":{
+        "SPANISH": "ES",
+        "ENGLISH": "EN",
+        "PORTUGUESE": "PT"
+      },
+      "DROPDOWN": {
+        "SPANISH": "ES - Español",
+        "ENGLISH": "EN - English",
+        "PORTUGUESE": "PT - Português"
+      }
+    }
   }
 }

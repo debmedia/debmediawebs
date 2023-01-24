@@ -14,7 +14,6 @@ export default function LanguageSelector({ langs, className }) {
     }, [locale]);
 
     const onClickOutside = () => {
-        console.log(onClickOutside);
         setDropdownState(false);
     };
 
@@ -37,11 +36,8 @@ export default function LanguageSelector({ langs, className }) {
                     className="btn lang-selector text-nowrap"
                     onClick={() => setDropdownState(!dropdownState)}>
                     <i className="bi bi-globe"></i>{" "}
-                    <span className="d-none d-lg-inline">
+                    <span>
                     {t(langs.filter((lang) => lang.key === locale)[0].label)}
-                    </span>
-                    <span className="d-lg-none">
-                    {locale.toUpperCase()}
                     </span>
                     {" "}
                     <i className="bi bi-caret-down-fill"></i>
@@ -57,8 +53,7 @@ export default function LanguageSelector({ langs, className }) {
                                         locale={lang.key}
                                         scroll={false}>
                                         <li className="dropdown-item">
-                                            <span className="d-none d-lg-block">{t(lang.label)}</span>
-                                            <span className="d-lg-none">{lang.key.toUpperCase()}</span>
+                                            <span>{t(lang.dropdownLabel)}</span>
                                             {locale === lang.key && (
                                                 <i className="bi bi-check"></i>
                                             )}
