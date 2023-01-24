@@ -164,10 +164,6 @@ export default function Home() {
                                         key: "pt",
                                         label: "LANGUAGE_SELECTOR.PORTUGUESE",
                                     },
-                                    {
-                                        key: "fr",
-                                        label: "LANGUAGE_SELECTOR.FRENCH",
-                                    },
                                 ]}
                             />
                             <Link href="/contacto">
@@ -191,10 +187,6 @@ export default function Home() {
                                     {
                                         key: "pt",
                                         label: "LANGUAGE_SELECTOR.PORTUGUESE",
-                                    },
-                                    {
-                                        key: "fr",
-                                        label: "LANGUAGE_SELECTOR.FRENCH",
                                     },
                                 ]}
                             />
