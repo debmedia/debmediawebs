@@ -1,0 +1,53 @@
+{
+  "HEADER": {
+    "TITLE": "Make serving from WhatsApp <br /> chatbot or a web portal more efficient .",
+    "CAPTION": "<b> Leading organizations already manage their <br /> customer experience with Debmedia <b>"
+  },
+  "FLOW": {
+    "TITLE": "<b> Implement a customizable pre-service portal that guides them to <br /> the choice of their transaction."
+  },
+  "MARKET": {
+    "TITLE": "The difficulty in directing your customers to <br /> the right channel translates into",
+    "CAPTION_1": {
+      "TITLE": "More expensive human processes",
+      "SUBTITLE": "for your organization"
+    },
+    "CAPTION_2": {
+      "TITLE": "Complex customer service processes",
+      "SUBTITLE": "for your customers"
+    },
+    "CAPTION_3": {
+      "TITLE": "Delayed responses",
+      "SUBTITLE": "to your customers"
+    }
+  },
+  "MODERN": {
+    "TITLE": "What can you do with the pre-service website",
+    "CAPTION_1": {
+      "TITLE": "<span> Include pop-ups"
+    },
+    "CAPTION_2": {
+      "TITLE": "<span> Add Forms"
+    },
+    "CAPTION_3": {
+      "TITLE": "Integrate with",
+      "SUBTITLE": "the customer database or CRM to personalize their journey."
+    }
+  },
+  "STEPS": {
+    "TITLE": "<b> Direct your customers faster </b> to the <br /> right customer service channel.",
+    "CAPTION_1": {
+      "TITLE": "Automate processes",
+      "SUBTITLE": "and reduce costs."
+    },
+    "CAPTION_2": {
+      "TITLE": "Simplify",
+      "SUBTITLE": "your customers' journey."
+    },
+    "CAPTION_3": {
+      "TITLE": "Improve response times",
+      "SUBTITLE": "and speed up customer <br /> service."
+    },
+    "CAPTION": "<b> Direct your customers through WhatsApp chatbot so they </b> <br /> can choose the most appropriate customer service channel."
+  }
+}

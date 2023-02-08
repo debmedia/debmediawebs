@@ -1,0 +1,66 @@
+{
+  "HEADER": {
+    "TITLE": "Manage the flow <1/> of customers <3/> arriving at your <5/> offices.",
+    "SUBTITLE": "<b> Online appointment software for </b> companies with multiple <br /> services and types of serving Request a demo",
+    "CAPTION": "<b> Leading organizations </b> already manage their <br /> customer experience with Debmedia <b> </b>"
+  },
+  "MARKET": {
+    "TITLE": "Many organizations manage their <br /> service processes in a disorderly manner.",
+    "CAPTION_1": {
+      "TITLE": "Lack of knowledge",
+      "SUBTITLE": "of customers and their needs."
+    },
+    "CAPTION_2": {
+      "TITLE": "Lack of information",
+      "SUBTITLE": "to assign the right number of representatives."
+    },
+    "CAPTION_3": {
+      "TITLE": "Long waits",
+      "SUBTITLE": "and bad customer experience."
+    }
+  },
+  "MODERN": {
+    "TITLE": "Multiple functionalities",
+    "SUBTITLE": "to optimize customer service models.",
+    "CAPTION_1": {
+      "TITLE": "Integration with the queue <br /> management system.",
+      "SUBTITLE": "To manage the entire flow <br /> with call and prioritization <br /> algorithms."
+    },
+    "CAPTION_2": {
+      "TITLE": "Self-managed check <br /> in.",
+      "SUBTITLE": "Customers can check in from their mobile or at the kiosk."
+    },
+    "CAPTION_3": {
+      "TITLE": "Customizable <br /> reminders sent <br /> by email or SMS. <br />",
+      "SUBTITLE": "Designed as dynamic fields depending on the service and the customer."
+    },
+    "CAPTION_4": {
+      "TITLE": "Connected with multiple <br /> services or agendas.",
+      "SUBTITLE": "To define tolerance times <br /> for each one."
+    },
+    "CAPTION_5": {
+      "TITLE": "Integrable by API, iframe <br /> or embedded in your web.",
+      "SUBTITLE": "With the look & feel <br /> of your company."
+    },
+    "CAPTION_6": {
+      "TITLE": "A system integrated with",
+      "SUBTITLE": "Outlook and Google Calendar."
+    }
+  },
+  "STEPS": {
+    "TITLE": "<b> Organize the flow of your offices. </b>",
+    "SUBTITLE": "<b> Allow customers to schedule their </b> <br /> appointments online from the web.",
+    "CAPTION_1": {
+      "TITLE": "Anticipate and know <br /> which customers will visit you",
+      "SUBTITLE": "Offer a personalized experience and increase satisfaction."
+    },
+    "CAPTION_2": {
+      "TITLE": "Know how <br /> many resources you need.",
+      "SUBTITLE": "Improve the process of customers coming <br /> to your offices."
+    },
+    "CAPTION_3": {
+      "TITLE": "Avoid unnecessary <br /> waits.",
+      "SUBTITLE": "Shorten the time your customers spend inside your offices."
+    }
+  }
+}

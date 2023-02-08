@@ -1,0 +1,53 @@
+{
+  "HEADER": {
+    "TITLE": "Agilize o atendimento a <br /> partir do WhatsApp ou de um portal web",
+    "CAPTION": "<b> Organizações líderes já fazem a <br /> gestão da experiência do cliente <b> com Debmedia"
+  },
+  "FLOW": {
+    "TITLE": "<b> Implemente um portal de pré-atendimento personalizável que os oriente <br /> para a escolha de sua operação."
+  },
+  "MARKET": {
+    "TITLE": "As dificuldade em direcionar os clientes para <br /> o canal certo resultam em",
+    "CAPTION_1": {
+      "TITLE": "Processos humanos",
+      "SUBTITLE": "mais onerosos para sua organização."
+    },
+    "CAPTION_2": {
+      "TITLE": "Processos complexos de atendimento",
+      "SUBTITLE": "ao cliente para seus clientes"
+    },
+    "CAPTION_3": {
+      "TITLE": "Atraso nas respostas",
+      "SUBTITLE": "a seus clientes"
+    }
+  },
+  "MODERN": {
+    "TITLE": "O que você pode fazer com o pré-vendedor?",
+    "CAPTION_1": {
+      "TITLE": "<span> Incluir pop-ups"
+    },
+    "CAPTION_2": {
+      "TITLE": "<span> Adicionar Formulários"
+    },
+    "CAPTION_3": {
+      "TITLE": "Integre com",
+      "SUBTITLE": "a base de dados de clientes ou CRM para personalizar a sua jornada."
+    }
+  },
+  "STEPS": {
+    "TITLE": "<b> Direcione seus clientes com </b> mais rapidez <br /> para o canal adequado.",
+    "CAPTION_1": {
+      "TITLE": "Automatize os processos",
+      "SUBTITLE": "e reduza custos."
+    },
+    "CAPTION_2": {
+      "TITLE": "Simplifique a jornada",
+      "SUBTITLE": "do seu cliente."
+    },
+    "CAPTION_3": {
+      "TITLE": "Melhore os tempos",
+      "SUBTITLE": "de resposta e acelere <br /> o atendimento ao cliente."
+    },
+    "CAPTION": "<b> Direcione seus clientes através do WhatsApp para que </b> <br /> eles possam escolher o canal de serviço mais adequado."
+  }
+}
