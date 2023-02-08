@@ -21,6 +21,16 @@ module.exports = function(grunt) {
       target: {
         src: "public/locales/es/*.json",
       },
+    },
+    CSVToTranslations:{
+      target: {
+        src: "scripts/in/traducciones.csv",
+        dest: "public/locales/",
+        options: {
+          columns: ["key", "es", "pt", "en"],
+          dirs: ["pt", "en"]
+        }
+      },
     }
   });
 
