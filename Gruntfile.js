@@ -71,7 +71,7 @@ module.exports = function(grunt) {
     concat: {
       concatCSVsFormJsons:{
             src: "scripts/out/jsoncsv/**.csv",
-            dest: 'scripts/out/todo.csv',   // Destination path prefix.
+            dest: 'scripts/out/content.csv',   // Destination path prefix.
         options: {
           separator: "\n"
         }
@@ -106,7 +106,8 @@ module.exports = function(grunt) {
 
   grunt.loadTasks('scripts/');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.registerTask("loadCSV", ["splitCSV", "CSVToJson"]);
+  grunt.registerTask("importCSVAsJSON", ["splitCSV", "CSVToJson"]);
+  grunt.registerTask("exportJSONAsCSV", ["JSONsToCSV", "concat"]);
 };
 
 

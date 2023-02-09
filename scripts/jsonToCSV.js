@@ -32,17 +32,21 @@ module.exports = function(grunt) {
 // el tercer argumento es un nombre padre de todo
 function objectsToCSV(obj, objs, pName){
   const propNames = Object.getOwnPropertyNames(obj);
+  // sacamos length en caso de un array
+  if(Array.isArray(obj) && propNames.indexOf("length") >= 0) {
+    propNames.splice(propNames.indexOf("length"));
+  } 
   const csvSeparator = ',';
   const nestingSeparator= '.';
   const lineEnding= "\n";
   let csv = '';
   for (let i = 0; i < propNames.length; i++){
     const propName = propNames[i];
-    if (typeof obj[propName] ==='string'){
+    if (typeof obj[propName] ==='string' || typeof obj[propName] ==='number'){
       const value = obj[propName];
       csv = csv.concat(pName).concat(nestingSeparator).concat(propName).concat(csvSeparator).concat("\""+sanitizeForCSV(value) +"\"");
       for(let subObj of objs){
-        if(typeof subObj[propName] === 'string'){
+        if(typeof subObj[propName] === 'string' || typeof subObj[propName] === 'number'){
           const subValue = subObj[propName];
           csv = csv.concat(csvSeparator).concat("\""+ sanitizeForCSV(subValue) +"\"");
         } else {
@@ -63,6 +67,7 @@ function objectsToCSV(obj, objs, pName){
 }
 
 function sanitizeForCSV(str){
+  if(typeof str === "number") return str;
   return str.replaceAll("\"", "\"\"");
 }
 
