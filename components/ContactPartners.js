@@ -19,7 +19,7 @@ export default function Contact() {
                 <Container>
                     <Row>
                         <Col className="contact-section_mainTitle text-center mb-4">
-                            <h2>¡Contáctate con nuestro equipo y <br />mejora la experiencia de tus clientes!</h2>
+                            <h2 id="contact-partners">¡Contáctate con nuestro equipo y <br />mejora la experiencia de tus clientes!</h2>
                         </Col>
                     </Row>
                     <Row>
