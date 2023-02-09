@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       },
     },
     CSVToTranslations:{
-      target: {
+      generalTranslations: {
         src: "scripts/in/traducciones.csv",
         dest: "public/locales/",
         options: {
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
               "setps-partners.json",
               "solutions-home.json",
             ], // Actual pattern(s) to match.
-            dest: 'scripts/out/',   // Destination path prefix.
+            dest: 'scripts/out/jsoncsv/',   // Destination path prefix.
             ext: '.csv',   // Dest filepaths will have this extension.
             //extDot: 'first'   // Extensions in filenames begin after the first dot
           },
@@ -67,10 +67,36 @@ module.exports = function(grunt) {
           header: ["key","es", "pt", "en"]
         }
       }
+    },
+    concat: {
+      concatCSVsFormJsons:{
+            src: "scripts/out/jsoncsv/**.csv",
+            dest: 'scripts/out/todo.csv',   // Destination path prefix.
+        options: {
+          separator: "\n"
+        }
+      }
+    },
+    CSVToJson: {
+      jsons: {
+        options: {
+          columns: ["key", "es", "pt", "en"],
+        },
+        files: [
+          {
+            expand: true,     // Enable dynamic expansion.
+            cwd: 'scripts/out/jsoncsv/',      // Src matches are relative to this path.
+            src: "**.csv", // Actual pattern(s) to match.
+            dest: './scripts/out/csvjson/',   // Destination path prefix.
+            ext: '.json',   // Dest filepaths will have this extension.
+          },
+        ],
+      },
     }
   });
 
   grunt.loadTasks('scripts/');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 };
 
 

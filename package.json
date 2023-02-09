@@ -34,6 +34,7 @@
     "csv": "^6.2.5",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
-    "grunt": "^1.5.3"
+    "grunt": "^1.5.3",
+    "grunt-contrib-concat": "^2.1.0"
   }
 }
