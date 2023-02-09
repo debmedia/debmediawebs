@@ -85,18 +85,28 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,     // Enable dynamic expansion.
-            cwd: 'scripts/out/jsoncsv/',      // Src matches are relative to this path.
+            cwd: 'scripts/out/splitted/',      // Src matches are relative to this path.
             src: "**.csv", // Actual pattern(s) to match.
-            dest: './scripts/out/csvjson/',   // Destination path prefix.
+            dest: 'json/',   // Destination path prefix.
             ext: '.json',   // Dest filepaths will have this extension.
           },
         ],
       },
+    },
+    splitCSV:{
+      target:{
+        src: "scripts/in/content.csv",
+        dest: "scripts/out/splitted/",
+        options: {
+          header: ["key","es", "pt", "en"]
+        }
+      }
     }
   });
 
   grunt.loadTasks('scripts/');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.registerTask("loadCSV", ["splitCSV", "CSVToJson"]);
 };
 
 
