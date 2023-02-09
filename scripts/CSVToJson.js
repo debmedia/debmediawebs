@@ -6,7 +6,6 @@ module.exports = function (grunt) {
         var self = this;
         const columns = self.options().columns;
         self.files.forEach((file) => {
-            console.log("file!!!", file);
             file.src.forEach((source) => {
                 processFile(source, file.dest, columns);
             });
@@ -14,7 +13,8 @@ module.exports = function (grunt) {
     });
 
     function processFile(source, dest, columns) {
-        const nestedArray = csv.parse(grunt.file.read(source), { fromLine: 2 });
+        console.log(source);
+        const nestedArray = csv.parse(grunt.file.read(source), { fromLine: 2, cast: parseIntCast});
         const translationObject = transformToJSON(nestedArray, columns);
         const content = JSON.stringify(translationObject, null, 2);
         grunt.file.write(dest, content);
@@ -122,4 +122,12 @@ function parseIntInArray(arr) {
         }
         return elem;
     } )
+}
+
+function parseIntCast(value, context) {
+    if (!context.quoting && value.match(/^\d+$/) !== null) {
+        // si son solo numeros
+        return parseInt(value);
+    }
+    return value;
 }

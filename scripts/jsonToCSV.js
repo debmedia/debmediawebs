@@ -5,13 +5,13 @@ module.exports = function(grunt) {
     grunt.registerMultiTask('JSONsToCSV', 'description', function() {
 
         var self = this;
-        console.log(self);
         const topLevelKeys = self.options().topLevelKeys;
         const header = self.options().header;
         const files = self.files;
         
         for (let file of files) {
           for (let src of file.src){
+            console.log("JSONsToCSV", src);
             const json = grunt.file.readJSON(src);
             let primaryKey = topLevelKeys[0];
             let csv = header.join(",") + "\n";
@@ -44,11 +44,11 @@ function objectsToCSV(obj, objs, pName){
     const propName = propNames[i];
     if (typeof obj[propName] ==='string' || typeof obj[propName] ==='number'){
       const value = obj[propName];
-      csv = csv.concat(pName).concat(nestingSeparator).concat(propName).concat(csvSeparator).concat("\""+sanitizeForCSV(value) +"\"");
+      csv = csv.concat(pName).concat(nestingSeparator).concat(propName).concat(csvSeparator).concat(sanitizeForCSV(value));
       for(let subObj of objs){
         if(typeof subObj[propName] === 'string' || typeof subObj[propName] === 'number'){
           const subValue = subObj[propName];
-          csv = csv.concat(csvSeparator).concat("\""+ sanitizeForCSV(subValue) +"\"");
+          csv = csv.concat(csvSeparator).concat(sanitizeForCSV(subValue));
         } else {
           csv = csv.concat(csvSeparator);
         }
@@ -68,6 +68,6 @@ function objectsToCSV(obj, objs, pName){
 
 function sanitizeForCSV(str){
   if(typeof str === "number") return str;
-  return str.replaceAll("\"", "\"\"");
+  return "\""+ str.replaceAll("\"", "\"\"") +"\"";
 }
 
