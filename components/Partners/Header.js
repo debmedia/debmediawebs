@@ -30,10 +30,10 @@ export default function Header() {
                                 <p className="partners-home_parraf no-br-sm">
                                     <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
                                 </p>
-                                <Link href="/contacto">
-                                    <button className="partners-home_demobutton">
-                                        <Trans t={t} i18nKey="HEADER.BUTTON"/>
-                                    </button>
+                                <Link href="#contact-partners">
+                                    <span className="partners-home_demobutton">
+                                    <Trans t={t} i18nKey="HEADER.BUTTON"/>
+                                    </span>
                                 </Link>
                             </Col>
                         </Row>

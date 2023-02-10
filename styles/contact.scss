@@ -2,6 +2,7 @@
     position: relative;
     &_shape1 {
         display: none;
+        z-index: -1000;
     
         @media (min-width: 992px) {
             display: block;
@@ -24,6 +25,7 @@
 
     &_shape2 {
         display: none;
+        z-index: -1000;
     
         @media (min-width: 992px) {
             display: block;

@@ -21,7 +21,7 @@ export default function Contact() {
                 <Container>
                     <Row>
                         <Col className="contact-section_mainTitle text-center mb-4">
-                            <h2>
+                            <h2 id="contact-partners">
                                 <Trans t={t} i18nKey="CONTACT_PARTNERS.TITLE"/>
                             </h2>
                         </Col>
