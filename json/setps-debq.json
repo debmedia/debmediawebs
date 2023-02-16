@@ -4,7 +4,7 @@
       "text": "Tu cliente hace el check-in desde Kiosco, tótem o móvil.",
       "key":"1",
       "image": {
-        "url": "step1.png",
+        "url": "GestiondeFilas_Check-in_ES.png",
         "width": 400,
         "height": 400
       }
@@ -13,7 +13,7 @@
       "text": "El llamado por voz, pantallas, WhatsApp o SMS.    ",
       "key":"2",
       "image": {
-        "url": "step2.png",
+        "url": "GestiondeFilas_Llamados_ES.png",
         "width": 470,
         "height": 380
       }
@@ -31,7 +31,7 @@
       "text": " Califica el servicio a través del sistema de encuestas.",
       "key":"4",
       "image": {
-        "url": "step4.png",
+        "url": "GestiondeFilas_feedback_ES.png",
         "width": 400,
         "height": 400
       }
