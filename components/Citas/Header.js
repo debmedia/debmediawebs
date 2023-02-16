@@ -2,22 +2,29 @@ import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image';
 import mypic from '../../asset/imgs/citas/main.png';
-import mypicxs from '../../asset/imgs/citas/main-citas.png';
+import mypicxs_es from '../../asset/imgs/citas/Citas_ES.png';
+import mypicxs_pt from '../../asset/imgs/citas/Citas_PT.png';
+import mypicxs_en from '../../asset/imgs/citas/Citas_EN.png';
 import shape1 from '../../asset/imgs/home/headershape1.svg';
 import shape2 from '../../asset/imgs/home/headershape2.svg';
 import shape3 from '../../asset/imgs/home/headershape3.svg';
 import mainNoti from '../../asset/imgs/citas/main-noti.svg';
 import Link from 'next/link';
 import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/router";
+
+const mypicxs_lang = {es: mypicxs_es, pt: mypicxs_pt, en: mypicxs_en};
 
 export default function Header() {
     const { t } = useTranslation(['citasonline', 'common']);
+    const { locale } = useRouter();
+    const mypicxs = mypicxs_lang[locale] || mypicxs_lang["es"];
     return (
         <>
             <header>
                 <Container fluid className="citas-home">
                     <div className={'image-container-citas'}>
-                    <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} />
+                        <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} />
                         <Image src={mypicxs.src} layout="fill" className={'image d-block d-sm-none'} />
                     </div>
                     <div className="d-none d-sm-block">
