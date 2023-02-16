@@ -2,15 +2,22 @@ import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import mypic from '../../asset/imgs/debq/main.png'
-import mypicxs from '../../asset/imgs/debq/main-debq.png'
+import mypicxs_es from '../../asset/imgs/debq/GestiondeFilas_01_ES.png'
+import mypicxs_pt from '../../asset/imgs/debq/GestiondeFilas_01_PT.png'
+import mypicxs_en from '../../asset/imgs/debq/GestiondeFilas_01_EN.png'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import mainNoti from '../../asset/imgs/debq/main-noti.png'
 import Link from 'next/link'
 import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/router";
 
+const mypicxs_lang = {es: mypicxs_es, pt: mypicxs_pt, en: mypicxs_en};
 export default function Header() {
     const { t } = useTranslation(['debq', 'common']);
+    const { locale } = useRouter();
+    const mypicxs = mypicxs_lang[locale] || mypicxs_lang["es"];
+
     return (
         <>
             <header>
