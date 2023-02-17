@@ -1,14 +1,15 @@
 import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import api from '../../asset/imgs/home/api.svg'
-import graficos_es from '../../asset/imgs/home/graficos.svg'
+import graficos_es from '../../asset/imgs/home/Metricas_Home_ES.svg'
+import graficos_pt from '../../asset/imgs/home/Metricas_Home_PT.svg'
+import graficos_en from '../../asset/imgs/home/Metricas_Home_EN.svg'
 import channel from '../../asset/imgs/home/channels.svg'
 import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from "next/router";
 
-const graficos_lang = {
-    es: graficos_es
-}
+const graficos_lang = {es: graficos_es, pt: graficos_pt, en: graficos_en};
+
 export default function Modern() {
     const { t } = useTranslation(['home', 'common']);
     const {locale} = useRouter();
