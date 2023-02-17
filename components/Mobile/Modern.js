@@ -1,15 +1,28 @@
+import Image from 'next/image';
 import React from "react";
-import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
-import modern1 from '../../asset/imgs/mobile/modern1.png'
-import modern2 from '../../asset/imgs/mobile/modern2.png'
-import modern3 from '../../asset/imgs/mobile/modern3.png'
-import modern4 from '../../asset/imgs/mobile/modern4.png'
-import { useTranslation, Trans } from 'next-i18next';
+import { Col, Container, Row } from "react-bootstrap";
+import modern1_en from '../../asset/imgs/mobile/FilaVirtual_Chatbot_EN.png';
+import modern1_es from '../../asset/imgs/mobile/FilaVirtual_Chatbot_ES.png';
+import modern1_pt from '../../asset/imgs/mobile/FilaVirtual_Chatbot_PT.png';
+import modern3_en from '../../asset/imgs/mobile/FilaVirtual_Configuraciontramites_EN.png';
+import modern3_es from '../../asset/imgs/mobile/FilaVirtual_Configuraciontramites_ES.png';
+import modern3_pt from '../../asset/imgs/mobile/FilaVirtual_Configuraciontramites_PT.png';
+import modern4_en from '../../asset/imgs/mobile/FilaVirtual_Look_feel_EN.png';
+import modern4_es from '../../asset/imgs/mobile/FilaVirtual_Look_feel_ES.png';
+import modern4_pt from '../../asset/imgs/mobile/FilaVirtual_Look_feel_PT.png';
+import modern2 from '../../asset/imgs/mobile/modern2.png';
+import { Trans, useTranslation } from 'next-i18next';
+import { useRouter } from "next/dist/client/router";
 
+const modern1_lang = {es: modern1_es, pt: modern1_pt, en: modern1_en};
+const modern3_lang = {es: modern3_es, pt: modern3_pt, en: modern3_en};
+const modern4_lang = {es: modern4_es, pt: modern4_pt, en: modern4_en};
 export default function Modern() {
     const { t } = useTranslation(['fila-virtual', 'common']);
-
+    const { locale } = useRouter();
+    const modern1 = modern1_lang[locale] || modern1_lang["es"];
+    const modern3 = modern3_lang[locale] || modern3_lang["es"];
+    const modern4 = modern4_lang[locale] || modern4_lang["es"];
     return (
         <>
             <Container fluid className="modern-section">
