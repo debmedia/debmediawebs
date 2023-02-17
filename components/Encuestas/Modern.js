@@ -1,13 +1,19 @@
 import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
-import modern1 from '../../asset/imgs/encuestas/modern1.png'
-import modern2 from '../../asset/imgs/encuestas/modern2.png'
-import modern3 from '../../asset/imgs/encuestas/modern3.png'
+import Image from 'next/image';
+import modern1 from '../../asset/imgs/encuestas/modern1.png';
+import modern2_es from '../../asset/imgs/encuestas/Encuestas_Metricas_ES.png';
+import modern2_pt from '../../asset/imgs/encuestas/Encuestas_Metricas_PT.png';
+import modern2_en from '../../asset/imgs/encuestas/Encuestas_Metricas_EN.png';
+import modern3 from '../../asset/imgs/encuestas/modern3.png';
 import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/dist/client/router";
 
+const modern2_lang = {es: modern2_es, pt: modern2_pt, en: modern2_en};
 export default function Modern() {
     const { t } = useTranslation(['encuestas', 'common']);
+    const { locale } = useRouter();
+    const modern2 = modern2_lang[locale] || modern2_lang["es"];
 
     return (
         <>
