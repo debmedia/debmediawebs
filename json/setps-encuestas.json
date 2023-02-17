@@ -4,7 +4,7 @@
       "text": "Puntuación",
       "key":"1",
       "image": {
-        "url": "step1.png",
+        "url": "Encuestas_Puntuacion_ES.png",
         "width": 600,
         "height": 380
       }
@@ -13,7 +13,7 @@
       "text": "Selección múltiple",
       "key":"2",
       "image": {
-        "url": "step2.png",
+        "url": "Encuestas_SeleccionMultiple_ES.png",
         "width": 620,
         "height": 500
       }
@@ -22,7 +22,7 @@
       "text": "Texto libre",
       "key":"3",
       "image": {
-        "url": "step3.png",
+        "url": "Encuestas_TextoLibre_ES.png",
         "width": 800,
         "height": 660
       }
@@ -31,7 +31,7 @@
       "text": "Emoticones",
       "key":"4",
       "image": {
-        "url": "step4.png",
+        "url": "Encuestas_Emoticones_ES.png",
         "width": 400,
         "height": 260
       }
