@@ -1,13 +1,19 @@
 import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
-import mypic from '../../asset/imgs/mobile/mainbanner.png'
+import mypic_es from '../../asset/imgs/mobile/FilaVirtual_Canales_ES.png'
+import mypic_pt from '../../asset/imgs/mobile/FilaVirtual_Canales_PT.png'
+import mypic_en from '../../asset/imgs/mobile/FilaVirtual_Canales_EN.png'
 import shape2 from '../../asset/imgs/mobile/shapebanner.svg'
 import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/dist/client/router";
+
+const mypic_lang = {es: mypic_es, pt: mypic_pt, en: mypic_en};
 
 export default function Market() {
     const { t } = useTranslation(['fila-virtual', 'common']);
-
+    const { locale } = useRouter();
+    const mypic = mypic_lang[locale] || mypic_lang["es"];
     return (
         <>
             <Container fluid className="channel-mobile-section relative">
