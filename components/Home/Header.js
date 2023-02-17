@@ -4,8 +4,9 @@ import Image from 'next/image'
 import mypic from '../../asset/imgs/home/newVideoShape.svg'
 import mypicxs from '../../asset/imgs/home/videoShape-xs.png'
 import video_es from '../../asset/imgs/home/debq.svg'
-import videoSm_es from '../../asset/imgs/home/debqSm.svg'
-import videoSm_pt from '../../asset/imgs/home/debqSm-pt.svg'
+import videoSm_es from '../../asset/imgs/home/Pantalla_Software_ES.svg'
+import videoSm_pt from '../../asset/imgs/home/Pantalla_Software_PT.svg'
+import videoSm_en from '../../asset/imgs/home/Pantalla_Software_EN.svg'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import Link from 'next/link'
@@ -13,14 +14,8 @@ import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from "next/router";
 
 // Imágenes con versiones para los locales
-const videoSm_lang = {
-    es: videoSm_es,
-    pt: videoSm_pt
-};
-
-const video_lang = {
-    es: video_es,
-}
+const videoSm_lang = {es: videoSm_es,  pt: videoSm_pt, en: videoSm_en};
+const video_lang = {es: video_es}
 
 export default function Header() {
     const [modalShow, setModalShow] = React.useState(false);
