@@ -15,7 +15,7 @@
     {
       "title": "Chatbot para bancos",
       "image": {
-        "url": "wapp.png",
+        "url": "Chatbot_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
@@ -27,7 +27,7 @@
     {
       "title": "Pre atendedor",
       "image": {
-        "url": "pre.png",
+        "url": "Preatendedor_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
@@ -39,7 +39,7 @@
     {
       "title": "Sistema de citas online para bancos",
       "image": {
-        "url": "citas.png",
+        "url": "Citas_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
@@ -52,7 +52,7 @@
     {
       "title": "Gestión de Filas de Banco",
       "image": {
-        "url": "filavirtual.png",
+        "url": "FilaVirtual_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
@@ -64,7 +64,7 @@
     {
       "title": "Cartelería digital para bancos",
       "image": {
-        "url": "debsign.png",
+        "url": "Banca_Carteleria_ES.png",
         "width": 540,
         "height": 380
       },
@@ -76,7 +76,7 @@
     {
       "title": "Encuestas de satisfacción para bancos",
       "image": {
-        "url": "encuesta.png",
+        "url": "Encuestas_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
