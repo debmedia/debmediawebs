@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Row, Container, Col, Accordion } from "react-bootstrap";
-import flow_es from '../../asset/imgs/videollamada/flow.png'
+import flow_es from '../../asset/imgs/videollamada/Flujo_AtencionVirtual_ES.png';
+import flow_pt from '../../asset/imgs/videollamada/Flujo_AtencionVirtual_PT.png';
+import flow_en from '../../asset/imgs/videollamada/Flujo_AtencionVirtual_EN.png';
 import totem_es from '../../asset/imgs/videollamada/totem.png'
-import sistema_es from '../../asset/imgs/videollamada/sistema.png'
+import sistema_es from '../../asset/imgs/videollamada/Software-Videollamada_ES.png'
+import sistema_en from '../../asset/imgs/videollamada/Software-Videollamada_EN.png'
 import sistematotemmobie_es from '../../asset/imgs/videollamada/totemnew.png'
 import sistemaxs_es from '../../asset/imgs/videollamada/sistemaxs.jpg'
 
@@ -10,14 +13,13 @@ import Data from '../../json/flow-videocall.json';
 import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from "next/router";
 
-const flow_lang = {
-    es: flow_es,
-};
+const flow_lang = {es: flow_es, pt: flow_pt, en: flow_en};
 const totem_lang = {
     es: totem_es,
 };
 const sistema_lang = {
-    es: sistema_es
+    es: sistema_es,
+    en: sistema_en
 };
 const sistematotemmobie_lang = {
     es: sistematotemmobie_es
