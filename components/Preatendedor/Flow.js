@@ -1,11 +1,22 @@
 import React from "react";
 import { Row, Container, Col} from "react-bootstrap";
-import flow1 from '../../asset/imgs/preatendedor/flow1.png'
-import flow2 from '../../asset/imgs/preatendedor/flow2.png'
+import flow1_es from '../../asset/imgs/preatendedor/Preatendedor_2_ES.png'
+import flow1_pt from '../../asset/imgs/preatendedor/Preatendedor_2_PT.png'
+import flow1_en from '../../asset/imgs/preatendedor/Preatendedor_2_EN.png'
+import flow2_es from '../../asset/imgs/preatendedor/Preatendedor_1_ES.png'
+import flow2_pt from '../../asset/imgs/preatendedor/Preatendedor_1_PT.png'
+import flow2_en from '../../asset/imgs/preatendedor/Preatendedor_1_EN.png'
 import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/dist/client/router";
+
+const flow1_lang = {es: flow1_es, pt: flow1_pt, en: flow1_en};
+const flow2_lang = {es: flow2_es, pt: flow2_pt, en: flow2_en};
 
 export default function Flow() {
     const { t } = useTranslation(['preatendedor', 'common']);
+    const { locale } = useRouter();
+    const flow1 = flow1_lang[locale] || flow1_lang["es"];
+    const flow2 = flow2_lang[locale] || flow2_lang["es"];
 
     return (
         <>
