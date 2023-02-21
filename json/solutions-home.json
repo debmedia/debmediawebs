@@ -3,7 +3,7 @@
     {
       "title": "Citas online",
       "image": {
-        "url": "citas.png",
+        "url": "CitasHome_ES.png",
         "urlXs": "citas_xs.png",
         "width": 360,
         "height": 400
@@ -18,7 +18,7 @@
     {
       "title": "Gestión de filas",
       "image": {
-        "url": "filas_new.png",
+        "url": "GestiondeFilas_Home_ES.png",
         "urlXs": "filas_new_xs.png",
         "width": 400,
         "height": 500
@@ -33,8 +33,8 @@
     {
       "title": "Fila Virtual",
       "image": {
-        "url": "fila-virtual_new.png",
-        "urlXs": "fila-virtual_new.png",
+        "url": "FilaVirtual_Home_ES.png",
+        "urlXs": "FilaVirtual_Home_ES.png",
         "width": 240,
         "height": 480
       },
@@ -48,8 +48,8 @@
     {
       "title": "Cartelería digital",
       "image": {
-        "url": "debsign.png",
-        "urlXs": "debsign.png",
+        "url": "CarteleriaDigital_Home_ES.png",
+        "urlXs": "CarteleriaDigital_Home_ES.png",
         "width": 380,
         "height": 290
       },
@@ -78,8 +78,8 @@
     {
       "title": "Encuestas",
       "image": {
-        "url": "encuestas.png",
-        "urlXs": "encuestas.png",
+        "url": "Encuestas_Home_ES.png",
+        "urlXs": "Encuestas_Home_ES.png",
         "width": 280,
         "height": 520
       },
@@ -108,8 +108,8 @@
     {
       "title": "Chatbot WhatsApp",
       "image": {
-        "url": "wapp.png",
-        "urlXs": "wapp.png",
+        "url": "ChatbotWhatsapp_Home_ES.png",
+        "urlXs": "ChatbotWhatsapp_Home_ES.png",
         "width": 350,
         "height": 520
       },
