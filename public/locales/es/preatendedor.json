@@ -48,6 +48,10 @@
       "TITLE": "Mejora los tiempos",
       "SUBTITLE": "de respuesta y agiliza <br /> la atención."
     },
+    "PILL_1": "Permite a tus clientes <b>Obtener una cita online</b>",
+    "PILL_2": "Permite a tus clientes <b>seguir su turno desde WhatsApp</b>",
+    "PILL_3": "Envía <b>recordatorios</b>",
+    "PILL_4": "<b>Automatiza conversaciones</b> en respuesta de tus clientes.",
     "CAPTION": "<b>Direcciona a tus clientes a través de WhatsApp </b><br /> para que elijan el canal de atención más adecuado"
   }
 }
