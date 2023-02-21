@@ -1,0 +1,28 @@
+
+.tick-pills{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-row-gap: 1.5rem;
+  text-align: left!important;
+}
+
+.tick-pills > div {
+  padding: 0.5em;
+  background-color: #f6f7fb;
+  border-radius: 30rem;
+  box-shadow: -5px 5px #00000021;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.1em;
+}
+
+.tick-pills i {
+  color: #309fee;
+  font-size: 1.5rem;
+}
