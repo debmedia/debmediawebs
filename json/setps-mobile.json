@@ -2,7 +2,7 @@
   "es": [
     {
       "text": "El cliente elige el trámite. ",
-      "key":"1",
+      "key": 1,
       "image": {
         "url": "FilaVirtual_Tramite_ES.png",
         "width": 230,
@@ -11,7 +11,7 @@
     },
     {
       "text": "Selecciona la sucursal y toma un turno desde tu web.  ",
-      "key":"2",
+      "key": 2,
       "image": {
         "url": "FilaVirtual_Sucursal_ES.png",
         "width": 230,
@@ -20,7 +20,7 @@
     },
     {
       "text": "Monitorea el avance de la fila desde su móvil.",
-      "key":"3",
+      "key": 3,
       "image": {
         "url": "FilaVirtual_Avancefila_ES.png",
         "width": 230,
@@ -29,9 +29,85 @@
     },
     {
       "text": "Recibe un SMS o WhatsApp minutos antes de ser atendido. ",
-      "key":"4",
+      "key": 4,
       "image": {
         "url": "FilaVirtual_Llamado_ES.png",
+        "width": 800,
+        "height": 800
+      }
+    }
+  ],
+  "pt": [
+    {
+      "text": "O cliente escolhe a operação.",
+      "key": 1,
+      "image": {
+        "url": "FilaVirtual_Tramite_PT.png",
+        "width": 230,
+        "height": 430
+      }
+    },
+    {
+      "text": "Seleciona a sucursal e marca um horário pelo site.",
+      "key": 2,
+      "image": {
+        "url": "FilaVirtual_Sucursal_PT.png",
+        "width": 230,
+        "height": 430
+      }
+    },
+    {
+      "text": "Monitora o andamento da fila a partir do seu celular.",
+      "key": 3,
+      "image": {
+        "url": "FilaVirtual_Avancefila_PT.png",
+        "width": 230,
+        "height": 430
+      }
+    },
+    {
+      "text": "Recebe um SMS ou WhatsApp minutos antes de ser atendido.",
+      "key": 4,
+      "image": {
+        "url": "FilaVirtual_Llamado_PT.png",
+        "width": 800,
+        "height": 800
+      }
+    }
+  ],
+  "en": [
+    {
+      "text": "The customer chooses the service.",
+      "key": 1,
+      "image": {
+        "url": "FilaVirtual_Tramite_EN.png",
+        "width": 230,
+        "height": 430
+      }
+    },
+    {
+      "text": "They select the office and get in the virtual queue from your website.",
+      "key": 2,
+      "image": {
+        "url": "FilaVirtual_Sucursal_EN.png",
+        "width": 230,
+        "height": 430
+      }
+    },
+    {
+      "text": "They monitor the progress of the queue from their device.",
+      "key": 3,
+      "image": {
+        "url": "FilaVirtual_Avancefila_EN.png",
+        "width": 230,
+        "height": 430
+      }
+    },
+    {
+      "text": "They receive an SMS or WhatsApp notification minutes before being served.",
+      "key": 4,
+      "image": {
+        "url": "FilaVirtual_Llamado_EN.png",
         "width": 800,
         "height": 800
       }

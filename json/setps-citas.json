@@ -2,7 +2,7 @@
   "es": [
     {
       "text": " El cliente selecciona el trámite, la sucursal, fecha y hora para obtener una cita.",
-      "key":"1",
+      "key": 1,
       "image": {
         "url": "Citas_Slide01_ES.png",
         "width": 780,
@@ -11,16 +11,16 @@
     },
     {
       "text": "Hace el check-in e ingresa al flujo de atención. ",
-      "key":"2",
+      "key": 2,
       "image": {
-        "url": "Citas_Check-in_ES.png",
+        "url": "Citas_Check-in_PT.png",
         "width": 620,
         "height": 550
       }
     },
     {
       "text": " El cliente es atendido por un ejecutivo.",
-      "key":"3",
+      "key": 3,
       "image": {
         "url": "test.png",
         "width": 400,
@@ -30,8 +30,8 @@
   ],
   "pt": [
     {
-      "text": "Portugués: El cliente selecciona el trámite, la sucursal, fecha y hora para obtener una cita.",
-      "key":"1",
+      "text": "O cliente seleciona a operação, sucursal, data e hora para fazer um horário.",
+      "key": 1,
       "image": {
         "url": "Citas_Slide01_PT.png",
         "width": 780,
@@ -39,8 +39,8 @@
       }
     },
     {
-      "text": "Portugués: Hace el check-in e ingresa al flujo de atención. ",
-      "key":"2",
+      "text": "O cliente faz o check-in e entra no fluxo de atendimento.",
+      "key": 2,
       "image": {
         "url": "Citas_Check-in_PT.png",
         "width": 620,
@@ -48,8 +48,8 @@
       }
     },
     {
-      "text": "Portugués: el cliente es atendido por un ejecutivo.",
-      "key":"3",
+      "text": "O cliente é atendido por um executivo.",
+      "key": 3,
       "image": {
         "url": "test.png",
         "width": 400,
@@ -59,8 +59,8 @@
   ],
   "en": [
     {
-      "text": "Portugués: El cliente selecciona el trámite, la sucursal, fecha y hora para obtener una cita.",
-      "key":"1",
+      "text": "The customer selects the service, office, date and time to get an appointment.",
+      "key": 1,
       "image": {
         "url": "Citas_Slide01_EN.png",
         "width": 780,
@@ -68,8 +68,8 @@
       }
     },
     {
-      "text": "Portugués: Hace el check-in e ingresa al flujo de atención. ",
-      "key":"2",
+      "text": "The customer checks-in and enters the queue.",
+      "key": 2,
       "image": {
         "url": "Citas_Check-in_EN.png",
         "width": 620,
@@ -77,8 +77,8 @@
       }
     },
     {
-      "text": "Portugués: el cliente es atendido por un ejecutivo.",
-      "key":"3",
+      "text": "The customer is served by a representative.",
+      "key": 3,
       "image": {
         "url": "test.png",
         "width": 400,

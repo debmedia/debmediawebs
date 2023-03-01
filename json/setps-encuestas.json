@@ -2,7 +2,7 @@
   "es": [
     {
       "text": "Puntuación",
-      "key":"1",
+      "key": 1,
       "image": {
         "url": "Encuestas_Puntuacion_ES.png",
         "width": 600,
@@ -11,7 +11,7 @@
     },
     {
       "text": "Selección múltiple",
-      "key":"2",
+      "key": 2,
       "image": {
         "url": "Encuestas_SeleccionMultiple_ES.png",
         "width": 620,
@@ -20,7 +20,7 @@
     },
     {
       "text": "Texto libre",
-      "key":"3",
+      "key": 3,
       "image": {
         "url": "Encuestas_TextoLibre_ES.png",
         "width": 800,
@@ -29,9 +29,85 @@
     },
     {
       "text": "Emoticones",
-      "key":"4",
+      "key": 4,
       "image": {
         "url": "Encuestas_Emoticones_ES.png",
+        "width": 400,
+        "height": 260
+      }
+    }
+  ],
+  "pt": [
+    {
+      "text": "Pontuação ",
+      "key": 1,
+      "image": {
+        "url": "Encuestas_Puntuacion_PT.png",
+        "width": 600,
+        "height": 380
+      }
+    },
+    {
+      "text": "Múltipla escolha ",
+      "key": 2,
+      "image": {
+        "url": "Encuestas_SeleccionMultiple_PT.png",
+        "width": 620,
+        "height": 500
+      }
+    },
+    {
+      "text": "Texto livre",
+      "key": 3,
+      "image": {
+        "url": "Encuestas_TextoLibre_PT.png",
+        "width": 800,
+        "height": 660
+      }
+    },
+    {
+      "text": "Emoticons",
+      "key": 4,
+      "image": {
+        "url": "Encuestas_Emoticones_PT.png",
+        "width": 400,
+        "height": 260
+      }
+    }
+  ],
+  "en": [
+    {
+      "text": "Scoring ",
+      "key": 1,
+      "image": {
+        "url": "Encuestas_Puntuacion_EN.png",
+        "width": 600,
+        "height": 380
+      }
+    },
+    {
+      "text": "Multiple choice",
+      "key": 2,
+      "image": {
+        "url": "Encuestas_SeleccionMultiple_EN.png",
+        "width": 620,
+        "height": 500
+      }
+    },
+    {
+      "text": "Free text",
+      "key": 3,
+      "image": {
+        "url": "Encuestas_TextoLibre_EN.png",
+        "width": 800,
+        "height": 660
+      }
+    },
+    {
+      "text": "Emoticons",
+      "key": 4,
+      "image": {
+        "url": "Encuestas_Emoticones_EN.png",
         "width": 400,
         "height": 260
       }

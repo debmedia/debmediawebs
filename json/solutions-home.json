@@ -123,67 +123,55 @@
   ],
   "pt": [
     {
-      "title": "Compromissos online",
+      "title": "Agenda Online",
       "image": {
-        "url": "citas.png",
+        "url": "CitasHome_PT.png",
         "urlXs": "citas_xs.png",
         "width": 360,
         "height": 400
       },
       "key": "citas",
-      "main": "Permita que seus clientes agende sua consulta ",
-      "secu": "dos canais digitais e organize o fluxo de clientes que o visitam.",
       "url": "/citasonline",
       "xs": 12,
       "sm": 6
     },
     {
-      "title": "Gerenciamento de linhas",
       "image": {
-        "url": "filas_new.png",
+        "url": "GestiondeFilas_Home_PT.png",
         "urlXs": "filas_new_xs.png",
         "width": 400,
         "height": 500
       },
       "key": "debq",
-      "main": "Melhore a atenção e obtenha o máximo de sua equipe.  ",
-      "secu": "Ele mede os principais indicadores e adota as melhores práticas.",
       "url": "/debq",
       "xs": 12,
       "sm": 6
     },
     {
-      "title": "Fila Virtual",
       "image": {
-        "url": "fila-virtual_new.png",
-        "urlXs": "fila-virtual_new.png",
+        "url": "FilaVirtual_Home_PT.png",
+        "urlXs": "FilaVirtual_Home_PT.png",
         "width": 240,
         "height": 480
       },
       "key": "filavirtual",
-      "main": "Deixe seus clientes remarem do seu celular  ",
-      "secu": "e reduza o tempo de espera, eles permanecem dentro de sua filial com o sistema de linha virtual.",
       "url": "/fila-virtual",
       "xs": 6,
       "sm": 6
     },
     {
-      "title": "Cartelería digital",
       "image": {
-        "url": "debsign.png",
-        "urlXs": "debsign.png",
+        "url": "CarteleriaDigital_Home_PT.png",
+        "urlXs": "CarteleriaDigital_Home_PT.png",
         "width": 380,
         "height": 290
       },
       "key": "sign",
-      "main": "Personalize e gerencie o conteúdo da sua rede de telas ",
-      "secu": " Em tempo real para comunicar mensagens eficazes.",
       "url": "/debsign",
       "xs": 12,
       "sm": 6
     },
     {
-      "title": "Atenção virtual",
       "image": {
         "url": "videocall.png",
         "urlXs": "videocall.png",
@@ -191,29 +179,23 @@
         "height": 520
       },
       "key": "videocall",
-      "main": "Atende mais clientes por meio de videochamadas ",
-      "secu": " e otimize a hora da sua equipe de trabalho.",
       "url": "/atencion-virtual",
       "xs": 6,
       "sm": 6
     },
     {
-      "title": "Pesquisas",
       "image": {
-        "url": "encuestas.png",
-        "urlXs": "encuestas.png",
+        "url": "Encuestas_Home_PT.png",
+        "urlXs": "Encuestas_Home_PT.png",
         "width": 280,
         "height": 520
       },
       "key": "encuestas",
-      "main": "Conheça a opinião de seus clientes ",
-      "secu": "através de pesquisas e medidas de satisfação, o desempenho dos colaboradores.",
       "url": "/encuestas",
       "xs": 6,
       "sm": 6
     },
     {
-      "title": "Pre atendedor",
       "image": {
         "url": "preatendedor.png",
         "urlXs": "preatendedor.png",
@@ -221,23 +203,117 @@
         "height": 520
       },
       "key": "preatendedor",
-      "main": "Vá para seus clientes para escolher o canal de atenção correto ",
-      "secu": "e maximizar sua experiência.",
       "url": "/preatendedor",
       "xs": 6,
       "sm": 6
     },
     {
-      "title": "Chatbot WhatsApp",
       "image": {
-        "url": "wapp.png",
-        "urlXs": "wapp.png",
+        "url": "ChatbotWhatsapp_Home_PT.png",
+        "urlXs": "ChatbotWhatsapp_Home_PT.png",
         "width": 350,
         "height": 520
       },
       "key": "wapp",
-      "main": "Automatiza conversas com seus clientes e acelera a comunicação",
-      "secu": " através de uma ferramenta que os clientes já sabem.",
+      "url": "/preatendedor",
+      "xs": 6,
+      "sm": 6
+    }
+  ],
+  "en": [
+    {
+      "title": "Online Appointments",
+      "image": {
+        "url": "CitasHome_EN.png",
+        "urlXs": "citas_xs.png",
+        "width": 360,
+        "height": 400
+      },
+      "key": "citas",
+      "url": "/citasonline",
+      "xs": 12,
+      "sm": 6
+    },
+    {
+      "image": {
+        "url": "GestiondeFilas_Home_EN.png",
+        "urlXs": "filas_new_xs.png",
+        "width": 400,
+        "height": 500
+      },
+      "key": "debq",
+      "url": "/debq",
+      "xs": 12,
+      "sm": 6
+    },
+    {
+      "image": {
+        "url": "FilaVirtual_Home_EN.png",
+        "urlXs": "FilaVirtual_Home_EN.png",
+        "width": 240,
+        "height": 480
+      },
+      "key": "filavirtual",
+      "url": "/fila-virtual",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "image": {
+        "url": "CarteleriaDigital_Home_EN.png",
+        "urlXs": "CarteleriaDigital_Home_EN.png",
+        "width": 380,
+        "height": 290
+      },
+      "key": "sign",
+      "url": "/debsign",
+      "xs": 12,
+      "sm": 6
+    },
+    {
+      "image": {
+        "url": "videocall.png",
+        "urlXs": "videocall.png",
+        "width": 270,
+        "height": 520
+      },
+      "key": "videocall",
+      "url": "/atencion-virtual",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "image": {
+        "url": "Encuestas_Home_EN.png",
+        "urlXs": "Encuestas_Home_EN.png",
+        "width": 280,
+        "height": 520
+      },
+      "key": "encuestas",
+      "url": "/encuestas",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "image": {
+        "url": "preatendedor.png",
+        "urlXs": "preatendedor.png",
+        "width": 260,
+        "height": 520
+      },
+      "key": "preatendedor",
+      "url": "/preatendedor",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "image": {
+        "url": "ChatbotWhatsapp_Home_EN.png",
+        "urlXs": "ChatbotWhatsapp_Home_EN.png",
+        "width": 350,
+        "height": 520
+      },
+      "key": "wapp",
       "url": "/preatendedor",
       "xs": 6,
       "sm": 6

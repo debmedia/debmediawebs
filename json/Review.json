@@ -1,6 +1,5 @@
 {
-  "es":
-  [
+  "es": [
     {
       "name": "testimonio2",
       "image": "person.png",
@@ -25,10 +24,8 @@
       "person": "Rodrigo Santos",
       "job": "Agile Tribe Leader - Modelo de Atención Omnicanal"
     }
-    
   ],
-  "pt":
-  [
+  "pt": [
     {
       "name": "testimonio2",
       "image": "person.png",
@@ -49,13 +46,12 @@
       "name": "testimonio3",
       "image": "santos.png",
       "company": "supervielle.png",
-      "comment": "Nuestros objetivos con la implementación de esta solución se relacionan directamente con nuestra filosofía, su propósito es mantener la cercanía con el cliente y, en ese sentido, la videollamada otorga el toque humano a las interacciones que no se realizan en forma presencial.",
+      "comment": "Os nossos objetivos com a implementação desta solução estão diretamente relacionados com a nossa filosofia, a sua finalidade é manter a proximidade com o cliente e, neste sentido, a videochamada dá o toque humano às interações que não são realizadas presencialmente.",
       "person": "Rodrigo Santos",
       "job": "Agile Tribe Leader - Modelo de Atención Omnicanal"
     }
   ],
-  "en": 
-  [
+  "en": [
     {
       "name": "testimonio2",
       "image": "person.png",
@@ -76,7 +72,7 @@
       "name": "testimonio3",
       "image": "santos.png",
       "company": "supervielle.png",
-      "comment": "Nuestros objetivos con la implementación de esta solución se relacionan directamente con nuestra filosofía, su propósito es mantener la cercanía con el cliente y, en ese sentido, la videollamada otorga el toque humano a las interacciones que no se realizan en forma presencial.",
+      "comment": "Our objectives with the implementation of this solution are directly related to our philosophy, its purpose is to maintain closeness with the client and, in this sense, the video call gives the human touch to interactions that are not carried out in person.",
       "person": "Rodrigo Santos",
       "job": "Agile Tribe Leader - Modelo de Atención Omnicanal"
     }

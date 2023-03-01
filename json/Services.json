@@ -72,5 +72,152 @@
         "height": 120
       }
     }
+  ],
+  "pt": [
+    {
+      "name": "Atendimiento Virtual",
+      "url": "/atencion-virtual",
+      "image": {
+        "url": "videocall.png",
+        "width": 85,
+        "height": 120
+      }
+    },
+    {
+      "name": "Chatbot",
+      "url": "/preatendedor",
+      "image": {
+        "url": "wapp.png",
+        "width": 90,
+        "height": 120
+      }
+    },
+    {
+      "name": "Fila Virtual",
+      "url": "/fila-virtual",
+      "image": {
+        "url": "mobile.png",
+        "width": 65,
+        "height": 120
+      }
+    },
+    {
+      "name": "Agenda Online",
+      "url": "/citasonline",
+      "image": {
+        "url": "citas.png",
+        "width": 125,
+        "height": 120
+      }
+    },
+    {
+      "name": "Sistema de gestão de filas",
+      "url": "/debq",
+      "image": {
+        "url": "debq.png",
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "Digital Signage  ",
+      "url": "/debsign",
+      "image": {
+        "url": "debsign.png",
+        "width": 145,
+        "height": 100
+      }
+    },
+    {
+      "name": "Pré-atendimento",
+      "url": "/preatendedor",
+      "image": {
+        "url": "pre.png",
+        "width": 67,
+        "height": 120
+      }
+    },
+    {
+      "name": "Pesquisas de satisfação",
+      "url": "/encuestas",
+      "image": {
+        "url": "encuestas.png",
+        "width": 140,
+        "height": 120
+      }
+    }
+  ],
+  "en": [
+    {
+      "name": "Video-Call Customer Service",
+      "url": "/atencion-virtual",
+      "image": {
+        "url": "videocall.png",
+        "width": 85,
+        "height": 120
+      }
+    },
+    {
+      "name": "Chatbot",
+      "url": "/preatendedor",
+      "image": {
+        "url": "wapp.png",
+        "width": 90,
+        "height": 120
+      }
+    },
+    {
+      "name": "Virtual Queue",
+      "url": "/fila-virtual",
+      "image": {
+        "url": "mobile.png",
+        "width": 65,
+        "height": 120
+      }
+    },
+    {
+      "name": "Online Appointments",
+      "url": "/citasonline",
+      "image": {
+        "url": "citas.png",
+        "width": 125,
+        "height": 120
+      }
+    },
+    {
+      "name": "Queue Management System ",
+      "url": "/debq",
+      "image": {
+        "url": "debq.png",
+        "width": 120,
+        "height": 120
+      }
+    },
+    {
+      "name": "Digital Signage ",
+      "url": "/debsign",
+      "image": {
+        "url": "debsign.png",
+        "width": 145,
+        "height": 100
+      }
+    },
+    {
+      "name": "Pre Service Website",
+      "url": "/preatendedor",
+      "image": {
+        "url": "pre.png",
+        "width": 67,
+        "height": 120
+      }
+    },
+    {
+      "url": "/encuestas",
+      "image": {
+        "url": "encuestas.png",
+        "width": 140,
+        "height": 120
+      }
+    }
   ]
 }

@@ -2,7 +2,7 @@
   "es": [
     {
       "text": " Hablaremos sobre tu empresa.",
-      "key":"1",
+      "key": 1,
       "image": {
         "url": "step1.png",
         "width": 780,
@@ -11,7 +11,7 @@
     },
     {
       "text": " Evalúaremos los objetivos que tenemos en común. ",
-      "key":"2",
+      "key": 2,
       "image": {
         "url": "step2.png",
         "width": 620,
@@ -20,7 +20,59 @@
     },
     {
       "text": "Te daremos las herramientas técnicas y comerciales para que seas un Debmedia Partner exitoso.",
-      "key":"3",
+      "key": 3,
+      "image": {
+        "url": "step3.png",
+        "width": 400,
+        "height": 500
+      }
+    }
+  ],
+  "pt": [
+    {
+      "key": 1,
+      "image": {
+        "url": "step1.png",
+        "width": 780,
+        "height": 600
+      }
+    },
+    {
+      "key": 2,
+      "image": {
+        "url": "step2.png",
+        "width": 620,
+        "height": 550
+      }
+    },
+    {
+      "key": 3,
+      "image": {
+        "url": "step3.png",
+        "width": 400,
+        "height": 500
+      }
+    }
+  ],
+  "en": [
+    {
+      "key": 1,
+      "image": {
+        "url": "step1.png",
+        "width": 780,
+        "height": 600
+      }
+    },
+    {
+      "key": 2,
+      "image": {
+        "url": "step2.png",
+        "width": 620,
+        "height": 550
+      }
+    },
+    {
+      "key": 3,
       "image": {
         "url": "step3.png",
         "width": 400,
