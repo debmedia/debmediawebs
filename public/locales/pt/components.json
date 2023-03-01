@@ -1,6 +1,14 @@
 {
+  "REVIEW": {
+    "TITLE": "Empresas em todo <br /> o <br /> <span> mundo, já confiam </span> <br /> <span> na </span> Debmedia"
+  },
   "MAP": {
-    "CAPTION": "Debmedia has been developing software to manage the customer experience for more than 15 years."
+    "CAPTION": "Debmedia tem mais de 15 anos de desenvolvimento de software para a gestão da experiência do cliente."
+  },
+  "PARTNER": {
+    "TITLE": "Gostaria de ser um parceiro Debmedia?",
+    "CAPTION": "Descubra como gerar novos negócios através do nosso programa.",
+    "BUTTON": "Quero ser um parceiro"
   },
   "LEVEL": {
     "TITLE": "Melhore a Experiência do Cliente <br /> com a Tecnologia <b> Debmedia </b>",
@@ -9,9 +17,61 @@
     "STEP_3": "<b> Configure </b> <br /> o sistema",
     "STEP_4": "Atenda de <br /> <b> forma eficiente </b>"
   },
+  "CONTACT": {
+    "TITLE": "Entre em contacto com a <br /> nossa equipe e melhore a experiência dos seus clientes!"
+  },
+  "SERVICES": {
+    "TITLE": "<b> Tecnologia que melhora </b> <br /> a experiência dos seus clientes"
+  },
   "SPECS_INDUS": {
     "TITLE": {
-      "HEALTH": "<b> Melhore a experiência dos </b> <br /> pacientes dentro dos centros de atendimento."
+      "BANKING": "<b> Concorra com entidades digitalizadas </b> <br /> do setor bancário e financeiro.",
+      "HEALTH": "<b> Melhore a experiência dos </b> <br /> pacientes dentro dos centros de atendimento.",
+      "GOVERNMENT": "<b> Escale os processos em </b> <br /> instituições governamentais e ONGs.",
+      "RETAIL": "<b> Escale os processos em </b> <br /> empresas retail e de serviços.",
+      "TELECOMMUNICATIONS": "<b> Melhore a experiência </b> <br /> e escale os processos.",
+      "UTILITIES": "<b> Uma solução moderna e escalável </b> <br /> para Utilities"
+    },
+    "CAPTION_1": {
+      "TITLE": "Integração <br /> fácil",
+      "SUBTITLE": "via API ou <br /> iframe."
+    },
+    "CAPTION_2": {
+      "TITLE": "Métricas de <br /> performance",
+      "SUBTITLE": "Conheça a performance de <br /> seus canais de atendimento ao cliente."
+    },
+    "CAPTION_3": {
+      "TITLE": "Comunicação <br /> centralizada",
+      "SUBTITLE": "Envie a mensagem correta <br /> via SMS, e-mail, WhatsApp ou <br /> telas."
+    }
+  },
+  "INDUSTRIES": {
+    "TITLE": "Organizações que confiam em <br /> <b> nosso software. </b>",
+    "CARDS": {
+      "BANKING": {
+        "TITLE": "Banco e Seguros",
+        "SUBTITLE": "Instituições financeiras, seguradoras e cooperativas"
+      },
+      "HEALTH": {
+        "TITLE": "Saúde",
+        "SUBTITLE": "Clínicas, hospitais, laboratórios, farmácias, convênios"
+      },
+      "GOVERNMENT": {
+        "TITLE": "Governo",
+        "SUBTITLE": "Instituições públicas, estados, municípios, ONGs"
+      },
+      "RETAIL": {
+        "TITLE": "Retail, Serviços",
+        "SUBTITLE": "Lojas, sindicato, concessionárias, logística."
+      },
+      "TELECOMMUNICATIONS": {
+        "TITLE": "telecomunicações",
+        "SUBTITLE": "Telefonia móvel, TV, Internet"
+      },
+      "UTILITIES": {
+        "TITLE": "Utilidade Publica",
+        "SUBTITLE": "Associações, serviços públicos."
+      }
     }
   }
 }

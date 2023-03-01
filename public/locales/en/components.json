@@ -1,6 +1,14 @@
 {
+  "REVIEW": {
+    "TITLE": "More than 300 <br /> organizations <br /> <span> already trust Debmedia. </span> <br /> <span> </span>"
+  },
   "MAP": {
     "CAPTION": "Debmedia has been developing software to manage the customer experience for more than 15 years."
+  },
+  "PARTNER": {
+    "TITLE": "Do you want to be a Debmedia partner?",
+    "CAPTION": "Learn how to generate new business through our program.",
+    "BUTTON": "I want to be a partner."
   },
   "LEVEL": {
     "TITLE": "Improve your Customer Experience with <br /> Debmedia's Technology <b> </b>",
@@ -9,9 +17,61 @@
     "STEP_3": "<b> Configure </b> <br /> the system",
     "STEP_4": "Serve your <br /> <b> customers efficiently </b>"
   },
+  "CONTACT": {
+    "TITLE": "Contact our team and improve <br /> your customers' experience!"
+  },
+  "SERVICES": {
+    "TITLE": "<b> Technology that improves </b> <br /> your customers' experience"
+  },
   "SPECS_INDUS": {
     "TITLE": {
-      "HEALTH": "<b> Improve patient experience within </b> <br /> care centers."
+      "BANKING": "<b> Compete with digitized entities </b> <br /> in the Banking, Financial Services and Fintechs Industry.",
+      "HEALTH": "<b> Improve patient experience within </b> <br /> care centers.",
+      "GOVERNMENT": "<b> Scale processes in government </b> <br /> institutions and NGOs.",
+      "RETAIL": "<b> Scale processes in retail </b> <br /> and service companies.",
+      "TELECOMMUNICATIONS": "<b> Improve the experience </b> <br /> and scale processes.",
+      "UTILITIES": "<b> A modern and scalable solution </b> <br /> for Utilities"
+    },
+    "CAPTION_1": {
+      "TITLE": "Easy <br /> Integration",
+      "SUBTITLE": "Integrable by API <br /> or iframe."
+    },
+    "CAPTION_2": {
+      "TITLE": "Performance metrics <br />",
+      "SUBTITLE": "Measure the performance of <br /> your customer service channels."
+    },
+    "CAPTION_3": {
+      "TITLE": "Centralized <br /> communication",
+      "SUBTITLE": "Send the right message <br /> via SMS, email, WhatsApp or <br /> office advertisements."
+    }
+  },
+  "INDUSTRIES": {
+    "TITLE": "We work with organizations <br /> <b> that rely on our software. </b>",
+    "CARDS": {
+      "BANKING": {
+        "TITLE": "Banking, Financial Services and Fintechs",
+        "SUBTITLE": "Financial institutions, insurance companies and cooperatives"
+      },
+      "HEALTH": {
+        "TITLE": "Healthcare",
+        "SUBTITLE": "Clinics, hospitals, laboratories, pharmacies"
+      },
+      "GOVERNMENT": {
+        "TITLE": "Government",
+        "SUBTITLE": "Public institutions, municipalities, ONGs"
+      },
+      "RETAIL": {
+        "TITLE": "Retail",
+        "SUBTITLE": "Retail stores, clearinghouses, logistics."
+      },
+      "TELECOMMUNICATIONS": {
+        "TITLE": "Telecommunications",
+        "SUBTITLE": "Mobile telephony, cable operators."
+      },
+      "UTILITIES": {
+        "TITLE": "Utilities",
+        "SUBTITLE": "Associations, public services."
+      }
     }
   }
 }
