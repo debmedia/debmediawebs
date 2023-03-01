@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     });
 
     function processFile(content, dest, header){
-      const lines = content.split("\n").map(line => line.split(","));
+      const lines = content.split("\r\n").map(line => line.split(","));
       //console.log(lines);
       const res = {}
       for (let line of lines) {
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 
       const fileNames = Object.getOwnPropertyNames(res);
       for(let fileName of fileNames) {
-        let fileContent = header + "\n" + res[fileName].join("\n");
+        let fileContent = header + "\r\n" + res[fileName].join("\r\n");
         grunt.file.write(dest + fileName + ".csv", fileContent);
       }
     }
