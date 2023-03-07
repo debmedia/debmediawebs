@@ -102,6 +102,9 @@ module.exports = function(grunt) {
               },
           },
       },
+      clean: {
+        import: ["scripts/in/*", "scripts/out/*"]
+      },
       http: {
         // Para bajar los csv de google sheets ir a la hoja correspondiente
         // abrir los devtools, hacer exportar csv, buscar el request que tiene export?...
@@ -178,9 +181,10 @@ module.exports = function(grunt) {
   grunt.loadTasks('scripts/');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-http');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.registerTask("importCSVAsJSON", ["splitCSV", "CSVToJson"]);
   grunt.registerTask("exportJSONAsCSV", ["JSONsToCSV", "concat"]);
-  grunt.registerTask("importAll", ["http", "CSVToTranslations", "importCSVAsJSON"]);
+  grunt.registerTask("importAll", ["http", "CSVToTranslations", "importCSVAsJSON", "clean"]);
 };
 
 
