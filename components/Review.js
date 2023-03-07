@@ -25,12 +25,14 @@ SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
 
 
-export default function Brands() {
+export default function Brands({filter}) {
     const [review, setreview] = useState([]);
 
     useEffect(() => {
-        setreview(Review);
-    }, []);
+        let showReview = Review;
+        if (Array.isArray(filter)) showReview = Review.filter((elem) => filter.includes(elem.name))
+        setreview(showReview);
+    }, [filter]);
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
