@@ -12,6 +12,7 @@ import Services from "../components/Services"
 import Level from "../components/Level"
 import Contact from "../components/Contact"
 import Posts from "../components/Posts"
+import WideTestimonial from "../components/WideTestimonial";
 
 
 export default function Videocall() {
@@ -21,10 +22,11 @@ export default function Videocall() {
     <>
       <Header />
       <Brands />
+      <WideTestimonial testimonialIndex={2}/>
       <Market />
       <Flow />
       <Specs />
-      <Review />
+      <Review  filter={["testimonio1","testimonio2"]}/>
       <Industries />
       <Map />
       <Partner />
