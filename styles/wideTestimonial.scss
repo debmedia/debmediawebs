@@ -33,9 +33,12 @@
 
    .card-text {
     font-size: 1rem;
+    position: relative;
    }
    .card-body {
     padding-top: calc(var(--img-size) /2 + 10px);
+    padding-left: 3rem;
+    padding-right: 3rem;
    }
    .testimonial-image {
     position: absolute;
@@ -56,5 +59,17 @@
     height: calc(50% + var(--overlap));
     bottom: calc(-1 * var(--overlap));
     background-color: #232C61;
+   }
+
+   .quote1{
+    position: absolute;
+    width: 30px;
+    top: -10px;
+    left: -30px;
+   }
+   .quote2{
+    position: absolute;
+    bottom: 10px;
+    right: -15px;
    }
 }

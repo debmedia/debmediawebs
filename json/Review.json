@@ -19,7 +19,7 @@
     "name": "testimonio3",
     "image": "santos.png",
     "company": "supervielle.png",
-    "comment": "Nuestros objetivos con la implementación de esta solución se relacionan directamente con nuestra filosofía, su propósito es mantener la cercanía con el cliente y, en ese sentido, la videollamada otorga el toque humano a las interacciones que no se realizan en forma presencial.",
+    "comment": "Nuestros objetivos con la implementación de esta solución se relacionan directamente con nuestra filosofía, su propósito es mantener la cercanía con el cliente y, en ese sentido, <b>la videollamada otorga el toque humano</b> a las interacciones que no se realizan en forma presencial.",
     "person": "Rodrigo Santos",
     "job": "Agile Tribe Leader - Modelo de Atención Omnicanal"
   }
