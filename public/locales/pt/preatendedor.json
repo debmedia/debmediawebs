@@ -48,6 +48,10 @@
       "TITLE": "Melhore os tempos",
       "SUBTITLE": "de resposta e acelere <br /> o atendimento ao cliente."
     },
+    "PILL_1": "Permite aos seus clientes <b> solicitarem agendamento online",
+    "PILL_2": "Acompanhem suas solicitações pelo <b> WhatsApp",
+    "PILL_3": "Envia <b> lembretes",
+    "PILL_4": "<b> Automatiza as conversações com clientes",
     "CAPTION": "<b> Direcione seus clientes através do WhatsApp para que </b> <br /> eles possam escolher o canal de serviço mais adequado."
   }
 }

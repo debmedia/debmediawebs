@@ -8,7 +8,7 @@
         "height": 340
       },
       "key": "videocall",
-      "main": "Presta servicios médicos a través de videollamadas ",
+      "main": "Presta servicios médicos a través de videollamadas",
       "secu": "facilita el acceso a los pacientes y utiliza el sistema de atención virtual para compartir documentos, pantalla y grabar la atención.",
       "url": "/atencion-virtual"
     },
@@ -20,7 +20,7 @@
         "height": 380
       },
       "key": "wapp",
-      "main": "Automatiza las conversaciones con los pacientes, ",
+      "main": "Automatiza las conversaciones con los pacientes,",
       "secu": "aumenta la capacidad de respuesta y atiende consultas de forma rápida, personalizada y en cualquier horario con un chatbot para clínicas.",
       "url": "/preatendedor"
     },
@@ -32,7 +32,7 @@
         "height": 380
       },
       "key": "preaten",
-      "main": "Deriva a los pacientes a un portal de pre atención personalizable, ",
+      "main": "Deriva a los pacientes a un portal de pre atención personalizable,",
       "secu": "guíalos fácilmente a la elección de su trámite y configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
       "url": "/preatendedor"
     },
@@ -44,7 +44,7 @@
         "height": 380
       },
       "key": "citas",
-      "main": "Deja que a través de una experiencia simple los pacientes reserven una cita online ",
+      "main": "Deja que a través de una experiencia simple los pacientes reserven una cita online",
       "secu": "para una fecha y hora específica desde el navegador y conoce con anticipación las necesidades de cada uno de ellos.",
       "url": "/citasonline"
     },
@@ -56,7 +56,7 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": "Deja que los pacientes reserven un turno a través de su móvil para un tiempo cercano, ",
+      "main": "Deja que los pacientes reserven un turno a través de su móvil para un tiempo cercano,",
       "secu": "organiza el flujo de atención y disminuye el tiempo que pasan los pacientes en las salas de espera.",
       "url": "/fila-virtual"
     },
@@ -68,34 +68,34 @@
         "height": 350
       },
       "key": "debsign",
-      "main": "Administra el contenido de las pantallas en los puntos de atención.   ",
+      "main": "Administra el contenido de las pantallas en los puntos de atención.",
       "secu": "Planifica el contenido, segmenta por sede, grupos de pantallas y actualízalo en tiempo real para comunicar mensajes efectivos.",
       "url": "/debsign"
     },
     {
-      "title": " Encuestas de satisfacción para salud",
+      "title": "Encuestas de satisfacción para salud",
       "image": {
         "url": "Encuestas_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
       "key": "encuesta",
-      "main": "Envía a los pacientes encuestas de satisfacción una vez han recibido los servicios médicos. Eleva la tasa de respuesta,  ",
+      "main": "Envía a los pacientes encuestas de satisfacción una vez han recibido los servicios médicos. Eleva la tasa de respuesta,",
       "secu": "conoce su opinión y utiliza los resultados para mejorar los procesos de atención.",
       "url": "/encuestas"
     }
   ],
   "pt": [
     {
-      "title": "Telemedicina ",
+      "title": "Telemedicina",
       "image": {
         "url": "videocall.png",
         "width": 520,
         "height": 340
       },
       "key": "videocall",
-      "main": "Ofereça serviços médicos através de chamadas de vídeo, ",
-      "secu": "facilite o acesso dos pacientes e usuários ao sistema de atendimento virtual para compartilhar documentos, tela e registro de atendimento. ",
+      "main": "Ofereça serviços médicos através de chamadas de vídeo,",
+      "secu": "facilite o acesso dos pacientes e usuários ao sistema de atendimento virtual para compartilhar documentos, tela e registro de atendimento.",
       "url": "/atencion-virtual"
     },
     {
@@ -106,8 +106,8 @@
         "height": 380
       },
       "key": "wapp",
-      "main": " Automatize as conversas com os pacientes, ",
-      "secu": "aumente a capacidade de resposta e trate de consultas rápidas e personalizadas a qualquer momento com o chatbot para clínicas. ",
+      "main": "Automatize as conversas com os pacientes,",
+      "secu": "aumente a capacidade de resposta e trate de consultas rápidas e personalizadas a qualquer momento com o chatbot para clínicas.",
       "url": "/preatendedor"
     },
     {
@@ -118,8 +118,8 @@
         "height": 380
       },
       "key": "preaten",
-      "main": " Encaminhe os pacientes para um portal de pré-atendimento personalizado, ",
-      "secu": "oriente-os facilmente na escolha de seu procedimento e configure o caminho a ser percorrido com botões, imagens, pop-ups e texto. ",
+      "main": "Encaminhe os pacientes para um portal de pré-atendimento personalizado,",
+      "secu": "oriente-os facilmente na escolha de seu procedimento e configure o caminho a ser percorrido com botões, imagens, pop-ups e texto.",
       "url": "/preatendedor"
     },
     {
@@ -130,19 +130,19 @@
         "height": 380
       },
       "key": "citas",
-      "main": " Através de uma simples experiência, os pacientes fazem o agendamento da consulta on-line ",
+      "main": "Através de uma simples experiência, os pacientes fazem o agendamento da consulta on-line",
       "secu": "para uma data e hora específica a partir do navegador e você sabe com antecedência as necessidades de cada um deles.",
       "url": "/citasonline"
     },
     {
-      "title": "Gestão de filas para a saúde. ",
+      "title": "Gestão de filas para a saúde.",
       "image": {
         "url": "FilaVirtual_Sectores_PT.png",
         "width": 540,
         "height": 380
       },
       "key": "filavirtual",
-      "main": " Permita que seus pacientes entrem na fila virtual pelo celular em um período próximo, ",
+      "main": "Permita que seus pacientes entrem na fila virtual pelo celular em um período próximo,",
       "secu": "organize o fluxo de atendimento e diminua o tempo que os pacientes passam nas salas de espera",
       "url": "/fila-virtual"
     },
@@ -154,8 +154,8 @@
         "height": 350
       },
       "key": "debsign",
-      "main": " Gerencie o conteúdo da sua rede de monitores de forma centralizada. ",
-      "secu": "Planeje o conteúdo, segmente por localização, grupos ou sucursais e atualize-o em tempo real para uma comunicação eficaz. ",
+      "main": "Gerencie o conteúdo da sua rede de monitores de forma centralizada.",
+      "secu": "Planeje o conteúdo, segmente por localização, grupos ou sucursais e atualize-o em tempo real para uma comunicação eficaz.",
       "url": "/debsign"
     },
     {
@@ -166,7 +166,7 @@
         "height": 380
       },
       "key": "encuesta",
-      "main": " Envie pesquisas de satisfação aos pacientes uma vez que eles já tenham finalizado o atendimento médico. Elas aumentam a taxa de resposta, ",
+      "main": "Envie pesquisas de satisfação aos pacientes uma vez que eles já tenham finalizado o atendimento médico. Elas aumentam a taxa de resposta,",
       "secu": "você conhece sua opinião e usa os resultados para melhorar os processos de atendimento.",
       "url": "/encuestas"
     }
@@ -180,8 +180,8 @@
         "height": 340
       },
       "key": "videocall",
-      "main": " It delivers medical services via video-calls, ",
-      "secu": "facilitates access to patients and uses the virtual care system to share documents, screen, and record care. ",
+      "main": "It delivers medical services via video-calls,",
+      "secu": "facilitates access to patients and uses the virtual care system to share documents, screen, and record care.",
       "url": "/atencion-virtual"
     },
     {
@@ -192,19 +192,19 @@
         "height": 380
       },
       "key": "wapp",
-      "main": " It automates conversations with patients,",
-      "secu": "it increases responsiveness and handles quickly and personalized queries at any time with the chatbot for clinics. ",
+      "main": "It automates conversations with patients,",
+      "secu": "it increases responsiveness and handles quickly and personalized queries at any time with the chatbot for clinics.",
       "url": "/preatendedor"
     },
     {
-      "title": "Pre-Service Website  ",
+      "title": "Pre-Service Website",
       "image": {
         "url": "Preatendedor_Sectores_EN.png",
         "width": 540,
         "height": 380
       },
       "key": "preaten",
-      "main": "It refers patients to a customizable pre-care portal, ",
+      "main": "It refers patients to a customizable pre-care portal,",
       "secu": "easily guides them to their choice of procedure and configures the path they need to go through with buttons, images, pop-ups, and text.",
       "url": "/preatendedor"
     },
@@ -216,7 +216,7 @@
         "height": 380
       },
       "key": "citas",
-      "main": " Through a simple experience patients make an appointment online ",
+      "main": "Through a simple experience patients make an appointment online",
       "secu": "for a specific date and time from the browser and you know in advance the needs of each patient.",
       "url": "/citasonline"
     },
@@ -228,7 +228,7 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": " It allows patients to get in the virtual queue through their mobile for a nearby time, ",
+      "main": "It allows patients to get in the virtual queue through their mobile for a nearby time,",
       "secu": "organizes the flow of care and decreases the time patients spend in waiting rooms.",
       "url": "/fila-virtual"
     },
@@ -240,7 +240,7 @@
         "height": 350
       },
       "key": "debsign",
-      "main": " It manages content on point-of-care displays. ",
+      "main": "It manages content on point-of-care displays.",
       "secu": "Plan content, segment by location, screen groups, and update in real-time to communicate effective messages.",
       "url": "/debsign"
     },
@@ -252,8 +252,8 @@
         "height": 380
       },
       "key": "encuesta",
-      "main": "Send patients satisfaction surveys once they have received medical services. They increase the response rate, ",
-      "secu": "you know their opinion, and use the results to improve care processes. ",
+      "main": "Send patients satisfaction surveys once they have received medical services. They increase the response rate,",
+      "secu": "you know their opinion, and use the results to improve care processes.",
       "url": "/encuestas"
     }
   ]

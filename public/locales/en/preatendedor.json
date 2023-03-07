@@ -48,6 +48,10 @@
       "TITLE": "Improve response times",
       "SUBTITLE": "and speed up customer <br /> service."
     },
+    "PILL_1": "Allow your customers to <b> get an online appointment",
+    "PILL_2": "Allow your customers to <b> follow their tickets through WhatsApp",
+    "PILL_3": "Send <b> Reminders",
+    "PILL_4": "<b> Automate conversations in response to your customers",
     "CAPTION": "<b> Direct your customers through WhatsApp chatbot so they </b> <br /> can choose the most appropriate customer service channel."
   }
 }

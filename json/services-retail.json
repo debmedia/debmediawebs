@@ -8,7 +8,7 @@
         "height": 340
       },
       "key": "videocall",
-      "main": "Conecta clientes y colaboradores por videollamada para que no deban acercarse a las sucursales. ",
+      "main": "Conecta clientes y colaboradores por videollamada para que no deban acercarse a las sucursales.",
       "secu": "Mejora los tiempos de atención y disminuye procesos costosos y poco efectivos en sucursales.",
       "url": "/atencion-virtual"
     },
@@ -20,7 +20,7 @@
         "height": 380
       },
       "key": "wapp",
-      "main": "Automatiza las conversaciones con los clientes, aumenta la capacidad de respuesta y atiende  ",
+      "main": "Automatiza las conversaciones con los clientes, aumenta la capacidad de respuesta y atiende",
       "secu": "consultas de forma rápida, personalizada y en cualquier horario con el chatbot.",
       "url": "/preatendedor"
     },
@@ -32,19 +32,19 @@
         "height": 380
       },
       "key": "preaten",
-      "main": "Deriva a tus clientes a un portal de pre atención personalizable que los guía a la elección de su trámite fácilmente. ",
-      "secu": " Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
+      "main": "Deriva a tus clientes a un portal de pre atención personalizable que los guía a la elección de su trámite fácilmente.",
+      "secu": "Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
       "url": "/preatendedor"
     },
     {
-      "title": "Sistema de citas online ",
+      "title": "Sistema de citas online",
       "image": {
         "url": "Citas_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
       "key": "citas",
-      "main": "Deja que los clientes reserven una cita online  desde canales digitales para un horario y día ",
+      "main": "Deja que los clientes reserven una cita online desde canales digitales para un horario y día",
       "secu": "determinado y conoce con anticipación qué clientes te visitarán y sus necesidades.",
       "url": "/citasonline"
     },
@@ -56,8 +56,8 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": "Deja que los clientes soliciten un turno desde el móvil para ser atendidos en un tiempo cercano ",
-      "secu": "a través de videollamadas o en sucursal y disminuye el tiempo de espera para su atención.    ",
+      "main": "Deja que los clientes soliciten un turno desde el móvil para ser atendidos en un tiempo cercano",
+      "secu": "a través de videollamadas o en sucursal y disminuye el tiempo de espera para su atención.",
       "url": "/fila-virtual"
     },
     {
@@ -69,18 +69,18 @@
       },
       "key": "debsign",
       "main": "Administra el contenido de la red de pantallas dentro de las sucursales.",
-      "secu": " Planifica el contenido, segmenta por sede, grupos de pantallas y actualízalo en tiempo real con mensajes efectivos.",
+      "secu": "Planifica el contenido, segmenta por sede, grupos de pantallas y actualízalo en tiempo real con mensajes efectivos.",
       "url": "/debsign"
     },
     {
-      "title": "Encuestas de satisfacción ",
+      "title": "Encuestas de satisfacción",
       "image": {
         "url": "Encuestas_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
       "key": "encuesta",
-      "main": "Envía a los clientes encuestas de satisfacción una vez han sido atendidos, ",
+      "main": "Envía a los clientes encuestas de satisfacción una vez han sido atendidos,",
       "secu": "eleva la tasa de respuesta y utiliza los resultados para mejorar los procesos de atención dentro de tu empresa retail.",
       "url": "/encuestas"
     }
@@ -94,8 +94,8 @@
         "height": 340
       },
       "key": "videocall",
-      "main": " Conecte clientes e colaboradores por videochamada para que não tenham que ir às sucursais.",
-      "secu": "Melhore os tempos de serviço e reduza os processos dispendiosos e ineficazes nas sucursais. ",
+      "main": "Conecte clientes e colaboradores por videochamada para que não tenham que ir às sucursais.",
+      "secu": "Melhore os tempos de serviço e reduza os processos dispendiosos e ineficazes nas sucursais.",
       "url": "/atencion-virtual"
     },
     {
@@ -106,7 +106,7 @@
         "height": 380
       },
       "key": "wapp",
-      "main": " Automatize as conversas com seus clientes, ",
+      "main": "Automatize as conversas com seus clientes,",
       "secu": "aumente a capacidade de resposta e atenda a consultas de forma rápida, personalizada e a qualquer momento com o chatbot de WhatsApp.",
       "url": "/preatendedor"
     },
@@ -118,8 +118,8 @@
         "height": 380
       },
       "key": "preaten",
-      "main": " Encaminhe seus clientes para um portal de pré-serviço personalizável e oriente-os facilmente na escolha de sua operação. ",
-      "secu": "Configure o caminho que eles irão percorrer com botões, imagens, pop ups e textos. ",
+      "main": "Encaminhe seus clientes para um portal de pré-serviço personalizável e oriente-os facilmente na escolha de sua operação.",
+      "secu": "Configure o caminho que eles irão percorrer com botões, imagens, pop ups e textos.",
       "url": "/preatendedor"
     },
     {
@@ -130,8 +130,8 @@
         "height": 380
       },
       "key": "citas",
-      "main": " Deixe que os clientes reservem um horário on-line a partir de canais digitais para uma hora e um dia específicos ",
-      "secu": "e saiba com antecedência quais clientes irão visitá-lo e suas necessidades. ",
+      "main": "Deixe que os clientes reservem um horário on-line a partir de canais digitais para uma hora e um dia específicos",
+      "secu": "e saiba com antecedência quais clientes irão visitá-lo e suas necessidades.",
       "url": "/citasonline"
     },
     {
@@ -142,8 +142,8 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": " Deixe que os clientes solicitem um horário pelo celular para ser atendido em um horário próximo via videochamada ",
-      "secu": "ou em uma sucursal e diminua o tempo de espera por o seu atendimento. ",
+      "main": "Deixe que os clientes solicitem um horário pelo celular para ser atendido em um horário próximo via videochamada",
+      "secu": "ou em uma sucursal e diminua o tempo de espera por o seu atendimento.",
       "url": "/fila-virtual"
     },
     {
@@ -154,8 +154,8 @@
         "height": 330
       },
       "key": "debsign",
-      "main": " Gerencie o conteúdo da sua rede de monitores de forma centralizada. ",
-      "secu": "Planeje o conteúdo, segmente por localização, grupos ou sucursais e atualize-o em tempo real para uma comunicação eficaz. ",
+      "main": "Gerencie o conteúdo da sua rede de monitores de forma centralizada.",
+      "secu": "Planeje o conteúdo, segmente por localização, grupos ou sucursais e atualize-o em tempo real para uma comunicação eficaz.",
       "url": "/debsign"
     },
     {
@@ -166,7 +166,7 @@
         "height": 380
       },
       "key": "encuesta",
-      "main": " Envie pesquisas de satisfação a seus clientes ao final dos atendimentos, ",
+      "main": "Envie pesquisas de satisfação a seus clientes ao final dos atendimentos,",
       "secu": "aumente a taxa de resposta, descubra o que eles pensam de seu serviço e use os resultados para otimizar os processos de atendimento ao cliente.",
       "url": "/encuestas"
     }
@@ -180,19 +180,19 @@
         "height": 340
       },
       "key": "videocall",
-      "main": "It connects customers and collaborators via video-call so that they do not have to go to the offices. ",
+      "main": "It connects customers and collaborators via video-call so that they do not have to go to the offices.",
       "secu": "It improves customer service times and reduces expensive and ineffective processes in offices.",
       "url": "/atencion-virtual"
     },
     {
-      "title": "Chatbot for retail ",
+      "title": "Chatbot for retail",
       "image": {
         "url": "Chatbot_Sectores_EN.png",
         "width": 540,
         "height": 380
       },
       "key": "wapp",
-      "main": "It automates conversations with customers,  increases responsiveness and",
+      "main": "It automates conversations with customers, increases responsiveness and",
       "secu": "handles consultations in a quick and personalized way at any time",
       "url": "/preatendedor"
     },
@@ -205,7 +205,7 @@
       },
       "key": "preaten",
       "main": "It refers your customers to a customizable pre-service portal that guides them to the choice of their transaction.",
-      "secu": "It configures the path they go through with buttons, images, pop-ups, and texts. ",
+      "secu": "It configures the path they go through with buttons, images, pop-ups, and texts.",
       "url": "/preatendedor"
     },
     {
@@ -216,8 +216,8 @@
         "height": 380
       },
       "key": "citas",
-      "main": " It allows customers to schedule an appointment online through different virtual channels for a specific time and day,",
-      "secu": "letting you know in advance which customers will visit you and their needs. ",
+      "main": "It allows customers to schedule an appointment online through different virtual channels for a specific time and day,",
+      "secu": "letting you know in advance which customers will visit you and their needs.",
       "url": "/citasonline"
     },
     {
@@ -228,24 +228,24 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": "It allows customers to get in a virtual queue from their device, ",
+      "main": "It allows customers to get in a virtual queue from their device,",
       "secu": "so they can be served at a nearby time, through video-call or in-office. It decreases the waiting time for their service.",
       "url": "/fila-virtual"
     },
     {
-      "title": "Digital signage for retail ",
+      "title": "Digital signage for retail",
       "image": {
         "url": "Retail_Carteleria_EN.png",
         "width": 540,
         "height": 330
       },
       "key": "debsign",
-      "main": "It manages the content of  the advertisements displayed within the offices. ",
+      "main": "It manages the content of the advertisements displayed within the offices.",
       "secu": "Plan the content, segment it by location or groups of display devices , and update it in real-time with effective messages.",
       "url": "/debsign"
     },
     {
-      "title": "Customer feedback ",
+      "title": "Customer feedback",
       "image": {
         "url": "Encuestas_Sectores_EN.png",
         "width": 540,

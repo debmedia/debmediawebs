@@ -1,7 +1,7 @@
 {
   "es": [
     {
-      "text": "El cliente elige el trámite. ",
+      "text": "El cliente elige el trámite.",
       "key": 1,
       "image": {
         "url": "FilaVirtual_Tramite_ES.png",
@@ -10,7 +10,7 @@
       }
     },
     {
-      "text": "Selecciona la sucursal y toma un turno desde tu web.  ",
+      "text": "Selecciona la sucursal y toma un turno desde tu web.",
       "key": 2,
       "image": {
         "url": "FilaVirtual_Sucursal_ES.png",
@@ -28,7 +28,7 @@
       }
     },
     {
-      "text": "Recibe un SMS o WhatsApp minutos antes de ser atendido. ",
+      "text": "Recibe un SMS o WhatsApp minutos antes de ser atendido.",
       "key": 4,
       "image": {
         "url": "FilaVirtual_Llamado_ES.png",

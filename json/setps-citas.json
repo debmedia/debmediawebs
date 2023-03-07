@@ -1,7 +1,7 @@
 {
   "es": [
     {
-      "text": " El cliente selecciona el trámite, la sucursal, fecha y hora para obtener una cita.",
+      "text": "El cliente selecciona el trámite, la sucursal, fecha y hora para obtener una cita.",
       "key": 1,
       "image": {
         "url": "Citas_Slide01_ES.png",
@@ -10,7 +10,7 @@
       }
     },
     {
-      "text": "Hace el check-in e ingresa al flujo de atención. ",
+      "text": "Hace el check-in e ingresa al flujo de atención.",
       "key": 2,
       "image": {
         "url": "Citas_Check-in_PT.png",
@@ -19,7 +19,7 @@
       }
     },
     {
-      "text": " El cliente es atendido por un ejecutivo.",
+      "text": "El cliente es atendido por un ejecutivo.",
       "key": 3,
       "image": {
         "url": "test.png",

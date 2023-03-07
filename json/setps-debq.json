@@ -10,7 +10,7 @@
       }
     },
     {
-      "text": "El llamado por voz, pantallas, WhatsApp o SMS.    ",
+      "text": "El llamado por voz, pantallas, WhatsApp o SMS.",
       "key": 2,
       "image": {
         "url": "GestiondeFilas_Llamados_ES.png",
@@ -28,7 +28,7 @@
       }
     },
     {
-      "text": " Califica el servicio a través del sistema de encuestas.",
+      "text": "Califica el servicio a través del sistema de encuestas.",
       "key": 4,
       "image": {
         "url": "GestiondeFilas_feedback_ES.png",
@@ -77,7 +77,7 @@
   ],
   "en": [
     {
-      "text": "Your customer checks in from a kiosk, totem or cell phone. ",
+      "text": "Your customer checks in from a kiosk, totem or cell phone.",
       "key": 1,
       "image": {
         "url": "GestiondeFilas_Check-in_EN.png",
@@ -95,7 +95,7 @@
       }
     },
     {
-      "text": "They are served by a representative who knows them. ",
+      "text": "They are served by a representative who knows them.",
       "key": 3,
       "image": {
         "url": "step3.png",

@@ -16,7 +16,9 @@
   "PRE_SERVICE": "Pre Service Website",
   "WHATSAPP_CHATBOT": "Chatbot",
   "CLIENTS": "Customers",
+  "US": "About Us",
   "PARTNERS": "Partners",
+  "BLOG": "Blog",
   "BANKING_AND_INSURANCE": "Setor bancário e financeiro",
   "HEALTH": "Health",
   "GOVERNMENT": "Government Offices",
@@ -25,9 +27,12 @@
   "TELECOMMUNICATIONS": "Telecommunications",
   "INDUSTRIES": "Industries",
   "COMPANY": "Company",
+  "ENDORSED_BY": "Endorsed by",
+  "REQUEST": "Request",
   "SELECTION": "Selection",
   "ATTENTION": "Attention",
   "QUALIFICATION": "Qualification",
+  "RESOURCES": "Resources",
   "HOME": "Home",
   "APPOINTMENTS": "Online Appointments"
 }

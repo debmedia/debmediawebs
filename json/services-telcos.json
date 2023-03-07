@@ -8,7 +8,7 @@
         "height": 340
       },
       "key": "videocall",
-      "main": "Conecta a los colaboradores y clientes por videollamada para que no deban acercarse a las sucursales.  ",
+      "main": "Conecta a los colaboradores y clientes por videollamada para que no deban acercarse a las sucursales.",
       "secu": "Mejora los tiempos de atención y disminuye procesos costosos y poco efectivos.",
       "url": "/atencion-virtual"
     },
@@ -20,7 +20,7 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": "Deja que los clientes soliciten un turno desde el móvil para ser atendidos en un tiempo cercano ",
+      "main": "Deja que los clientes soliciten un turno desde el móvil para ser atendidos en un tiempo cercano",
       "secu": "y disminuye el tiempo de espera para su atención y la cantidad de turnos abandonados.",
       "url": "/fila-virtual"
     },
@@ -32,7 +32,7 @@
         "height": 380
       },
       "key": "citas",
-      "main": "Deja que los clientes reserven una cita online para un horario y día determinado.  ",
+      "main": "Deja que los clientes reserven una cita online para un horario y día determinado.",
       "secu": "Conoce con anticipación qué clientes te visitarán y anticípate a sus necesidades.",
       "url": "/citasonline"
     },
@@ -44,7 +44,7 @@
         "height": 380
       },
       "key": "wapp",
-      "main": "Automatiza las conversaciones con los clientes, aumenta la capacidad de respuesta y atiende consultas de forma rápida, ",
+      "main": "Automatiza las conversaciones con los clientes, aumenta la capacidad de respuesta y atiende consultas de forma rápida,",
       "secu": "personalizada y en cualquier horario con el chatbot.",
       "url": "/preatendedor"
     },
@@ -61,15 +61,15 @@
       "url": "/debsign"
     },
     {
-      "title": "Encuestas de satisfacción ",
+      "title": "Encuestas de satisfacción",
       "image": {
         "url": "Encuestas_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
       "key": "encuesta",
-      "main": "Envía a los clientes encuestas de satisfacción una vez han sido atendidos, ",
-      "secu": " eleva la tasa de respuesta y utiliza los resultados para mejorar los procesos de atención dentro de tu empresa.",
+      "main": "Envía a los clientes encuestas de satisfacción una vez han sido atendidos,",
+      "secu": "eleva la tasa de respuesta y utiliza los resultados para mejorar los procesos de atención dentro de tu empresa.",
       "url": "/encuestas"
     },
     {
@@ -81,7 +81,7 @@
       },
       "key": "preaten",
       "main": "Deriva a tus clientes a un portal de pre atención personalizable que los guía a la elección de su trámite.",
-      "secu": "  Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
+      "secu": "Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
       "url": "/preatendedor"
     }
   ],
@@ -94,19 +94,19 @@
         "height": 340
       },
       "key": "videocall",
-      "main": " Conecte clientes e colaboradores por videochamada para que não tenham que ir às lojas. ",
+      "main": "Conecte clientes e colaboradores por videochamada para que não tenham que ir às lojas.",
       "secu": "Melhore os tempos de serviço e reduza os processos oneroso e ineficazes nas lojas.",
       "url": "/atencion-virtual"
     },
     {
-      "title": "Fila virtual ",
+      "title": "Fila virtual",
       "image": {
         "url": "FilaVirtual_Sectores_PT.png",
         "width": 540,
         "height": 380
       },
       "key": "filavirtual",
-      "main": "Permita aos clientes acompanharem a fila pelo celular, ",
+      "main": "Permita aos clientes acompanharem a fila pelo celular,",
       "secu": "reduza o tempo de espera nas lojas e a taxa de abandono.",
       "url": "/fila-virtual"
     },
@@ -118,7 +118,7 @@
         "height": 380
       },
       "key": "citas",
-      "main": " Permita que os clientes reservem horários de atendimento on-line para uma data e hora específica. ",
+      "main": "Permita que os clientes reservem horários de atendimento on-line para uma data e hora específica.",
       "secu": "Saiba antecipadamente quais clientes irão visitá-lo e antecipe suas necessidades.",
       "url": "/citasonline"
     },
@@ -130,31 +130,31 @@
         "height": 380
       },
       "key": "wapp",
-      "main": " Automatize as conversas com os clientes, aumente a capacidade de resposta e responda às consultas de forma rápida, ",
+      "main": "Automatize as conversas com os clientes, aumente a capacidade de resposta e responda às consultas de forma rápida,",
       "secu": "personalizada e a qualquer momento com o chatbot.",
       "url": "/preatendedor"
     },
     {
-      "title": "Sinalização digital  para telecomunicaçõe",
+      "title": "Sinalização digital para telecomunicaçõe",
       "image": {
         "url": "Telco_Carteleria_PT.png",
         "width": 540,
         "height": 380
       },
       "key": "debsign",
-      "main": " Gerencie o conteúdo da sua rede de monitores de forma centralizada.",
-      "secu": "Planeje o conteúdo, segmente por localização, grupos ou sucursais e atualize-o em tempo real para uma comunicação eficaz. ",
+      "main": "Gerencie o conteúdo da sua rede de monitores de forma centralizada.",
+      "secu": "Planeje o conteúdo, segmente por localização, grupos ou sucursais e atualize-o em tempo real para uma comunicação eficaz.",
       "url": "/debsign"
     },
     {
-      "title": "Pesquisas de satisfação  ",
+      "title": "Pesquisas de satisfação",
       "image": {
         "url": "Encuestas_Sectores_PT.png",
         "width": 540,
         "height": 380
       },
       "key": "encuesta",
-      "main": "Envie pesquisas de satisfação aos clientes após o término do atendimento, ",
+      "main": "Envie pesquisas de satisfação aos clientes após o término do atendimento,",
       "secu": "aumente os índices de resposta e use os resultados para melhorar os processos de atendimento.",
       "url": "/encuestas"
     },
@@ -166,21 +166,21 @@
         "height": 380
       },
       "key": "preaten",
-      "main": " Encaminhe seus clientes para um portal de pré-serviço personalizável e oriente-os facilmente na escolha de sua operação. ",
-      "secu": "Configure o caminho que eles irão percorrer com botões, imagens, pop ups e textos. ",
+      "main": "Encaminhe seus clientes para um portal de pré-serviço personalizável e oriente-os facilmente na escolha de sua operação.",
+      "secu": "Configure o caminho que eles irão percorrer com botões, imagens, pop ups e textos.",
       "url": "/preatendedor"
     }
   ],
   "en": [
     {
-      "title": "Videocall ",
+      "title": "Videocall",
       "image": {
         "url": "videocall.png",
         "width": 520,
         "height": 340
       },
       "key": "videocall",
-      "main": "It connects representatives and customers via video-call so that they do not have to go to the offices. ",
+      "main": "It connects representatives and customers via video-call so that they do not have to go to the offices.",
       "secu": "It improves service times and reduces expensive and ineffective processes.",
       "url": "/atencion-virtual"
     },
@@ -192,7 +192,7 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": "It allows customers to get in the virtual queue from their mobile to be served at a nearby time ",
+      "main": "It allows customers to get in the virtual queue from their mobile to be served at a nearby time",
       "secu": "and decreases the waiting time for their service and the number of churn rate appointments.",
       "url": "/fila-virtual"
     },
@@ -204,7 +204,7 @@
         "height": 380
       },
       "key": "citas",
-      "main": " It allows clients to schedule an online appointment for a specific time and day. ",
+      "main": "It allows clients to schedule an online appointment for a specific time and day.",
       "secu": "You can know in advance which customers will visit you and anticipate their needs.",
       "url": "/citasonline"
     },
@@ -216,8 +216,8 @@
         "height": 380
       },
       "key": "wapp",
-      "main": " It automates conversations with customers,  increases responsiveness and handles consultations in a quick",
-      "secu": "and personalized way at any time ",
+      "main": "It automates conversations with customers, increases responsiveness and handles consultations in a quick",
+      "secu": "and personalized way at any time",
       "url": "/preatendedor"
     },
     {
@@ -228,24 +228,24 @@
         "height": 380
       },
       "key": "debsign",
-      "main": " It manages the content displayed at the offices. ",
-      "secu": "Plan the content, segment it by location or groups of display devices and update it in real time with effective messages. ",
+      "main": "It manages the content displayed at the offices.",
+      "secu": "Plan the content, segment it by location or groups of display devices and update it in real time with effective messages.",
       "url": "/debsign"
     },
     {
-      "title": "Customer feedback ",
+      "title": "Customer feedback",
       "image": {
         "url": "Encuestas_Sectores_EN.png",
         "width": 540,
         "height": 380
       },
       "key": "encuesta",
-      "main": " Send customers satisfaction surveys once they have been served, ",
+      "main": "Send customers satisfaction surveys once they have been served,",
       "secu": "raise the response rate and use the results to improve service processes within your company.",
       "url": "/encuestas"
     },
     {
-      "title": "Pre-Service Website  ",
+      "title": "Pre-Service Website",
       "image": {
         "url": "pre.png",
         "width": 540,

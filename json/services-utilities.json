@@ -8,7 +8,7 @@
         "height": 340
       },
       "key": "videocall",
-      "main": "Conecta a los colaboradores y clientes por videollamada para que no deban acercarse a las sucursales. ",
+      "main": "Conecta a los colaboradores y clientes por videollamada para que no deban acercarse a las sucursales.",
       "secu": "Mejora los tiempos de atención y disminuye procesos costosos y poco efectivos.",
       "url": "/atencion-virtual"
     },
@@ -20,8 +20,8 @@
         "height": 380
       },
       "key": "wapp",
-      "main": "Automatiza las conversaciones con los clientes, aumenta la capacidad de respuesta y atiende ",
-      "secu": " consultas de forma rápida, personalizada y en cualquier horario con el chatbot.",
+      "main": "Automatiza las conversaciones con los clientes, aumenta la capacidad de respuesta y atiende",
+      "secu": "consultas de forma rápida, personalizada y en cualquier horario con el chatbot.",
       "url": "/preatendedor"
     },
     {
@@ -32,7 +32,7 @@
         "height": 380
       },
       "key": "citas",
-      "main": "Deja que los clientes reserven una cita online para un horario y día determinado.  ",
+      "main": "Deja que los clientes reserven una cita online para un horario y día determinado.",
       "secu": "Conoce con anticipación qué clientes te visitarán y anticípate a sus necesidades.",
       "url": "/citasonline"
     },
@@ -44,31 +44,31 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": "Deja que los clientes soliciten un turno desde el móvil para ser atendidos en un tiempo cercano  ",
+      "main": "Deja que los clientes soliciten un turno desde el móvil para ser atendidos en un tiempo cercano",
       "secu": "y disminuye el tiempo de espera para su atención y la cantidad de turnos abandonados.",
       "url": "/fila-virtual"
     },
     {
-      "title": "Cartelería digital ",
+      "title": "Cartelería digital",
       "image": {
         "url": "Utilities_Carteleria_ES.png",
         "width": 540,
         "height": 380
       },
       "key": "debsign",
-      "main": "Administra el contenido de la red de pantallas dentro de las sucursales. ",
-      "secu": " Planifica el contenido, segmenta por sede, grupos de pantallas y actualízalo en tiempo real con mensajes efectivos.",
+      "main": "Administra el contenido de la red de pantallas dentro de las sucursales.",
+      "secu": "Planifica el contenido, segmenta por sede, grupos de pantallas y actualízalo en tiempo real con mensajes efectivos.",
       "url": "/debsign"
     },
     {
-      "title": "Encuestas de satisfacción ",
+      "title": "Encuestas de satisfacción",
       "image": {
         "url": "Encuestas_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
       "key": "encuesta",
-      "main": "Envía a los clientes encuestas de satisfacción una vez han sido atendidos, ",
+      "main": "Envía a los clientes encuestas de satisfacción una vez han sido atendidos,",
       "secu": "eleva la tasa de respuesta y utiliza los resultados para mejorar los procesos de atención dentro de tu empresa.",
       "url": "/encuestas"
     },
@@ -80,21 +80,21 @@
         "height": 380
       },
       "key": "preaten",
-      "main": "Deriva a tus clientes a un portal de pre atención personalizable que los guía a la elección de su trámite.  ",
-      "secu": " Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
+      "main": "Deriva a tus clientes a un portal de pre atención personalizable que los guía a la elección de su trámite.",
+      "secu": "Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
       "url": "/preatendedor"
     }
   ],
   "pt": [
     {
-      "title": "Atendimento por videochamada ",
+      "title": "Atendimento por videochamada",
       "image": {
         "url": "videocall.png",
         "width": 520,
         "height": 340
       },
       "key": "videocall",
-      "main": "Conecte colaboradores e clientes por videochamada para que eles não tenham que ir ao estabelecimento. ",
+      "main": "Conecte colaboradores e clientes por videochamada para que eles não tenham que ir ao estabelecimento.",
       "secu": "Melhore os tempos de serviço e reduza os processos onerosos e ineficazes.",
       "url": "/atencion-virtual"
     },
@@ -106,12 +106,12 @@
         "height": 380
       },
       "key": "wapp",
-      "main": " Automatize as conversas com seus clientes, aumente a capacidade de resposta ",
+      "main": "Automatize as conversas com seus clientes, aumente a capacidade de resposta",
       "secu": "e atenda a consultas de forma rápida, personalizada e a qualquer momento com o chatbot de WhatsApp.",
       "url": "/preatendedor"
     },
     {
-      "title": "Agenda on-line  ",
+      "title": "Agenda on-line",
       "image": {
         "url": "Citas_Sectores_PT.png",
         "width": 540,
@@ -130,7 +130,7 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": " Permita aos clientes acompanharem a fila pelo celular, ",
+      "main": "Permita aos clientes acompanharem a fila pelo celular,",
       "secu": "reduza o tempo de espera e a taxa de abandono.",
       "url": "/fila-virtual"
     },
@@ -142,7 +142,7 @@
         "height": 380
       },
       "key": "debsign",
-      "main": " Gerencie o conteúdo da sua rede de telas de forma centralizada. ",
+      "main": "Gerencie o conteúdo da sua rede de telas de forma centralizada.",
       "secu": "Planeje o conteúdo, segmente por localização, grupos e/ou filiais e atualize-o em tempo real para uma comunicação eficaz.",
       "url": "/debsign"
     },
@@ -154,8 +154,8 @@
         "height": 380
       },
       "key": "encuesta",
-      "main": " Envie pesquisas de satisfação aos clientes após o término do atendimento, ",
-      "secu": "aumente os índices de resposta e use os resultados para melhorar os processos de atendimento. ",
+      "main": "Envie pesquisas de satisfação aos clientes após o término do atendimento,",
+      "secu": "aumente os índices de resposta e use os resultados para melhorar os processos de atendimento.",
       "url": "/encuestas"
     },
     {
@@ -166,50 +166,50 @@
         "height": 380
       },
       "key": "preaten",
-      "main": " Encaminhe os pacientes para um portal de pré-atendimento personalizado, oriente-os facilmente na escolha de seu procedimento ",
+      "main": "Encaminhe os pacientes para um portal de pré-atendimento personalizado, oriente-os facilmente na escolha de seu procedimento",
       "secu": "e configure o caminho a ser percorrido com botões, imagens, pop-ups e texto.",
       "url": "/preatendedor"
     }
   ],
   "en": [
     {
-      "title": "Video-call customer service: ",
+      "title": "Video-call customer service:",
       "image": {
         "url": "videocall.png",
         "width": 520,
         "height": 340
       },
       "key": "videocall",
-      "main": " It connects employees and customers via video- call so that they do not have to go to an office.",
+      "main": "It connects employees and customers via video- call so that they do not have to go to an office.",
       "secu": "It improves service times and reduces expensive and ineffective processes.",
       "url": "/atencion-virtual"
     },
     {
-      "title": "WhatsApp Chatbot  ",
+      "title": "WhatsApp Chatbot",
       "image": {
         "url": "Chatbot_Sectores_EN.png",
         "width": 540,
         "height": 380
       },
       "key": "wapp",
-      "main": "It automates conversations with your customers, increases responsiveness ",
+      "main": "It automates conversations with your customers, increases responsiveness",
       "secu": "and handles quickly and personalized consultations at any time.",
       "url": "/preatendedor"
     },
     {
-      "title": "Online Appointment System  ",
+      "title": "Online Appointment System",
       "image": {
         "url": "Citas_Sectores_EN.png",
         "width": 540,
         "height": 380
       },
       "key": "citas",
-      "main": "It allows customers to schedule an appointment online for a specific time and day. ",
+      "main": "It allows customers to schedule an appointment online for a specific time and day.",
       "secu": "You will know in advance which customers will visit you and anticipate their needs.",
       "url": "/citasonline"
     },
     {
-      "title": "Virtual Queue  ",
+      "title": "Virtual Queue",
       "image": {
         "url": "FilaVirtual_Sectores_EN.png",
         "width": 540,
@@ -221,19 +221,19 @@
       "url": "/fila-virtual"
     },
     {
-      "title": "Digital Signage  ",
+      "title": "Digital Signage",
       "image": {
         "url": "Utilities_Carteleria_EN.png",
         "width": 540,
         "height": 380
       },
       "key": "debsign",
-      "main": "It manages the content of the advertisements displayed  within the offices. ",
+      "main": "It manages the content of the advertisements displayed within the offices.",
       "secu": "Plan the content, segment it by location or groups of displays, and update it in real-time with effective messages.",
       "url": "/debsign"
     },
     {
-      "title": "Customer feedback  ",
+      "title": "Customer feedback",
       "image": {
         "url": "Encuestas_Sectores_EN.png",
         "width": 540,
@@ -245,14 +245,14 @@
       "url": "/encuestas"
     },
     {
-      "title": "Pre-Service Website  ",
+      "title": "Pre-Service Website",
       "image": {
         "url": "Preatendedor_Sectores_EN.png",
         "width": 540,
         "height": 380
       },
       "key": "preaten",
-      "main": "It refers your customers to a customizable pre-service portal that guides them to the choice of their transaction. ",
+      "main": "It refers your customers to a customizable pre-service portal that guides them to the choice of their transaction.",
       "secu": "It configures the path they must go through with buttons, images, pop-ups, and texts.",
       "url": "/preatendedor"
     }

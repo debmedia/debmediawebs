@@ -120,7 +120,7 @@
       }
     },
     {
-      "name": "Digital Signage  ",
+      "name": "Digital Signage",
       "url": "/debsign",
       "image": {
         "url": "debsign.png",
@@ -185,7 +185,7 @@
       }
     },
     {
-      "name": "Queue Management System ",
+      "name": "Queue Management System",
       "url": "/debq",
       "image": {
         "url": "debq.png",
@@ -194,7 +194,7 @@
       }
     },
     {
-      "name": "Digital Signage ",
+      "name": "Digital Signage",
       "url": "/debsign",
       "image": {
         "url": "debsign.png",
@@ -212,6 +212,7 @@
       }
     },
     {
+      "name": "Surveys",
       "url": "/encuestas",
       "image": {
         "url": "encuestas.png",

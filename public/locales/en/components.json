@@ -15,10 +15,44 @@
     "STEP_1": "Request <br /> a <b> demo </b>",
     "STEP_2": "<b> Select </b> <br /> the modules",
     "STEP_3": "<b> Configure </b> <br /> the system",
-    "STEP_4": "Serve your <br /> <b> customers efficiently </b>"
+    "STEP_4": "Serve your <br /> <b> customers efficiently </b>",
+    "BUTTON": "$t(common:REQUEST_A_DEMO)"
   },
   "CONTACT": {
     "TITLE": "Contact our team and improve <br /> your customers' experience!"
+  },
+  "POSTS": {
+    "TELECOMMUNICATIONS": {
+      "TITLE": "$t(POSTS.RETAIL.TITLE)"
+    },
+    "UTILITIES": {
+      "TITLE": "$t(POSTS.RETAIL.TITLE)"
+    }
+  },
+  "FOOTER": {
+    "SOLUTIONS": "$t(common:SOLUTIONS)",
+    "QUEUE_MANAGEMENT": "$t(common:QUEUE_MANAGEMENT)",
+    "ONLINE_APPOINTMENTS": "$t(common:ONLINE_APPOINTMENTS)",
+    "VIRTUAL_QUEUE": "$t(common:VIRTUAL_QUEUE)",
+    "DIGITAL_SIGNAGE": "$t(common:DIGITAL_SIGNAGE)",
+    "VIRTUAL_ATTENTION": "$t(common:VIRTUAL_ATTENTION)",
+    "SURVEYS": "$t(common:SURVEYS)",
+    "PRE_SERVICE": "$t(common:PRE_SERVICE)",
+    "WHATSAPP_CHATBOT": "$t(common:WHATSAPP_CHATBOT)",
+    "CLIENTS": "$t(common:CLIENTS)",
+    "US": "$t(common:US)",
+    "PARTNERS": "$t(common:PARTNERS)",
+    "BLOG": "$t(common:BLOG)",
+    "QUALITY_AND_SECURITY_POLICY": "$t(common:QUALITY_AND_SECURITY_POLICY)",
+    "BANKING_AND_INSURANCE": "$t(common:BANKING_AND_INSURANCE)",
+    "HEALTH": "$t(common:HEALTH)",
+    "GOVERNMENT": "$t(common:GOVERNMENT)",
+    "UTILITIES_AND_CORPORATIONS": "$t(common:UTILITIES_AND_CORPORATIONS)",
+    "SERVICES_AND_RETAIL": "$t(common:SERVICES_AND_RETAIL)",
+    "TELECOMMUNICATIONS": "$t(common:TELECOMMUNICATIONS)",
+    "INDUSTRIES": "$t(common:INDUSTRIES)",
+    "COMPANY": "$t(common:COMPANY)",
+    "ENDORSED_BY": "$t(common:ENDORSED_BY)"
   },
   "SERVICES": {
     "TITLE": "<b> Technology that improves </b> <br /> your customers' experience"
@@ -42,7 +76,7 @@
     },
     "CAPTION_3": {
       "TITLE": "Centralized <br /> communication",
-      "SUBTITLE": "Send the right message <br /> via SMS, email, WhatsApp or <br /> office advertisements."
+      "SUBTITLE": "Send the right message <br /> via SMS, email,WhatsApp or office <br /> advertisements."
     }
   },
   "INDUSTRIES": {
@@ -50,15 +84,15 @@
     "CARDS": {
       "BANKING": {
         "TITLE": "Banking, Financial Services and Fintechs",
-        "SUBTITLE": "Financial institutions, insurance companies and cooperatives"
+        "SUBTITLE": "Financial institutions, insurance companies and cooperatives."
       },
       "HEALTH": {
         "TITLE": "Healthcare",
-        "SUBTITLE": "Clinics, hospitals, laboratories, pharmacies"
+        "SUBTITLE": "Clinics, hospitals, laboratories, pharmacies."
       },
       "GOVERNMENT": {
         "TITLE": "Government",
-        "SUBTITLE": "Public institutions, municipalities, ONGs"
+        "SUBTITLE": "Public institutions, municipalities, ONGs."
       },
       "RETAIL": {
         "TITLE": "Retail",
@@ -73,5 +107,33 @@
         "SUBTITLE": "Associations, public services."
       }
     }
+  },
+  "NAVBAR": {
+    "HOME": "$t(common:HOME)",
+    "SOLUTIONS": {
+      "TITLE": "$t(common:SOLUTIONS)",
+      "VIRTUAL_ATTENTION": "$t(common:VIRTUAL_ATTENTION)",
+      "WHATSAPP_CHATBOT": "$t(common:WHATSAPP_CHATBOT)",
+      "VIRTUAL_QUEUE": "$t(common:VIRTUAL_QUEUE)",
+      "APPOINTMENTS": "$t(common:APPOINTMENTS)",
+      "ONLINE_APPOINTMENTS": "$t(common:ONLINE_APPOINTMENTS)",
+      "QUEUE_MANAGEMENT": "$t(common:QUEUE_MANAGEMENT)",
+      "DIGITAL_SIGNAGE": "$t(common:DIGITAL_SIGNAGE)",
+      "PRE_SERVICE": "$t(common:PRE_SERVICE)",
+      "SURVEYS": "$t(common:SURVEYS)"
+    },
+    "CLIENTS": "$t(common:CLIENTS)",
+    "US": "$t(common:US)",
+    "PARTNERS": "$t(common:PARTNERS)",
+    "RESOURCES": {
+      "TITLE": "$t(common:RESOURCES)",
+      "BLOG": "$t(common:BLOG)",
+      "SUCCESS_STORIES": "Success stories",
+      "DOWNLOADABLE_RESOURCES": "Downloadable resources"
+    }
+  },
+  "THANKYOU": {
+    "MESSAGE": "In the <br /> <b> meantime, we </b> <br /> invite you to <br /> explore our resources <br /> <b> section. </b> Enjoy them!",
+    "BUTTON": "See resources"
   }
 }

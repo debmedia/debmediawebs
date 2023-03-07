@@ -15,10 +15,44 @@
     "STEP_1": "Solicite <br /> uma <b> demonstração </b>",
     "STEP_2": "<b> Selecione </b> <br /> os módulos",
     "STEP_3": "<b> Configure </b> <br /> o sistema",
-    "STEP_4": "Atenda de <br /> <b> forma eficiente </b>"
+    "STEP_4": "Atenda de <br /> <b> forma eficiente </b>",
+    "BUTTON": "$t(common:REQUEST_A_DEMO)"
   },
   "CONTACT": {
     "TITLE": "Entre em contacto com a <br /> nossa equipe e melhore a experiência dos seus clientes!"
+  },
+  "POSTS": {
+    "TELECOMMUNICATIONS": {
+      "TITLE": "$t(POSTS.RETAIL.TITLE)"
+    },
+    "UTILITIES": {
+      "TITLE": "$t(POSTS.RETAIL.TITLE)"
+    }
+  },
+  "FOOTER": {
+    "SOLUTIONS": "$t(common:SOLUTIONS)",
+    "QUEUE_MANAGEMENT": "$t(common:QUEUE_MANAGEMENT)",
+    "ONLINE_APPOINTMENTS": "$t(common:ONLINE_APPOINTMENTS)",
+    "VIRTUAL_QUEUE": "$t(common:VIRTUAL_QUEUE)",
+    "DIGITAL_SIGNAGE": "$t(common:DIGITAL_SIGNAGE)",
+    "VIRTUAL_ATTENTION": "$t(common:VIRTUAL_ATTENTION)",
+    "SURVEYS": "$t(common:SURVEYS)",
+    "PRE_SERVICE": "$t(common:PRE_SERVICE)",
+    "WHATSAPP_CHATBOT": "$t(common:WHATSAPP_CHATBOT)",
+    "CLIENTS": "$t(common:CLIENTS)",
+    "US": "$t(common:US)",
+    "PARTNERS": "$t(common:PARTNERS)",
+    "BLOG": "$t(common:BLOG)",
+    "QUALITY_AND_SECURITY_POLICY": "$t(common:QUALITY_AND_SECURITY_POLICY)",
+    "BANKING_AND_INSURANCE": "$t(common:BANKING_AND_INSURANCE)",
+    "HEALTH": "$t(common:HEALTH)",
+    "GOVERNMENT": "$t(common:GOVERNMENT)",
+    "UTILITIES_AND_CORPORATIONS": "$t(common:UTILITIES_AND_CORPORATIONS)",
+    "SERVICES_AND_RETAIL": "$t(common:SERVICES_AND_RETAIL)",
+    "TELECOMMUNICATIONS": "$t(common:TELECOMMUNICATIONS)",
+    "INDUSTRIES": "$t(common:INDUSTRIES)",
+    "COMPANY": "$t(common:COMPANY)",
+    "ENDORSED_BY": "$t(common:ENDORSED_BY)"
   },
   "SERVICES": {
     "TITLE": "<b> Tecnologia que melhora </b> <br /> a experiência dos seus clientes"
@@ -50,15 +84,15 @@
     "CARDS": {
       "BANKING": {
         "TITLE": "Banco e Seguros",
-        "SUBTITLE": "Instituições financeiras, seguradoras e cooperativas"
+        "SUBTITLE": "Instituições financeiras, seguradoras e cooperativas."
       },
       "HEALTH": {
         "TITLE": "Saúde",
-        "SUBTITLE": "Clínicas, hospitais, laboratórios, farmácias, convênios"
+        "SUBTITLE": "Clínicas, hospitais, laboratórios, farmácias, convênios."
       },
       "GOVERNMENT": {
         "TITLE": "Governo",
-        "SUBTITLE": "Instituições públicas, estados, municípios, ONGs"
+        "SUBTITLE": "Instituições públicas, estados, municípios, ONGs."
       },
       "RETAIL": {
         "TITLE": "Retail, Serviços",
@@ -66,12 +100,40 @@
       },
       "TELECOMMUNICATIONS": {
         "TITLE": "telecomunicações",
-        "SUBTITLE": "Telefonia móvel, TV, Internet"
+        "SUBTITLE": "Telefonia móvel, TV, Internet."
       },
       "UTILITIES": {
         "TITLE": "Utilidade Publica",
         "SUBTITLE": "Associações, serviços públicos."
       }
     }
+  },
+  "NAVBAR": {
+    "HOME": "$t(common:HOME)",
+    "SOLUTIONS": {
+      "TITLE": "$t(common:SOLUTIONS)",
+      "VIRTUAL_ATTENTION": "$t(common:VIRTUAL_ATTENTION)",
+      "WHATSAPP_CHATBOT": "$t(common:WHATSAPP_CHATBOT)",
+      "VIRTUAL_QUEUE": "$t(common:VIRTUAL_QUEUE)",
+      "APPOINTMENTS": "$t(common:APPOINTMENTS)",
+      "ONLINE_APPOINTMENTS": "$t(common:ONLINE_APPOINTMENTS)",
+      "QUEUE_MANAGEMENT": "$t(common:QUEUE_MANAGEMENT)",
+      "DIGITAL_SIGNAGE": "$t(common:DIGITAL_SIGNAGE)",
+      "PRE_SERVICE": "$t(common:PRE_SERVICE)",
+      "SURVEYS": "$t(common:SURVEYS)"
+    },
+    "CLIENTS": "$t(common:CLIENTS)",
+    "US": "$t(common:US)",
+    "PARTNERS": "$t(common:PARTNERS)",
+    "RESOURCES": {
+      "TITLE": "$t(common:RESOURCES)",
+      "BLOG": "$t(common:BLOG)",
+      "SUCCESS_STORIES": "Casos de sucesso",
+      "DOWNLOADABLE_RESOURCES": "Recursos para baixar"
+    }
+  },
+  "THANKYOU": {
+    "MESSAGE": "Enquanto isso, <br /> <b> convidamos você </b> <br /> a explorar nossa <br /> seção de recursos. <br /> <b> Aproveite-os! </b>",
+    "BUTTON": "Ver recursos"
   }
 }

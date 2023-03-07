@@ -39,7 +39,7 @@
   ],
   "pt": [
     {
-      "text": "Pontuação ",
+      "text": "Pontuação",
       "key": 1,
       "image": {
         "url": "Encuestas_Puntuacion_PT.png",
@@ -48,7 +48,7 @@
       }
     },
     {
-      "text": "Múltipla escolha ",
+      "text": "Múltipla escolha",
       "key": 2,
       "image": {
         "url": "Encuestas_SeleccionMultiple_PT.png",
@@ -77,7 +77,7 @@
   ],
   "en": [
     {
-      "text": "Scoring ",
+      "text": "Scoring",
       "key": 1,
       "image": {
         "url": "Encuestas_Puntuacion_EN.png",

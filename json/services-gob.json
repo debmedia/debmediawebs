@@ -20,7 +20,7 @@
         "height": 380
       },
       "key": "wapp",
-      "main": "Automatiza las conversaciones con los usuarios,   ",
+      "main": "Automatiza las conversaciones con los usuarios,",
       "secu": "aumenta la capacidad de respuesta y atiende consultas de forma rápida, personalizada y en cualquier horario con el chatbot.",
       "url": "/preatendedor"
     },
@@ -32,8 +32,8 @@
         "height": 380
       },
       "key": "preaten",
-      "main": "Deriva a los ciudadanos a un portal de pre atención personalizable que los guía a la elección de su trámite. ",
-      "secu": "  Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
+      "main": "Deriva a los ciudadanos a un portal de pre atención personalizable que los guía a la elección de su trámite.",
+      "secu": "Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
       "url": "/preatendedor"
     },
     {
@@ -44,8 +44,8 @@
         "height": 380
       },
       "key": "citas",
-      "main": "Deja que los ciudadanos reserven una cita online para una fecha y hora específica ",
-      "secu": "a través de una experiencia simple y organiza el flujo de usuarios que llegan a las dependencias gubernamentales. ",
+      "main": "Deja que los ciudadanos reserven una cita online para una fecha y hora específica",
+      "secu": "a través de una experiencia simple y organiza el flujo de usuarios que llegan a las dependencias gubernamentales.",
       "url": "/citasonline"
     },
     {
@@ -56,7 +56,7 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": "Permite a los ciudadanos tomar un turno desde su móvil para ser atendido en un tiempo cercano,  ",
+      "main": "Permite a los ciudadanos tomar un turno desde su móvil para ser atendido en un tiempo cercano,",
       "secu": "reduce el tiempo que los ciudadanos esperan en las oficinas y las tasas de abandono.",
       "url": "/fila-virtual"
     },
@@ -68,26 +68,26 @@
         "height": 380
       },
       "key": "debsign",
-      "main": "Administra el contenido de las pantallas en los puntos de atención.  ",
+      "main": "Administra el contenido de las pantallas en los puntos de atención.",
       "secu": "Planifica el contenido, segmenta por sede, grupos de pantallas y actualízalo en tiempo real para comunicar mensajes efectivos.",
       "url": "/debsign"
     },
     {
-      "title": "Encuestas de satisfacción para gobierno ",
+      "title": "Encuestas de satisfacción para gobierno",
       "image": {
         "url": "Encuestas_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
       "key": "encuesta",
-      "main": "Envía a los ciudadanos encuestas de satisfacción tan pronto como han sido atendidos, ",
-      "secu": " eleva la tasa de respuesta y utiliza los resultados para mejorar los procesos de atención.",
+      "main": "Envía a los ciudadanos encuestas de satisfacción tan pronto como han sido atendidos,",
+      "secu": "eleva la tasa de respuesta y utiliza los resultados para mejorar los procesos de atención.",
       "url": "/encuestas"
     }
   ],
   "pt": [
     {
-      "title": "Atendimento virtual para escritórios governamentais: ",
+      "title": "Atendimento virtual para escritórios governamentais:",
       "image": {
         "url": "videocall.png",
         "width": 520,
@@ -107,7 +107,7 @@
       },
       "key": "wapp",
       "main": "Automatize as conversas com os cidadãos,",
-      "secu": "aumente a capacidade de resposta e responda às consultas de forma rápida, personalizada e a qualquer momento com o chatbot. ",
+      "secu": "aumente a capacidade de resposta e responda às consultas de forma rápida, personalizada e a qualquer momento com o chatbot.",
       "url": "/preatendedor"
     },
     {
@@ -118,8 +118,8 @@
         "height": 380
       },
       "key": "preaten",
-      "main": "Encaminhe o cidadão para um portal de pré atendimento personalizável e oriente-o facilmente na escolha de sua operação. ",
-      "secu": "Configure o caminho que ele ira percorrer com botões, imagens, pop ups e textos. ",
+      "main": "Encaminhe o cidadão para um portal de pré atendimento personalizável e oriente-o facilmente na escolha de sua operação.",
+      "secu": "Configure o caminho que ele ira percorrer com botões, imagens, pop ups e textos.",
       "url": "/preatendedor"
     },
     {
@@ -130,7 +130,7 @@
         "height": 380
       },
       "key": "citas",
-      "main": "Permita que os cidadãos reservem horários de atendimento on-line para uma data e hora específica ",
+      "main": "Permita que os cidadãos reservem horários de atendimento on-line para uma data e hora específica",
       "secu": "através de uma experiência simples e organize o fluxo de usuários que chegam às agências governamentais.",
       "url": "/citasonline"
     },
@@ -142,8 +142,8 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": "Permita que os cidadãos possam agendar um horário pelo celular em um horário próximo, ",
-      "secu": "reduza o tempo de espera nos escritórios e reduza as taxas de abandono. ",
+      "main": "Permita que os cidadãos possam agendar um horário pelo celular em um horário próximo,",
+      "secu": "reduza o tempo de espera nos escritórios e reduza as taxas de abandono.",
       "url": "/fila-virtual"
     },
     {
@@ -159,7 +159,7 @@
       "url": "/debsign"
     },
     {
-      "title": "Pesquisas de satisfação para o governo ",
+      "title": "Pesquisas de satisfação para o governo",
       "image": {
         "url": "Encuestas_Sectores_PT.png",
         "width": 540,
@@ -180,11 +180,12 @@
         "height": 340
       },
       "key": "videocall",
-      "main": "It connects citizens and representatives via video-call, so they do not have to go to the nearby offices. ",
+      "main": "It connects citizens and representatives via video-call, so they do not have to go to the nearby offices.",
       "secu": "It improves service times and decreases expensive and ineffective processes.",
       "url": "/atencion-virtual"
     },
     {
+      "title": "WhatsApp Chatbot",
       "image": {
         "url": "Chatbot_Sectores_EN.png",
         "width": 540,
@@ -204,7 +205,7 @@
       },
       "key": "preaten",
       "main": "It refers citizens to a customizable pre-service portal that guides them to the choice of their service.",
-      "secu": "It configures the path they must go through with buttons, images, pop-ups, and texts. ",
+      "secu": "It configures the path they must go through with buttons, images, pop-ups, and texts.",
       "url": "/preatendedor"
     },
     {
@@ -215,7 +216,7 @@
         "height": 380
       },
       "key": "citas",
-      "main": "It allows citizens to schedule an appointment online for a specific date ",
+      "main": "It allows citizens to schedule an appointment online for a specific date",
       "secu": "and time through a simple experience and manage the flow of users arriving at government agencies.",
       "url": "/citasonline"
     },
@@ -227,7 +228,7 @@
         "height": 380
       },
       "key": "filavirtual",
-      "main": "It allows citizens to get in the virtual queue from their mobile to be served at a nearby time; ",
+      "main": "It allows citizens to get in the virtual queue from their mobile to be served at a nearby time;",
       "secu": "it reduces the time citizens wait in offices and dropout rates.",
       "url": "/fila-virtual"
     },
@@ -244,7 +245,7 @@
       "url": "/debsign"
     },
     {
-      "title": "Customer feedback  for governments ",
+      "title": "Customer feedback for governments",
       "image": {
         "url": "Encuestas_Sectores_EN.png",
         "width": 540,
