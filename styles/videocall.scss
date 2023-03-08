@@ -126,11 +126,34 @@
     }
 }
 
+.videocall-home::after{
+    content:"";
+    --size: 700px;
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    background-color: #232C61;
+    right: calc(-0.5 * var(--size));
+    top:0;
+    transform: rotate(45deg);
+    border-radius: 100px;
+    z-index: 1;
+
+    @media (max-width: 576px){
+        display: none;
+    }
+
+    @media (max-width: 768px){
+        --size: 400px;
+    }
+}
+
+
 .image-container-videocall {
     position: absolute;
     width: 100%;
     max-width: 420px;
-    aspect-ratio: 1.2;
+    aspect-ratio: 1.11;
     right: 0;
     bottom: 0;
     z-index: 3;
@@ -138,7 +161,7 @@
     @media (min-width: 576px) {
         display: block;
         width: 500px;
-        height: 300px;
+        height: 327px;
         right: 0;
         bottom: 0px;
         max-width: unset;
@@ -148,7 +171,7 @@
     @media (min-width: 992px) {
         display: block;
         width: 500px;
-        height: 300px;
+        height: 327px;
         right: 0;
         top: 140px;
 
@@ -156,7 +179,7 @@
 
     @media (min-width: 1400px) {
         width: 685px;
-        height: 450px;
+        height: 448px;
         top: 120px;
     }
 
