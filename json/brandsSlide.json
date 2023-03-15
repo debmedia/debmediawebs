@@ -1,5 +1,15 @@
 [
   {
+    "name": "bancoDelAustro",
+    "home": true,
+    "category": "banca",
+    "image": {
+      "url": "banco-austro.png",
+      "width": 250,
+      "height": 110
+    }
+  },
+  {
     "name": "itau",
     "home": true,
     "category": "banca",
@@ -740,6 +750,7 @@
       "height": 110
     }
   }
+
   
   
 ]
