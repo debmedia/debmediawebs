@@ -128,23 +128,30 @@
 
 .videocall-home::after{
     content:"";
-    --size: 700px;
+    --size: calc(100vw);
     position: absolute;
     width: var(--size);
     height: var(--size);
     background-color: #232C61;
     right: calc(-0.5 * var(--size));
-    top:0;
+    bottom:-70px;
     transform: rotate(45deg);
-    border-radius: 100px;
+    border-radius: 0px;
     z-index: 1;
+    box-shadow: -7px 4px 20px rgba(0, 0, 0, 0.25);
 
-    @media (max-width: 576px){
-        display: none;
+    @media (min-width: 576px){
+        --size: 400px;
+        border-radius: 100px;
+        top:0;
+        bottom: unset;
     }
 
-    @media (max-width: 768px){
-        --size: 400px;
+    @media (min-width: 768px){
+        --size: calc(700px - (1920px - 100vw)*0.1);
+        border-radius: 100px;
+        top:0;
+        bottom: unset;
     }
 }
 
@@ -155,8 +162,9 @@
     max-width: 420px;
     aspect-ratio: 1.11;
     right: 0;
-    bottom: 0;
+    bottom: -15px;
     z-index: 3;
+    
 
     @media (min-width: 576px) {
         display: block;
@@ -170,8 +178,9 @@
 
     @media (min-width: 992px) {
         display: block;
-        width: 500px;
-        height: 327px;
+        width: 50vw;
+        aspect-ratio: calc(685/448);
+        height: unset;
         right: 0;
         top: 140px;
 
