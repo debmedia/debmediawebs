@@ -44,10 +44,11 @@ export default function Header() {
                         <img src={shape1.src} className="header-home_shape1" alt=""/>
                         <img src={shape2.src} className="header-home_shape2" alt=""/>
                     </div>
+                    { locale === "es" &&
                     <MyVerticallyCenteredModal
                         show={modalShow}
                         onHide={() => setModalShow(false)}
-                    />
+                    />}
                     <Container>
                         <Row>
                             <Col className="mainTitles fixZindex">
