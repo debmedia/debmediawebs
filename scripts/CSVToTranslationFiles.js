@@ -41,7 +41,6 @@ module.exports = function (grunt) {
                 let lineToAdd = line[i];
                 // solo agreamos si tenemos algo
                 if(lineToAdd){
-                    if (i>1) lineToAdd = addTags(line[1], line[i]); // esto deberira ser un postproceso y no estar aca
                     result[lang] = namespacedKeyToObject(key,lineToAdd, ".", result[lang]);
                 }
             }
