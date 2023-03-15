@@ -7,7 +7,7 @@ module.exports = function(grunt) {
       translationsToCSV: {
           target: {
               baseInputFiles: "public/locales/es/",
-              compareInputFiles: ["public/locales/pt/"],
+              compareInputFiles: ["public/locales/pt/", "public/locales/en/"],
               outputFile: "scripts/out/traducciones.csv",
               header: "Key, Español, Portugués, Inglés",
           },
