@@ -4,10 +4,14 @@ import { Row, Container, Col } from "react-bootstrap";
 import nosotrosImg from '../../asset/imgs/nosotros/group.png'
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import map from '../../asset/imgs/nosotros/map.svg'
-import nosotros_es from '../../md/nosotros_historia-es.md'
+import nosotros_es from '../../md/nosotros_historia-es.md';
+import nosotros_pt from '../../md/nosotros_historia-pt.md';
+import nosotros_en from '../../md/nosotros_historia-en.md';
 
 const nosotros_langs = {
-    es: nosotros_es
+    es: nosotros_es,
+    pt: nosotros_pt,
+    en: nosotros_en
 }
 
 export default function SpecsIndus() {
