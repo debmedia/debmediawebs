@@ -54,7 +54,7 @@ export default function Solutions() {
                                                         </Col>
                                                         <Col className="solutions-tabs_content-title">
                                                             <h2>
-                                                                <b>{item.main}</b>{item.secu}
+                                                                <b>{item.main}</b>{" "}{item.secu}
                                                             </h2>
                                                             <Link href={item.url}>
                                                                 <button className="buttonSolutions">
@@ -83,7 +83,7 @@ export default function Solutions() {
                                             </Col>
                                             <Col sm={item.sm} xs={item.xs} className="solutions-tabs_content-title">
                                                 <h2>
-                                                    <b>{item.main}</b>{item.secu}
+                                                    <b>{item.main}</b>{" "}{item.secu}
                                                 </h2>
                                                 <Link href={item.url}>
                                                     <button className="buttonSolutions">

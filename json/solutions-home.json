@@ -198,7 +198,7 @@
       "sm": 6
     },
     {
-      "title": "Enquetes",
+      "title": "Pesquisas",
       "image": {
         "url": "Encuestas_Home_PT.png",
         "urlXs": "Encuestas_Home_PT.png",
@@ -213,7 +213,7 @@
       "sm": 6
     },
     {
-      "title": "Pre atendedor",
+      "title": "Pre atendimento",
       "image": {
         "url": "preatendedor.png",
         "urlXs": "preatendedor.png",
@@ -228,7 +228,7 @@
       "sm": 6
     },
     {
-      "title": "Chatbot do Whatsapp",
+      "title": "Chatbot Whatsapp",
       "image": {
         "url": "ChatbotWhatsapp_Home_PT.png",
         "urlXs": "ChatbotWhatsapp_Home_PT.png",
