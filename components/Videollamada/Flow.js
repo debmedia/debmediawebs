@@ -3,7 +3,8 @@ import { Row, Container, Col, Accordion } from "react-bootstrap";
 import flow_es from '../../asset/imgs/videollamada/Flujo_AtencionVirtual_ES.png';
 import flow_pt from '../../asset/imgs/videollamada/Flujo_AtencionVirtual_PT.png';
 import flow_en from '../../asset/imgs/videollamada/Flujo_AtencionVirtual_EN.png';
-import totem_es from '../../asset/imgs/videollamada/totem.png'
+import totem_es from '../../asset/imgs/videollamada/totem_ES.png'
+import totem_en from '../../asset/imgs/videollamada/totem_EN.png'
 import sistema_es from '../../asset/imgs/videollamada/Software-Videollamada_ES.png'
 import sistema_en from '../../asset/imgs/videollamada/Software-Videollamada_EN.png'
 import sistematotemmobie_es from '../../asset/imgs/videollamada/totemnew.png'
@@ -16,6 +17,7 @@ import { useRouter } from "next/router";
 const flow_lang = {es: flow_es, pt: flow_pt, en: flow_en};
 const totem_lang = {
     es: totem_es,
+    en: totem_en
 };
 const sistema_lang = {
     es: sistema_es,

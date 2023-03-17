@@ -49,8 +49,12 @@ export default function Solutions() {
                                                 <Tab.Pane key={index} eventKey={item.key}>
                                                     <Row>
                                                         <Col className="text-center">
-                                                            <Image src={`/hometabs/${item.image.url}`} width={item.image.width}
-                                                                height={item.image.height} className={'img-fluid'} alt=""/>
+                                                            <Image 
+                                                                src={`/hometabs/${item.image.url}`}
+                                                                width={item.image.width}
+                                                                height={item.image.height}
+                                                                quality={100}
+                                                                className={'img-fluid'} alt=""/>
                                                         </Col>
                                                         <Col className="solutions-tabs_content-title">
                                                             <h2>

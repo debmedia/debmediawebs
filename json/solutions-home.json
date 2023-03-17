@@ -93,8 +93,8 @@
     {
       "title": "Pre atendedor",
       "image": {
-        "url": "preatendedor.png",
-        "urlXs": "preatendedor.png",
+        "url": "Preatendedor_ES.png",
+        "urlXs": "Preatendedor_ES.png",
         "width": 260,
         "height": 520
       },
@@ -215,8 +215,8 @@
     {
       "title": "Pre atendimento",
       "image": {
-        "url": "preatendedor.png",
-        "urlXs": "preatendedor.png",
+        "url": "Preatendedor_PT.png",
+        "urlXs": "Preatendedor_PT.png",
         "width": 260,
         "height": 520
       },
@@ -337,8 +337,8 @@
     {
       "title": "Pre service website",
       "image": {
-        "url": "preatendedor.png",
-        "urlXs": "preatendedor.png",
+        "url": "Preatendedor_EN.png",
+        "urlXs": "Preatendedor_EN.png",
         "width": 260,
         "height": 520
       },

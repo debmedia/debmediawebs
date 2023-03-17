@@ -225,8 +225,9 @@
 
         @media (min-width: 992px) {
             position: absolute;
-            bottom: 5%;
-            left: 12.3%;
+            top: 77%;
+            left: 18%;
+            transform: translate(-50%, -150px);
             text-align: center;
             margin-top: 10px;
             display: block;
@@ -245,8 +246,9 @@
 
         @media (min-width: 992px) {
             position: absolute;
-            bottom: 24%;
-            left: 42.6%;
+            top: 53%;
+            left: 50%;
+            transform: translate(-50%, -150px);
             text-align: center;
             margin-top: 10px;
             display: block;
@@ -264,8 +266,9 @@
 
         @media (min-width: 992px) {
             position: absolute;
-            bottom: 2%;
-            right: 13.3%;
+            top: 77%;
+            right: 19%;
+            transform: translate(50%, -150px);
             text-align: center;
             margin-top: 10px;
             display: block;

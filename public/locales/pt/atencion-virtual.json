@@ -6,16 +6,16 @@
   },
   "MARKET": {
     "TITLE": "<b> Otimize o serviço de atendimento </b> <br /> ao cliente utilizando videochamadas.",
-    "CAPTION_1": "<strong> Valorize seu tempoOfereça </strong> um atendimento ágil <br /> e eficiente.",
-    "CAPTION_2": "<strong> Humanize o serviço </strong> de atendimento ao clienteCom <br /> encontros especializados e mais próximos.",
-    "CAPTION_3": "<strong> Diferencie-se da <br /> concorrênciaObtenha vantagem </strong> tecnológica. <br />"
+    "CAPTION_1": "<strong> Valorize o tempo </strong> do seu cliente ofereça um <br/> atendimento ágil e eficiente.",
+    "CAPTION_2": "<strong> Humanize o atendimento </strong> e crie experiências memoráveis <br/> para seus clientes.",
+    "CAPTION_3": "<strong>Obtenha vantagens</strong> tecnológicas e se diferencie da concorrência"
   },
   "FLOW": {
     "TITLE": "<b> Um fluxo simples desenhado para diferentes <br /> modelos de serviço de atendimento na </b> sua organização.",
-    "CAPTION": "Seus clientes podem agendar uma reunião ou um encontro a partir do seu <b> website para falar com um representante </b> por videochamada.",
+    "CAPTION": "Seus clientes podem agendar o atendimento a partir do seu website para <b>falar com um representante por videochamada. </b>",
     "BLOCK_1": {
-      "TITLE": "Utilize o sistema de Atendimento Virtual também dentro das sucursais.",
-      "CAPTION": "<b> Os seus clientes podem conectar-se a uma videochamada com um representante a partir </b> de um quiosque e reduzir o tempo que passam dentro das sucursais."
+      "TITLE": "Utilize o sistema de Atendimento Virtual também em suas filiais.",
+      "CAPTION": "<b> Os seus clientes podem conectar-se a uma videochamada com um representante a partir de um totem </b> e reduzir o tempo que passam dentro do estabelecimento físico."
     },
     "BLOCK_2": {
       "TITLE": "Aproveite ao <br /> máximo os seus recursos.",

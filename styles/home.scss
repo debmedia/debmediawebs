@@ -430,8 +430,10 @@
 
 .solutions-tabs_content-nav.active::after {
     content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='15' height='15' fill='%232F9FEE' class='bi bi-caret-right-fill' viewBox='0 0 16 16'><path d='m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z'/></svg>");
-    width: 200px;
-    height: 200px;
+    display: inline-block;
+    margin-right: -24px;
+    width: 24px;
+    height: 12px;
 }
 
 .bi-caret-right-fill {
@@ -509,12 +511,15 @@
 .solutions-tabs_content-nav.active {
     background-color: transparent !important;
     color: #2F9FEE !important;
-    font-size: 1.05rem;
+    // font-size: 1.05rem;
+    transform: scale(1.05);
+    transform-origin: 8px;
     font-weight: 600;
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     @media (max-width: 1280px) {
-        font-size: 1.1rem;
+        // font-size: 1.1rem;
+        transform: scale(1.1);
     }
 
 
