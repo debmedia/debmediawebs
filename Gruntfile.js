@@ -28,7 +28,7 @@ module.exports = function(grunt) {
               dest: "public/locales/",
               options: {
                   columns: ["key", "es", "pt", "en"],
-                  dirs: ["pt", "en"],
+                  dirs: ["es", "pt", "en"],
               },
           },
       },
