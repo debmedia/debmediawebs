@@ -70,35 +70,37 @@ export default function Modern() {
                             </h2>
                         </Col>
                         <Col sm={12} className="industries-section_divs">
-                            <Row>
+                            <div>
                                 {cards.map((card) => (
                                     <Link key={card.url} href={card.url}>
-                                        <Col
+                                        <div
                                             sm={4}
                                             offset={1}
                                             xs={12}
                                             className={`industries-section_divs-indu ${card.class}`}>
                                             <div>
-                                                <Image
-                                                    src={card.image}
-                                                    width={50}
-                                                    height={50}
-                                                    className={"img-fluid"}
-                                                    alt=""
-                                                />
+                                                <div>
+                                                    <Image
+                                                        src={card.image}
+                                                        width={50}
+                                                        height={50}
+                                                        className={"img-fluid"}
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <h4>
+                                                    <Trans t={t} i18nKey={card.title}
+                                                    />
+                                                </h4>
                                             </div>
-                                            <h4>
-                                                <Trans t={t} i18nKey={card.title}
-                                                />
-                                            </h4>
-                                            <p>
-                                                <Trans t={t} i18nKey={card.subtitle}
-                                                />
-                                            </p>
-                                        </Col>
+                                                <p>
+                                                    <Trans t={t} i18nKey={card.subtitle}
+                                                    />
+                                                </p>
+                                        </div>
                                     </Link>
                                 ))}
-                            </Row>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
