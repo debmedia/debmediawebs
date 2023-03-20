@@ -24,23 +24,27 @@
   },
   "SPEC": {
     "TITLE": "¿Cómo funciona el Sistema <br /> de <b> Atención Virtual de Debmedia </b> ?",
-    "CAPTIONS": [
-      {
+    "MOBILE": {
+      "TITLE": "Diferentes funcionalidades",
+      "SUBTITLE": "para optimizar tu<br /> modelo de atención"
+    },
+    "CAPTIONS": {
+      "0": {
         "TITLE": "Múltiples viajes <br /> del cliente",
         "SUBTITLE": "Tus clientes pueden iniciar en tu web, App o WhatsApp."
       },
-      {
+      "1": {
         "TITLE": "Métricas de performance",
         "SUBTITLE": "Mide tiempos y rendimiento <br /> de tus equipos."
       },
-      {
+      "2": {
         "TITLE": "Integración <br /> sencilla",
         "SUBTITLE": "Una herramienta integrable por API o Iframe"
       },
-      {
+      "3": {
         "TITLE": "Los clientes pueden",
         "SUBTITLE": "Conectarse de forma espontánea o programada."
       }
-    ]
+    }
   }
 }

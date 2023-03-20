@@ -1,6 +1,6 @@
 {
   "HEADER": {
-    "TITLE": "<0>Mejora la experiencia<1 /> de los clientes</0> dentro y  <2 />fuera de las sucursales"
+    "TITLE": "<0>Mejora la experiencia<1 /> de los clientes</0> dentro y <2 />fuera de las sucursales"
   },
   "MARKET": {
     "TITLE": "Los clientes hoy <b><br />no se <br /> conforman con cualquier cosa </b>",
@@ -28,10 +28,10 @@
       "SUBTITLE": "y agiliza la atención."
     },
     "CAPTION_3": {
-      "TITLE": "Mejora su experiencia ",
+      "TITLE": "Mejora su experiencia",
       "SUBTITLE": "en cada punto y fidelízalos a tus servicios."
     },
-    "ORGANIZATION_TITLE": "<0>Trabajamos con organizaciones </0> <1 /> que confían en <3 />  nuestro software. <5 />",
-    "SOLUTIONS_TITLE": "Soluciones de <b> Debmedia </b>  para ofrecer una atención omnicanal"
+    "ORGANIZATION_TITLE": "<0>Trabajamos con organizaciones </0> <1 /> que confían en <3 /> nuestro software. <5 />",
+    "SOLUTIONS_TITLE": "Soluciones de <b> Debmedia </b> para ofrecer una atención omnicanal"
   }
 }
