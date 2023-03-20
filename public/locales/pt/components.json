@@ -83,7 +83,7 @@
     "TITLE": "Organizações que confiam em <br /> <b> nosso software. </b>",
     "CARDS": {
       "BANKING": {
-        "TITLE": "Banco e Seguros",
+        "TITLE": "Bancos e Seguradoras",
         "SUBTITLE": "Instituições financeiras, seguradoras e cooperativas."
       },
       "HEALTH": {
@@ -95,15 +95,15 @@
         "SUBTITLE": "Instituições públicas, estados, municípios, ONGs."
       },
       "RETAIL": {
-        "TITLE": "Retail, Serviços",
+        "TITLE": "Retail e Serviços",
         "SUBTITLE": "Lojas, sindicato, concessionárias, logística."
       },
       "TELECOMMUNICATIONS": {
-        "TITLE": "telecomunicações",
+        "TITLE": "Telecomunicações",
         "SUBTITLE": "Telefonia móvel, TV, Internet."
       },
       "UTILITIES": {
-        "TITLE": "Utilidade Publica",
+        "TITLE": "Utilidade Pública",
         "SUBTITLE": "Associações, serviços públicos."
       }
     }
