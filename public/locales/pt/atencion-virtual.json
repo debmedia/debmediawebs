@@ -31,19 +31,19 @@
     "CAPTIONS": {
       "0": {
         "TITLE": "Múltiplas jornadas <br /> de clientes",
-        "SUBTITLE": "Os seus clientes podem iniciar o atendimento no seu website, App ou WhatsApp."
+        "SUBTITLE": "Os clientes podem iniciar o atendimento através do seu site, App ou WhatsApp."
       },
       "1": {
         "TITLE": "Métricas de performance",
-        "SUBTITLE": "Monitore o tempo e <br /> o desempenho da sua equipe."
+        "SUBTITLE": "Monitore o desempenho da sua equipe."
       },
       "2": {
         "TITLE": "Integração <br /> simples",
-        "SUBTITLE": "Uma ferramenta que pode ser integrada via API ou Iframe."
+        "SUBTITLE": "Nossa solução pode ser facilmente integrada via API ou Iframe."
       },
       "3": {
-        "TITLE": "Os clientes podem",
-        "SUBTITLE": "entrar em contato de forma espontânea ou programada."
+        "TITLE": "Os clientes <br /> podem",
+        "SUBTITLE": "entrar em contato de forma espontânea ou programada"
       }
     }
   }
