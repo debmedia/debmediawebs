@@ -24,6 +24,10 @@
   },
   "SPEC": {
     "TITLE": "How does Debmedia's video-call <br /> customer <b> service software work? </b>",
+    "MOBILE": {
+      "TITLE": "Different functionalities",
+      "SUBTITLE": "to optimize your service model"
+    },
     "CAPTIONS": {
       "0": {
         "TITLE": "Multiple customer <br /> journeys",

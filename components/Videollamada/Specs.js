@@ -36,8 +36,8 @@ export default function Modern() {
                         <Row>
                             <Col xs={12} className="specs-section_videocall_text">
                                 <div>
-                                    <h2>
-                                        ¿Cómo funciona el Sistema <br />de <b>Atención Virtual de Debmedia</b>?
+                                    <h2>    
+                                        <Trans t={t} i18nKey="SPEC.TITLE"/>
                                     </h2>
                                 </div>
                             </Col>
@@ -75,9 +75,12 @@ export default function Modern() {
                     <Row>
                         <Col xs={12} className="specs-section_videocall_text">
                             <div>
-                                <h2>Diferentes <span>funcionalidades </span></h2>
-                                <p> para optimizar tu<br />
-                                    modelo de atención</p>
+                                <h2>
+                                    <Trans t={t} i18nKey="SPEC.MOBILE.TITLE"/>
+                                </h2>
+                                <p>
+                                    <Trans t={t} i18nKey="SPEC.MOBILE.SUBTITLE"/>
+                                </p>
                             </div>
                         </Col>
                     </Row>
