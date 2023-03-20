@@ -5,9 +5,12 @@ import flow_pt from '../../asset/imgs/videollamada/Flujo_AtencionVirtual_PT.png'
 import flow_en from '../../asset/imgs/videollamada/Flujo_AtencionVirtual_EN.png';
 import totem_es from '../../asset/imgs/videollamada/totem_ES.png'
 import totem_en from '../../asset/imgs/videollamada/totem_EN.png'
+import totem_pt from '../../asset/imgs/videollamada/totem_PT.png'
 import sistema_es from '../../asset/imgs/videollamada/Software-Videollamada_ES.png'
 import sistema_en from '../../asset/imgs/videollamada/Software-Videollamada_EN.png'
-import sistematotemmobie_es from '../../asset/imgs/videollamada/totemnew.png'
+import sistematotemmobie_es from '../../asset/imgs/videollamada/totemnew_ES.png'
+import sistematotemmobie_pt from '../../asset/imgs/videollamada/totemnew_PT.png'
+import sistematotemmobie_en from '../../asset/imgs/videollamada/totemnew_EN.png'
 import sistemaxs_es from '../../asset/imgs/videollamada/sistemaxs.jpg'
 
 import Data from '../../json/flow-videocall.json';
@@ -17,14 +20,17 @@ import { useRouter } from "next/router";
 const flow_lang = {es: flow_es, pt: flow_pt, en: flow_en};
 const totem_lang = {
     es: totem_es,
-    en: totem_en
+    en: totem_en,
+    pt: totem_pt
 };
 const sistema_lang = {
     es: sistema_es,
     en: sistema_en
 };
 const sistematotemmobie_lang = {
-    es: sistematotemmobie_es
+    es: sistematotemmobie_es,
+    pt: sistematotemmobie_pt,
+    en: sistematotemmobie_en
 };
 const sistemaxs_lang = {
     es: sistemaxs_es
