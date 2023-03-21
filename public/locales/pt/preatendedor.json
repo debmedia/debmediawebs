@@ -24,14 +24,14 @@
   "MODERN": {
     "TITLE": "O que você pode fazer com o pré-vendedor?",
     "CAPTION_1": {
-      "TITLE": "<span> Incluir</span> pop-ups"
+      "TITLE": "Incluir <br/><span> pop-ups / imagenes</span>"
     },
     "CAPTION_2": {
-      "TITLE": "<span> Adicionar</span> Formulários"
+      "TITLE": "Adicionar<br/> <span> Formulários</span>"
     },
     "CAPTION_3": {
       "TITLE": "Integre com",
-      "SUBTITLE": "a base de dados de clientes ou CRM para personalizar a sua jornada."
+      "SUBTITLE": "Integre com sua base de dados."
     }
   },
   "STEPS": {
