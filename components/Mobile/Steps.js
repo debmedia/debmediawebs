@@ -109,8 +109,7 @@ export default function Solutions() {
                                     </Col>
                                     <Col sm={7} className="relative">
 
-                                        <span className="lineSteps-mobile"></span>
-                                        <Nav variant="pills" className="flex-column">
+                                        <Nav variant="pills" className="flex-column lineSteps-mobile">
                                             {dataJson.map((item, index) => (
                                                 <Nav.Item key={index}>
                                                     <Nav.Link eventKey={item.key} className="setps-tabs_content-nav"><div className="numberStep">{index + 1}</div> <div className="textStep">{item.text}</div></Nav.Link>
