@@ -3,26 +3,28 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 1fr;
-  grid-row-gap: 1.5rem;
+  grid-row-gap: 1.5em;
   text-align: left!important;
+  font-size: 3vw;
+  @media (min-width: 576px) {
+    font-size: 1.5vw;
+  }
 }
 
 .tick-pills > div {
-  padding: 0.5em;
   background-color: #f6f7fb;
   border-radius: 30rem;
-  box-shadow: -5px 5px #00000021;
+  box-shadow: -0.31em 0.31em #00000021;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  padding: 1rem 1.5rem;
-  gap: 1rem;
-  font-size: 1.2rem;
-  line-height: 1.1em;
+  padding: 0.3em 1em;
+  gap: 1em;
+  line-height: 0.9em;
 }
 
 .tick-pills i {
   color: #309fee;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
