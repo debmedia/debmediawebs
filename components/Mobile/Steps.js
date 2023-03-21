@@ -118,7 +118,7 @@ export default function Solutions() {
                                         </Nav>
                                         <Link href="/contacto">
                                             <button className="citas-home_demobutton">
-                                                Solicita una demo
+                                                <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                             </button>
                                         </Link>
                                     </Col>
