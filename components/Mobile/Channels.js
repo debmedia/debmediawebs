@@ -28,7 +28,7 @@ export default function Market() {
                             </h3>
                         </Col>
                         <Col sm="8">
-                            <Image src={mypic.src} width={900} height={500} />
+                            <Image src={mypic.src} width={mypic.width} height={mypic.height} />
                         </Col>
                     </Row>
                 </Container>
