@@ -4,7 +4,7 @@
     "CAPTION": "<b> Leading organizations already manage their <br /> customer experience with Debmedia <b>"
   },
   "FLOW": {
-    "TITLE": "<b> Implement a customizable pre-service portal that guides them to <br /> the choice of their transaction."
+    "TITLE": "<b> Implement a customizable pre-service portal that guides clients</b> to the choice of their transaction."
   },
   "MARKET": {
     "TITLE": "The difficulty in directing your customers to <br /> the right channel translates into",
@@ -52,6 +52,6 @@
     "PILL_2": "Allow your customers to <b> follow their tickets through WhatsApp",
     "PILL_3": "Send <b> Reminders",
     "PILL_4": "<b> Automate conversations in response to your customers",
-    "CAPTION": "<b> Direct your customers through WhatsApp chatbot so they </b> <br /> can choose the most appropriate customer service channel."
+    "CAPTION": "<b> Direct your customers through WhatsApp chatbot so they </b> can choose the most appropriate customer service channel."
   }
 }
