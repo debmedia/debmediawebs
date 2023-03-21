@@ -7,6 +7,31 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next';
 import LanguageSelector from "./LanguageSelector";
 
+const langsMobile = [
+    {
+        key: "es",
+        label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.SPANISH",
+        dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.SPANISH"
+    },
+    {
+        key: "pt",
+        label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.PORTUGUESE",
+        dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.PORTUGUESE"
+    },
+]
+
+const langs = [
+    {
+        key: "es",
+        label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.SPANISH",
+        dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.SPANISH"
+    },
+    {
+        key: "pt",
+        label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.PORTUGUESE",
+        dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.PORTUGUESE"
+    },
+]
 
 export default function Home() {
     const { t } = useTranslation(['components', 'common']);
@@ -151,26 +176,10 @@ export default function Home() {
                                     </NavDropdown.Item>
                                 </NavDropdown>
                             )}
-                            {/* Selector par mobile */}
+                            {/* Selector para mobile */}
                             <LanguageSelector
                                 className={"d-lg-none"}
-                                langs={[
-                                    {
-                                        key: "es",
-                                        label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.SPANISH",
-                                        dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.SPANISH"
-                                    },
-                                    {
-                                        key: "en",
-                                        label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.ENGLISH",
-                                        dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.ENGLISH"
-                                    },
-                                    {
-                                        key: "pt",
-                                        label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.PORTUGUESE",
-                                        dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.PORTUGUESE"
-                                    },
-                                ]}
+                                langs={langsMobile}
                             />
                             <Link href="/contacto">
                                 <Nav.Link
@@ -182,23 +191,7 @@ export default function Home() {
                             {/* Selector para desktop */}
                             <LanguageSelector
                                 className={"d-none d-lg-block"}
-                                langs={[
-                                    {
-                                        key: "es",
-                                        label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.SPANISH",
-                                        dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.SPANISH"
-                                    },
-                                    {
-                                        key: "en",
-                                        label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.ENGLISH",
-                                        dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.ENGLISH"
-                                    },
-                                    {
-                                        key: "pt",
-                                        label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.PORTUGUESE",
-                                        dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.PORTUGUESE"
-                                    },
-                                ]}
+                                langs={langs}
                             />
                         </Nav>
                     </Navbar.Collapse>
