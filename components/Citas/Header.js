@@ -30,7 +30,7 @@ export default function Header() {
                     <div className="d-none d-sm-block">
                         <img src={shape3.src} className="citas-home_shape3" />
                     </div>
-                    <div className="d-none d-sm-block">
+                    <div className="d-none d-lg-block">
                         <img src={mainNoti.src} className="citas-home_mainNoti" />
                     </div>
                     <div className="d-none d-sm-block">
@@ -41,9 +41,7 @@ export default function Header() {
                         <Row>
                             <Col className="mainTitles">
                                 <h1 className="citas-home_title no-br-sm">
-                                    <Trans t={t} i18nKey="HEADER.TITLE">
-                                        0<br className="d-none d-sm-block" />2<br className="d-none d-sm-block" /> 4 <br className="d-none d-sm-block d-xxl-none" />6
-                                    </Trans>
+                                    <Trans t={t} i18nKey="HEADER.TITLE"/>
                                 </h1>
                                 <p className="citas-home_parraf">
                                  <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
