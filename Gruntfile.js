@@ -120,6 +120,10 @@ module.exports = function(grunt) {
                       "x-client-data": "CKG1yQEIjbbJAQiitskBCKmdygEIv/rKAQiUocsBCK32zAEIjozNAQj7lc0BCKiWzQEI4ZfNAQjjl80BCMyYzQEI9JnNAQjS4awC",
                       "cookie": "S=apps-spreadsheets=fL_sGZfHzZT6In6w7wzuKzJjLohXfgUGnujYsw-Im2k; COMPASS=apps-spreadsheets=CmUACWuJVybhr-5asP-AlTqjJzCjHd51jELpGVNIN7CIl7GNQCJWLpO3eod8hTyOGbraPKv7uqSbf_H51YzXQSzD-c6gHo8OrX-mlDB1nC4sutQ8NfBSSIVDfAURJnbBAnDUjo4GmRDlrsigBhpnAAlriVdiT5JEbRn5gD4O9JOZmhKT2iuaMN-pQ2Mmtbaqgs6h4ta4PSFVzbjYGroIi1aA1sQ_zX7vj8aXU9DqPB15IUjr-i5FAa_TxORy9emmRIbpj67OQAA1OmkCwP4MR0IQPB8QUg==; SID=TwjW0YO4WrUqMOwxOvx8S69RjxznXc_gV0KYMAliO2rCiFyP-l_QASb3Rl-Gi1_VgT5SgQ.; __Secure-1PSID=TwjW0YO4WrUqMOwxOvx8S69RjxznXc_gV0KYMAliO2rCiFyP_EDbgsZeBLBXEsvXxpHVmw.; __Secure-3PSID=TwjW0YO4WrUqMOwxOvx8S69RjxznXc_gV0KYMAliO2rCiFyPT18FF12fvHR9bdzzXneuPQ.; HSID=A7p3qlkYMVzLQuB_c; SSID=AWWmLBehHTxAJ_-A1; APISID=omxcly-OBXv4waYs/ACWW0YpxiSQErTGZ7; SAPISID=u4q5SA5CfgHC5awE/A2EHynjHmaPJAkYO9; __Secure-1PAPISID=u4q5SA5CfgHC5awE/A2EHynjHmaPJAkYO9; __Secure-3PAPISID=u4q5SA5CfgHC5awE/A2EHynjHmaPJAkYO9; OTZ=6933033_68_68__68_; AEC=ARSKqsKlpmioa4RXJlCmABWnYzHE1MOGHqZKozIFuwdIZlBinXRVmuT04w; 1P_JAR=2023-03-15-18; NID=511=d1J7E3OuOXwfxnrce355MaenU1vUhdHL7ljWpx6dAL4etEHuMRqu8oCgtU5dsbRT11tA2PtTBCHqIm9bjFLiL1KcNyHWNz762j2CM3DPb9EMG729lt65-pfuI9R_itTizPTL3aQXMi-nTPYUQvUOrhvVJ0HfZFcyGLkMhXtBkZV2cjJXNtBbkR3a6lU3gEvyA9ZQ9mFKv9tKXD4uVpwUEi6Juy-_HRaNGS70aGctIIvNW8SOXERI8L65Qb3ys55MSj5D33xlSPZ4xfpJHtFE388FHeMk5u83O9yokLXDtPMQXQ; SIDCC=AFvIBn_Ts71L5ATxLUWVWpCpABqN--OCSVLJJMOoN0Vb_NnYcoqEhKtYvUuirNAVY3xABWinOGuy; __Secure-1PSIDCC=AFvIBn9olPofMKChKv61lLy1ysjkuhqJ6Qqx9IfGZbCOv6LEnDoRPzwZQCSQHs995JztBOCggwey; __Secure-3PSIDCC=AFvIBn-j4lrc3pFsCpdnlbFvgA58-0TILr4vk-uuCnil5WnDTIHYIVKnNbpz2_-gdnsNNkE9jrY",
                   },
+                  followRedirect: false,
+                  callback: (error, response, body) => {
+                    if(response.statusCode !==200) grunt.fail.warn("File Fetching Failed with code: " + response.statusCode);
+                  }
               },
           },
           contentCsv: {
@@ -133,6 +137,10 @@ module.exports = function(grunt) {
                 "x-client-data": "CKG1yQEIjbbJAQiitskBCKmdygEIv/rKAQiUocsBCK32zAEIjozNAQj7lc0BCKiWzQEI4ZfNAQjjl80BCMyYzQEI9JnNAQjS4awC",
                 "cookie": "S=apps-spreadsheets=fL_sGZfHzZT6In6w7wzuKzJjLohXfgUGnujYsw-Im2k; COMPASS=apps-spreadsheets=CmUACWuJVybhr-5asP-AlTqjJzCjHd51jELpGVNIN7CIl7GNQCJWLpO3eod8hTyOGbraPKv7uqSbf_H51YzXQSzD-c6gHo8OrX-mlDB1nC4sutQ8NfBSSIVDfAURJnbBAnDUjo4GmRDlrsigBhpnAAlriVdiT5JEbRn5gD4O9JOZmhKT2iuaMN-pQ2Mmtbaqgs6h4ta4PSFVzbjYGroIi1aA1sQ_zX7vj8aXU9DqPB15IUjr-i5FAa_TxORy9emmRIbpj67OQAA1OmkCwP4MR0IQPB8QUg==; SID=TwjW0YO4WrUqMOwxOvx8S69RjxznXc_gV0KYMAliO2rCiFyP-l_QASb3Rl-Gi1_VgT5SgQ.; __Secure-1PSID=TwjW0YO4WrUqMOwxOvx8S69RjxznXc_gV0KYMAliO2rCiFyP_EDbgsZeBLBXEsvXxpHVmw.; __Secure-3PSID=TwjW0YO4WrUqMOwxOvx8S69RjxznXc_gV0KYMAliO2rCiFyPT18FF12fvHR9bdzzXneuPQ.; HSID=A7p3qlkYMVzLQuB_c; SSID=AWWmLBehHTxAJ_-A1; APISID=omxcly-OBXv4waYs/ACWW0YpxiSQErTGZ7; SAPISID=u4q5SA5CfgHC5awE/A2EHynjHmaPJAkYO9; __Secure-1PAPISID=u4q5SA5CfgHC5awE/A2EHynjHmaPJAkYO9; __Secure-3PAPISID=u4q5SA5CfgHC5awE/A2EHynjHmaPJAkYO9; OTZ=6933033_68_68__68_; AEC=ARSKqsKlpmioa4RXJlCmABWnYzHE1MOGHqZKozIFuwdIZlBinXRVmuT04w; 1P_JAR=2023-03-15-18; NID=511=d1J7E3OuOXwfxnrce355MaenU1vUhdHL7ljWpx6dAL4etEHuMRqu8oCgtU5dsbRT11tA2PtTBCHqIm9bjFLiL1KcNyHWNz762j2CM3DPb9EMG729lt65-pfuI9R_itTizPTL3aQXMi-nTPYUQvUOrhvVJ0HfZFcyGLkMhXtBkZV2cjJXNtBbkR3a6lU3gEvyA9ZQ9mFKv9tKXD4uVpwUEi6Juy-_HRaNGS70aGctIIvNW8SOXERI8L65Qb3ys55MSj5D33xlSPZ4xfpJHtFE388FHeMk5u83O9yokLXDtPMQXQ; SIDCC=AFvIBn-VrTRnnD8V90d_5bJcEtab4FaH6oaXCpDngnUuTr-kz56Pey55gbrO88r7jo2cudkDf7zP; __Secure-1PSIDCC=AFvIBn9i2E2ztxcjuY-dW0qvVl8CrVvrj0aix7uX-ROwvfTTEIPbNOL4c-P0uDMdJDodAcLmEOtK; __Secure-3PSIDCC=AFvIBn-BlTWi2pkO-yM33JDR1K00hQNl0ZSopiBpsV6OM5O86KfvOn8XRTyO3heoxKrytm7Q83w",
               },
+              followRedirect: false,
+              callback: (error, response, body) => {
+                if(response.statusCode !==200) grunt.fail.warn("File Fetching Failed with code: " + response.statusCode);
+              }
             }
           }
       },
