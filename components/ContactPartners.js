@@ -5,10 +5,11 @@ import shape1 from '../asset/imgs/contact/left.svg'
 import shape2 from '../asset/imgs/contact/right.svg'
 import HubspotForm from 'react-hubspot-form'
 import { useTranslation, Trans } from 'next-i18next';
-
+import { useRouter } from "next/dist/client/router";
 
 export default function Contact() {
     const { t } = useTranslation(['components', 'common']);
+    const { locale } = useRouter();
     return (
         <>
             <Container fluid className="contact-section my-5">
@@ -28,13 +29,20 @@ export default function Contact() {
                     </Row>
                     <Row>
                         <Col md={{ span: 6, offset: 3 }}>
-                            <HubspotForm
+                            {locale === "es" && <HubspotForm
                                 portalId='1797020'
                                 formId='6d63533e-a3d9-43b2-845a-95299001139e'
                                 onSubmit={() => console.log('Submit!')}
                                 onReady={(form) => console.log('Form ready!')}
                                 loading={<div>Loading...</div>}
-                            />
+                            />}
+                            {locale === "pt" && <HubspotForm
+                                portalId='1797020'
+                                formId='82fc0d7d-b0f7-4518-8bee-6492ee8528d5'
+                                onSubmit={() => console.log('Submit!')}
+                                onReady={(form) => console.log('Form ready!')}
+                                loading={<div>Loading...</div>}
+                            />}
                         </Col>
                     </Row>
                 </Container>
