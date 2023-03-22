@@ -126,27 +126,70 @@
     }
 }
 
+.videocall-home::after{
+    content:"";
+    --size: calc(100vw);
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    background-color: #232C61;
+    right: calc(-0.5 * var(--size));
+    bottom:-70px;
+    transform: rotate(45deg);
+    border-radius: 0px;
+    z-index: 1;
+    box-shadow: -7px 4px 20px rgba(0, 0, 0, 0.25);
+
+    @media (min-width: 576px){
+        --size: 400px;
+        border-radius: 100px;
+        top:0;
+        bottom: unset;
+    }
+
+    @media (min-width: 768px){
+        --size: calc(700px - (1920px - 100vw)*0.1);
+        border-radius: 100px;
+        top:0;
+        bottom: unset;
+    }
+}
+
+
 .image-container-videocall {
     position: absolute;
-    width: 375px;
-    height: 635px;
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1.11;
     right: 0;
-    bottom: -180px;
+    bottom: -15px;
     z-index: 3;
+    
+
+    @media (min-width: 576px) {
+        display: block;
+        width: 500px;
+        height: 327px;
+        right: 0;
+        bottom: 0px;
+        max-width: unset;
+        aspect-ratio: unset;
+    }
 
     @media (min-width: 992px) {
         display: block;
-        width: 565px;
-        height: 840px;
-        position: absolute;
+        width: 50vw;
+        aspect-ratio: calc(685/448);
+        height: unset;
         right: 0;
-        top: 0;
+        top: 140px;
+
     }
 
     @media (min-width: 1400px) {
         width: 685px;
-        height: 990px;
-        top: -50px;
+        height: 448px;
+        top: 120px;
     }
 
     .image {

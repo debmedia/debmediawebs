@@ -26,14 +26,16 @@ SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
 
 
-export default function Brands() {
+export default function Brands({filter}) {
     const [review, setreview] = useState([]);
     const { t } = useTranslation(['components', 'common']);
     const { locale } = useRouter();
 
     useEffect(() => {
-        setreview(Review[locale] || Review["es"]);
-    }, [locale]);
+        let showReview = Review[locale] || Review["es"];
+        if (Array.isArray(filter)) showReview = showReview.filter((elem) => filter.includes(elem.name))
+        setreview(showReview);
+    }, [filter,locale]);
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
@@ -101,7 +103,7 @@ export default function Brands() {
                                                     <span className="review-section_slidersection-client-work">{item.job}</span>
                                                     <img src={quote1.src} className="quote1 d-none d-sm-block" />
 
-                                                    <p className="review-section_slidersection-client-parraf">{item.comment}</p>
+                                                    <p className="review-section_slidersection-client-parraf" dangerouslySetInnerHTML={{__html: item.comment}}></p>
                                                     <img src={quote2.src} className="quote2 d-none d-sm-block" />
                                                 </Col>
                                                 <Col xs="12">
