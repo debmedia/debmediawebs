@@ -7,19 +7,29 @@ import shape3 from '../../asset/imgs/home/headershape3.svg'
 import { useTranslation, Trans } from 'next-i18next';
 import Link from "next/link";
 import videoThumb_es from '../../asset/imgs/videollamada/video_thumb_ES.png';
+import videoThumb_pt from '../../asset/imgs/videollamada/video_thumb_PT.png';
 import videoThumb_xs_es from '../../asset/imgs/videollamada/video_thumb_xs_ES.png';
+import videoThumb_xs_pt from '../../asset/imgs/videollamada/video_thumb_xs_PT.png';
+import { useRouter } from "next/dist/client/router";
+
+const videoThumb_lang = {es: videoThumb_es, pt: videoThumb_pt};
+const videoThumb_xs_lang = {es: videoThumb_xs_es, pt: videoThumb_xs_pt};
 
 export default function Header() {
     const { t } = useTranslation(['atencion-virtual', 'common']);
     const [modalShow, setModalShow] = useState(false);
+    const { locale } = useRouter();
+
+    const videoThumb = videoThumb_lang[locale] || videoThumb_lang["es"];
+    const videoThumb_xs = videoThumb_xs_lang[locale] || videoThumb_xs_lang["es"];
 
     return (
         <>
             <header>
                 <Container fluid className="videocall-home">
-                    <div className={'image-container-videocall'} onClick={() => setModalShow(true)}>
-                        <Image src={videoThumb_es} layout="fill" className={'image d-none d-sm-block'} />
-                        <Image src={videoThumb_xs_es} layout="fill" className={'image d-block d-sm-none'} />
+                    <div className={'image-container-videocall'} onClick={() => {if(locale === "es") setModalShow(true)}}>
+                        <Image src={videoThumb} layout="fill" className={'image d-none d-sm-block'} />
+                        <Image src={videoThumb_xs} layout="fill" className={'image d-block d-sm-none'} />
                     </div>
                     <div className="d-none d-sm-block">
                         <img src={shape3.src} className="videocall-home_shape3" />
@@ -29,16 +39,15 @@ export default function Header() {
                         <img src={shape1.src} className="videocall-home_shape1" />
                         <img src={shape2.src} className="videocall-home_shape2" />
                     </div>
-                    <MyVerticallyCenteredModal
+                    {locale === "es" && <MyVerticallyCenteredModal
                         show={modalShow}
                         onHide={() => setModalShow(false)}
-                    />
+                    />}
                     <Container>
                         <Row>
                             <Col className="mainTitles">
-                                <h1 className="videocall-home_title">
-                                    Digitaliza la atención  
-                                    <br className="d-none d-sm-block" />de tus clientes
+                                <h1 className="videocall-home_title no-br-sm">
+                                <Trans t={t} i18nKey="HEADER.TITLE"/>
                                 </h1>
                                 <p className="videocall-home_parraf">
                                     <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
