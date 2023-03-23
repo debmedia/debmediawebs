@@ -23,24 +23,24 @@
     "TITLE": "Múltiplas funcionalidades",
     "SUBTITLE": "para otimizar os modelos de atendimento ao cliente.",
     "CAPTION_1": {
-      "TITLE": "Integração com o sistema <br /> de gestão de filas.",
-      "SUBTITLE": "Para controlar todo o fluxo <br /> com algoritmos de chamada <br /> e priorização."
+      "TITLE": "Integração com o sistema de gestão de filas.",
+      "SUBTITLE": "Para controlar todo o fluxo com algoritmos de chamada e priorização."
     },
     "CAPTION_2": {
-      "TITLE": "Check-in autogerenciado. <br />",
-      "SUBTITLE": "Os clientes podem fazer o check-in a partir de seu celular ou no quiosque."
+      "TITLE": "Check-in autogerenciado.",
+      "SUBTITLE": "Os clientes podem fazer o check-in a partir de seu celular ou no totem."
     },
     "CAPTION_3": {
-      "TITLE": "Lembretes <br /> personalizáveis enviados <br /> por e-mail ou SMS. <br />",
+      "TITLE": "Lembretes personalizáveis enviados por e-mail ou SMS.",
       "SUBTITLE": "Desenvolvidos como campos dinâmicos em função do tipo de operação e cliente."
     },
     "CAPTION_4": {
-      "TITLE": "Conectado com múltiplas <br /> operações ou agendas.",
-      "SUBTITLE": "Para definir tempos de <br /> tolerância para cada."
+      "TITLE": "Conectado com múltiplas operações ou agendas.",
+      "SUBTITLE": "Para definir tempos de tolerância para cada."
     },
     "CAPTION_5": {
-      "TITLE": "Integração via API, iframe <br /> ou incorporado em seu site.",
-      "SUBTITLE": "Com o look & feel <br /> de sua empresa."
+      "TITLE": "Integração via API, iframe ou incorporado em seu site.",
+      "SUBTITLE": "Com o look & feel de sua empresa."
     },
     "CAPTION_6": {
       "TITLE": "Um sistema integrado com",
