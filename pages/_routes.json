@@ -1,5 +1,8 @@
 {
-  "atencion-virtual": "atencion-virtual",
+  "atencion-virtual": {
+    "defalut": "atencion-virtual",
+    "pt": "atencion-virtualPortu"
+  },
   "bancosyfinanzas": "bancosyfinanzas",
   "citasonline": "citasonline",
   "clientes": "clientes",
