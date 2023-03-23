@@ -1,24 +1,78 @@
 {
   "atencion-virtual": {
-    "defalut": "atencion-virtual",
+    "default": "atencion-virtualEsp",
     "pt": "atencion-virtualPortu"
   },
-  "bancosyfinanzas": "bancosyfinanzas",
-  "citasonline": "citasonline",
-  "clientes": "clientes",
-  "contacto": "contacto",
-  "debq": "debq",
-  "debsign": "debsign",
-  "encuestas": "encuestas",
-  "fila-virtual": "fila-virtual",
-  "gobierno": "gobierno",
-  "gracias": "gracias",
-  "nosotros": "nosotros",
-  "partners": "partners",
-  "politica": "politica",
-  "preatendedor": "preatendedor",
-  "retail": "retail",
-  "salud": "salud",
-  "telcos": "telcos",
-  "utilities": "utilities"
+  "bancosyfinanzas": {
+    "default": "bancosyfinanzas",
+    "pt": "bancosyfinanzas"
+  },
+  "citasonline": {
+    "default": "citasonline",
+    "pt": "citasonline"
+  },
+  "clientes": {
+    "default": "clientes",
+    "pt": "clientes"
+  },
+  "contacto": {
+    "default": "contacto",
+    "pt": "contacto"
+  },
+  "debq": {
+    "default": "debq",
+    "pt": "debq"
+  },
+  "debsign": {
+    "default": "debsign",
+    "pt": "debsign"
+  },
+  "encuestas": {
+    "default": "encuestas",
+    "pt": "encuestas"
+  },
+  "fila-virtual": {
+    "default": "fila-virtual",
+    "pt": "fila-virtual"
+  },
+  "gobierno": {
+    "default": "gobierno",
+    "pt": "gobierno"
+  },
+  "gracias": {
+    "default": "gracias",
+    "pt": "gracias"
+  },
+  "nosotros": {
+    "default": "nosotros",
+    "pt": "nosotros"
+  },
+  "partners": {
+    "default": "partners",
+    "pt": "partners"
+  },
+  "politica": {
+    "default": "politica",
+    "pt": "politica"
+  },
+  "preatendedor": {
+    "default": "preatendedor",
+    "pt": "preatendedor"
+  },
+  "retail": {
+    "default": "retail",
+    "pt": "retail"
+  },
+  "salud": {
+    "default": "salud",
+    "pt": "salud"
+  },
+  "telcos": {
+    "default": "telcos",
+    "pt": "telcos"
+  },
+  "utilities": {
+    "default": "utilities",
+    "pt": "utilities"
+  }
 }
