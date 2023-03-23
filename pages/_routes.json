@@ -1,15 +1,15 @@
 {
   "atencion-virtual": {
-    "default": "atencion-virtualEsp",
-    "pt": "atencion-virtualPortu"
+    "default": "atencion-virtual",
+    "pt": "atendimento-videochamada"
   },
   "bancosyfinanzas": {
-    "default": "bancosyfinanzas",
-    "pt": "bancosyfinanzas"
+    "default": "banca-y-finanzas",
+    "pt": "instituicoes-financeiras"
   },
   "citasonline": {
-    "default": "citasonline",
-    "pt": "citasonline"
+    "default": "citas-online",
+    "pt": "agenda-online"
   },
   "clientes": {
     "default": "clientes",
@@ -20,16 +20,16 @@
     "pt": "contacto"
   },
   "debq": {
-    "default": "debq",
-    "pt": "debq"
+    "default": "gestion-filas",
+    "pt": "sistema-gestao-de-filas"
   },
   "debsign": {
-    "default": "debsign",
-    "pt": "debsign"
+    "default": "carteleria-digital",
+    "pt": "sistema-sinalizacao-digital"
   },
   "encuestas": {
-    "default": "encuestas",
-    "pt": "encuestas"
+    "default": "encuestas-de-satisfaccion",
+    "pt": "pesquisas-automatizadas"
   },
   "fila-virtual": {
     "default": "fila-virtual",
@@ -37,7 +37,7 @@
   },
   "gobierno": {
     "default": "gobierno",
-    "pt": "gobierno"
+    "pt": "instituicoes-publicas"
   },
   "gracias": {
     "default": "gracias",
@@ -45,11 +45,11 @@
   },
   "nosotros": {
     "default": "nosotros",
-    "pt": "nosotros"
+    "pt": "nos"
   },
   "partners": {
     "default": "partners",
-    "pt": "partners"
+    "pt": "parceiros"
   },
   "politica": {
     "default": "politica",
@@ -57,22 +57,22 @@
   },
   "preatendedor": {
     "default": "preatendedor",
-    "pt": "preatendedor"
+    "pt": "portal-pre-atendimento"
   },
   "retail": {
     "default": "retail",
-    "pt": "retail"
+    "pt": "lojas"
   },
   "salud": {
     "default": "salud",
-    "pt": "salud"
+    "pt": "saude"
   },
   "telcos": {
-    "default": "telcos",
-    "pt": "telcos"
+    "default": "telecomunicaciones",
+    "pt": "telefonica-movel"
   },
   "utilities": {
     "default": "utilities",
-    "pt": "utilities"
+    "pt": "associacoes-servicos-publicos"
   }
 }
