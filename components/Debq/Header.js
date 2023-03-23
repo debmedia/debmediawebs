@@ -23,7 +23,7 @@ export default function Header() {
             <header>
                 <Container fluid className="debq-home">
                     <div className={'image-container-debq'}>
-                    <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} />
+                        <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} />
                         <Image src={mypicxs.src} layout="fill" className={'image d-block d-sm-none'} />
                     </div>
                     {/* <div className="d-none d-sm-block">
