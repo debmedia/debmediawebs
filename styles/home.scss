@@ -101,6 +101,8 @@
     }
 
     &_demobutton {
+        position: relative;
+        z-index: 10;
         border: 0;
         color: #2F9FEE;
         border: #2F9FEE 2px solid;
