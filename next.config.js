@@ -26,18 +26,4 @@ module.exports = withTranslateRoutes({
   },
   webpack: nextConfig.webpack,
   i18n,
-  async redirects() {
-    return [
-      {
-        source: '/blog/:path',
-        destination: 'https://blog.debmedia.com/:path',
-        permanent: true,
-      },
-      {
-        source: '/blog',
-        destination: 'https://blog.debmedia.com',
-        permanent: true,
-      },
-    ]
-  },
 })
