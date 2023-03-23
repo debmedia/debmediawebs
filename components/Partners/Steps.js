@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Row, Container, Col, Tab, Nav, Accordion } from "react-bootstrap";
 import Data from '../../json/setps-partners.json';
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 export default function Solutions() {
     const { t } = useTranslation(['partners', 'common']);

@@ -5,7 +5,7 @@ import woman from '../asset/imgs/gracias-woman.svg'
 import womanxs from '../asset/imgs/gracias-womanxs.svg'
 import shape2 from '../asset/imgs/contact/right.svg'
 import HubspotForm from 'react-hubspot-form'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
 
 

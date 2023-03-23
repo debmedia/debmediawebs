@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next-translate-routes/link";
 import { useRouter } from "next/router";
 import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "next-i18next";

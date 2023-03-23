@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import politica_es from '../md/politica-es.md';
 import { useTranslation} from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 export async function getStaticProps({ locale }) {
   return {

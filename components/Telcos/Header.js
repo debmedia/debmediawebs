@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import shape2 from '../../asset/imgs/home/headershape2.svg'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
 
 export default function Header() {

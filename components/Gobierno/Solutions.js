@@ -4,9 +4,9 @@ import Image from 'next/image'
 import check from '../../asset/imgs/gobierno/check.svg'
 import Data from '../../json/services-gob.json';
 import Logos from '../../json/brandsSlide.json';
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 export default function Solutions(props) {
     const { t } = useTranslation(['gobierno', 'common']);

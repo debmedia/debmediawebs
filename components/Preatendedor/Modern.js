@@ -4,7 +4,7 @@ import Image from 'next/image'
 import spec1 from '../../asset/imgs/preatendedor/spec1.svg'
 import spec2 from '../../asset/imgs/preatendedor/spec2.svg'
 import spec3 from '../../asset/imgs/preatendedor/spec3.svg'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useTranslation, Trans } from 'next-i18next';
 

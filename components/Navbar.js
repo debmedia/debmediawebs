@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Container, NavDropdown, Nav } from "react-bootstrap";
 import Image from 'next/image'
 import mypic from '../asset/imgs/logo.svg'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import Link from 'next-translate-routes/link'
+import { useRouter } from 'next-translate-routes/router'
 import { useTranslation } from 'next-i18next';
 import LanguageSelector from "./LanguageSelector";
 

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Services from '../../json/Services.json';
-import Link from 'next/link'
-import { useRouter } from "next/router";
+import Link from 'next-translate-routes/link'
+import { useRouter } from "next-translate-routes/router";
 import { useTranslation, Trans } from 'next-i18next';
 
 export default function SpecsIndus() {

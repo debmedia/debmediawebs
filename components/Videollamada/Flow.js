@@ -15,7 +15,7 @@ import sistemaxs_es from '../../asset/imgs/videollamada/sistemaxs.jpg'
 
 import Data from '../../json/flow-videocall.json';
 import { useTranslation, Trans } from 'next-i18next';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 const flow_lang = {es: flow_es, pt: flow_pt, en: flow_en};
 const totem_lang = {

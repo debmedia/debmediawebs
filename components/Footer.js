@@ -1,13 +1,13 @@
 import React from "react";
 import { Row, Container, Col, ListGroup } from "react-bootstrap";
-import Link from 'next/link';
+import Link from 'next-translate-routes/link';
 import Image from 'next/image'
 import partners from '../asset/imgs/partners.svg'
 import face from '../asset/imgs/facebook.svg'
 import insta from '../asset/imgs/insta.svg'
 import lkedin from '../asset/imgs/lkedin.svg'
 import { useTranslation } from 'next-i18next';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 
 export default function Footer() {

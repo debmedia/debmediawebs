@@ -4,7 +4,7 @@ import { Row, Container, Col } from "react-bootstrap";
 import { useTranslation, Trans } from 'next-i18next';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 
 
 // Import Swiper styles
@@ -14,7 +14,7 @@ import 'swiper/css/pagination';
 
 // import Swiper core and required modules
 import SwiperCore, { Autoplay, FreeMode, Pagination } from 'swiper';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 // install Swiper modules
 SwiperCore.use([Autoplay, FreeMode, Pagination]);

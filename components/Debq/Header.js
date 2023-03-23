@@ -8,9 +8,9 @@ import mypicxs_en from '../../asset/imgs/debq/GestiondeFilas_01_EN.png'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import mainNoti from '../../asset/imgs/debq/main-noti.png'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 const mypicxs_lang = {es: mypicxs_es, pt: mypicxs_pt, en: mypicxs_en};
 export default function Header() {

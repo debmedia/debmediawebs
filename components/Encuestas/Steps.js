@@ -6,7 +6,7 @@ import check_white from '../../asset/imgs/home/check-m.svg'
 import shape1 from '../../asset/imgs/mobile/shapeTabs.svg'
 import Data from '../../json/setps-encuestas.json'; 
 import { useTranslation, Trans } from 'next-i18next';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 export default function Solutions() {
     const { t } = useTranslation(['encuestas', 'common']);

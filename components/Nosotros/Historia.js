@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import nosotrosImg from '../../asset/imgs/nosotros/group.png'

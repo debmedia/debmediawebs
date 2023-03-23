@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 import BlogData from '../json/blog.json';
 import { Row, Container, Col } from "react-bootstrap";
 import { useTranslation, Trans } from 'next-i18next';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 
 // Import Swiper styles
 import 'swiper/css';

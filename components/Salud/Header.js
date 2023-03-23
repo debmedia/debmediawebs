@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import { useTranslation, Trans } from 'next-i18next';
 

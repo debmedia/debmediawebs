@@ -7,7 +7,7 @@ import servi from "../asset/imgs/servicios.svg";
 import gob from "../asset/imgs/gob.svg";
 import telcos from "../asset/imgs/telcos.svg";
 import uti from "../asset/imgs/uti.svg";
-import Link from "next/link";
+import Link from "next-translate-routes/link";
 import { useTranslation, Trans } from "next-i18next";
 
 export default function Modern() {

@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const webpack = require("webpack");
 const { i18n } = require('./next-i18next.config');
+const withTranslateRoutes = require('next-translate-routes/plugin')
 
 const nextConfig = {
   reactStrictMode: false,
@@ -19,7 +20,7 @@ const nextConfig = {
   }
 }
 
-module.exports = {
+module.exports = withTranslateRoutes({
   images: {
     domains: ['debmedia.com'],
   },
@@ -39,4 +40,4 @@ module.exports = {
       },
     ]
   },
-}
+})

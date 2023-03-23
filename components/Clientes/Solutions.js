@@ -14,7 +14,7 @@ import gobxs from '../../asset/imgs/gob.svg'
 import telcosxs from '../../asset/imgs/telcos.svg'
 import utixs from '../../asset/imgs/uti.svg'
 import { useTranslation, Trans } from 'next-i18next';
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import Image from 'next/image'
 
 

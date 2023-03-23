@@ -4,9 +4,9 @@ import Image from 'next/image';
 import check from '../../asset/imgs/banca/check.svg';
 import Data from '../../json/services-banca.json';
 import Logos from '../../json/brandsSlide.json';
-import Link from 'next/link';
+import Link from 'next-translate-routes/link';
 import { useTranslation, Trans } from 'next-i18next';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 
 

@@ -11,7 +11,7 @@ import configG from '../asset/imgs/configG.svg'
 import clientG from '../asset/imgs/clientsG.svg'
 import top from '../asset/imgs/border.svg'
 import topG from '../asset/imgs/borderG.svg'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
 
 

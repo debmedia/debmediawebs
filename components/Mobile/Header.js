@@ -8,9 +8,9 @@ import mypicxs from '../../asset/imgs/mobile/main-mobile.png'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import shape3 from '../../asset/imgs/home/headershape3.svg'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 const mypic_lang = {es: mypic_es, pt: mypic_pt, en: mypic_en};
 export default function Header() {

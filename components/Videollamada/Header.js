@@ -5,7 +5,7 @@ import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import shape3 from '../../asset/imgs/home/headershape3.svg'
 import { useTranslation, Trans } from 'next-i18next';
-import Link from "next/link";
+import Link from "next-translate-routes/link";
 import videoThumb_es from '../../asset/imgs/videollamada/video_thumb_ES.png';
 import videoThumb_pt from '../../asset/imgs/videollamada/video_thumb_PT.png';
 import videoThumb_xs_es from '../../asset/imgs/videollamada/video_thumb_xs_ES.png';

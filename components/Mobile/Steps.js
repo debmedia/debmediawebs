@@ -5,9 +5,9 @@ import check_blue from '../../asset/imgs/home/check_blue.svg'
 import check_white from '../../asset/imgs/home/check-m.svg'
 import shape1 from '../../asset/imgs/mobile/shapeTabs.svg'
 import Data from '../../json/setps-mobile.json';
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 export default function Solutions() {
     const { t } = useTranslation(['fila-virtual', 'common']);

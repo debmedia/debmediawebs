@@ -3,7 +3,7 @@ import Review from '../json/Review.json';
 import { Row, Container, Col } from "react-bootstrap";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -20,7 +20,7 @@ import SwiperCore, { Autoplay, FreeMode, Pagination } from 'swiper';
 import { Navigation } from "swiper";
 
 import { useTranslation, Trans } from 'next-i18next';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next-translate-routes/router'
 // install Swiper modules
 SwiperCore.use([Autoplay, FreeMode, Pagination]);
 

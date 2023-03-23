@@ -6,8 +6,8 @@ import check_white from '../../asset/imgs/home/check-m.svg'
 import shape1 from '../../asset/imgs/mobile/shapeTabs.svg'
 import { useTranslation, Trans } from 'next-i18next';
 import Data from '../../json/setps-citas.json';
-import Link from 'next/link'
-import { useRouter } from "next/router";
+import Link from 'next-translate-routes/link'
+import { useRouter } from "next-translate-routes/router";
 
 export default function Solutions() {
     const { t } = useTranslation(['citasonline', 'common']);

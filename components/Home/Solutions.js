@@ -1,11 +1,11 @@
 import React from "react";
 import { Row, Container, Col, Tab, Nav, Accordion } from "react-bootstrap";
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
 import TitleWithIcons from "../TitleWithIcons";
 import solutionsHomeData from '../../json/solutions-home.json';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 
 

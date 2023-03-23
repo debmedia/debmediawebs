@@ -6,7 +6,7 @@ import graficos_pt from '../../asset/imgs/home/Metricas_Home_PT.svg'
 import graficos_en from '../../asset/imgs/home/Metricas_Home_EN.svg'
 import channel from '../../asset/imgs/home/channels.svg'
 import { useTranslation, Trans } from 'next-i18next';
-import { useRouter } from "next/router";
+import { useRouter } from "next-translate-routes/router";
 
 const graficos_lang = {es: graficos_es, pt: graficos_pt, en: graficos_en};
 

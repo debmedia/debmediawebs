@@ -1,6 +1,6 @@
 import { Trans, useTranslation } from 'next-i18next';
 import { useRouter } from "next/dist/client/router";
-import Link from 'next/link';
+import Link from 'next-translate-routes/link';
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import how1_en from '../../asset/imgs/encuestas/EncuestasAutomatizada_Paso01_EN.png';

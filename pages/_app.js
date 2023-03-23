@@ -8,10 +8,10 @@ import Script from 'next/script'
 import Layout from "../components/layout";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import { useRouter } from 'next/router'
+import { useRouter } from 'next-translate-routes/router'
 import Meta from '../json/meta.json';
 import { appWithTranslation } from 'next-i18next';
-
+import { withTranslateRoutes } from 'next-translate-routes'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -60,4 +60,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscr
 }
 
 
-export default appWithTranslation(MyApp);
+export default withTranslateRoutes(appWithTranslation(MyApp));
