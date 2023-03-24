@@ -113,7 +113,7 @@ export default function Solutions(props) {
                     <Row>
                         <Col className="solutions-indus-tabs_title mb-sm-5 mb-3">
                             <h2>
-                            <Trans t={t} i18nKey="SOLUTIONS.SOLUTIONS_TITILE"/>
+                            <Trans t={t} i18nKey="SOLUTIONS.SOLUTIONS_TITLE"/>
 
                             </h2>
                         </Col>
