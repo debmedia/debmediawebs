@@ -1,19 +1,23 @@
 {
   "atencion-virtual": {
     "default": "atencion-virtual",
-    "pt": "atendimento-videochamada"
+    "pt": "atendimento-videochamada",
+    "en": "video-call"
   },
   "bancosyfinanzas": {
     "default": "banca-y-finanzas",
-    "pt": "instituicoes-financeiras"
+    "pt": "instituicoes-financeiras",
+    "en": "banking-and-financial-services"
   },
   "citasonline": {
     "default": "citas-online",
-    "pt": "agenda-online"
+    "pt": "agenda-online",
+    "en": "online-appointments"
   },
   "clientes": {
     "default": "clientes",
-    "pt": "clientes"
+    "pt": "clientes",
+    "en": "customers"
   },
   "contacto": {
     "default": "contacto",
@@ -25,7 +29,8 @@
   },
   "debsign": {
     "default": "carteleria-digital",
-    "pt": "sistema-sinalizacao-digital"
+    "pt": "sistema-sinalizacao-digital",
+    "en": "digital-signage"
   },
   "encuestas": {
     "default": "encuestas-de-satisfaccion",
@@ -33,46 +38,57 @@
   },
   "fila-virtual": {
     "default": "fila-virtual",
-    "pt": "fila-virtual"
+    "pt": "fila-virtual",
+    "en": "virtual-queue"
   },
   "gobierno": {
     "default": "gobierno",
-    "pt": "instituicoes-publicas"
+    "pt": "instituicoes-publicas",
+    "en": "government"
   },
   "gracias": {
     "default": "gracias",
-    "pt": "gracias"
+    "pt": "obrigado",
+    "en": "thank-you"
   },
   "nosotros": {
     "default": "nosotros",
-    "pt": "nos"
+    "pt": "nos",
+    "en": "about-us"
   },
   "partners": {
     "default": "partners",
-    "pt": "parceiros"
+    "pt": "parceiros",
+    "en": "partners"
   },
   "politica": {
     "default": "politica",
-    "pt": "politica"
+    "pt": "politica",
+    "en": "policy"
   },
   "preatendedor": {
     "default": "preatendedor",
-    "pt": "portal-pre-atendimento"
+    "pt": "portal-pre-atendimento",
+    "en": "pre-service-website"
   },
   "retail": {
     "default": "retail",
-    "pt": "lojas"
+    "pt": "lojas",
+    "en": "retail"
   },
   "salud": {
     "default": "salud",
-    "pt": "saude"
+    "pt": "saude",
+    "en": "healthcare"
   },
   "telcos": {
     "default": "telecomunicaciones",
-    "pt": "telefonica-movel"
+    "pt": "telefonica-movel",
+    "en":"telecommunications"
   },
   "utilities": {
     "default": "utilities",
-    "pt": "associacoes-servicos-publicos"
+    "pt": "associacoes-servicos-publicos",
+    "en": "utilities"
   }
 }
