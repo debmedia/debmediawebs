@@ -21,11 +21,13 @@
   },
   "contacto": {
     "default": "contacto",
-    "pt": "contacto"
+    "pt": "contacto",
+    "en": "contact"
   },
   "debq": {
     "default": "gestion-filas",
-    "pt": "sistema-gestao-de-filas"
+    "pt": "sistema-gestao-de-filas",
+    "en": "queue-management-system"
   },
   "debsign": {
     "default": "carteleria-digital",
@@ -34,7 +36,8 @@
   },
   "encuestas": {
     "default": "encuestas-de-satisfaccion",
-    "pt": "pesquisas-automatizadas"
+    "pt": "pesquisas-automatizadas",
+    "en": "customer-feedback"
   },
   "fila-virtual": {
     "default": "fila-virtual",
