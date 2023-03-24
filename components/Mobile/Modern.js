@@ -52,7 +52,7 @@ export default function Modern() {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className="d-sm-flex reverseXs">
+                            <Row className="d-sm-flex reverse-lg">
                                 <Col sm={5} xs={12} className="modern-section_div-text modern-section_div-text-center">
                                     <div>
                                         <h4 className="modern-section_title">
@@ -84,7 +84,7 @@ export default function Modern() {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className="d-sm-flex reverseXs">
+                            <Row className="d-sm-flex reverse-lg">
                                 <Col sm={5} xs={12} className="modern-section_div-text modern-section_div-text-center">
                                     <div>
                                         <h4 className="modern-section_title">

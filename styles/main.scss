@@ -77,7 +77,7 @@ nav.navbar.navbar-expand-lg {
     position: relative;
 }
 
-.reverseXs {
+.reverse-lg {
     flex-flow: column-reverse;
 
     @media (min-width: 992px) {
@@ -85,7 +85,13 @@ nav.navbar.navbar-expand-lg {
     }
 }
 
+.reverse-md {
+    flex-flow: column-reverse;
 
+    @media (min-width: 576px) {
+        flex-flow: initial;
+    }
+}
 
 .dropdown-menu {
     position: absolute;
