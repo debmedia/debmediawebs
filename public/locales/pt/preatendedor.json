@@ -4,7 +4,12 @@
     "CAPTION": "<b> Organizações líderes já fazem a <br /> gestão da experiência do cliente <b> com Debmedia"
   },
   "FLOW": {
-    "TITLE": "<b>Otimize o atendimento ao cliente</b> com o portal de pré-atendimento"
+    "TITLE": "<b>Otimize o atendimento ao cliente</b> com o portal de pré-atendimento",
+    "PILL_1": "<b>Personaliza</b> os botões",
+    "PILL_2": "<b>Design com aparência</b> da sua empresa",
+    "PILL_3": "Permite uso de <b>imagens</b>",
+    "PILL_4": "<b>Cria o fluxo</b> que seus clientes precisam recorrer",
+    "PILL_5": "<b>Adiciona descrições</b> em cada botão para melhorar a experiência"
   },
   "MARKET": {
     "TITLE": "As dificuldade em direcionar os clientes para <br /> o canal certo resultam em",
@@ -51,7 +56,7 @@
     "PILL_1": "Permite que seus clientes efetuaem <b>agendamento online</b>",
     "PILL_2": "Permite que seus clientes acompanhem a <b>fila pelo WhatsApp</b>",
     "PILL_3": "Envia mensagens para <b>recordar os clientes</b>",
-    "PILL_4": "<b>Automatize a resposta</b> de duvidas recorrentes.",
+    "PILL_4": "<b>Automatize a resposta</b> de duvidas recorrentes",
     "CAPTION": "<b> Direcione seus clientes através do WhatsApp para que </b> eles possam escolher o canal de serviço mais adequado."
   }
 }

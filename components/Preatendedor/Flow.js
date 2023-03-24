@@ -8,6 +8,7 @@ import flow2_pt from '../../asset/imgs/preatendedor/Preatendedor_1_PT.png'
 import flow2_en from '../../asset/imgs/preatendedor/Preatendedor_1_EN.png'
 import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from "next/dist/client/router";
+import PillList from "../PillList";
 
 const flow1_lang = {es: flow1_es, pt: flow1_pt, en: flow1_en};
 const flow2_lang = {es: flow2_es, pt: flow2_pt, en: flow2_en};
@@ -29,9 +30,9 @@ export default function Flow() {
                             </h3>
                         </Col>
                     </Row>
-                    <Row className="text-center mt-5 d-flex justify-content-center reverseXs">
+                    <Row className="text-center mt-5 d-flex justify-content-center reverse-md">
                         <Col xs="12" sm={{ span: 5 }} className="mt-sm-5 mt-3 mr-sm-2 text-center">
-                            <img src={flow2.src} alt="wapp" className={'img-fluid'} />
+                            <PillList t={t} backgroundColor={"white"}items={["FLOW.PILL_1", "FLOW.PILL_2", "FLOW.PILL_3", "FLOW.PILL_4", "FLOW.PILL_5", ]} />
                         </Col>
                         <Col sm={{ span: 6, offset: 1 }} xs="12">
                             <img src={flow1.src} alt="wapp" className={'img-fluid'} />

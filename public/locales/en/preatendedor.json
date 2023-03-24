@@ -4,7 +4,12 @@
     "CAPTION": "<b> Leading organizations already manage their <br /> customer experience with Debmedia <b>"
   },
   "FLOW": {
-    "TITLE": "<b> Implement a customizable pre-service portal that guides clients</b> to the choice of their transaction."
+    "TITLE": "<b> Implement a customizable pre-service portal that guides clients</b> to the choice of their transaction.",
+    "PILL_1": "<b>Consfigure</b> the buttons",
+    "PILL_2": "Desing with <b>your company's look and feel</b>",
+    "PILL_3": "Use <b>images</b>",
+    "PILL_4": "<b>Configure the route/path</b> your customer should follow",
+    "PILL_5": "<b>Add descriptions</b> on each button to be more sprecific"
   },
   "MARKET": {
     "TITLE": "The difficulty in directing your customers to <br /> the right channel translates into",
