@@ -174,7 +174,6 @@ export default function Solutions(props) {
                                                             </Col>
                                                             <Col xs={12}>
                                                                 <div className="clients-page_section-name text-center mt-2 white">
-                                                                    Utilities
                                                                     <Trans t={t} i18nKey="SOLUTIONS.UTILITIES"/>
                                                                 </div>
                                                             </Col>
