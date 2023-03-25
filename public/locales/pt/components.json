@@ -135,5 +135,31 @@
   "THANKYOU": {
     "MESSAGE": "Enquanto isso, <br /> <b> convidamos você </b> <br /> a explorar nossa <br /> seção de recursos. <br /> <b> Aproveite-os! </b>",
     "BUTTON": "Ver recursos"
+  },
+  "CELDAS": {
+    "CELL_1": {
+      "TITLE": "FILA VIRTUAL",
+      "SUBTITLE": "Permite aos clientes efetuarem check-in e acompanhar a fila atravé do celular"
+    },
+    "CELL_2": {
+      "TITLE": "AGENDA ONLINE",
+      "SUBTITLE": "Permite aos clientes agendar consultas online"
+    },
+    "CELL_3": {
+      "TITLE": "ATENDIMIENTO VIRTUAL",
+      "SUBTITLE": "Sua equipe pode atender clientes de forma física e/ou virtual"
+    },
+    "CELL_4": {
+      "TITLE": "PESQUISA",
+      "SUBTITLE": "Obtenha feedback dos clientes após o atendimiento"
+    },
+    "CELL_5": {
+      "TITLE": "DIGITAL SIGNAGE",
+      "SUBTITLE": "Gerencia as invormações de suas telas de forma centralizada"
+    },
+    "CELL_6": {
+      "TITLE": "PRÉ ATENDIMIENTO",
+      "SUBTITLE": "Ofrece o canal indicado a partir de una landing page ou chatbot do WhatsApp"
+    }
   }
 }

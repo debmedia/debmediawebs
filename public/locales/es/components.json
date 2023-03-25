@@ -176,5 +176,31 @@
         "PORTUGUESE": "PT - Português"
       }
     }
+  },
+  "CELDAS": {
+    "CELL_1": {
+      "TITLE": "FILA VIRTUAL",
+      "SUBTITLE": "Permite a tus clientes hacer la fila desde su celular"
+    },
+    "CELL_2": {
+      "TITLE": "CITAS ONLINE",
+      "SUBTITLE": "Permite a tus clientes agendar citas de forma virtual."
+    },
+    "CELL_3": {
+      "TITLE": "ATENCIÓN VIRTUAL",
+      "SUBTITLE": "Tu equipo puede atender clientes de forma física y/o virtual."
+    },
+    "CELL_4": {
+      "TITLE": "ENCUESTAS",
+      "SUBTITLE": "Obtiene feedback del cliente luego de ser atendido."
+    },
+    "CELL_5": {
+      "TITLE": "CARTELERÍA DIGITAL",
+      "SUBTITLE": "Maneja la información de tus pantallas de forma centralizada."
+    },
+    "CELL_6": {
+      "TITLE": "PRE - ATENDEDOR",
+      "SUBTITLE": "Ofrece el canal indicado desde una landing page o chatbot de whatsapp."
+    }
   }
 }
