@@ -41,6 +41,7 @@
         padding: .5em .8em;
         font-weight: 700;
         font-size: 1rem;
+        white-space: nowrap;
 
         @media (min-width: 992px) {
             font-size: 1.1rem;
@@ -115,6 +116,8 @@
     }
 
     &_demobutton {
+        position: relative;
+        z-index: 10;
         border: 0;
         background-color: #2F9FEE;
         color: #fff;

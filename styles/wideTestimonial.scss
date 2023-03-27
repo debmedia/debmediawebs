@@ -1,0 +1,75 @@
+.wide-testimonial{
+    --img-size: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--img-size);
+    position: relative;
+
+    b {
+        color:  #232C61;
+    }
+
+   .card {
+    text-align: center;
+    background-color: #F6F7FB;
+    width: 90%;
+    border-radius: 24px;
+    border: none;
+    position: relative;
+   }
+
+   .card-title {
+    color: #232C61;
+    font-size: 2rem;
+    font-weight: 700;
+   }
+
+   .card-subtitle {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #2C89E1;
+   }
+
+   .card-text {
+    font-size: 1rem;
+    position: relative;
+   }
+   .card-body {
+    padding-top: calc(var(--img-size) /2 + 10px);
+    padding-left: 3rem;
+    padding-right: 3rem;
+   }
+   .testimonial-image {
+    position: absolute;
+    top:calc(-0.5 * var(--img-size));
+    width: 100%;
+    & > div {
+        position: relative;
+        width: var(--img-size);
+        height: var(--img-size);
+        margin: 0 auto;
+    }
+   }
+
+   .back-drop {
+    --overlap: 80px;
+    position: absolute;
+    width: 100%;
+    height: calc(50% + var(--overlap));
+    bottom: calc(-1 * var(--overlap));
+    background-color: #232C61;
+   }
+
+   .quote1{
+    position: absolute;
+    width: 30px;
+    top: -10px;
+    left: -30px;
+   }
+   .quote2{
+    position: absolute;
+    bottom: 10px;
+    right: -15px;
+   }
+}

@@ -13,12 +13,13 @@ import servixs from '../../asset/imgs/servicios.svg'
 import gobxs from '../../asset/imgs/gob.svg'
 import telcosxs from '../../asset/imgs/telcos.svg'
 import utixs from '../../asset/imgs/uti.svg'
-
-import Link from 'next/link'
+import { useTranslation, Trans } from 'next-i18next';
+import Link from 'next-translate-routes/link'
 import Image from 'next/image'
 
 
 export default function Solutions(props) {
+    const { t } = useTranslation(['clientes', 'common']);
     const [dataJson, setData] = useState([]);
     const [selectedCat, setCat] = useState("all");
 
@@ -39,12 +40,10 @@ export default function Solutions(props) {
                     <Row>
                         <Col className="text-center">
                             <h1>
-                                Lo hemos hecho con empresas líderes,
-                                podemos hacerlo con la tuya también
+                                <Trans t={t} i18nKey="SOLUTIONS.TITLE"/>
                             </h1>
-                            <p>
-                                Más de 350 empresas en diferentes industrias eligen Debmedia <br className="d-none d-sm-block" />
-                                para gestionar la experiencia de sus clientes
+                            <p className="no-br-sm">
+                                <Trans t={t} i18nKey="SOLUTIONS.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>
@@ -70,7 +69,7 @@ export default function Solutions(props) {
                                                             </Col>
                                                             <Col xs={12}>
                                                                 <div className="clients-page_section-name text-center mt-2 white">
-                                                                    Banca y Seguros
+                                                                    <Trans t={t} i18nKey="SOLUTIONS.BANKING"/>
                                                                 </div>
                                                             </Col>
                                                         </Row>
@@ -91,7 +90,7 @@ export default function Solutions(props) {
                                                             </Col>
                                                             <Col xs={12}>
                                                                 <div className="clients-page_section-name text-center mt-2 white">
-                                                                    Salud
+                                                                    <Trans t={t} i18nKey="SOLUTIONS.HEALTH"/>
                                                                 </div>
                                                             </Col>
                                                         </Row>
@@ -112,7 +111,7 @@ export default function Solutions(props) {
                                                             </Col>
                                                             <Col xs={12}>
                                                                 <div className="clients-page_section-name text-center mt-2 white">
-                                                                    Gobierno
+                                                                    <Trans t={t} i18nKey="SOLUTIONS.GOVERNMENT"/>
                                                                 </div>
                                                             </Col>
                                                         </Row>
@@ -133,8 +132,7 @@ export default function Solutions(props) {
                                                             </Col>
                                                             <Col xs={12}>
                                                                 <div className="clients-page_section-name text-center mt-2 white">
-                                                                    Servicios
-                                                                    y retail
+                                                                    <Trans t={t} i18nKey="SOLUTIONS.RETAIL"/>
                                                                 </div>
                                                             </Col>
                                                         </Row>
@@ -155,7 +153,7 @@ export default function Solutions(props) {
                                                             </Col>
                                                             <Col xs={12}>
                                                                 <div className="clients-page_section-name text-center mt-2 white">
-                                                                    Telcos
+                                                                    <Trans t={t} i18nKey="SOLUTIONS.TELECOMMUNICATIONS"/>
                                                                 </div>
                                                             </Col>
                                                         </Row>
@@ -176,7 +174,7 @@ export default function Solutions(props) {
                                                             </Col>
                                                             <Col xs={12}>
                                                                 <div className="clients-page_section-name text-center mt-2 white">
-                                                                    Utilities
+                                                                    <Trans t={t} i18nKey="SOLUTIONS.UTILITIES"/>
                                                                 </div>
                                                             </Col>
                                                         </Row>
@@ -225,7 +223,7 @@ export default function Solutions(props) {
                             </div>
 
                             <h4>
-                                Banca y Seguros
+                                <Trans t={t} i18nKey="SOLUTIONS.BANKING"/>
                             </h4>
 
                         </Col>
@@ -235,7 +233,7 @@ export default function Solutions(props) {
                             <Image src={saludxs.src} width={50}
                                 height={50} className={'img-fluid'} />
                             <h4>
-                                Salud
+                            <Trans t={t} i18nKey="SOLUTIONS.HEALTH"/>
                             </h4>
 
                         </Col>
@@ -245,7 +243,7 @@ export default function Solutions(props) {
                             <Image src={gobxs.src} width={50}
                                 height={50} className={'img-fluid'} />
                             <h4>
-                                Gobierno
+                            <Trans t={t} i18nKey="SOLUTIONS.GOVERNMENT"/>
                             </h4>
 
                         </Col>
@@ -255,7 +253,7 @@ export default function Solutions(props) {
                             <Image src={servixs.src} width={50}
                                 height={50} className={'img-fluid'} />
                             <h4>
-                                Retail y servicios
+                                <Trans t={t} i18nKey="SOLUTIONS.RETAIL"/>
                             </h4>
 
                         </Col>
@@ -265,7 +263,7 @@ export default function Solutions(props) {
                             <Image src={telcosxs.src} width={50}
                                 height={50} className={'img-fluid'} />
                             <h4>
-                                Telecomunicaciones
+                            <Trans t={t} i18nKey="SOLUTIONS.TELECOMMUNICATIONS"/>
                             </h4>
 
                         </Col>
@@ -275,7 +273,7 @@ export default function Solutions(props) {
                             <Image src={utixs.src} width={50}
                                 height={50} className={'img-fluid'} />
                             <h4>
-                                Utilities
+                            <Trans t={t} i18nKey="SOLUTIONS.UTILITIES"/>
                             </h4>
 
                         </Col>

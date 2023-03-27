@@ -1,29 +1,89 @@
-[
-  {
-    "text": " Hablaremos sobre tu empresa.",
-    "key":"1",
-    "image": {
-      "url": "step1.png",
-      "width": 780,
-      "height": 600
+{
+  "es": [
+    {
+      "text": "Hablaremos sobre tu empresa.",
+      "key": 1,
+      "image": {
+        "url": "step1.png",
+        "width": 780,
+        "height": 600
+      }
+    },
+    {
+      "text": "Evalúaremos los objetivos que tenemos en común.",
+      "key": 2,
+      "image": {
+        "url": "step2.png",
+        "width": 620,
+        "height": 550
+      }
+    },
+    {
+      "text": "Te daremos las herramientas técnicas y comerciales para que seas un Debmedia Partner exitoso.",
+      "key": 3,
+      "image": {
+        "url": "step3.png",
+        "width": 400,
+        "height": 500
+      }
     }
-  },
-  {
-    "text": " Evalúaremos los objetivos que tenemos en común. ",
-    "key":"2",
-    "image": {
-      "url": "step2.png",
-      "width": 620,
-      "height": 550
+  ],
+  "pt": [
+    {
+      "text": "Conversemos sobre sua empresa.",
+      "key": 1,
+      "image": {
+        "url": "step1.png",
+        "width": 780,
+        "height": 600
+      }
+    },
+    {
+      "text": "Avaliaremos os objetivos que temos em comum.",
+      "key": 2,
+      "image": {
+        "url": "step2.png",
+        "width": 620,
+        "height": 550
+      }
+    },
+    {
+      "text": "A Debmedia oferece as ferramentas e o suporte que você precisa para ser um Parceiro de Sucesso.",
+      "key": 3,
+      "image": {
+        "url": "step3.png",
+        "width": 400,
+        "height": 500
+      }
     }
-  },
-  {
-    "text": "Te daremos las herramientas técnicas y comerciales para que seas un Debmedia Partner exitoso.",
-    "key":"3",
-    "image": {
-      "url": "step3.png",
-      "width": 400,
-      "height": 500
+  ],
+  "en": [
+    {
+      "text": "We will talk about your company.",
+      "key": 1,
+      "image": {
+        "url": "step1.png",
+        "width": 780,
+        "height": 600
+      }
+    },
+    {
+      "text": "We will evaluate the goals we have in common.",
+      "key": 2,
+      "image": {
+        "url": "step2.png",
+        "width": 620,
+        "height": 550
+      }
+    },
+    {
+      "text": "We will give you the technical and commercial tools to be a successful Debmedia Partner.",
+      "key": 3,
+      "image": {
+        "url": "step3.png",
+        "width": 400,
+        "height": 500
+      }
     }
-  }
-]
+  ]
+}

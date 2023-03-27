@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import mypic from '../../asset/imgs/preatendedor/main.png'
@@ -6,9 +6,11 @@ import mypicxs from '../../asset/imgs/preatendedor/main-pre.png'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import shape3 from '../../asset/imgs/home/headershape3.svg'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Header() {
+    const { t } = useTranslation(['preatendedor', 'common']);
 
     return (
         <>
@@ -28,16 +30,15 @@ export default function Header() {
                     <Container>
                         <Row>
                             <Col className="mainTitles">
-                                <h1 className="preatendedor-home_title">
-                                Agiliza la atención desde <br className="d-none d-sm-block" /> WhatsApp  o
-un portal web
+                                <h1 className="preatendedor-home_title no-br-sm">
+                                    <Trans t={t} i18nKey="HEADER.TITLE"/>
                                 </h1>
                                 {/* <p className="preatendedor-home_parraf">
                                  <b>Software de citas </b>para empresas con <br/> múltiples trámites y tipos de atención
                                 </p> */}
                                  <Link href="/contacto">
                                 <button className="preatendedor-home_demobutton">
-                                    Solicita una demo
+                                    <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                 </button></Link>
                             </Col>
                         </Row>
@@ -47,8 +48,9 @@ un portal web
             <Container className="d-flex justify-content-center preatendedor-home_text">
                 <Row>
                     <Col>
-                        <h3><b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
-                            experiencia de sus clientes con <b> Debmedia</b></h3>
+                        <h3 className="no-br-sm">
+                            <Trans t={t} i18nKey="HEADER.CAPTION"/>
+                        </h3>
                     </Col>
                 </Row>
             </Container>

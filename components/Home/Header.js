@@ -1,55 +1,76 @@
-import React, { useState, useEffect } from "react";
-import { Row, Container, Col, Modal, Button } from "react-bootstrap";
+import React from "react";
+import { Row, Container, Col, Modal} from "react-bootstrap";
 import Image from 'next/image'
 import mypic from '../../asset/imgs/home/newVideoShape.svg'
 import mypicxs from '../../asset/imgs/home/videoShape-xs.png'
-import video from '../../asset/imgs/home/debq.svg'
-import videoSm from '../../asset/imgs/home/debqSm.svg'
+import video_es from '../../asset/imgs/home/debq.svg'
+import videoSm_es from '../../asset/imgs/home/Pantalla_Software_ES.svg'
+import videoSm_pt from '../../asset/imgs/home/Pantalla_Software_PT.svg'
+import videoSm_en from '../../asset/imgs/home/Pantalla_Software_EN.svg'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next-translate-routes/router";
+
+// Imágenes con versiones para los locales
+const videoSm_lang = {es: videoSm_es,  pt: videoSm_pt, en: videoSm_en};
+const video_lang = {es: video_es}
 
 export default function Header() {
     const [modalShow, setModalShow] = React.useState(false);
-
+    const { t } = useTranslation(['home', 'common']);
+    const {locale} = useRouter();
+    const video = video_lang[locale] || video_lang["es"];
+    const videoSm = videoSm_lang[locale] || videoSm_lang["es"];
     return (
         <>
             <header>
                 <Container fluid className="header-home">
                     <div className={'image-container'} onClick={() => setModalShow(true)}>
-                        <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} />
-                        <Image src={mypicxs.src} layout="fill" className={'image d-block d-sm-none'} />
+                        <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} alt=""/>
+                        <Image src={mypicxs.src} layout="fill" className={'image d-block d-sm-none'} alt=""/>
                     </div>
                     {/* <div className="d-none d-sm-block">
                         <img src={shape3.src} className="header-home_shape3" />
                     </div> */}
                     <div className="d-block d-sm-none" onClick={() => setModalShow(true)}>
-                        <img src={video.src} className="header-home_mainNoti" />
+                        <img src={video} className="header-home_mainNoti" />
                     </div>
                      <div className="d-none d-sm-block header-home_viewVideo"  onClick={() => setModalShow(true)}>
-                        <Image src={videoSm.src} layout="fill" className="header-home_mainNoti" />
+                        <Image src={videoSm} layout="fill" className="header-home_mainNoti" alt=""/>
                     </div>
                     <div className="d-none d-sm-block">
-                        <img src={shape1.src} className="header-home_shape1" />
-                        <img src={shape2.src} className="header-home_shape2" />
+                        <img src={shape1.src} className="header-home_shape1" alt=""/>
+                        <img src={shape2.src} className="header-home_shape2" alt=""/>
                     </div>
+                    { locale === "es" &&
                     <MyVerticallyCenteredModal
                         show={modalShow}
                         onHide={() => setModalShow(false)}
-                    />
+                    />}
                     <Container>
                         <Row>
                             <Col className="mainTitles fixZindex">
-                                <span className="header-home_product">Customer Journey Manager</span>
-                                <h1 className="header-home_title">
-                                    Haz más eficientes tus<br className="d-none d-sm-block" /> canales de atención
+                                <span className="header-home_product">{t("common:CUSTOMER_JOURNEY_MANAGER")}</span>
+                                <h1 className="header-home_title" >
+                                    <Trans t={t} i18nKey={"HEADER.TITLE"}>
+                                        Haz más eficientes tus<br className="d-none d-sm-block" /> canales de atención
+                                    </Trans>
                                 </h1>
                                 <p className="header-home_parraf">
-                                    Software para <b>gestionar la atención<br className="d-none d-sm-block" /> al cliente virtual</b> y presencial.
+                                    <Trans t={t} i18nKey={"HEADER.SUBTITLE"}>
+                                        Software para 
+                                        <b>gestionar la atención
+                                            <br className="d-none d-sm-block" /> 
+                                            al cliente virtual
+                                        </b>
+                                        y presencial.
+                                    </Trans>
                                 </p>
                                 <Link href="/contacto">
                                     <button className="header-home_demobutton">
-                                        Solicita una demo
+                                        {t("common:REQUEST_A_DEMO")}
                                     </button>
                                 </Link>
                             </Col>
@@ -60,8 +81,12 @@ export default function Header() {
             <Container className="d-flex justify-content-center header-home_text">
                 <Row>
                     <Col>
-                        <h3><b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
-                            experiencia de sus clientes con <b> Debmedia</b></h3>
+                        <h3>
+                            <Trans t={t} i18nKey="HEADER.CAPTION">
+                            <b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
+                            experiencia de sus clientes con <b> Debmedia</b>
+                            </Trans>
+                        </h3>
                     </Col>
                 </Row>
             </Container>

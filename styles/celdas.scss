@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap');
+
+.celdas-container {
+    --size: 1;
+    --unit: 1vw;
+    --unit-size: var(--size) * var(--unit);
+    position: relative;
+    margin: 0 auto;
+
+    @media (min-width: 576px){
+        width: calc(28*var(--unit-size));
+        --size: 7;
+        --unit: 1px;
+    }
+
+    @media (min-width: 768px){
+        --size: 10;
+    }
+
+    @media (min-width: 992px){
+        --size: 1;
+        --unit: 1vw;
+    }
+
+    .celdas-center{
+        position: relative;
+        padding: 3rem;
+        @media (min-width: 576px){
+            padding: unset;
+        }
+        .celdas-main-text {
+
+            font-family: 'Almarai', sans-serif;
+            position: absolute;
+            top:47%;
+            left: 50%;
+            z-index: 300;
+            font-size: calc(13*var(--unit-size));
+            transform: translate(-50%, -50%);
+            color: #404040;
+
+            @media (min-width: 576px){
+                font-size: calc(4.5*var(--unit-size));
+            }
+
+            b {
+                font-family: inherit;
+                color: #21609C;
+                font-weight: 500;
+                font-size: 1.05em;
+            }
+        }
+    }
+
+    .celdas-popup {
+        align-items: center;
+        background-color: #21609C;
+        color: black;
+        border-radius: 30rem;
+        display: flex;
+        gap: 1rem;
+        text-align: left;
+        margin-bottom: 2rem;
+        height: 5rem;
+        padding: 10px;
+        line-height: 1.1em;
+        font-size: 0.8rem;
+
+        @media (min-width: 576px){
+            position: absolute;
+            height: calc(5.5*var(--unit-size));
+            width: calc(24*var(--unit-size));
+            font-size: calc(0.8*var(--unit-size));
+            line-height: calc(1*var(--unit-size));
+            padding: calc(0.5*var(--unit-size));
+            margin: unset;
+            gap: calc(1*var(--unit-size));
+        }
+
+        .celdas-popup-content {
+
+            &>div:first-child {
+                font-weight: 700;
+                font-size: 1.1rem;
+                margin-bottom: 0.5em;
+                @media (min-width: 576px){
+                    font-size: calc(1.3*var(--unit-size));
+                    margin-bottom: calc(0.5*var(--unit-size));
+                }
+            }
+        }
+
+        .celdas-popup-img > span{
+            display: block!important;
+        }
+
+        .celdas-popup-img {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 60px;
+            box-shadow: 3.44px 3.44px 4.9px rgba(0, 0, 0, 0.15);
+            border-radius: 100rem;
+            
+            @media (min-width: 576px){
+                flex-basis: calc(4.2*var(--unit-size));
+
+            }
+
+        }
+
+    }
+
+    --pos1: 73%;
+    --pos2: 38.5%;
+    --pos3: 94%;
+    --pos4: -3%;
+    --pos5: 0%;
+
+    .celdas-popup:nth-child(1){
+        top: var(--pos4);
+        left: var(--pos1);
+        background-color: #9BE1F9;
+    }
+    .celdas-popup:nth-child(2){
+        top: var(--pos2);
+        left: var(--pos3);
+        background-color: #6ECBF4;
+    }
+    .celdas-popup:nth-child(3){
+        bottom: var(--pos5);
+        left: var(--pos1);
+        background-color: #5EB6E4;
+    }
+    .celdas-popup:nth-child(4){
+        bottom: var(--pos5);
+        right: var(--pos1);
+        background-color: #2F9EED;
+        
+    }
+    .celdas-popup:nth-child(5){
+        top: var(--pos2);
+        right: var(--pos3);
+        background-color: #232C61;
+    }
+    .celdas-popup:nth-child(6){
+        top: var(--pos4);
+        right: var(--pos1);
+        background-color: #22619C;
+    }
+
+    .celdas-popup:nth-child(n+4):nth-child(-n+6){
+        color: white;
+        @media (min-width: 576px){
+            padding-left: calc(2.5*var(--unit-size));
+            flex-direction: row-reverse;
+        }
+    }
+}

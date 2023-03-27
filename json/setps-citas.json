@@ -1,29 +1,89 @@
-[
-  {
-    "text": " El cliente selecciona el trámite, la sucursal, fecha y hora para obtener una cita.",
-    "key":"1",
-    "image": {
-      "url": "step1.png",
-      "width": 780,
-      "height": 600
+{
+  "es": [
+    {
+      "text": "El cliente selecciona el trámite, la sucursal, fecha y hora para obtener una cita.",
+      "key": 1,
+      "image": {
+        "url": "Citas_Slide01_ES.png",
+        "width": 780,
+        "height": 600
+      }
+    },
+    {
+      "text": "Hace el check-in e ingresa al flujo de atención.",
+      "key": 2,
+      "image": {
+        "url": "Citas_Check-in_PT.png",
+        "width": 620,
+        "height": 550
+      }
+    },
+    {
+      "text": "El cliente es atendido por un ejecutivo.",
+      "key": 3,
+      "image": {
+        "url": "test.png",
+        "width": 400,
+        "height": 500
+      }
     }
-  },
-  {
-    "text": "Hace el check-in e ingresa al flujo de atención. ",
-    "key":"2",
-    "image": {
-      "url": "step2.png",
-      "width": 620,
-      "height": 550
+  ],
+  "pt": [
+    {
+      "text": "Cliente seleciona a operação, filial, data e hora do seu atendimento.",
+      "key": 1,
+      "image": {
+        "url": "Citas_Slide01_PT.png",
+        "width": 780,
+        "height": 600
+      }
+    },
+    {
+      "text": "Cliente entra no fluxo de atendimento.",
+      "key": 2,
+      "image": {
+        "url": "Citas_Check-in_PT.png",
+        "width": 620,
+        "height": 550
+      }
+    },
+    {
+      "text": "Cliente e atendido por um representante.",
+      "key": 3,
+      "image": {
+        "url": "test.png",
+        "width": 400,
+        "height": 500
+      }
     }
-  },
-  {
-    "text": " El cliente es atendido por un ejecutivo.",
-    "key":"3",
-    "image": {
-      "url": "test.png",
-      "width": 400,
-      "height": 500
+  ],
+  "en": [
+    {
+      "text": "The customer selects the service, office, date and time to get an appointment.",
+      "key": 1,
+      "image": {
+        "url": "Citas_Slide01_EN.png",
+        "width": 780,
+        "height": 600
+      }
+    },
+    {
+      "text": "The customer checks-in and enters the queue.",
+      "key": 2,
+      "image": {
+        "url": "Citas_Check-in_EN.png",
+        "width": 620,
+        "height": 550
+      }
+    },
+    {
+      "text": "The customer is served by a representative.",
+      "key": 3,
+      "image": {
+        "url": "test.png",
+        "width": 400,
+        "height": 500
+      }
     }
-  }
-]
+  ]
+}

@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import alto from '../../asset/imgs/salud/alto.svg'
 import exp from '../../asset/imgs/salud/exp.svg'
 import des from '../../asset/imgs/salud/des.svg'
 import arrow from '../../asset/imgs/home/arrow.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
+    const { t } = useTranslation(['salud', 'common']);
+
     return (
         <>
             <Container fluid className="market-banca-section">
@@ -15,9 +17,7 @@ export default function Market() {
                     <Row>
                         <Col className="market-banca-section_maintitle">
                             <h3 className="text-center">
-                            Los pacientes actuales
-                                <br /><b>ya no toleran 
-un proceso de atención ineficiente</b>
+                                <Trans t={t} i18nKey="MARKET.TITLE"/>
                             </h3>
                         </Col>
                     </Row>
@@ -29,10 +29,10 @@ un proceso de atención ineficiente</b>
                             </div>
 
                             <h4 className="market-banca-section_title">
-                            Altos costos en 
+                            <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-banca-section_parraf">
-                            procesos manuales.
+                            <Trans t={t} i18nKey="MARKET.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-banca-section_div">
@@ -42,10 +42,10 @@ un proceso de atención ineficiente</b>
                             </div>
 
                             <h4 className="market-banca-section_title">
-                            Experiencias frustrantes 
+                            <Trans t={t} i18nKey="MARKET.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="market-banca-section_parraf">
-                            para los pacientes.
+                            <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-banca-section_div">
@@ -55,10 +55,10 @@ un proceso de atención ineficiente</b>
                             </div>
 
                             <h4 className="market-banca-section_title">
-                                Desconocimiento de
+                            <Trans t={t} i18nKey="MARKET.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="market-banca-section_parraf">
-                                la performance de los profesionales.
+                            <Trans t={t} i18nKey="MARKET.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>

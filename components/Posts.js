@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useRouter } from "next-translate-routes/router";
 import BlogData from '../json/blog.json';
 import { Row, Container, Col } from "react-bootstrap";
-import axios from "axios";
+import { useTranslation, Trans } from 'next-i18next';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Link from 'next/link'
-
+import Link from 'next-translate-routes/link'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -17,79 +18,49 @@ import "swiper/css/navigation";
 import SwiperCore, { Autoplay, FreeMode, Pagination } from 'swiper';
 import { Navigation } from "swiper";
 
-
 // install Swiper modules
 SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
-const basePath = '/asset/imgs/brands'
-
-
 export default function Brands(props) {
+    const { t } = useTranslation(['components', 'common']);
+    const { locale } = useRouter();
     const [posts, setPosts] = useState([]);
-    const [title, setTitle] = useState({ title: "", sec: "" });
-
-    const r = BlogData;
-
+    const [title, setTitle] = useState("");
 
     useEffect(() => {
-        BlogData.forEach((value) => {
-            if (props.indistry) {
-                console.log(value);
-
-            }
-        });
-
+        const localBlogData = BlogData[locale] || BlogData["es"];
         if (props.indistry) {
             switch (props.indistry) {
                 case "banca":
-                    setTitle({
-                        title: `Explora contenidos  \n relacionados al `,
-                        sec: "sector financiero"
-                    });
+                    setTitle("POSTS.BANKING.TITLE");
                     break;
                 case "salud":
-                    setTitle({
-                        title: `Explora contenidos  \n relacionados al la `,
-                        sec: "industria health"
-                    });
+                    setTitle("POSTS.HEALTH.TITLE");
                     break;
                 case "gobierno":
-                    setTitle({
-                        title: `Explora contenidos  \n relacionados al `,
-                        sec: "sector gubernamental"
-                    });
+                    setTitle("POSTS.GOVERNMENT.TITLE");
                     break;
                 case "retail":
-                    setTitle({
-                        title: `Explora contenidos relacionados al \n`,
-                        sec: "sector retail y de servicios"
-                    });
+                    setTitle("POSTS.RETAIL.TITLE");
                     break;
                 case "telcos":
-                    setTitle({
-                        title: `Explora contenidos relacionados al \n`,
-                        sec: "sector retail y de servicios"
-                    });
+                    setTitle("POSTS.TELECOMMUNICATIONS.TITLE");
                     break;
                 case "utilities":
-                    setTitle({
-                        title: `Explora contenidos relacionados al \n`,
-                        sec: "sector retail y de servicios"
-                    });
+                    setTitle("POSTS.UTILITIES.TITLE");
                     break;
             }
-            const filter = BlogData.filter(post => post.indistry === props.indistry);
+            const filter = localBlogData.filter(post => post.indistry === props.indistry);
             setPosts(filter);
         } else {
-            setPosts(BlogData);
+            setPosts(localBlogData);
         }
-    }, [props]);
-
+    }, [props, locale]);
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     return (
-        <>
+        <>{locale === "es" && posts.length > 0 &&
             <Container fluid className={"posts-slider " + (props.indistry ? 'noGrey' : '')}>
                 <Container>
                     {
@@ -97,7 +68,7 @@ export default function Brands(props) {
                         <Row>
                             <Col className="text-center posts-slider_title">
                                 <h2>
-                                    {title.title} <b>{title.sec}</b>
+                                    <Trans t={t} i18nKey={title}/>
                                 </h2>
                             </Col>
                         </Row>
@@ -157,16 +128,12 @@ export default function Brands(props) {
                                                     </h1>
                                                     <Link href={item.url} passHref className="posts-slider_content-post_link">
                                                         <a target="_blank" rel="noopener noreferrer">
-                                                            Ver más
+                                                            <Trans t={t} i18nKey="common:SEE_MORE"/>
                                                         </a>
                                                     </Link>
                                                 </div>
-
                                             </div>
-
-
                                         </div>
-
                                     </SwiperSlide>
                                 )
                                 )}
@@ -177,6 +144,7 @@ export default function Brands(props) {
                     </Row>
                 </Container>
             </Container>
+        }
         </>
     );
 }

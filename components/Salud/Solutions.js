@@ -2,22 +2,23 @@ import React, { useState, useEffect } from "react";
 import { Row, Container, Col, Tab, Nav, Accordion } from "react-bootstrap";
 import Image from 'next/image'
 import check from '../../asset/imgs/salud/check.svg'
-import logosbanca from '../../asset/imgs/salud/logos-salud.png'
-import check_white from '../../asset/imgs/home/check-m.svg'
 import Data from '../../json/services-salud.json';
 import Logos from '../../json/brandsSlide.json';
-import Link from 'next/link'
-
+import Link from 'next-translate-routes/link'
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next-translate-routes/router";
 
 export default function Solutions(props) {
+    const { t } = useTranslation(['salud', 'common']);
     const [dataJson, setData] = useState([]);
     const [logos, setLogos] = useState([]);
+    const { locale } = useRouter();
 
     useEffect(() => {
         const result = Logos.filter(logo => logo.category === "salud");
         setLogos(result);
-        setData(Data);
-    }, []);
+        setData(Data[locale] || Data['es']);
+    }, [locale]);
 
 
     return (
@@ -26,8 +27,7 @@ export default function Solutions(props) {
                 <Row>
                     <Col className="solutions-indus-section_maintitle">
                         <h3 className="text-center">
-                            <b> Ofrece a tus pacientes </b> <br />
-                            la atención que se merecen
+                            <Trans t={t} i18nKey="SOLUTIONS.TITLE"/>
                         </h3>
                     </Col>
                 </Row>
@@ -46,9 +46,11 @@ export default function Solutions(props) {
                             </div>
 
                             <h4 className="solutions-indus-section_title">
-                            Procesos digitalizados 
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_1.TITLE"/>
                             </h4>
-                            <p>que mejoran su experiencia.</p>
+                            <p>
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_1.SUBTITLE"/>
+                            </p>
                         </Col>
                         <Col sm={4} xs={4} className="solutions-indus-section_div">
                             <div className="solutions-indus-section_div-img  d-none d-sm-block">
@@ -60,9 +62,11 @@ export default function Solutions(props) {
                                     height={60} className={'img-fluid'} />
                             </div>
                             <h4 className="solutions-indus-section_title">
-                            Flujos adaptados
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_2.TITLE"/>
                             </h4>
-                            <p>a las necesidades que tienen.</p>
+                            <p>
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_2.SUBTITLE"/>
+                            </p>
                         </Col>
                         <Col sm={4} xs={4} className="solutions-indus-section_div">
                             <div className="solutions-indus-section_div-img  d-none d-sm-block">
@@ -74,9 +78,11 @@ export default function Solutions(props) {
                                     height={60} className={'img-fluid'} />
                             </div>
                             <h4 className="solutions-indus-section_title">
-                            Métricas de performance 
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_3.TITLE"/> 
                             </h4>
-                            <p> para conocer el rendimiento.</p>
+                            <p>
+                            <Trans t={t} i18nKey="SOLUTIONS.CAPTION_3.SUBTITLE"/>
+                            </p>
                         </Col>
                     </Row>
                 </Container>
@@ -85,8 +91,9 @@ export default function Solutions(props) {
                 <Row>
                     <Col xs="12" className="solutions-indus-section_maintitle">
                         <h3 className="text-center">
-                            <b> Organizaciones líderes</b> confían<br className="d-none d-sm-block" />
-                            en las soluciones de<b> Debmedia</b> <br />
+                        <Trans t={t} i18nKey="SOLUTIONS.ORGANIZATION_TITLE">
+                            <b>0</b>1<br className="d-none d-sm-block" />3<b>0</b><br />
+                        </Trans>
                         </h3>
                     </Col>
                     <Col xs="12" className="d-flex justify-content-center">
@@ -106,7 +113,7 @@ export default function Solutions(props) {
                     <Row>
                         <Col className="solutions-indus-tabs_title mb-sm-5 mb-3">
                             <h2>
-                            Soluciones de<b> Debmedia </b>para clínicas, <br/>laboratorios y farmacias
+                            <Trans t={t} i18nKey="SOLUTIONS.SOLUTIONS_TITLE"/>
 
                             </h2>
                         </Col>
@@ -140,7 +147,7 @@ export default function Solutions(props) {
                                                             </p>
                                                             <Link href={item.url}>
                                                                 <button>
-                                                                    Conoce más
+                                                                    <Trans t={t} i18nKey="common:LEARN_MORE"/>
                                                                 </button>
                                                             </Link>
                                                         </Col>
@@ -169,7 +176,7 @@ export default function Solutions(props) {
                                                 </h2>
                                                 <Link href={item.url}>
                                                     <button>
-                                                        Conoce más
+                                                        <Trans t={t} i18nKey="common:LEARN_MORE"/>
                                                     </button>
                                                 </Link>
                                             </Col>

@@ -5,18 +5,19 @@ import intera from '../../asset/imgs/utilities/inter.svg'
 import toleran from '../../asset/imgs/utilities/toleran.svg'
 import mayoria from '../../asset/imgs/utilities/mayoria.svg'
 import arrow from '../../asset/imgs/home/arrow.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
+    const { t } = useTranslation(['utilities', 'common']);
+
     return (
         <>
             <Container fluid className="market-utilities-section">
                 <Container>
                     <Row>
                         <Col className="market-utilities-section_maintitle">
-                            <h3 className="text-center">
-                                Los clientes hoy <b><br className="d-block d-sm-none"/>no se <br className="d-none d-sm-block"/>
-                                    conforman con cualquier cosa </b>
+                            <h3 className="text-center no-br-sm">
+                                <Trans t={t} i18nKey="MARKET.TITLE"/>
                             </h3>
                         </Col>
                     </Row>
@@ -28,10 +29,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-utilities-section_title">
-                                Quieren interactuar
+                            <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-utilities-section_parraf">
-                                cuándo, dónde y cómo quieran.
+                            <Trans t={t} i18nKey="MARKET.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-utilities-section_div">
@@ -41,10 +42,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-utilities-section_title">
-                                No toleran
+                            <Trans t={t} i18nKey="MARKET.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="market-utilities-section_parraf">
-                                procesos ineficientes
+                            <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-utilities-section_div">
@@ -54,10 +55,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-utilities-section_title">
-                                Evitan en su mayoría
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="market-utilities-section_parraf">
-                                todos los procesos manuales
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>

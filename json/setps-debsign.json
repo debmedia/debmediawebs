@@ -1,56 +1,170 @@
-[
-  {
-    "text": "Planifica el contenido Programa las publicidades con hora y fecha para su publicación.",
-    "key":"1",
-    "image": {
-      "url": "step1.png",
-      "width": 700,
-      "height": 500
+{
+  "es": [
+    {
+      "text": "Planifica el contenido Programa las publicidades con hora y fecha para su publicación.",
+      "key": 1,
+      "image": {
+        "url": "Carteleria_Slide01_ES.png",
+        "width": 700,
+        "height": 500
+      }
+    },
+    {
+      "text": "Usa diferentes tipos de formatos Videos, imágenes, widgets, webs o redes sociales.",
+      "key": 2,
+      "image": {
+        "url": "Carteleria_Slide02_ES.png",
+        "width": 400,
+        "height": 450
+      }
+    },
+    {
+      "text": "Segmenta por locación Envía contenido por grupos de pantallas y sucursales.",
+      "key": 3,
+      "image": {
+        "url": "Carteleria_Slide03_ES.png",
+        "width": 400,
+        "height": 550
+      }
+    },
+    {
+      "text": "Actualiza contenido en tiempo real Aplica cambios instantáneos de forma simple.",
+      "key": 4,
+      "image": {
+        "url": "Carteleria_Slide04_ES.png",
+        "width": 700,
+        "height": 800
+      }
+    },
+    {
+      "text": "Monitoriza el rendimiento Obtén informes intuitivos en tiempo real.",
+      "key": 5,
+      "image": {
+        "url": "Carteleria_Slide05_ES.png",
+        "width": 400,
+        "height": 600
+      }
+    },
+    {
+      "text": "Usa tantos templates Personaliza las publicidades con diferentes elementos como necesites.",
+      "key": 6,
+      "image": {
+        "url": "Carteleria_Slide06_ES.png",
+        "width": 480,
+        "height": 400
+      }
     }
-  },
-  {
-    "text": "Usa diferentes tipos de formatos Videos, imágenes, widgets, webs o redes sociales.",
-    "key":"2",
-    "image": {
-      "url": "step2.png",
-      "width": 400,
-      "height": 450
+  ],
+  "pt": [
+    {
+      "text": "Planeje o conteúdo: Programe anúncios com hora e data de publicação.",
+      "key": 1,
+      "image": {
+        "url": "Carteleria_Slide01_PT.png",
+        "width": 700,
+        "height": 500
+      }
+    },
+    {
+      "text": "Use diferentes tipos de formatos: Vídeos, imagens, widgets, webs ou redes sociais.",
+      "key": 2,
+      "image": {
+        "url": "Carteleria_Slide02_PT.png",
+        "width": 400,
+        "height": 450
+      }
+    },
+    {
+      "text": "Segmente por localização: Envie conteúdo por grupos de visor e sucursais.",
+      "key": 3,
+      "image": {
+        "url": "Carteleria_Slide03_PT.png",
+        "width": 400,
+        "height": 550
+      }
+    },
+    {
+      "text": "Atualize o conteúdo em tempo real: Aplique mudanças instantâneas de uma maneira simples.",
+      "key": 4,
+      "image": {
+        "url": "Carteleria_Slide04_PT.png",
+        "width": 700,
+        "height": 800
+      }
+    },
+    {
+      "text": "Monitore a performance: Obtenha relatórios intuitivos, em tempo real.",
+      "key": 5,
+      "image": {
+        "url": "Carteleria_Slide05_PT.png",
+        "width": 400,
+        "height": 600
+      }
+    },
+    {
+      "text": "Use templates como modelos: Personalize os anúncios com quantos elementos diferentes você precisar.",
+      "key": 6,
+      "image": {
+        "url": "Carteleria_Slide06_PT.png",
+        "width": 480,
+        "height": 400
+      }
     }
-  },
-  {
-    "text": "Segmenta por locación Envía contenido por grupos de pantallas y sucursales.",
-    "key":"3",
-    "image": {
-      "url": "step3.png",
-      "width": 400,
-      "height": 550
+  ],
+  "en": [
+    {
+      "text": "Plan content: Schedule advertisements with time and date for publication.",
+      "key": 1,
+      "image": {
+        "url": "Carteleria_Slide01_EN.png",
+        "width": 700,
+        "height": 500
+      }
+    },
+    {
+      "text": "Use different types of formats: videos, images, widgets, webs or social networks.",
+      "key": 2,
+      "image": {
+        "url": "Carteleria_Slide02_EN.png",
+        "width": 400,
+        "height": 450
+      }
+    },
+    {
+      "text": "Segment by location: Show content by groups of display devices or offices.",
+      "key": 3,
+      "image": {
+        "url": "Carteleria_Slide03_EN.png",
+        "width": 400,
+        "height": 550
+      }
+    },
+    {
+      "text": "Update content in real time: Apply instant changes in a simple way.",
+      "key": 4,
+      "image": {
+        "url": "Carteleria_Slide04_EN.png",
+        "width": 700,
+        "height": 800
+      }
+    },
+    {
+      "text": "Monitor performance: Get intuitive reports in real time.",
+      "key": 5,
+      "image": {
+        "url": "Carteleria_Slide05_EN.png",
+        "width": 400,
+        "height": 600
+      }
+    },
+    {
+      "text": "Use as many templates: Customize ads with different elements as you need.",
+      "key": 6,
+      "image": {
+        "url": "Carteleria_Slide06_EN.png",
+        "width": 480,
+        "height": 400
+      }
     }
-  },
-  {
-    "text": "Actualiza contenido en tiempo real Aplica cambios instantáneos de forma simple.",
-    "key":"4",
-    "image": {
-      "url": "step4.png",
-      "width": 700,
-      "height": 800
-    }
-  },
-  {
-    "text": "Monitoriza el rendimiento Obtén informes intuitivos en tiempo real. ",
-    "key":"5",
-    "image": {
-      "url": "step5.png",
-      "width": 400,
-      "height": 600
-    }
-  },
-  {
-    "text": "Usa tantos templates Personaliza las publicidades con diferentes elementos como necesites.",
-    "key":"6",
-    "image": {
-      "url": "step6.png",
-      "width": 480,
-      "height": 400
-    }
-  }
-]
+  ]
+}

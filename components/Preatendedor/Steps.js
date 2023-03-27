@@ -1,26 +1,28 @@
-import React, { useState, useEffect } from "react";
-import { Row, Container, Col, Tab, Nav, Accordion } from "react-bootstrap";
+import React from "react";
+import { Row, Container, Col} from "react-bootstrap";
 import Image from 'next/image'
 import check_blue from '../../asset/imgs/home/check_blue.svg'
 import check_white from '../../asset/imgs/home/check-m.svg'
-import wapp from '../../asset/imgs/preatendedor/wapp.png'
-import wapp1 from '../../asset/imgs/preatendedor/wapp1.png'
-import wapp2 from '../../asset/imgs/preatendedor/wapp2.png'
+import wapp1_es from '../../asset/imgs/preatendedor/Chatbot_ES.png'
+import wapp1_pt from '../../asset/imgs/preatendedor/Chatbot_PT.png'
+import wapp1_en from '../../asset/imgs/preatendedor/Chatbot_EN.png'
+import { useTranslation, Trans } from 'next-i18next';
+import PillList from "../PillList";
+import { useRouter } from "next/dist/client/router";
 
-import { useMediaQuery } from 'react-responsive'
-import shape1 from '../../asset/imgs/mobile/shapeTabs.svg'
-
+const wapp1_lang = {es: wapp1_es, pt: wapp1_pt, en: wapp1_en};
 
 export default function Solutions() {
-    const isMobile = useMediaQuery({ query: '(max-width:899px)' })
+    const { t } = useTranslation(['preatendedor', 'common']);
+    const { locale } = useRouter();
+    const wapp1 = wapp1_lang[locale] || wapp1_lang["es"];
     return (
         <>
             <Container className="setps-top">
                 <Row>
                     <Col className="setps-section_preatendedor_maintitle">
                         <h3 className="text-center">
-                            <b>Direcciona a tus clientes
-                            </b> más rápido <br />al canal de atención indicado
+                            <Trans t={t} i18nKey="STEPS.TITLE"/>
                         </h3>
                     </Col>
                 </Row>
@@ -39,11 +41,11 @@ export default function Solutions() {
                             </div>
 
                             <h4 className="setps-section_preatendedor_title">
-                                Automatiza los procesos
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.TITLE"/>
 
                             </h4>
                             <p className="setps-section_preatendedor_parraf">
-                                y reduce costos.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-section_preatendedor_div">
@@ -56,11 +58,11 @@ export default function Solutions() {
                                     height={60} className={'img-fluid'} />
                             </div>
                             <h4 className="setps-section_preatendedor_title">
-                                Simplifica el viaje
+                                <Trans t={t} i18nKey="STEPS.CAPTION_2.TITLE"/>
 
                             </h4>
                             <p className="setps-section_preatendedor_parraf">
-                                de tus clientes.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-section_preatendedor_div">
@@ -73,11 +75,10 @@ export default function Solutions() {
                                     height={60} className={'img-fluid'} />
                             </div>
                             <h4 className="setps-section_preatendedor_title">
-                                Mejora los tiempos
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="setps-section_preatendedor_parraf">
-                                de respuesta y agiliza <br />
-                                la atención.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>
@@ -88,17 +89,19 @@ export default function Solutions() {
                     <Row>
                         <Col sm="12" className="wapp-preatendedor-section_maintitle">
                             <h3 className="text-center">
-                                <b>Direcciona a tus clientes a través de WhatsApp </b><br />
-                                para que elijan el canal de atención más adecuado
+                            <Trans t={t} i18nKey="STEPS.CAPTION"/>
                             </h3>
                         </Col>
                     </Row>
                     <Row className="text-center mt-5 d-flex justify-content-center">
-                        <Col sm="5" xs="10">
+                        <Col sm="5" xs="10" className="d-flex justify-content-center flex-column">
                             <img src={wapp1.src} alt="wapp" className={'img-fluid'} />
                         </Col>
-                        <Col sm="5" xs="10" className="mt-sm-5 mt-3">
-                            <img src={wapp2.src} alt="wapp" className={'img-fluid'} />
+                        <Col sm="5" xs="10" className="d-flex justify-content-center flex-column">
+                            <PillList
+                            t={t}
+                            items={["STEPS.PILL_1","STEPS.PILL_2","STEPS.PILL_3","STEPS.PILL_4"]}
+                            />
                         </Col>
                     </Row>
                     {/* <Col sm={{ span: 10, offset: 1 }} className="text-center  mt-5">

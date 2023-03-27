@@ -1,38 +1,116 @@
-[
-  {
-    "text": " Tu cliente hace el check-in desde Kiosco, tótem o móvil.",
-    "key":"1",
-    "image": {
-      "url": "step1.png",
-      "width": 400,
-      "height": 400
+{
+  "es": [
+    {
+      "text": "Tu cliente hace el check-in desde Kiosco, tótem o móvil.",
+      "key": 1,
+      "image": {
+        "url": "GestiondeFilas_Check-in_ES.png",
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "text": "El llamado por voz, pantallas, WhatsApp o SMS.",
+      "key": 2,
+      "image": {
+        "url": "GestiondeFilas_Llamados_ES.png",
+        "width": 470,
+        "height": 380
+      }
+    },
+    {
+      "text": "Es atendido por un colaborador que lo conoce.",
+      "key": 3,
+      "image": {
+        "url": "step3.png",
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "text": "Califica el servicio a través del sistema de encuestas.",
+      "key": 4,
+      "image": {
+        "url": "GestiondeFilas_feedback_ES.png",
+        "width": 400,
+        "height": 400
+      }
     }
-  },
-  {
-    "text": "El llamado por voz, pantallas, WhatsApp o SMS.    ",
-    "key":"2",
-    "image": {
-      "url": "step2.png",
-      "width": 470,
-      "height": 380
+  ],
+  "pt": [
+    {
+      "text": "Seu cliente faz o check-in de um quiosque, totem ou telefone celular.",
+      "key": 1,
+      "image": {
+        "url": "GestiondeFilas_Check-in_PT.png",
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "text": "A chamada é feita por voz, visor, WhatsApp ou SMS.",
+      "key": 2,
+      "image": {
+        "url": "GestiondeFilas_Llamados_PT.png",
+        "width": 470,
+        "height": 380
+      }
+    },
+    {
+      "text": "Ele é atendido por um funcionário que já o conhece.",
+      "key": 3,
+      "image": {
+        "url": "step3.png",
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "text": "Ele classifica o serviço através do sistema de enquete.",
+      "key": 4,
+      "image": {
+        "url": "GestiondeFilas_feedback_PT.png",
+        "width": 400,
+        "height": 400
+      }
     }
-  },
-  {
-    "text": "Es atendido por un colaborador que lo conoce.",
-    "key":"3",
-    "image": {
-      "url": "step3.png",
-      "width": 400,
-      "height": 400
+  ],
+  "en": [
+    {
+      "text": "Your customer checks in from a kiosk, totem or cell phone.",
+      "key": 1,
+      "image": {
+        "url": "GestiondeFilas_Check-in_EN.png",
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "text": "The call is made by voice notifications, TVs, WhatsApp or SMS.",
+      "key": 2,
+      "image": {
+        "url": "GestiondeFilas_Llamados_EN.png",
+        "width": 470,
+        "height": 380
+      }
+    },
+    {
+      "text": "They are served by a representative who knows them.",
+      "key": 3,
+      "image": {
+        "url": "step3.png",
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "text": "They are served by a representative who knows them.",
+      "key": 4,
+      "image": {
+        "url": "GestiondeFilas_feedback_EN.png",
+        "width": 400,
+        "height": 400
+      }
     }
-  },
-  {
-    "text": " Califica el servicio a través del sistema de encuestas.",
-    "key":"4",
-    "image": {
-      "url": "step4.png",
-      "width": 400,
-      "height": 400
-    }
-  }
-]
+  ]
+}

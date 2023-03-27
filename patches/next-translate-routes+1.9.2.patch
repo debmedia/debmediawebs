@@ -1,0 +1,13 @@
+diff --git a/node_modules/next-translate-routes/plugin/routesFiles.js b/node_modules/next-translate-routes/plugin/routesFiles.js
+index a989d63..39eab08 100644
+--- a/node_modules/next-translate-routes/plugin/routesFiles.js
++++ b/node_modules/next-translate-routes/plugin/routesFiles.js
+@@ -47,7 +47,7 @@ exports.isRoutesFileName = isRoutesFileName;
+  */
+ var getPagesDir = function () {
+     var pagesDirs = (0, find_pages_dir_1.findPagesDir)(process.cwd(), false);
+-    var pagesDir = pagesDirs.pages || pagesDirs.pagesDir;
++    var pagesDir = pagesDirs.pages || pagesDirs.pagesDir || pagesDirs;
+     if (!pagesDir) {
+         throw new Error(withNtrPrefix_1.ntrMessagePrefix + '`/pages` directory not found.' + pagesDirs.appDir
+             ? ' next-translate-routes does not support `/app` directory yet.'

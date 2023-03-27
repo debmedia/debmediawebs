@@ -1,35 +1,38 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
-import celda from '../../asset/imgs/nosotros/celda.svg'
-import celdaxs from '../../asset/imgs/nosotros/celda-xs.svg'
-import video from '../../asset/imgs/nosotros/celda-xs.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
+import Celdas from "../Celdas";
+import { useRouter } from "next/dist/client/router";
 
 export default function Market() {
+    const { t } = useTranslation(['nosotros', 'common']);
+    const { locale } = useRouter();
     return (
         <>
             <Container fluid className="market-nosotros-section">
                 <Container>
                     <Row>
                         <Col className="col-12 market-nosotros-section_blue market-nosotros-section_maintitle">
-                            <h3 className="text-center">
-                                ¿Qué queremos hacer  <br className="d-none d-sm-block" />
-                                por <b>las empresas?</b>
-
+                            <h3 className="text-center no-br-sm">
+                                <Trans t={t} i18nKey="MARKET.TITLE"/>
                             </h3>
                             <p>
-                                No importa si hablamos de bancos, aseguradoras, hospitales o gobiernos.<b> Los clientes quieren elegir cuándo y a través de qué canal online y offline quieren interactuar.</b>
+                                <Trans t={t} i18nKey="MARKET.PARAGRAPH_1"/>
                             </p>
                             <p>
-                                En Debmedia ayudamos a distintas organizaciones a integrar sus canales de atención, optimizar sus recursos y ofrecer una experiencia consistente a sus clientes en cada punto de contacto a través de diferentes soluciones.
+                                <Trans t={t} i18nKey="MARKET.PARAGRAPH_2"/>
                             </p>
                         </Col>
-                        <Col className="col-12 text-center mt-4">
-                            <img src={celda.src} className="img-fluid d-none d-sm-block" />
-                            <video autoPlay={true} muted={true} loop className="img-fluid d-block d-sm-none" style={{ width: '100%', height: 'auto' }}>
+                        <Col className="col-12 text-center mt-5">
+                            {locale !== "es" && <Celdas></Celdas>}
+                            {locale === "es" && 
+                            <div className="d-none d-sm-block">
+                                <Celdas></Celdas>
+                            </div>
+                            }
+                            {locale ==="es" && <video autoPlay={true} muted={true} loop className="img-fluid d-block d-sm-none" style={{ width: '100%', height: 'auto' }}>
                                 <source src={`/celdaxs.mp4`} />
-                            </video>
+                            </video>}
                         </Col>
                     </Row>
                 </Container>

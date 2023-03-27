@@ -1,27 +1,80 @@
-[
-  {
-    "name": "testimonio2",
-    "image": "person.png",
-    "company": "itau.png",
-    "comment": "Con Debmedia logramos optimizar la atención de nuestros clientes para poder brindarles una atención más eficiente y personalizada, y así aumentar su satisfacción.",
-    "person": "Lionel Baragaño",
-    "job": "Gerente de Banco Digital & Transformación"
-  },
-  {
-    "name": "testimonio1",
-    "image": "rebollar.png",
-    "company": "hir.png",
-    "comment": "Las pequeñas cosas hacen grandes diferencias en la experiencia que viven nuestros clientes. Debmedia nos ayuda a profesionalizar la atención de una manera personalizada, incluso desde antes de que inicie la atención misma.",
-    "person": "Francisco Rebollar",
-    "job": "Director de Experiencia del cliente"
-  },
-  {
-    "name": "testimonio3",
-    "image": "santos.png",
-    "company": "supervielle.png",
-    "comment": "Nuestros objetivos con la implementación de esta solución se relacionan directamente con nuestra filosofía, su propósito es mantener la cercanía con el cliente y, en ese sentido, la videollamada otorga el toque humano a las interacciones que no se realizan en forma presencial.",
-    "person": "Rodrigo Santos",
-    "job": "Agile Tribe Leader - Modelo de Atención Omnicanal"
-  }
-  
-]
+{
+  "es": [
+    {
+      "name": "testimonio2",
+      "image": "person.png",
+      "company": "itau.png",
+      "comment": "Con Debmedia logramos optimizar la atención de nuestros clientes para poder brindarles una atención más eficiente y personalizada, y así aumentar su satisfacción.",
+      "person": "Lionel Baragaño",
+      "job": "Gerente de Banco Digital & Transformación"
+    },
+    {
+      "name": "testimonio1",
+      "image": "rebollar.png",
+      "company": "hir.png",
+      "comment": "Las pequeñas cosas hacen grandes diferencias en la experiencia que viven nuestros clientes. Debmedia nos ayuda a profesionalizar la atención de una manera personalizada, incluso desde antes de que inicie la atención misma.",
+      "person": "Francisco Rebollar",
+      "job": "Director de Experiencia del cliente"
+    },
+    {
+      "name": "testimonio3",
+      "image": "santos.png",
+      "company": "supervielle.png",
+      "comment": "Nuestros objetivos con la implementación de esta solución se relacionan directamente con nuestra filosofía, su propósito es mantener la cercanía con el cliente y, en ese sentido, <b>la videollamada otorga el toque humano</b> a las interacciones que no se realizan en forma presencial.",
+      "person": "Rodrigo Santos",
+      "job": "Agile Tribe Leader - Modelo de Atención Omnicanal"
+    }
+  ],
+  "pt": [
+    {
+      "name": "testimonio2",
+      "image": "person.png",
+      "company": "itau.png",
+      "comment": "Com Debmedia, conseguimos otimizar nosso atendimento a fim de oferecer um serviço mais eficiente e personalizado, aumentando assim a satisfação do cliente.",
+      "person": "Lionel Baragaño",
+      "job": "Gerente de Banco Digital e de Transformação"
+    },
+    {
+      "name": "testimonio1",
+      "image": "rebollar.png",
+      "company": "hir.png",
+      "comment": "Pequenas coisas fazem uma grande diferença para a experiência de nossos clientes. Debmedia nos ajudou a profissionalizar o atendimento de forma personalizada, mesmo antes do início do próprio atendimento.",
+      "person": "Francisco Rebollar",
+      "job": "Diretor de Experiência do Cliente"
+    },
+    {
+      "name": "testimonio3",
+      "image": "santos.png",
+      "company": "supervielle.png",
+      "comment": "Os nossos objetivos com a implementação desta solução estão diretamente relacionados com a nossa filosofia, a sua finalidade é manter a proximidade com o cliente e, neste sentido, a videochamada dá o toque humano às interações que não são realizadas presencialmente.",
+      "person": "Rodrigo Santos",
+      "job": "Agile Tribe Leader - Modelo de Atención Omnicanal"
+    }
+  ],
+  "en": [
+    {
+      "name": "testimonio2",
+      "image": "person.png",
+      "company": "itau.png",
+      "comment": "With Debmedia we could optimize the service of our clients to provide them with a more efficient and personalized experience, thus increasing their satisfaction.",
+      "person": "Lionel Baragaño",
+      "job": "Manager of Digital Bank and Transformation"
+    },
+    {
+      "name": "testimonio1",
+      "image": "rebollar.png",
+      "company": "hir.png",
+      "comment": "Little things make a big difference in our customers' experience. Debmedia helps us to professionalize the service in a personalized way, even before the service itself begins.",
+      "person": "Francisco Rebollar",
+      "job": "Customer Experience Director"
+    },
+    {
+      "name": "testimonio3",
+      "image": "santos.png",
+      "company": "supervielle.png",
+      "comment": "Our objectives with the implementation of this solution are directly related to our philosophy, its purpose is to maintain closeness with the client and, in this sense, the video call gives the human touch to interactions that are not carried out in person.",
+      "person": "Rodrigo Santos",
+      "job": "Agile Tribe Leader - Modelo de Atención Omnicanal"
+    }
+  ]
+}

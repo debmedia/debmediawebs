@@ -47,8 +47,8 @@
         font-weight: 700;
         color: #232C61;
         margin-top: 1.5em;
-
         @media (min-width: 992px) {
+            width: 47vw;
             margin-top: .9em;
             font-size: 2.6rem;
         }
@@ -59,11 +59,14 @@
         font-size: 1.2rem;
 
         @media (min-width: 992px) {
+            width: 40vw;
             font-size: 1.7rem;
         }
     }
 
     &_demobutton {
+        position: relative;
+        z-index: 10;
         border: 0;
         background-color: #2F9FEE;
         color: #fff;

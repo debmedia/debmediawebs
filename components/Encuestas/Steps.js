@@ -4,23 +4,25 @@ import Image from 'next/image'
 import check_blue from '../../asset/imgs/home/check_blue.svg'
 import check_white from '../../asset/imgs/home/check-m.svg'
 import shape1 from '../../asset/imgs/mobile/shapeTabs.svg'
-import Data from '../../json/setps-encuestas.json';
-import Link from 'next/link'
+import Data from '../../json/setps-encuestas.json'; 
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next-translate-routes/router";
 
 export default function Solutions() {
+    const { t } = useTranslation(['encuestas', 'common']);
+    const { locale } = useRouter();
     const [dataJson, setData] = useState([]);
 
     useEffect(() => {
-        setData(Data);
-    }, []);
+        setData(Data[locale] || Data['es']);
+    }, [locale]);
     return (
         <>
             <Container className="setps-top">
                 <Row>
                     <Col className="setps-section_encuestas_maintitle">
                         <h3 className="text-center">
-                            <b>Recibe feedback de tus clientes </b><br />
-                            al finalizar su atención y aumenta la satisfacción.<br /><br />
+                            <Trans t={t} i18nKey="STEPS.TITLE"/>
                         </h3>
                     </Col>
                 </Row>
@@ -37,13 +39,11 @@ export default function Solutions() {
                                 <Image src={check_white.src} width={60}
                                     height={60} className={'img-fluid'} />
                             </div>
-
                             <h4 className="setps-section_encuestas_title">
-                                Conoce la opinión real
-
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="setps-section_encuestas_parraf">
-                                de lo que perciben tus clientes
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-section_encuestas_div">
@@ -56,11 +56,10 @@ export default function Solutions() {
                                     height={60} className={'img-fluid'} />
                             </div>
                             <h4 className="setps-section_encuestas_title">
-                                Decide mejor
-
+                                <Trans t={t} i18nKey="STEPS.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="setps-section_encuestas_parraf">
-                                con base en los datos
+                                <Trans t={t} i18nKey="STEPS.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-section_encuestas_div">
@@ -73,10 +72,10 @@ export default function Solutions() {
                                     height={60} className={'img-fluid'} />
                             </div>
                             <h4 className="setps-section_encuestas_title">
-                                Conoce el rendimiento
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="setps-section_encuestas_parraf">
-                                de tus equipos de trabajo
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>
@@ -90,9 +89,7 @@ export default function Solutions() {
                     <Row>
                         <Col sm="12" className="flow-encuestas-section_maintitle text-center">
                             <h3>
-                                <b>Envía diferentes
-                                </b><br />
-                                tipos de encuestas
+                                <Trans t={t} i18nKey="STEPS.SUBTITLE"/>
                             </h3>
                         </Col>
                         <Col className="setps-tabs_content d-none d-sm-block">
@@ -115,7 +112,6 @@ export default function Solutions() {
                                         </Tab.Content>
                                     </Col>
                                     <Col sm={5} className="relative">
-
                                         <span className="lineSteps-encuestas"></span>
                                         <Nav variant="pills" className="flex-column">
                                             {dataJson.map((item, index) => (
@@ -152,7 +148,6 @@ export default function Solutions() {
                     </Row>
                 </Container>
             </Container>
-
         </>
     );
 }

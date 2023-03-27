@@ -1,87 +1,260 @@
-[
-  {
-    "title": "Videobanking",
-    "image": {
-      "url": "videocall.png",
-      "width": 520,
-      "height": 340
+{
+  "es": [
+    {
+      "title": "Videobanking",
+      "image": {
+        "url": "videocall.png",
+        "width": 520,
+        "height": 340
+      },
+      "key": "videocall",
+      "main": "Reduce el número de visitas innecesarias en las sucursales",
+      "secu": ", mejora los tiempos de atención y mantén el contacto humano conectando a tus clientes y ejecutivos a través de videollamadas.",
+      "url": "/atencion-virtual"
     },
-    "key": "videocall", 
-    "main": "Reduce el número de visitas innecesarias en las sucursales ",
-    "secu": ", mejora los tiempos de atención y mantén el contacto humano conectando a tus clientes y ejecutivos a través de videollamadas.",
-    "url": "/atencion-virtual"
-  },
-  {
-    "title": "Chatbot para bancos",
-    "image": {
-      "url": "wapp.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Chatbot para bancos",
+      "image": {
+        "url": "Chatbot_Sectores_ES.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "wapp",
+      "main": "Automatiza las conversaciones con tus clientes,",
+      "secu": "aumenta la capacidad de respuesta y atiende consultas de forma rápida, personalizada y en cualquier horario con el chatbot de WhatsApp.",
+      "url": "/preatendedor"
     },
-    "key": "wapp", 
-    "main": "Automatiza las conversaciones con tus clientes, ",
-    "secu": " aumenta la capacidad de respuesta y atiende consultas de forma rápida, personalizada y en cualquier horario con el chatbot de WhatsApp.",
-    "url": "/preatendedor"
-  },
-  {
-    "title": "Pre atendedor",
-    "image": {
-      "url": "pre.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Pre atendedor",
+      "image": {
+        "url": "Preatendedor_Sectores_ES.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "preaten",
+      "main": "Deriva a tus clientes a un portal de pre atención personalizable",
+      "secu": "y guíalos fácilmente a la elección de su trámite. Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
+      "url": "/preatendedor"
     },
-    "key": "preaten", 
-    "main": "Deriva a tus clientes a un portal de pre atención personalizable ",
-    "secu": "y guíalos fácilmente a la elección de su trámite. Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
-    "url": "/preatendedor"
-  },
-  {
-    "title": "Sistema de citas online para bancos",
-    "image": {
-      "url": "citas.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Sistema de citas online para bancos",
+      "image": {
+        "url": "Citas_Sectores_ES.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "citas",
+      "main": "Organiza el flujo de clientes que llegan a tus sucursales",
+      "secu": "y permite que a través de una experiencia simple reserven una cita online para una fecha y hora específica desde tu web.",
+      "url": "/citasonline"
     },
-    "key": "citas", 
-    "main": "Organiza el flujo de clientes que llegan a tus sucursales ",
-    "secu": "y permite que a través de una experiencia simple reserven una cita online para una fecha y hora específica desde tu web.",
-    "url": "/citasonline"
-  },
-  
-  {
-    "title": "Gestión de Filas de Banco",
-    "image": {
-      "url": "filavirtual.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Gestión de Filas de Banco",
+      "image": {
+        "url": "FilaVirtual_Sectores_ES.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "filavirtual",
+      "main": "Organiza el flujo de atención, disminuye el tiempo que pasan tus clientes dentro de las sucursales,",
+      "secu": "reduce la tasa de abandono y haz más eficiente la labor del equipo con el sistema de fila virtual.",
+      "url": "/fila-virtual"
     },
-    "key": "filavirtual", 
-    "main": "Organiza el flujo de atención, disminuye el tiempo que pasan tus clientes dentro de las sucursales,",
-    "secu": " reduce la tasa de abandono y haz más eficiente la labor del equipo con el sistema de fila virtual.",
-    "url": "/fila-virtual"
-  },
-  {
-    "title": "Cartelería digital para bancos",
-    "image": {
-      "url": "debsign.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Cartelería digital para bancos",
+      "image": {
+        "url": "Banca_Carteleria_ES.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "debsign",
+      "main": "Administra el contenido de tu red de pantallas de forma centralizada.",
+      "secu": "Planifica el contenido, segmenta por locación, grupos de pantallas o sucursales y actualízalo en tiempo real",
+      "url": "/debsign"
     },
-    "key": "debsign", 
-    "main": "Administra el contenido de tu red de pantallas de forma centralizada. ",
-    "secu": "Planifica el contenido, segmenta por locación, grupos de pantallas o sucursales y actualízalo en tiempo real",
-    "url": "/debsign"
-  },
-  {
-    "title": "Encuestas de satisfacción para bancos",
-    "image": {
-      "url": "encuesta.png",
-      "width": 540,
-      "height": 380
+    {
+      "title": "Encuestas de satisfacción para bancos",
+      "image": {
+        "url": "Encuestas_Sectores_ES.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "encuesta",
+      "main": "Envía encuestas de satisfacción a tus clientes una vez han sido atendidos,",
+      "secu": "eleva la tasa de respuesta, conoce lo que opinan de tu servicio y utiliza los resultados para optimizar los procesos de atención.",
+      "url": "/encuestas"
+    }
+  ],
+  "pt": [
+    {
+      "title": "Videobanking",
+      "image": {
+        "url": "videocall.png",
+        "width": 520,
+        "height": 340
+      },
+      "key": "videocall",
+      "main": "Reduza o número de visitas desnecessárias às sucursais,",
+      "secu": "melhore os tempos de serviço e mantenha contato humano conectando seus clientes e executivos por meio de videochamadas.",
+      "url": "/atencion-virtual"
     },
-    "key": "encuesta", 
-    "main": "Envía encuestas de satisfacción a tus clientes una vez han sido atendidos, ",
-    "secu": "eleva la tasa de respuesta,  conoce lo que opinan de tu servicio y utiliza los resultados para optimizar los procesos de atención.",
-    "url": "/encuestas"
-  }
-]
+    {
+      "title": "Chatbot para bancos",
+      "image": {
+        "url": "Chatbot_Sectores_PT.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "wapp",
+      "main": "Automatize as conversas com seus clientes,",
+      "secu": "aumente a capacidade de resposta e atenda a consultas de forma rápida, personalizada e a qualquer momento com o chatbot de WhatsApp.",
+      "url": "/preatendedor"
+    },
+    {
+      "title": "Pré-atendimento",
+      "image": {
+        "url": "Preatendedor_Sectores_PT.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "preaten",
+      "main": "Encaminhe seus clientes para um portal de pré-atendimento personalizado",
+      "secu": "e oriente-os facilmente na escolha de sua operação. Configure o caminho que eles irão percorrer com botões, imagens, pop ups e textos.",
+      "url": "/preatendedor"
+    },
+    {
+      "title": "Sistema de atendimento on-line para bancos",
+      "image": {
+        "url": "Citas_Sectores_PT.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "citas",
+      "main": "Organize o fluxo de clientes que chegam a suas agências",
+      "secu": "e permita que, através de uma simples experiência, disponibilize uma agenda de atendimento on-line, possibilitando o cliente escolher uma data e hora específica a partir de seu website.",
+      "url": "/citasonline"
+    },
+    {
+      "title": "Gestão de filas de bancos",
+      "image": {
+        "url": "FilaVirtual_Sectores_PT.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "filavirtual",
+      "main": "Organize o fluxo de atendimento, diminua o tempo que seus clientes passam dentro das agências,",
+      "secu": "reduza a taxa de abandono e torne o trabalho da equipe mais eficiente com o sistema de gestão de filas virtuais.",
+      "url": "/fila-virtual"
+    },
+    {
+      "title": "Sinalização digital para bancos:",
+      "image": {
+        "url": "Banca_Carteleria_PT.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "debsign",
+      "main": "Gerencie o conteúdo da sua rede de monitores de forma centralizada.",
+      "secu": "Planeje o conteúdo, segmente por localização, grupos e/ou sucursais e atualize-o em tempo real para uma comunicação eficaz.",
+      "url": "/debsign"
+    },
+    {
+      "title": "Pesquisas de satisfação para bancos",
+      "image": {
+        "url": "Encuestas_Sectores_PT.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "encuesta",
+      "main": "Envie pesquisas de satisfação a seus clientes ao final dos atendimentos,",
+      "secu": "aumente a taxa de resposta, descubra o que eles pensam de seu serviço e use os resultados para otimizar os processos de atendimento ao cliente.",
+      "url": "/encuestas"
+    }
+  ],
+  "en": [
+    {
+      "title": "Videobanking",
+      "image": {
+        "url": "videocall.png",
+        "width": 520,
+        "height": 340
+      },
+      "key": "videocall",
+      "main": "It reduces the number of unnecessary visits to the offices",
+      "secu": ", improves service times and maintains human contact by connecting your customers and representatives through video-calls.",
+      "url": "/atencion-virtual"
+    },
+    {
+      "title": "Chatbot for banks",
+      "image": {
+        "url": "Chatbot_Sectores_EN.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "wapp",
+      "main": "It automates conversations with your customers,",
+      "secu": "increases responsiveness and handles quickly and personalized consultations at any time with the WhatsApp chatbot.",
+      "url": "/preatendedor"
+    },
+    {
+      "title": "Pre-Service Website",
+      "image": {
+        "url": "Preatendedor_Sectores_EN.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "preaten",
+      "main": "It refers your customers to a customizable pre-service portal",
+      "secu": "and guides them easily to the choice of their transaction. It configures the path they must go through with buttons, images, pop-ups, and texts.",
+      "url": "/preatendedor"
+    },
+    {
+      "title": "Online appointment system for banks",
+      "image": {
+        "url": "Citas_Sectores_EN.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "citas",
+      "main": "It organizes the flow of customers visiting your offices",
+      "secu": "and allows them to book an appointment online for a specific date and time from your website in a simple experience.",
+      "url": "/citasonline"
+    },
+    {
+      "title": "Bank virtual queue software",
+      "image": {
+        "url": "FilaVirtual_Sectores_EN.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "filavirtual",
+      "main": "It organizes the flow of attention, decreases the time your customers spend inside offices,",
+      "secu": "reduces the churn drop-out rate and makes the team's work more efficient.",
+      "url": "/fila-virtual"
+    },
+    {
+      "title": "Digital signage for banks",
+      "image": {
+        "url": "Banca_Carteleria_EN.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "debsign",
+      "main": "It manages the content displayed at your offices centrally.",
+      "secu": "Plan the content, segment it by location, screen groups or offices and update it in real-time.",
+      "url": "/debsign"
+    },
+    {
+      "title": "Customer feedback software for banks",
+      "image": {
+        "url": "Encuestas_Sectores_EN.png",
+        "width": 540,
+        "height": 380
+      },
+      "key": "encuesta",
+      "main": "Send customer satisfaction surveys once they have been served",
+      "secu": "increase the response rate, know what they think of your service and use the results to optimize customer service processes.",
+      "url": "/encuestas"
+    }
+  ]
+}

@@ -1,15 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
-import mypic from '../../asset/imgs/debsign/main.png'
-import mypicxs from '../../asset/imgs/debsign/main-debsign.png'
+import mypic_es from '../../asset/imgs/debsign/Carteleria_ES.png'
+import mypic_pt from '../../asset/imgs/debsign/Carteleria_PT.png'
+import mypic_en from '../../asset/imgs/debsign/Carteleria_EN.png'
+import mypicxs_es from '../../asset/imgs/debsign/main-debsign.png'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import shape3 from '../../asset/imgs/home/headershape3.svg'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/dist/client/router";
 
+const mypic_lang = {es: mypic_es, pt: mypic_pt, en: mypic_en}
+const mypicxs_lang = {es: mypicxs_es};
 export default function Header() {
-
+    const { t } = useTranslation(['debsign', 'common']);
+    const { locale } = useRouter();
+    const mypic = mypic_lang[locale] || mypic_lang["es"];
+    const mypicxs = mypicxs_lang[locale] || mypicxs_lang["es"];
     return (
         <>
             <header>
@@ -28,16 +37,15 @@ export default function Header() {
                     <Container>
                         <Row>
                             <Col className="mainTitles">
-                                <h1 className="debsign-home_title">
-                                    Centraliza la<br className="d-none d-sm-block" /> comunicación de <br className="d-none d-sm-block" />
-                                    las pantallas en tus<br className="d-none d-sm-block" /> sucursales.
+                                <h1 className="debsign-home_title no-br-sm">
+                                    <Trans t={t} i18nKey="HEADER.TITLE"/>
                                 </h1>
                                 <p className="debsign-home_parraf">
-                                    Sistema de <b>cartelería digital</b>
+                                    <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
                                 </p>
                                 <Link href="/contacto">
                                 <button className="debsign-home_demobutton">
-                                    Solicita una demo
+                                    <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                 </button>
                                 </Link>
                             </Col>
@@ -48,8 +56,9 @@ export default function Header() {
             <Container className="d-flex justify-content-center debsign-home_text">
                 <Row>
                     <Col>
-                        <h3><b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
-                            experiencia de sus clientes con <b> Debmedia</b></h3>
+                        <h3 className="no-br-sm">
+                            <Trans t={t} i18nKey="HEADER.CAPTION"/>
+                        </h3>
                     </Col>
                 </Row>
             </Container>

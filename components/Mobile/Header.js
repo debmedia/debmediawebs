@@ -1,14 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
-import mypic from '../../asset/imgs/mobile/main.png'
+import mypic_es from '../../asset/imgs/mobile/FilaVirtual_ES.png'
+import mypic_pt from '../../asset/imgs/mobile/FilaVirtual_PT.png'
+import mypic_en from '../../asset/imgs/mobile/FilaVirtual_EN.png'
 import mypicxs from '../../asset/imgs/mobile/main-mobile.png'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import shape3 from '../../asset/imgs/home/headershape3.svg'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next-translate-routes/router";
 
+const mypic_lang = {es: mypic_es, pt: mypic_pt, en: mypic_en};
 export default function Header() {
+    const { t } = useTranslation(['fila-virtual', 'common']);
+    const { locale } = useRouter();
+    const mypic = mypic_lang[locale] || mypic_lang["es"];
 
     return (
         <>
@@ -28,15 +36,15 @@ export default function Header() {
                     <Container>
                         <Row>
                             <Col className="mainTitles">
-                                <h1 className="mobile-home_title">
-                                    Permite a tus clientes<br  className="d-none d-sm-block" /> seguir su turno desde<br  className="d-none d-sm-block" /> el celular
+                                <h1 className="mobile-home_title no-br-sm">
+                                    <Trans t={t} i18nKey="HEADER.TITLE"/>
                                 </h1>
                                 <p className="mobile-home_parraf">
-                                    Sistema de <b>fila virtual</b>
+                                    <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
                                 </p>
                                 <Link href="/contacto">
                                 <button className="mobile-home_demobutton">
-                                    Solicita una demo
+                                    <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                 </button>
                                 </Link>
                             </Col>
@@ -47,8 +55,9 @@ export default function Header() {
             <Container className="d-flex justify-content-center mobile-home_text">
                 <Row>
                     <Col>
-                        <h3><b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block"/>
-                            experiencia de sus clientes con <b> Debmedia</b></h3>
+                        <h3 className="no-br-sm">
+                            <Trans t={t} i18nKey="HEADER.CAPTION"/>
+                        </h3>
                     </Col>
                 </Row>
             </Container>

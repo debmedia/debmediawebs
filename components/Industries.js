@@ -1,109 +1,109 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
-import banca from '../asset/imgs/banca.svg'
-import salud from '../asset/imgs/salud.svg'
-import servi from '../asset/imgs/servicios.svg'
-import gob from '../asset/imgs/gob.svg'
-import telcos from '../asset/imgs/telcos.svg'
-import uti from '../asset/imgs/uti.svg'
-import Link from 'next/link'
-
-
+import Image from "next/image";
+import banca from "../asset/imgs/banca.svg";
+import salud from "../asset/imgs/salud.svg";
+import servi from "../asset/imgs/servicios.svg";
+import gob from "../asset/imgs/gob.svg";
+import telcos from "../asset/imgs/telcos.svg";
+import uti from "../asset/imgs/uti.svg";
+import Link from "next-translate-routes/link";
+import { useTranslation, Trans } from "next-i18next";
 
 export default function Modern() {
+    const { t } = useTranslation(["components", "common"]);
+
+    const cards = [
+        {
+            title: "INDUSTRIES.CARDS.BANKING.TITLE",
+            subtitle: "INDUSTRIES.CARDS.BANKING.SUBTITLE",
+            url: "/bancosyfinanzas",
+            class: "industries-section_divs-banca",
+            image: banca,
+        },
+        {
+            title: "INDUSTRIES.CARDS.HEALTH.TITLE",
+            subtitle: "INDUSTRIES.CARDS.HEALTH.SUBTITLE",
+            url: "/salud",
+            class: "industries-section_divs-salud",
+            image: salud,
+        },
+        {
+            title: "INDUSTRIES.CARDS.GOVERNMENT.TITLE",
+            subtitle: "INDUSTRIES.CARDS.GOVERNMENT.SUBTITLE",
+            url: "/gobierno",
+            class: "industries-section_divs-gob",
+            image: gob,
+        },
+        {
+            title: "INDUSTRIES.CARDS.RETAIL.TITLE",
+            subtitle: "INDUSTRIES.CARDS.RETAIL.SUBTITLE",
+            url: "/retail",
+            class: "industries-section_divs-servi",
+            image: servi,
+        },
+        {
+            title: "INDUSTRIES.CARDS.TELECOMMUNICATIONS.TITLE",
+            subtitle: "INDUSTRIES.CARDS.TELECOMMUNICATIONS.SUBTITLE",
+            url: "/telcos",
+            class: "industries-section_divs-teleco",
+            image: telcos,
+        },
+        {
+            title: "INDUSTRIES.CARDS.UTILITIES.TITLE",
+            subtitle: "INDUSTRIES.CARDS.UTILITIES.SUBTITLE",
+            url: "/utilities",
+            class: "industries-section_divs-uti",
+            image: uti,
+        },
+    ];
     return (
         <>
             <Container fluid className="industries-section my-5">
                 <Container>
                     <Row>
-                        <Col sm={12} className="industries-section_mainTitle text-center mb-5">
-                            <h2>Organizaciones de múltiples industrias <br /><b>gestionan la experiencia del cliente con Debmedia.</b></h2>
+                        <Col
+                            sm={12}
+                            className="industries-section_mainTitle text-center mb-5">
+                            <h2>
+                                <Trans t={t} i18nKey="INDUSTRIES.TITLE" />
+                            </h2>
                         </Col>
                         <Col sm={12} className="industries-section_divs">
-                            <Row>
-                                <Link href="/bancosyfinanzas">
-                                    <Col sm={4} offset={1} xs={12} className="industries-section_divs-indu industries-section_divs-banca">
-                                        <div>
-                                            <Image src={banca.src} width={50}
-                                                height={50} className={'img-fluid'} />
+                            <div>
+                                {cards.map((card) => (
+                                    <Link key={card.url} href={card.url}>
+                                        <div
+                                            sm={4}
+                                            offset={1}
+                                            xs={12}
+                                            className={`industries-section_divs-indu ${card.class}`}>
+                                            <div>
+                                                <div>
+                                                    <Image
+                                                        src={card.image}
+                                                        width={50}
+                                                        height={50}
+                                                        className={"img-fluid"}
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <h4>
+                                                    <Trans t={t} i18nKey={card.title}
+                                                    />
+                                                </h4>
+                                            </div>
+                                                <p>
+                                                    <Trans t={t} i18nKey={card.subtitle}
+                                                    />
+                                                </p>
                                         </div>
-
-                                        <h4>
-                                            Banca y Seguros
-                                        </h4>
-                                        <p>
-                                            Instituciones financieras, aseguradoras, cooperativas.
-                                        </p>
-                                    </Col>
-                                </Link>
-                                <Link href="/salud">
-                                    <Col sm={4} xs={12} className="industries-section_divs-indu industries-section_divs-salud">
-                                        <Image src={salud.src} width={50}
-                                            height={50} className={'img-fluid'} />
-                                        <h4>
-                                            Salud
-                                        </h4>
-                                        <p>
-                                            Clínicas, hospitales, laboratorios, farmacias, prepagadas.
-                                        </p>
-                                    </Col>
-                                </Link>
-                                <Link href="/gobierno">
-                                    <Col sm={4} xs={12} className="industries-section_divs-indu industries-section_divs-gob">
-                                        <Image src={gob.src} width={50}
-                                            height={50} className={'img-fluid'} />
-                                        <h4>
-                                            Gobierno
-                                        </h4>
-                                        <p>
-                                            Instituciones públicas, municipios, ONGs
-                                        </p>
-                                    </Col>
-                                </Link>
-                                <Link href="/retail">
-                                    <Col sm={4} xs={12} className="industries-section_divs-indu industries-section_divs-servi">
-                                        <Image src={servi.src} width={50}
-                                            height={50} className={'img-fluid'} />
-                                        <h4>
-                                            Retail y servicios
-                                        </h4>
-                                        <p>
-                                            Tiendas retail, cajas de compensación, logística.
-                                        </p>
-                                    </Col>
-                                </Link>
-                                <Link href="/telcos">
-                                    <Col sm={4} xs={12} className="industries-section_divs-indu industries-section_divs-teleco">
-                                        <Image src={telcos.src} width={50}
-                                            height={50} className={'img-fluid'} />
-                                        <h4>
-                                            Telecomunicaciones
-                                        </h4>
-                                        <p>
-                                            Telefonía móvil, operadores de cable.
-                                        </p>
-                                    </Col>
-                                </Link>
-                                <Link href="/utilities">
-                                    <Col sm={4} xs={12} className="industries-section_divs-indu industries-section_divs-uti">
-                                        <Image src={uti.src} width={50}
-                                            height={50} className={'img-fluid'} />
-                                        <h4>
-                                            Utilities
-                                        </h4>
-                                        <p>
-                                            Asociaciones, servicios públicos.
-                                        </p>
-                                    </Col>
-                                </Link>
-                            </Row>
-
+                                    </Link>
+                                ))}
+                            </div>
                         </Col>
-
                     </Row>
                 </Container>
-
             </Container>
         </>
     );

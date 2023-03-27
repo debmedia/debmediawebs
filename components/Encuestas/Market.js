@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import falsas from '../../asset/imgs/encuestas/falsas.svg'
 import equivo from '../../asset/imgs/encuestas/equivo.svg'
 import rendimiento from '../../asset/imgs/encuestas/rendimiento.svg'
 import arrow from '../../asset/imgs/home/arrow.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
+    const { t } = useTranslation(['encuestas', 'common']);
+
     return (
         <>
             <Container fluid className="market-encuestas-section">
@@ -15,7 +17,7 @@ export default function Market() {
                     <Row>
                         <Col className="market-encuestas-section_maintitle text-center">
                             <h3>
-                                Puede que estés perdiendo clientes por un mal servicio
+                                <Trans t={t} i18nKey="MARKET.TITLE"/>
                             </h3>
 
                         </Col>
@@ -28,11 +30,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-encuestas-section_title">
-                                Falsas métricas
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-encuestas-section_parraf">
-                                sobre la satisfacción <br />
-                                de tus clientes
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-encuestas-section_div">
@@ -42,11 +43,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-encuestas-section_title">
-                                Decisiones equivocadas
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="market-encuestas-section_parraf">
-                                a falta
-                                de datos
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-encuestas-section_div">
@@ -56,10 +56,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-encuestas-section_title">
-                                Desconocimiento del<br /> rendimiento
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="market-encuestas-section_parraf">
-                                de los colaboradores
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>

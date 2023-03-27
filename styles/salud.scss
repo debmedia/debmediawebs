@@ -56,6 +56,7 @@
 
             @media (min-width: 992px) {
                 font-size: 2.6rem;
+                width: 610px;
             }
         }
 
@@ -84,6 +85,8 @@
     }
 
     &_demobutton {
+        position: relative;
+        z-index: 10;
         border: 0;
         background-color: #69B8EF;
         color: #232C61;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import demo from '../asset/imgs/demo.svg'
@@ -11,10 +11,12 @@ import configG from '../asset/imgs/configG.svg'
 import clientG from '../asset/imgs/clientsG.svg'
 import top from '../asset/imgs/border.svg'
 import topG from '../asset/imgs/borderG.svg'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
+import { useTranslation, Trans } from 'next-i18next';
 
 
 export default function Level(props) {
+    const { t } = useTranslation(['components', 'common']);
     return (
         <>
             <Col className={props.color === "industriasColor" ? "d-none" : "d-block"}>
@@ -28,7 +30,9 @@ export default function Level(props) {
                 <Container>
                     <Row>
                         <Col className={props.color === "industriasColor" ? "level-section_mainTitle mb-4 greyColor" : "level-section_mainTitle mb-4"}>
-                            <h2>Mejora la Customer Experience con<br className="d-none d-sm-block" /> la Tecnología de  <b>Debmedia</b></h2>
+                            <h2 className="no-br-sm">
+                                <Trans t={t} i18nKey="LEVEL.TITLE"/>
+                            </h2>
                         </Col>
                     </Row>
 
@@ -50,7 +54,9 @@ export default function Level(props) {
                                 </div>
                             </div>
                             <div className={props.color === "industriasColor" ? "level-section_text greyColor" : "level-section_text"}>
-                                <p>Solicita <br className="d-none d-sm-block" /> una <b>demo</b></p>
+                                <p className="no-br-sm">
+                                    <Trans t={t} i18nKey="LEVEL.STEP_1"/>
+                                </p>
 
                             </div>
                         </Col>
@@ -70,7 +76,8 @@ export default function Level(props) {
 
                             </div>
                             <div className={props.color === "industriasColor" ? "level-section_text greyColor" : "level-section_text"}>
-                                <p> <b> Selecciona</b>  <br className="d-none d-sm-block" /> los módulos
+                                <p className="no-br-sm">
+                                    <Trans t={t} i18nKey="LEVEL.STEP_2"/>
                                 </p>
                             </div>
                         </Col>
@@ -90,7 +97,8 @@ export default function Level(props) {
 
                             </div>
                             <div className={props.color === "industriasColor" ? "level-section_text greyColor" : "level-section_text"}>
-                                <p> <b> Configura</b>  <br className="d-none d-sm-block" /> el sistema
+                                <p className="no-br-sm">
+                                    <Trans t={t} i18nKey="LEVEL.STEP_3"/>
                                 </p>
 
                             </div>
@@ -111,8 +119,9 @@ export default function Level(props) {
 
                             </div>
                             <div className={props.color === "industriasColor" ? "level-section_text greyColor" : "level-section_text"}>
-                                <p> Atiende  de   <br className="d-none d-sm-block" />
-                                    <b>forma eficiente</b></p>
+                                <p className="no-br-sm">
+                                    <Trans t={t} i18nKey="LEVEL.STEP_4"/>
+                                </p>
 
                             </div>
                         </Col>
@@ -121,7 +130,7 @@ export default function Level(props) {
                         <Col className="text-center mt-4">
                             <Link href="/contacto">
                                 <button className={props.color === "industriasColor" ? "level-section_demobutton greyColor" : "level-section_demobutton"}>
-                                    Solicita una demo
+                                <Trans t={t} i18nKey="LEVEL.BUTTON"/>
                                 </button>
                             </Link>
                         </Col>

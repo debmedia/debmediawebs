@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "../components/Debq/Header"
 import Brands from "../components/Brands"
 import Market from "../components/Debq/Market"
@@ -12,8 +12,15 @@ import Services from "../components/Services"
 import Level from "../components/Level"
 import Contact from "../components/Contact"
 import Posts from "../components/Posts"
-import Footer from "../components/Footer"
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['debq','components','common'])),
+    },
+  };
+}
 
 export default function debQ() {
 

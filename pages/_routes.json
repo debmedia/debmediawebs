@@ -1,0 +1,97 @@
+{
+  "atencion-virtual": {
+    "default": "atencion-virtual",
+    "pt": "atendimento-videochamada",
+    "en": "video-call"
+  },
+  "bancosyfinanzas": {
+    "default": "banca-y-finanzas",
+    "pt": "instituicoes-financeiras",
+    "en": "banking-and-financial-services"
+  },
+  "citasonline": {
+    "default": "citas-online",
+    "pt": "agenda-online",
+    "en": "online-appointments"
+  },
+  "clientes": {
+    "default": "clientes",
+    "pt": "clientes",
+    "en": "customers"
+  },
+  "contacto": {
+    "default": "contacto",
+    "pt": "contacto",
+    "en": "contact"
+  },
+  "debq": {
+    "default": "gestion-filas",
+    "pt": "sistema-gestao-de-filas",
+    "en": "queue-management-system"
+  },
+  "debsign": {
+    "default": "carteleria-digital",
+    "pt": "sistema-sinalizacao-digital",
+    "en": "digital-signage"
+  },
+  "encuestas": {
+    "default": "encuestas-de-satisfaccion",
+    "pt": "pesquisas-automatizadas",
+    "en": "customer-feedback"
+  },
+  "fila-virtual": {
+    "default": "fila-virtual",
+    "pt": "fila-virtual",
+    "en": "virtual-queue"
+  },
+  "gobierno": {
+    "default": "gobierno",
+    "pt": "instituicoes-publicas",
+    "en": "government"
+  },
+  "gracias": {
+    "default": "gracias",
+    "pt": "obrigado",
+    "en": "thank-you"
+  },
+  "nosotros": {
+    "default": "nosotros",
+    "pt": "nos",
+    "en": "about-us"
+  },
+  "partners": {
+    "default": "partners",
+    "pt": "parceiros",
+    "en": "partners"
+  },
+  "politica": {
+    "default": "politica",
+    "pt": "politica",
+    "en": "policy"
+  },
+  "preatendedor": {
+    "default": "preatendedor",
+    "pt": "portal-pre-atendimento",
+    "en": "pre-service-website"
+  },
+  "retail": {
+    "default": "retail",
+    "pt": "lojas",
+    "en": "retail"
+  },
+  "salud": {
+    "default": "salud",
+    "pt": "saude",
+    "en": "healthcare"
+  },
+  "telcos": {
+    "default": "telecomunicaciones",
+    "pt": "telefonica-movel",
+    "en":"telecommunications"
+  },
+  "utilities": {
+    "default": "utilities",
+    "pt": "associacoes-servicos-publicos",
+    "en": "utilities"
+  }
+}

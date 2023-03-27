@@ -85,6 +85,8 @@
     }
 
     &_demobutton {
+        position: relative;
+        z-index: 10;
         border: 0;
         background-color: #F48700;
         color: #fff;

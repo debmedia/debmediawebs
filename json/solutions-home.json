@@ -1,122 +1,368 @@
-[
-  {
-    "title": "Citas online",
-    "image": {
-      "url": "citas.png",
-      "urlXs": "citas_xs.png",
-      "width": 360,
-      "height": 400
+{
+  "es": [
+    {
+      "title": "Citas online",
+      "image": {
+        "url": "CitasHome_ES.png",
+        "urlXs": "citas_xs.png",
+        "width": 360,
+        "height": 400
+      },
+      "key": "citas",
+      "main": "Permite a tus clientes agendar su cita",
+      "secu": "desde canales digitales y organiza el flujo de clientes que te visitan.",
+      "url": "/citasonline",
+      "xs": 12,
+      "sm": 6
     },
-    "key": "citas", 
-    "main": "Permite a tus clientes agendar su cita ",
-    "secu": "desde canales digitales y organiza el flujo de clientes que te visitan.",
-    "url": "/citasonline",
-    "xs": 12,
-    "sm": 6
-  },
-  {
-    "title": "Gestión de filas",
-    "image": {
-      "url": "filas_new.png",
-      "urlXs": "filas_new_xs.png",
-      "width": 400,
-      "height": 500
+    {
+      "title": "Gestión de filas",
+      "image": {
+        "url": "GestiondeFilas_Home_ES.png",
+        "urlXs": "filas_new_xs.png",
+        "width": 400,
+        "height": 500
+      },
+      "key": "debq",
+      "main": "Mejora la atención y obtén el máximo de tu equipo.",
+      "secu": "Mide indicadores claves y adopta mejores prácticas.",
+      "url": "/debq",
+      "xs": 12,
+      "sm": 6
     },
-    "key": "debq", 
-    "main": "Mejora la atención y obtén el máximo de tu equipo.  ",
-    "secu": "Mide indicadores claves y adopta mejores prácticas.",
-    "url": "/debq",
-    "xs": 12,
-    "sm": 6
-  },
-  {
-    "title": "Fila Virtual",
-    "image": {
-      "url": "fila-virtual_new.png",
-      "urlXs": "fila-virtual_new.png",
-      "width": 240,
-      "height": 480
+    {
+      "title": "Fila Virtual",
+      "image": {
+        "url": "FilaVirtual_Home_ES.png",
+        "urlXs": "FilaVirtual_Home_ES.png",
+        "width": 240,
+        "height": 480
+      },
+      "key": "filavirtual",
+      "main": "Deja que tus clientes hagan fila desde su móvil",
+      "secu": "y reduce el tiempo de espera que permanecen dentro de tu sucursal con el sistema de fila virtual.",
+      "url": "/fila-virtual",
+      "xs": 6,
+      "sm": 6
     },
-    "key": "filavirtual", 
-    "main": "Deja que tus clientes hagan fila desde su móvil  ",
-    "secu": "y reduce el tiempo de espera que permanecen dentro de tu sucursal con el sistema de fila virtual.",
-    "url": "/fila-virtual",
-    "xs": 6,
-    "sm": 6
-  },
-  {
-    "title": "Cartelería digital",
-    "image": {
-      "url": "debsign.png",
-      "urlXs": "debsign.png",
-      "width": 380,
-      "height": 290
+    {
+      "title": "Cartelería digital",
+      "image": {
+        "url": "CarteleriaDigital_Home_ES.png",
+        "urlXs": "CarteleriaDigital_Home_ES.png",
+        "width": 380,
+        "height": 290
+      },
+      "key": "sign",
+      "main": "Personaliza y administra el contenido de tu red de pantallas",
+      "secu": "en tiempo real para comunicar mensajes efectivos.",
+      "url": "/debsign",
+      "xs": 12,
+      "sm": 6
     },
-    "key": "sign", 
-    "main": "Personaliza y administra el contenido de tu red de pantallas ",
-    "secu": " en tiempo real para comunicar mensajes efectivos.",
-    "url": "/debsign",
-    "xs": 12,
-    "sm": 6
-  },
-  {
-    "title": "Atención virtual",
-    "image": {
-      "url": "videocall.png",
-      "urlXs": "videocall.png",
-      "width": 270,
-      "height": 520
+    {
+      "title": "Atención virtual",
+      "image": {
+        "url": "videocall.png",
+        "urlXs": "videocall.png",
+        "width": 270,
+        "height": 520
+      },
+      "key": "videocall",
+      "main": "Atiende más clientes a través de videollamadas",
+      "secu": "y optimiza el tiempo de tu equipo de trabajo.",
+      "url": "/atencion-virtual",
+      "xs": 6,
+      "sm": 6
     },
-    "key": "videocall", 
-    "main": "Atiende más clientes a través de videollamadas ",
-    "secu": " y optimiza el tiempo de tu equipo de trabajo.",
-    "url": "/atencion-virtual",
-    "xs": 6,
-    "sm": 6
-  },
-  {
-    "title": "Encuestas",
-    "image": {
-      "url": "encuestas.png",
-      "urlXs": "encuestas.png",
-      "width": 280,
-      "height": 520
+    {
+      "title": "Encuestas",
+      "image": {
+        "url": "Encuestas_Home_ES.png",
+        "urlXs": "Encuestas_Home_ES.png",
+        "width": 280,
+        "height": 520
+      },
+      "key": "encuestas",
+      "main": "Conoce la opinión de tus clientes",
+      "secu": "a través de encuestas de satisfacción y mide el rendimiento de los colaboradores.",
+      "url": "/encuestas",
+      "xs": 6,
+      "sm": 6
     },
-    "key": "encuestas", 
-    "main": "Conoce la opinión de tus clientes ",
-    "secu": "a través de encuestas de satisfacción y mide el rendimiento de los colaboradores.",
-    "url": "/encuestas",
-    "xs": 6,
-    "sm": 6
-  },
-  {
-    "title": "Pre atendedor",
-    "image": {
-      "url": "preatendedor.png",
-      "urlXs": "preatendedor.png",
-      "width": 260,
-      "height": 520
+    {
+      "title": "Pre atendedor",
+      "image": {
+        "url": "Preatendedor_ES.png",
+        "urlXs": "Preatendedor_ES.png",
+        "width": 260,
+        "height": 520
+      },
+      "key": "preatendedor",
+      "main": "Encamina a tus clientes para que escojan el canal de atención correcto",
+      "secu": "y maximiza su experiencia.",
+      "url": "/preatendedor",
+      "xs": 6,
+      "sm": 6
     },
-    "key": "preatendedor", 
-    "main": "Encamina a tus clientes para que escojan el canal de atención correcto ",
-    "secu": "y maximiza su experiencia.",
-    "url": "/preatendedor",
-    "xs": 6,
-    "sm": 6
-  },
-  {
-    "title": "Chatbot WhatsApp",
-    "image": {
-      "url": "wapp.png",
-      "urlXs": "wapp.png",
-      "width": 350,
-      "height": 520
+    {
+      "title": "Chatbot WhatsApp",
+      "image": {
+        "url": "ChatbotWhatsapp_Home_ES.png",
+        "urlXs": "ChatbotWhatsapp_Home_ES.png",
+        "width": 350,
+        "height": 520
+      },
+      "key": "wapp",
+      "main": "Automatiza las conversaciones con tus clientes y agiliza la comunicación",
+      "secu": "a través de una herramienta que los clientes ya conocen.",
+      "url": "/preatendedor",
+      "xs": 6,
+      "sm": 6
+    }
+  ],
+  "pt": [
+    {
+      "title": "Agendamento online",
+      "image": {
+        "url": "CitasHome_PT.png",
+        "urlXs": "citas_xs.png",
+        "width": 360,
+        "height": 400
+      },
+      "key": "citas",
+      "main": "Permita que seus clientes façam o agendamento",
+      "secu": "a partir dos canais digitais e organize o fluxo de visitas e calendarização.",
+      "url": "/citasonline",
+      "xs": 12,
+      "sm": 6
     },
-    "key": "wapp", 
-    "main": "Automatiza las conversaciones con tus clientes y agiliza la comunicación",
-    "secu": " a través de una herramienta que los clientes ya conocen.",
-    "url": "/preatendedor",
-    "xs": 6,
-    "sm": 6
-  }
-]
+    {
+      "title": "Gestão de filas",
+      "image": {
+        "url": "GestiondeFilas_Home_PT.png",
+        "urlXs": "filas_new_xs.png",
+        "width": 400,
+        "height": 500
+      },
+      "key": "debq",
+      "main": "Melhore o atendimento e tire o máximo proveito de sua equipe.",
+      "secu": "Acompanha os principais indicadores e adota as melhores práticas.",
+      "url": "/debq",
+      "xs": 12,
+      "sm": 6
+    },
+    {
+      "title": "Fila virtual",
+      "image": {
+        "url": "FilaVirtual_Home_PT.png",
+        "urlXs": "FilaVirtual_Home_PT.png",
+        "width": 240,
+        "height": 480
+      },
+      "key": "filavirtual",
+      "main": "Com o sistema de filas virtuais, os clientes podem fazer filas pelo celular",
+      "secu": "reduzir o tempo de espera na sua agência.",
+      "url": "/fila-virtual",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "title": "Carteleira digital",
+      "image": {
+        "url": "CarteleriaDigital_Home_PT.png",
+        "urlXs": "CarteleriaDigital_Home_PT.png",
+        "width": 380,
+        "height": 290
+      },
+      "key": "sign",
+      "main": "Com a personalização de tela do Debsign, você controla o conteúdo das telas",
+      "secu": "em tempo real para comunicar mensagens eficazes.",
+      "url": "/debsign",
+      "xs": 12,
+      "sm": 6
+    },
+    {
+      "title": "Atendimento online",
+      "image": {
+        "url": "videocall.png",
+        "urlXs": "videocall.png",
+        "width": 270,
+        "height": 520
+      },
+      "key": "videocall",
+      "main": "Atenda mais clientes por meio de videochamadas",
+      "secu": "e otimize o tempo de sua equipe de trabalho.",
+      "url": "/atencion-virtual",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "title": "Pesquisas",
+      "image": {
+        "url": "Encuestas_Home_PT.png",
+        "urlXs": "Encuestas_Home_PT.png",
+        "width": 280,
+        "height": 520
+      },
+      "key": "encuestas",
+      "main": "Descubra a opinião de seus clientes",
+      "secu": "por meio de pesquisas de satisfação e acompanhe o desempenho dos colaboradores.",
+      "url": "/encuestas",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "title": "Pre atendimento",
+      "image": {
+        "url": "Preatendedor_PT.png",
+        "urlXs": "Preatendedor_PT.png",
+        "width": 260,
+        "height": 520
+      },
+      "key": "preatendedor",
+      "main": "O site de pré-atendimento oferece sempre o canal indicado",
+      "secu": "desde uma landing page até o chatbot do WhatsApp.",
+      "url": "/preatendedor",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "title": "Chatbot Whatsapp",
+      "image": {
+        "url": "ChatbotWhatsapp_Home_PT.png",
+        "urlXs": "ChatbotWhatsapp_Home_PT.png",
+        "width": 350,
+        "height": 520
+      },
+      "key": "wapp",
+      "main": "Automatize conversas com seus clientes e agilize a comunicação",
+      "secu": "utilizando uma ferramenta que os clientes já conhecem.",
+      "url": "/preatendedor",
+      "xs": 6,
+      "sm": 6
+    }
+  ],
+  "en": [
+    {
+      "title": "Online Appointments",
+      "image": {
+        "url": "CitasHome_EN.png",
+        "urlXs": "citas_xs.png",
+        "width": 360,
+        "height": 400
+      },
+      "key": "citas",
+      "main": "Allow your customers to schedule their appointments",
+      "secu": "from digital channels and organize the flow of customers who visit you.",
+      "url": "/citasonline",
+      "xs": 12,
+      "sm": 6
+    },
+    {
+      "title": "Queue Management",
+      "image": {
+        "url": "GestiondeFilas_Home_EN.png",
+        "urlXs": "filas_new_xs.png",
+        "width": 400,
+        "height": 500
+      },
+      "key": "debq",
+      "main": "Improve service and get the most out of your team.",
+      "secu": "Measure key indicators and adopt best practices.",
+      "url": "/debq",
+      "xs": 12,
+      "sm": 6
+    },
+    {
+      "title": "Virtual Queue:",
+      "image": {
+        "url": "FilaVirtual_Home_EN.png",
+        "urlXs": "FilaVirtual_Home_EN.png",
+        "width": 240,
+        "height": 480
+      },
+      "key": "filavirtual",
+      "main": "Let your customers queue from their mobile",
+      "secu": "and reduce the time they spend waiting inside your office with the virtual queue system.",
+      "url": "/fila-virtual",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "title": "Debsign",
+      "image": {
+        "url": "CarteleriaDigital_Home_EN.png",
+        "urlXs": "CarteleriaDigital_Home_EN.png",
+        "width": 380,
+        "height": 290
+      },
+      "key": "sign",
+      "main": "Customizes and manages content on your display network",
+      "secu": "in real time to communicate effective messages.",
+      "url": "/debsign",
+      "xs": 12,
+      "sm": 6
+    },
+    {
+      "title": "Virtual customer service",
+      "image": {
+        "url": "videocall.png",
+        "urlXs": "videocall.png",
+        "width": 270,
+        "height": 520
+      },
+      "key": "videocall",
+      "main": "Serves more customers through video calls",
+      "secu": "and optimizes your team's time.",
+      "url": "/atencion-virtual",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "title": "Customer feedback",
+      "image": {
+        "url": "Encuestas_Home_EN.png",
+        "urlXs": "Encuestas_Home_EN.png",
+        "width": 280,
+        "height": 520
+      },
+      "key": "encuestas",
+      "main": "Get to know the opinion of your customers",
+      "secu": "through satisfaction surveys and measure the performance of your collaborators.",
+      "url": "/encuestas",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "title": "Pre service website",
+      "image": {
+        "url": "Preatendedor_EN.png",
+        "urlXs": "Preatendedor_EN.png",
+        "width": 260,
+        "height": 520
+      },
+      "key": "preatendedor",
+      "main": "Guide your customers to choose the right service channel",
+      "secu": "and maximize their experience.",
+      "url": "/preatendedor",
+      "xs": 6,
+      "sm": 6
+    },
+    {
+      "title": "Whatsapp Chatbot",
+      "image": {
+        "url": "ChatbotWhatsapp_Home_EN.png",
+        "urlXs": "ChatbotWhatsapp_Home_EN.png",
+        "width": 350,
+        "height": 520
+      },
+      "key": "wapp",
+      "main": "Automates conversations with your customers and streamline communication",
+      "secu": "through a tool that customers are already familiar with.",
+      "url": "/preatendedor",
+      "xs": 6,
+      "sm": 6
+    }
+  ]
+}

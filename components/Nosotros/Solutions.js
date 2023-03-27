@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
 import Services from '../../json/Services.json';
-import Link from 'next/link'
-
+import Link from 'next-translate-routes/link'
+import { useRouter } from "next-translate-routes/router";
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function SpecsIndus() {
-    const [services, setservices] = useState([]);
-
+    const { t } = useTranslation(['nosotros', 'common']);
+    const [services, setServices] = useState([]);
+    const { locale } = useRouter();
     useEffect(() => {
-        setservices(Services);
-    }, []);
+        setServices(Services[locale] || Services['es']);
+    }, [locale]);
     return (
         <>
             <Container fluid>
@@ -26,7 +27,7 @@ export default function SpecsIndus() {
                                     <h4 className="services-section_service-title">{item.name}</h4>
                                     <Link href={item.url} passHref>
                                         <a rel="noopener noreferrer" className="services-section_service-link">
-                                            Conoce más
+                                            <Trans t={t} i18nKey="common:LEARN_MORE"/>
                                         </a>
                                     </Link>
                                 </div>
@@ -37,7 +38,7 @@ export default function SpecsIndus() {
                         <Col className="text-center">
                             <Link href="/">
                                 <button className="citas-home_demobutton">
-                                    Conocenos
+                                    <Trans t={t} i18nKey="SOLUTIONS.BUTTON"/>
                                 </button>
                             </Link>
                         </Col>

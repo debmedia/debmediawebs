@@ -1,22 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import quieren from '../../asset/imgs/retail/quieren.svg'
 import respuestas from '../../asset/imgs/retail/respuestas.svg'
 import cambian from '../../asset/imgs/retail/cambian.svg'
 import arrow from '../../asset/imgs/home/arrow.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
+    const { t } = useTranslation(['retail', 'common']);
+
     return (
         <>
             <Container fluid className="market-retail-section">
                 <Container>
                     <Row>
                         <Col className="market-retail-section_maintitle">
-                            <h3 className="text-center">
-                                Los clientes hoy <b><br className="d-block d-sm-none"/>no se <br className="d-none d-sm-block"/>
-                                    conforman con cualquier cosa </b>
+                            <h3 className="text-center no-br-sm">
+                                <Trans t={t} i18nKey="MARKET.TITLE"/>
                             </h3>
                         </Col>
                     </Row>
@@ -28,10 +29,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-retail-section_title">
-                                Quieren interactuar
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-retail-section_parraf">
-                                cuándo, dónde y como <br />quieran.
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-retail-section_div">
@@ -41,10 +42,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-retail-section_title">
-                                Necesitan respuestas
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="market-retail-section_parraf">
-                                rápidas y efectivas.
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-retail-section_div">
@@ -54,10 +55,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-retail-section_title">
-                                Cambiarían de marca
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="market-retail-section_parraf">
-                                si consiguen una experiencia<br /> más consistente.
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>

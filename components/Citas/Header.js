@@ -1,30 +1,36 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
-import mypic from '../../asset/imgs/citas/main.png'
-import mypicxs from '../../asset/imgs/citas/main-citas.png'
-import shape1 from '../../asset/imgs/home/headershape1.svg'
-import shape2 from '../../asset/imgs/home/headershape2.svg'
-import shape3 from '../../asset/imgs/home/headershape3.svg'
-import mainNoti from '../../asset/imgs/citas/main-noti.svg'
-import { useMediaQuery } from 'react-responsive'
-import Link from 'next/link'
+import Image from 'next/image';
+import mypic from '../../asset/imgs/citas/main.png';
+import mypicxs_es from '../../asset/imgs/citas/Citas_ES.png';
+import mypicxs_pt from '../../asset/imgs/citas/Citas_PT.png';
+import mypicxs_en from '../../asset/imgs/citas/Citas_EN.png';
+import shape1 from '../../asset/imgs/home/headershape1.svg';
+import shape2 from '../../asset/imgs/home/headershape2.svg';
+import shape3 from '../../asset/imgs/home/headershape3.svg';
+import mainNoti from '../../asset/imgs/citas/main-noti.svg';
+import Link from 'next-translate-routes/link';
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next-translate-routes/router";
+
+const mypicxs_lang = {es: mypicxs_es, pt: mypicxs_pt, en: mypicxs_en};
 
 export default function Header() {
-    const isMobile = useMediaQuery({ query: '(max-width:899px)' })
-
+    const { t } = useTranslation(['citasonline', 'common']);
+    const { locale } = useRouter();
+    const mypicxs = mypicxs_lang[locale] || mypicxs_lang["es"];
     return (
         <>
             <header>
                 <Container fluid className="citas-home">
                     <div className={'image-container-citas'}>
-                    <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} />
+                        <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} />
                         <Image src={mypicxs.src} layout="fill" className={'image d-block d-sm-none'} />
                     </div>
                     <div className="d-none d-sm-block">
                         <img src={shape3.src} className="citas-home_shape3" />
                     </div>
-                    <div className="d-none d-sm-block">
+                    <div className="d-none d-lg-block">
                         <img src={mainNoti.src} className="citas-home_mainNoti" />
                     </div>
                     <div className="d-none d-sm-block">
@@ -34,15 +40,15 @@ export default function Header() {
                     <Container>
                         <Row>
                             <Col className="mainTitles">
-                                <h1 className="citas-home_title">
-                                Ordena el flujo<br className="d-none d-sm-block" /> de clientes<br className="d-none d-sm-block" /> que llegan a <br className="d-none d-sm-block d-xxl-none" />las sucursales
+                                <h1 className="citas-home_title no-br-sm">
+                                    <Trans t={t} i18nKey="HEADER.TITLE"/>
                                 </h1>
                                 <p className="citas-home_parraf">
-                                 <b>Software de citas online </b>para empresas con <br/> múltiples trámites y tipos de atención
+                                 <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
                                 </p>
                                 <Link href="/contacto">
                                 <button className="citas-home_demobutton">
-                                    Solicita una demo
+                                    <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                 </button>
                                 </Link>
                             </Col>
@@ -53,8 +59,9 @@ export default function Header() {
             <Container className="d-flex justify-content-center citas-home_text">
                 <Row>
                     <Col>
-                        <h3><b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
-                            experiencia de sus clientes con <b> Debmedia</b></h3>
+                        <h3 className="no-br-sm">
+                            <Trans t={t} i18nKey="HEADER.CAPTION"/>
+                        </h3>
                     </Col>
                 </Row>
             </Container>

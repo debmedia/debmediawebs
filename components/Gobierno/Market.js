@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import Image from 'next/image'
 import largas from '../../asset/imgs/gobierno/largas.svg'
 import pro from '../../asset/imgs/gobierno/pro.svg'
 import quejas from '../../asset/imgs/gobierno/quejas.svg'
 import arrow from '../../asset/imgs/home/arrow.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Market() {
+    const { t } = useTranslation(['gobierno', 'common']);
+
     return (
         <>
             <Container fluid className="market-gobierno-section">
@@ -15,8 +17,7 @@ export default function Market() {
                     <Row>
                         <Col className="market-gobierno-section_maintitle">
                             <h3 className="text-center">
-                                Los ciudadanos de hoy  <br />
-                                <b>no toleran procesos ineficientes</b>
+                                <Trans t={t} i18nKey="MARKET.TITLE"/>
                             </h3>
                         </Col>
                     </Row>
@@ -28,10 +29,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-gobierno-section_title">
-                                Largas filas
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-gobierno-section_parraf">
-                                y esperas
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-gobierno-section_div">
@@ -41,10 +42,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-gobierno-section_title">
-                                Procesos manuales
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="market-gobierno-section_parraf">
-                                ineficientes
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-gobierno-section_div">
@@ -54,10 +55,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-gobierno-section_title">
-                                Quejas que
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="market-gobierno-section_parraf">
-                                dañan la imagen
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>

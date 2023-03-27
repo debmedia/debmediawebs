@@ -5,10 +5,12 @@ import woman from '../asset/imgs/gracias-woman.svg'
 import womanxs from '../asset/imgs/gracias-womanxs.svg'
 import shape2 from '../asset/imgs/contact/right.svg'
 import HubspotForm from 'react-hubspot-form'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
+import { useTranslation, Trans } from 'next-i18next';
 
 
 export default function Thankyou() {
+    const { t } = useTranslation(['components', 'common']);
     return (
         <>
             <Container fluid className="gracias-section py-5">
@@ -18,13 +20,11 @@ export default function Thankyou() {
                 </div>
                 <div className="gracias-section_blue">
                     <h1>
-                        Mientras tanto, <br /><b> te invitamos</b> <br />
-                        a explorar nuestra <br />
-                        sección de recursos. <br /><b>¡Disfrútalos!</b>
+                        <Trans t={t} i18nKey="THANKYOU.MESSAGE"/>
                     </h1>
                     <Link href="/">
                         <button className="citas-home_demobutton">
-                            Ver recursos
+                            <Trans t={t} i18nKey="THANKYOU.BUTTON"/>
                         </button>
                     </Link>
                 </div>

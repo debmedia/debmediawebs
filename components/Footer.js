@@ -1,14 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col, ListGroup } from "react-bootstrap";
-import Link from 'next/link';
+import Link from 'next-translate-routes/link';
 import Image from 'next/image'
 import partners from '../asset/imgs/partners.svg'
 import face from '../asset/imgs/facebook.svg'
 import insta from '../asset/imgs/insta.svg'
 import lkedin from '../asset/imgs/lkedin.svg'
+import { useTranslation } from 'next-i18next';
+import { useRouter } from "next-translate-routes/router";
 
 
 export default function Footer() {
+    const { t } = useTranslation(['components', 'common']);
+    const { locale } = useRouter();
     return (
         <>
             <footer>
@@ -16,86 +20,89 @@ export default function Footer() {
                     <Container>
                         <Row>
                             <Col sm="3" xs="6">
-                                <h6 className="footer-section_title">Soluciones</h6>
+                                <h6 className="footer-section_title">
+                                    { t("FOOTER.SOLUTIONS") }
+                                    </h6>
                                 <hr />
                                 <ListGroup className="footer-section_list">
                                     <ListGroup.Item>
                                         <Link href="/debq">
-                                            Gestión de filas
-
+                                            { t("FOOTER.QUEUE_MANAGEMENT") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/citasonline">
-                                            Citas online
+                                            { t("FOOTER.ONLINE_APPOINTMENTS") }
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/fila-virtual">
-                                            Fila virtual
+                                            { t("FOOTER.VIRTUAL_QUEUE") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/debsign">
-                                            Cartelería digital
+                                            { t("FOOTER.DIGITAL_SIGNAGE") }
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/atencion-virtual">
-                                            Atención virtual
+                                            { t("FOOTER.VIRTUAL_ATTENTION") }
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/encuestas">
-                                            Encuestas
+                                            { t("FOOTER.SURVEYS") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/preatendedor">
-                                            Preatendedor
+                                            { t("FOOTER.PRE_SERVICE") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/preatendedor">
-                                            Chatbot de WhatsApp 
+                                            { t("FOOTER.WHATSAPP_CHATBOT") }
                                         </Link>
                                     </ListGroup.Item>
                                 </ListGroup>
                             </Col>
                             <Col sm="3" xs="6">
-                                <h6 className="footer-section_title">Empresa</h6>
+                                <h6 className="footer-section_title">
+                                    { t("FOOTER.COMPANY") }
+                                </h6>
                                 <hr />
                                 <ListGroup className="footer-section_list">
                                     <ListGroup.Item>
                                         <Link href="/clientes">
-                                            Clientes
+                                            { t("FOOTER.CLIENTS") }
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/nosotros">
-                                            Nosotros
+                                            { t("FOOTER.US") }
 
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/partners">
-                                            Partners
+                                            { t("FOOTER.PARTNERS") }
                                         </Link>
                                     </ListGroup.Item>
+                                    { locale === "es" && 
                                     <ListGroup.Item>
                                         <Link href="https://blog.debmedia.com">
-                                            Blog
-
+                                            { t("FOOTER.BLOG") }
                                         </Link>
                                     </ListGroup.Item>
+                                    }
                                     <ListGroup.Item>
                                         <Link href="/politica">
-                                            Política de calidad
-                                            y seguridad
+                                            { t("FOOTER.QUALITY_AND_SECURITY_POLICY") }
                                         </Link>
                                     </ListGroup.Item>
 
@@ -103,37 +110,39 @@ export default function Footer() {
                                 </ListGroup>
                             </Col>
                             <Col sm="3" xs="6">
-                                <h6 className="footer-section_title">Industrias</h6>
+                                <h6 className="footer-section_title">
+                                    { t("FOOTER.INDUSTRIES") }
+                                </h6>
                                 <hr />
                                 <ListGroup className="footer-section_list">
                                     <ListGroup.Item>
                                         <Link href="/bancosyfinanzas">
-                                            Banca y aseguradoras
+                                            { t("FOOTER.BANKING_AND_INSURANCE") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/salud">
-                                            Salud
+                                            { t("FOOTER.HEALTH") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/gobierno">
-                                            Gobierno
+                                            { t("FOOTER.GOVERNMENT") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/utilities">
-                                            Utilities y corporaciones
+                                            { t("FOOTER.UTILITIES_AND_CORPORATIONS") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/retail">
-                                            Servicios y retail
+                                            { t("FOOTER.SERVICES_AND_RETAIL") }
                                         </Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
                                         <Link href="/telcos">
-                                            Telecomunicaciones
+                                            { t("FOOTER.TELECOMMUNICATIONS") }
                                         </Link>
                                     </ListGroup.Item>
 
@@ -141,7 +150,9 @@ export default function Footer() {
                                 </ListGroup>
                             </Col>
                             <Col sm="3" xs="6">
-                                <h6 className="footer-section_title">Avalados por</h6>
+                                <h6 className="footer-section_title">
+                                    { t("FOOTER.ENDORSED_BY") }
+                                </h6>
                                 <hr />
                                 <Image src={partners.src} width={100}
                                     height={130} />
@@ -164,10 +175,8 @@ export default function Footer() {
                             </Col>
                         </Row>
                     </Container>
-
                 </Container>
             </footer>
-
         </>
     );
 }

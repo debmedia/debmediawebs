@@ -3,7 +3,7 @@ import Review from '../json/Review.json';
 import { Row, Container, Col } from "react-bootstrap";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -19,18 +19,23 @@ import quote2 from '../asset/imgs/quote2.png'
 import SwiperCore, { Autoplay, FreeMode, Pagination } from 'swiper';
 import { Navigation } from "swiper";
 
-
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from 'next-translate-routes/router'
 // install Swiper modules
 SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
 
 
-export default function Brands() {
+export default function Brands({filter}) {
     const [review, setreview] = useState([]);
+    const { t } = useTranslation(['components', 'common']);
+    const { locale } = useRouter();
 
     useEffect(() => {
-        setreview(Review);
-    }, []);
+        let showReview = Review[locale] || Review["es"];
+        if (Array.isArray(filter)) showReview = showReview.filter((elem) => filter.includes(elem.name))
+        setreview(showReview);
+    }, [filter,locale]);
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
@@ -42,8 +47,8 @@ export default function Brands() {
                     <Row>
                         <Col sm={5} xs={12} >
                             <Col>
-                                <h3>
-                                    Más de 300<br className="d-none d-sm-block" /> organizaciones<br className="d-none d-sm-block" /><span> ya confían en<br className="d-none d-sm-block" /> Debmedia</span>
+                                <h3 className="no-br-sm">
+                                    <Trans t={t} i18nKey="REVIEW.TITLE"/>
                                 </h3>
                             </Col>
                             <Col className=" d-none d-sm-block">
@@ -98,7 +103,7 @@ export default function Brands() {
                                                     <span className="review-section_slidersection-client-work">{item.job}</span>
                                                     <img src={quote1.src} className="quote1 d-none d-sm-block" />
 
-                                                    <p className="review-section_slidersection-client-parraf">{item.comment}</p>
+                                                    <p className="review-section_slidersection-client-parraf" dangerouslySetInnerHTML={{__html: item.comment}}></p>
                                                     <img src={quote2.src} className="quote2 d-none d-sm-block" />
                                                 </Col>
                                                 <Col xs="12">

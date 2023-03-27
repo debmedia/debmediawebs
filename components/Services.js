@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Services from '../json/Services.json';
 import { Row, Container, Col } from "react-bootstrap";
-import axios from "axios";
+import { useTranslation, Trans } from 'next-i18next';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Image from 'next/image'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 
 
 // Import Swiper styles
@@ -15,20 +14,21 @@ import 'swiper/css/pagination';
 
 // import Swiper core and required modules
 import SwiperCore, { Autoplay, FreeMode, Pagination } from 'swiper';
+import { useRouter } from "next-translate-routes/router";
 
 // install Swiper modules
 SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
-const basePath = '/asset/imgs/brands'
-
 
 export default function Brands() {
+    const { t } = useTranslation(['components', 'common']);
+    const { locale } = useRouter();
 
-    const [services, setservices] = useState([]);
+    const [services, setServices] = useState([]);
 
     useEffect(() => {
-        setservices(Services);
-    }, []);
+        setServices(Services[locale] || Services["es"]);
+    }, [locale]);
 
     return (
         <>
@@ -36,9 +36,7 @@ export default function Brands() {
                 <Row>
                     <Col className="services-section_maintitle text-center">
                         <h3>
-
-                            <b>Tecnología que mejora</b> <br />
-                            la experiencia de tus clientes
+                            <Trans t={t} i18nKey="SERVICES.TITLE"/>
                         </h3>
                         {/* <p className="services-section_parraf">
                         Explora otras soluciones
@@ -84,7 +82,7 @@ export default function Brands() {
                                         <h4 className="services-section_service-title">{item.name}</h4>
                                         <Link href={item.url} passHref>
                                             <a rel="noopener noreferrer" className="services-section_service-link">
-                                                Conoce más
+                                                <Trans t={t} i18nKey="common:SEE_MORE"/>
                                             </a>
                                         </Link>
                                     </div>

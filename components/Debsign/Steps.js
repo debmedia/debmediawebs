@@ -5,17 +5,19 @@ import check_blue from '../../asset/imgs/home/check_blue.svg'
 import check_white from '../../asset/imgs/home/check-m.svg'
 import shape1 from '../../asset/imgs/mobile/shapeTabs.svg'
 import Data from '../../json/setps-debsign.json';
-import Link from 'next/link'
+import Link from 'next-translate-routes/link';
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next-translate-routes/router";
 
 
 export default function Solutions() {
-
+    const { t } = useTranslation(['debsign', 'common']);
+    const { locale } = useRouter();
     const [dataJson, setData] = useState([]);
 
     useEffect(() => {
-        setData(Data);
-    }, []);
-
+        setData(Data[locale] || Data['es']);
+    }, [locale]);
 
     return (
         <>
@@ -23,7 +25,7 @@ export default function Solutions() {
                 <Row>
                     <Col className="setps-debsign-section_maintitle">
                         <h3 className="text-center">
-                            <b>Moderniza la forma de comunicación en tus sucursales</b>
+                            <Trans t={t} i18nKey="STEPS.TITLE"/>
                         </h3>
                     </Col>
                 </Row>
@@ -41,13 +43,11 @@ export default function Solutions() {
                                     height={60} className={'img-fluid'} />
                             </div>
 
-                            <h4 className="setps-debsign-section_title">
-                                Ajusta tu contenido
-
-                                <br className="d-none d-sm-block" /> en tiempo real.
+                            <h4 className="setps-debsign-section_title no-br-sm">
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="setps-debsign-section_parraf">
-                                Con mensajes adaptados al<br /> momento que vive tu organización.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-debsign-section_div">
@@ -59,15 +59,11 @@ export default function Solutions() {
                                 <Image src={check_white.src} width={60}
                                     height={60} className={'img-fluid'} />
                             </div>
-                            <h4 className="setps-debsign-section_title">
-                            Transforma los recursos. <br className="d-none d-sm-block" />
-                           
-
-
+                            <h4 className="setps-debsign-section_title no-br-sm">
+                                <Trans t={t} i18nKey="STEPS.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="setps-debsign-section_parraf">
-                            Utiliza componentes amigables para el planeta.
-
+                                <Trans t={t} i18nKey="STEPS.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-debsign-section_div">
@@ -79,11 +75,11 @@ export default function Solutions() {
                                 <Image src={check_white.src} width={60}
                                     height={60} className={'img-fluid'} />
                             </div>
-                            <h4 className="setps-debsign-section_title">
-                                Genera contenido dinámico  <br className="d-none d-sm-block" /> y atractivo para los clientes.
+                            <h4 className="setps-debsign-section_title no-br-sm">
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="setps-debsign-section_parraf">
-                                Gana visibilidad en influye en decisiones de compra.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>
@@ -115,7 +111,7 @@ export default function Solutions() {
                                     </Col>
                                     <Col sm={7} className="relative">
                                         <h3 className="text-left mb-4">
-                                            <b>Define el Customer Journey y  </b> <br />mejora la atención.
+                                            <Trans t={t} i18nKey="STEPS.SUBTITLE"/>
                                         </h3>
                                         <span className="lineSteps-debsign"></span>
                                         <Nav variant="pills" className="flex-column">
@@ -127,7 +123,7 @@ export default function Solutions() {
                                         </Nav>
                                         <Link href="/contacto">
                                             <button className="citas-home_demobutton">
-                                                Solicita una demo
+                                                <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                             </button>
                                         </Link>
                                     </Col>

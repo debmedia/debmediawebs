@@ -5,23 +5,25 @@ import check_blue from '../../asset/imgs/home/check_blue.svg'
 import check_white from '../../asset/imgs/home/check-m.svg'
 import shape1 from '../../asset/imgs/mobile/shapeTabs.svg'
 import Data from '../../json/setps-mobile.json';
-import Link from 'next/link'
-
+import Link from 'next-translate-routes/link'
+import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next-translate-routes/router";
 
 export default function Solutions() {
+    const { t } = useTranslation(['fila-virtual', 'common']);
+    const { locale } = useRouter();
     const [dataJson, setData] = useState([]);
 
     useEffect(() => {
-        setData(Data);
-    }, []);
+        setData(Data[locale] || Data['es']);
+    }, [locale]);
     return (
         <>
             <Container className="setps-top">
                 <Row>
                     <Col className="setps-section_maintitle">
                         <h3 className="text-center">
-                            <b>Permite a tus clientes aprovechar <br />
-                                el tiempo</b> como mejor prefieran.
+                            <Trans t={t} i18nKey="STEPS.TITLE"/>
                         </h3>
                     </Col>
                 </Row>
@@ -39,13 +41,11 @@ export default function Solutions() {
                                     height={60} className={'img-fluid'} />
                             </div>
 
-                            <h4 className="setps-section_title">
-                                Controla la afluencia
-                                <br className="d-none d-sm-block" />  en salas de espera
+                            <h4 className="setps-section_title no-br-sm">
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.TITLE"/>
                             </h4>
-                            <p className="setps-section_parraf">
-                                Y reduce el flujo innecesario<br className="d-none d-sm-block" /> de clientes.
-
+                            <p className="setps-section_parraf no-br-sm">
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-section_div">
@@ -57,12 +57,11 @@ export default function Solutions() {
                                 <Image src={check_white.src} width={60}
                                     height={60} className={'img-fluid'} />
                             </div>
-                            <h4 className="setps-section_title">
-                                Permite a los clientes<br className="d-none d-sm-block" />
-                                seguir el turno
+                            <h4 className="setps-section_title no-br-sm">
+                                <Trans t={t} i18nKey="STEPS.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="setps-section_parraf">
-                                y ser llamados a través de SMS o WhatsApp.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-section_div">
@@ -74,12 +73,11 @@ export default function Solutions() {
                                 <Image src={check_white.src} width={60}
                                     height={60} className={'img-fluid'} />
                             </div>
-                            <h4 className="setps-section_title">
-                                Deja que aprovechen <br className="d-none d-sm-block" />
-                                su  tiempo
+                            <h4 className="setps-section_title no-br-sm">
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="setps-section_parraf">
-                                Y regresen justo a tiempo para ser atendidos.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>
@@ -111,8 +109,7 @@ export default function Solutions() {
                                     </Col>
                                     <Col sm={7} className="relative">
 
-                                        <span className="lineSteps-mobile"></span>
-                                        <Nav variant="pills" className="flex-column">
+                                        <Nav variant="pills" className="flex-column lineSteps-mobile">
                                             {dataJson.map((item, index) => (
                                                 <Nav.Item key={index}>
                                                     <Nav.Link eventKey={item.key} className="setps-tabs_content-nav"><div className="numberStep">{index + 1}</div> <div className="textStep">{item.text}</div></Nav.Link>
@@ -121,7 +118,7 @@ export default function Solutions() {
                                         </Nav>
                                         <Link href="/contacto">
                                             <button className="citas-home_demobutton">
-                                                Solicita una demo
+                                                <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                             </button>
                                         </Link>
                                     </Col>

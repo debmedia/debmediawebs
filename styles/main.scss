@@ -26,7 +26,11 @@
 @import "./contact";
 @import "./industries";
 @import "./footer";
-
+@import "./language-selector";
+@import "./pill-list.scss";
+@import "./steps.scss";
+@import "./wideTestimonial.scss";
+@import "./celdas.scss";
 
 
 * {
@@ -74,7 +78,7 @@ nav.navbar.navbar-expand-lg {
     position: relative;
 }
 
-.reverseXs {
+.reverse-lg {
     flex-flow: column-reverse;
 
     @media (min-width: 992px) {
@@ -82,7 +86,13 @@ nav.navbar.navbar-expand-lg {
     }
 }
 
+.reverse-md {
+    flex-flow: column-reverse;
 
+    @media (min-width: 576px) {
+        flex-flow: initial;
+    }
+}
 
 .dropdown-menu {
     position: absolute;
@@ -309,5 +319,11 @@ div#basic-navbar-nav .dropdown-item:active {
 }
 
 .logoDiv {
-    max-width: 140px;
+    width: 140px;
+}
+
+.no-br-sm br{
+    @media (max-width: 576px) {
+        display: none!important;
+    }
 }

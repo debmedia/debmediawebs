@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
-import Image from 'next/image'
-import mypic from '../../asset/imgs/home/videoShape.svg'
-import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
-import shape3 from '../../asset/imgs/home/headershape3.svg'
-import { useMediaQuery } from 'react-responsive'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Header() {
-    const isMobile = useMediaQuery({ query: '(max-width:899px)' })
-
+    const { t } = useTranslation(['bancosyfinanzas', 'common']);
     return (
         <>
             <header>
@@ -22,11 +17,13 @@ export default function Header() {
                         <Row>
                             <Col className="mainTitles">
                                 <h1 className="header-banca_title">
-                               <b> Mejora la experiencia<br/> de los clientes</b> dentro y  <br className="d-none d-sm-none" /> fuera de las sucursales
+                                <Trans t={t} i18nKey="HEADER.TITLE">
+                                <b> 0 <br/> 2 </b> 1 <br className="d-none d-sm-none" /> 3
+                                </Trans>
                                 </h1>
                                 <Link href="/contacto">
                                 <button className="header-banca_demobutton">
-                                    Solicita una demo
+                                    <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                 </button>
                                 </Link>
                             </Col>

@@ -4,25 +4,26 @@ import Image from 'next/image'
 import check_blue from '../../asset/imgs/home/check_blue.svg'
 import check_white from '../../asset/imgs/home/check-m.svg'
 import shape1 from '../../asset/imgs/mobile/shapeTabs.svg'
-
+import { useTranslation, Trans } from 'next-i18next';
 import Data from '../../json/setps-citas.json';
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
+import { useRouter } from "next-translate-routes/router";
 
 export default function Solutions() {
-
+    const { t } = useTranslation(['citasonline', 'common']);
     const [dataJson, setData] = useState([]);
+    const { locale } = useRouter();
 
     useEffect(() => {
-        setData(Data);
-    }, []);
-
+        setData(Data[locale] || Data["es"]);
+    }, [locale]);
     return (
         <>
             <Container className="setps-top">
                 <Row>
                     <Col className="setps-section_citas_maintitle">
                         <h3 className="text-center">
-                            <b>Organiza el flujo de tus sucursales</b>
+                            <Trans t={t} i18nKey="STEPS.TITLE"/>
                         </h3>
                     </Col>
                 </Row>
@@ -40,13 +41,11 @@ export default function Solutions() {
                                     height={60} className={'img-fluid'} />
                             </div>
 
-                            <h4 className="setps-section_citas_title">
-                                Anticípate y conoce
-
-                                <br className="d-none d-sm-block" />qué clientes te visitarán.
+                            <h4 className="setps-section_citas_title no-br-sm">
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="setps-section_citas_parraf">
-                                Ofrece una experiencia personalizada y eleva la satisfacción.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-section_citas_div">
@@ -58,14 +57,11 @@ export default function Solutions() {
                                 <Image src={check_white.src} width={60}
                                     height={60} className={'img-fluid'} />
                             </div>
-                            <h4 className="setps-section_citas_title">
-                                Conoce cuántos
-                                <br className="d-none d-sm-block" />
-                                recursos necesitas
+                            <h4 className="setps-section_citas_title no-br-sm">
+                            <Trans t={t} i18nKey="STEPS.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="setps-section_citas_parraf">
-                                Mejora el proceso de los clientes <br />
-                                que llegan a tus sucursales.
+                            <Trans t={t} i18nKey="STEPS.CAPTION_2.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="setps-section_citas_div">
@@ -77,11 +73,11 @@ export default function Solutions() {
                                 <Image src={check_white.src} width={60}
                                     height={60} className={'img-fluid'} />
                             </div>
-                            <h4 className="setps-section_citas_title">
-                                Evita esperas  <br className="d-none d-sm-block" />innecesarias
+                            <h4 className="setps-section_citas_title no-br-sm">
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="setps-section_citas_parraf">
-                                Acorta el tiempo que tus clientes pasan dentro de las sedes.
+                                <Trans t={t} i18nKey="STEPS.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>
@@ -113,20 +109,22 @@ export default function Solutions() {
                                     </Col>
                                     <Col sm={6} className="relative">
                                         <h3 className="text-left mb-4">
-                                            <b>Permite a los clientes agendar
-                                            </b> <br />sus citas online desde la web
+                                            <Trans t={t} i18nKey="STEPS.SUBTITLE"/>
                                         </h3>
-                                        <span className="lineSteps-citas"></span>
-                                        <Nav variant="pills" className="flex-column">
+                                        {/* <span className="lineSteps-citas"></span> */}
+                                        <Nav variant="pills" className="flex-column lineSteps-mobile2">
                                             {dataJson.map((item, index) => (
                                                 <Nav.Item key={index}>
-                                                    <Nav.Link eventKey={item.key} className="setps-tabs_citas_content-nav"><div className="numberStep">{index + 1}</div> <div className="textStep">{item.text}</div></Nav.Link>
+                                                    <Nav.Link eventKey={item.key} className="steps-tabs_content-nav">
+                                                        <div className="numberStep">{index + 1}</div>
+                                                        <div className="textStep">{item.text}</div>
+                                                    </Nav.Link>
                                                 </Nav.Item>
                                             ))}
                                         </Nav>
                                         <Link href="/contacto">
                                             <button className="citas-home_demobutton">
-                                                Solicita una demo
+                                                <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                             </button>
                                         </Link>
                                     </Col>

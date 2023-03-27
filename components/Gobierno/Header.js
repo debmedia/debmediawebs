@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import shape2 from '../../asset/imgs/home/headershape2.svg'
-import { useMediaQuery } from 'react-responsive'
-import Link from 'next/link'
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function Header() {
-    const isMobile = useMediaQuery({ query: '(max-width:899px)' })
+    const { t } = useTranslation(['gobierno', 'common']);
 
     return (
         <>
@@ -18,11 +17,13 @@ export default function Header() {
                         <Row>
                             <Col className="mainTitles">
                                 <h1 className="header-gobierno_title">
-                               <b>Mejora la experiencia<br/> de los ciudadanos</b> dentro y  <br className="d-none d-sm-none" />fuera de las sucursales
+                                    <Trans t={t} i18nKey="HEADER.TITLE">
+                                        <b>0<br/> 2</b> 1 <br className="d-none d-sm-none" /> 3
+                                    </Trans>
                                 </h1>
 
                                 <button className="header-gobierno_demobutton">
-                                    Solicita una demo
+                                    <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
                                 </button>
                             </Col>
                         </Row>
