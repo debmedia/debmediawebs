@@ -72,7 +72,7 @@ export default function Footer() {
                             </Col>
                             <Col sm="3" xs="6">
                                 <h6 className="footer-section_title">
-                                    { t("FOOTER.SOLUTIONS") }
+                                    { t("FOOTER.COMPANY") }
                                 </h6>
                                 <hr />
                                 <ListGroup className="footer-section_list">
