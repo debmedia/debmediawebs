@@ -37,3 +37,5 @@ yarn-error.log*
 /scripts/out
 /scripts/in
 /localOnly
+# Local Netlify folder
+.netlify
