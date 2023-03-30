@@ -7,17 +7,20 @@ import mypicxs_pt from '../../asset/imgs/debq/GestiondeFilas_01_PT.png'
 import mypicxs_en from '../../asset/imgs/debq/GestiondeFilas_01_EN.png'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
-import mainNoti from '../../asset/imgs/debq/main-noti.png'
+import mainNoti_es from '../../asset/imgs/debq/main-noti_ES.png'
+import mainNoti_pt from '../../asset/imgs/debq/main-noti_PT.png'
+import mainNoti_en from '../../asset/imgs/debq/main-noti_EN.png'
 import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from "next-translate-routes/router";
 
 const mypicxs_lang = {es: mypicxs_es, pt: mypicxs_pt, en: mypicxs_en};
+const mainNoti_lang = {es: mainNoti_es, pt: mainNoti_pt, en: mainNoti_en};
 export default function Header() {
     const { t } = useTranslation(['debq', 'common']);
     const { locale } = useRouter();
     const mypicxs = mypicxs_lang[locale] || mypicxs_lang["es"];
-
+    const mainNoti = mainNoti_lang[locale] || mainNoti_lang["es"];
     return (
         <>
             <header>
