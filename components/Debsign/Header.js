@@ -4,7 +4,9 @@ import Image from 'next/image'
 import mypic_es from '../../asset/imgs/debsign/Carteleria_ES.png'
 import mypic_pt from '../../asset/imgs/debsign/Carteleria_PT.png'
 import mypic_en from '../../asset/imgs/debsign/Carteleria_EN.png'
-import mypicxs_es from '../../asset/imgs/debsign/main-debsign.png'
+import mypicxs_es from '../../asset/imgs/debsign/Cartelería_xs_ES.png'
+import mypicxs_pt from '../../asset/imgs/debsign/Cartelería_xs_PT.png'
+import mypicxs_en from '../../asset/imgs/debsign/Cartelería_xs_EN.png'
 import shape1 from '../../asset/imgs/home/headershape1.svg'
 import shape2 from '../../asset/imgs/home/headershape2.svg'
 import shape3 from '../../asset/imgs/home/headershape3.svg'
@@ -13,7 +15,7 @@ import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from "next/dist/client/router";
 
 const mypic_lang = {es: mypic_es, pt: mypic_pt, en: mypic_en}
-const mypicxs_lang = {es: mypicxs_es};
+const mypicxs_lang = {es: mypicxs_es, pt: mypicxs_pt, en: mypicxs_en};
 export default function Header() {
     const { t } = useTranslation(['debsign', 'common']);
     const { locale } = useRouter();
