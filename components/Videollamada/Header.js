@@ -8,12 +8,14 @@ import { useTranslation, Trans } from 'next-i18next';
 import Link from "next-translate-routes/link";
 import videoThumb_es from '../../asset/imgs/videollamada/video_thumb_ES.png';
 import videoThumb_pt from '../../asset/imgs/videollamada/video_thumb_PT.png';
+import videoThumb_en from '../../asset/imgs/videollamada/video_thumb_EN.png';
 import videoThumb_xs_es from '../../asset/imgs/videollamada/video_thumb_xs_ES.png';
 import videoThumb_xs_pt from '../../asset/imgs/videollamada/video_thumb_xs_PT.png';
+import videoThumb_xs_en from '../../asset/imgs/videollamada/video_thumb_xs_EN.png';
 import { useRouter } from "next/dist/client/router";
 
-const videoThumb_lang = {es: videoThumb_es, pt: videoThumb_pt};
-const videoThumb_xs_lang = {es: videoThumb_xs_es, pt: videoThumb_xs_pt};
+const videoThumb_lang = {es: videoThumb_es, pt: videoThumb_pt, en: videoThumb_en};
+const videoThumb_xs_lang = {es: videoThumb_xs_es, pt: videoThumb_xs_pt, en: videoThumb_xs_en};
 
 export default function Header() {
     const { t } = useTranslation(['atencion-virtual', 'common']);
