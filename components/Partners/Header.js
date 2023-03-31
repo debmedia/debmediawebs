@@ -5,9 +5,11 @@ import shape2 from '../../asset/imgs/home/headershape2.svg'
 import shape3 from '../../asset/imgs/home/headershape3.svg'
 import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
+import {useRouter} from "next-translate-routes/router";
 
 export default function Header() {
     const { t } = useTranslation(['partners', 'common']);
+    const {pathname} = useRouter();
     return (
         <>
             <header>
@@ -30,7 +32,7 @@ export default function Header() {
                                 <p className="partners-home_parraf no-br-sm">
                                     <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
                                 </p>
-                                <Link href="#contact-partners">
+                                <Link href={`${pathname}#contact-partners`}>
                                     <span className="partners-home_demobutton">
                                     <Trans t={t} i18nKey="HEADER.BUTTON"/>
                                     </span>
