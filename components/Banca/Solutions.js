@@ -141,7 +141,7 @@ export default function Solutions(props) {
                                                         </Col>
                                                         <Col xs={{ span: 10, offset: 1 }} className="solutions-indus-tabs_content-text">
                                                             <p>
-                                                                <b>{item.main}</b>{item.secu}
+                                                                <b>{item.main}</b>{" "}{item.secu}
                                                             </p>
                                                             <Link href={item.url}>
                                                                 <button>
