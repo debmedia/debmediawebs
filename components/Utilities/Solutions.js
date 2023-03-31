@@ -9,7 +9,7 @@ import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from "next-translate-routes/router";
 
 export default function Solutions(props) {
-    const { t } = useTranslation(['home', 'common']);
+    const { t } = useTranslation(['utilities', 'common']);
     const [dataJson, setData] = useState([]);
     const [logos, setLogos] = useState([]);
     const { locale } = useRouter();
