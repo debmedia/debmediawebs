@@ -42,7 +42,7 @@ export default function SpecsIndus() {
                                 </Col>
                                 <Col xs="12" className="modern-partners-section_feature-text text-center">
                                     <h5>
-                                        <Trans t={t} i18nKey="MARKET.CAPTION_1"/>
+                                        <Trans t={t} i18nKey="MARKET.CAPTION_2"/>
                                     </h5>
                                 </Col>
                             </Row>
@@ -55,7 +55,7 @@ export default function SpecsIndus() {
                                 </Col>
                                 <Col xs="12" className="modern-partners-section_feature-text text-center">
                                     <h5>
-                                        <Trans t={t} i18nKey="MARKET.CAPTION_1"/>
+                                        <Trans t={t} i18nKey="MARKET.CAPTION_3"/>
                                     </h5>
                                 </Col>
                             </Row>
