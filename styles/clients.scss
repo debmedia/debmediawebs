@@ -102,8 +102,8 @@ a#left-tabs-example-tab-utilities {
 .clients-page_section:hover {
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
-    height: 230px !important;
-    margin-top: -10px;
+    height: calc(100% + 30px);
+    transform: translatey(-10px);
 }
 
 .h130 {
