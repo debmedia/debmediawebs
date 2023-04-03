@@ -145,15 +145,14 @@ export default function Solutions() {
                                         <h3 className="text-left mb-4">
                                             <Trans t={t} i18nKey="STEPS.SUBTITLE"/>
                                         </h3>
-                                        <span className="lineSteps-debq"></span>
                                         <Nav
                                             variant="pills"
-                                            className="flex-column">
+                                            className="flex-column lineSteps-generic">
                                             {dataJson.map((item, index) => (
                                                 <Nav.Item key={index}>
                                                     <Nav.Link
                                                         eventKey={item.key}
-                                                        className="setps-tabs_debq_content-nav">
+                                                        className="setps-tabs_content-nav">
                                                         <div className="numberStep">
                                                             {index + 1}
                                                         </div>{" "}

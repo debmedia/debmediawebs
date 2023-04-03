@@ -41,11 +41,10 @@ export default function Solutions() {
                                                 <Trans t={t} i18nKey="STEPS.TITLE"/>
                                             </b>
                                         </h3>
-                                        <span className="lineSteps-partners"></span>
-                                        <Nav variant="pills" className="flex-column">
+                                        <Nav variant="pills" className="flex-column lineSteps-generic">
                                             {dataJson.map((item, index) => (
                                                 <Nav.Item key={index}>
-                                                    <Nav.Link eventKey={item.key} className="setps-tabs_citas_content-nav"><div className="numberStep">{index + 1}</div> <div className="textStep">{item.text}</div></Nav.Link>
+                                                    <Nav.Link eventKey={item.key} className="steps-tabs_content-nav"><div className="numberStep">{index + 1}</div> <div className="textStep">{item.text}</div></Nav.Link>
                                                 </Nav.Item>
                                             ))}
                                         </Nav>
