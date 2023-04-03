@@ -112,7 +112,7 @@ export default function Solutions() {
                                             <Trans t={t} i18nKey="STEPS.SUBTITLE"/>
                                         </h3>
                                         {/* <span className="lineSteps-citas"></span> */}
-                                        <Nav variant="pills" className="flex-column lineSteps-mobile2">
+                                        <Nav variant="pills" className="flex-column lineSteps-generic">
                                             {dataJson.map((item, index) => (
                                                 <Nav.Item key={index}>
                                                     <Nav.Link eventKey={item.key} className="steps-tabs_content-nav">

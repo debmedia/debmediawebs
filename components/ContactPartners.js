@@ -43,6 +43,13 @@ export default function Contact() {
                                 onReady={(form) => console.log('Form ready!')}
                                 loading={<div>Loading...</div>}
                             />}
+                            {locale === "en" && <HubspotForm
+                                portalId='1797020'
+                                formId='267f3064-4938-412a-86ce-4f22fe1e9190'
+                                onSubmit={() => console.log('Submit!')}
+                                onReady={(form) => console.log('Form ready!')}
+                                loading={<div>Loading...</div>}
+                            />}
                         </Col>
                     </Row>
                 </Container>

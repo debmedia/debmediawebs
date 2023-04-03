@@ -3,6 +3,9 @@
     "TITLE": "Sobre <b> nós </b>",
     "SUBTITLE": "Nossa história: desde <b> 2010 perfeicionamos <br /> a </b> experiência dos seus clientes."
   },
+  "SOLUTIONS": {
+    "BUTTON": "conheça-nos"
+  },
   "MARKET": {
     "TITLE": "O que queremos <br /> fazer <b> pelas empresas? </b>",
     "PARAGRAPH_1": "Não importa se estamos falando de bancos, seguradoras, hospitais ou <b> governos. Os clientes querem escolher quando e por quais canais — online e offline — desejam </b> interagir.",

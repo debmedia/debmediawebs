@@ -9,11 +9,6 @@
   status = 307
 
 [[redirects]]
-  from = "/blog"
-  to = "/blog/"
-  status = 307
-
-[[redirects]]
-  from = "pt/blog"
-  to = "/blog/"
+  from = "en/blog/*"
+  to = "/blog/:splat"
   status = 307

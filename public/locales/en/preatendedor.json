@@ -32,11 +32,11 @@
       "TITLE": "<span> Include</span><br/> pop-ups"
     },
     "CAPTION_2": {
-      "TITLE": "<span> Add</span><br/> Forms"
+      "TITLE": "Add<br/><span> Forms</span>"
     },
     "CAPTION_3": {
       "TITLE": "Integrate with",
-      "SUBTITLE": "the customer database or CRM to personalize their journey."
+      "SUBTITLE": "the customer database or CRM to personalize their journey"
     }
   },
   "STEPS": {

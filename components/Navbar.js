@@ -18,6 +18,11 @@ const langsMobile = [
         label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.PORTUGUESE",
         dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.PORTUGUESE"
     },
+    {
+        key: "en",
+        label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.ENGLISH",
+        dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.ENGLISH"
+    },
 
 ]
 
@@ -31,6 +36,11 @@ const langs = [
         key: "pt",
         label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.PORTUGUESE",
         dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.PORTUGUESE"
+    },
+    {
+        key: "en",
+        label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.ENGLISH",
+        dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.ENGLISH"
     },
 ]
 

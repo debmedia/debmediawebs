@@ -8,17 +8,20 @@ import mypicxs_en from '../../asset/imgs/citas/Citas_EN.png';
 import shape1 from '../../asset/imgs/home/headershape1.svg';
 import shape2 from '../../asset/imgs/home/headershape2.svg';
 import shape3 from '../../asset/imgs/home/headershape3.svg';
-import mainNoti from '../../asset/imgs/citas/main-noti.svg';
+import mainNoti_es from '../../asset/imgs/citas/Citas_Calendario_ES.svg';
+import mainNoti_pt from '../../asset/imgs/citas/Citas_Calendario_PT.svg';
+import mainNoti_en from '../../asset/imgs/citas/Citas_Calendario_EN.svg';
 import Link from 'next-translate-routes/link';
 import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from "next-translate-routes/router";
 
 const mypicxs_lang = {es: mypicxs_es, pt: mypicxs_pt, en: mypicxs_en};
-
+const mainNoti_lang = {es: mainNoti_es, pt: mainNoti_pt, en: mainNoti_en};
 export default function Header() {
     const { t } = useTranslation(['citasonline', 'common']);
     const { locale } = useRouter();
     const mypicxs = mypicxs_lang[locale] || mypicxs_lang["es"];
+    const mainNoti = mainNoti_lang[locale] || mainNoti_lang["es"];
     return (
         <>
             <header>

@@ -161,7 +161,7 @@
     {
       "title": "Atendimento prévio",
       "image": {
-        "url": "pre.png",
+        "url": "Preatendedor_Sectores_PT.png",
         "width": 540,
         "height": 380
       },
@@ -185,7 +185,7 @@
       "url": "/atencion-virtual"
     },
     {
-      "title": "Virtual queue",
+      "title": "Virtual Queue",
       "image": {
         "url": "FilaVirtual_Sectores_EN.png",
         "width": 540,
@@ -247,7 +247,7 @@
     {
       "title": "Pre-Service Website",
       "image": {
-        "url": "pre.png",
+        "url": "Preatendedor_Sectores_ES.png",
         "width": 540,
         "height": 380
       },

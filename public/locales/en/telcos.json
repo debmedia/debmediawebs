@@ -1,12 +1,12 @@
 {
   "HEADER": {
-    "TITLE": "<b> Improve customer experience in and out of the <br /> offices"
+    "TITLE": "<b> Improve customer experience </b> in and out of the offices"
   },
   "MARKET": {
     "TITLE": "Today's customers won't <br /> <b> settle for just anything. </b>",
     "CAPTION_1": {
       "TITLE": "Obsolete customer <br />",
-      "SUBTITLE": "service models"
+      "SUBTITLE": "service models."
     },
     "CAPTION_2": {
       "TITLE": "Difficulty in directing",
@@ -32,6 +32,6 @@
       "SUBTITLE": "at every point and build loyalty to your services."
     },
     "ORGANIZATION_TITLE": "<0> We work with </0> <1 /> organizations that rely <3 /> on our <5 /> software.",
-    "SOLUTIONS_TITLE": "Debmedia solutions <b> for </b> telecommunications companies"
+    "SOLUTIONS_TITLE": "<b>Debmedia</b> solutions for telecommunications companies"
   }
 }

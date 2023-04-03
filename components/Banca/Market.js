@@ -33,7 +33,7 @@ export default function Market() {
                                 <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
                             </h4>
                             <p className="market-banca-section_parraf">
-                                <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
+                                <Trans t={t} i18nKey="MARKET.CAPTION_1.SUBTITLE"/>
                             </p>
                         </Col>
                         <Col sm={4} xs={4} className="market-banca-section_div">
@@ -43,7 +43,7 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-banca-section_title">
-                                <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
+                                <Trans t={t} i18nKey="MARKET.CAPTION_2.TITLE"/>
                             </h4>
                             <p className="market-banca-section_parraf">
                                 <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
@@ -56,10 +56,10 @@ export default function Market() {
                             </div>
 
                             <h4 className="market-banca-section_title">
-                                <Trans t={t} i18nKey="MARKET.CAPTION_1.TITLE"/>
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.TITLE"/>
                             </h4>
                             <p className="market-banca-section_parraf">
-                                <Trans t={t} i18nKey="MARKET.CAPTION_2.SUBTITLE"/>
+                                <Trans t={t} i18nKey="MARKET.CAPTION_3.SUBTITLE"/>
                             </p>
                         </Col>
                     </Row>

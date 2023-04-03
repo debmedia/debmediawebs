@@ -275,7 +275,7 @@
       "sm": 6
     },
     {
-      "title": "Virtual Queue:",
+      "title": "Virtual Queue",
       "image": {
         "url": "FilaVirtual_Home_EN.png",
         "urlXs": "FilaVirtual_Home_EN.png",
@@ -305,7 +305,7 @@
       "sm": 6
     },
     {
-      "title": "Virtual customer service",
+      "title": "Virtual Customer Service",
       "image": {
         "url": "videocall.png",
         "urlXs": "videocall.png",
@@ -320,7 +320,7 @@
       "sm": 6
     },
     {
-      "title": "Customer feedback",
+      "title": "Customer Feedback",
       "image": {
         "url": "Encuestas_Home_EN.png",
         "urlXs": "Encuestas_Home_EN.png",
@@ -335,7 +335,7 @@
       "sm": 6
     },
     {
-      "title": "Pre service website",
+      "title": "Pre Service Website",
       "image": {
         "url": "Preatendedor_EN.png",
         "urlXs": "Preatendedor_EN.png",
@@ -350,7 +350,7 @@
       "sm": 6
     },
     {
-      "title": "Whatsapp Chatbot",
+      "title": "WhatsApp Chatbot",
       "image": {
         "url": "ChatbotWhatsapp_Home_EN.png",
         "urlXs": "ChatbotWhatsapp_Home_EN.png",

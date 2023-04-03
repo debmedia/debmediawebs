@@ -118,11 +118,11 @@
     }
 }
 
-.lineSteps-mobile2 > div{
+.lineSteps-generic > div{
     position: relative;
 }
 
-.lineSteps-mobile2 > div::after{
+.lineSteps-generic > div::after{
     content: "";
     position: absolute;
     width: 4px;
@@ -132,7 +132,7 @@
     background-color: #2F9FEE;
 }
 
-.lineSteps-mobile2 > div:last-child::after{
+.lineSteps-generic > div:last-child::after{
     display: none;
 }
 
