@@ -1,0 +1,40 @@
+.search-field {
+    flex-wrap: nowrap!important;
+    
+    input,
+    input:focus,
+    button{
+        border: none;
+        border-radius: unset;
+        border-bottom: 1px solid rgba(100, 100, 100, 0);
+        background-color: unset;
+    }
+
+    input {
+        //display: none;
+        width: 0px!important;
+        transition: 500ms ease;
+    }
+    input:disabled{
+        background-color: unset;
+    }
+
+    button:hover{
+        background-color: unset;
+        color: unset;
+    }
+
+    &.active {
+        button {
+            border-bottom: 1px solid rgba(100, 100, 100, 1);
+        }
+        input {
+            //display: inline;
+            width: 200px!important;
+            border-bottom: 1px solid rgba(100, 100, 100, 1);
+            transition: 500ms ease;
+        }
+
+    }
+
+}
