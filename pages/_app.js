@@ -47,7 +47,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <noscript dangerouslySetInnerHTML={{
           __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4XJ42L"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscript>
-        <Navbar />
+        {!router.pathname.includes("blog") && <Navbar />}
         <Component {...pageProps} />
         <Footer />
       </Layout>
