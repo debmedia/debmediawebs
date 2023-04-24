@@ -15,7 +15,7 @@ module.exports = {
     generateRobotsTxt: true,
     robotsTxtOptions: {
         additionalSitemaps: [
-            `${process.env.URL}/blog/sitemap.xml`,
+            `${process.env.URL}/sitemap-blog.xml`,
         ],
     },
     exclude: ["/404", "/*/404", "/blog/sitemap.xml"],

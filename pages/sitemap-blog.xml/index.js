@@ -1,7 +1,7 @@
 // pages/server-sitemap-index.xml/index.tsx
 import { getServerSideSitemapLegacy } from "next-sitemap";
-import * as wordpress from "../../../services/wordpress";
-import { BLOG_ABSOLUTE_URL } from "../../../constants/urls";
+import * as wordpress from "../../services/wordpress";
+import { BLOG_ABSOLUTE_URL } from "../../constants/urls";
 
 export const getServerSideProps = async (ctx) => {
     try {
