@@ -108,6 +108,9 @@
       }
     }
   },
+  "CONTACT_PARTNERS": {
+    "TITLE": "Contact our team and <br />improve your customers' experience!"
+  },
   "NAVBAR": {
     "HOME": "$t(common:HOME)",
     "SOLUTIONS": {
@@ -135,5 +138,31 @@
   "THANKYOU": {
     "MESSAGE": "In the <br /> <b> meantime, we </b> <br /> invite you to <br /> explore our resources <br /> <b> section. </b> Enjoy them!",
     "BUTTON": "See resources"
+  },
+  "CELDAS": {
+    "CELL_1": {
+      "TITLE": "VIRTUAL QUEUE",
+      "SUBTITLE": "Let your customers get in the queue from their smartphone"
+    },
+    "CELL_2": {
+      "TITLE": "ONLINE APPOINTMENTS",
+      "SUBTITLE": "Allow your customers to schedule appointments virtually"
+    },
+    "CELL_3": {
+      "TITLE": "VIDEO-CALL CUSTOMER SERVICE",
+      "SUBTITLE": "Your team can assist customers in-person and/or virtually"
+    },
+    "CELL_4": {
+      "TITLE": "CUSTOMER FEEDBACK",
+      "SUBTITLE": "Get feedback from the customer after being assisted"
+    },
+    "CELL_5": {
+      "TITLE": "DIGITAL SIGNAGE",
+      "SUBTITLE": "Manage your screen information in a centralized way"
+    },
+    "CELL_6": {
+      "TITLE": "PRE SERVICE WEBSITE",
+      "SUBTITLE": "Agilize o atendimento a partir do WhatsApp ou de um portal web"
+    }
   }
 }

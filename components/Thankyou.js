@@ -7,10 +7,12 @@ import shape2 from '../asset/imgs/contact/right.svg'
 import HubspotForm from 'react-hubspot-form'
 import Link from 'next-translate-routes/link'
 import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from "next/dist/client/router";
 
 
 export default function Thankyou() {
     const { t } = useTranslation(['components', 'common']);
+    const { locale } = useRouter();
     return (
         <>
             <Container fluid className="gracias-section py-5">
@@ -18,7 +20,7 @@ export default function Thankyou() {
                     <Image src={woman.src} layout="fill" className={'d-none d-sm-block'} />
                     <Image src={womanxs.src} layout="fill" className={'d-block d-sm-none'} />
                 </div>
-                <div className="gracias-section_blue">
+                {locale === "es" && <div className="gracias-section_blue">
                     <h1>
                         <Trans t={t} i18nKey="THANKYOU.MESSAGE"/>
                     </h1>
@@ -27,7 +29,7 @@ export default function Thankyou() {
                             <Trans t={t} i18nKey="THANKYOU.BUTTON"/>
                         </button>
                     </Link>
-                </div>
+                </div>}
             </Container>
         </>
     );

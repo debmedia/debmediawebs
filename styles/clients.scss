@@ -77,7 +77,11 @@ a#left-tabs-example-tab-utilities {
 .clients-page_section-name {
     color: #fff;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.75rem;
+    padding-inline: 14px;
+    @media (min-width:768px){
+        font-size: 1rem;
+    }
 }
 
 .contentLogo {
@@ -107,7 +111,7 @@ a#left-tabs-example-tab-utilities {
 }
 
 .h130 {
-    height: 110px !important;
+    height: auto !important;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -117,6 +121,6 @@ a#left-tabs-example-tab-utilities {
     margin-bottom: 0px !important;
 
     h4 {
-        width: 200px;
+        text-align: center;
     }
 }

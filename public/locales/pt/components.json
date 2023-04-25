@@ -108,6 +108,9 @@
       }
     }
   },
+  "CONTACT_PARTNERS": {
+    "TITLE": "Entre em contato com a nossa equipe e <br />melhore a experiência dos seus clientes!"
+  },
   "NAVBAR": {
     "HOME": "$t(common:HOME)",
     "SOLUTIONS": {
@@ -159,7 +162,7 @@
     },
     "CELL_6": {
       "TITLE": "PRÉ ATENDIMIENTO",
-      "SUBTITLE": "Ofrece o canal indicado a partir de una landing page ou chatbot do WhatsApp"
+      "SUBTITLE": "Agilize o atendimento a partir do WhatsApp ou de um portal web"
     }
   }
 }

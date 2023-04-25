@@ -39,3 +39,8 @@ yarn-error.log*
 /localOnly
 # Local Netlify folder
 .netlify
+
+# Archivos estaticos generados en el momento del build
+/public/robots.txt
+/public/sitemap.xml
+/public/sitemap*.xml
