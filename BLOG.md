@@ -75,8 +75,9 @@
     - [ ] Crear Componentes
         - [x]`BlogNavbar`
             - [x]`SearchField`
-        - [ ]`CategoryNav`
-        - [ ]`HeroPostCard`
+        - [x]`CategoryNav`
+        - [x]`HeroPostCard`
+            - [x] `AuthorCard`
         - [ ]`LatestNewsSection`
         - [ ]`LatestNewsCard`
         - [ ]`NewsLetterBanner`
@@ -85,8 +86,13 @@
         - [ ]`PostCard`
         - [ ]`PodcastSection`
         - [ ]`PodcastCard`
+    - [ ] Traducciones home
 - [ ] Hacer la pagina del post
+    - [ ] Crear componentes
+    - [ ] Traducciones
 - [ ] Hacer la pagina de categorías
+    - [ ] Crear componentes
+    - [ ] Traducciones
 - [ ] Buscar
 - [ ] Webhooks para deploy con wp
 - [ ] Ver de setear una pagina que muestre los post no publicados como preview
