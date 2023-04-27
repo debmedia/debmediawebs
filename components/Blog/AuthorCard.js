@@ -34,9 +34,9 @@ const user = {
 const postDate = "17 febrero, 2022";
 const readTime = "4 minutes read";
 
-export default function AuthorCard() {
+export default function AuthorCard({variant}) {
     return (
-        <div className="authorCard">
+        <div className={`authorCard ${variant? "variant-" + variant: ""}`}>
                 <div md="auto" xs={false}className="authorCard_image-container">
                     <Image
                         className="authorCard_image"
