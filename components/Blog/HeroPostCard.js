@@ -12,10 +12,12 @@ export default function HeroPostCard({ post }) {
         <div className="heroPostCard">
             <Container className="heroContainer">
                 <Row direction="horizontal">
-                    <Col className="imageContainer">
+                    <Col className="imageContainer px-0 pe-0 pe-md-3 pe-lg-4 mb-3 mb-md-0" sm={12} md={6}>
+                        <div style={{width: "100%", height: "100%", position: "relative"}}>
                         <Image src={imageUrl} layout="fill" objectFit="cover" alt={post.title}></Image>
+                        </div>
                     </Col>
-                    <Col className="textContainer">
+                    <Col className="textContainer ps-md-3 ps-lg-4" sm={12} md={6}>
                         <Stack direction="vertical">
                             <div className="topText">
                                 <div className="mt-1">

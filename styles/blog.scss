@@ -105,9 +105,14 @@ $color-background-secondary: #F7F8FA;
     .heroContainer {
         padding-block: 5rem;
 
-        & > div {
-            gap: 3rem;
-        }
+        // & > div {
+        //     margin-inline: 3rem;
+        //     &:last-child {
+        //         margin-right: 0;
+        //     }
+        //     &:last-child
+        //     // gap: 3rem;
+        // }
     }
     .imageContainer {
         position: relative;
