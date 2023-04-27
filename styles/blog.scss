@@ -1,3 +1,48 @@
+$color-secondary: #232C61;
+$color-gray: #404041;
+$color-light-gray: #A2A2A4;
+$color-primary: #22619D;
+$color-accent: #2F9FEE;
+$color-background-secondary: #F7F8FA;
+
+.blog {
+    @media (min-width: 1200px) {
+
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1000px !important;
+        }
+    }
+    
+    @media (min-width: 1400px) {
+    
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl,
+        .container-xxl {
+            max-width: 1300px !important;
+        }
+    }
+
+    // @media (min-width: 1800px) {
+    
+    //     .container,
+    //     .container-lg,
+    //     .container-md,
+    //     .container-sm,
+    //     .container-xl,
+    //     .container-xxl {
+    //         max-width: 1600px !important;
+    //     }
+    // }
+    
+}
+
 .search-field {
     flex-wrap: nowrap!important;
     
@@ -37,4 +82,102 @@
 
     }
 
+}
+
+.nav-custom{
+    .nav-link {
+        border-bottom: 4px solid $color-primary;
+        color: $color-gray;
+        font-weight: 700;
+        padding-inline: 5px;
+
+        &.active {
+            color: $color-accent;
+        }
+    }
+    .nav-link:focus{
+        color:unset;
+    }
+}
+
+.heroPostCard {
+    background-color: $color-background-secondary;
+    .heroContainer {
+        padding-block: 5rem;
+
+        & > div {
+            gap: 3rem;
+        }
+    }
+    .imageContainer {
+        position: relative;
+        min-height: 468px;
+    }
+
+    .badge {
+        background-color: $color-accent!important; // averiguar si hay una forma mejor de cambiar los colores del badge
+        font-size: 1.25rem;
+    } 
+
+    .textContainer > div {
+        justify-content: space-between;
+        height: 100%;
+    };
+
+    .title > h1{
+        font-size: 2.5rem!important;
+        font-weight: 700;
+        color: $color-secondary
+    }
+    .excerpt {
+        font-size: 1.25rem;
+    }
+
+
+
+    // & .topText > div{
+    //     margin-block: 2rem;
+    // }
+}
+
+.authorCard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    &_image-container{
+        position: relative;
+        height: 54px;
+        width: 54px!important;
+        overflow: hidden;
+        border-radius: 54px;
+        flex-basis: 54px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    &_name{
+        font-size: 1.5rem; // 23px 16 1rem // 24 1.5
+        font-weight: 700;
+        color: $color-secondary
+    }
+
+    &_date{ // 15px
+        font-size: 1rem;
+        color: $color-light-gray;
+    }
+}
+
+.debLink{
+    font-size: 1rem;
+    color: $color-accent;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: $color-accent;
+    }
+    &:visited {
+        color: $color-primary;
+    }
 }
