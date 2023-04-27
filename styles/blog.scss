@@ -40,7 +40,28 @@ $color-background-secondary: #F7F8FA;
     //         max-width: 1600px !important;
     //     }
     // }
-    
+
+    .badge {
+        font-size: 1.25rem;
+        background-color: $color-accent!important; // averiguar si hay una forma mejor de cambiar los colores del badge
+    }
+
+    .bg-accent {
+        background-color: $color-accent!important; // averiguar si hay una forma mejor de cambiar los colores del badge
+    }
+
+    a.reset-a,
+    a.reset-a:hover,
+    a.reset-a:focus,
+    a.reset-a:visited {
+        all: unset;
+    }
+
+    a.reset-a:hover {
+        cursor: pointer;
+    }
+    // color default para el blog
+    color: $color-gray;
 }
 
 .search-field {
@@ -133,10 +154,6 @@ $color-background-secondary: #F7F8FA;
         min-height: 468px;
     }
 
-    .badge {
-        background-color: $color-accent!important; // averiguar si hay una forma mejor de cambiar los colores del badge
-        font-size: 1.25rem;
-    } 
 
     .textContainer > div {
         justify-content: space-between;
@@ -177,15 +194,22 @@ $color-background-secondary: #F7F8FA;
     }
 
     &_name{
-        font-size: 1.5rem; // 23px 16 1rem // 24 1.5
+        font-size: 1rem;
         font-weight: 700;
         color: $color-secondary
     }
 
-    &_date{ // 15px
-        font-size: 1rem;
+    &_date{
+        font-size: 0.75rem;
         color: $color-light-gray;
     }
+    &.variant-white {
+        .authorCard_name,
+        .authorCard_date {
+            color:white
+        }
+    }
+
 }
 
 .debLink{
@@ -198,5 +222,89 @@ $color-background-secondary: #F7F8FA;
     }
     &:visited {
         color: $color-primary;
+    }
+}
+
+.latestNewsCard {
+    position: relative;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2.5rem 1rem 1rem 1rem;
+    color: white;
+    height: 100%;
+
+    @media(min-width: 768px){
+        min-height: unset;
+    }
+
+    &.compact {
+        min-height: 220px;
+        @media(min-width: 768px){
+            max-width: 100%;
+            min-height: unset;
+            aspect-ratio: 1.5;
+        }
+    }
+
+    .badge {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        font-size: .75rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        line-height: 1em;
+    }
+
+    .excerpt {
+        line-height: 1.1em;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top:0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(0deg, #000000DD , #00000000 90% 100%);
+        z-index: -5;
+    }
+}
+
+.latestNewsSection {
+    h2{
+        font-size: 2rem;
+        @media(min-width: 768px){
+            font-size: 3rem;
+        }
+    }
+    &_grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-items: stretch;
+
+        @media(min-width: 768px){
+            grid-auto-rows: 1fr;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        &>div{
+            @media(min-width: 768px){
+                grid-column-start: span 2;
+            }
+        }
+
+        & .row-span-2{
+            @media(min-width: 768px){
+                grid-column-start: span 3;
+                grid-row-start: span 2;
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import CategoryNav from '../../components/Blog/CategoryNav';
 import HeroPostCard from '../../components/Blog/HeroPostCard';
 import testPosts from '../../json/testPosts_no_comitear.json';
+import LatestNewsSection from '../../components/Blog/BlogHome/LatestNewsSection';
 // export async function getStaticProps(context) {
 //     try {
 //         const res = await wpApi.get(WP_POSTS_URL);
@@ -33,11 +34,12 @@ export default function BlogHome({postsData}) {
   return (
     <div className='blog'>
         <BlogNavbar></BlogNavbar>
-        <div style={{height: "110px"}}></div>
+        <div style={{height: "89px"}}></div>
         <CategoryNav/>
         <HeroPostCard post={postsData[0]}/>
+        <LatestNewsSection posts={postsData.slice(1,7)}></LatestNewsSection>
         <div>
-            <div style={{minHeight: "900px", paddingTop: "100px"}}>BlogHome </div>
+            <div style={{minHeight: "3rem"}}></div>
         </div>
     </div>
   )
