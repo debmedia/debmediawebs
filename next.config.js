@@ -22,7 +22,7 @@ const nextConfig = {
 
 module.exports = withTranslateRoutes({
   images: {
-    domains: ['debmedia.com'],
+    domains: ['debmedia.com', 'blog.debmedia.com', 'secure.gravatar.com'],
   },
   webpack: nextConfig.webpack,
   i18n,
