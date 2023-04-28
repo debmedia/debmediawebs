@@ -78,8 +78,8 @@
         - [x]`CategoryNav`
         - [x]`HeroPostCard`
             - [x] `AuthorCard`
-        - [ ]`LatestNewsSection`
-        - [ ]`LatestNewsCard`
+        - [x]`LatestNewsSection`
+            - [x]`LatestNewsCard`
         - [ ]`NewsLetterBanner`
         - [ ]`PostsSection`
         - [ ]`GridContainer`
