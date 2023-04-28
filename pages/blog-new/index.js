@@ -1,46 +1,95 @@
-import React from 'react'
-import BlogNavbar from '../../components/Blog/BlogNavbar';
-import wpApi from '../../config/axios'
-import { WP_POSTS_URL } from '../../constants/urls'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import CategoryNav from '../../components/Blog/CategoryNav';
-import HeroPostCard from '../../components/Blog/HeroPostCard';
-import testPosts from '../../json/testPosts_no_comitear.json';
-import LatestNewsSection from '../../components/Blog/BlogHome/LatestNewsSection';
-// export async function getStaticProps(context) {
-//     try {
-//         const res = await wpApi.get(WP_POSTS_URL);
-//         return {
-//           props: {
-//             postsData: res.data
-//           },
-//         }
-//     } catch (error) {
-//         console.log('error lpm', error);
-//         throw new Error("Error buscando los datos de wp", error);
-//     }
-//   }
+import React from "react";
+import BlogNavbar from "../../components/Blog/BlogNavbar";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import CategoryNav from "../../components/Blog/CategoryNav";
+import HeroPostCard from "../../components/Blog/HeroPostCard";
+import LatestNewsSection from "../../components/Blog/BlogHome/LatestNewsSection";
+import { apolloClient } from "../../config/apollo";
+import { gql } from "@apollo/client";
 
 export async function getStaticProps({ locale }) {
-    return {
-      props: {
-        ...(await serverSideTranslations(locale, ['blogHome','components','common'])),
-        postsData: testPosts,
-      },
-    };
-  }
+    //TODO: sacar esto a un servicio con las queries
+    const res = await apolloClient.query({
+        query: gql`
+            query getPosts {
+                posts {
+                    nodes {
+                        content
+                        dateGmt
+                        excerpt
+                        modifiedGmt
+                        status
+                        title
+                        link
+                        databaseId
+                        author {
+                            node {
+                                databaseId
+                                name
+                                avatar {
+                                    url
+                                }
+                            }
+                        }
+                        categories {
+                            edges {
+                                isPrimary
+                                node {
+                                    name
+                                    databaseId
+                                    slug
+                                    parent {
+                                        node {
+                                            databaseId
+                                            name
+                                            slug
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        featuredImage {
+                            node {
+                                mediaItemUrl
+                                title
+                            }
+                        }
+                    }
+                }
+            }
+        `,
+    });
 
-export default function BlogHome({postsData}) {
-  return (
-    <div className='blog'>
-        <BlogNavbar></BlogNavbar>
-        <div style={{height: "89px"}}></div>
-        <CategoryNav/>
-        <HeroPostCard post={postsData[0]}/>
-        <LatestNewsSection posts={postsData.slice(1,7)}></LatestNewsSection>
-        <div>
-            <div style={{minHeight: "3rem"}}></div>
+    return {
+        props: {
+            ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),
+            postsData: res.data.posts.nodes,
+        },
+    };
+}
+
+export default function BlogHome({ postsData }) {
+    return (
+        <div className="blog">
+            <BlogNavbar></BlogNavbar>
+            <div style={{ height: "89px" }}></div>
+            <CategoryNav />
+            <HeroPostCard post={postsData[0]} />
+            <LatestNewsSection posts={postsData.slice(1, 7)}></LatestNewsSection>
+            <div>
+                <div
+                    style={{
+                        minHeight: "3rem",
+                        padding: "2rem",
+                        fontSize: "1.5rem",
+                        backgroundColor: "black",
+                        color: "white",
+                        margin: "3rem",
+                        borderRadius: "0.5rem",
+                    }}>
+                    <pre>{JSON.stringify(postsData, null, 2)}</pre>
+                </div>
+            </div>
         </div>
-    </div>
-  )
+    );
 }
