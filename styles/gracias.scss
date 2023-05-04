@@ -3,7 +3,11 @@
     background-image: url("../asset/imgs/gracias-back.jpg");
     background-position: center;
     background-size: cover;
-    height: 85vh;
+    min-height: 60vh;
+    padding-top: 5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     @media (min-width: 992px) {
         height: 100vh;
@@ -16,16 +20,15 @@
     }
 
     &-woman {
-        right: -50px;
+
         display: block;
         max-width: none;
-        width: 400px;
-        height: 380px;
-        position: absolute;
+        width: 100%;
+        aspect-ratio: 1.5;
+        position: relative;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        bottom: 205px;
         z-index: 1;
 
         @media (min-width: 992px) {
@@ -44,12 +47,6 @@
             z-index: 1;
         }
 
-        @media (max-height: 700px) {
-            width: 810px;
-            height: 580px;
-        }
-
-
     }
 
     &_blue {
@@ -65,7 +62,7 @@
         }
 
         background-color: #232C61;
-        position: absolute;
+        
         width: 100%;
         right: 0;
         bottom: -5px;
