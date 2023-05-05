@@ -56,11 +56,12 @@ export default function LanguageSelector({ langs, className }) {
                                         key={lang.key}
                                         locale={lang.key}
                                         scroll={false}
+                                        
                                         >
                                         {/* El on click de aca abajo no se si esta del todo bien dado que 
                                         tal vez podría el navegador navegar antes que se ejecute (?)
                                         Por ahora anda y lo dejamos asi. */}
-                                        <li className="dropdown-item" onClick={()=>setLangCookie(lang.key)}>
+                                        <li id={`lang-selector-button-${lang.key}`} className="dropdown-item" onClick={()=>setLangCookie(lang.key)}>
                                             <span>{t(lang.dropdownLabel)}</span>
                                             {locale === lang.key && (
                                                 <i className="bi bi-check"></i>
