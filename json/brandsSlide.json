@@ -170,6 +170,16 @@
     }
   },
   {
+    "name": "sancorseguros",
+    "home": true,
+    "category": "banca",
+    "image": {
+      "url": "sancor-seguros-color.svg",
+      "width": 250,
+      "height": 110
+    }
+  },
+  {
     "name": "medife",
     "home": true,
     "category": "salud",
