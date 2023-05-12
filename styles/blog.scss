@@ -303,3 +303,42 @@
         }
     }
 }
+
+.news-letter-banner {
+    margin: 2rem 0;
+    &_container {
+        padding: 1rem 2rem;
+        background-color: $color-background-secondary;
+        border-radius: 0.5rem;
+        
+        @media (min-width: 768px){
+            display: flex;
+            align-items: center;
+            gap: 3rem
+
+        }
+        &>div {
+            flex-basis: 50%;
+        }
+    }
+
+    h3 {
+        text-align: center;
+        color: $color-accent;
+        font-weight: 700;
+        @media (min-width: 768px){
+            text-align: left;
+        }
+    }
+
+    p {
+        line-height: 1.05em;
+        font-size: 0.9rem;
+    }
+
+    button {
+        color: white;
+        font-weight: 700;
+    }
+}
+

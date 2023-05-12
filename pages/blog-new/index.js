@@ -6,6 +6,7 @@ import HeroPostCard from "../../components/Blog/HeroPostCard";
 import LatestNewsSection from "../../components/Blog/BlogHome/LatestNewsSection";
 import { apolloClient } from "../../config/apollo";
 import { gql } from "@apollo/client";
+import NewsLetterBanner from "../../components/Blog/NewsLetterBanner";
 
 export async function getStaticProps({ locale }) {
     //TODO: sacar esto a un servicio con las queries
@@ -75,7 +76,8 @@ export default function BlogHome({ postsData }) {
             <div style={{ height: "89px" }}></div>
             <CategoryNav />
             <HeroPostCard post={postsData[0]} />
-            <LatestNewsSection posts={postsData.slice(1, 7)}></LatestNewsSection>
+            <LatestNewsSection posts={postsData.slice(1, 4)}></LatestNewsSection>
+            <NewsLetterBanner></NewsLetterBanner>
             <div>
                 <div
                     style={{
