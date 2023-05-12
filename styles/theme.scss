@@ -1,0 +1,12 @@
+$color-secondary: #232C61;
+$color-gray: #404041;
+$color-light-gray: #A2A2A4;
+$color-primary: #22619D;
+$color-accent: #2F9FEE;
+$color-background-secondary: #F7F8FA;
+
+$theme-colors: (
+    "primary": $color-accent,
+);
+
+@import "~bootstrap/scss/bootstrap";

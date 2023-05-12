@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import '../styles/globals.css'
 import '../styles/main.scss'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Head from "next/head";
 import Script from 'next/script'
