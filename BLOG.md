@@ -80,10 +80,10 @@
             - [x] `AuthorCard`
         - [x]`LatestNewsSection`
             - [x]`LatestNewsCard`
-        - [ ]`NewsLetterBanner`
+        - [x]`NewsLetterBanner`
         - [ ]`PostsSection`
-        - [ ]`GridContainer`
-        - [ ]`PostCard`
+            - [ ]`GridContainer`
+                - [ ]`PostCard`
         - [ ]`PodcastSection`
         - [ ]`PodcastCard`
     - [ ] Traducciones home
