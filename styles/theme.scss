@@ -7,6 +7,7 @@ $color-background-secondary: #F7F8FA;
 
 $theme-colors: (
     "primary": $color-accent,
+    "secondary": $color-secondary,
 );
 
 @import "~bootstrap/scss/bootstrap";

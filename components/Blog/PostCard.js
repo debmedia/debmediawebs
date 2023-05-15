@@ -10,7 +10,7 @@ export default function PostCard({ post }) {
     return (
         <div className={`post-card ${compact && "compact"}`}>
             <Link href={post.link}>
-                <a className="reset-a">
+                <div className="card-wrapper">
                         {/* TODO: ver si se puede optimizar la imagen */}
                         <div className="imageContainer">
                             <Image
@@ -20,32 +20,41 @@ export default function PostCard({ post }) {
                                 alt={post.title}
                                 ></Image>
                         </div>
-                    <div className="card-content">
-                        <Badge className="mb-3" bg="primary">{post.categories.edges.find((elem) => elem.isPrimary)?.node.name}</Badge>
-                        <h3
-                            className="title"
-                            dangerouslySetInnerHTML={{
-                                __html: post.title,
-                            }}></h3>
-                        {!compact && (
-                            <>
-                                <p
-                                    className="excerpt my-1"
-                                    dangerouslySetInnerHTML={{
-                                        __html: post.excerpt,
-                                    }}></p>
-                                <div className="debLink mb-3">
-                                    Leer más <i className="bi bi-caret-right"></i>
-                                </div>
-                            </>
-                        )}
-                        <hr></hr>
-                        <AuthorCard
-                            author={post.author.node}
-                            createdDate={post.dateGmt}
-                            readTime={calcReadingTime(post.content)}></AuthorCard>
+                    <div className="card-content-container">
+                        <div className="card-content">
+                            {post.categories.edges.find((elem) => elem.isPrimary) ?
+                            <Badge className="mb-2" bg="primary">{post.categories.edges.find((elem) => elem.isPrimary)?.node.name}</Badge>
+                            :
+                            // badge transparente vacio para mantener el espacio
+                            <Badge className="mb-2 hidden" bg="primary">&nbsp;</Badge>
+                            }
+                            <h3
+                                className="title"
+                                dangerouslySetInnerHTML={{
+                                    __html: post.title,
+                                }}></h3>
+                            {!compact && (
+                                <>
+                                    <p
+                                        className="excerpt my-1"
+                                        dangerouslySetInnerHTML={{
+                                            __html: post.excerpt,
+                                        }}></p>
+                                    <div className="debLink">
+                                        Leer más <i className="bi bi-caret-right"></i>
+                                    </div>
+                                </>
+                            )}
+                        </div>
+                        <div className="card-footer">
+                            <hr></hr>
+                            <AuthorCard
+                                author={post.author.node}
+                                createdDate={post.dateGmt}
+                                readTime={calcReadingTime(post.content)}></AuthorCard>
+                        </div>
                     </div>
-                </a>
+                </div>
             </Link>
         </div>
     );

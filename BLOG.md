@@ -81,11 +81,11 @@
         - [x]`LatestNewsSection`
             - [x]`LatestNewsCard`
         - [x]`NewsLetterBanner`
-        - [ ]`PostsSection`
-            - [ ]`GridContainer`
-                - [ ]`PostCard`
+        - [x]`PostsSection`
+            - ~~[ ]`GridContainer`~~
+                - [x]`PostCard`
         - [ ]`PodcastSection`
-        - [ ]`PodcastCard`
+            - [ ]`PodcastCard`
     - [ ] Traducciones home
 - [ ] Hacer la pagina del post
     - [ ] Crear componentes

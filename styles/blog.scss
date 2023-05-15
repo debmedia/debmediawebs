@@ -61,6 +61,10 @@
     hr {
         border-color: $color-light-gray;
     }
+
+    .hidden{
+        visibility: hidden;
+    }
 }
 
 .search-field {
@@ -349,15 +353,33 @@
 .post-card {
     background-color: $color-background-secondary;
     min-height: 440px;
+    border-radius: 0 0 1rem 1rem;
 
     @media(min-width: 768px){
         min-height: unset;
     }
 
-    .card-content{
+    hr {
+        margin-block: 0.5rem;
+    }
+
+    .card-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-content-container{
         padding: 1rem;
         padding-top: 0.5rem;
-        display:block;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    .card-content{
+        
     }
 
     .imageContainer{
@@ -386,7 +408,7 @@
         font-weight: 600;
         line-height: 1em;
         @media(min-width: 768px){
-            font-size: 1.5rem;
+            // font-size: 1.5rem;
         }
     }
 
@@ -394,7 +416,28 @@
         line-height: 1.1em;
         font-size: 0.75rem;
         @media(min-width: 768px){
-            font-size: 1rem;
+            // font-size: 1rem;
         }
+    }
+}
+
+
+.post-section {
+    .grid {
+        display: grid;
+        gap: 2rem;
+
+        @media(min-width: 768px){
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        @media(min-width: 992px){
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
     }
 }
