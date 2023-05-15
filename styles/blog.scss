@@ -57,6 +57,10 @@
     }
     // color default para el blog
     color: $color-gray;
+
+    hr {
+        border-color: $color-light-gray;
+    }
 }
 
 .search-field {
@@ -342,3 +346,55 @@
     }
 }
 
+.post-card {
+    background-color: $color-background-secondary;
+    min-height: 440px;
+
+    @media(min-width: 768px){
+        min-height: unset;
+    }
+
+    .card-content{
+        padding: 1rem;
+        padding-top: 0.5rem;
+        display:block;
+    }
+
+    .imageContainer{
+        position: relative;
+        height: 200px;
+    }
+
+    &.compact {
+        min-height: 220px;
+        @media(min-width: 768px){
+            max-width: 100%;
+            min-height: unset;
+            aspect-ratio: 1.5;
+        }
+    }
+
+    .badge {
+        // position: absolute;
+        // top: 0.5rem;
+        // left: 0.5rem;
+        font-size: .75rem;
+    }
+
+    .title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1em;
+        @media(min-width: 768px){
+            font-size: 1.5rem;
+        }
+    }
+
+    .excerpt {
+        line-height: 1.1em;
+        font-size: 0.75rem;
+        @media(min-width: 768px){
+            font-size: 1rem;
+        }
+    }
+}

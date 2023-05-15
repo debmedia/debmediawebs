@@ -7,6 +7,8 @@ import LatestNewsSection from "../../components/Blog/BlogHome/LatestNewsSection"
 import { apolloClient } from "../../config/apollo";
 import { gql } from "@apollo/client";
 import NewsLetterBanner from "../../components/Blog/NewsLetterBanner";
+import PostCard from "../../components/Blog/PostCard";
+import { Container } from "react-bootstrap";
 
 export async function getStaticProps({ locale }) {
     //TODO: sacar esto a un servicio con las queries
@@ -78,6 +80,9 @@ export default function BlogHome({ postsData }) {
             <HeroPostCard post={postsData[0]} />
             <LatestNewsSection posts={postsData.slice(1, 4)}></LatestNewsSection>
             <NewsLetterBanner></NewsLetterBanner>
+            <Container>
+                <PostCard post={postsData[4]}></PostCard>
+            </Container>
             <div>
                 <div
                     style={{
