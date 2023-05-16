@@ -1,185 +1,98 @@
 .map-section {
     position: relative;
-
-    &_leftshape {
-        position: absolute;
-        left: 0;
-        width: 45%;
-        top: 0%;
-    }
-
-    &_rightshape {
-        position: absolute;
-        right: 0;
-        bottom: 25%;
-        width: 35%;
-    }
-
-    @media (min-width: 992px) {
-        padding-left: 10em !important;
-        padding-right: 10em !important;
-        margin-top: 2em;
-        margin-bottom: 4em;
-        padding-top: 3em;
-        padding-bottom: 5em;
-    }
-
-    margin-top: 1em;
-    margin-bottom: 10em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-
-    &-maxMap {
-        max-width: 350px !important;
-        margin-top: -37%;
-
-        @media (min-width: 992px) {
-            max-width: 600px !important;
-            margin-top: -18%;
-        }
-    }
-
+    color: #404041;
     &_mapcontent {
-        position: relative;
 
         &-text {
-            position: relative;
-            text-align: center;
             margin-top: 2rem;
             margin-bottom: 1.5em;
             font-size: 1.2em;
             @media (min-width: 992px) {
-                position: absolute;
-                max-width: 450px;
-                text-align: left;
-                bottom: 16%;
-                font-size: 1.4em;
-                color: #404041;
+                font-size: 1.75em;
                 font-weight: 400;
-                padding-right: 2%;
-                margin-top: 5rem;
-            }
-
-            b {
-                color: #232C61;
+                padding-inline: 8rem;
             }
         }
     }
-}
-
-.quntity {
-    color: #2F9FEE;
-    font-weight: 700;
-    font-size: 1.5rem;
-
-    @media (min-width: 992px) {
-        font-size: 2.5rem;
-
-
+    b {
+        color: #232C61;
     }
-}
+    .super-map {
+        position: relative;
+        min-height: 300px;
+        overflow: hidden;
+        
+        @media (min-width: 576px){
+           aspect-ratio: 1900/1046;
+        }
 
-.type {
-    background-color: #F6F7FB;
-    padding: 0.3em 0.5em;
-    border-radius: 15px;
-    font-size: .9rem;
-
-    @media (min-width: 992px) {
-        font-size: 1rem;
-
-
+        @media (min-width: 1400px){
+            margin-left: 300px;
+         }
     }
-}
+    .numbers-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #F6F7FB;
+        justify-content: space-around;
+        align-items: center;
+        padding-block: 1rem;
 
+        @media (min-width: 576px){
+            flex-direction: row;
+        }
 
-.number1 {
-    position: absolute;
-
-    @media (min-width: 992px) {
-        right: 15%;
-        top: 0;
-
+        // & >* {
+        //     flex-basis: 30px;
+        //     flex-grow: 1;
+        // }
     }
-
-    max-width: 150px;
-    bottom: 40%;
-    top: inherit;
-
-    span {
+    
+    .quntity {
+        color: #2F9FEE;
+        font-weight: 700;
+        font-size: 1.5rem;
+    
+        @media (min-width: 992px) {
+            font-size: 2.5rem;
+    
+    
+        }
+    }
+    
+    .type {
+        background-color: #F6F7FB;
+        padding: 0.3em 0.5em;
+        border-radius: 15px;
+        font-size: .9rem;
         display: block;
+    
+        @media (min-width: 992px) {
+            font-size: 1rem;
+    
+        }
     }
-}
-
-.number2 {
-    position: absolute;
-
-    @media (min-width: 992px) {
-        right: 5%;
-        top: 20%;
-
+    
+    span.quntity span {
+        display: inline-block;
     }
+    .iso-image-container {
 
-    max-width: 150px;
-    bottom: 25%;
-    top: inherit;
-
-    span {
+        width: 100%;
+        max-width: 500px;
+        margin-inline: auto;
+        padding: 1rem;
+    }
+    .isoImg {
+        position: relative;
+        left: auto;
+        max-width: 190px !important;
+        margin-bottom: 1em;
+        margin-inline: auto;
         display: block;
+        // @media (min-width: 992px) {
+        //     max-width: 360px !important;
+    
+        // }
     }
-
-}
-
-.number3 {
-    position: absolute;
-
-    max-width: 150px;
-    bottom: 10%;
-    top: inherit;
-
-    @media (min-width: 992px) {
-        right: 5%;
-        top: 50%;
-
-    }
-
-    span {
-        display: block;
-    }
-}
-
-.number4 {
-    position: absolute;
-    max-width: 150px;
-    bottom: -10%;
-    top: inherit;
-
-    @media (min-width: 992px) {
-        right: 15%;
-        top: 80%;
-
-    }
-
-    span {
-        display: block;
-    }
-}
-
-span.quntity span {
-    display: inline-block;
-}
-
-.isoImg {
-    position: relative;
-    left: auto;
-    max-width: 190px !important;
-    margin-bottom: 1em;
-    @media (min-width: 992px) {
-        position: absolute;
-        left: 25px;
-        bottom: -20px;
-        max-width: 360px !important;
-
-    }
-
 }
