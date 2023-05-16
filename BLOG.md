@@ -84,8 +84,8 @@
         - [x]`PostsSection`
             - ~~[ ]`GridContainer`~~
                 - [x]`PostCard`
-        - [ ]`PodcastSection`
-            - [ ]`PodcastCard`
+        - [x]`PodcastSection`
+            - [x]`PodcastCard`
     - [ ] Traducciones home
 - [ ] Hacer la pagina del post
     - [ ] Crear componentes

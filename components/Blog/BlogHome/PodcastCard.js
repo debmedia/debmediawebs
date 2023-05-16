@@ -1,0 +1,36 @@
+import Image from 'next/image';
+import React from 'react';
+import spotifyLogo from '../../../asset/imgs/blog/spotify-logo.svg';
+import playBtnIcon from '../../../asset/imgs/blog/play-btn-icon.svg';
+import { Link } from 'next-translate-routes';
+
+export default function PodcastCard({post}) {
+  return (
+    <div className='podcast-card'>
+        <Link href={post.link} passHref>
+            <a className='reset-a'>
+            <div className='imageContainer'>
+                <div className='spotify-logo'>
+                    <Image src={spotifyLogo} layout='responsive' alt='spotify'></Image>
+                </div>
+                
+                <div className="play-button">
+                <Image src={playBtnIcon} layout='responsive' alt='play'></Image>
+                </div>
+            <Image
+                src={post.featuredImage.node.mediaItemUrl}
+                layout="fill"
+                objectFit="cover"
+                alt={post.title}
+            ></Image>
+            </div>
+            <div className='content-container'>
+                <p className='pre mb-1'>Hablemos de...</p>
+                <h3 className='title'>{post.title}</h3>
+                <p className='excerpt'>{post.excerpt}</p>
+            </div>
+            </a>
+        </Link>
+    </div>
+  )
+}

@@ -49,7 +49,8 @@
     a.reset-a:hover,
     a.reset-a:focus,
     a.reset-a:visited {
-        all: unset;
+        text-decoration:none;
+        color:inherit;
     }
 
     a.reset-a:hover {
@@ -439,5 +440,57 @@
     .button-container {
         display: flex;
         justify-content: center;
+    }
+}
+
+.podcast-card{
+    &>a{
+        @media(min-width: 768px){
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+    .imageContainer {
+        aspect-ratio: 2.3;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.25rem;
+        @media(min-width: 768px){
+           flex-basis: 100%;
+           align-self: stretch;
+        }
+    }
+    .play-button,
+    .spotify-logo{
+        position: absolute;
+        z-index: 10;
+        width: 2rem;
+
+        &>span{
+            display: block;
+        }
+    }
+    .play-button{
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+    .spotify-logo{
+        left: 0.5rem;
+        top: 0.5rem;
+        
+    }
+
+    .pre {
+        font-size: 1.25;
+        font-weight: 700;
+    }
+    .title{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .excerpt {
+        font-size: 0.75rem;
     }
 }

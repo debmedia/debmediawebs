@@ -7,16 +7,16 @@ import LatestNewsSection from "../../components/Blog/BlogHome/LatestNewsSection"
 import { apolloClient } from "../../config/apollo";
 import { gql, ApolloProvider } from "@apollo/client";
 import NewsLetterBanner from "../../components/Blog/NewsLetterBanner";
-import PostCard from "../../components/Blog/PostCard";
 import { Accordion, Container } from "react-bootstrap";
 import PostsSection from "../../components/Blog/BlogHome/PostsSection";
+import PodcastSection from "../../components/Blog/BlogHome/PodcastSection";
 
 export async function getStaticProps({ locale }) {
     //TODO: sacar esto a un servicio con las queries
     const res = await apolloClient.query({
         query: gql`
             query getPosts {
-                posts (first: 13, after: null, where: {status: PUBLISH} ) {
+                posts (first: 14, after: null, where: {status: PUBLISH} ) {
                     pageInfo {
                         hasNextPage
                         endCursor
@@ -88,7 +88,7 @@ export default function BlogHome({ postsData, paginationData }) {
                 <LatestNewsSection posts={postsData.slice(1, 4)}></LatestNewsSection>
                 <NewsLetterBanner></NewsLetterBanner>
                 <PostsSection posts={postsData.slice(4, 13)} paginationData={paginationData}></PostsSection>
-
+                <PodcastSection post={postsData[13]}></PodcastSection>
                     <Container className="mt-5">
                         <Accordion>
                             <Accordion.Item eventKey="0">
