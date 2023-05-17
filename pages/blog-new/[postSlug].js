@@ -8,6 +8,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import PostBreadcrumbs from '../../components/Blog/Post/PostBreadcrums'
 import PostHeader from '../../components/Blog/Post/PostHeader';
 import {Container, Accordion } from "react-bootstrap";
+import { getPostBySlug } from '../../services/wordpressGQL';
 
 export async function getStaticPaths() {
     return {
@@ -19,60 +20,11 @@ export async function getStaticPaths() {
   }
 
 export async function getStaticProps({ locale }) {
-    //TODO: sacar esto a un servicio con las queries
-    const res = await apolloClient.query({
-        query: gql`
-            query getPost {
-                    post(id: "experiencias-digitales", idType: SLUG) {
-                        content
-                        dateGmt
-                        excerpt
-                        modifiedGmt
-                        status
-                        title
-                        link
-                        databaseId
-                        author {
-                            node {
-                                databaseId
-                                name
-                                avatar {
-                                    url
-                                }
-                            }
-                        }
-                        categories {
-                            edges {
-                                isPrimary
-                                node {
-                                    name
-                                    databaseId
-                                    slug
-                                    parent {
-                                        node {
-                                            databaseId
-                                            name
-                                            slug
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        featuredImage {
-                            node {
-                                mediaItemUrl
-                                title
-                            }
-                        }
-                    }
-                }
-        `,
-    });
-
+    const post = await getPostBySlug("experiencias-digitales");
     return {
         props: {
             ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),
-            postData: res.data.post,
+            postData: post,
         },
     };
 }

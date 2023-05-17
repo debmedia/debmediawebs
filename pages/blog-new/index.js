@@ -10,69 +10,16 @@ import NewsLetterBanner from "../../components/Blog/NewsLetterBanner";
 import { Accordion, Container } from "react-bootstrap";
 import PostsSection from "../../components/Blog/BlogHome/PostsSection";
 import PodcastSection from "../../components/Blog/BlogHome/PodcastSection";
+import { getPosts } from "../../services/wordpressGQL";
 
 export async function getStaticProps({ locale }) {
-    //TODO: sacar esto a un servicio con las queries
-    const res = await apolloClient.query({
-        query: gql`
-            query getPosts {
-                posts (first: 14, after: null, where: {status: PUBLISH} ) {
-                    pageInfo {
-                        hasNextPage
-                        endCursor
-                    }
-                    nodes {
-                        content
-                        dateGmt
-                        excerpt
-                        modifiedGmt
-                        status
-                        title
-                        link
-                        databaseId
-                        author {
-                            node {
-                                databaseId
-                                name
-                                avatar {
-                                    url
-                                }
-                            }
-                        }
-                        categories {
-                            edges {
-                                isPrimary
-                                node {
-                                    name
-                                    databaseId
-                                    slug
-                                    parent {
-                                        node {
-                                            databaseId
-                                            name
-                                            slug
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        featuredImage {
-                            node {
-                                mediaItemUrl
-                                title
-                            }
-                        }
-                    }
-                }
-            }
-        `,
-    });
-
+    const {posts, pagination} = await getPosts({first: 14});
+    console.log(posts);
     return {
         props: {
             ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),
-            postsData: res.data.posts.nodes,
-            paginationData: res.data.posts.pageInfo
+            postsData: posts,
+            paginationData: pagination
         },
     };
 }

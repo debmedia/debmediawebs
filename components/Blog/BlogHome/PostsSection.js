@@ -2,64 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Button, Container, Spinner } from "react-bootstrap";
 import PostCard from "../PostCard";
 import { gql, useLazyQuery } from "@apollo/client";
+import { QUERY_GET_POSTS } from "../../../services/wordpressGQL";
 
-// TODO: Sacar esto a un servicio
-const GET_POSTS = gql`
-    query getPosts($first: Int, $after: String) {
-        posts(first: $first, after: $after, where: { status: PUBLISH }) {
-            pageInfo {
-                hasNextPage
-                endCursor
-            }
-            nodes {
-                content
-                dateGmt
-                excerpt
-                modifiedGmt
-                status
-                title
-                link
-                databaseId
-                author {
-                    node {
-                        databaseId
-                        name
-                        avatar {
-                            url
-                        }
-                    }
-                }
-                categories {
-                    edges {
-                        isPrimary
-                        node {
-                            name
-                            databaseId
-                            slug
-                            parent {
-                                node {
-                                    databaseId
-                                    name
-                                    slug
-                                }
-                            }
-                        }
-                    }
-                }
-                featuredImage {
-                    node {
-                        mediaItemUrl
-                        title
-                    }
-                }
-            }
-        }
-    }
-`;
+
 export default function PostsSection({ posts: posts_, paginationData: paginationData_ }) {
     const [posts, setPosts] = useState(posts_);
     const [paginationData, setPaginationData] = useState(paginationData_);
-    const [getPosts, { loading, data }] = useLazyQuery(GET_POSTS, {
+    const [getPosts, { loading, data }] = useLazyQuery(QUERY_GET_POSTS, {
         //TODO: Sacar este 9 harcodeado
         variables: { first: 9, after: paginationData.endCursor },
     });
