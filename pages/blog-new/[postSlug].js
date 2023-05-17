@@ -6,12 +6,13 @@ import { apolloClient } from "../../config/apollo";
 import { gql, ApolloProvider } from "@apollo/client";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import PostBreadcrumbs from '../../components/Blog/Post/PostBreadcrums'
-
+import PostHeader from '../../components/Blog/Post/PostHeader';
+import {Container, Accordion } from "react-bootstrap";
 
 export async function getStaticPaths() {
     return {
       paths: [
-        { params: { postSlug: 'second-post' } },
+        { params: { postSlug: 'experiencias-digitales' } },
       ],
       fallback: true,
     }
@@ -83,9 +84,27 @@ export default function PostPage({postData}) {
         <BlogNavbar/>
         <div style={{ height: "89px" }}></div>
         <CategoryNav variant="secondary"/>
-        <PostBreadcrumbs crumbs={[{href: "/blog-new", label: "Home"}, {active: true, label: postData.title}]}></PostBreadcrumbs>
-        <div>PostPage</div>
-        <pre>{JSON.stringify(postData, null, 2)}</pre>
+        <PostBreadcrumbs className="d-none d-sm-block" crumbs={[{href: "/blog-new", label: "Home"}, {active: true, label: postData.title}]}></PostBreadcrumbs>
+        <PostHeader post={postData}/>
+        <Container className="mt-5">
+                        <Accordion>
+                            <Accordion.Item eventKey="0">
+                                <Accordion.Header>Post Data</Accordion.Header>
+                                <Accordion.Body className='py-1'>
+                                    <div
+                                        style={{
+                                            minHeight: "3rem",
+                                            padding: "0.5rem",
+                                            backgroundColor: "black",
+                                            color: "white",
+                                            borderRadius: "0.5rem",
+                                        }}>
+                                        <pre>{JSON.stringify(postData, null, 2)}</pre>
+                                    </div>
+                                </Accordion.Body>
+                            </Accordion.Item>
+                        </Accordion>
+                    </Container>
     </div>
   )
 }

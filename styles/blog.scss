@@ -516,3 +516,15 @@
         color: $color-gray;
     }
 }
+
+.post-header {
+
+    @media (min-width: 768px) {
+        // display: flex;
+        // flex-direction: row-reverse;
+    }
+    h1 {
+        color: $color-secondary;
+        font-weight: 700;
+    }
+}

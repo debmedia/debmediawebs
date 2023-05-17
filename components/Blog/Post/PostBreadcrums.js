@@ -2,9 +2,9 @@ import React from 'react'
 import { Container } from 'react-bootstrap';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
-export default function BreadcrumbExample({crumbs}) {
+export default function BreadcrumbExample({crumbs, className}) {
   return (
-    <Container className='post-breadcrumbs'>
+    <Container className={`post-breadcrumbs ${className}`}>
         <Breadcrumb>
         {crumbs.map((crumb)=> {
             return (

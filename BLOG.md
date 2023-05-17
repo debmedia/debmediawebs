@@ -89,7 +89,7 @@
     - [ ] Traducciones home
 - [x] Hacer la pagina del post
     - [ ] Crear componentes
-        - [ ]`PostBreadcrumbs`
+        - [x]`PostBreadcrumbs`
         - [ ]`PostHeader`
         - [ ]`PostBody`
         - [ ]`RateAndShare`
