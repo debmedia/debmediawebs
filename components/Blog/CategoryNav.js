@@ -3,11 +3,11 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Container, Navbar, Stack, ThemeProvider } from "react-bootstrap";
 
-export default function CategoryNavMobile() {
+export default function CategoryNavMobile({variant}) {
     const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
 
     return (
-        <Navbar className="categoryNav py-md-0" expand="md">
+        <Navbar className={`categoryNav py-md-0 ${variant === 'secondary'? "secondary": ""}`} expand="md">
             <Container>
                 <Navbar.Toggle
                     className="w-100 d-flex d-md-none justify-content-between py-3 py-md-0"

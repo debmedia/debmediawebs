@@ -72,13 +72,13 @@
 - [x] Crear pagina de el home del blog por ahora en blog-new/
 - [x] Traer los datos de WP y poder buildiar estáticamente con los datos
 - [ ] Hacer la home
-    - [ ] Crear Componentes
+    - [x] Crear Componentes
         - [x]`BlogNavbar`
             - [x]`SearchField`
         - [x]`CategoryNav`
         - [x]`HeroPostCard`
             - [x] `AuthorCard`
-        - [x]`LatestNewsSection`
+        - [x]`LatestNewsSecton`
             - [x]`LatestNewsCard`
         - [x]`NewsLetterBanner`
         - [x]`PostsSection`
@@ -87,8 +87,15 @@
         - [x]`PodcastSection`
             - [x]`PodcastCard`
     - [ ] Traducciones home
-- [ ] Hacer la pagina del post
+- [x] Hacer la pagina del post
     - [ ] Crear componentes
+        - [ ]`PostBreadcrumbs`
+        - [ ]`PostHeader`
+        - [ ]`PostBody`
+        - [ ]`RateAndShare`
+        - [ ]`CommentForm`
+        - [ ]`CommentsSections`
+        - [ ]`RelatedPostsSection`
     - [ ] Traducciones
 - [ ] Hacer la pagina de categorías
     - [ ] Crear componentes

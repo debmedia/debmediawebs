@@ -114,6 +114,10 @@
     @media (min-width: 768px) {
         background-color: unset;
     }
+
+    &.secondary {
+        background-color: $color-background-secondary;
+    }
     .nav-custom{
 
         .nav-link {
@@ -492,5 +496,23 @@
     }
     .excerpt {
         font-size: 0.75rem;
+    }
+}
+
+.post-breadcrumbs {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .breadcrumb-item {
+        + .breadcrumb-item::before {
+          content: ">" !important;
+          align-self: baseline;
+          color: $color-gray;
+        }
+      }
+
+    a,
+    a:visited,
+    a:hover {
+        color: $color-gray;
     }
 }
