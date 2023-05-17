@@ -26,13 +26,15 @@ export default function Map() {
                 </Container>
             </Container>
             <div className="super-map">
-            <Image src={map} className="img-fluid" layout="fill" objectFit="cover" alt="Mapa" objectPosition={"30% 50%"}/>
+            {/* <Image src={map} className="img-fluid" layout="fill" objectFit="cover" alt="Mapa" objectPosition={"30% 50%"}/> */}
+            
+            <img src={map.src} className="img-fluid" alt="mapa"/>
             </div>
             <div className="numbers-container my-2">
-                <CoolNumber foo="number1" end={350} caption={"common:CLIENTS"}></CoolNumber>
-                <CoolNumber foo="number2" end={100} caption={"common:INTERACTIONS"}></CoolNumber>
-                <CoolNumber foo="number3" end={50} caption={"common:PARTNERS"}></CoolNumber>
-                <CoolNumber foo="number4" end={3000} caption={"common:BRANCHES_IMPLEMENTED"}></CoolNumber>
+                <CoolNumber end={350} caption={"common:CLIENTS"}></CoolNumber>
+                <CoolNumber end={50} caption={"common:INTERACTIONS"} numberSuffix={'M'}></CoolNumber>
+                <CoolNumber end={50} caption={"common:PARTNERS"}></CoolNumber>
+                <CoolNumber end={3000} caption={"common:BRANCHES_IMPLEMENTED"}></CoolNumber>
             </div>
             <Container fluid className="map-section">
                 <div className="iso-image-container my-3">
@@ -43,10 +45,10 @@ export default function Map() {
     );
 }
 
-function CoolNumber({foo, end, caption}) {
+function CoolNumber({numberSuffix, end, caption}) {
     const { t } = useTranslation(['components', 'common']);
     return (
-        <div className={"numbers text-center " + foo}>
+        <div className={"numbers text-center"}>
             <span className="quntity">
                 +{" "}
                 <CountUp end={end} redraw={true}>
@@ -56,6 +58,7 @@ function CoolNumber({foo, end, caption}) {
                         </VisibilitySensor>
                     )}
                 </CountUp>
+                {numberSuffix}
             </span>
             <span className="type">
                 <Trans t={t} i18nKey={caption} />
