@@ -2,12 +2,13 @@ import Image from 'next/image';
 import React from 'react';
 import spotifyLogo from '../../../asset/imgs/blog/spotify-logo.svg';
 import playBtnIcon from '../../../asset/imgs/blog/play-btn-icon.svg';
-import { Link } from 'next-translate-routes';
+import { Link, useRouter } from 'next-translate-routes';
 
 export default function PodcastCard({post}) {
+    const {pathname} = useRouter();
   return (
     <div className='podcast-card'>
-        <Link href={post.link} passHref>
+        <Link href={`${pathname}/${post.slug}`} passHref>
             <a className='reset-a'>
             <div className='imageContainer'>
                 <div className='spotify-logo'>

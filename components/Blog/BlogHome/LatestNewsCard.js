@@ -1,14 +1,16 @@
 import Image from "next/image";
 import React from "react";
 import { Badge } from "react-bootstrap";
-import { Link } from "next-translate-routes";
+import { Link, useRouter } from "next-translate-routes";
 import AuthorCard from "../AuthorCard";
 import { calcReadingTime } from "../../../utils/utils";
 
 export default function LatestNewsCard({ post, compact }) {
+    const {pathname} = useRouter();
+
     return (
         <div className={`latestNewsCard ${compact && "compact"}`}>
-            <Link href={post.link}>
+            <Link href={`${pathname}/${post.slug}`}>
                 <a className="reset-a">
                     {/* TODO: ver si se puede optimizar la imagen */}
                     <Image

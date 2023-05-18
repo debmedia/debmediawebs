@@ -1,4 +1,4 @@
-import { Link } from "next-translate-routes";
+import { Link, useRouter } from "next-translate-routes";
 import Image from "next/image";
 import React from "react";
 import { Badge, Col, Container, Row, Stack } from "react-bootstrap";
@@ -6,6 +6,8 @@ import { calcReadingTime } from "../../utils/utils";
 import AuthorCard from "./AuthorCard";
 
 export default function HeroPostCard({ post }) {
+    const {pathname} = useRouter();
+   
     return (
         <div className="heroPostCard">
             <Container className="heroContainer">
@@ -40,7 +42,8 @@ export default function HeroPostCard({ post }) {
                             </div>
                             <div>
                                 <div>
-                                    <Link href={post.link}>
+                                    {/* Sacar el url del blog a una variable en constants */}
+                                    <Link href={`${pathname}/${post.slug}`}>
                                         <a className="debLink">
                                             Leer más <i className="bi bi-caret-right"></i>
                                         </a>

@@ -1,15 +1,16 @@
 import React from "react";
-import { Link } from "next-translate-routes";
+import { Link, useRouter } from "next-translate-routes";
 import Image from "next/image";
 import { Badge } from "react-bootstrap";
 import AuthorCard from "./AuthorCard";
 import { calcReadingTime } from "../../utils/utils";
 
 export default function PostCard({ post }) {
+    const {pathname} = useRouter();
     const compact = false;
     return (
         <div className={`post-card ${compact && "compact"}`}>
-            <Link href={post.link} passHref>
+            <Link href={`${pathname}/${post.slug}`} passHref>
                 <a className="reset-a">
                     <div className="card-wrapper">
                             {/* TODO: ver si se puede optimizar la imagen */}

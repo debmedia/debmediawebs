@@ -90,7 +90,7 @@
 - [x] Hacer la pagina del post
     - [ ] Crear componentes
         - [x]`PostBreadcrumbs`
-        - [ ]`PostHeader`
+        - [x]`PostHeader`
         - [ ]`PostBody`
         - [ ]`RateAndShare`
         - [ ]`CommentForm`

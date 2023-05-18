@@ -66,6 +66,7 @@ export const QUERY_GET_POSTS = gql`
                 title
                 link
                 databaseId
+                slug
                 author {
                     node {
                         databaseId

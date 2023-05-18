@@ -8,7 +8,7 @@ export default function BreadcrumbExample({crumbs, className}) {
         <Breadcrumb>
         {crumbs.map((crumb)=> {
             return (
-                <Breadcrumb.Item key={crumb.id||crumb.href} href={crumb.href} active={crumb.active}>{crumb.label}</Breadcrumb.Item>
+                <Breadcrumb.Item key={crumb.key||crumb.href} href={crumb.href} active={crumb.active}>{crumb.label}</Breadcrumb.Item>
             )
         })}
         </Breadcrumb>
