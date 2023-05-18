@@ -11,14 +11,32 @@ import { Accordion, Container } from "react-bootstrap";
 import PostsSection from "../../components/Blog/BlogHome/PostsSection";
 import PodcastSection from "../../components/Blog/BlogHome/PodcastSection";
 import { getPosts } from "../../services/wordpressGQL";
+import { getPlaiceholder } from "plaiceholder";
+
+
+// toma la lista de Post que viene del graphql y le agregar el blur
+// TODO: Sacarlo a otro archivo, error handling
+async function generateBlurPlaceholders(posts) {
+    const promises = posts.map(async (post) =>{
+        const {base64, img} = await getPlaiceholder(post.featuredImage.node.mediaItemUrl);
+        return  base64;
+    });
+    const metaImages = await Promise.all(promises);
+    return posts.map((post, index) => {
+        //deep copy cabeza
+        const copyPost = JSON.parse(JSON.stringify(post));
+        copyPost.featuredImage.node.blur = metaImages[index];
+        return copyPost;
+    });
+}
 
 export async function getStaticProps({ locale }) {
     const {posts, pagination} = await getPosts({first: 14});
-    console.log(posts);
+    const postsWithBlur = await generateBlurPlaceholders(posts);
     return {
         props: {
             ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),
-            postsData: posts,
+            postsData: postsWithBlur,
             paginationData: pagination
         },
     };

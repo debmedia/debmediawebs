@@ -13,13 +13,15 @@ export default function PostCard({ post }) {
             <Link href={`${pathname}/${post.slug}`} passHref>
                 <a className="reset-a">
                     <div className="card-wrapper">
-                            {/* TODO: ver si se puede optimizar la imagen */}
                             <div className="imageContainer">
                                 <Image
                                     src={post.featuredImage.node.mediaItemUrl}
                                     layout="fill"
                                     objectFit="cover"
                                     alt={post.title}
+                                    sizes="(min-width: 768px) 50vw, (min-width: 992px) 33vw, 100vw"
+                                    blurDataURL={post.featuredImage.node.blur}
+                                    placeholder="blur"
                                     ></Image>
                             </div>
                         <div className="card-content-container">

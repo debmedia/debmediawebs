@@ -12,13 +12,16 @@ export default function LatestNewsCard({ post, compact }) {
         <div className={`latestNewsCard ${compact && "compact"}`}>
             <Link href={`${pathname}/${post.slug}`}>
                 <a className="reset-a">
-                    {/* TODO: ver si se puede optimizar la imagen */}
                     <Image
                         src={post.featuredImage.node.mediaItemUrl}
                         layout="fill"
                         objectFit="cover"
                         alt={post.title}
-                        style={{ zIndex: "-10" }}></Image>
+                        style={{ zIndex: "-10" }}
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                        blurDataURL={post.featuredImage.node.blur}
+                        placeholder="blur"
+                        ></Image>
                     <Badge bg="primary">{post.categories.edges.find((elem) => elem.isPrimary)?.node.name}</Badge>
                     <h3
                         className="title"

@@ -23,6 +23,9 @@ export default function PodcastCard({post}) {
                 layout="fill"
                 objectFit="cover"
                 alt={post.title}
+                sizes="(min-width: 768px) 50vw, 100vw"
+                blurDataURL={post.featuredImage.node.blur}
+                placeholder="blur"
             ></Image>
             </div>
             <div className='content-container'>

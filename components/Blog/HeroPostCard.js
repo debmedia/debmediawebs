@@ -18,7 +18,10 @@ export default function HeroPostCard({ post }) {
                                 src={post.featuredImage.node.mediaItemUrl}
                                 layout="fill"
                                 objectFit="cover"
-                                alt={post.title}></Image>
+                                alt={post.title}
+                                sizes="(min-width: 768px) 50vw, 100vw"
+                                blurDataURL={post.featuredImage.node.blur}
+                                placeholder="blur"></Image>
                         </div>
                     </Col>
                     <Col className="textContainer ps-md-3 ps-lg-4" sm={12} md={6}>
