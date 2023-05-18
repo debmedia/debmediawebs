@@ -155,7 +155,7 @@ export default function Footer() {
                                 </h6>
                                 <hr />
                                 <Image src={partners.src} width={100}
-                                    height={130} />
+                                    height={130} alt="Partners Debmedia" />
                             </Col>
                         </Row>
                         <Row >
