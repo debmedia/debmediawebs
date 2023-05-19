@@ -1,38 +1,31 @@
 import React from "react";
-import { Row, Container, Col, Stack } from "react-bootstrap";
-import map from '../asset/imgs/map/map.svg';
-import iso from '../asset/imgs/map/iso.png';
+import { Container } from "react-bootstrap";
+import map from "../asset/imgs/map/map.svg";
+import iso from "../asset/imgs/map/iso.png";
 import CountUp from "react-countup";
-import VisibilitySensor from 'react-visibility-sensor';
-import { useMediaQuery } from 'react-responsive'
-import { useTranslation, Trans } from 'next-i18next';
+import VisibilitySensor from "react-visibility-sensor";
+import { useMediaQuery } from "react-responsive";
+import { useTranslation, Trans } from "next-i18next";
 import Image from "next/image";
 
 export default function Map() {
-    const isMobile = useMediaQuery({ query: '(max-width:899px)' });
-    const { t } = useTranslation(['components', 'common']);
-    let caption = t("MAP.CAPTION").split(" ")
+    const isMobile = useMediaQuery({ query: "(max-width:899px)" });
+    const { t } = useTranslation(["components", "common"]);
+    let caption = t("MAP.CAPTION").split(" ");
     return (
         <div className="map-section">
-            <Container fluid className="map-section relative">
-                <Container>
-                    <Row>
-                        <Col className="text-center">
-                            <h3 className="map-section_mapcontent-text">
-                                <Trans t={t} i18nKey="MAP.CAPTION" />
-                            </h3>
-                        </Col>
-                    </Row>
-                </Container>
-            </Container>
-            <div className="super-map">
-            {/* <Image src={map} className="img-fluid" layout="fill" objectFit="cover" alt="Mapa" objectPosition={"30% 50%"}/> */}
-            
-            <img src={map.src} className="img-fluid" alt="mapa"/>
+            <div className="map-container mr-0">
+                <h3 className="map-section_mapcontent-text">
+                    <Trans t={t} i18nKey="MAP.CAPTION" />
+                </h3>
+                <div className="map-image-wrapper">
+                    <img src={map.src} alt="mapa" />
+                </div>
             </div>
+
             <div className="numbers-container my-2">
                 <CoolNumber end={350} caption={"common:CLIENTS"}></CoolNumber>
-                <CoolNumber end={50} caption={"common:INTERACTIONS"} numberSuffix={'M'}></CoolNumber>
+                <CoolNumber end={50} caption={"common:INTERACTIONS"} numberSuffix={"M"}></CoolNumber>
                 <CoolNumber end={50} caption={"common:PARTNERS"}></CoolNumber>
                 <CoolNumber end={3000} caption={"common:BRANCHES_IMPLEMENTED"}></CoolNumber>
             </div>
@@ -45,8 +38,8 @@ export default function Map() {
     );
 }
 
-function CoolNumber({numberSuffix, end, caption}) {
-    const { t } = useTranslation(['components', 'common']);
+function CoolNumber({ numberSuffix, end, caption }) {
+    const { t } = useTranslation(["components", "common"]);
     return (
         <div className={"numbers text-center"}>
             <span className="quntity">
@@ -67,13 +60,11 @@ function CoolNumber({numberSuffix, end, caption}) {
     );
 }
 
-function EvenLines({lines, children}) {
+function EvenLines({ lines, children }) {
     let words = children.split(" ");
     let perLine = Math.ceil(words.length / lines);
     for (let i = lines - 1; i >= 0; i--) {
-        words.splice(perLine*(i),0, <br/>)
+        words.splice(perLine * i, 0, <br />);
     }
-    return (<>
-        {words.map(el => typeof el === 'string' ? el + " " : el)}
-    </>);
+    return <>{words.map((el) => (typeof el === "string" ? el + " " : el))}</>;
 }
