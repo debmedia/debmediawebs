@@ -1,16 +1,15 @@
 import React from "react";
-import { Link, useRouter } from "next-translate-routes";
+import { Link } from "next-translate-routes";
 import Image from "next/image";
 import { Badge } from "react-bootstrap";
 import AuthorCard from "./AuthorCard";
 import { calcReadingTime } from "../../utils/utils";
+import { BLOG_URL } from "../../constants/blog";
 
-export default function PostCard({ post }) {
-    const {pathname} = useRouter();
-    const compact = false;
+export default function PostCard({ post, compact, secondary }) {
     return (
-        <div className={`post-card ${compact && "compact"}`}>
-            <Link href={`${pathname}/${post.slug}`} passHref>
+        <div className={`post-card ${compact && "compact"} ${secondary && "secondary"}`}>
+            <Link href={`${BLOG_URL}/${post.slug}`} passHref>
                 <a className="reset-a">
                     <div className="card-wrapper">
                             <div className="imageContainer">
@@ -21,7 +20,7 @@ export default function PostCard({ post }) {
                                     alt={post.title}
                                     sizes="(min-width: 768px) 50vw, (min-width: 992px) 33vw, 100vw"
                                     blurDataURL={post.featuredImage.node.blur}
-                                    placeholder="blur"
+                                    placeholder={post.featuredImage.node.blur ? "blur": ""}
                                     ></Image>
                             </div>
                         <div className="card-content-container">

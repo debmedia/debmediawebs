@@ -2,16 +2,17 @@ import { useRouter } from 'next-translate-routes'
 import React from 'react'
 import BlogNavbar from '../../components/Blog/BlogNavbar';
 import CategoryNav from "../../components/Blog/CategoryNav";
-import { apolloClient } from "../../config/apollo";
-import { gql, ApolloProvider } from "@apollo/client";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import PostBreadcrumbs from '../../components/Blog/Post/PostBreadcrums'
 import PostHeader from '../../components/Blog/Post/PostHeader';
 import {Container, Accordion } from "react-bootstrap";
 import { getPostBySlug, getPosts } from '../../services/wordpressGQL';
 import PostBody from '../../components/Blog/Post/PostBody';
+import RelatedPostsSection from '../../components/Blog/RelatedPostsSection';
 
 export async function getStaticPaths() {
+
+    //TODO: configurar la paginas que se generan en build time
     // const posts = await getPosts({first: 1});
     return {
       paths: [
@@ -23,15 +24,18 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ locale, params }) {
     const post = await getPostBySlug(params.postSlug);
+    // TODO: buscar de verdad los posts relacionandos
+    const {posts: relatedPosts} = await getPosts({first: 6});
     return {
         props: {
             ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),
             postData: post,
+            relatedPostsData: relatedPosts
         },
     };
 }
 
-export default function PostPage({postData}) {
+export default function PostPage({postData, relatedPostsData}) {
     const router = useRouter();
   return (
       <div className="blog">
@@ -46,6 +50,7 @@ export default function PostPage({postData}) {
               ]}></PostBreadcrumbs>
           <PostHeader post={postData} />
           <PostBody post={postData}/>
+          <RelatedPostsSection posts={relatedPostsData}></RelatedPostsSection>
           <Container className="mt-5">
               <Accordion>
                   <Accordion.Item eventKey="0">

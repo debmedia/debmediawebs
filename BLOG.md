@@ -91,11 +91,11 @@
     - [ ] Crear componentes
         - [x]`PostBreadcrumbs`
         - [x]`PostHeader`
-        - [ ]`PostBody`
-        - [ ]`RateAndShare`
-        - [ ]`CommentForm`
-        - [ ]`CommentsSections`
-        - [ ]`RelatedPostsSection`
+        - [x]`PostBody`
+        - [ ]`RateAndShare` ?
+        - [ ]`CommentForm` ?
+        - [ ]`CommentsSections` ?
+        - [wip]`RelatedPostsSection`
     - [ ] Traducciones
 - [ ] Hacer la pagina de categorías
     - [ ] Crear componentes
