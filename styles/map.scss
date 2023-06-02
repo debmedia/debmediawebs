@@ -8,11 +8,10 @@
         &-text {
             margin-top: 2rem;
             margin-bottom: 1.5em;
-            font-size: 1.2em;
+            font-size: 1.1em;
             @media (min-width: 992px) {
-                font-size: 1.75em;
+                font-size: 1.5em;
                 font-weight: 400;
-                // padding-inline: 8rem;
             }
         }
     }
@@ -92,11 +91,9 @@
     .numbers-container {
         display: flex;
         flex-direction: column;
-        background-color: #F6F7FB;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding-block: 1rem;
-        padding-inline: 7rem;
 
         @media (min-width: 576px){
             flex-direction: row;

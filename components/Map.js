@@ -23,11 +23,17 @@ export default function Map() {
                 </div>
             </div>
 
+            <div style={{ backgroundColor: "#F6F7FB"}}>
+            <Container>
+
             <div className="numbers-container my-2">
                 <CoolNumber end={350} caption={"common:CLIENTS"}></CoolNumber>
                 <CoolNumber end={50} caption={"common:INTERACTIONS"} numberSuffix={"M"}></CoolNumber>
                 <CoolNumber end={50} caption={"common:PARTNERS"}></CoolNumber>
                 <CoolNumber end={3000} caption={"common:BRANCHES_IMPLEMENTED"}></CoolNumber>
+            </div>
+            </Container>
+
             </div>
             <Container fluid className="map-section">
                 <div className="iso-image-container my-3">
