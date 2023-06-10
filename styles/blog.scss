@@ -429,6 +429,11 @@
             // font-size: 1rem;
         }
     }
+
+    //si estamos adentro de un swiper lo hacemos 100%
+    .swiper & {
+        height: 100%;
+    }
 }
 
 
@@ -619,4 +624,10 @@
     .blog-swiper-btn-back{
         left: 0;
     }
+
+    .swiper-slide {
+        height: auto;
+    }
+
+
 }

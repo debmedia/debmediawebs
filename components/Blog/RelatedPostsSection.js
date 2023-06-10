@@ -9,50 +9,39 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 export default function RelatedPostsSection({ posts }) {
-    const navigationPrevRef = React.useRef(null)
-      const navigationNextRef = React.useRef(null)
+
     return (
         <div className="related-posts-section my-4 py-4">
             <Container >
                 <h3 className="related-posts-section_title my-4 text-center">También podría interesarte</h3>
                 <div className="related-posts-swiper-wrapper">
                     <Swiper
-                        spaceBetween={20}
-                        slidesPerView={3}
                         freeMode={false}
                         loop={true}
-                        // autoplay={true}
-                        // pagination={{
-                        //     clickable: true,
-                        //     dynamicBullets: false,
-                        // }}
-                        // breakpoints={{
-                        //     500: {
-                        //         slidesPerView: 1,
-                        //         spaceBetween: 20,
-                        //     },
-                        //     768: {
-                        //         slidesPerView: 2,
-                        //         spaceBetween: 30,
-                        //     },
-                        //     1024: {
-                        //         slidesPerView: 3,
-                        //         spaceBetween: 100,
-                        //     },
-                        // }}
+                        spaceBetween={20}
+                        slidesPerView="auto"
+                        breakpoints={{
+                            576: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            1200: {
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            },
+                        }}
                         >
                         {posts.map((post) => {
                             return (
                                 <SwiperSlide key={post.databaseId}>
-                                    <div>
                                     <PostCard post={post} compact={true} secondary={true}></PostCard>
-                                    </div>
                                 </SwiperSlide>
                             );
                         })}
-                        <SwiperSlide>
-                            div
-                        </SwiperSlide>
                         <SlideBackButton></SlideBackButton>
                         <SlideNextButton></SlideNextButton>
                     </Swiper>
