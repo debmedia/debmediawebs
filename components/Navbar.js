@@ -194,6 +194,7 @@ export default function Home() {
                             />
                             <Link href="/contacto">
                                 <Nav.Link
+                                    style={{"align-self": "center"}}
                                     href="#link"
                                     className="demo text-nowrap">
                                     {t("common:REQUEST_A_DEMO")}

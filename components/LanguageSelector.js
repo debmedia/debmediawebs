@@ -30,7 +30,7 @@ export default function LanguageSelector({ langs, className }) {
     });
 
     return (
-            <div ref={ref} className={"language-selector-container "+className}>
+            <div ref={ref} className={"language-selector-container "+className} style={{"align-self": "center"}}>
                 <button
                     type="button"
                     className="btn lang-selector text-nowrap"
