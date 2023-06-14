@@ -3,6 +3,9 @@ import BlogNavbar from '../../../components/Blog/BlogNavbar'
 import CategoryNav from "../../../components/Blog/CategoryNav";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import CategoryHeader from '../../../components/Blog/Category/CategoryHeader';
+import HeroPostCard from "../../../components/Blog/HeroPostCard";
+import { getPosts } from '../../../services/wordpressGQL';
+import { generateBlurPlaceholders } from '../../../services/plaiceholder';
 
 export async function getStaticPaths() {
 
@@ -20,6 +23,9 @@ export async function getStaticProps({ locale, params }) {
     // const post = await getPostBySlug(params.categorySlug);
     // TODO: buscar de verdad los posts relacionandos
     // const {posts: relatedPosts} = await getPosts({first: 6});
+    const {posts, pagination} = await getPosts({first: 14});
+    // TODO: Integrarlo directamente en el servicio de get post
+    const postsWithBlur = await generateBlurPlaceholders(posts);
     const categoryData = {
         color: "#2F9FEE",
         name: "Novedades"
@@ -30,19 +36,22 @@ export async function getStaticProps({ locale, params }) {
             // postData: post,
             // relatedPostsData: relatedPosts
             categorySlug: params.categorySlug,
-            categoryData
+            categoryData,
+            postsData: postsWithBlur,
+            paginationData: pagination
         },
     };
 }
 
-export default function CategoryPage({categorySlug, categoryData}) {
+export default function CategoryPage({categorySlug, categoryData, postsData}) {
   return (
     <div className="blog">
         <BlogNavbar />
         <div style={{ height: "89px" }}></div>
         <CategoryNav variant="secondary" />
         {/* <div>{categorySlug}</div> */}
-        <CategoryHeader categoryName={categoryData.name} categoryColor={categoryData.color}></CategoryHeader>
+        <CategoryHeader categoryName={categoryData.name} categoryColor={categoryData.color}/>
+        <HeroPostCard post={postsData[0]} compact />
     </div>
   )
 }
