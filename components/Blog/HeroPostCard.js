@@ -5,14 +5,14 @@ import { Badge, Col, Container, Row, Stack } from "react-bootstrap";
 import { calcReadingTime } from "../../utils/utils";
 import AuthorCard from "./AuthorCard";
 
-export default function HeroPostCard({ post }) {
+export default function HeroPostCard({ post, compact }) {
     const {pathname} = useRouter();
    
     return (
-        <div className="heroPostCard">
+        <div className={`heroPostCard ${compact? "compact": ""}`}>
             <Container className="heroContainer">
                 <Row direction="horizontal">
-                    <Col className="imageContainer px-0 pe-0 pe-md-3 pe-lg-4 mb-3 mb-md-0" sm={12} md={6}>
+                    <Col className="imageContainer px-0 pe-0 pe-md-3 pe-lg-4 mb-3 mb-md-0" sm={12} md={compact ? 4 : 6}>
                         <div style={{ width: "100%", height: "100%", position: "relative" }}>
                             <Image
                                 src={post.featuredImage.node.mediaItemUrl}
@@ -24,7 +24,7 @@ export default function HeroPostCard({ post }) {
                                 placeholder="blur"></Image>
                         </div>
                     </Col>
-                    <Col className="textContainer ps-md-3 ps-lg-4" sm={12} md={6}>
+                    <Col className="textContainer ps-md-3 ps-lg-4" sm={12} md={compact ? 8 : 6}>
                         <Stack direction="vertical">
                             <div className="topText">
                                 <div className="mt-1">
@@ -44,15 +44,19 @@ export default function HeroPostCard({ post }) {
                                     }}></p>
                             </div>
                             <div>
-                                <div>
-                                    {/* Sacar el url del blog a una variable en constants */}
-                                    <Link href={`${pathname}/${post.slug}`}>
-                                        <a className="debLink">
-                                            Leer más <i className="bi bi-caret-right"></i>
-                                        </a>
-                                    </Link>
-                                </div>
-                                <hr />
+                                {!compact && 
+                                <>
+                                    <div>
+                                        {/* Sacar el url del blog a una variable en constants */}
+                                        <Link href={`${pathname}/${post.slug}`}>
+                                            <a className="debLink">
+                                                Leer más <i className="bi bi-caret-right"></i>
+                                            </a>
+                                        </Link>
+                                    </div>
+                                    <hr />
+                                </>
+                                }
                                 <div>
                                     <AuthorCard
                                         author={post.author.node}

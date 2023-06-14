@@ -177,7 +177,11 @@
         font-size: 1.25rem;
     }
 
-
+    &.compact {
+        .imageContainer{
+            min-height: 30px;
+        }
+    }
 
     // & .topText > div{
     //     margin-block: 2rem;
