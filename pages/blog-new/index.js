@@ -37,10 +37,10 @@ export default function BlogHome({ postsData, paginationData }) {
                 <div style={{ height: "89px" }}></div>
                 <CategoryNav />
                 <HeroPostCard post={postsData[0]} />
-                <LatestNewsSection posts={postsData.slice(1, 4)}></LatestNewsSection>
+                <LatestNewsSection posts={postsData.slice(1, 4)}/>
                 <NewsLetterBanner></NewsLetterBanner>
-                <PostsSection posts={postsData.slice(4, 13)} paginationData={paginationData}></PostsSection>
-                <PodcastSection post={postsData[13]}></PodcastSection>
+                <PostsSection posts={postsData.slice(4, 13)} paginationData={paginationData}/>
+                <PodcastSection post={postsData[13]}/>
                     <Container className="mt-5">
                         <Accordion>
                             <Accordion.Item eventKey="0">
