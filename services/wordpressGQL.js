@@ -1,12 +1,11 @@
 import { apolloClient } from "../config/apollo";
 import { gql } from "@apollo/client";
 
-// Queries
+// Fragments
 
-export const QUERY_GET_POST_BY_SLUG = gql`
-    query getPost($slug: ID!) {
-        post(id: $slug, idType: SLUG) {
-            content
+const CORE_POST_FIELDS = gql`
+    fragment CorePostFields on Post {
+        content
             dateGmt
             excerpt
             modifiedGmt
@@ -46,11 +45,22 @@ export const QUERY_GET_POST_BY_SLUG = gql`
                     title
                 }
             }
+    }
+`
+
+// Queries
+
+export const QUERY_GET_POST_BY_SLUG = gql`
+    ${CORE_POST_FIELDS}
+    query getPost($slug: ID!) {
+        post(id: $slug, idType: SLUG) {
+            ...CorePostFields
         }
     }
 `;
 
 export const QUERY_GET_POSTS = gql`
+    ${CORE_POST_FIELDS}
     query getPosts($first: Int, $after: String) {
         posts(first: $first, after: $after, where: { status: PUBLISH }) {
             pageInfo {
@@ -58,45 +68,12 @@ export const QUERY_GET_POSTS = gql`
                 endCursor
             }
             nodes {
-                content
-                dateGmt
-                excerpt
-                modifiedGmt
-                status
-                title
-                link
-                databaseId
-                slug
-                author {
-                    node {
-                        databaseId
-                        name
-                        avatar {
-                            url
-                        }
-                    }
-                }
-                categories {
-                    edges {
-                        isPrimary
-                        node {
-                            name
-                            databaseId
-                            slug
-                            parent {
-                                node {
-                                    databaseId
-                                    name
-                                    slug
-                                }
-                            }
-                        }
-                    }
-                }
-                featuredImage {
-                    node {
-                        mediaItemUrl
-                        title
+                ...CorePostFields
+            }
+        }
+    }
+`;
+
                     }
                 }
             }
