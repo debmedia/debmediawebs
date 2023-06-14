@@ -6,6 +6,10 @@ import CategoryHeader from '../../../components/Blog/Category/CategoryHeader';
 import HeroPostCard from "../../../components/Blog/HeroPostCard";
 import { getPosts } from '../../../services/wordpressGQL';
 import { generateBlurPlaceholders } from '../../../services/plaiceholder';
+import { Container } from 'react-bootstrap';
+import CategoryPostsSection from '../../../components/Blog/Category/CategoryPostSection';
+import { ApolloProvider } from '@apollo/client';
+import { apolloClient } from "../../../config/apollo";
 
 export async function getStaticPaths() {
 
@@ -43,15 +47,19 @@ export async function getStaticProps({ locale, params }) {
     };
 }
 
-export default function CategoryPage({categorySlug, categoryData, postsData}) {
+export default function CategoryPage({categorySlug, categoryData, postsData, paginationData}) {
   return (
-    <div className="blog">
-        <BlogNavbar />
-        <div style={{ height: "89px" }}></div>
-        <CategoryNav variant="secondary" />
-        {/* <div>{categorySlug}</div> */}
-        <CategoryHeader categoryName={categoryData.name} categoryColor={categoryData.color}/>
-        <HeroPostCard post={postsData[0]} compact />
-    </div>
+    <ApolloProvider client={apolloClient}>
+        <div className="blog">
+            <BlogNavbar />
+            <div style={{ height: "89px" }}></div>
+            <CategoryNav variant="secondary" />
+            {/* <div>{categorySlug}</div> */}
+            <CategoryHeader categoryName={categoryData.name} categoryColor={categoryData.color}/>
+            <HeroPostCard post={postsData[0]} compact />
+            <Container className='px-0 mb-5'><hr/></Container>
+            <CategoryPostsSection posts={postsData.slice(1, 11)} paginationData={paginationData}/>
+        </div>
+    </ApolloProvider>
   )
 }
