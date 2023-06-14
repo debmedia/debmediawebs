@@ -13,7 +13,7 @@ export default function HeroPostCard({ post, compact }) {
         <div className={`heroPostCard ${compact? "compact": ""}`}>
             <Container className="heroContainer">
                 <Row direction="horizontal">
-                    <Col className="imageContainer px-0 pe-0 pe-md-3 pe-lg-4 mb-3 mb-md-0" sm={12} md={compact ? 4 : 6}>
+                    <Col className="imageContainer px-0 pe-0 pe-md-3 pe-lg-4 mb-3 mb-md-0" sm={12} md={compact ? 5 : 6}>
                         <div style={{ width: "100%", height: "100%", position: "relative" }}>
                             <Image
                                 src={post.featuredImage.node.mediaItemUrl}
@@ -25,7 +25,7 @@ export default function HeroPostCard({ post, compact }) {
                                 placeholder="blur"></Image>
                         </div>
                     </Col>
-                    <Col className="textContainer ps-md-3 ps-lg-4" sm={12} md={compact ? 8 : 6}>
+                    <Col className="textContainer ps-md-3 ps-lg-4" sm={12} md={compact ? 7 : 6}>
                         <Stack direction="vertical">
                             <div className="topText">
                                 <div className="mt-1">
