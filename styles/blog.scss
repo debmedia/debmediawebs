@@ -631,3 +631,12 @@
 
 
 }
+
+.category-header {
+
+    &>h1{
+        border-left: 34px solid $color-accent;
+        font-size: 2.5rem;
+        padding-left: 1rem;
+    }
+}

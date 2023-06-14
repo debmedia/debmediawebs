@@ -99,6 +99,9 @@
     - [ ] Traducciones
 - [ ] Hacer la pagina de categorías
     - [ ] Crear componentes
+        - [ ] `CategoryHeader`
+        - [ ] `CategoryPostCard`
+        - [ ] `CategoryPostCard`
     - [ ] Traducciones
 - [ ] Buscar
 - [ ] Verificar que los alt text usen los alt de las images
