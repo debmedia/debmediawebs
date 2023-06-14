@@ -10,6 +10,7 @@ import { Container } from 'react-bootstrap';
 import CategoryPostsSection from '../../../components/Blog/Category/CategoryPostSection';
 import { ApolloProvider } from '@apollo/client';
 import { apolloClient } from "../../../config/apollo";
+import RelatedPostsSection from '../../../components/Blog/RelatedPostsSection';
 
 export async function getStaticPaths() {
 
@@ -54,11 +55,11 @@ export default function CategoryPage({categorySlug, categoryData, postsData, pag
             <BlogNavbar />
             <div style={{ height: "89px" }}></div>
             <CategoryNav variant="secondary" />
-            {/* <div>{categorySlug}</div> */}
             <CategoryHeader categoryName={categoryData.name} categoryColor={categoryData.color}/>
             <HeroPostCard post={postsData[0]} compact />
             <Container className='px-0 mb-5'><hr/></Container>
             <CategoryPostsSection posts={postsData.slice(1, 11)} paginationData={paginationData}/>
+            <RelatedPostsSection posts={postsData.slice(1, 11)}></RelatedPostsSection>
         </div>
     </ApolloProvider>
   )
