@@ -4,6 +4,7 @@ import React from "react";
 import { Badge, Col, Container, Row, Stack } from "react-bootstrap";
 import { calcReadingTime } from "../../utils/utils";
 import AuthorCard from "./AuthorCard";
+import { BLOG_URL } from "../../constants/blog";
 
 export default function HeroPostCard({ post, compact }) {
     const {pathname} = useRouter();
@@ -32,11 +33,15 @@ export default function HeroPostCard({ post, compact }) {
                                         {post.categories.edges.find((elem) => elem.isPrimary)?.node.name}
                                     </Badge>
                                 </div>
-                                <h1
-                                    className="title mt-3"
-                                    dangerouslySetInnerHTML={{
-                                        __html: post.title,
-                                    }}></h1>
+                                <Link href={`${BLOG_URL}/${post.slug}`} passHref>
+                                    <a className="reset-a">
+                                        <h1
+                                            className="title mt-3"
+                                            dangerouslySetInnerHTML={{
+                                                __html: post.title,
+                                            }}></h1>
+                                    </a>
+                                </Link>
                                 <p
                                     className="excerpt mt-3"
                                     dangerouslySetInnerHTML={{
@@ -48,7 +53,7 @@ export default function HeroPostCard({ post, compact }) {
                                 <>
                                     <div>
                                         {/* Sacar el url del blog a una variable en constants */}
-                                        <Link href={`${pathname}/${post.slug}`}>
+                                        <Link href={`${BLOG_URL}/${post.slug}`}>
                                             <a className="debLink">
                                                 Leer más <i className="bi bi-caret-right"></i>
                                             </a>

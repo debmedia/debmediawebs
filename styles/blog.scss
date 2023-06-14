@@ -178,8 +178,15 @@
     }
 
     &.compact {
+        background-color: white;
         .imageContainer{
             min-height: 30px;
+        }
+        .heroContainer> div{
+            background-color: $color-background-secondary;
+        }
+        .textContainer {
+            padding-bottom: 1rem;
         }
     }
 
