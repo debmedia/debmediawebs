@@ -113,7 +113,7 @@ export default function BlogNavbar() {
                             />
                             <Link href="/contacto" >
                                 <Nav.Link
-                                    style={{"align-self": "center"}}
+                                    style={{"alignSelf": "center"}}
                                     href="#link"
                                     className="demo text-nowrap">
                                     {t("common:REQUEST_A_DEMO")}
