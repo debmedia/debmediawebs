@@ -31,6 +31,7 @@
     "react-dom": "18.0.0",
     "react-hubspot-form": "^1.3.7",
     "react-i18next": "^12.0.0",
+    "react-inspector": "^6.0.2",
     "react-markdown": "^8.0.3",
     "react-owl-carousel": "^2.3.3",
     "react-responsive": "^9.0.0-beta.8",
