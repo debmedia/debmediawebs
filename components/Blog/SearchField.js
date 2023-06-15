@@ -3,11 +3,13 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { useTranslation, Trans } from 'next-i18next';
+import { useRouter } from 'next-translate-routes';
 
 export default function SearchField() {
     const { t } = useTranslation(['blogHome', 'common']);
     const [open, setOpen] = useState(false);
     const [searchText, setSearchText] = useState("");
+    const router = useRouter();
     const handleClick = () => {
         if(searchText) {
             search();
@@ -32,6 +34,10 @@ export default function SearchField() {
 
     const search = () => {
         console.log("Search for: ", searchText);
+        if(searchText) {
+            const uri = encodeURI(`/blog-new/search?q=${searchText}`)
+            router.push(uri);
+        }
     }
   return (
     <InputGroup className={`search-field ${open ? "active" : ""}`}>

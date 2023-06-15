@@ -89,6 +89,21 @@ export const QUERY_GET_POSTS_BY_CATEGORY_ID = gql`
     }
 `;
 
+export const QUERY_GET_POSTS_BY_SEARCH_TERM = gql`
+    ${CORE_POST_FIELDS}
+    query getPosts($first: Int, $after: String, $searchTerm: String) {
+        posts(first: $first, after: $after, where: { status: PUBLISH, search: $searchTerm}) {
+            pageInfo {
+                hasNextPage
+                endCursor
+            }
+            nodes {
+                ...CorePostFields
+            }
+        }
+    }
+`;
+
 export const QUERY_GET_ROOT_CATEGORIES = gql`
     query getCategories {
         categories (where: {parent: null}) {
@@ -119,6 +134,8 @@ export const QUERY_GET_CATEGORIES_BY_SLUG = gql`
     }
 `
 
+
+// Funciones del servicio
 export async function getPostBySlug(slug) {
     const res = await apolloClient.query({
         variables: { slug },
@@ -150,6 +167,14 @@ export async function getCategoriesBySlug(slug) {
 
 export async function getPostByCategoryId({first, after, categoryId}) {
     const res = await apolloClient.query({variables:{first, after, categoryId}, query: QUERY_GET_POSTS_BY_CATEGORY_ID});
+    return {
+        posts: res.data.posts.nodes,
+        pagination: res.data.posts.pageInfo
+    }
+}
+
+export async function getPostBySearchTerm({first, after, searchTerm}) {
+    const res = await apolloClient.query({variables:{first, after, searchTerm}, query: QUERY_GET_POSTS_BY_SEARCH_TERM});
     return {
         posts: res.data.posts.nodes,
         pagination: res.data.posts.pageInfo
