@@ -4,13 +4,14 @@ import CategoryNav from "../../../components/Blog/CategoryNav";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import CategoryHeader from '../../../components/Blog/Category/CategoryHeader';
 import HeroPostCard from "../../../components/Blog/HeroPostCard";
-import { getPosts } from '../../../services/wordpressGQL';
+import { getCategoriesBySlug, getPostByCategoryId, getPosts } from '../../../services/wordpressGQL';
 import { generateBlurPlaceholders } from '../../../services/plaiceholder';
-import { Container } from 'react-bootstrap';
+import { Accordion, Container } from 'react-bootstrap';
 import CategoryPostsSection from '../../../components/Blog/Category/CategoryPostSection';
 import { ApolloProvider } from '@apollo/client';
 import { apolloClient } from "../../../config/apollo";
 import RelatedPostsSection from '../../../components/Blog/RelatedPostsSection';
+import { ObjectInspector, chromeDark } from 'react-inspector';
 
 export async function getStaticPaths() {
 
@@ -25,15 +26,16 @@ export async function getStaticPaths() {
   }
 
 export async function getStaticProps({ locale, params }) {
-    // const post = await getPostBySlug(params.categorySlug);
+    const category = (await getCategoriesBySlug(params.categorySlug))[0];
+    const {posts, pagination} = await getPostByCategoryId({first: 10, categoryId: category.databaseId});
     // TODO: buscar de verdad los posts relacionandos
-    // const {posts: relatedPosts} = await getPosts({first: 6});
-    const {posts, pagination} = await getPosts({first: 14});
+    const {posts: relatedPosts} = await getPosts({first: 6});
+
     // TODO: Integrarlo directamente en el servicio de get post
     const postsWithBlur = await generateBlurPlaceholders(posts);
     const categoryData = {
         color: "#2F9FEE",
-        name: "Novedades"
+        name: category.name
     }
     return {
         props: {
@@ -43,23 +45,47 @@ export async function getStaticProps({ locale, params }) {
             categorySlug: params.categorySlug,
             categoryData,
             postsData: postsWithBlur,
-            paginationData: pagination
+            paginationData: pagination,
+            categoryRaw: category,
+            relatedPosts
         },
     };
 }
 
-export default function CategoryPage({categorySlug, categoryData, postsData, paginationData}) {
+export default function CategoryPage({categorySlug, categoryData, postsData, paginationData, categoryRaw, relatedPosts}) {
   return (
     <ApolloProvider client={apolloClient}>
         <div className="blog">
             <BlogNavbar />
-            <div style={{ height: "89px" }}></div>
+            <div style={{ height: "100px" }}></div>
             <CategoryNav variant="secondary" />
             <CategoryHeader categoryName={categoryData.name} categoryColor={categoryData.color}/>
             <HeroPostCard post={postsData[0]} compact />
             <Container className='px-0 mb-5'><hr/></Container>
-            <CategoryPostsSection posts={postsData.slice(1, 11)} paginationData={paginationData}/>
-            <RelatedPostsSection posts={postsData.slice(1, 11)}></RelatedPostsSection>
+            <CategoryPostsSection posts={postsData.slice(1)} paginationData={paginationData}/>
+            <RelatedPostsSection posts={relatedPosts}></RelatedPostsSection>
+            <Container className="mt-5">
+                <Accordion>
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header>Post Data</Accordion.Header>
+                        <Accordion.Body>
+                            <div
+                                style={{
+                                    minHeight: "3rem",
+                                    padding: "2rem",
+                                    fontSize: "1.5rem",
+                                    backgroundColor: "black",
+                                    color: "white",
+                                    borderRadius: "0.5rem",
+                                }}>
+                                <pre>{JSON.stringify(categorySlug, null, 2)}</pre>
+                                <ObjectInspector theme={{...chromeDark, ...({BASE_FONT_SIZE: "1rem", TREENODE_FONT_SIZE: "1rem"})}} name="categoryRaw" data={categoryRaw}></ObjectInspector>
+                                <ObjectInspector theme={{...chromeDark, ...({BASE_FONT_SIZE: "1rem", TREENODE_FONT_SIZE: "1rem"})}} name="postsData" data={postsData}></ObjectInspector>
+                            </div>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+            </Container>
         </div>
     </ApolloProvider>
   )
