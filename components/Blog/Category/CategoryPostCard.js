@@ -6,7 +6,7 @@ import AuthorCard from "../AuthorCard";
 import { BLOG_URL } from "../../../constants/blog";
 import { calcReadingTime } from "../../../utils/utils";
 
-export default function CategoryPostCard({ post, compact, secondary }) {
+export default function CategoryPostCard({ post, compact, secondary, badgeColor }) {
     let category;
     if (post.categories.edges.length > 0){
         category = post.categories.edges.find((elem) => elem.isPrimary);
@@ -31,7 +31,7 @@ export default function CategoryPostCard({ post, compact, secondary }) {
                         <div className="card-content-container">
                             <div className="card-content">
                                 {category ? (
-                                    <Badge className="mb-2" bg="primary">
+                                    <Badge className={`mb-2 bg-${badgeColor}`}>
                                         {category?.node.name}
                                     </Badge>
                                 ) : (

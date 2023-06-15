@@ -6,7 +6,7 @@ import { calcReadingTime } from "../../utils/utils";
 import AuthorCard from "./AuthorCard";
 import { BLOG_URL } from "../../constants/blog";
 
-export default function HeroPostCard({ post, compact }) {
+export default function HeroPostCard({ post, compact, badgeColor }) {
     let category;
     if (post.categories.edges.length > 0){
         category = post.categories.edges.find((elem) => elem.isPrimary);
@@ -31,8 +31,8 @@ export default function HeroPostCard({ post, compact }) {
                     <Col className="textContainer ps-md-3 ps-lg-4" sm={12} md={compact ? 7 : 6}>
                         <Stack direction="vertical">
                             <div className="topText">
-                                <div className="mt-1">
-                                    <Badge bg="primary">
+                                <div className={compact? "mt-3" : "mt-1"}>
+                                    <Badge className={`bg-${badgeColor}`}>
                                         {category?.node.name}
                                     </Badge>
                                 </div>

@@ -10,4 +10,15 @@ $theme-colors: (
     "secondary": $color-secondary,
 );
 
+$industries-colors: (
+    "banca-y-seguros":#1945B6,
+    "gobierno": #5826E7,
+    "retail": #F48700,
+    "salud": #69B8EF,
+    "telecomunicaciones": #1B8CF4,
+    "utilities": #86BE55
+);
+
+$theme-colors: map-merge($theme-colors, $industries-colors);
+
 @import "~bootstrap/scss/bootstrap";

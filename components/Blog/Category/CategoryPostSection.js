@@ -5,7 +5,7 @@ import { QUERY_GET_POSTS } from "../../../services/wordpressGQL";
 import CategoryPostCard from "./CategoryPostCard";
 
 
-export default function CategoryPostsSection({ posts: posts_, paginationData: paginationData_ }) {
+export default function CategoryPostsSection({ posts: posts_, paginationData: paginationData_, categorySlug}) {
     const [posts, setPosts] = useState(posts_);
     const [paginationData, setPaginationData] = useState(paginationData_);
     const [getPosts, { loading, data }] = useLazyQuery(QUERY_GET_POSTS, {
@@ -24,15 +24,15 @@ export default function CategoryPostsSection({ posts: posts_, paginationData: pa
         <Container className="category-post-section mb-4">
             <div>
                 {posts.map((post) => (
-                    <>
-                    <CategoryPostCard key={post.databaseId} post={post}></CategoryPostCard>
+                    <div key={post.databaseId}>
+                    <CategoryPostCard  post={post} badgeColor={categorySlug}></CategoryPostCard>
                     <hr className="mb-5 mt-4"/>
-                    </>
+                    </div>
 
                 ))}
             </div>
             <div className="button-container mt-4">
-                <Button disabled={loading} onClick={!loading ? handleClick : null} className="px-4" variant="secondary">
+                <Button disabled={loading} onClick={!loading ? handleClick : null} variant={categorySlug} className="px-4" style={{color: "white"}}>
                     {loading ? <Spinner animation="border" role="status" size="sm"></Spinner> : "Ver más"}
                 </Button>
             </div>

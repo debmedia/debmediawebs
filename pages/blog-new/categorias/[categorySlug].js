@@ -34,8 +34,8 @@ export async function getStaticProps({ locale, params }) {
     // TODO: Integrarlo directamente en el servicio de get post
     const postsWithBlur = await generateBlurPlaceholders(posts);
     const categoryData = {
-        color: "#2F9FEE",
-        name: category.name
+        name: category.name,
+        slug: category.slug
     }
     return {
         props: {
@@ -59,10 +59,10 @@ export default function CategoryPage({categorySlug, categoryData, postsData, pag
             <BlogNavbar />
             <div style={{ height: "100px" }}></div>
             <CategoryNav variant="secondary" />
-            <CategoryHeader categoryName={categoryData.name} categoryColor={categoryData.color}/>
-            <HeroPostCard post={postsData[0]} compact />
+            <CategoryHeader categoryName={categoryData.name} categoryColor={categoryData.color} categorySlug={categoryData.slug}/>
+            <HeroPostCard post={postsData[0]} compact badgeColor={categoryData.slug}/>
             <Container className='px-0 mb-5'><hr/></Container>
-            <CategoryPostsSection posts={postsData.slice(1)} paginationData={paginationData}/>
+            <CategoryPostsSection posts={postsData.slice(1)} paginationData={paginationData} categorySlug={categoryData.slug}/>
             <RelatedPostsSection posts={relatedPosts}></RelatedPostsSection>
             <Container className="mt-5">
                 <Accordion>
