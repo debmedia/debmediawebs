@@ -1,4 +1,4 @@
-import { Link, useRouter } from "next-translate-routes";
+import { Link } from "next-translate-routes";
 import Image from "next/image";
 import React from "react";
 import { Badge, Col, Container, Row, Stack } from "react-bootstrap";
@@ -7,8 +7,11 @@ import AuthorCard from "./AuthorCard";
 import { BLOG_URL } from "../../constants/blog";
 
 export default function HeroPostCard({ post, compact }) {
-    const {pathname} = useRouter();
-   
+    let category;
+    if (post.categories.edges.length > 0){
+        category = post.categories.edges.find((elem) => elem.isPrimary);
+        if (!category) category = post.categories.edges[0];
+    }
     return (
         <div className={`heroPostCard ${compact? "compact": ""}`}>
             <Container className="heroContainer">
@@ -30,7 +33,7 @@ export default function HeroPostCard({ post, compact }) {
                             <div className="topText">
                                 <div className="mt-1">
                                     <Badge bg="primary">
-                                        {post.categories.edges.find((elem) => elem.isPrimary)?.node.name}
+                                        {category?.node.name}
                                     </Badge>
                                 </div>
                                 <Link href={`${BLOG_URL}/${post.slug}`} passHref>

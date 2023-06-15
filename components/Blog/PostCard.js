@@ -7,6 +7,11 @@ import { calcReadingTime } from "../../utils/utils";
 import { BLOG_URL } from "../../constants/blog";
 
 export default function PostCard({ post, compact, secondary }) {
+    let category;
+    if (post.categories.edges.length > 0){
+        category = post.categories.edges.find((elem) => elem.isPrimary);
+        if (!category) category = post.categories.edges[0];
+    }
     return (
         <div className={`post-card ${compact && "compact"} ${secondary && "secondary"}`}>
             <Link href={`${BLOG_URL}/${post.slug}`} passHref>
@@ -25,8 +30,8 @@ export default function PostCard({ post, compact, secondary }) {
                             </div>
                         <div className="card-content-container">
                             <div className="card-content">
-                                {post.categories.edges.find((elem) => elem.isPrimary) ?
-                                <Badge className="mb-2" bg="primary">{post.categories.edges.find((elem) => elem.isPrimary)?.node.name}</Badge>
+                                {category ?
+                                <Badge className="mb-2" bg="primary">{category?.node.name}</Badge>
                                 :
                                 // badge transparente vacio para mantener el espacio
                                 <Badge className="mb-2 hidden" bg="primary">&nbsp;</Badge>
