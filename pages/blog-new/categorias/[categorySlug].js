@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import BlogNavbar from '../../../components/Blog/BlogNavbar'
 import CategoryNav from "../../../components/Blog/CategoryNav";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -8,10 +8,11 @@ import { getCategoriesBySlug, getPostByCategoryId, getPosts } from '../../../ser
 import { generateBlurPlaceholders } from '../../../services/plaiceholder';
 import { Accordion, Container } from 'react-bootstrap';
 import CategoryPostsSection from '../../../components/Blog/Category/CategoryPostSection';
-import { ApolloProvider } from '@apollo/client';
+import { ApolloProvider, useLazyQuery } from '@apollo/client';
 import { apolloClient } from "../../../config/apollo";
 import RelatedPostsSection from '../../../components/Blog/RelatedPostsSection';
 import { ObjectInspector, chromeDark } from 'react-inspector';
+import { QUERY_GET_POSTS_BY_CATEGORY_ID } from "../../../services/wordpressGQL";
 
 export async function getStaticPaths() {
 
@@ -35,7 +36,8 @@ export async function getStaticProps({ locale, params }) {
     const postsWithBlur = await generateBlurPlaceholders(posts);
     const categoryData = {
         name: category.name,
-        slug: category.slug
+        slug: category.slug,
+        id: category.databaseId
     }
     return {
         props: {
@@ -47,12 +49,32 @@ export async function getStaticProps({ locale, params }) {
             postsData: postsWithBlur,
             paginationData: pagination,
             categoryRaw: category,
-            relatedPosts
+            relatedPosts,
+            // Aunque parezca que esto no hace nada hace que el estado no persista entre las distintas 
+            // páginas dinámicas cuando navegamos https://github.com/vercel/next.js/issues/9992
+            key: params.categorySlug,
         },
     };
 }
 
-export default function CategoryPage({categorySlug, categoryData, postsData, paginationData, categoryRaw, relatedPosts}) {
+export default function CategoryPage({categorySlug, categoryData, postsData, paginationData: paginationData_, categoryRaw, relatedPosts}) {
+    const [posts, setPosts] = useState(postsData);
+    const [paginationData, setPaginationData] = useState(paginationData_);
+    const [getPosts, { loading, data }] = useLazyQuery(QUERY_GET_POSTS_BY_CATEGORY_ID, {
+        //TODO: Sacar este 9 harcodeado
+        variables: { first: 9, after: paginationData.endCursor, categoryId: categoryData.id},
+        client: apolloClient
+    });
+
+    const loadMorePosts = () =>{
+        console.log("load more posts");
+        getPosts().then((res)=> {
+            console.log("posts fetched");
+            setPosts(postsData.concat(res.data.posts.nodes));
+            setPaginationData(res.data.posts.pageInfo);
+        });
+    }
+
   return (
     <ApolloProvider client={apolloClient}>
         <div className="blog">
@@ -60,9 +82,9 @@ export default function CategoryPage({categorySlug, categoryData, postsData, pag
             <div style={{ height: "100px" }}></div>
             <CategoryNav variant="secondary" />
             <CategoryHeader categoryName={categoryData.name} categoryColor={categoryData.color} categorySlug={categoryData.slug}/>
-            <HeroPostCard post={postsData[0]} compact badgeColor={categoryData.slug}/>
+            <HeroPostCard post={posts[0]} compact badgeColor={categoryData.slug}/>
             <Container className='px-0 mb-5'><hr/></Container>
-            <CategoryPostsSection posts={postsData.slice(1)} paginationData={paginationData} categorySlug={categoryData.slug}/>
+            <CategoryPostsSection posts={posts.slice(1)} paginationData={paginationData} category={categoryData} loadMoreCallback={loadMorePosts} loading={loading}/>
             <RelatedPostsSection posts={relatedPosts}></RelatedPostsSection>
             <Container className="mt-5">
                 <Accordion>
@@ -78,9 +100,9 @@ export default function CategoryPage({categorySlug, categoryData, postsData, pag
                                     color: "white",
                                     borderRadius: "0.5rem",
                                 }}>
-                                <pre>{JSON.stringify(categorySlug, null, 2)}</pre>
+                                <pre>{JSON.stringify(paginationData, null, 2)}</pre>
                                 <ObjectInspector theme={{...chromeDark, ...({BASE_FONT_SIZE: "1rem", TREENODE_FONT_SIZE: "1rem"})}} name="categoryRaw" data={categoryRaw}></ObjectInspector>
-                                <ObjectInspector theme={{...chromeDark, ...({BASE_FONT_SIZE: "1rem", TREENODE_FONT_SIZE: "1rem"})}} name="postsData" data={postsData}></ObjectInspector>
+                                <ObjectInspector theme={{...chromeDark, ...({BASE_FONT_SIZE: "1rem", TREENODE_FONT_SIZE: "1rem"})}} name="postsData" data={posts}></ObjectInspector>
                             </div>
                         </Accordion.Body>
                     </Accordion.Item>
