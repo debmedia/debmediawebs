@@ -149,7 +149,6 @@ export async function getPostBySlug(slug) {
 
 export async function getPosts({first, after}) {
     const res = await apolloClient.query({variables:{first, after}, query: QUERY_GET_POSTS});
-    console.log(res);
     return {
         posts: res.data.posts.nodes,
         pagination: res.data.posts.pageInfo
