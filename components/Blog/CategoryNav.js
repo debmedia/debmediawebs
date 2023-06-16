@@ -15,7 +15,7 @@ import {
     BLOG_UTILITIES_CATEGORIES_URL,
 } from "../../constants/urls";
 
-export default function CategoryNavMobile({ variant }) {
+export default function CategoryNav({ variant }) {
     // const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
 
     return (
