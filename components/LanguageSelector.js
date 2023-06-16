@@ -29,6 +29,10 @@ export default function LanguageSelector({ langs, className }) {
         };
     });
 
+    const setLangCookie = (locale) => {
+        document.cookie = `NEXT_LOCALE=${locale}; max-age=31536000; path=/`
+    }
+
     return (
             <div ref={ref} className={"language-selector-container "+className} style={{"alignSelf": "center"}}>
                 <button
@@ -51,8 +55,13 @@ export default function LanguageSelector({ langs, className }) {
                                         href={pathname}
                                         key={lang.key}
                                         locale={lang.key}
-                                        scroll={false}>
-                                        <li className="dropdown-item">
+                                        scroll={false}
+                                        
+                                        >
+                                        {/* El on click de aca abajo no se si esta del todo bien dado que 
+                                        tal vez podría el navegador navegar antes que se ejecute (?)
+                                        Por ahora anda y lo dejamos asi. */}
+                                        <li id={`lang-selector-button-${lang.key}`} className="dropdown-item" onClick={()=>setLangCookie(lang.key)}>
                                             <span>{t(lang.dropdownLabel)}</span>
                                             {locale === lang.key && (
                                                 <i className="bi bi-check"></i>

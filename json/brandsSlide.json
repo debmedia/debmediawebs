@@ -10,6 +10,16 @@
     }
   },
   {
+    "name": "santander",
+    "home": true,
+    "category": "banca",
+    "image": {
+      "url": "santander.png",
+      "width": 250,
+      "height": 110
+    }
+  },
+  {
     "name": "itau",
     "home": true,
     "category": "banca",
@@ -55,16 +65,6 @@
     "category": "banca",
     "image": {
       "url": "bancoomeva.png",
-      "width": 250,
-      "height": 110
-    }
-  },
-  {
-    "name": "santander",
-    "home": true,
-    "category": "banca",
-    "image": {
-      "url": "santander.png",
       "width": 250,
       "height": 110
     }
@@ -165,6 +165,16 @@
     "category": "salud",
     "image": {
       "url": "sancorsalud.png",
+      "width": 250,
+      "height": 110
+    }
+  },
+  {
+    "name": "sancorseguros",
+    "home": true,
+    "category": "banca",
+    "image": {
+      "url": "sancor-seguros-color.svg",
       "width": 250,
       "height": 110
     }
