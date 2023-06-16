@@ -28,9 +28,9 @@ export default function PostsSection({ posts: posts_, paginationData: pagination
                 ))}
             </div>
             <div className="button-container mt-4">
-                <Button disabled={loading} onClick={!loading ? handleClick : null} className="px-4" variant="secondary">
+                {paginationData.hasNextPage && <Button disabled={loading} onClick={!loading ? handleClick : null} className="px-4" variant="secondary">
                     {loading ? <Spinner animation="border" role="status" size="sm"></Spinner> : "Ver más"}
-                </Button>
+                </Button>}
             </div>
         </Container>
     );
