@@ -4,11 +4,13 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from 'next-translate-routes';
+import { Spinner } from 'react-bootstrap';
 
 export default function SearchField() {
     const { t } = useTranslation(['blogHome', 'common']);
     const [open, setOpen] = useState(false);
     const [searchText, setSearchText] = useState("");
+    const [loading, setLoading] = useState(false);
     const router = useRouter();
     const handleClick = () => {
         if(searchText) {
@@ -32,11 +34,13 @@ export default function SearchField() {
         }
     }
 
-    const search = () => {
+    const search = async () => {
         console.log("Search for: ", searchText);
         if(searchText) {
-            const uri = encodeURI(`/blog-new/search?q=${searchText}`)
-            router.push(uri);
+            const uri = encodeURI(`/blog-new/search?q=${searchText}`);
+            setLoading(true);
+            await router.push(uri);
+            setLoading(false);
         }
     }
   return (
@@ -51,7 +55,7 @@ export default function SearchField() {
         disabled={!open}
         />
         <Button variant="outline-secondary" id="button-addon2" onClick={handleClick} >
-        <i className="bi bi-search"></i>
+            {loading? <Spinner animation="border" role="status" size="sm"/>: <i className="bi bi-search"></i>}
         </Button>
     </InputGroup>
   )
