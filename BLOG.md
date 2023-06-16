@@ -98,12 +98,14 @@
         - [x]`RelatedPostsSection`
     - [ ] Traducciones
 - [ ] Hacer la pagina de categorías
-    - [ ] Crear componentes
-        - [ ] `CategoryHeader`
-        - [ ] `CategoryPostCard`
-        - [ ] `CategoryPostCard`
+    - [x] Crear componentes
+        - [x] `CategoryHeader`
+        - [x] `CategoryPostCard`
+    - [x] Crear los links a las categorias
+    - [x] Colores para las industrias
     - [ ] Traducciones
-- [ ] Buscar
+- [x] Buscar
+- [ ] De verdad buscar post relacionados
 - [ ] Verificar que los alt text usen los alt de las images
 - [ ] Webhooks para deploy con wp
 - [ ] Ver de setear una pagina que muestre los post no publicados como preview
