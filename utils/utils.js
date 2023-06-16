@@ -4,7 +4,7 @@ export const calcReadingTime = (text) => {
         const words = text.match(/\S+/g).length;
         return Math.ceil(words / averageWordsPerMinute);
     } catch(err){
-        console.error("[calcReadingTime]: " + err.message);
+        if(process.env.NEXT_PUBLIC_NODE_ENV === 'development') console.error("[calcReadingTime]: " + err.message);
         return 5; // devolvemos 5 para que muestre algo
     }
 };
