@@ -13,6 +13,7 @@ const CORE_POST_FIELDS = gql`
             title
             link
             databaseId
+            slug
             author {
                 node {
                     databaseId
