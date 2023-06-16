@@ -49,9 +49,7 @@ export default function SearchResultPage({postsData, paginationData: paginationD
     });
 
     const loadMorePosts = () =>{
-        console.log("load more posts");
         getPosts().then((res)=> {
-            console.log("posts fetched");
             setPosts(posts.concat(res.data.posts.nodes));
             setPaginationData(res.data.posts.pageInfo);
         });

@@ -67,9 +67,7 @@ export default function CategoryPage({categorySlug, categoryData, postsData, pag
     });
 
     const loadMorePosts = () =>{
-        console.log("load more posts");
         getPosts().then((res)=> {
-            console.log("posts fetched");
             setPosts(postsData.concat(res.data.posts.nodes));
             setPaginationData(res.data.posts.pageInfo);
         });
