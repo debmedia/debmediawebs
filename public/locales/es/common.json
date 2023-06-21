@@ -36,5 +36,6 @@
   "RESOURCES": "Recursos",
   "HOME": "Home",
   "APPOINTMENTS": "Citas",
-  "PAGE_NOT_FOUND": "Página no encontrada"
+  "PAGE_NOT_FOUND": "Página no encontrada",
+  "SERVER_SIDE_ERROR": "Error del servidor"
 }
