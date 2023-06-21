@@ -92,7 +92,7 @@
         - [x]`PostBreadcrumbs`
         - [x]`PostHeader`
         - [x]`PostBody`
-        - [ ]`RateAndShare` ?
+        - [x]`SharePost`
         - [ ]`CommentForm` ?
         - [ ]`CommentsSections` ?
         - [x]`RelatedPostsSection`
@@ -105,7 +105,8 @@
     - [x] Colores para las industrias
     - [ ] Traducciones
 - [x] Buscar
-- [ ] De verdad buscar post relacionados
+- [ ] Funcionalidad de suscribirse al news letter
+- [ ] Podcast filtrar por podcast
 - [ ] Verificar que los alt text usen los alt de las images
 - [ ] Webhooks para deploy con wp
 - [ ] Ver de setear una pagina que muestre los post no publicados como preview
