@@ -9,6 +9,7 @@ import { Container, Accordion } from "react-bootstrap";
 import { getPostBySlug, getPosts, getPostsSlugs } from "../../services/wordpressGQL";
 import PostBody from "../../components/Blog/Post/PostBody";
 import RelatedPostsSection from "../../components/Blog/RelatedPostsSection";
+import SharePost from "../../components/Blog/Post/SharePost";
 
 export async function getStaticPaths() {
     //TODO: Sacar este 100 hardcodeado, tal vez pasarlo a una variable de ambiente
@@ -62,6 +63,7 @@ export default function PostPage({ postData, relatedPostsData }) {
                 ]}></PostBreadcrumbs>
             <PostHeader post={postData} />
             <PostBody post={postData} />
+            <SharePost/>
             <RelatedPostsSection posts={relatedPostsData}></RelatedPostsSection>
             <Container className="mt-5">
                 <Accordion>
