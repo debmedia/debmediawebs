@@ -106,7 +106,7 @@
     - [ ] Traducciones
 - [x] Buscar
 - [ ] Funcionalidad de suscribirse al news letter
-- [ ] Podcast filtrar por podcast
+- [x] Podcast filtrar por podcast
 - [ ] Verificar que los alt text usen los alt de las images
 - [ ] Webhooks para deploy con wp
 - [ ] Ver de setear una pagina que muestre los post no publicados como preview
