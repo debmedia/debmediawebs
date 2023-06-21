@@ -75,6 +75,20 @@ export const QUERY_GET_POSTS = gql`
     }
 `;
 
+export const QUERY_GET_POSTS_SLUGS = gql`
+    query getPosts($first: Int, $after: String) {
+        posts(first: $first, after: $after, where: { status: PUBLISH }) {
+            pageInfo {
+                hasNextPage
+                endCursor
+            }
+            nodes {
+                slug
+            }
+        }
+    }
+`;
+
 export const QUERY_GET_POSTS_BY_CATEGORY_ID = gql`
     ${CORE_POST_FIELDS}
     query getPosts($first: Int, $after: String, $categoryId: Int) {
@@ -149,6 +163,14 @@ export async function getPostBySlug(slug) {
 
 export async function getPosts({first, after}) {
     const res = await apolloClient.query({variables:{first, after}, query: QUERY_GET_POSTS});
+    return {
+        posts: res.data.posts.nodes,
+        pagination: res.data.posts.pageInfo
+    }
+}
+
+export async function getPostsSlugs({first, after}) {
+    const res = await apolloClient.query({variables:{first, after}, query: QUERY_GET_POSTS_SLUGS});
     return {
         posts: res.data.posts.nodes,
         pagination: res.data.posts.pageInfo
