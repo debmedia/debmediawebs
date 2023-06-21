@@ -11,6 +11,7 @@ import { useRouter } from "next-translate-routes/router";
 import Meta from "../json/meta.json";
 import { appWithTranslation } from "next-i18next";
 import { withTranslateRoutes } from "next-translate-routes";
+import { SSRProvider } from "react-bootstrap";
 
 function MyApp({ Component, pageProps }) {
     const router = useRouter();
@@ -26,7 +27,7 @@ function MyApp({ Component, pageProps }) {
     }, [router.pathname]);
 
     return (
-        <>
+        <SSRProvider>
             <Layout>
                 <Head>
                     <title>{metainfo.title}</title>
@@ -64,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             {/* <!-- End of HubSpot Embed Code --> */}
             {/* Script para el chatbot de biatoz */}
             <Script type="text/javascript" src="https://demo.biatoz.com/static/js/chatbotSetup_debmedia.js"></Script>
-        </>
+        </SSRProvider>
     );
 }
 
