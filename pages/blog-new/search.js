@@ -34,7 +34,8 @@ export async function getServerSideProps({ locale, query }) {
             paginationData: pagination,
             relatedPosts,
             searchTerm,
-            key: searchTerm
+            key: searchTerm,
+            locales: ["es", "en", "pt"]
         },
     };
 }
