@@ -195,6 +195,12 @@ export async function getPostByCategoryId({first, after, categoryId}) {
     }
 }
 
+export async function getPostByCategorySlug({first, after, categorySlug}) {
+    const categories = await getCategoriesBySlug(categorySlug);
+    if(categories.length === 0) throw new Error(`[getPostByCategory] no category for: ${categorySlug}`);
+    return getPostByCategoryId({first, after, categoryId: categories[0].databaseId});
+}
+
 export async function getPostBySearchTerm({first, after, searchTerm}) {
     const res = await apolloClient.query({variables:{first, after, searchTerm}, query: QUERY_GET_POSTS_BY_SEARCH_TERM});
     return {
