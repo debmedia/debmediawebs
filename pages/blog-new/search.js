@@ -4,7 +4,6 @@ import CategoryNav from "../../components/Blog/CategoryNav";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import CategoryHeader from '../../components/Blog/Category/CategoryHeader';
 import { getPostBySearchTerm, getPosts } from '../../services/wordpressGQL';
-import { generateBlurPlaceholders } from '../../services/plaiceholder';
 import CategoryPostsSection from '../../components/Blog/Category/CategoryPostSection';
 import { ApolloProvider, useLazyQuery } from '@apollo/client';
 import { apolloClient } from "../../config/apollo";
@@ -22,15 +21,10 @@ export async function getServerSideProps({ locale, query }) {
     const {posts, pagination} = await searchPromise;
     const {posts: relatedPosts} = await relatedPostPromise;
 
-    // TODO: Integrarlo directamente en el servicio de get post
-    // en este caso como estamos haciendo ssr tal ves nos esta afectando negativamente la perfomance
-    // Pero todo espera tener una imagen blur... asi que no se si vale la pena cambiarlo.
-    const postsWithBlur = await generateBlurPlaceholders(posts);
-
     return {
         props: {
             ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),
-            postsData: postsWithBlur,
+            postsData: posts,
             paginationData: pagination,
             relatedPosts,
             searchTerm,
