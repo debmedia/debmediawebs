@@ -610,6 +610,9 @@
         font-size: 1.75rem;
         font-weight: 700;
         margin-block: 2rem;
+        text-align: center;
+        text-wrap: balance;
+        line-height: 1.3em;
 
         &>*:last-child {
             margin-bottom: 0;
