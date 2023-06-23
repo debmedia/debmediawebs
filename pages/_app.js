@@ -9,30 +9,28 @@ import Layout from "../components/layout";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useRouter } from "next-translate-routes/router";
-import Meta from "../json/meta.json";
+import metadata from "../json/meta.json";
 import { appWithTranslation } from "next-i18next";
 import { withTranslateRoutes } from "next-translate-routes";
+import logo from "../asset/imgs/logo.svg"
 
 function MyApp({ Component, pageProps }) {
-    const router = useRouter();
-
-    const [metainfo, setMeta] = useState({});
-
-    useEffect(() => {
-        let result = Meta[0][router.pathname];
-        if (result === undefined) {
-            result = Meta[0]["/"];
-        }
-        setMeta(result);
-    }, [router.pathname]);
-
+    const {pathname, locale, asPath} = useRouter();
+    const localMeta = metadata[locale] ? metadata[locale] : metadata["es"];
+    const meta = localMeta[pathname] ?  localMeta[pathname] : localMeta["/"];
     return (
         <>
             <Layout>
                 <Head>
-                    <title>{metainfo.title}</title>
+                    <title>{meta.title}</title>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                    <meta name="description" content={metainfo.description} />
+                    <meta name="description" content={meta.description} />
+                    <meta property="og:title" content={meta.title} />
+                    <meta property="og:description" content={meta.description} />
+                    {/* TODO: habría que usar una variable de ambiente para la url base */}
+                    <meta property="og:url" content={"https://debmedia.com" + asPath} />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:image" content={"https://debmedia.com" + logo.src} />
                     <link
                         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap"
                         rel="stylesheet"
