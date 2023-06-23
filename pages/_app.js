@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
                     {/* TODO: habría que usar una variable de ambiente para la url base */}
                     <meta property="og:url" content={"https://debmedia.com" + asPath} />
                     <meta property="og:type" content="website" />
-                    <meta property="og:image" content={"https://debmedia.com" + logo.src} />
+                    <meta property="og:image" content={"https://debmedia.com/meta/logo.png"} />
                     <link
                         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap"
                         rel="stylesheet"
