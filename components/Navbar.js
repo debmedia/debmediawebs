@@ -162,24 +162,24 @@ export default function Home() {
                                 <NavDropdown
                                     title={t("NAVBAR.RESOURCES.TITLE")}
                                     id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="https://debmedia.com/blog/">
-                                        <Link href="https://debmedia.com/blog/">
+                                    <NavDropdown.Item href="/blog">
+                                        <Link href="/blog">
                                             {t("NAVBAR.RESOURCES.BLOG")}
                                         </Link>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
-                                        href="https://blog.debmedia.com/category/casos-de-exito/"
+                                        href="/blog/categorias/casos-de-exito/"
                                         onClick={() => setExpanded(false)}>
-                                        <Link href="https://blog.debmedia.com/category/casos-de-exito/">
+                                        <Link href="/blog/categorias/casos-de-exito/">
                                             {t(
                                                 "NAVBAR.RESOURCES.SUCCESS_STORIES"
                                             )}
                                         </Link>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
-                                        href="https://blog.debmedia.com/category/casos-de-exito/"
+                                        href="/blog/categorias/ebooks"
                                         onClick={() => setExpanded(false)}>
-                                        <Link href="https://blog.debmedia.com/category/ebooks/">
+                                        <Link href="/blog/categorias/ebooks">
                                             {t(
                                                 "NAVBAR.RESOURCES.DOWNLOADABLE_RESOURCES"
                                             )}
