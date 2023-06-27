@@ -144,7 +144,7 @@ export default function CategoryPage({categorySlug, categoryData, postsData, pag
             <Container className='px-0 mb-5'><hr/></Container>
             <CategoryPostsSection posts={posts.slice(1)} paginationData={paginationData} category={categoryData} loadMoreCallback={loadMorePosts} loading={loading}/>
             <RelatedPostsSection posts={relatedPosts}></RelatedPostsSection>
-            <Container className="mt-5">
+            {/* <Container className="mt-5">
                 <Accordion>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>Post Data</Accordion.Header>
@@ -165,7 +165,7 @@ export default function CategoryPage({categorySlug, categoryData, postsData, pag
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
-            </Container>
+            </Container> */}
         </div>
     </ApolloProvider>
   )

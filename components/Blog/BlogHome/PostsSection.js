@@ -21,7 +21,7 @@ export default function PostsSection({ posts: posts_, paginationData: pagination
     };
 
     return (
-        <Container className="post-section">
+        <Container className="post-section mt-5">
             <div className="grid">
                 {posts.map((post) => (
                     <PostCard key={post.databaseId} post={post}></PostCard>

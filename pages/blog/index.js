@@ -41,10 +41,10 @@ export default function BlogHome({ postsData, paginationData, podcastPostData })
                 <CategoryNav />
                 <HeroPostCard post={postsData[0]} />
                 <LatestNewsSection posts={postsData.slice(1, 4)}/>
-                <NewsLetterBanner></NewsLetterBanner>
+                {/* <NewsLetterBanner></NewsLetterBanner> */}
                 <PostsSection posts={postsData.slice(4, 13)} paginationData={paginationData}/>
                 <PodcastSection post={podcastPostData[0]}/>
-                <Container className="mt-5">
+                {/* <Container className="mt-5">
                     <Accordion>
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>Post Data</Accordion.Header>
@@ -63,7 +63,7 @@ export default function BlogHome({ postsData, paginationData, podcastPostData })
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
-                </Container>
+                </Container> */}
             </div>
         </ApolloProvider>
     );

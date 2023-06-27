@@ -109,7 +109,7 @@
 - [x] Podcast filtrar por podcast
 - [x] Agregar categorias dentro de menu hamburguesa
 - [ ] Verificar que los alt text usen los alt de las images
-- [ ] Ocultar suscribirse al news letter
+- [x] Ocultar suscribirse al news letter
 - [x] Webhooks para deploy con wp
 - [ ] Ver de setear una pagina que muestre los post no publicados como preview
 

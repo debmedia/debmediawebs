@@ -1,1 +1,1 @@
-export const BLOG_URL = "/blog-new";
+export const BLOG_URL = "/blog";

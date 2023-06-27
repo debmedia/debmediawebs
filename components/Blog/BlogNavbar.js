@@ -129,14 +129,14 @@ export default function BlogNavbar() {
                             <div style={{ borderRight: "1px solid #aaa", marginLeft: "1rem" }}></div>
 
                             {/* Selector para mobile */}
-                            <LanguageSelector className={"d-lg-none"} langs={langsMobile} />
+                            {/* <LanguageSelector className={"d-lg-none"} langs={langsMobile} /> */}
                             <Link href="/contacto">
                                 <Nav.Link style={{ alignSelf: "center" }} href="#link" className="demo text-nowrap">
                                     {t("common:REQUEST_A_DEMO")}
                                 </Nav.Link>
                             </Link>
                             {/* Selector para desktop */}
-                            <LanguageSelector className={"d-none d-lg-block"} langs={langs} />
+                            {/* <LanguageSelector className={"d-none d-lg-block"} langs={langs} /> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -65,7 +65,7 @@ export default function PostPage({ postData, relatedPostsData }) {
             <PostBody post={postData} />
             <SharePost/>
             <RelatedPostsSection posts={relatedPostsData}></RelatedPostsSection>
-            <Container className="mt-5">
+            {/* <Container className="mt-5">
                 <Accordion>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>Post Data</Accordion.Header>
@@ -83,7 +83,7 @@ export default function PostPage({ postData, relatedPostsData }) {
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
-            </Container>
+            </Container> */}
         </div>
     );
 }
