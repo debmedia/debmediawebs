@@ -30,6 +30,7 @@ export default function Contact() {
                     <Row>
                         <Col md={{ span: 6, offset: 3 }}>
                             {locale === "es" && <HubspotForm
+                                id="partner-contact-form-es"
                                 portalId='1797020'
                                 formId='6d63533e-a3d9-43b2-845a-95299001139e'
                                 onSubmit={() => console.log('Submit!')}
@@ -37,6 +38,7 @@ export default function Contact() {
                                 loading={<div>Loading...</div>}
                             />}
                             {locale === "pt" && <HubspotForm
+                                id="partner-contact-form-pt"
                                 portalId='1797020'
                                 formId='82fc0d7d-b0f7-4518-8bee-6492ee8528d5'
                                 onSubmit={() => console.log('Submit!')}
@@ -44,6 +46,7 @@ export default function Contact() {
                                 loading={<div>Loading...</div>}
                             />}
                             {locale === "en" && <HubspotForm
+                                id="partner-contact-form-en"
                                 portalId='1797020'
                                 formId='267f3064-4938-412a-86ce-4f22fe1e9190'
                                 onSubmit={() => console.log('Submit!')}
