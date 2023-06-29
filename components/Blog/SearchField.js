@@ -35,7 +35,6 @@ export default function SearchField() {
     }
 
     const search = async () => {
-        console.log("Search for: ", searchText);
         if(searchText) {
             const uri = encodeURI(`/blog-new/search?q=${searchText}`);
             setLoading(true);

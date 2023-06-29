@@ -13,7 +13,6 @@ export default function PostsSection({ posts: posts_, paginationData: pagination
         variables: { first: 9, after: paginationData.endCursor },
     });
     const handleClick = () => {
-        // console.log("paginationData", paginationData);
         getPosts().then((res)=> {
             setPosts(posts.concat(res.data.posts.nodes));
             setPaginationData(res.data.posts.pageInfo);
