@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "pt/blog/*"
+  to = "/blog/:splat"
+  status = 302
+
+[[redirects]]
+  from = "en/blog/*"
+  to = "/blog/:splat"
+  status = 302
