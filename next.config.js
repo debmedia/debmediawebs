@@ -24,7 +24,7 @@ let nextConfig = {
   },
   i18n
 }
-
+console.log("Environment Variables", process.env);
 nextConfig = withTranslateRoutes(nextConfig);
 nextConfig = withPlaiceholder(nextConfig);
 module.exports = nextConfig;
