@@ -5,7 +5,7 @@ import { useTranslation } from "next-i18next";
 
 export default function LanguageSelector({ langs, className }) {
     const { t } = useTranslation(["components", "common"]);
-    const { locale, pathname } = useRouter();
+    const { locale, asPath } = useRouter();
     const [dropdownState, setDropdownState] = useState(false);
     const ref = useRef(null);
 
@@ -34,7 +34,7 @@ export default function LanguageSelector({ langs, className }) {
     }
 
     return (
-            <div ref={ref} className={"language-selector-container "+className}>
+            <div ref={ref} className={"language-selector-container "+className} style={{"alignSelf": "center"}}>
                 <button
                     type="button"
                     className="btn lang-selector text-nowrap"
@@ -51,8 +51,10 @@ export default function LanguageSelector({ langs, className }) {
                         <ul>
                             {langs.map((lang) => {
                                 return (
+                                    // usamos asPath, porque pathname devuelve la rutas dinámicas con los corchetes y sin los params, 
+                                    // asi podemos cambiar de idioma sin romper en las páginas dinámicas del blog
                                     <Link
-                                        href={pathname}
+                                        href={asPath}
                                         key={lang.key}
                                         locale={lang.key}
                                         scroll={false}

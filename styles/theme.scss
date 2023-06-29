@@ -1,0 +1,24 @@
+$color-secondary: #232C61;
+$color-gray: #404041;
+$color-light-gray: #A2A2A4;
+$color-primary: #22619D;
+$color-accent: #2F9FEE;
+$color-background-secondary: #F7F8FA;
+
+$theme-colors: (
+    "primary": $color-accent,
+    "secondary": $color-secondary,
+);
+
+$industries-colors: (
+    "banca-y-seguros":#1945B6,
+    "gobierno": #5826E7,
+    "retail": #F48700,
+    "salud": #69B8EF,
+    "telecomunicaciones": #1B8CF4,
+    "utilities": #86BE55
+);
+
+$theme-colors: map-merge($theme-colors, $industries-colors);
+
+@import "~bootstrap/scss/bootstrap";

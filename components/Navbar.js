@@ -162,24 +162,26 @@ export default function Home() {
                                 <NavDropdown
                                     title={t("NAVBAR.RESOURCES.TITLE")}
                                     id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="https://debmedia.com/blog/">
-                                        <Link href="https://debmedia.com/blog/">
+                                    <NavDropdown.Item 
+                                        as="div"
+                                        onClick={() => setExpanded(false)}>
+                                        <Link href="/blog">
                                             {t("NAVBAR.RESOURCES.BLOG")}
                                         </Link>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
-                                        href="https://blog.debmedia.com/category/casos-de-exito/"
+                                        as="div"
                                         onClick={() => setExpanded(false)}>
-                                        <Link href="https://blog.debmedia.com/category/casos-de-exito/">
+                                        <Link href="/blog/categorias/casos-de-exito/">
                                             {t(
                                                 "NAVBAR.RESOURCES.SUCCESS_STORIES"
                                             )}
                                         </Link>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
-                                        href="https://blog.debmedia.com/category/casos-de-exito/"
+                                        as="div"
                                         onClick={() => setExpanded(false)}>
-                                        <Link href="https://blog.debmedia.com/category/ebooks/">
+                                        <Link href="/blog/categorias/ebooks">
                                             {t(
                                                 "NAVBAR.RESOURCES.DOWNLOADABLE_RESOURCES"
                                             )}
@@ -194,6 +196,7 @@ export default function Home() {
                             />
                             <Link href="/contacto">
                                 <Nav.Link
+                                    style={{"alignSelf": "center"}}
                                     href="#link"
                                     className="demo text-nowrap">
                                     {t("common:REQUEST_A_DEMO")}

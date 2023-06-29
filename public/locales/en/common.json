@@ -36,5 +36,6 @@
   "RESOURCES": "Resources",
   "HOME": "Home",
   "APPOINTMENTS": "Online Appointments",
-  "PAGE_NOT_FOUND": "Page not found"
+  "PAGE_NOT_FOUND": "Page not found",
+  "SERVER_SIDE_ERROR": "Server error"
 }

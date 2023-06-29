@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/globals.css";
 import "../styles/main.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Head from "next/head";
 import Script from "next/script";
@@ -12,25 +11,35 @@ import { useRouter } from "next-translate-routes/router";
 import metadata from "../json/meta.json";
 import { appWithTranslation } from "next-i18next";
 import { withTranslateRoutes } from "next-translate-routes";
-import logo from "../asset/imgs/logo.svg"
+import { SSRProvider } from "react-bootstrap";
+import {
+    META_DESCRIPTION,
+    META_OG_DESCRIPTION,
+    META_OG_IMAGE,
+    META_OG_TITLE,
+    META_OG_TYPE,
+    META_OG_URL,
+    META_VIEWPORT,
+    TITLE,
+} from "../constants/metaKeys";
 
 function MyApp({ Component, pageProps }) {
-    const {pathname, locale, asPath} = useRouter();
+    const { pathname, locale, asPath } = useRouter();
     const localMeta = metadata[locale] ? metadata[locale] : metadata["es"];
-    const meta = localMeta[pathname] ?  localMeta[pathname] : localMeta["/"];
+    const meta = localMeta[pathname] ? localMeta[pathname] : localMeta["/"];
     return (
-        <>
+        <SSRProvider>
             <Layout>
                 <Head>
-                    <title>{meta.title}</title>
-                    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                    <meta name="description" content={meta.description} />
-                    <meta property="og:title" content={meta.title} />
-                    <meta property="og:description" content={meta.description} />
+                    <title key={TITLE}>{meta.title}</title>
+                    <meta key={META_VIEWPORT} name="viewport" content="initial-scale=1.0, width=device-width" />
+                    <meta key={META_DESCRIPTION} name="description" content={meta.description} />
+                    <meta key={META_OG_TITLE} property="og:title" content={meta.title} />
+                    <meta key={META_OG_DESCRIPTION} property="og:description" content={meta.description} />
                     {/* TODO: habría que usar una variable de ambiente para la url base */}
-                    <meta property="og:url" content={"https://debmedia.com" + asPath} />
-                    <meta property="og:type" content="website" />
-                    <meta property="og:image" content={"https://debmedia.com/meta/logo.png"} />
+                    <meta key={META_OG_URL} property="og:url" content={"https://debmedia.com" + asPath} />
+                    <meta key={META_OG_TYPE} property="og:type" content="website" />
+                    <meta key={META_OG_IMAGE} property="og:image" content={"https://debmedia.com/meta/logo.png"} />
                     <link
                         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap"
                         rel="stylesheet"
@@ -49,7 +58,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     dangerouslySetInnerHTML={{
                         __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4XJ42L" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
                     }}></noscript>
-                <Navbar />
+                {!pathname.includes("blog") && <Navbar />}
                 <Component {...pageProps} />
                 <Footer />
             </Layout>
@@ -63,7 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             {/* <!-- End of HubSpot Embed Code --> */}
             {/* Script para el chatbot de biatoz */}
             <Script type="text/javascript" src="https://demo.biatoz.com/static/js/chatbotSetup_debmedia.js"></Script>
-        </>
+        </SSRProvider>
     );
 }
 

@@ -1,14 +1,9 @@
 [[redirects]]
-  from = "/blog/*"
-  to = "https://blog.debmedia.com/blog/:splat"
-  status = 200
-
-[[redirects]]
   from = "pt/blog/*"
   to = "/blog/:splat"
-  status = 307
+  status = 302
 
 [[redirects]]
   from = "en/blog/*"
   to = "/blog/:splat"
-  status = 307
+  status = 302
