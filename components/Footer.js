@@ -95,7 +95,7 @@ export default function Footer() {
                                     </ListGroup.Item>
                                     { locale === "es" && 
                                     <ListGroup.Item>
-                                        <Link href="https://blog.debmedia.com">
+                                        <Link href="/blog">
                                             { t("FOOTER.BLOG") }
                                         </Link>
                                     </ListGroup.Item>
