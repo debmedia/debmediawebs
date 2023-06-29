@@ -11,6 +11,16 @@ import PostBody from "../../components/Blog/Post/PostBody";
 import RelatedPostsSection from "../../components/Blog/RelatedPostsSection";
 import SharePost from "../../components/Blog/Post/SharePost";
 import { BLOG_URL } from "../../constants/urls";
+import Head from "next/head";
+import {
+    META_DESCRIPTION,
+    META_OG_DESCRIPTION,
+    META_OG_IMAGE,
+    META_OG_TITLE,
+    META_OG_TYPE,
+    META_OG_URL,
+    TITLE,
+} from "../../constants/metaKeys";
 
 export async function getStaticPaths() {
     //TODO: Sacar este 100 hardcodeado, tal vez pasarlo a una variable de ambiente
@@ -50,9 +60,19 @@ export async function getStaticProps({ locale, params }) {
 }
 
 export default function PostPage({ postData, relatedPostsData }) {
-    const router = useRouter();
+    const {asPath} = useRouter();
     return (
         <div className="blog">
+            <Head>
+                <title key={TITLE}>{postData.seo?.title || postData.title || "Blog Debmedia"}</title>
+                <meta key={META_DESCRIPTION} name="description" content={postData.seo.metaDesc} />
+                <meta key={META_OG_TITLE} property="og:title" content={postData.seo.opengraphTitle} />
+                <meta key={META_OG_DESCRIPTION} property="og:description" content={postData.seo.opengraphDescription} />
+                {/* TODO: habría que usar una variable de ambiente para la url base */}
+                <meta key={META_OG_URL} property="og:url" content={"https://debmedia.com" + asPath} />
+                <meta key={META_OG_TYPE} property="og:type" content={postData.seo.opengraphType} />
+                <meta key={META_OG_IMAGE} property="og:image" content={postData.featuredImage?.node?.mediaItemUrl} />
+            </Head>
             <BlogNavbar />
             <div style={{ height: "89px" }}></div>
             <CategoryNav variant="secondary" />

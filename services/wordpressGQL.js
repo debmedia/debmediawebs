@@ -56,6 +56,15 @@ export const QUERY_GET_POST_BY_SLUG = gql`
     query getPost($slug: ID!) {
         post(id: $slug, idType: SLUG) {
             ...CorePostFields
+            seo {
+                title
+                metaDesc
+                opengraphTitle
+                opengraphDescription
+                opengraphType
+                metaKeywords
+                focuskw
+            }
         }
     }
 `;
