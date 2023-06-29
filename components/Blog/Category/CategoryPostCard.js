@@ -8,7 +8,7 @@ import { calcReadingTime } from "../../../utils/utils";
 
 export default function CategoryPostCard({ post, compact, secondary, badgeColor }) {
     let category;
-    if (post.categories.edges.length > 0){
+    if (post.categories.edges.length > 0) {
         category = post.categories.edges.find((elem) => elem.isPrimary);
         if (!category) category = post.categories.edges[0];
     }
@@ -19,21 +19,21 @@ export default function CategoryPostCard({ post, compact, secondary, badgeColor 
                 <a className="reset-a">
                     <div className="card-wrapper">
                         <div className="imageContainer">
-                            <Image
-                                src={post.featuredImage.node.mediaItemUrl}
-                                layout="fill"
-                                objectFit="cover"
-                                alt={post.title}
-                                sizes="(min-width: 768px) 50vw, (min-width: 992px) 33vw, 100vw"
-                                blurDataURL={post.featuredImage.node.blur}
-                                placeholder={post.featuredImage.node.blur ? "blur" : ""}></Image>
+                            {post.featuredImage?.node?.mediaItemUrl && (
+                                <Image
+                                    src={post.featuredImage?.node?.mediaItemUrl}
+                                    layout="fill"
+                                    objectFit="cover"
+                                    alt={post.title}
+                                    sizes="(min-width: 768px) 50vw, (min-width: 992px) 33vw, 100vw"
+                                    blurDataURL={post.featuredImage?.node?.blur}
+                                    placeholder={post.featuredImage?.node?.blur ? "blur" : ""}></Image>
+                            )}
                         </div>
                         <div className="card-content-container">
                             <div className="card-content">
                                 {category ? (
-                                    <Badge className={`mb-2 bg-${badgeColor}`}>
-                                        {category?.node.name}
-                                    </Badge>
+                                    <Badge className={`mb-2 bg-${badgeColor}`}>{category?.node.name}</Badge>
                                 ) : (
                                     // badge transparente vacio para mantener el espacio
                                     <Badge className="mb-2 hidden" bg="primary">

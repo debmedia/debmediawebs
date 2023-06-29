@@ -162,13 +162,15 @@ export default function Home() {
                                 <NavDropdown
                                     title={t("NAVBAR.RESOURCES.TITLE")}
                                     id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="/blog">
+                                    <NavDropdown.Item 
+                                        as="div"
+                                        onClick={() => setExpanded(false)}>
                                         <Link href="/blog">
                                             {t("NAVBAR.RESOURCES.BLOG")}
                                         </Link>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
-                                        href="/blog/categorias/casos-de-exito/"
+                                        as="div"
                                         onClick={() => setExpanded(false)}>
                                         <Link href="/blog/categorias/casos-de-exito/">
                                             {t(
@@ -177,7 +179,7 @@ export default function Home() {
                                         </Link>
                                     </NavDropdown.Item>
                                     <NavDropdown.Item
-                                        href="/blog/categorias/ebooks"
+                                        as="div"
                                         onClick={() => setExpanded(false)}>
                                         <Link href="/blog/categorias/ebooks">
                                             {t(

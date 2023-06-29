@@ -10,16 +10,18 @@ export default function PostHeader({ post }) {
     return (
         <Container className="post-header">
             <Row>
-                <Col xs={12} md={{ order: 2, span: 6 }} className="px-0 px-md-1">
-                    <div className="image-section">
-                        <Image
-                            src={post.featuredImage.node.mediaItemUrl}
-                            layout="responsive"
-                            width={DEFAULT_WIDTH}
-                            height={DEFAULT_HEIGHT}
-                            alt={post.title}></Image>
-                    </div>
-                </Col>
+                {post.featuredImage?.node?.mediaItemUrl && (
+                    <Col xs={12} md={{ order: 2, span: 6 }} className="px-0 px-md-1">
+                        <div className="image-section">
+                            <Image
+                                src={post.featuredImage?.node?.mediaItemUrl}
+                                layout="responsive"
+                                width={DEFAULT_WIDTH}
+                                height={DEFAULT_HEIGHT}
+                                alt={post.title}></Image>
+                        </div>
+                    </Col>
+                )}
                 <Col xs={12} md={{ order: 1, span: 6 }} className="align-self-center">
                     <div className="content-section mt-3">
                         <Badge bg="primary">{post.categories.edges.find((elem) => elem.isPrimary)?.node.name}</Badge>
