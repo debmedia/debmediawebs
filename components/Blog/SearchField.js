@@ -5,6 +5,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from 'next-translate-routes';
 import { Spinner } from 'react-bootstrap';
+import { BLOG_SEARCH_URL } from '../../constants/urls';
 
 export default function SearchField() {
     const { t } = useTranslation(['blogHome', 'common']);
@@ -36,7 +37,7 @@ export default function SearchField() {
 
     const search = async () => {
         if(searchText) {
-            const uri = encodeURI(`/blog-new/search?q=${searchText}`);
+            const uri = encodeURI(`${BLOG_SEARCH_URL}?q=${searchText}`);
             setLoading(true);
             await router.push(uri);
             setLoading(false);

@@ -10,6 +10,7 @@ import { getPostBySlug, getPosts, getPostsSlugs } from "../../services/wordpress
 import PostBody from "../../components/Blog/Post/PostBody";
 import RelatedPostsSection from "../../components/Blog/RelatedPostsSection";
 import SharePost from "../../components/Blog/Post/SharePost";
+import { BLOG_URL } from "../../constants/urls";
 
 export async function getStaticPaths() {
     //TODO: Sacar este 100 hardcodeado, tal vez pasarlo a una variable de ambiente
@@ -58,7 +59,7 @@ export default function PostPage({ postData, relatedPostsData }) {
             <PostBreadcrumbs
                 className="d-none d-sm-block"
                 crumbs={[
-                    { key: 1, href: "/blog-new", label: "Home" },
+                    { key: 1, href: BLOG_URL, label: "Home" },
                     { key: 1, active: true, label: postData.title },
                 ]}></PostBreadcrumbs>
             <PostHeader post={postData} />
