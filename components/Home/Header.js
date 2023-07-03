@@ -58,7 +58,7 @@ export default function Header() {
                                         Haz más eficientes tus<br className="d-none d-sm-block" /> canales de atención
                                     </Trans>
                                 </h1>
-                                <p className="header-home_parraf">
+                                <h2 className="header-home_parraf">
                                     <Trans t={t} i18nKey={"HEADER.SUBTITLE"}>
                                         Software para 
                                         <b>gestionar la atención
@@ -67,7 +67,7 @@ export default function Header() {
                                         </b>
                                         y presencial.
                                     </Trans>
-                                </p>
+                                </h2>
                                 <Link href="/contacto">
                                     <button className="header-home_demobutton">
                                         {t("common:REQUEST_A_DEMO")}
