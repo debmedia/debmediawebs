@@ -15,10 +15,10 @@ export default function Contact() {
         <>
             <Container fluid className="contact-section my-5">
                 <div className={'contact-section_shape1'}>
-                    <Image src={shape1.src} layout="fill" className={'left'} />
+                    <Image src={shape1.src} layout="fill" className={'left'} alt=""/>
                 </div>
                 <div className={'contact-section_shape2'}>
-                    <Image src={shape2.src} layout="fill" className={'right'} />
+                    <Image src={shape2.src} layout="fill" className={'right'} alt=""/>
                 </div>
                 <Container>
                     <Row>

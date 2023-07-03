@@ -96,18 +96,18 @@ export default function Brands({filter}) {
                                         <Col className="review-section_slidersection">
                                             <Row>
                                                 <Col xs="12">
-                                                    <img src={`/review/${item.image}`} className="review-section_slidersection-client img-fluid" />
+                                                    <img src={`/review/${item.image}`} className="review-section_slidersection-client img-fluid" alt={item.person}/>
                                                 </Col>
                                                 <Col sm={{ span: 10, offset: 1 }} className="relative">
                                                     <h4 className="review-section_slidersection-client-name">{item.person}</h4>
                                                     <span className="review-section_slidersection-client-work">{item.job}</span>
-                                                    <img src={quote1.src} className="quote1 d-none d-sm-block" />
+                                                    <img src={quote1.src} className="quote1 d-none d-sm-block" alt="qoute mark"/>
 
                                                     <p className="review-section_slidersection-client-parraf" dangerouslySetInnerHTML={{__html: item.comment}}></p>
-                                                    <img src={quote2.src} className="quote2 d-none d-sm-block" />
+                                                    <img src={quote2.src} className="quote2 d-none d-sm-block" alt="qoute mark"/>
                                                 </Col>
                                                 <Col xs="12">
-                                                    <img src={`/review/${item.company}`} className="img-fluid logoCliente" />
+                                                    <img src={`/review/${item.company}`} className="img-fluid logoCliente" alt={item.company}/>
                                                 </Col>
                                             </Row>
                                         </Col>

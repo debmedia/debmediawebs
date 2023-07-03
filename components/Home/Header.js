@@ -35,7 +35,7 @@ export default function Header() {
                         <img src={shape3.src} className="header-home_shape3" />
                     </div> */}
                     <div className="d-block d-sm-none" onClick={() => setModalShow(true)}>
-                        <img src={video.src} className="header-home_mainNoti" />
+                        <img src={video.src} className="header-home_mainNoti" alt=""/>
                     </div>
                      <div className="d-none d-sm-block header-home_viewVideo"  onClick={() => setModalShow(true)}>
                         <Image src={videoSm} layout="fill" className="header-home_mainNoti" alt=""/>

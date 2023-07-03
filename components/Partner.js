@@ -9,7 +9,7 @@ export default function Modern() {
     return (
         <>
             <Container className="partner-section">
-                <img src={shape.src} className="partner-section_shape-left" />
+                <img src={shape.src} className="partner-section_shape-left" alt=""/>
                 <Row>
                     <Col className="partner-section_div">
                         <Row>
