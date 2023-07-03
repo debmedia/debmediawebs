@@ -6,7 +6,7 @@ import { calcReadingTime } from "../../utils/utils";
 import AuthorCard from "./AuthorCard";
 import { BLOG_URL } from "../../constants/blog";
 
-export default function HeroPostCard({ post, compact, badgeColor }) {
+export default function HeroPostCard({ post, compact, badgeColor, h1 }) {
     let category;
     if (post.categories.edges.length > 0) {
         category = post.categories.edges.find((elem) => elem.isPrimary);
@@ -41,11 +41,19 @@ export default function HeroPostCard({ post, compact, badgeColor }) {
                                 </div>
                                 <Link href={`${BLOG_URL}/${post.slug}`} passHref>
                                     <a className="reset-a">
+                                        {h1? 
                                         <h1
                                             className="title mt-3"
                                             dangerouslySetInnerHTML={{
                                                 __html: post.title,
                                             }}></h1>
+                                            :
+                                            <div
+                                            className="title mt-3 h1"
+                                            dangerouslySetInnerHTML={{
+                                                __html: post.title,
+                                            }}></div>
+                                        }
                                     </a>
                                 </Link>
                                 <p
