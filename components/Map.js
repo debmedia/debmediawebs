@@ -66,11 +66,3 @@ function CoolNumber({ numberSuffix, end, caption }) {
     );
 }
 
-function EvenLines({ lines, children }) {
-    let words = children.split(" ");
-    let perLine = Math.ceil(words.length / lines);
-    for (let i = lines - 1; i >= 0; i--) {
-        words.splice(perLine * i, 0, <br />);
-    }
-    return <>{words.map((el) => (typeof el === "string" ? el + " " : el))}</>;
-}
