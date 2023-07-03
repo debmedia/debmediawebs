@@ -123,9 +123,9 @@ export default function Brands(props) {
                                             <div
                                                 className={"posts-slider_content-post " + (props.indistry ? item.indistry + '_post' : '')}>
                                                 <div>
-                                                    <h1>
+                                                    <div className="posts-slider_content-post-title">
                                                         {item.title}
-                                                    </h1>
+                                                    </div>
                                                     <Link href={item.url} passHref className="posts-slider_content-post_link">
                                                         <a target="_blank" rel="noopener noreferrer">
                                                             <Trans t={t} i18nKey="common:SEE_MORE"/>

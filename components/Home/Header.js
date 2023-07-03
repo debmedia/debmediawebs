@@ -81,12 +81,12 @@ export default function Header() {
             <Container className="d-flex justify-content-center header-home_text">
                 <Row>
                     <Col>
-                        <h3>
+                        <h2>
                             <Trans t={t} i18nKey="HEADER.CAPTION">
                             <b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
                             experiencia de sus clientes con <b> Debmedia</b>
                             </Trans>
-                        </h3>
+                        </h2>
                     </Col>
                 </Row>
             </Container>
