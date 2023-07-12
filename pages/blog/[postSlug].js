@@ -22,6 +22,11 @@ import {
     TITLE,
 } from "../../constants/metaKeys";
 
+function httpToHttps(content) {
+    const re = /http:\/\//g;
+    return content.replace(re, 'https://');
+}
+
 export async function getStaticPaths() {
     //TODO: Sacar este 30 hardcodeado, tal vez pasarlo a una variable de ambiente
     let postSlugs;
@@ -53,6 +58,8 @@ export async function getStaticProps({ locale, params }) {
         const post = await getPostBySlug(params.postSlug);
         if(!post) throw new Error(`Post with slug "${params.postSlug}" not found`);
         const { posts: relatedPosts } = await getPosts({ first: 6 });
+        // pasar todas los links en el contendido a https para que no se queje netlify
+        post.content = httpToHttps(post.content);
         return {
             props: {
                 ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),
@@ -81,10 +88,6 @@ export default function PostPage({ postData, relatedPostsData }) {
                 <meta key={META_OG_URL} property="og:url" content={"https://debmedia.com" + asPath} />
                 <meta key={META_OG_TYPE} property="og:type" content={postData.seo.opengraphType} />
                 <meta key={META_OG_IMAGE} property="og:image" content={postData.featuredImage?.node?.mediaItemUrl} />
-                {/* Upgradear las imagenes embebidas en los posts del blog a https */}
-                {
-                    // eslint-disable-next-line
-                }<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
             </Head>
             <BlogNavbar />
             <div style={{ height: "89px" }}></div>
