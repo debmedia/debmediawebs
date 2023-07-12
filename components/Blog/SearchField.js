@@ -45,10 +45,14 @@ export default function SearchField() {
     }
   return (
     <InputGroup className={`search-field ${open ? "active" : ""}`}>
+        <Form.Label for="blog-search-box" visuallyHidden>{t("NAVBAR.SEARCH")}</Form.Label>
         <Form.Control
+        name="blog-search-box"
+        id="blog-search-box"
         placeholder={t("NAVBAR.SEARCH")}
         aria-label={t("NAVBAR.SEARCH")}
         aria-describedby="basic-addon2"
+        type='text'
         value={searchText}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}
