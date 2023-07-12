@@ -25,21 +25,21 @@ export default function Market() {
                         <Col sm={4} xs={4} className="market-section_div">
                             <div className="imagenXS">
                                 <Image src={pepole.src} width={90}
-                                    height={135} className={'img-fluid'} />
+                                    height={135} className={'img-fluid'} alt=""/>
                             </div>
                             <Trans t={t} i18nKey={"MARKET.CAPTION_1"}/>
                         </Col>
                         <Col sm={4} xs={4} className="market-section_div">
                             <div className="imagenXS">
                                 <Image src={stats.src} width={100}
-                                    height={135} className={'img-fluid'} />
+                                    height={135} className={'img-fluid'} alt=""/>
                             </div>
                             <Trans t={t} i18nKey={"MARKET.CAPTION_2"}/>
                         </Col>
                         <Col sm={4} xs={4} className="market-section_div">
                             <div className="imagenXS">
                                 <Image src={connect.src} width={90}
-                                    height={135} className={'img-fluid'} />
+                                    height={135} className={'img-fluid'} alt=""/>
                             </div>
                             <Trans t={t} i18nKey={"MARKET.CAPTION_3"}/>
                         </Col>
@@ -47,7 +47,7 @@ export default function Market() {
                 </Container>
                 <div className="market-section_arrow">
                     <div className="market-section_arrow-circle">
-                        <img src={arrow.src} alt="arrow" />
+                        <img src={arrow.src} alt="arrow"/>
                     </div>
                 </div>
             </Container>

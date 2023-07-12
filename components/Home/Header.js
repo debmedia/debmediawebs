@@ -35,7 +35,7 @@ export default function Header() {
                         <img src={shape3.src} className="header-home_shape3" />
                     </div> */}
                     <div className="d-block d-sm-none" onClick={() => setModalShow(true)}>
-                        <img src={video.src} className="header-home_mainNoti" />
+                        <img src={video.src} className="header-home_mainNoti" alt=""/>
                     </div>
                      <div className="d-none d-sm-block header-home_viewVideo"  onClick={() => setModalShow(true)}>
                         <Image src={videoSm} layout="fill" className="header-home_mainNoti" alt=""/>
@@ -58,7 +58,7 @@ export default function Header() {
                                         Haz más eficientes tus<br className="d-none d-sm-block" /> canales de atención
                                     </Trans>
                                 </h1>
-                                <p className="header-home_parraf">
+                                <h2 className="header-home_parraf">
                                     <Trans t={t} i18nKey={"HEADER.SUBTITLE"}>
                                         Software para 
                                         <b>gestionar la atención
@@ -67,7 +67,7 @@ export default function Header() {
                                         </b>
                                         y presencial.
                                     </Trans>
-                                </p>
+                                </h2>
                                 <Link href="/contacto">
                                     <button className="header-home_demobutton">
                                         {t("common:REQUEST_A_DEMO")}
@@ -81,12 +81,12 @@ export default function Header() {
             <Container className="d-flex justify-content-center header-home_text">
                 <Row>
                     <Col>
-                        <h3>
+                        <h2>
                             <Trans t={t} i18nKey="HEADER.CAPTION">
                             <b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
                             experiencia de sus clientes con <b> Debmedia</b>
                             </Trans>
-                        </h3>
+                        </h2>
                     </Col>
                 </Row>
             </Container>

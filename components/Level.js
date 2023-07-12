@@ -42,11 +42,11 @@ export default function Level(props) {
                         <Col xs={6} sm={3}>
                             <div className={props.color === "industriasColor" ? "text-center mb-3 d-none" : "text-center mb-3 d-block"}>
                                 <Image src={moduleimg.src} width={120}
-                                    height={80} />
+                                    height={80} alt=""/>
                             </div>
                             <div className={props.color === "industriasColor" ? "d-block text-center mb-3" : "d-none text-center mb-3"}>
                                 <Image src={moduleimgG.src} width={120}
-                                    height={80} />
+                                    height={80} alt=""/>
                             </div>
                             <div className={props.color === "industriasColor" ? "level-section_step greyColor" : "level-section_step"}>
                                 <div>
@@ -63,11 +63,11 @@ export default function Level(props) {
                         <Col xs={6} sm={3}>
                             <div className={props.color === "industriasColor" ? "text-center mb-3 d-none" : "text-center mb-3 d-block"}>
                                 <Image src={demo.src} width={120}
-                                    height={80} />
+                                    height={80} alt=""/>
                             </div>
                             <div className={props.color === "industriasColor" ? "d-block text-center mb-3" : "d-none text-center mb-3"}>
                                 <Image src={demoG.src} width={120}
-                                    height={80} />
+                                    height={80} alt=""/>
                             </div>
                             <div className={props.color === "industriasColor" ? "level-section_step greyColor" : "level-section_step"}>
                                 <div>
@@ -84,11 +84,11 @@ export default function Level(props) {
                         <Col xs={6} sm={3}>
                             <div className={props.color === "industriasColor" ? "text-center mb-3 d-none" : "text-center mb-3 d-block"}>
                                 <Image src={config.src} width={120}
-                                    height={80} />
+                                    height={80} alt=""/>
                             </div>
                             <div className={props.color === "industriasColor" ? "d-block text-center mb-3" : "d-none text-center mb-3"}>
                                 <Image src={configG.src} width={120}
-                                    height={80} />
+                                    height={80} alt=""/>
                             </div>
                             <div className={props.color === "industriasColor" ? "level-section_step greyColor" : "level-section_step"}>
                                 <div>
@@ -106,11 +106,11 @@ export default function Level(props) {
                         <Col xs={6} sm={3}>
                             <div className={props.color === "industriasColor" ? "text-center mb-3 d-none" : "text-center mb-3 d-block"}>
                                 <Image src={client.src} width={120}
-                                    height={80} />
+                                    height={80} alt=""/>
                             </div>
                             <div className={props.color === "industriasColor" ? "d-block text-center mb-3" : "d-none text-center mb-3"}>
                                 <Image src={clientG.src} width={120}
-                                    height={80} />
+                                    height={80} alt=""/>
                             </div>
                             <div className={props.color === "industriasColor" ? "level-section_step greyColor" : "level-section_step"}>
                                 <div>

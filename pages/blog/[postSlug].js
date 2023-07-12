@@ -6,7 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import PostBreadcrumbs from "../../components/Blog/Post/PostBreadcrums";
 import PostHeader from "../../components/Blog/Post/PostHeader";
 import { Container, Accordion } from "react-bootstrap";
-import { getPostBySlug, getPosts, getPostsSlugs } from "../../services/wordpressGQL";
+import { getAllPostSlugs, getPostBySlug, getPosts, getPostsSlugs } from "../../services/wordpressGQL";
 import PostBody from "../../components/Blog/Post/PostBody";
 import RelatedPostsSection from "../../components/Blog/RelatedPostsSection";
 import SharePost from "../../components/Blog/Post/SharePost";
@@ -22,19 +22,33 @@ import {
     TITLE,
 } from "../../constants/metaKeys";
 
+function httpToHttps(content) {
+    const re = /http:\/\//g;
+    return content.replace(re, 'https://');
+}
+
 export async function getStaticPaths() {
-    //TODO: Sacar este 100 hardcodeado, tal vez pasarlo a una variable de ambiente
-    //TODO: que solo se generen los posts en producción, si es que es lento dev
-    const postSlugs = await getPostsSlugs({first:100});
+    //TODO: Sacar este 30 hardcodeado, tal vez pasarlo a una variable de ambiente
+    let postSlugs;
+    let fallback;
+    // solo si estamos en dev no buileamos todos los posts
+    if(process.env.CONTEXT && process.env.CONTEXT !== "dev") {
+        postSlugs = await getAllPostSlugs();
+        fallback = false;
+    } else {
+        postSlugs = (await getPostsSlugs({first:30})).posts;
+        fallback = 'blocking';
+    }
+
     return {
-        paths: postSlugs.posts.map((post)=> {
+        paths: postSlugs.map((post)=> {
             return {
                 params: {
                     postSlug: post.slug
                 }
             }
         }),
-        fallback: "blocking",
+        fallback,
     };
 }
 
@@ -44,6 +58,8 @@ export async function getStaticProps({ locale, params }) {
         const post = await getPostBySlug(params.postSlug);
         if(!post) throw new Error(`Post with slug "${params.postSlug}" not found`);
         const { posts: relatedPosts } = await getPosts({ first: 6 });
+        // pasar todas los links en el contendido a https para que no se queje netlify
+        post.content = httpToHttps(post.content);
         return {
             props: {
                 ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),

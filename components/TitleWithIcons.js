@@ -27,11 +27,11 @@ export default function TitleWithIcons({t, title, captions}) {
                                 <Col key={index} sm={4} xs={4} className="solutions-section_div">
                                     <div className="solutions-section_div-img  d-none d-sm-block">
                                         <Image src={check_blue.src} width={110}
-                                            height={90} className={'img-fluid'} />
+                                            height={90} className={'img-fluid'} alt="check mark"/>
                                     </div>
                                     <div className="solutions-section_div-img  d-block d-sm-none">
                                         <Image src={check_white.src} width={60}
-                                            height={60} className={'img-fluid'} />
+                                            height={60} className={'img-fluid'} alt="check mark"/>
                                     </div>
 
                                     <h4 className="solutions-section_title">

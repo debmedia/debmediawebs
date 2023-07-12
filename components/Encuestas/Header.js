@@ -33,9 +33,9 @@ const { t } = useTranslation(['encuestas', 'common']);
                                 <h1 className="encuestas-home_title no-br-sm">
                                     <Trans t={t} i18nKey="HEADER.TITLE"/>
                                 </h1>
-                                <p className="encuestas-home_parraf">
+                                <h2 className="encuestas-home_parraf">
                                     <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
-                                </p>
+                                </h2>
                                 <Link href="/contacto">
                                 <button className="encuestas-home_demobutton">
                                     <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>

@@ -39,7 +39,7 @@ export default function BlogHome({ postsData, paginationData, podcastPostData })
                 <BlogNavbar></BlogNavbar>
                 <div style={{ height: "89px" }}></div>
                 <CategoryNav />
-                <HeroPostCard post={postsData[0]} />
+                <HeroPostCard post={postsData[0]} h1/>
                 <LatestNewsSection posts={postsData.slice(1, 4)}/>
                 {/* <NewsLetterBanner></NewsLetterBanner> */}
                 <PostsSection posts={postsData.slice(4, 13)} paginationData={paginationData}/>

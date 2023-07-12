@@ -186,6 +186,23 @@ export async function getPostsSlugs({first, after}) {
     }
 }
 
+export async function getAllPostSlugs() {
+    let hasNextPage = true;
+    let requestsNumber = 0;
+    let first = 100;
+    let after;
+    let allPosts = [];
+    // limitamos por las dudas
+    const MAX_REQUESTS = 50;
+    while (hasNextPage && requestsNumber < MAX_REQUESTS) {
+        let {posts, pagination} = await getPostsSlugs({first, after});
+        hasNextPage = pagination.hasNextPage;
+        after = pagination.endCursor;
+        allPosts = allPosts.concat(posts);
+        requestsNumber++;
+    }
+    return allPosts;
+}
 export async function getRootCategories() {
     const res = await apolloClient.query({query: QUERY_GET_ROOT_CATEGORIES});
     return res.data.categories.nodes;

@@ -112,6 +112,7 @@
 - [x] Ocultar suscribirse al news letter
 - [x] Webhooks para deploy con wp
 - [ ] Ver de setear una pagina que muestre los post no publicados como preview
+- [x] Meta tags de los posts
 
 
 SEO, 
