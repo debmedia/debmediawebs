@@ -6,7 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import PostBreadcrumbs from "../../components/Blog/Post/PostBreadcrums";
 import PostHeader from "../../components/Blog/Post/PostHeader";
 import { Container, Accordion } from "react-bootstrap";
-import { getPostBySlug, getPosts, getPostsSlugs } from "../../services/wordpressGQL";
+import { getAllPostSlugs, getPostBySlug, getPosts, getPostsSlugs } from "../../services/wordpressGQL";
 import PostBody from "../../components/Blog/Post/PostBody";
 import RelatedPostsSection from "../../components/Blog/RelatedPostsSection";
 import SharePost from "../../components/Blog/Post/SharePost";
@@ -25,16 +25,25 @@ import {
 export async function getStaticPaths() {
     //TODO: Sacar este 100 hardcodeado, tal vez pasarlo a una variable de ambiente
     //TODO: que solo se generen los posts en producción, si es que es lento dev
-    const postSlugs = await getPostsSlugs({first:100});
+    let postSlugs;
+    let fallback;
+    if(process.env.CONTEXT === "production") {
+        postSlugs = await getAllPostSlugs();
+        fallback = false;
+    } else {
+        postSlugs = await getPostsSlugs({first:30});
+        fallback = 'blocking';
+    }
+
     return {
-        paths: postSlugs.posts.map((post)=> {
+        paths: postSlugs.map((post)=> {
             return {
                 params: {
                     postSlug: post.slug
                 }
             }
         }),
-        fallback: "blocking",
+        fallback,
     };
 }
 
