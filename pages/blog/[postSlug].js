@@ -23,15 +23,15 @@ import {
 } from "../../constants/metaKeys";
 
 export async function getStaticPaths() {
-    //TODO: Sacar este 100 hardcodeado, tal vez pasarlo a una variable de ambiente
-    //TODO: que solo se generen los posts en producción, si es que es lento dev
+    //TODO: Sacar este 30 hardcodeado, tal vez pasarlo a una variable de ambiente
     let postSlugs;
     let fallback;
-    if(process.env.CONTEXT === "production") {
+    // solo si estamos en dev no buileamos todos los posts
+    if(process.env.CONTEXT && process.env.CONTEXT !== "dev") {
         postSlugs = await getAllPostSlugs();
         fallback = false;
     } else {
-        postSlugs = await getPostsSlugs({first:30});
+        postSlugs = (await getPostsSlugs({first:30})).posts;
         fallback = 'blocking';
     }
 
