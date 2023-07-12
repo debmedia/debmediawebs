@@ -81,6 +81,10 @@ export default function PostPage({ postData, relatedPostsData }) {
                 <meta key={META_OG_URL} property="og:url" content={"https://debmedia.com" + asPath} />
                 <meta key={META_OG_TYPE} property="og:type" content={postData.seo.opengraphType} />
                 <meta key={META_OG_IMAGE} property="og:image" content={postData.featuredImage?.node?.mediaItemUrl} />
+                {/* Upgradear las imagenes embebidas en los posts del blog a https */}
+                {
+                    // eslint-disable-next-line
+                }<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
             </Head>
             <BlogNavbar />
             <div style={{ height: "89px" }}></div>
