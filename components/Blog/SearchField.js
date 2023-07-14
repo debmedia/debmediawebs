@@ -45,7 +45,7 @@ export default function SearchField() {
     }
   return (
     <InputGroup className={`search-field ${open ? "active" : ""}`}>
-        <Form.Label for="blog-search-box" visuallyHidden>{t("NAVBAR.SEARCH")}</Form.Label>
+        <Form.Label htmlFor="blog-search-box" visuallyHidden>{t("NAVBAR.SEARCH")}</Form.Label>
         <Form.Control
         name="blog-search-box"
         id="blog-search-box"
