@@ -6,7 +6,7 @@ import AuthorCard from "./AuthorCard";
 import { calcReadingTime } from "../../utils/utils";
 import { BLOG_URL } from "../../constants/blog";
 
-export default function PostCard({ post, compact, secondary }) {
+export default function PostCard({ post, compact, secondary, excerpt }) {
     let category;
     if (post.categories.edges.length > 0) {
         category = post.categories.edges.find((elem) => elem.isPrimary);
@@ -48,11 +48,11 @@ export default function PostCard({ post, compact, secondary }) {
                                     }}></h3>
                                 {!compact && (
                                     <>
-                                        <p
+                                        { excerpt && <p
                                             className="excerpt my-1"
                                             dangerouslySetInnerHTML={{
                                                 __html: post.excerpt,
-                                            }}></p>
+                                            }}></p>}
                                         <div className="debLink">
                                             Leer más <i className="bi bi-caret-right"></i>
                                         </div>
