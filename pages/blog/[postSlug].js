@@ -55,7 +55,8 @@ export async function getStaticPaths() {
 export async function getStaticProps({ locale, params }) {
     // TODO: buscar de verdad los posts relacionandos
     try {
-        const post = await getPostBySlug(params.postSlug);
+        // Esta chanchada es porque Object.isFrozen(post) == true y debe ser algo de apollo client
+        const post = JSON.parse(JSON.stringify(await getPostBySlug(params.postSlug)));
         if(!post) throw new Error(`Post with slug "${params.postSlug}" not found`);
         const { posts: relatedPosts } = await getPosts({ first: 6 });
         // pasar todas los links en el contendido a https para que no se queje netlify
