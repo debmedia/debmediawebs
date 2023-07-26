@@ -39,18 +39,18 @@ export async function getStaticPaths() {
         postSlugs = (await getPostsSlugs({first:30})).posts;
         fallback = 'blocking';
     }
-
+    const paths = postSlugs.filter((post) => {
+        return post.link.startsWith("https://debmedia.com");
+    }).map((post)=> {
+        return {
+            params: {
+                postSlug: post.slug
+            }
+        }
+    })
     return {
         // pre renderamos solo los que no van a tener redirect mas abajo para que no tire error en el build
-        paths: postSlugs.filter((post) => {
-            return post.link.startsWith("https://debmedia.com");
-        }).map((post)=> {
-            return {
-                params: {
-                    postSlug: post.slug
-                }
-            }
-        }),
+        paths,
         fallback,
     };
 }
@@ -92,6 +92,11 @@ export async function getStaticProps({ locale, params }) {
 
 export default function PostPage({ postData, relatedPostsData }) {
     const {asPath} = useRouter();
+    // no se porque aveces llega undefined en postData todo un misterio
+    if (!postData) {
+        return "Loading...";
+    }
+
     return (
         <div className="blog">
             <Head>
