@@ -61,6 +61,17 @@ export async function getStaticProps({ locale, params }) {
         const { posts: relatedPosts } = await getPosts({ first: 6 });
         // pasar todas los links en el contendido a https para que no se queje netlify
         post.content = httpToHttps(post.content);
+        // para el plugin de link any where o como se llame, si el link no es de la pagina redirigimos
+        // Esto es un work arround por dos maneras
+        // 1. Fijarse si el link empieza, deberíamos hacer un query de la metadata del post a la variable _links_to
+        // 2. No deberíamos hacer una redireccion desde el cliente sino que armar los redirects de ante mano y agregarlos
+        // a la config de Next.js
+        // pero bueno ¯\_(ツ)_/¯
+        if (!post.link.startsWith("https://debmedia.com")) return {
+                redirect: {
+                    destination: post.link,
+                },
+            };
         return {
             props: {
                 ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),
