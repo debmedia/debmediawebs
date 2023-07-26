@@ -34,14 +34,17 @@ export async function getStaticPaths() {
     // solo si estamos en dev no buileamos todos los posts
     if(process.env.CONTEXT && process.env.CONTEXT !== "dev") {
         postSlugs = await getAllPostSlugs();
-        fallback = false;
+        fallback = true;
     } else {
         postSlugs = (await getPostsSlugs({first:30})).posts;
         fallback = 'blocking';
     }
 
     return {
-        paths: postSlugs.map((post)=> {
+        // pre renderamos solo los que no van a tener redirect mas abajo para que no tire error en el build
+        paths: postSlugs.filter((post) => {
+            return post.link.startsWith("https://debmedia.com");
+        }).map((post)=> {
             return {
                 params: {
                     postSlug: post.slug
