@@ -23,6 +23,7 @@ import {
 } from "../../constants/metaKeys";
 
 function httpToHttps(content) {
+    if (!typeof content === 'string') return content;
     const re = /http:\/\//g;
     return content.replace(re, 'https://');
 }
