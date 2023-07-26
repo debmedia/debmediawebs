@@ -23,6 +23,7 @@ import {
 } from "../../constants/metaKeys";
 
 function httpToHttps(content) {
+    if (!typeof content === 'string') return content;
     const re = /http:\/\//g;
     return content.replace(re, 'https://');
 }
@@ -34,20 +35,23 @@ export async function getStaticPaths() {
     // solo si estamos en dev no buileamos todos los posts
     if(process.env.CONTEXT && process.env.CONTEXT !== "dev") {
         postSlugs = await getAllPostSlugs();
-        fallback = false;
+        fallback = true;
     } else {
         postSlugs = (await getPostsSlugs({first:30})).posts;
         fallback = 'blocking';
     }
-
-    return {
-        paths: postSlugs.map((post)=> {
-            return {
-                params: {
-                    postSlug: post.slug
-                }
+    const paths = postSlugs.filter((post) => {
+        return post.link.startsWith("https://debmedia.com");
+    }).map((post)=> {
+        return {
+            params: {
+                postSlug: post.slug
             }
-        }),
+        }
+    })
+    return {
+        // pre renderamos solo los que no van a tener redirect mas abajo para que no tire error en el build
+        paths,
         fallback,
     };
 }
@@ -61,6 +65,17 @@ export async function getStaticProps({ locale, params }) {
         const { posts: relatedPosts } = await getPosts({ first: 6 });
         // pasar todas los links en el contendido a https para que no se queje netlify
         post.content = httpToHttps(post.content);
+        // para el plugin de link any where o como se llame, si el link no es de la pagina redirigimos
+        // Esto es un work arround por dos maneras
+        // 1. Fijarse si el link empieza, deberíamos hacer un query de la metadata del post a la variable _links_to
+        // 2. No deberíamos hacer una redireccion desde el cliente sino que armar los redirects de ante mano y agregarlos
+        // a la config de Next.js
+        // pero bueno ¯\_(ツ)_/¯
+        if (!post.link.startsWith("https://debmedia.com")) return {
+                redirect: {
+                    destination: post.link,
+                },
+            };
         return {
             props: {
                 ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),
@@ -78,6 +93,11 @@ export async function getStaticProps({ locale, params }) {
 
 export default function PostPage({ postData, relatedPostsData }) {
     const {asPath} = useRouter();
+    // no se porque aveces llega undefined en postData todo un misterio
+    if (!postData) {
+        return "Loading...";
+    }
+
     return (
         <div className="blog">
             <Head>
