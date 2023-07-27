@@ -20,11 +20,11 @@ const langsMobile = [
         label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.PORTUGUESE",
         dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.PORTUGUESE",
     },
-    {
-        key: "en",
-        label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.ENGLISH",
-        dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.ENGLISH",
-    },
+    // {
+    //     key: "en",
+    //     label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.ENGLISH",
+    //     dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.ENGLISH",
+    // },
 ];
 
 const langs = [
@@ -38,11 +38,11 @@ const langs = [
         label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.PORTUGUESE",
         dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.PORTUGUESE",
     },
-    {
-        key: "en",
-        label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.ENGLISH",
-        dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.ENGLISH",
-    },
+    // {
+    //     key: "en",
+    //     label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.ENGLISH",
+    //     dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.ENGLISH",
+    // },
 ];
 
 export default function BlogNavbar() {
@@ -129,14 +129,14 @@ export default function BlogNavbar() {
                             <div style={{ borderRight: "1px solid #aaa", marginLeft: "1rem" }}></div>
 
                             {/* Selector para mobile */}
-                            {/* <LanguageSelector className={"d-lg-none"} langs={langsMobile} /> */}
+                            <LanguageSelector className={"d-lg-none"} langs={langsMobile} />
                             <Link href="/contacto">
                                 <Nav.Link style={{ alignSelf: "center" }} href="#link" className="demo text-nowrap">
                                     {t("common:REQUEST_A_DEMO")}
                                 </Nav.Link>
                             </Link>
                             {/* Selector para desktop */}
-                            {/* <LanguageSelector className={"d-none d-lg-block"} langs={langs} /> */}
+                            <LanguageSelector className={"d-none d-lg-block"} langs={langs} />
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
