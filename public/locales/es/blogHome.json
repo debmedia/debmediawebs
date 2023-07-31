@@ -12,5 +12,8 @@
     },
     "LATEST_NEWS_SECTION": {
         "TITLE": "Últimas notas"
+    },
+    "PODCAST_SECTION": {
+        "TITLE": "Podcast"
     }
 }
