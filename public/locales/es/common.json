@@ -37,5 +37,6 @@
   "HOME": "Home",
   "APPOINTMENTS": "Citas",
   "PAGE_NOT_FOUND": "Página no encontrada",
-  "SERVER_SIDE_ERROR": "Error del servidor"
+  "SERVER_SIDE_ERROR": "Error del servidor",
+  "READ_MORE": "Leer más"
 }

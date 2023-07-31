@@ -1,5 +1,13 @@
 {
     "NAVBAR": {
-        "SEARCH": "Buscar"
+        "SEARCH": "Buscar",
+        "CATEGORIES": "Categorias",
+        "NEWS": "Novedades",
+        "SUCCESS_STORIES": "Casos de éxito",
+        "EBOOK": "Ebook",
+        "SECTORS": "Sectores"
+    },
+    "CATEGORY_NAV": {
+        "SELECT_CATEGORY": "Seleccionar categoría"
     }
 }
