@@ -5,8 +5,10 @@ import { Badge } from "react-bootstrap";
 import AuthorCard from "./AuthorCard";
 import { calcReadingTime } from "../../utils/utils";
 import { BLOG_URL } from "../../constants/blog";
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function PostCard({ post, compact, secondary, excerpt }) {
+    const { t } = useTranslation(['blogHome', 'common']);
     let category;
     if (post.categories.edges.length > 0) {
         category = post.categories.edges.find((elem) => elem.isPrimary);
@@ -54,7 +56,7 @@ export default function PostCard({ post, compact, secondary, excerpt }) {
                                                 __html: post.excerpt,
                                             }}></p>}
                                         <div className="debLink">
-                                            Leer más <i className="bi bi-caret-right"></i>
+                                            {t("common:READ_MORE")} <i className="bi bi-caret-right"></i>
                                         </div>
                                     </>
                                 )}
