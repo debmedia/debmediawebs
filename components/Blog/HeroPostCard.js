@@ -5,9 +5,12 @@ import { Badge, Col, Container, Row, Stack } from "react-bootstrap";
 import { calcReadingTime } from "../../utils/utils";
 import AuthorCard from "./AuthorCard";
 import { BLOG_URL } from "../../constants/blog";
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function HeroPostCard({ post, compact, badgeColor, h1 }) {
+    const { t } = useTranslation(['blogHome', 'common']);
     let category;
+    if(!post) return "Error no hay post";
     if (post.categories.edges.length > 0) {
         category = post.categories.edges.find((elem) => elem.isPrimary);
         if (!category) category = post.categories.edges[0];
@@ -69,7 +72,7 @@ export default function HeroPostCard({ post, compact, badgeColor, h1 }) {
                                             {/* Sacar el url del blog a una variable en constants */}
                                             <Link href={`${BLOG_URL}/${post.slug}`}>
                                                 <a className="debLink">
-                                                    Leer más <i className="bi bi-caret-right"></i>
+                                                    {t("common:READ_MORE")}<i className="bi bi-caret-right"></i>
                                                 </a>
                                             </Link>
                                         </div>
