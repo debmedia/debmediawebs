@@ -17,7 +17,7 @@ import { generateBlurPlaceholders } from "../../services/plaiceholder";
 
 
 export async function getStaticProps({ locale }) {
-    const {posts, pagination} = await getPosts({first: 14});
+    const {posts, pagination} = await getPosts({first: 14}, locale);
     const {posts: podcastPosts, pagination: podcastPagination} = await getPostByCategorySlug({categorySlug: "podcast", first: 1});
     // TODO: Integrarlo directamente en el servicio de get post
     const postsWithBlur = await generateBlurPlaceholders(posts);
@@ -44,26 +44,28 @@ export default function BlogHome({ postsData, paginationData, podcastPostData })
                 {/* <NewsLetterBanner></NewsLetterBanner> */}
                 <PostsSection posts={postsData.slice(4, 13)} paginationData={paginationData}/>
                 <PodcastSection post={podcastPostData[0]}/>
-                {/* <Container className="mt-5">
-                    <Accordion>
-                        <Accordion.Item eventKey="0">
-                            <Accordion.Header>Post Data</Accordion.Header>
-                            <Accordion.Body>
-                                <div
-                                    style={{
-                                        minHeight: "3rem",
-                                        padding: "2rem",
-                                        fontSize: "1.5rem",
-                                        backgroundColor: "black",
-                                        color: "white",
-                                        borderRadius: "0.5rem",
-                                    }}>
-                                    <pre>{JSON.stringify(postsData, null, 2)}</pre>
-                                </div>
-                            </Accordion.Body>
-                        </Accordion.Item>
-                    </Accordion>
-                </Container> */}
+                {process.env.NEXT_PUBLIC_NODE_ENV === "development" &&
+                    <Container className="mt-5">
+                        <Accordion>
+                            <Accordion.Item eventKey="0">
+                                <Accordion.Header>Post Data</Accordion.Header>
+                                <Accordion.Body>
+                                    <div
+                                        style={{
+                                            minHeight: "3rem",
+                                            padding: "2rem",
+                                            fontSize: "1.5rem",
+                                            backgroundColor: "black",
+                                            color: "white",
+                                            borderRadius: "0.5rem",
+                                        }}>
+                                        <pre>{JSON.stringify(postsData, null, 2)}</pre>
+                                    </div>
+                                </Accordion.Body>
+                            </Accordion.Item>
+                        </Accordion>
+                    </Container>
+                }
             </div>
         </ApolloProvider>
     );

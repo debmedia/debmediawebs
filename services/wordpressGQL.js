@@ -71,8 +71,8 @@ export const QUERY_GET_POST_BY_SLUG = gql`
 
 export const QUERY_GET_POSTS = gql`
     ${CORE_POST_FIELDS}
-    query getPosts($first: Int, $after: String) {
-        posts(first: $first, after: $after, where: { status: PUBLISH }) {
+    query getPosts($first: Int, $after: String, $categoryId: Int, $categoryIn: [ID], $categoryNotIn: [ID]) {
+        posts(first: $first, after: $after, where: { status: PUBLISH, categoryId: $categoryId, categoryIn: $categoryIn, categoryNotIn: $categoryNotIn }) {
             pageInfo {
                 hasNextPage
                 endCursor
@@ -158,7 +158,14 @@ export const QUERY_GET_CATEGORIES_BY_SLUG = gql`
         }
     }
 `
-
+// por ahora hardcodeamos los ids de los idiomas
+// son los ids de las categorias de la tabla
+const langIds = {
+    es: 1709,
+    pt: 1710
+}
+// array con todos los ids de idiomas menos el default
+const defaultLangsNotIn = [1710]
 
 // Funciones del servicio
 export async function getPostBySlug(slug) {
@@ -171,8 +178,8 @@ export async function getPostBySlug(slug) {
 }
 
 
-export async function getPosts({first, after}) {
-    const res = await apolloClient.query({variables:{first, after}, query: QUERY_GET_POSTS});
+export async function getPosts({first, after}, locale) {
+    const res = await apolloClient.query({variables:{first, after, categoryId: langIds[locale], }, query: QUERY_GET_POSTS});
     return {
         posts: res.data.posts.nodes,
         pagination: res.data.posts.pageInfo
