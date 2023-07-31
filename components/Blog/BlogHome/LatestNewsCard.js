@@ -4,8 +4,10 @@ import { Badge } from "react-bootstrap";
 import { Link, useRouter } from "next-translate-routes";
 import AuthorCard from "../AuthorCard";
 import { calcReadingTime } from "../../../utils/utils";
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function LatestNewsCard({ post, compact }) {
+    const { t } = useTranslation(['blogHome', 'common']);
     const { pathname } = useRouter();
 
     return (
@@ -37,7 +39,7 @@ export default function LatestNewsCard({ post, compact }) {
                                     __html: post.excerpt,
                                 }}></p>
                             <div className="debLink mb-3">
-                                Leer más <i className="bi bi-caret-right"></i>
+                                {t("common:READ_MORE")}<i className="bi bi-caret-right"></i>
                             </div>
                         </>
                     )}

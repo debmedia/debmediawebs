@@ -9,5 +9,8 @@
     },
     "CATEGORY_NAV": {
         "SELECT_CATEGORY": "Seleccionar categoría"
+    },
+    "LATEST_NEWS_SECTION": {
+        "TITLE": "Últimas notas"
     }
 }
