@@ -71,8 +71,8 @@ export const QUERY_GET_POST_BY_SLUG = gql`
 
 export const QUERY_GET_POSTS = gql`
     ${CORE_POST_FIELDS}
-    query getPosts($first: Int, $after: String, $categoryId: Int, $categoryIn: [ID], $categoryNotIn: [ID]) {
-        posts(first: $first, after: $after, where: { status: PUBLISH, categoryId: $categoryId, categoryIn: $categoryIn, categoryNotIn: $categoryNotIn }) {
+    query getPosts($first: Int, $after: String, $categoryId: Int) {
+        posts(first: $first, after: $after, where: { status: PUBLISH, categoryId: $categoryId }) {
             pageInfo {
                 hasNextPage
                 endCursor
@@ -101,8 +101,8 @@ export const QUERY_GET_POSTS_SLUGS = gql`
 
 export const QUERY_GET_POSTS_BY_CATEGORY_ID = gql`
     ${CORE_POST_FIELDS}
-    query getPosts($first: Int, $after: String, $categoryId: Int) {
-        posts(first: $first, after: $after, where: { status: PUBLISH, categoryId: $categoryId}) {
+    query getPosts($first: Int, $after: String, $categoryId: Int, $categoryIn: [ID]) {
+        posts(first: $first, after: $after, where: { status: PUBLISH, categoryId: $categoryId, categoryIn: $categoryIn}) {
             pageInfo {
                 hasNextPage
                 endCursor
@@ -221,18 +221,18 @@ export async function getCategoriesBySlug(slug) {
     return res.data.categories.nodes;
 }
 
-export async function getPostByCategoryId({first, after, categoryId}) {
-    const res = await apolloClient.query({variables:{first, after, categoryId}, query: QUERY_GET_POSTS_BY_CATEGORY_ID});
+export async function getPostByCategoryId({first, after, categoryId, categoryIn}) {
+    const res = await apolloClient.query({variables:{first, after, categoryId, categoryIn}, query: QUERY_GET_POSTS_BY_CATEGORY_ID});
     return {
         posts: res.data.posts.nodes,
         pagination: res.data.posts.pageInfo
     }
 }
 
-export async function getPostByCategorySlug({first, after, categorySlug}) {
+export async function getPostByCategorySlug({first, after, categorySlug}, locale) {
     const categories = await getCategoriesBySlug(categorySlug);
     if(categories.length === 0) throw new Error(`[getPostByCategory] no category for: ${categorySlug}`);
-    return getPostByCategoryId({first, after, categoryId: categories[0].databaseId});
+    return getPostByCategoryId({first, after, categoryId: langIds[locale],categoryIn: [categories[0].databaseId]});
 }
 
 export async function getPostBySearchTerm({first, after, searchTerm}) {

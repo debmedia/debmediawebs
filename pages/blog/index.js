@@ -18,7 +18,7 @@ import { generateBlurPlaceholders } from "../../services/plaiceholder";
 
 export async function getStaticProps({ locale }) {
     const {posts, pagination} = await getPosts({first: 14}, locale);
-    const {posts: podcastPosts, pagination: podcastPagination} = await getPostByCategorySlug({categorySlug: "podcast", first: 1});
+    const {posts: podcastPosts, pagination: podcastPagination} = await getPostByCategorySlug({categorySlug: "podcast", first: 1}, locale);
     // TODO: Integrarlo directamente en el servicio de get post
     const postsWithBlur = await generateBlurPlaceholders(posts);
     const podcastPostsWithBlur = await generateBlurPlaceholders(podcastPosts);
@@ -59,6 +59,7 @@ export default function BlogHome({ postsData, paginationData, podcastPostData })
                                             color: "white",
                                             borderRadius: "0.5rem",
                                         }}>
+                                        <pre>Number of posts: {postsData.length}</pre>
                                         <pre>{JSON.stringify(postsData, null, 2)}</pre>
                                     </div>
                                 </Accordion.Body>
