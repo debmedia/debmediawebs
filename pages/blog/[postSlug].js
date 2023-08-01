@@ -28,7 +28,7 @@ function httpToHttps(content) {
     return content.replace(re, 'https://');
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths({locales}) {
     //TODO: Sacar este 30 hardcodeado, tal vez pasarlo a una variable de ambiente
     let postSlugs;
     let fallback;
@@ -40,17 +40,22 @@ export async function getStaticPaths() {
         postSlugs = (await getPostsSlugs({first:30})).posts;
         fallback = 'blocking';
     }
+    // pre renderamos solo los que no van a tener redirect mas abajo para que no tire error en el build
+    // y sacamos los que no tengan categorias ya que en getPostsSlugs y getAllPostSlugs solo agarramos las
+    // categorias de idioma, en definitiva filtramos los que no tienen categoria de idioma. es una chanchada ya lo se
     const paths = postSlugs.filter((post) => {
-        return post.link.startsWith("https://debmedia.com");
+        return post.link.startsWith("https://debmedia.com") && post.categories.nodes.length > 0;
     }).map((post)=> {
         return {
             params: {
-                postSlug: post.slug
-            }
+                postSlug: post.slug,
+            },
+            // aca elegimos el primer idioma, pero lo correcto seria iterar por todos los idiomas
+            // pero como en la practica solo va a tener un idioma esta mas o menos bien asi.
+            locale: post.categories.nodes[0]
         }
     })
     return {
-        // pre renderamos solo los que no van a tener redirect mas abajo para que no tire error en el build
         paths,
         fallback,
     };
@@ -76,6 +81,14 @@ export async function getStaticProps({ locale, params }) {
                     destination: post.link,
                 },
             };
+
+        //si no tiene categoria del idioma actual lo mandamos a la blog del home
+        if (!post.categories.edges.map((category) => category.node.slug).includes(locale)) return {
+            redirect: {
+                destination: "/blog"
+            }
+        };
+
         return {
             props: {
                 ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),
@@ -123,7 +136,7 @@ export default function PostPage({ postData, relatedPostsData }) {
             <PostBody post={postData} />
             <SharePost/>
             <RelatedPostsSection posts={relatedPostsData}></RelatedPostsSection>
-            {/* <Container className="mt-5">
+            <Container className="mt-5">
                 <Accordion>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>Post Data</Accordion.Header>
@@ -141,7 +154,7 @@ export default function PostPage({ postData, relatedPostsData }) {
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
-            </Container> */}
+            </Container>
         </div>
     );
 }

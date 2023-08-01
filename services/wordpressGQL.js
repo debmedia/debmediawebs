@@ -94,6 +94,11 @@ export const QUERY_GET_POSTS_SLUGS = gql`
             nodes {
                 slug
                 link
+                categories(where: {parent: 1708}) {
+                    nodes {
+                        slug
+                    }
+                }
             }
         }
     }
