@@ -115,6 +115,17 @@
 - [x] Meta tags de los posts
 
 
+## Blog multi idioma
+
+- [x] Home multi idioma
+- [x] Pagina categorias multi idioma
+- [x] Podcast post multi idioma
+- [ ] Ver que pasa cuando cambias de idioma
+- [ ] Buscar multi idioma
+- [ ] post multi idioma
+- [ ] Post  relacionado multi idioma
+
+
 SEO, 
 - H1
 - Actualizar textos
