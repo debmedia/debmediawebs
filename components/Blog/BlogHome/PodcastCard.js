@@ -6,6 +6,7 @@ import { Link, useRouter } from "next-translate-routes";
 
 export default function PodcastCard({ post }) {
     const { pathname } = useRouter();
+    if(!post) return null;
     return (
         <div className="podcast-card">
             <Link href={`${pathname}/${post.slug}`} passHref>

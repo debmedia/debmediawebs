@@ -9,6 +9,7 @@ export default function PodcastSection({post}) {
     <Container className='podcast-section my-5'>
         <h2 className='text-center mb-3 fw-bold'>{t("PODCAST_SECTION.TITLE")}</h2>
         <PodcastCard post={post}></PodcastCard>
+        {!post && <p className='text-center'>Te invitamos que te sumes a nuestras redes sociales para enterarte cuando salga el proximo podcast</p>}
     </Container>
   )
 }

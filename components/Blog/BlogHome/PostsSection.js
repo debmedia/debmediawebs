@@ -21,16 +21,23 @@ export default function PostsSection({ posts: posts_, paginationData: pagination
 
     return (
         <Container className="post-section mt-5">
-            <div className="grid">
-                {posts.map((post) => (
-                    <PostCard key={post.databaseId} post={post}></PostCard>
-                ))}
-            </div>
-            <div className="button-container mt-4">
-                {paginationData.hasNextPage && <Button disabled={loading} onClick={!loading ? handleClick : null} className="px-4" variant="secondary">
-                    {loading ? <Spinner animation="border" role="status" size="sm"></Spinner> : "Ver más"}
-                </Button>}
-            </div>
+            {Array.isArray(posts) && posts.length > 1 &&
+            <>
+                <div className="grid">
+                    {posts.map((post) => (
+                        <PostCard key={post.databaseId} post={post}></PostCard>
+                    ))}
+                </div>
+                <div className="button-container mt-4">
+                    {paginationData.hasNextPage && <Button disabled={loading} onClick={!loading ? handleClick : null} className="px-4" variant="secondary">
+                        {loading ? <Spinner animation="border" role="status" size="sm"></Spinner> : "Ver más"}
+                    </Button>}
+                </div>
+            </>
+            }
+            {Array.isArray(posts) && posts.length == 0 && 
+            <p className="text-center h2">No hay mas artículos. Puedes seguir por aqui link</p>
+            }
         </Container>
     );
 }
