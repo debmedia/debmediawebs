@@ -221,8 +221,8 @@ export async function getCategoriesBySlug(slug) {
     return res.data.categories.nodes;
 }
 
-export async function getPostByCategoryId({first, after, categoryId, categoryIn}) {
-    const res = await apolloClient.query({variables:{first, after, categoryId, categoryIn}, query: QUERY_GET_POSTS_BY_CATEGORY_ID});
+export async function getPostByCategoryId({first, after, categoryIn}, locale) {
+    const res = await apolloClient.query({variables:{first, after, categoryId: langIds[locale], categoryIn}, query: QUERY_GET_POSTS_BY_CATEGORY_ID});
     return {
         posts: res.data.posts.nodes,
         pagination: res.data.posts.pageInfo

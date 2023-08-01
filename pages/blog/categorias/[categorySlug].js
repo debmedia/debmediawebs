@@ -78,17 +78,20 @@ const categories = [
     }
 ];
 
-export async function getStaticPaths() {
+export async function getStaticPaths({locales}) {
+    const paths = locales.reduce((paths, locale) => {
+        return paths.concat(categories.map((category)=> {return {params: {categorySlug: category.slug}, locale}}));
+    }, []);
 
     return {
-      paths: categories.map((category)=> {return {params: {categorySlug: category.slug}}}),
+      paths,
       fallback: false,
     }
   }
 
 export async function getStaticProps({ locale, params }) {
     const category = (await getCategoriesBySlug(params.categorySlug))[0];
-    const {posts, pagination} = await getPostByCategoryId({first: 10, categoryId: category.databaseId});
+    const {posts, pagination} = await getPostByCategoryId({first: 10, categoryIn: [category.databaseId]}, locale);
     // TODO: buscar de verdad los posts relacionandos
     const {posts: relatedPosts} = await getPosts({first: 6});
 
