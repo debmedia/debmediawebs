@@ -121,8 +121,8 @@ export const QUERY_GET_POSTS_BY_CATEGORY_ID = gql`
 
 export const QUERY_GET_POSTS_BY_SEARCH_TERM = gql`
     ${CORE_POST_FIELDS}
-    query getPosts($first: Int, $after: String, $searchTerm: String) {
-        posts(first: $first, after: $after, where: { status: PUBLISH, search: $searchTerm}) {
+    query getPosts($first: Int, $after: String, $searchTerm: String, $categoryId: Int) {
+        posts(first: $first, after: $after, where: { status: PUBLISH, search: $searchTerm, categoryId: $categoryId}) {
             pageInfo {
                 hasNextPage
                 endCursor
@@ -240,8 +240,8 @@ export async function getPostByCategorySlug({first, after, categorySlug}, locale
     return getPostByCategoryId({first, after, categoryId: langIds[locale],categoryIn: [categories[0].databaseId]});
 }
 
-export async function getPostBySearchTerm({first, after, searchTerm}) {
-    const res = await apolloClient.query({variables:{first, after, searchTerm}, query: QUERY_GET_POSTS_BY_SEARCH_TERM});
+export async function getPostBySearchTerm({first, after, searchTerm}, locale) {
+    const res = await apolloClient.query({variables:{first, after, searchTerm, categoryId: langIds[locale]}, query: QUERY_GET_POSTS_BY_SEARCH_TERM});
     return {
         posts: res.data.posts.nodes,
         pagination: res.data.posts.pageInfo

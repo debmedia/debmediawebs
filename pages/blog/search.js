@@ -14,7 +14,7 @@ import { QUERY_GET_POSTS_BY_SEARCH_TERM } from '../../services/wordpressGQL';
 
 export async function getServerSideProps({ locale, query }) {
     const searchTerm = query.q;
-    const searchPromise = getPostBySearchTerm({first: 10, searchTerm});
+    const searchPromise = getPostBySearchTerm({first: 10, searchTerm}, locale);
     // TODO: buscar de verdad los posts relacionandos
     const relatedPostPromise = getPosts({first: 6});
     

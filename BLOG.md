@@ -120,10 +120,11 @@
 - [x] Home multi idioma
 - [x] Pagina categorias multi idioma
 - [x] Podcast post multi idioma
-- [ ] Ver que pasa cuando cambias de idioma
-- [ ] Buscar multi idioma
-- [ ] post multi idioma
+- [x] post multi idioma
+- [x] Buscar multi idioma
 - [ ] Post  relacionado multi idioma
+- [ ] Ver que pasa cuando cambias de idioma
+- [ ] Traducir Stirngs
 
 
 SEO, 
