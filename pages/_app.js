@@ -71,7 +71,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 src="//js.hs-scripts.com/1797020.js"></Script>
             {/* <!-- End of HubSpot Embed Code --> */}
             {/* Script para el chatbot de biatoz */}
-            <Script type="text/javascript" src="https://demo.biatoz.com/static/js/chatbotSetup_debmedia.js"></Script>
+            <Script type="text/javascript" src="https://iframe.notchatbot.com/static/js/chatbotSetup_debmedia.js"></Script>
         </SSRProvider>
     );
 }
