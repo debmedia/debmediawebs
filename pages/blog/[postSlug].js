@@ -67,7 +67,7 @@ export async function getStaticProps({ locale, params }) {
         // Esta chanchada es porque Object.isFrozen(post) == true y debe ser algo de apollo client
         const post = JSON.parse(JSON.stringify(await getPostBySlug(params.postSlug)));
         if(!post) throw new Error(`Post with slug "${params.postSlug}" not found`);
-        const { posts: relatedPosts } = await getPosts({ first: 6 });
+        const { posts: relatedPosts } = await getPosts({ first: 6 }, locale);
         // pasar todas los links en el contendido a https para que no se queje netlify
         post.content = httpToHttps(post.content);
         // para el plugin de link any where o como se llame, si el link no es de la pagina redirigimos

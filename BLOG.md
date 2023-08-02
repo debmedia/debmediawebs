@@ -122,9 +122,9 @@
 - [x] Podcast post multi idioma
 - [x] post multi idioma
 - [x] Buscar multi idioma
-- [ ] Post  relacionado multi idioma
-- [ ] Ver que pasa cuando cambias de idioma
+- [x] Post  relacionado multi idioma
 - [ ] Traducir Stirngs
+- [ ] Ver que pasa cuando cambias de idioma
 
 
 SEO, 

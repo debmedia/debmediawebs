@@ -93,7 +93,7 @@ export async function getStaticProps({ locale, params }) {
     const category = (await getCategoriesBySlug(params.categorySlug))[0];
     const {posts, pagination} = await getPostByCategoryId({first: 10, categoryIn: [category.databaseId]}, locale);
     // TODO: buscar de verdad los posts relacionandos
-    const {posts: relatedPosts} = await getPosts({first: 6});
+    const {posts: relatedPosts} = await getPosts({first: 6}, locale);
 
     // TODO: Integrarlo directamente en el servicio de get post
     const postsWithBlur = await generateBlurPlaceholders(posts);

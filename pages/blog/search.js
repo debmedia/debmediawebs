@@ -16,7 +16,7 @@ export async function getServerSideProps({ locale, query }) {
     const searchTerm = query.q;
     const searchPromise = getPostBySearchTerm({first: 10, searchTerm}, locale);
     // TODO: buscar de verdad los posts relacionandos
-    const relatedPostPromise = getPosts({first: 6});
+    const relatedPostPromise = getPosts({first: 6}, locale);
     
     const {posts, pagination} = await searchPromise;
     const {posts: relatedPosts} = await relatedPostPromise;
