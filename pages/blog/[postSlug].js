@@ -130,7 +130,7 @@ export default function PostPage({ postData, relatedPostsData }) {
                 className="d-none d-sm-block"
                 crumbs={[
                     { key: 1, href: BLOG_URL, label: "Home" },
-                    { key: 1, active: true, label: postData.title },
+                    { key: 2, active: true, label: postData.title },
                 ]}></PostBreadcrumbs>
             <PostHeader post={postData} />
             <PostBody post={postData} />
