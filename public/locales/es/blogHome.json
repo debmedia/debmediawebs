@@ -2,9 +2,9 @@
     "NAVBAR": {
         "SEARCH": "Buscar",
         "CATEGORIES": "Categorias",
-        "NEWS": "Novedades",
-        "SUCCESS_STORIES": "Casos de éxito",
-        "EBOOK": "Ebook",
+        "NEWS": "$t(common:NEWS)",
+        "SUCCESS_STORIES": "$t(common:SUCCESS_STORIES)",
+        "EBOOK": "$t(common:EBOOK)",
         "SECTORS": "Sectores"
     },
     "CATEGORY_NAV": {
@@ -14,6 +14,23 @@
         "TITLE": "Últimas notas"
     },
     "PODCAST_SECTION": {
-        "TITLE": "Podcast"
+        "TITLE": "$t(common:PODCAST)"
+    },
+    "CATEGORIES_SLUG": {
+        "casos-de-exito": "$t(common:SUCCESS_STORIES)",
+        "ebooks": "$t(common:EBOOK)",
+        "industrias": "$t(common:INDUSTRIES)",
+        "banca-y-seguros": "$t(common:INDUSTRIES)",
+        "gobierno": "$t(common:GOVERNMENT)",
+        "retail": "$t(common:RETAIL)",
+        "salud": "$t(common:HEALTH)",
+        "telecomunicaciones": "$t(common:TELECOMMUNICATIONS)",
+        "utilities": "$t(common:UTILITIES)",
+        "noticias": "$t(common:ARTICLES)",
+        "novedades": "$t(common:NEWS)",
+        "podcast": "$t(common:PODCAST)"
+    },
+    "RELATED_POSTS_SECTION":{
+        "TITLE": "También podría interesarte"
     }
 }

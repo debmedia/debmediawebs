@@ -24,7 +24,9 @@
   "HEALTH": "Salud",
   "GOVERNMENT": "Gobierno",
   "UTILITIES_AND_CORPORATIONS": "Utilities y corporaciones",
+  "UTILITIES": "Utilities",
   "SERVICES_AND_RETAIL": "Servicios y retail",
+  "RETAIL": "Retail",
   "TELECOMMUNICATIONS": "Telecomunicaciones",
   "INDUSTRIES": "Industrias",
   "COMPANY": "Compañía",
@@ -38,5 +40,10 @@
   "APPOINTMENTS": "Citas",
   "PAGE_NOT_FOUND": "Página no encontrada",
   "SERVER_SIDE_ERROR": "Error del servidor",
-  "READ_MORE": "Leer más"
+  "READ_MORE": "Leer más",
+  "NEWS": "Novedades",
+  "SUCCESS_STORIES": "Casos de éxito",
+  "EBOOK": "Ebook",
+  "ARTICLES": "Notas",
+  "PODCAST": "Podcast"
 }

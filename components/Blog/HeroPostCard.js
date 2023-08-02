@@ -91,6 +91,7 @@ export default function HeroPostCard({ post, compact, badgeColor, h1 }) {
                         </Col>
                     </Row>
                     :
+                    //TODO:tradu aca pero primero ver que quiere mkt
                     <p className="text-center h1">No hay posts</p>
                 }
             </Container>
