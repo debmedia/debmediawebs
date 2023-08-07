@@ -15,8 +15,12 @@ import { generateBlurPlaceholders } from "../../services/plaiceholder";
 
 
 
-
+const renderLocales = ['es', 'pt'];
 export async function getStaticProps({ locale }) {
+    // si no es los locales del blog devolvemos not found
+    if (!renderLocales.includes(locale)) return {
+        notFound: true
+    }
     const {posts, pagination} = await getPosts({first: 14}, locale);
     const {posts: podcastPosts, pagination: podcastPagination} = await getPostByCategorySlug({categorySlug: "podcast", first: 1}, locale);
     // TODO: Integrarlo directamente en el servicio de get post
@@ -61,6 +65,22 @@ export default function BlogHome({ postsData, paginationData, podcastPostData })
                                         }}>
                                         <pre>Number of posts: {postsData.length}</pre>
                                         <pre>{JSON.stringify(postsData, null, 2)}</pre>
+                                    </div>
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="1">
+                                <Accordion.Header>Podcast Post Data</Accordion.Header>
+                                <Accordion.Body>
+                                    <div
+                                        style={{
+                                            minHeight: "3rem",
+                                            padding: "2rem",
+                                            fontSize: "1.5rem",
+                                            backgroundColor: "black",
+                                            color: "white",
+                                            borderRadius: "0.5rem",
+                                        }}>
+                                        <pre>{JSON.stringify(podcastPostData, null, 2)}</pre>
                                     </div>
                                 </Accordion.Body>
                             </Accordion.Item>

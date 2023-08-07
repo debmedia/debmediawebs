@@ -79,7 +79,8 @@ const categories = [
 ];
 
 export async function getStaticPaths({locales}) {
-    const paths = locales.reduce((paths, locale) => {
+    const renderLocales = ['es', 'pt'];
+    const paths = renderLocales.reduce((paths, locale) => {
         return paths.concat(categories.map((category)=> {return {params: {categorySlug: category.slug}, locale}}));
     }, []);
 
