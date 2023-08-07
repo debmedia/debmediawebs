@@ -13,75 +13,12 @@ import { apolloClient } from "../../../config/apollo";
 import RelatedPostsSection from '../../../components/Blog/RelatedPostsSection';
 import { ObjectInspector, chromeDark } from 'react-inspector';
 import { QUERY_GET_POSTS_BY_CATEGORY_ID } from "../../../services/wordpressGQL";
+import { BLOG_LOCALES, BLOG_RENDER_CATEGORIES } from '../../../constants/blog';
 
-// TODO: buscar las categorias directamente de wp
-const categories = [
-    {
-        "slug": "banca-y-seguros",
-        "name": "Banca y seguros",
-        "databaseId": 1354
-    },
-    {
-        "slug": "casos-de-exito",
-        "name": "Casos de éxito",
-        "databaseId": 855
-    },
-    {
-        "slug": "ebooks",
-        "name": "Ebooks",
-        "databaseId": 856
-    },
-    {
-        "slug": "gobierno",
-        "name": "Gobierno",
-        "databaseId": 1355
-    },
-    {
-        "slug": "industrias",
-        "name": "Industrias",
-        "databaseId": 1353
-    },
-    {
-        "slug": "noticias",
-        "name": "Notas",
-        "databaseId": 3
-    },
-    {
-        "slug": "novedades",
-        "name": "Novedades",
-        "databaseId": 2
-    },
-    {
-        "slug": "podcast",
-        "name": "Podcast",
-        "databaseId": 1382
-    },
-    {
-        "slug": "retail",
-        "name": "Retail",
-        "databaseId": 1357
-    },
-    {
-        "slug": "salud",
-        "name": "Salud",
-        "databaseId": 1358
-    },
-    {
-        "slug": "telecomunicaciones",
-        "name": "Telecomunicaciones",
-        "databaseId": 1356
-    },
-    {
-        "slug": "utilities",
-        "name": "Utilities",
-        "databaseId": 1359
-    }
-];
 
 export async function getStaticPaths({locales}) {
-    const renderLocales = ['es', 'pt'];
-    const paths = renderLocales.reduce((paths, locale) => {
-        return paths.concat(categories.map((category)=> {return {params: {categorySlug: category.slug}, locale}}));
+    const paths = BLOG_LOCALES.reduce((paths, locale) => {
+        return paths.concat(BLOG_RENDER_CATEGORIES.map((category)=> {return {params: {categorySlug: category.slug}, locale}}));
     }, []);
 
     return {

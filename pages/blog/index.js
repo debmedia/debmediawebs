@@ -12,13 +12,12 @@ import PostsSection from "../../components/Blog/BlogHome/PostsSection";
 import PodcastSection from "../../components/Blog/BlogHome/PodcastSection";
 import { getPostByCategorySlug, getPosts } from "../../services/wordpressGQL";
 import { generateBlurPlaceholders } from "../../services/plaiceholder";
+import { BLOG_LOCALES } from "../../constants/blog";
 
 
-
-const renderLocales = ['es', 'pt'];
 export async function getStaticProps({ locale }) {
     // si no es los locales del blog devolvemos not found
-    if (!renderLocales.includes(locale)) return {
+    if (!BLOG_LOCALES.includes(locale)) return {
         notFound: true
     }
     const {posts, pagination} = await getPosts({first: 14}, locale);
