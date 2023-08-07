@@ -7,7 +7,7 @@ export default function LatestNewsSection({ posts }) {
     const { t } = useTranslation(['blogHome', 'common']);
     return (
         <Container as={"section"} className="latestNewsSection">
-            {posts.length > 1 &&
+            {posts.length > 0 &&
             <>
                 <div>
                     <h2 className="text-center my-3 my-md-5">{t("LATEST_NEWS_SECTION.TITLE")}</h2>
