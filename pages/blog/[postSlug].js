@@ -53,7 +53,7 @@ export async function getStaticPaths({locales}) {
             },
             // Aca elegimos el primer idioma, pero lo correcto seria iterar por todos los idiomas
             // pero como en la practica solo va a tener un idioma esta mas o menos bien asi.
-            locale: post.categories.nodes[0]
+            locale: post.categories.nodes[0].slug
         }
     })
     return {
