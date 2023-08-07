@@ -485,14 +485,19 @@
         }
     }
     .imageContainer {
-        aspect-ratio: 2.3;
+        aspect-ratio: 1.7;
         position: relative;
         overflow: hidden;
         border-radius: 0.25rem;
         @media(min-width: 768px){
-           flex-basis: 100%;
+           flex-basis: 0;
+           flex-grow: 1;
            align-self: stretch;
         }
+    }
+    .content-container {
+        flex-basis: 0;
+        flex-grow: 1;
     }
     .play-button,
     .spotify-logo{
