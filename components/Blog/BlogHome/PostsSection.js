@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button, Container, Spinner } from "react-bootstrap";
 import PostCard from "../PostCard";
 import { useLazyQuery } from "@apollo/client";
-import { QUERY_GET_POSTS } from "../../../services/wordpressGQL";
+import { QUERY_GET_POSTS } from "../../../services/wordpressGQLQueries";
 
 
 export default function PostsSection({ posts: posts_, paginationData: paginationData_ }) {

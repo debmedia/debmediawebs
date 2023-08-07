@@ -1,6 +1,14 @@
 export const BLOG_URL = "/blog";
 export const BLOG_LOCALES = ['es', 'pt'];
 
+// por ahora hardcodeamos los ids de los idiomas
+// son los ids de las categorias de la tabla
+export const LANGS_IDS = {
+    es: 1709,
+    pt: 1710
+};
+
+export const LANGS_PARENT_CATEGORY_ID = 1708;
 // TODO: buscar las categorias directamente de wp
 export const BLOG_RENDER_CATEGORIES = [
     {

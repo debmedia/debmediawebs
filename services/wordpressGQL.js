@@ -1,176 +1,14 @@
 import { apolloClient } from "../config/apollo";
-import { gql } from "@apollo/client";
-
-// Fragments
-
-const CORE_POST_FIELDS = gql`
-    fragment CorePostFields on Post {
-        content
-            dateGmt
-            excerpt
-            modifiedGmt
-            status
-            title
-            link
-            databaseId
-            slug
-            author {
-                node {
-                    databaseId
-                    name
-                    avatar {
-                        url
-                    }
-                }
-            }
-            categories {
-                edges {
-                    isPrimary
-                    node {
-                        name
-                        databaseId
-                        slug
-                        parent {
-                            node {
-                                databaseId
-                                name
-                                slug
-                            }
-                        }
-                    }
-                }
-            }
-            featuredImage {
-                node {
-                    mediaItemUrl
-                    title
-                }
-            }
-    }
-`
-
-// Queries
-
-export const QUERY_GET_POST_BY_SLUG = gql`
-    ${CORE_POST_FIELDS}
-    query getPost($slug: ID!) {
-        post(id: $slug, idType: SLUG) {
-            ...CorePostFields
-            seo {
-                title
-                metaDesc
-                opengraphTitle
-                opengraphDescription
-                opengraphType
-                metaKeywords
-                focuskw
-            }
-        }
-    }
-`;
-
-export const QUERY_GET_POSTS = gql`
-    ${CORE_POST_FIELDS}
-    query getPosts($first: Int, $after: String, $categoryId: Int) {
-        posts(first: $first, after: $after, where: { status: PUBLISH, categoryId: $categoryId }) {
-            pageInfo {
-                hasNextPage
-                endCursor
-            }
-            nodes {
-                ...CorePostFields
-            }
-        }
-    }
-`;
-
-export const QUERY_GET_POSTS_SLUGS = gql`
-    query getPosts($first: Int, $after: String) {
-        posts(first: $first, after: $after, where: { status: PUBLISH }) {
-            pageInfo {
-                hasNextPage
-                endCursor
-            }
-            nodes {
-                slug
-                link
-                categories(where: {parent: 1708}) {
-                    nodes {
-                        slug
-                    }
-                }
-            }
-        }
-    }
-`;
-
-export const QUERY_GET_POSTS_BY_CATEGORY_ID = gql`
-    ${CORE_POST_FIELDS}
-    query getPosts($first: Int, $after: String, $categoryId: Int, $categoryIn: [ID]) {
-        posts(first: $first, after: $after, where: { status: PUBLISH, categoryId: $categoryId, categoryIn: $categoryIn}) {
-            pageInfo {
-                hasNextPage
-                endCursor
-            }
-            nodes {
-                ...CorePostFields
-            }
-        }
-    }
-`;
-
-export const QUERY_GET_POSTS_BY_SEARCH_TERM = gql`
-    ${CORE_POST_FIELDS}
-    query getPosts($first: Int, $after: String, $searchTerm: String, $categoryId: Int) {
-        posts(first: $first, after: $after, where: { status: PUBLISH, search: $searchTerm, categoryId: $categoryId}) {
-            pageInfo {
-                hasNextPage
-                endCursor
-            }
-            nodes {
-                ...CorePostFields
-            }
-        }
-    }
-`;
-
-export const QUERY_GET_ROOT_CATEGORIES = gql`
-    query getCategories {
-        categories (where: {parent: null}) {
-            nodes  {
-                slug
-                name 
-                uri
-                databaseId
-                children {
-                    nodes {
-                        slug
-                    }
-                } 
-            }
-        }
-    }
-`
-
-export const QUERY_GET_CATEGORIES_BY_SLUG = gql`
-    query getCategoriesBySlug($slug: String) {
-        categories(where: {slug: [$slug]}) {
-            nodes {
-            databaseId
-            slug
-            name
-            }
-        }
-    }
-`
-// por ahora hardcodeamos los ids de los idiomas
-// son los ids de las categorias de la tabla
-const langIds = {
-    es: 1709,
-    pt: 1710
-}
-// array con todos los ids de idiomas menos el default
-const defaultLangsNotIn = [1710]
+import { LANGS_IDS } from "../constants/blog";
+import {
+    QUERY_GET_POST_BY_SLUG,
+    QUERY_GET_POSTS,
+    QUERY_GET_POSTS_SLUGS,
+    QUERY_GET_ROOT_CATEGORIES,
+    QUERY_GET_CATEGORIES_BY_SLUG,
+    QUERY_GET_POSTS_BY_CATEGORY_ID,
+    QUERY_GET_POSTS_BY_SEARCH_TERM,
+} from "./wordpressGQLQueries";
 
 // Funciones del servicio
 export async function getPostBySlug(slug) {
@@ -184,7 +22,7 @@ export async function getPostBySlug(slug) {
 
 
 export async function getPosts({first, after}, locale) {
-    const res = await apolloClient.query({variables:{first, after, categoryId: langIds[locale], }, query: QUERY_GET_POSTS});
+    const res = await apolloClient.query({variables:{first, after, categoryId: LANGS_IDS[locale], }, query: QUERY_GET_POSTS});
     return {
         posts: res.data.posts.nodes,
         pagination: res.data.posts.pageInfo
@@ -227,7 +65,7 @@ export async function getCategoriesBySlug(slug) {
 }
 
 export async function getPostByCategoryId({first, after, categoryIn}, locale) {
-    const res = await apolloClient.query({variables:{first, after, categoryId: langIds[locale], categoryIn}, query: QUERY_GET_POSTS_BY_CATEGORY_ID});
+    const res = await apolloClient.query({variables:{first, after, categoryId: LANGS_IDS[locale], categoryIn}, query: QUERY_GET_POSTS_BY_CATEGORY_ID});
     return {
         posts: res.data.posts.nodes,
         pagination: res.data.posts.pageInfo
@@ -241,7 +79,7 @@ export async function getPostByCategorySlug({first, after, categorySlug}, locale
 }
 
 export async function getPostBySearchTerm({first, after, searchTerm}, locale) {
-    const res = await apolloClient.query({variables:{first, after, searchTerm, categoryId: langIds[locale]}, query: QUERY_GET_POSTS_BY_SEARCH_TERM});
+    const res = await apolloClient.query({variables:{first, after, searchTerm, categoryId: LANGS_IDS[locale]}, query: QUERY_GET_POSTS_BY_SEARCH_TERM});
     return {
         posts: res.data.posts.nodes,
         pagination: res.data.posts.pageInfo
