@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button, Container, Spinner } from "react-bootstrap";
 import PostCard from "../PostCard";
-import { gql, useLazyQuery } from "@apollo/client";
+import { useLazyQuery } from "@apollo/client";
 import { QUERY_GET_POSTS } from "../../../services/wordpressGQL";
 
 
@@ -18,6 +18,10 @@ export default function PostsSection({ posts: posts_, paginationData: pagination
             setPaginationData(res.data.posts.pageInfo);
         });
     };
+
+    useEffect(()=>{
+        setPosts(posts_);
+    }, [posts_])
 
     return (
         <Container className="post-section mt-5">
