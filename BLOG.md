@@ -125,7 +125,7 @@
 - [x] Post  relacionado multi idioma
 - [x] Traducir Stirngs
 - [x] pincha la pagina de post
-- [ ] ver que se filtre por idioma el podcast y se oculte
+- [x] ver que se filtre por idioma el podcast y se oculte
 - [ ] Cuando apretas home en el breadcrum siemre te lleva a la home del blog en espanol
 - [ ] Ver los links
 - [ ] Placeholdes para cuando no hay posts

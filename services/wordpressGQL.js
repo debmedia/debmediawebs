@@ -237,7 +237,7 @@ export async function getPostByCategoryId({first, after, categoryIn}, locale) {
 export async function getPostByCategorySlug({first, after, categorySlug}, locale) {
     const categories = await getCategoriesBySlug(categorySlug);
     if(categories.length === 0) throw new Error(`[getPostByCategory] no category for: ${categorySlug}`);
-    return getPostByCategoryId({first, after, categoryId: langIds[locale],categoryIn: [categories[0].databaseId]});
+    return getPostByCategoryId({first, after, categoryIn: [categories[0].databaseId]}, locale);
 }
 
 export async function getPostBySearchTerm({first, after, searchTerm}, locale) {
