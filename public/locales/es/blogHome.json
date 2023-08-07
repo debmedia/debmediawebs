@@ -32,5 +32,9 @@
     },
     "RELATED_POSTS_SECTION":{
         "TITLE": "También podría interesarte"
+    },
+    "AUTHOR_CARD": {
+        "MINUTES_READ_one": "{{count}} minute read",
+        "MINUTES_READ_other": "{{count}} minutes read"
     }
 }
