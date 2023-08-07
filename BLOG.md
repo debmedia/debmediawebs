@@ -127,9 +127,9 @@
 - [x] pincha la pagina de post
 - [x] ver que se filtre por idioma el podcast y se oculte
 - [x] Cuando apretas home en el breadcrum siemre te lleva a la home del blog en espanol
+- [x] Ver que pasa cuando cambias de idioma
 - [ ] Ver los links
 - [ ] Placeholdes para cuando no hay posts
-- [ ] Ver que pasa cuando cambias de idioma
 - [ ] Actualizar el excel
  
 
