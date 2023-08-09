@@ -130,7 +130,7 @@
 - [x] Ver que pasa cuando cambias de idioma
 - [ ] Ver los links
 - [ ] Placeholdes para cuando no hay posts
-- [ ] Actualizar el excel
+- [x] Actualizar el excel
  
 
 SEO, 
