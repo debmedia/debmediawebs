@@ -6,6 +6,7 @@ import Link from "next-translate-routes/link";
 import { useRouter } from "next-translate-routes/router";
 import { useTranslation } from "next-i18next";
 import LanguageSelector from "./LanguageSelector";
+import { BLOG_LOCALES } from "../constants/blog";
 
 const langsMobile = [
     {
@@ -119,7 +120,7 @@ export default function Home() {
                             <Link href={`/partners`} passHref={true}>
                                 <Nav.Link eventKey={`/partners`}>{t("NAVBAR.PARTNERS")}</Nav.Link>
                             </Link>
-                            {router.locale === "es" && (
+                            {BLOG_LOCALES.includes(router.locale) && (
                                 <NavDropdown title={t("NAVBAR.RESOURCES.TITLE")} id="basic-nav-dropdown">
                                     <Link href="/blog" passHref>
                                         <NavDropdown.Item onClick={() => setExpanded(false)}>
