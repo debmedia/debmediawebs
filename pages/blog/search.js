@@ -8,7 +8,7 @@ import CategoryPostsSection from '../../components/Blog/Category/CategoryPostSec
 import { ApolloProvider, useLazyQuery } from '@apollo/client';
 import { apolloClient } from "../../config/apollo";
 import RelatedPostsSection from '../../components/Blog/RelatedPostsSection';
-import { QUERY_GET_POSTS_BY_SEARCH_TERM } from '../../services/wordpressGQL';
+import { QUERY_GET_POSTS_BY_SEARCH_TERM } from '../../services/wordpressGQLQueries';
 
 
 
