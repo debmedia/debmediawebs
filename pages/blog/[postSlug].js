@@ -40,6 +40,13 @@ export async function getStaticPaths({locales}) {
         postSlugs = (await getPostsSlugs({first:30})).posts;
         fallback = 'blocking';
     }
+    // Dios sabe porque a veces no tienen slug, si no tiene slug no se muestra
+    postSlugs = postSlugs.filter((post) => {
+        if(!post.slug) {
+            console.warn("[postSlug] a post was returned without slug: ", JSON.stringify(post));
+        }
+        return post.slug;
+    });
     // Pre renderamos solo los que no van a tener redirect mas abajo para que no tire error en el build
     // y sacamos los que no tengan categorias ya que en getPostsSlugs y getAllPostSlugs solo agarramos las
     // categorias de idioma, en definitiva filtramos los que no tienen categoria de idioma. es una chanchada ya lo se
