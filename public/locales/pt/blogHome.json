@@ -32,5 +32,8 @@
     },
     "RELATED_POSTS_SECTION": {
         "TITLE": "Você também pode estar interessado"
+    },
+    "POSTS_SECTION": {
+        "NO_POSTS_MESSAGE" : "Agradecemos por acessar nosso blog! Semanalmente, trazemos conteúdos inivadores aqui. Fique ligado também nas nossas redes sociais para não perder nenhuma novidade. Para conhecer mais sobre nossas soluções, visite <1>www.debmedia.com</1>"
     }
 }

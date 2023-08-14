@@ -32,5 +32,8 @@
     },
     "RELATED_POSTS_SECTION": {
         "TITLE": "You might also like"
+    },
+    "POSTS_SECTION": {
+        "NO_POSTS_MESSAGE" : "We appreciate your visit to our blog! Weekly, we bring innovative content here. Also, stay tuned to our social media channels to not miss any updates. To learn more about our solutions, visit <1>www.debmedia.com.</1>"
     }
 }
