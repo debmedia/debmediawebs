@@ -131,6 +131,7 @@
 - [ ] Ver los links
 - [ ] Placeholdes para cuando no hay posts
 - [x] Actualizar el excel
+- [x] Ocular casos de éxito y recursos descargables de el dropdown recursos
  
 
 SEO, 

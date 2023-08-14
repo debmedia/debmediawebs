@@ -127,16 +127,21 @@ export default function Home() {
                                             {t("NAVBAR.RESOURCES.BLOG")}
                                         </NavDropdown.Item>
                                     </Link>
-                                    <Link href="/blog/categorias/casos-de-exito/" passHref>
-                                        <NavDropdown.Item onClick={() => setExpanded(false)}>
-                                            {t("NAVBAR.RESOURCES.SUCCESS_STORIES")}
-                                        </NavDropdown.Item>
-                                    </Link>
-                                    <Link href="/blog/categorias/ebooks" passHref>
-                                        <NavDropdown.Item onClick={() => setExpanded(false)}>
-                                            {t("NAVBAR.RESOURCES.DOWNLOADABLE_RESOURCES")}
-                                        </NavDropdown.Item>
-                                    </Link>
+                                    {
+                                        router.locale === "es" &&
+                                        <>
+                                            <Link href="/blog/categorias/casos-de-exito/" passHref>
+                                                <NavDropdown.Item onClick={() => setExpanded(false)}>
+                                                    {t("NAVBAR.RESOURCES.SUCCESS_STORIES")}
+                                                </NavDropdown.Item>
+                                            </Link>
+                                            <Link href="/blog/categorias/ebooks" passHref>
+                                                <NavDropdown.Item onClick={() => setExpanded(false)}>
+                                                    {t("NAVBAR.RESOURCES.DOWNLOADABLE_RESOURCES")}
+                                                </NavDropdown.Item>
+                                            </Link>
+                                        </>
+                                    }
                                 </NavDropdown>
                             )}
                             {/* Selector para mobile */}
