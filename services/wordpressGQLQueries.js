@@ -1,6 +1,7 @@
 import { gql } from "@apollo/client";
 import { LANGS_PARENT_CATEGORY_ID } from "../constants/blog";
 
+const STATUS = "[PUBLISH, DRAFT]"
 // Fragments
 const CORE_POST_FIELDS = gql`
     fragment CorePostFields on Post {
@@ -70,7 +71,7 @@ export const QUERY_GET_POST_BY_SLUG = gql`
 export const QUERY_GET_POSTS = gql`
     ${CORE_POST_FIELDS}
     query getPosts($first: Int, $after: String, $categoryId: Int) {
-        posts(first: $first, after: $after, where: { status: PUBLISH, categoryId: $categoryId }) {
+        posts(first: $first, after: $after, where: { stati: ${STATUS}, categoryId: $categoryId }) {
             pageInfo {
                 hasNextPage
                 endCursor
@@ -84,7 +85,7 @@ export const QUERY_GET_POSTS = gql`
 
 export const QUERY_GET_POSTS_SLUGS = gql`
     query getPosts($first: Int, $after: String) {
-        posts(first: $first, after: $after, where: { status: PUBLISH }) {
+        posts(first: $first, after: $after, where: { stati: ${STATUS} }) {
             pageInfo {
                 hasNextPage
                 endCursor
@@ -105,7 +106,7 @@ export const QUERY_GET_POSTS_SLUGS = gql`
 export const QUERY_GET_POSTS_BY_CATEGORY_ID = gql`
     ${CORE_POST_FIELDS}
     query getPosts($first: Int, $after: String, $categoryId: Int, $categoryIn: [ID]) {
-        posts(first: $first, after: $after, where: { status: PUBLISH, categoryId: $categoryId, categoryIn: $categoryIn}) {
+        posts(first: $first, after: $after, where: { stati: ${STATUS}, categoryId: $categoryId, categoryIn: $categoryIn}) {
             pageInfo {
                 hasNextPage
                 endCursor
@@ -120,7 +121,7 @@ export const QUERY_GET_POSTS_BY_CATEGORY_ID = gql`
 export const QUERY_GET_POSTS_BY_SEARCH_TERM = gql`
     ${CORE_POST_FIELDS}
     query getPosts($first: Int, $after: String, $searchTerm: String, $categoryId: Int) {
-        posts(first: $first, after: $after, where: { status: PUBLISH, search: $searchTerm, categoryId: $categoryId}) {
+        posts(first: $first, after: $after, where: { stati: ${STATUS}, search: $searchTerm, categoryId: $categoryId}) {
             pageInfo {
                 hasNextPage
                 endCursor
