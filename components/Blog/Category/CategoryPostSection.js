@@ -8,7 +8,7 @@ export default function CategoryPostsSection({ posts, paginationData, category, 
     const handleClick = () => {
         if (typeof loadMoreCallback === "function") loadMoreCallback();
     };
-
+    if (!posts || posts.length == 0) return null;
     return (
         <Container className="category-post-section mb-4">
             <div>

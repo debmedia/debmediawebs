@@ -7,7 +7,7 @@ import { Container } from "react-bootstrap";
 export default function NoPostsMessage({ className }) {
     const { t } = useTranslation(["blogHome", "common"]);
     return (
-        <Container className={className}>
+        <Container className={className + " my-5"}>
             <p className="text-center h2 px-5 lh-base">
                 <Trans t={t} i18nKey="NO_POSTS_MESSAGE.MESSAGE">
                     0
@@ -19,10 +19,10 @@ export default function NoPostsMessage({ className }) {
             <div className="mt-5" style={{ display: "flex", gap: "4rem", justifyContent: "center" }}>
                 <SocialIcon
                     style={{ height: "100px", width: "100px" }}
-                    url="https://www.instagram.com/wearedebmedia_br/"></SocialIcon>
+                    url={t("NO_POSTS_MESSAGE.INSTAGRAM_URL")}></SocialIcon>
                 <SocialIcon
                     style={{ height: "100px", width: "100px" }}
-                    url="https://www.linkedin.com/company/93208577/"></SocialIcon>
+                    url={t("NO_POSTS_MESSAGE.LINKEDIN_URL")}></SocialIcon>
             </div>
         </Container>
     );

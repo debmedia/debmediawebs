@@ -34,6 +34,8 @@
         "TITLE": "You might also like"
     },
     "NO_POSTS_MESSAGE": {
-        "MESSAGE" : "We appreciate your visit to our blog! Weekly, we bring innovative content here. Also, stay tuned to our social media channels to not miss any updates. To learn more about our solutions, visit <1>www.debmedia.com.</1>"
+        "MESSAGE" : "We appreciate your visit to our blog! Weekly, we bring innovative content here. Also, stay tuned to our social media channels to not miss any updates. To learn more about our solutions, visit <1>www.debmedia.com.</1>",
+        "INSTAGRAM_URL": "https://www.instagram.com/wearedebmedia_br/",
+        "LINKEDIN_URL": "https://www.linkedin.com/company/93208577/"
     }
 }

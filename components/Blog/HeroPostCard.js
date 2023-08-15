@@ -10,7 +10,7 @@ import { useTranslation, Trans } from 'next-i18next';
 export default function HeroPostCard({ post, compact, badgeColor, h1 }) {
     const { t } = useTranslation(['blogHome', 'common']);
     let category;
-
+    if(!post) return null;
     if (post && post.categories.edges.length > 0) {
         category = post.categories.edges.find((elem) => elem.isPrimary);
         if (!category) category = post.categories.edges[0];
