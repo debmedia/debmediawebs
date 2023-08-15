@@ -41,5 +41,8 @@
         "MESSAGE" : "¡Agradecemos por acceder a nuestro blog! Semanalmente, traemos contenidos innovadores aquí. Mantente conectado también a nuestras redes sociales para no perderte ninguna novedad. Para conocer más sobre nuestras soluciones, visita <1>www.debmedia.com</1>.",
         "INSTAGRAM_URL": "https://www.instagram.com/wearedebmedia_br/",
         "LINKEDIN_URL": "https://www.linkedin.com/company/93208577/"
+    },
+    "SHARE_POST": {
+        "TITLE": "Comparte este artículo en cualquiera de las siguientes redes sociales"
     }
 }
