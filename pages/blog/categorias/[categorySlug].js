@@ -14,6 +14,7 @@ import RelatedPostsSection from '../../../components/Blog/RelatedPostsSection';
 import { ObjectInspector, chromeDark } from 'react-inspector';
 import { QUERY_GET_POSTS_BY_CATEGORY_ID } from "../../../services/wordpressGQLQueries";
 import { BLOG_LOCALES, BLOG_RENDER_CATEGORIES } from '../../../constants/blog';
+import NoPostsMessage from '../../../components/Blog/NoPostsMessage';
 
 
 export async function getStaticPaths({locales}) {
@@ -82,8 +83,9 @@ export default function CategoryPage({categorySlug, categoryData, postsData, pag
             <CategoryNav variant="secondary" />
             <CategoryHeader categoryName={categoryData.name} categoryColor={categoryData.color} categorySlug={categoryData.slug}/>
             <HeroPostCard post={posts[0]} compact badgeColor={categoryData.slug}/>
-            <Container className='px-0 mb-5'><hr/></Container>
+            {posts.length > 0 && <Container className='px-0 mb-5'><hr/></Container>}
             <CategoryPostsSection posts={posts.slice(1)} paginationData={paginationData} category={categoryData} loadMoreCallback={loadMorePosts} loading={loading}/>
+            {posts.length < 1 && <NoPostsMessage/>}
             <RelatedPostsSection posts={relatedPosts}></RelatedPostsSection>
             {/* <Container className="mt-5">
                 <Accordion>

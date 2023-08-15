@@ -13,7 +13,7 @@ import PodcastSection from "../../components/Blog/BlogHome/PodcastSection";
 import { getPostByCategorySlug, getPosts } from "../../services/wordpressGQL";
 import { generateBlurPlaceholders } from "../../services/plaiceholder";
 import { BLOG_LOCALES } from "../../constants/blog";
-
+import NoPostsMessage from "../../components/Blog/NoPostsMessage";
 
 export async function getStaticProps({ locale }) {
     // si no es los locales del blog devolvemos not found
@@ -46,6 +46,7 @@ export default function BlogHome({ postsData, paginationData, podcastPostData })
                 <LatestNewsSection posts={postsData.slice(1, 4)}/>
                 {/* <NewsLetterBanner></NewsLetterBanner> */}
                 <PostsSection posts={postsData.slice(4, 13)} paginationData={paginationData}/>
+                {postsData.length < 5 && <NoPostsMessage/>}
                 <PodcastSection post={podcastPostData[0]}/>
                 {process.env.NEXT_PUBLIC_NODE_ENV === "development" &&
                     <Container className="mt-5">

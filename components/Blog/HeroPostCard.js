@@ -18,7 +18,7 @@ export default function HeroPostCard({ post, compact, badgeColor, h1 }) {
     return (
         <div className={`heroPostCard ${compact ? "compact" : ""}`}>
             <Container className="heroContainer">
-                {post ? 
+                {post && 
                     <Row direction="horizontal">
                         {post.featuredImage?.node?.mediaItemUrl && (
                             <Col
@@ -90,9 +90,6 @@ export default function HeroPostCard({ post, compact, badgeColor, h1 }) {
                             </Stack>
                         </Col>
                     </Row>
-                    :
-                    //TODO:tradu aca pero primero ver que quiere mkt
-                    <p className="text-center h1">No hay posts</p>
                 }
             </Container>
         </div>

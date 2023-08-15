@@ -37,7 +37,7 @@
         "MINUTES_READ_one": "{{count}} minute read",
         "MINUTES_READ_other": "{{count}} minutes read"
     },
-    "POSTS_SECTION": {
-        "NO_POSTS_MESSAGE" : "¡Agradecemos por acceder a nuestro blog! Semanalmente, traemos contenidos innovadores aquí. Mantente conectado también a nuestras redes sociales para no perderte ninguna novedad. Para conocer más sobre nuestras soluciones, visita <1>www.debmedia.com</1>."
+    "NO_POSTS_MESSAGE": {
+        "MESSAGE" : "¡Agradecemos por acceder a nuestro blog! Semanalmente, traemos contenidos innovadores aquí. Mantente conectado también a nuestras redes sociales para no perderte ninguna novedad. Para conocer más sobre nuestras soluciones, visita <1>www.debmedia.com</1>."
     }
 }

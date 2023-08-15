@@ -4,9 +4,6 @@ import PostCard from "../PostCard";
 import { useLazyQuery } from "@apollo/client";
 import { QUERY_GET_POSTS } from "../../../services/wordpressGQLQueries";
 import { useTranslation, Trans } from 'next-i18next';
-import { Link } from "next-translate-routes";
-import { LinkText } from "../../LinkText";
-import { SocialIcon } from "react-social-icons";
 
 export default function PostsSection({ posts: posts_, paginationData: paginationData_ }) {
     const { t } = useTranslation(['blogHome', 'common']);
@@ -52,23 +49,6 @@ export default function PostsSection({ posts: posts_, paginationData: pagination
                         )}
                     </div>
                 </>
-            )}
-            {Array.isArray(posts) && posts.length == 0 && (
-                <>
-                    <p className="text-center h2 px-5 lh-base" >
-                        <Trans t={t} i18nKey="POSTS_SECTION.NO_POSTS_MESSAGE">
-                            0
-                            <LinkText href={"/"}>
-                                <a>0</a>
-                            </LinkText>
-                        </Trans>
-                    </p>
-                    <div className="mt-5" style={{display: "flex", gap: "4rem", justifyContent: "center"}}>
-                        <SocialIcon style={{ height: "100px", width: "100px" }} url="https://www.instagram.com/wearedebmedia_br/"></SocialIcon>
-                        <SocialIcon style={{ height: "100px", width: "100px" }} url="https://www.linkedin.com/company/93208577/"></SocialIcon>
-                    </div>
-                </>
-
             )}
         </Container>
     );
