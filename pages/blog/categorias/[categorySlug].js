@@ -11,7 +11,6 @@ import CategoryPostsSection from '../../../components/Blog/Category/CategoryPost
 import { ApolloProvider, useLazyQuery } from '@apollo/client';
 import { apolloClient } from "../../../config/apollo";
 import RelatedPostsSection from '../../../components/Blog/RelatedPostsSection';
-import { ObjectInspector, chromeDark } from 'react-inspector';
 import { QUERY_GET_POSTS_BY_CATEGORY_ID } from "../../../services/wordpressGQLQueries";
 import { BLOG_LOCALES, BLOG_RENDER_CATEGORIES } from '../../../constants/blog';
 import NoPostsMessage from '../../../components/Blog/NoPostsMessage';
