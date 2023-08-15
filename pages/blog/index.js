@@ -48,7 +48,7 @@ export default function BlogHome({ postsData, paginationData, podcastPostData })
                 <PostsSection posts={postsData.slice(4, 13)} paginationData={paginationData}/>
                 {postsData.length < 5 && <NoPostsMessage/>}
                 <PodcastSection post={podcastPostData[0]}/>
-                {process.env.NEXT_PUBLIC_NODE_ENV === "development" &&
+                {process.env.CONTEXT === "dev" &&
                     <Container className="mt-5">
                         <Accordion>
                             <Accordion.Item eventKey="0">
