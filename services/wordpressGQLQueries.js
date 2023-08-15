@@ -1,7 +1,10 @@
 import { gql } from "@apollo/client";
 import { LANGS_PARENT_CATEGORY_ID } from "../constants/blog";
 
-const STATUS = "[PUBLISH, DRAFT]"
+// Descomentar para también mostrar los draft si es que esta seteado las
+// variables de ambiente con el usuario y pass de wordpress
+//const STATUS = "[PUBLISH, DRAFT]";
+const STATUS = "[PUBLISH]";
 // Fragments
 const CORE_POST_FIELDS = gql`
     fragment CorePostFields on Post {
