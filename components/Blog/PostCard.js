@@ -6,6 +6,7 @@ import AuthorCard from "./AuthorCard";
 import { calcReadingTime } from "../../utils/utils";
 import { BLOG_URL } from "../../constants/blog";
 import { useTranslation, Trans } from 'next-i18next';
+import CategoryBadge from "./CategoryBadge";
 
 export default function PostCard({ post, compact, secondary, excerpt }) {
     const { t } = useTranslation(['blogHome', 'common']);
@@ -34,9 +35,7 @@ export default function PostCard({ post, compact, secondary, excerpt }) {
                         <div className="card-content-container">
                             <div className="card-content">
                                 {category ? (
-                                    <Badge className="mb-2" bg="primary">
-                                        {category?.node.name}
-                                    </Badge>
+                                    <CategoryBadge className="mb-2" bg="primary" slug={category?.node.slug}/>
                                 ) : (
                                     // badge transparente vacio para mantener el espacio
                                     <Badge className="mb-2 hidden" bg="primary">

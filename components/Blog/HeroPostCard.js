@@ -1,11 +1,12 @@
 import { Link } from "next-translate-routes";
 import Image from "next/image";
 import React from "react";
-import { Badge, Col, Container, Row, Stack } from "react-bootstrap";
+import { Col, Container, Row, Stack } from "react-bootstrap";
 import { calcReadingTime } from "../../utils/utils";
 import AuthorCard from "./AuthorCard";
 import { BLOG_URL } from "../../constants/blog";
 import { useTranslation, Trans } from 'next-i18next';
+import CategoryBadge from "./CategoryBadge";
 
 export default function HeroPostCard({ post, compact, badgeColor, h1 }) {
     const { t } = useTranslation(['blogHome', 'common']);
@@ -41,7 +42,7 @@ export default function HeroPostCard({ post, compact, badgeColor, h1 }) {
                             <Stack direction="vertical">
                                 <div className="topText">
                                     <div className={compact ? "mt-3" : "mt-1"}>
-                                        <Badge className={`bg-${badgeColor}`}>{category?.node.name}</Badge>
+                                        <CategoryBadge badgeColor={badgeColor} slug={category?.node.slug}/>
                                     </div>
                                     <Link href={`${BLOG_URL}/${post.slug}`} passHref>
                                         <a className="reset-a">

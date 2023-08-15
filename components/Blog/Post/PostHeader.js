@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { DEFAULT_HEIGHT, DEFAULT_WIDTH } from "../../../constants/images";
-import { Badge } from "react-bootstrap";
 import AuthorCard from "../AuthorCard";
 import { calcReadingTime } from "../../../utils/utils";
+import CategoryBadge from "../CategoryBadge";
 
 export default function PostHeader({ post }) {
     return (
@@ -24,7 +24,7 @@ export default function PostHeader({ post }) {
                 )}
                 <Col xs={12} md={{ order: 1, span: 6 }} className="align-self-center">
                     <div className="content-section mt-3">
-                        <Badge bg="primary">{post.categories.edges.find((elem) => elem.isPrimary)?.node.name}</Badge>
+                        <CategoryBadge bg="primary" slug={post.categories.edges.find((elem) => elem.isPrimary)?.node.slug}/>
                         <h1
                             className="mt-3"
                             dangerouslySetInnerHTML={{

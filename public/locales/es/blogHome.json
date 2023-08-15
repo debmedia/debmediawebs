@@ -20,7 +20,7 @@
         "casos-de-exito": "$t(common:SUCCESS_STORIES)",
         "ebooks": "$t(common:EBOOK)",
         "industrias": "$t(common:INDUSTRIES)",
-        "banca-y-seguros": "$t(common:INDUSTRIES)",
+        "banca-y-seguros": "Banca y Seguros",
         "gobierno": "$t(common:GOVERNMENT)",
         "retail": "$t(common:RETAIL)",
         "salud": "$t(common:HEALTH)",
