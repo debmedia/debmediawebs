@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import BlogNavbar from '../../../components/Blog/BlogNavbar'
 import CategoryNav from "../../../components/Blog/CategoryNav";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -67,6 +67,14 @@ export default function CategoryPage({categorySlug, categoryData, postsData, pag
         variables: { first: 9, after: paginationData.endCursor, categoryId: categoryData.id},
         client: apolloClient
     });
+
+    useEffect(() => {
+        setPosts(postsData);
+    }, [postsData]);
+
+    useEffect(() => {
+        setPaginationData(paginationData_);
+    }, [paginationData_]);
 
     const loadMorePosts = () =>{
         getPosts().then((res)=> {
