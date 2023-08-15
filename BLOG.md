@@ -115,6 +115,25 @@
 - [x] Meta tags de los posts
 
 
+## Blog multi idioma
+
+- [x] Home multi idioma
+- [x] Pagina categorias multi idioma
+- [x] Podcast post multi idioma
+- [x] post multi idioma
+- [x] Buscar multi idioma
+- [x] Post  relacionado multi idioma
+- [x] Traducir Stirngs
+- [x] pincha la pagina de post
+- [x] ver que se filtre por idioma el podcast y se oculte
+- [x] Cuando apretas home en el breadcrum siemre te lleva a la home del blog en espanol
+- [x] Ver que pasa cuando cambias de idioma
+- [ ] Ver los links
+- [ ] Placeholdes para cuando no hay posts
+- [x] Actualizar el excel
+- [x] Ocular casos de éxito y recursos descargables de el dropdown recursos
+ 
+
 SEO, 
 - H1
 - Actualizar textos

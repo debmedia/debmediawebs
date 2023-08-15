@@ -1,17 +1,17 @@
 {
     "NAVBAR": {
-        "SEARCH": "Buscar",
-        "CATEGORIES": "Categorias",
+        "SEARCH": "Search",
+        "CATEGORIES": "Categories",
         "NEWS": "$t(common:NEWS)",
         "SUCCESS_STORIES": "$t(common:SUCCESS_STORIES)",
         "EBOOK": "$t(common:EBOOK)",
-        "SECTORS": "Sectores"
+        "SECTORS": "Sectors"
     },
     "CATEGORY_NAV": {
-        "SELECT_CATEGORY": "Seleccionar categoría"
+        "SELECT_CATEGORY": "Select category"
     },
     "LATEST_NEWS_SECTION": {
-        "TITLE": "Últimas notas"
+        "TITLE": "Latest posts"
     },
     "PODCAST_SECTION": {
         "TITLE": "$t(common:PODCAST)"
@@ -20,7 +20,7 @@
         "casos-de-exito": "$t(common:SUCCESS_STORIES)",
         "ebooks": "$t(common:EBOOK)",
         "industrias": "$t(common:INDUSTRIES)",
-        "banca-y-seguros": "Banca y Seguros",
+        "banca-y-seguros": "Banking and insurance",
         "gobierno": "$t(common:GOVERNMENT)",
         "retail": "$t(common:RETAIL)",
         "salud": "$t(common:HEALTH)",
@@ -30,19 +30,15 @@
         "novedades": "$t(common:NEWS)",
         "podcast": "$t(common:PODCAST)"
     },
-    "RELATED_POSTS_SECTION":{
-        "TITLE": "También podría interesarte"
-    },
-    "AUTHOR_CARD": {
-        "MINUTES_READ_one": "{{count}} minute read",
-        "MINUTES_READ_other": "{{count}} minutes read"
+    "RELATED_POSTS_SECTION": {
+        "TITLE": "You might also like"
     },
     "NO_POSTS_MESSAGE": {
-        "MESSAGE" : "¡Agradecemos por acceder a nuestro blog! Semanalmente, traemos contenidos innovadores aquí. Mantente conectado también a nuestras redes sociales para no perderte ninguna novedad. Para conocer más sobre nuestras soluciones, visita <1>www.debmedia.com</1>.",
+        "MESSAGE" : "We appreciate your visit to our blog! Weekly, we bring innovative content here. Also, stay tuned to our social media channels to not miss any updates. To learn more about our solutions, visit <1>www.debmedia.com.</1>",
         "INSTAGRAM_URL": "https://www.instagram.com/wearedebmedia_br/",
         "LINKEDIN_URL": "https://www.linkedin.com/company/93208577/"
     },
     "SHARE_POST": {
-        "TITLE": "Comparte este artículo en cualquiera de las siguientes redes sociales"
+        "TITLE": "Share this article in any of the following social networks"
     }
 }

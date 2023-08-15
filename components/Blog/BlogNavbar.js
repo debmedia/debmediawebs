@@ -20,11 +20,11 @@ const langsMobile = [
         label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.PORTUGUESE",
         dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.PORTUGUESE",
     },
-    {
-        key: "en",
-        label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.ENGLISH",
-        dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.ENGLISH",
-    },
+    // {
+    //     key: "en",
+    //     label: "LANGUAGE_SELECTOR.MOBILE.BUTTON.ENGLISH",
+    //     dropdownLabel: "LANGUAGE_SELECTOR.MOBILE.DROPDOWN.ENGLISH",
+    // },
 ];
 
 const langs = [
@@ -38,15 +38,15 @@ const langs = [
         label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.PORTUGUESE",
         dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.PORTUGUESE",
     },
-    {
-        key: "en",
-        label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.ENGLISH",
-        dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.ENGLISH",
-    },
+    // {
+    //     key: "en",
+    //     label: "LANGUAGE_SELECTOR.DESKTOP.BUTTON.ENGLISH",
+    //     dropdownLabel: "LANGUAGE_SELECTOR.DESKTOP.DROPDOWN.ENGLISH",
+    // },
 ];
 
 export default function BlogNavbar() {
-    const { t } = useTranslation(["components", "common"]);
+    const { t } = useTranslation(["blogHome","components", "common"]);
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -81,46 +81,46 @@ export default function BlogNavbar() {
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                         <Nav activeKey={router.pathname} className="ml-auto">
                             <Link href={"/"} passHref={true}>
-                                <Nav.Link eventKey={"/"}>{t("NAVBAR.HOME")}</Nav.Link>
+                                <Nav.Link eventKey={"/"}>{t("components:NAVBAR.HOME")}</Nav.Link>
                             </Link>
                             <Link href={`/nosotros`} passHref={true}>
-                                <Nav.Link eventKey={`/nosotros`}>{t("NAVBAR.US")}</Nav.Link>
+                                <Nav.Link eventKey={`/nosotros`}>{t("components:NAVBAR.US")}</Nav.Link>
                             </Link>
 
                             <Link href={`/clientes`} passHref={true}>
-                                <Nav.Link eventKey={`/clientes`}>{t("NAVBAR.CLIENTS")}</Nav.Link>
+                                <Nav.Link eventKey={`/clientes`}>{t("components:NAVBAR.CLIENTS")}</Nav.Link>
                             </Link>
 
-                            <NavDropdown className="d-lg-none" title="Categorias" id="basic-nav-dropdown">
+                            <NavDropdown className="d-lg-none" title={t("NAVBAR.CATEGORIES")} id="basic-nav-dropdown">
 
                                 <Link href={BLOG_NEWS_CATEGORIES_URL} passHref>
-                                    <NavDropdown.Item>Novedades</NavDropdown.Item>
+                                    <NavDropdown.Item>{t("NAVBAR.NEWS")}</NavDropdown.Item>
                                 </Link>
                                 <Link href={BLOG_SUCCESS_STORIES_CATEGORIES_URL} passHref>
-                                    <NavDropdown.Item>Casos de éxito</NavDropdown.Item>
+                                    <NavDropdown.Item>{t("NAVBAR.SUCCESS_STORIES")}</NavDropdown.Item>
                                 </Link>
                                 <Link href={BLOG_E_BOOKS_CATEGORIES_URL} passHref>
-                                    <NavDropdown.Item disabled>Ebook</NavDropdown.Item>
+                                    <NavDropdown.Item disabled>{t("NAVBAR.EBOOK")}</NavDropdown.Item>
                                 </Link>
                                 <NavDropdown.Divider></NavDropdown.Divider>
-                                <NavDropdown.Header>Sectores</NavDropdown.Header>
+                                <NavDropdown.Header>{t("NAVBAR.SECTORS")}</NavDropdown.Header>
                                 <Link href={BLOG_BANKING_AND_INSURANCE_CATEGORIES_URL} passHref>
-                                    <NavDropdown.Item>Banca y Seguros</NavDropdown.Item>
+                                    <NavDropdown.Item>{t("common:BANKING_AND_INSURANCE")}</NavDropdown.Item>
                                 </Link>
                                 <Link href={BLOG_HEALTH_CATEGORIES_URL} passHref>
-                                    <NavDropdown.Item>Salud</NavDropdown.Item>
+                                    <NavDropdown.Item>{t("common:HEALTH")}</NavDropdown.Item>
                                 </Link>
                                 <Link href={BLOG_GOVERNMENT_CATEGORIES_URL} passHref>
-                                    <NavDropdown.Item>Gobierno</NavDropdown.Item>
+                                    <NavDropdown.Item>{t("common:GOVERNMENT")}</NavDropdown.Item>
                                 </Link>
                                 <Link href={BLOG_RETAIL_CATEGORIES_URL} passHref>
-                                    <NavDropdown.Item>Retail y Servicios</NavDropdown.Item>
+                                    <NavDropdown.Item>{t("common:SERVICES_AND_RETAIL")}</NavDropdown.Item>
                                 </Link>
                                 <Link href={BLOG_TELECOMUNICATIONS_CATEGORIES_URL} passHref>
-                                    <NavDropdown.Item>Telcos</NavDropdown.Item>
+                                    <NavDropdown.Item>{t("common:TELECOMMUNICATIONS")}</NavDropdown.Item>
                                 </Link>
                                 <Link href={BLOG_UTILITIES_CATEGORIES_URL} passHref>
-                                    <NavDropdown.Item>Utilities</NavDropdown.Item>
+                                    <NavDropdown.Item>{t("common:UTILITIES_AND_CORPORATIONS")}</NavDropdown.Item>
                                 </Link>
                             </NavDropdown>
 
@@ -129,14 +129,14 @@ export default function BlogNavbar() {
                             <div style={{ borderRight: "1px solid #aaa", marginLeft: "1rem" }}></div>
 
                             {/* Selector para mobile */}
-                            {/* <LanguageSelector className={"d-lg-none"} langs={langsMobile} /> */}
+                            <LanguageSelector className={"d-lg-none"} langs={langsMobile} />
                             <Link href="/contacto">
                                 <Nav.Link style={{ alignSelf: "center" }} href="#link" className="demo text-nowrap">
                                     {t("common:REQUEST_A_DEMO")}
                                 </Nav.Link>
                             </Link>
                             {/* Selector para desktop */}
-                            {/* <LanguageSelector className={"d-none d-lg-block"} langs={langs} /> */}
+                            <LanguageSelector className={"d-none d-lg-block"} langs={langs} />
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

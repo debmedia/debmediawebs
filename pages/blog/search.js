@@ -8,15 +8,15 @@ import CategoryPostsSection from '../../components/Blog/Category/CategoryPostSec
 import { ApolloProvider, useLazyQuery } from '@apollo/client';
 import { apolloClient } from "../../config/apollo";
 import RelatedPostsSection from '../../components/Blog/RelatedPostsSection';
-import { QUERY_GET_POSTS_BY_SEARCH_TERM } from '../../services/wordpressGQL';
+import { QUERY_GET_POSTS_BY_SEARCH_TERM } from '../../services/wordpressGQLQueries';
 
 
 
 export async function getServerSideProps({ locale, query }) {
     const searchTerm = query.q;
-    const searchPromise = getPostBySearchTerm({first: 10, searchTerm});
+    const searchPromise = getPostBySearchTerm({first: 10, searchTerm}, locale);
     // TODO: buscar de verdad los posts relacionandos
-    const relatedPostPromise = getPosts({first: 6});
+    const relatedPostPromise = getPosts({first: 6}, locale);
     
     const {posts, pagination} = await searchPromise;
     const {posts: relatedPosts} = await relatedPostPromise;

@@ -1,11 +1,11 @@
 {
     "NAVBAR": {
-        "SEARCH": "Buscar",
+        "SEARCH": "Procurar",
         "CATEGORIES": "Categorias",
         "NEWS": "$t(common:NEWS)",
         "SUCCESS_STORIES": "$t(common:SUCCESS_STORIES)",
         "EBOOK": "$t(common:EBOOK)",
-        "SECTORS": "Sectores"
+        "SECTORS": "Setores"
     },
     "CATEGORY_NAV": {
         "SELECT_CATEGORY": "Seleccionar categoría"
@@ -20,7 +20,7 @@
         "casos-de-exito": "$t(common:SUCCESS_STORIES)",
         "ebooks": "$t(common:EBOOK)",
         "industrias": "$t(common:INDUSTRIES)",
-        "banca-y-seguros": "Banca y Seguros",
+        "banca-y-seguros": "Banca e seguros",
         "gobierno": "$t(common:GOVERNMENT)",
         "retail": "$t(common:RETAIL)",
         "salud": "$t(common:HEALTH)",
@@ -30,19 +30,15 @@
         "novedades": "$t(common:NEWS)",
         "podcast": "$t(common:PODCAST)"
     },
-    "RELATED_POSTS_SECTION":{
-        "TITLE": "También podría interesarte"
-    },
-    "AUTHOR_CARD": {
-        "MINUTES_READ_one": "{{count}} minute read",
-        "MINUTES_READ_other": "{{count}} minutes read"
+    "RELATED_POSTS_SECTION": {
+        "TITLE": "Você também pode estar interessado"
     },
     "NO_POSTS_MESSAGE": {
-        "MESSAGE" : "¡Agradecemos por acceder a nuestro blog! Semanalmente, traemos contenidos innovadores aquí. Mantente conectado también a nuestras redes sociales para no perderte ninguna novedad. Para conocer más sobre nuestras soluciones, visita <1>www.debmedia.com</1>.",
+        "MESSAGE" : "Agradecemos por acessar nosso blog! Semanalmente, trazemos conteúdos inivadores aqui. Fique ligado também nas nossas redes sociais para não perder nenhuma novidade. Para conhecer mais sobre nossas soluções, visite <1>www.debmedia.com</1>",
         "INSTAGRAM_URL": "https://www.instagram.com/wearedebmedia_br/",
         "LINKEDIN_URL": "https://www.linkedin.com/company/93208577/"
     },
     "SHARE_POST": {
-        "TITLE": "Comparte este artículo en cualquiera de las siguientes redes sociales"
+        "TITLE": "Compartilhe este artigo em qualquer uma das seguintes redes sociais"
     }
 }

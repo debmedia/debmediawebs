@@ -5,6 +5,7 @@ import { Badge, Col, Row } from "react-bootstrap";
 import AuthorCard from "../AuthorCard";
 import { BLOG_URL } from "../../../constants/blog";
 import { calcReadingTime } from "../../../utils/utils";
+import CategoryBadge from "../CategoryBadge";
 
 export default function CategoryPostCard({ post, compact, secondary, badgeColor }) {
     let category;
@@ -33,7 +34,7 @@ export default function CategoryPostCard({ post, compact, secondary, badgeColor 
                         <div className="card-content-container">
                             <div className="card-content">
                                 {category ? (
-                                    <Badge className={`mb-2 bg-${badgeColor}`}>{category?.node.name}</Badge>
+                                    <CategoryBadge className="mb-2" badgeColor={badgeColor} slug={category?.node.slug}/>
                                 ) : (
                                     // badge transparente vacio para mantener el espacio
                                     <Badge className="mb-2 hidden" bg="primary">

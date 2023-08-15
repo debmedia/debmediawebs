@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import BlogNavbar from '../../../components/Blog/BlogNavbar'
 import CategoryNav from "../../../components/Blog/CategoryNav";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -11,86 +11,27 @@ import CategoryPostsSection from '../../../components/Blog/Category/CategoryPost
 import { ApolloProvider, useLazyQuery } from '@apollo/client';
 import { apolloClient } from "../../../config/apollo";
 import RelatedPostsSection from '../../../components/Blog/RelatedPostsSection';
-import { ObjectInspector, chromeDark } from 'react-inspector';
-import { QUERY_GET_POSTS_BY_CATEGORY_ID } from "../../../services/wordpressGQL";
+import { QUERY_GET_POSTS_BY_CATEGORY_ID } from "../../../services/wordpressGQLQueries";
+import { BLOG_LOCALES, BLOG_RENDER_CATEGORIES } from '../../../constants/blog';
+import NoPostsMessage from '../../../components/Blog/NoPostsMessage';
 
-// TODO: buscar las categorias directamente de wp
-const categories = [
-    {
-        "slug": "banca-y-seguros",
-        "name": "Banca y seguros",
-        "databaseId": 1354
-    },
-    {
-        "slug": "casos-de-exito",
-        "name": "Casos de éxito",
-        "databaseId": 855
-    },
-    {
-        "slug": "ebooks",
-        "name": "Ebooks",
-        "databaseId": 856
-    },
-    {
-        "slug": "gobierno",
-        "name": "Gobierno",
-        "databaseId": 1355
-    },
-    {
-        "slug": "industrias",
-        "name": "Industrias",
-        "databaseId": 1353
-    },
-    {
-        "slug": "noticias",
-        "name": "Notas",
-        "databaseId": 3
-    },
-    {
-        "slug": "novedades",
-        "name": "Novedades",
-        "databaseId": 2
-    },
-    {
-        "slug": "podcast",
-        "name": "Podcast",
-        "databaseId": 1382
-    },
-    {
-        "slug": "retail",
-        "name": "Retail",
-        "databaseId": 1357
-    },
-    {
-        "slug": "salud",
-        "name": "Salud",
-        "databaseId": 1358
-    },
-    {
-        "slug": "telecomunicaciones",
-        "name": "Telecomunicaciones",
-        "databaseId": 1356
-    },
-    {
-        "slug": "utilities",
-        "name": "Utilities",
-        "databaseId": 1359
-    }
-];
 
-export async function getStaticPaths() {
+export async function getStaticPaths({locales}) {
+    const paths = BLOG_LOCALES.reduce((paths, locale) => {
+        return paths.concat(BLOG_RENDER_CATEGORIES.map((category)=> {return {params: {categorySlug: category.slug}, locale}}));
+    }, []);
 
     return {
-      paths: categories.map((category)=> {return {params: {categorySlug: category.slug}}}),
+      paths,
       fallback: false,
     }
   }
 
 export async function getStaticProps({ locale, params }) {
     const category = (await getCategoriesBySlug(params.categorySlug))[0];
-    const {posts, pagination} = await getPostByCategoryId({first: 10, categoryId: category.databaseId});
+    const {posts, pagination} = await getPostByCategoryId({first: 10, categoryIn: [category.databaseId]}, locale);
     // TODO: buscar de verdad los posts relacionandos
-    const {posts: relatedPosts} = await getPosts({first: 6});
+    const {posts: relatedPosts} = await getPosts({first: 6}, locale);
 
     // TODO: Integrarlo directamente en el servicio de get post
     const postsWithBlur = await generateBlurPlaceholders(posts);
@@ -126,6 +67,14 @@ export default function CategoryPage({categorySlug, categoryData, postsData, pag
         client: apolloClient
     });
 
+    useEffect(() => {
+        setPosts(postsData);
+    }, [postsData]);
+
+    useEffect(() => {
+        setPaginationData(paginationData_);
+    }, [paginationData_]);
+
     const loadMorePosts = () =>{
         getPosts().then((res)=> {
             setPosts(postsData.concat(res.data.posts.nodes));
@@ -141,8 +90,9 @@ export default function CategoryPage({categorySlug, categoryData, postsData, pag
             <CategoryNav variant="secondary" />
             <CategoryHeader categoryName={categoryData.name} categoryColor={categoryData.color} categorySlug={categoryData.slug}/>
             <HeroPostCard post={posts[0]} compact badgeColor={categoryData.slug}/>
-            <Container className='px-0 mb-5'><hr/></Container>
+            {posts.length > 0 && <Container className='px-0 mb-5'><hr/></Container>}
             <CategoryPostsSection posts={posts.slice(1)} paginationData={paginationData} category={categoryData} loadMoreCallback={loadMorePosts} loading={loading}/>
+            {posts.length < 1 && <NoPostsMessage/>}
             <RelatedPostsSection posts={relatedPosts}></RelatedPostsSection>
             {/* <Container className="mt-5">
                 <Accordion>
