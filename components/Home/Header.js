@@ -27,52 +27,61 @@ export default function Header() {
         <>
             <header>
                 <Container fluid className="header-home">
-                    <div className={'image-container'} onClick={() => setModalShow(true)}>
-                        <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} alt=""/>
-                        <Image src={mypicxs.src} layout="fill" className={'image d-block d-sm-none'} alt=""/>
-                    </div>
-                    {/* <div className="d-none d-sm-block">
-                        <img src={shape3.src} className="header-home_shape3" />
-                    </div> */}
-                    <div className="d-block d-sm-none" onClick={() => setModalShow(true)}>
-                        <img src={video.src} className="header-home_mainNoti" alt=""/>
-                    </div>
-                     <div className="d-none d-sm-block header-home_viewVideo"  onClick={() => setModalShow(true)}>
-                        <Image src={videoSm} layout="fill" className="header-home_mainNoti" alt=""/>
+                    <div className={"image-container"} onClick={() => setModalShow(true)}>
+                        <Image src={mypic.src} layout="fill" className={"image d-none d-sm-block"} alt="" />
+                        <Image src={mypicxs.src} layout="fill" className={"image d-block d-sm-none"} alt="" />
                     </div>
                     <div className="d-none d-sm-block">
-                        <img src={shape1.src} className="header-home_shape1" alt=""/>
-                        <img src={shape2.src} className="header-home_shape2" alt=""/>
+                        <img src={shape1.src} className="header-home_shape1" alt="" />
+                        <img src={shape2.src} className="header-home_shape2" alt="" />
                     </div>
-                    { locale === "es" &&
-                    <MyVerticallyCenteredModal
-                        show={modalShow}
-                        onHide={() => setModalShow(false)}
-                    />}
+                    {locale === "es" && (
+                        <MyVerticallyCenteredModal show={modalShow} onHide={() => setModalShow(false)} />
+                    )}
                     <Container>
                         <Row>
-                            <Col className="mainTitles fixZindex">
+                            <Col xs={12} md={6}>
                                 <span className="header-home_product">{t("common:CUSTOMER_JOURNEY_MANAGER")}</span>
-                                <h1 className="header-home_title" >
+                                <h1 className="header-home_title">
                                     <Trans t={t} i18nKey={"HEADER.TITLE"}>
-                                        Haz más eficientes tus<br className="d-none d-sm-block" /> canales de atención
+                                        Haz más eficientes tus
+                                        <br className="d-none d-sm-block" /> canales de atención
                                     </Trans>
                                 </h1>
                                 <h2 className="header-home_parraf">
                                     <Trans t={t} i18nKey={"HEADER.SUBTITLE"}>
-                                        Software para 
-                                        <b>gestionar la atención
-                                            <br className="d-none d-sm-block" /> 
+                                        Software para
+                                        <b>
+                                            gestionar la atención
+                                            <br className="d-none d-sm-block" />
                                             al cliente virtual
                                         </b>
                                         y presencial.
                                     </Trans>
                                 </h2>
                                 <Link href="/contacto">
-                                    <button className="header-home_demobutton">
-                                        {t("common:REQUEST_A_DEMO")}
-                                    </button>
+                                    <button className="header-home_demobutton">{t("common:REQUEST_A_DEMO")}</button>
                                 </Link>
+                            </Col>
+                            <Col xs={12} md={6}>
+                                <div
+                                    className="d-block d-md-none mt-4"
+                                    style={{ position: "relative" }}
+                                    onClick={() => setModalShow(true)}>
+                                    <Image src={video} className="" alt="" layout="responsive" priority />
+                                </div>
+                                <div
+                                    className="d-none d-md-block "
+                                    onClick={() => setModalShow(true)}
+                                    style={{marginLeft: "-5vw",marginRight: "calc(150px - 16vw)"}}
+                                    >
+                                    <Image
+                                        src={videoSm}
+                                        layout="responsive"
+                                        alt=""
+                                        priority
+                                    />
+                                </div>
                             </Col>
                         </Row>
                     </Container>
@@ -83,15 +92,14 @@ export default function Header() {
                     <Col>
                         <h2>
                             <Trans t={t} i18nKey="HEADER.CAPTION">
-                            <b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
-                            experiencia de sus clientes con <b> Debmedia</b>
+                                <b>Organizaciones líderes</b> ya gestionan la <br className="d-none d-sm-block" />
+                                experiencia de sus clientes con <b> Debmedia</b>
                             </Trans>
                         </h2>
                     </Col>
                 </Row>
             </Container>
         </>
-
     );
 }
 
