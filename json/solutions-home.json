@@ -4,7 +4,11 @@
       "title": "Citas online",
       "image": {
         "url": "CitasHome_ES.png",
-        "urlXs": "citas_xs.png",
+        "width": 360,
+        "height": 400
+      },
+      "imageXs": {
+        "url": "citas_xs.png",
         "width": 360,
         "height": 400
       },
@@ -19,7 +23,11 @@
       "title": "Gestión de filas",
       "image": {
         "url": "GestiondeFilas_Home_ES.png",
-        "urlXs": "filas_new_xs.png",
+        "width": 400,
+        "height": 500
+      },
+      "imageXs": {
+        "url": "filas_new_xs.png",
         "width": 400,
         "height": 500
       },
@@ -34,7 +42,11 @@
       "title": "Fila Virtual",
       "image": {
         "url": "FilaVirtual_Home_ES.png",
-        "urlXs": "FilaVirtual_Home_ES.png",
+        "width": 240,
+        "height": 480
+      },
+      "imageXs": {
+        "url": "FilaVirtual_Home_ES.png",
         "width": 240,
         "height": 480
       },
@@ -49,7 +61,11 @@
       "title": "Cartelería digital",
       "image": {
         "url": "CarteleriaDigital_Home_ES.png",
-        "urlXs": "CarteleriaDigital_Home_ES.png",
+        "width": 380,
+        "height": 290
+      },
+      "imageXs": {
+        "url": "CarteleriaDigital_Home_ES.png",
         "width": 380,
         "height": 290
       },
@@ -64,7 +80,11 @@
       "title": "Atención virtual",
       "image": {
         "url": "videocall.png",
-        "urlXs": "videocall.png",
+        "width": 270,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "videocall.png",
         "width": 270,
         "height": 520
       },
@@ -79,7 +99,11 @@
       "title": "Encuestas",
       "image": {
         "url": "Encuestas_Home_ES.png",
-        "urlXs": "Encuestas_Home_ES.png",
+        "width": 280,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "Encuestas_Home_ES.png",
         "width": 280,
         "height": 520
       },
@@ -94,7 +118,11 @@
       "title": "Pre atendedor",
       "image": {
         "url": "Preatendedor_ES.png",
-        "urlXs": "Preatendedor_ES.png",
+        "width": 260,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "Preatendedor_ES.png",
         "width": 260,
         "height": 520
       },
@@ -109,7 +137,11 @@
       "title": "Chatbot WhatsApp",
       "image": {
         "url": "ChatbotWhatsapp_Home_ES.png",
-        "urlXs": "ChatbotWhatsapp_Home_ES.png",
+        "width": 350,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "ChatbotWhatsapp_Home_ES.png",
         "width": 350,
         "height": 520
       },
@@ -126,7 +158,11 @@
       "title": "Agendamento online",
       "image": {
         "url": "CitasHome_PT.png",
-        "urlXs": "citas_xs.png",
+        "width": 360,
+        "height": 400
+      },
+      "imageXs": {
+        "url": "citas_xs.png",
         "width": 360,
         "height": 400
       },
@@ -141,7 +177,11 @@
       "title": "Gestão de filas",
       "image": {
         "url": "GestiondeFilas_Home_PT.png",
-        "urlXs": "filas_new_xs.png",
+        "width": 400,
+        "height": 500
+      },
+      "imageXs": {
+        "url": "filas_new_xs.png",
         "width": 400,
         "height": 500
       },
@@ -156,7 +196,11 @@
       "title": "Fila virtual",
       "image": {
         "url": "FilaVirtual_Home_PT.png",
-        "urlXs": "FilaVirtual_Home_PT.png",
+        "width": 240,
+        "height": 480
+      },
+      "imageXs": {
+        "url": "FilaVirtual_Home_PT.png",
         "width": 240,
         "height": 480
       },
@@ -171,7 +215,11 @@
       "title": "Carteleira digital",
       "image": {
         "url": "CarteleriaDigital_Home_PT.png",
-        "urlXs": "CarteleriaDigital_Home_PT.png",
+        "width": 380,
+        "height": 290
+      },
+      "imageXs": {
+        "url": "CarteleriaDigital_Home_PT.png",
         "width": 380,
         "height": 290
       },
@@ -186,7 +234,11 @@
       "title": "Atendimento online",
       "image": {
         "url": "videocall.png",
-        "urlXs": "videocall.png",
+        "width": 270,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "videocall.png",
         "width": 270,
         "height": 520
       },
@@ -201,7 +253,11 @@
       "title": "Pesquisas",
       "image": {
         "url": "Encuestas_Home_PT.png",
-        "urlXs": "Encuestas_Home_PT.png",
+        "width": 280,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "Encuestas_Home_PT.png",
         "width": 280,
         "height": 520
       },
@@ -216,7 +272,11 @@
       "title": "Pre atendimento",
       "image": {
         "url": "Preatendedor_PT.png",
-        "urlXs": "Preatendedor_PT.png",
+        "width": 260,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "Preatendedor_PT.png",
         "width": 260,
         "height": 520
       },
@@ -231,7 +291,11 @@
       "title": "Chatbot Whatsapp",
       "image": {
         "url": "ChatbotWhatsapp_Home_PT.png",
-        "urlXs": "ChatbotWhatsapp_Home_PT.png",
+        "width": 350,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "ChatbotWhatsapp_Home_PT.png",
         "width": 350,
         "height": 520
       },
@@ -248,7 +312,11 @@
       "title": "Online Appointments",
       "image": {
         "url": "CitasHome_EN.svg",
-        "urlXs": "citas_xs.png",
+        "width": 360,
+        "height": 400
+      },
+      "imageXs": {
+        "url": "citas_xs.png",
         "width": 360,
         "height": 400
       },
@@ -263,7 +331,11 @@
       "title": "Queue Management",
       "image": {
         "url": "GestiondeFilas_Home_EN.png",
-        "urlXs": "filas_new_xs.png",
+        "width": 400,
+        "height": 500
+      },
+      "imageXs": {
+        "url": "filas_new_xs.png",
         "width": 400,
         "height": 500
       },
@@ -278,7 +350,11 @@
       "title": "Virtual Queue",
       "image": {
         "url": "FilaVirtual_Home_EN.png",
-        "urlXs": "FilaVirtual_Home_EN.png",
+        "width": 240,
+        "height": 480
+      },
+      "imageXs": {
+        "url": "FilaVirtual_Home_EN.png",
         "width": 240,
         "height": 480
       },
@@ -293,7 +369,11 @@
       "title": "Debsign",
       "image": {
         "url": "CarteleriaDigital_Home_EN.png",
-        "urlXs": "CarteleriaDigital_Home_EN.png",
+        "width": 380,
+        "height": 290
+      },
+      "imageXs": {
+        "url": "CarteleriaDigital_Home_EN.png",
         "width": 380,
         "height": 290
       },
@@ -308,7 +388,11 @@
       "title": "Virtual Customer Service",
       "image": {
         "url": "videocall.png",
-        "urlXs": "videocall.png",
+        "width": 270,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "videocall.png",
         "width": 270,
         "height": 520
       },
@@ -323,7 +407,11 @@
       "title": "Customer Feedback",
       "image": {
         "url": "Encuestas_Home_EN.png",
-        "urlXs": "Encuestas_Home_EN.png",
+        "width": 280,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "Encuestas_Home_EN.png",
         "width": 280,
         "height": 520
       },
@@ -338,7 +426,11 @@
       "title": "Pre Service Website",
       "image": {
         "url": "Preatendedor_EN.png",
-        "urlXs": "Preatendedor_EN.png",
+        "width": 260,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "Preatendedor_EN.png",
         "width": 260,
         "height": 520
       },
@@ -353,7 +445,11 @@
       "title": "WhatsApp Chatbot",
       "image": {
         "url": "ChatbotWhatsapp_Home_EN.png",
-        "urlXs": "ChatbotWhatsapp_Home_EN.png",
+        "width": 350,
+        "height": 520
+      },
+      "imageXs": {
+        "url": "ChatbotWhatsapp_Home_EN.png",
         "width": 350,
         "height": 520
       },
