@@ -7,13 +7,15 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function RelatedPostsSection({ posts }) {
+    const { t } = useTranslation(['blogHome', 'common']);
 
     return (
         <div className="related-posts-section my-4 py-4">
             <Container >
-                <h3 className="related-posts-section_title my-4 text-center">También podría interesarte</h3>
+                <h3 className="related-posts-section_title my-4 text-center">{t("RELATED_POSTS_SECTION.TITLE")}</h3>
                 <div className="related-posts-swiper-wrapper">
                     <Swiper
                         freeMode={false}

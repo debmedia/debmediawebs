@@ -28,44 +28,57 @@ function httpToHttps(content) {
     return content.replace(re, 'https://');
 }
 
-export async function getStaticPaths() {
-    //TODO: Sacar este 30 hardcodeado, tal vez pasarlo a una variable de ambiente
+export async function getStaticPaths({locales}) {
     let postSlugs;
     let fallback;
-    // solo si estamos en dev no buileamos todos los posts
+    // Solo si estamos en dev no buileamos todos los posts
     if(process.env.CONTEXT && process.env.CONTEXT !== "dev") {
         postSlugs = await getAllPostSlugs();
         fallback = true;
     } else {
+        //TODO: Sacar este 30 hardcodeado, tal vez pasarlo a una variable de ambiente
         postSlugs = (await getPostsSlugs({first:30})).posts;
         fallback = 'blocking';
     }
+    // Dios sabe porque a veces no tienen slug, si no tiene slug no se muestra
+    postSlugs = postSlugs.filter((post) => {
+        if(!post.slug) {
+            console.warn("[postSlug] a post was returned without slug: ", JSON.stringify(post));
+        }
+        return post.slug;
+    });
+    // Pre renderamos solo los que no van a tener redirect mas abajo para que no tire error en el build
+    // y sacamos los que no tengan categorias ya que en getPostsSlugs y getAllPostSlugs solo agarramos las
+    // categorias de idioma, en definitiva filtramos los que no tienen categoria de idioma. es una chanchada ya lo se
+    //TODO: usar una constante para https://debmedia.com
     const paths = postSlugs.filter((post) => {
-        return post.link.startsWith("https://debmedia.com");
+        return post.link.startsWith("https://debmedia.com") && post.categories.nodes.length > 0;
     }).map((post)=> {
         return {
             params: {
-                postSlug: post.slug
-            }
+                postSlug: post.slug,
+            },
+            // Aca elegimos el primer idioma, pero lo correcto seria iterar por todos los idiomas
+            // pero como en la practica solo va a tener un idioma esta mas o menos bien asi.
+            locale: post.categories.nodes[0].slug
         }
     })
     return {
-        // pre renderamos solo los que no van a tener redirect mas abajo para que no tire error en el build
         paths,
         fallback,
     };
 }
 
 export async function getStaticProps({ locale, params }) {
-    // TODO: buscar de verdad los posts relacionandos
     try {
         // Esta chanchada es porque Object.isFrozen(post) == true y debe ser algo de apollo client
         const post = JSON.parse(JSON.stringify(await getPostBySlug(params.postSlug)));
         if(!post) throw new Error(`Post with slug "${params.postSlug}" not found`);
-        const { posts: relatedPosts } = await getPosts({ first: 6 });
-        // pasar todas los links en el contendido a https para que no se queje netlify
+        // TODO: buscar de verdad los posts relacionandos
+        const { posts: relatedPosts } = await getPosts({ first: 6 }, locale);
+        // Pasar todas los links en el contendido a https para que no se queje netlify
         post.content = httpToHttps(post.content);
-        // para el plugin de link any where o como se llame, si el link no es de la pagina redirigimos
+        // Para el plugin de link any where o como se llame, si el link no es de la pagina redirigimos
         // Esto es un work arround por dos maneras
         // 1. Fijarse si el link empieza, deberíamos hacer un query de la metadata del post a la variable _links_to
         // 2. No deberíamos hacer una redireccion desde el cliente sino que armar los redirects de ante mano y agregarlos
@@ -76,6 +89,15 @@ export async function getStaticProps({ locale, params }) {
                     destination: post.link,
                 },
             };
+
+        // Si no tiene categoria del idioma actual lo mandamos a la blog del home
+        // TODO: usar una constante para /blog
+        if (!post.categories.edges.map((category) => category.node.slug).includes(locale)) return {
+            redirect: {
+                destination: "/blog"
+            }
+        };
+
         return {
             props: {
                 ...(await serverSideTranslations(locale, ["blogHome", "components", "common"])),
@@ -117,7 +139,7 @@ export default function PostPage({ postData, relatedPostsData }) {
                 className="d-none d-sm-block"
                 crumbs={[
                     { key: 1, href: BLOG_URL, label: "Home" },
-                    { key: 1, active: true, label: postData.title },
+                    { key: 2, active: true, label: postData.title },
                 ]}></PostBreadcrumbs>
             <PostHeader post={postData} />
             <PostBody post={postData} />

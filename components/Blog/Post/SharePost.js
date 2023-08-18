@@ -14,12 +14,21 @@ import {
     WhatsappShareButton,
 } from "react-share";
 import { WEB_BASE_URL } from "../../../constants/urls";
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function SharePost() {
+    const { t } = useTranslation(['blogHome', 'common']);
     const { locale, asPath } = useRouter();
     const urlToShare = WEB_BASE_URL + "/" + locale + asPath;
     return (
         <Container className="my-5">
+            <Row className="justify-content-center">
+                <Col xs="auto">
+                    <p className="text-center h4">
+                    {t("SHARE_POST.TITLE")}
+                    </p>
+                    </Col>
+            </Row>
             <Row className="justify-content-center">
                 <Col xs="auto" className="py-1">
                     <FacebookShareButton url={urlToShare}>

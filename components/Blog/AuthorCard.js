@@ -1,8 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
+import { useTranslation, Trans } from 'next-i18next';
 
 export default function AuthorCard({ variant, author, createdDate, readTime }) {
+    const { t } = useTranslation(['blogHome', 'common']);
+
     return (
         <div className={`authorCard ${variant ? "variant-" + variant : ""}`}>
             <div md="auto" className="authorCard_image-container">
@@ -20,7 +23,7 @@ export default function AuthorCard({ variant, author, createdDate, readTime }) {
                 <div className="authorCard_date">
                     {new Date(createdDate).toLocaleDateString()}
                     {" - "}
-                    {readTime} minutes read
+                    {t("AUTHOR_CARD.MINUTES_READ", {count: readTime})}
                 </div>
             </div>
         </div>
