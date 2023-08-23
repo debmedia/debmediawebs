@@ -30,16 +30,16 @@ export default function Header() {
             <header>
                 <Container fluid className="videocall-home">
                     <div className={'image-container-videocall'} onClick={() => {if(locale === "es") setModalShow(true)}}>
-                        <Image src={videoThumb} layout="fill" className={'image d-none d-sm-block'} />
-                        <Image src={videoThumb_xs} layout="fill" className={'image d-block d-sm-none'} />
+                        <Image src={videoThumb} layout="fill" className={'image d-none d-sm-block'} priority={true} alt="videocall"/>
+                        <Image src={videoThumb_xs} layout="fill" className={'image d-block d-sm-none'} priority={true} alt="videocall"/>
                     </div>
                     <div className="d-none d-sm-block">
-                        <img src={shape3.src} className="videocall-home_shape3" />
+                        <img src={shape3.src} className="videocall-home_shape3" alt=""/>
                     </div>
 
                     <div className="d-none d-sm-block">
-                        <img src={shape1.src} className="videocall-home_shape1" />
-                        <img src={shape2.src} className="videocall-home_shape2" />
+                        <img src={shape1.src} className="videocall-home_shape1" alt=""/>
+                        <img src={shape2.src} className="videocall-home_shape2" alt=""/>
                     </div>
                     {locale === "es" && <MyVerticallyCenteredModal
                         show={modalShow}

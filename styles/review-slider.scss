@@ -70,10 +70,11 @@
             max-width: 80px !important;
             padding-top: 1em;
             padding-bottom: 1em;
+            margin-inline: auto;
             &-parraf {
                 font-size: .8rem;
                 margin-top: .5em;
-
+                text-wrap: balance;
             }
             &-name {
                 color: #232C61;
@@ -130,9 +131,9 @@
 
 .quote1 {
     position: absolute;
-    left: -20px;
-    width: 20px;
-    top: 60px;
+    left: -10px;
+    width: 25px;
+    top: 45px;
 }
 
 .quote2 {
@@ -162,5 +163,6 @@
 }
 
 .logoCliente{ 
-    max-height: 50px !important;
+    height: 50px;
+    position: relative;
 }

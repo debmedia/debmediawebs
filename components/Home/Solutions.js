@@ -83,7 +83,13 @@ export default function Solutions() {
                                     <Accordion.Body>
                                         <Row>
                                             <Col sm={item.sm} xs={item.xs} className="text-center p-0">
-                                                <img src={`/hometabs/${item.image.urlXs}`} alt={item.title} className={'img-fluid'} />
+                                                <Image 
+                                                    src={`/hometabs/${item.imageXs.url}`}
+                                                    width={item.imageXs.width}
+                                                    height={item.imageXs.height}
+                                                    quality={100}
+                                                    className={'img-fluid'}
+                                                    alt={item.title}/>
                                             </Col>
                                             <Col sm={item.sm} xs={item.xs} className="solutions-tabs_content-title">
                                                 <h2>

@@ -35,12 +35,12 @@ export default function Solutions() {
                     <Row>
                         <Col sm={4} xs={4} className="setps-debsign-section_div">
                             <div className="setps-debsign-section_div-img  d-none d-sm-block">
-                                <Image src={check_blue.src} width={120}
-                                    height={100} className={'img-fluid'} />
+                                <Image src={check_blue} width={120}
+                                    height={100} className={'img-fluid'} alt="check"/>
                             </div>
                             <div className="setps-debsign-section_div-img  d-block d-sm-none">
-                                <Image src={check_white.src} width={60}
-                                    height={60} className={'img-fluid'} />
+                                <Image src={check_white} width={60}
+                                    height={60} className={'img-fluid'} alt="check"/>
                             </div>
 
                             <h4 className="setps-debsign-section_title no-br-sm">
@@ -52,12 +52,12 @@ export default function Solutions() {
                         </Col>
                         <Col sm={4} xs={4} className="setps-debsign-section_div">
                             <div className="setps-debsign-section_div-img  d-none d-sm-block">
-                                <Image src={check_blue.src} width={120}
-                                    height={100} className={'img-fluid'} />
+                                <Image src={check_blue} width={120}
+                                    height={100} className={'img-fluid'} alt="check"/>
                             </div>
                             <div className="setps-debsign-section_div-img  d-block d-sm-none">
-                                <Image src={check_white.src} width={60}
-                                    height={60} className={'img-fluid'} />
+                                <Image src={check_white} width={60}
+                                    height={60} className={'img-fluid'} alt="check"/>
                             </div>
                             <h4 className="setps-debsign-section_title no-br-sm">
                                 <Trans t={t} i18nKey="STEPS.CAPTION_2.TITLE"/>
@@ -68,12 +68,12 @@ export default function Solutions() {
                         </Col>
                         <Col sm={4} xs={4} className="setps-debsign-section_div">
                             <div className="setps-debsign-section_div-img  d-none d-sm-block">
-                                <Image src={check_blue.src} width={120}
-                                    height={100} className={'img-fluid'} />
+                                <Image src={check_blue} width={120}
+                                    height={100} className={'img-fluid'} alt="check"/>
                             </div>
                             <div className="setps-debsign-section_div-img  d-block d-sm-none">
-                                <Image src={check_white.src} width={60}
-                                    height={60} className={'img-fluid'} />
+                                <Image src={check_white} width={60}
+                                    height={60} className={'img-fluid'} alt="check"/>
                             </div>
                             <h4 className="setps-debsign-section_title no-br-sm">
                                 <Trans t={t} i18nKey="STEPS.CAPTION_3.TITLE"/>
@@ -87,7 +87,7 @@ export default function Solutions() {
             </Container>
             <Container fluid className="setps-debsign-tabs relative mb-2 mb-sm-5">
                 <div className={'setps-debsign-tabs_shape1'}>
-                    <Image src={shape1.src} layout="fill" className={'left'} />
+                    <Image src={shape1.src} layout="fill" className={'left'} alt=""/>
                 </div>
                 <Container>
                     <Row>
@@ -100,10 +100,8 @@ export default function Solutions() {
                                                 <Tab.Pane key={index} eventKey={item.key}>
                                                     <Row>
                                                         <Col className="text-center mt-5">
-
-                                                            <img src={`/debsigntabs/${item.image.url}`} alt={item.image.url} className={'img-fluid'} />
+                                                            <Image src={item.image.url} alt={item.text} layout="responsive" width={item.image.width} height={item.image.height}/>
                                                         </Col>
-
                                                     </Row>
                                                 </Tab.Pane>
                                             ))}
@@ -139,9 +137,7 @@ export default function Solutions() {
                                     <Accordion.Body>
                                         <Row>
                                             <Col xs={12} className="text-center">
-                                                {/* <Image src={`/debsigntabs/${item.image.url}`} width={item.image.width}
-                                                    height={item.image.height} className={'img-fluid'} /> */}
-                                                    <img src={`/debsigntabs/${item.image.url}`} alt={item.text} className={'img-fluid'} />
+                                                    <Image src={item.image.url} alt={item.text} layout="responsive" width={item.image.width} height={item.image.height}/>
                                             </Col>
                                         </Row>
                                     </Accordion.Body>

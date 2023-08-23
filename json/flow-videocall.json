@@ -5,8 +5,8 @@
       "key": "1",
       "image": {
         "url": "step1.png",
-        "width": 700,
-        "height": 500
+        "width": 362,
+        "height": 609
       }
     },
     {
@@ -14,8 +14,8 @@
       "key": "2",
       "image": {
         "url": "step2.png",
-        "width": 400,
-        "height": 450
+        "width": 304,
+        "height": 825
       }
     },
     {
@@ -23,8 +23,8 @@
       "key": "3",
       "image": {
         "url": "step3.png",
-        "width": 400,
-        "height": 550
+        "width": 330,
+        "height": 515
       }
     },
     {
@@ -32,8 +32,8 @@
       "key": "4",
       "image": {
         "url": "step4.png",
-        "width": 700,
-        "height": 800
+        "width": 319,
+        "height": 500
       }
     }
   ]

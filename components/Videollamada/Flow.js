@@ -16,6 +16,7 @@ import sistemaxs_es from '../../asset/imgs/videollamada/sistemaxs.jpg'
 import Data from '../../json/flow-videocall.json';
 import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from "next-translate-routes/router";
+import Image from "next/image";
 
 const flow_lang = {es: flow_es, pt: flow_pt, en: flow_en};
 const totem_lang = {
@@ -74,7 +75,7 @@ export default function Market() {
                 <Container className="py-5 d-none d-sm-block">
                     <Row className="d-flex justify-content-center">
                         <Col xl={11} sm={10} xs={10}>
-                            <img src={flow.src} className="img-fluid mt-2" alt="" />
+                            <Image src={flow} className="img-fluid mt-2" alt="" />
                         </Col>
                     </Row>
                 </Container>
@@ -88,7 +89,7 @@ export default function Market() {
                                 <Accordion.Body>
                                     <Row>
                                         <Col xs={12} className="text-center">
-                                            <img src={`/videocalltabs/${item.image.url}`} alt={item.text} className={'img-fluid max70'} />
+                                            <Image src={`/videocalltabs/${item.image.url}`} alt={item.text} width={item.image.width} height={item.image.height} className={'img-fluid max70'} />
                                         </Col>
                                     </Row>
                                 </Accordion.Body>
@@ -100,7 +101,7 @@ export default function Market() {
             <Container fluid className="relative d-none d-sm-block">
                 <Row className="d-flex justify-content-end">
                     <div className="totem p-0">
-                        <img src={totem.src} className="img-fluid" alt="" />
+                        <Image src={totem} alt="" />
                     </div>
                     <div className="greyBlock">
                         <div className="greyBlock_text">
@@ -126,7 +127,7 @@ export default function Market() {
                 </div>
                 <Row>
                     <Col xs={6} className="p-0 mb-5">
-                        <img src={sistema.src} className="img-fluid mt-5" alt="" />
+                        <Image src={sistema} layout="responsive" className="mt-5" alt="" />
                     </Col>
                 </Row>
             </Container>
@@ -142,7 +143,7 @@ export default function Market() {
                                     <Trans t={t} i18nKey="FLOW.BLOCK_1.CAPTION"/>
                                 </p>
                             </div>
-                            <img src={sistematotemmobie.src} className="img-fluid w-100" alt="sistematotemmobie" />
+                            <Image src={sistematotemmobie} layout="responsive" alt="sistematotemmobie" />
                         </div>
 
                     </Col>
@@ -150,10 +151,10 @@ export default function Market() {
                         <h2>
                             <Trans t={t} i18nKey="FLOW.BLOCK_2.TITLE"/>
                         </h2>
-                        <p>
+                        <p className="mb-5">
                             <Trans t={t} i18nKey="FLOW.BLOCK_2.CAPTION"/>
                         </p>
-                        <img src={sistemaxs.src} className="img-fluid w-100 mt-5" alt="sistemaxs" />
+                        <Image src={sistemaxs} layout="responsive" alt="sistemaxs" />
                     </Col>
                 </Row>
             </Container>

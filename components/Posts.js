@@ -3,6 +3,7 @@ import { useRouter } from "next-translate-routes/router";
 import BlogData from '../json/blog.json';
 import { Row, Container, Col } from "react-bootstrap";
 import { useTranslation, Trans } from 'next-i18next';
+import Image from 'next/image';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -112,14 +113,11 @@ export default function Brands(props) {
                             >
                                 {posts.map((item, index) => (
                                     <SwiperSlide key={index}>
-                                        <div style={{
-                                            backgroundImage: `url(${item.image})`,
-                                            backgroundPosition: 'center',
-                                            backgroundSize: 'cover',
-                                            backgroundRepeat: 'no-repeat'
-                                        }}
+                                        <div
+                                            style={{position: "relative"}}
                                             className="posts-slider_content"
                                         >
+                                            <Image src={item.image} layout="fill" objectFit="cover" alt={item.title} style={{ zIndex: "-10" }}/>
                                             <div
                                                 className={"posts-slider_content-post " + (props.indistry ? item.indistry + '_post' : '')}>
                                                 <div>
