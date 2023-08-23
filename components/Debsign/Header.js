@@ -26,15 +26,19 @@ export default function Header() {
             <header>
                 <Container fluid className="debsign-home">
                     <div className={'image-container-debsign'}>
-                        <Image src={mypic.src} layout="fill" className={'image d-none d-sm-block'} />
-                        <Image src={mypicxs.src} layout="fill" className={'image d-block d-sm-none'} />
+                        <div className={'image d-none d-sm-block'}>
+                        <Image src={mypic} layout="responsive" priority alt="Cartelería digital"/>
+                        </div>
+                        <div className={'image d-block d-sm-none'}>
+                        <Image src={mypicxs} layout="responsive" priority alt="Cartelería digital"/>
+                        </div>
                     </div>
                     <div className="d-none d-sm-block">
-                        <img src={shape3.src} className="debsign-home_shape3" />
+                        <img src={shape3.src} className="debsign-home_shape3" alt=""/>
                     </div>
                     <div className="d-none d-sm-block">
-                        <img src={shape1.src} className="debsign-home_shape1" />
-                        <img src={shape2.src} className="debsign-home_shape2" />
+                        <img src={shape1.src} className="debsign-home_shape1" alt=""/>
+                        <img src={shape2.src} className="debsign-home_shape2" alt=""/>
                     </div>
                     <Container>
                         <Row>
