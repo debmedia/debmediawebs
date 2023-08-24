@@ -25,34 +25,34 @@ export default function Header() {
         <>
             <header>
                 <Container fluid className="debsign-home">
-                    <div className={'image-container-debsign'}>
-                        <div className={'image d-none d-sm-block'}>
-                        <Image src={mypic} layout="responsive" priority alt="Cartelería digital"/>
+                    <div className={"image-container-debsign"}>
+                        <div className={"image d-none d-sm-block"}>
+                            <Image src={mypic} layout="responsive" priority alt="Cartelería digital" placeholder="blur"/>
                         </div>
-                        <div className={'image d-block d-sm-none'}>
-                        <Image src={mypicxs} layout="responsive" priority alt="Cartelería digital"/>
+                        <div className={"image d-block d-sm-none"}>
+                            <Image src={mypicxs} layout="responsive" priority alt="Cartelería digital" placeholder="blur"/>
                         </div>
                     </div>
                     <div className="d-none d-sm-block">
-                        <img src={shape3.src} className="debsign-home_shape3" alt=""/>
+                        <img src={shape3.src} className="debsign-home_shape3" alt="" />
                     </div>
                     <div className="d-none d-sm-block">
-                        <img src={shape1.src} className="debsign-home_shape1" alt=""/>
-                        <img src={shape2.src} className="debsign-home_shape2" alt=""/>
+                        <img src={shape1.src} className="debsign-home_shape1" alt="" />
+                        <img src={shape2.src} className="debsign-home_shape2" alt="" />
                     </div>
                     <Container>
                         <Row>
                             <Col className="mainTitles">
                                 <h1 className="debsign-home_title no-br-sm">
-                                    <Trans t={t} i18nKey="HEADER.TITLE"/>
+                                    <Trans t={t} i18nKey="HEADER.TITLE" />
                                 </h1>
                                 <h2 className="debsign-home_parraf">
-                                    <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
+                                    <Trans t={t} i18nKey="HEADER.SUBTITLE" />
                                 </h2>
                                 <Link href="/contacto">
-                                <button className="debsign-home_demobutton">
-                                    <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
-                                </button>
+                                    <button className="debsign-home_demobutton">
+                                        <Trans t={t} i18nKey="common:REQUEST_A_DEMO" />
+                                    </button>
                                 </Link>
                             </Col>
                         </Row>
@@ -63,7 +63,7 @@ export default function Header() {
                 <Row>
                     <Col>
                         <h3 className="no-br-sm">
-                            <Trans t={t} i18nKey="HEADER.CAPTION"/>
+                            <Trans t={t} i18nKey="HEADER.CAPTION" />
                         </h3>
                     </Col>
                 </Row>
