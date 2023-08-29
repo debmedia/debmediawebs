@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import BlogNavbar from '../../components/Blog/BlogNavbar'
 import CategoryNav from "../../components/Blog/CategoryNav";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import CategoryHeader from '../../components/Blog/Category/CategoryHeader';
+import SearchHeader from '../../components/Blog/Search/SearchHeader';
 import { getPostBySearchTerm, getPosts } from '../../services/wordpressGQL';
 import CategoryPostsSection from '../../components/Blog/Category/CategoryPostSection';
 import { ApolloProvider, useLazyQuery } from '@apollo/client';
@@ -55,7 +55,7 @@ export default function SearchResultPage({postsData, paginationData: paginationD
             <BlogNavbar />
             <div style={{ height: "100px" }}></div>
             <CategoryNav variant="secondary" />
-            <CategoryHeader categoryName={"Buscar: " + searchTerm}/>
+            <SearchHeader searchTerm={searchTerm}></SearchHeader>
             <CategoryPostsSection posts={posts} paginationData={paginationData} loadMoreCallback={loadMorePosts} loading={loading}/>
             <RelatedPostsSection posts={relatedPosts}></RelatedPostsSection>
         </div>

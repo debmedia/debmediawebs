@@ -44,5 +44,8 @@
     },
     "SHARE_POST": {
         "TITLE": "Comparte este artículo en cualquiera de las siguientes redes sociales"
+    },
+    "SEARCH_PAGE": {
+        "SEARCH": "Buscar: {{searchTerm}}"
     }
 }
