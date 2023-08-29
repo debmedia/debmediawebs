@@ -40,5 +40,8 @@
     },
     "SHARE_POST": {
         "TITLE": "Share this article in any of the following social networks"
+    },
+    "SEARCH_PAGE": {
+        "SEARCH": "Search: {{searchTerm}}"
     }
 }
