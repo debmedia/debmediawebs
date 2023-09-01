@@ -21,6 +21,7 @@ import {
     META_OG_URL,
     TITLE,
 } from "../../constants/metaKeys";
+import Contact from "../../components/Contact";
 
 function httpToHttps(content) {
     if (!(typeof content === 'string')) return content;
@@ -144,6 +145,7 @@ export default function PostPage({ postData, relatedPostsData }) {
             <PostHeader post={postData} />
             <PostBody post={postData} />
             <SharePost/>
+            <Contact/>
             <RelatedPostsSection posts={relatedPostsData}></RelatedPostsSection>
             {/* <Container className="mt-5">
                 <Accordion>
