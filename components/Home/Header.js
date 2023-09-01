@@ -71,9 +71,9 @@ export default function Header() {
                                     <Image src={video} className="" alt="" layout="responsive" priority />
                                 </div>
                                 <div
-                                    className="d-none d-md-block "
+                                    className="d-none d-md-block"
                                     onClick={() => setModalShow(true)}
-                                    style={{marginLeft: "-5vw",marginRight: "calc(150px - 16vw)"}}
+                                    style={{marginLeft: locale === "es"? "-5vw": "0",marginRight: "calc(150px - 16vw)"}}
                                     >
                                     <Image
                                         src={videoSm}
