@@ -28,7 +28,10 @@
         "utilities": "$t(common:UTILITIES)",
         "noticias": "$t(common:ARTICLES)",
         "novedades": "$t(common:NEWS)",
-        "podcast": "$t(common:PODCAST)"
+        "podcast": "$t(common:PODCAST)",
+        "pt": "Português",
+        "es": "Español",
+        "en": "English"
     },
     "RELATED_POSTS_SECTION": {
         "TITLE": "You might also like"

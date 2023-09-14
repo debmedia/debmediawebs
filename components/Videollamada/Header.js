@@ -48,12 +48,12 @@ export default function Header() {
                     <Container>
                         <Row>
                             <Col className="mainTitles">
-                                <h1 className="videocall-home_title no-br-sm">
+                                <p className="videocall-home_title no-br-sm">
                                 <Trans t={t} i18nKey="HEADER.TITLE"/>
-                                </h1>
-                                <h2 className="videocall-home_parraf">
+                                </p>
+                                <h1 className="videocall-home_parraf">
                                     <Trans t={t} i18nKey="HEADER.SUBTITLE"/>
-                                </h2>
+                                </h1>
                                 <Link href="/contacto">
                                 <button className="videocall-home_demobutton">
                                     <Trans t={t} i18nKey="common:REQUEST_A_DEMO"/>
