@@ -30,6 +30,16 @@
     }
   },
   {
+    "name": "dasa",
+    "home": true,
+    "category": "salud",
+    "image": {
+      "url": "dasa.png",
+      "width": 250,
+      "height": 110
+    }
+  },
+  {
     "name": "movistar",
     "home": true,
     "category": "telcos",
