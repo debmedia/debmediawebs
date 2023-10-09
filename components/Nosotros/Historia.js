@@ -7,6 +7,7 @@ import map from '../../asset/imgs/nosotros/map.svg'
 import nosotros_es from '../../md/nosotros_historia-es.md';
 import nosotros_pt from '../../md/nosotros_historia-pt.md';
 import nosotros_en from '../../md/nosotros_historia-en.md';
+import Image from "next/image";
 
 const nosotros_langs = {
     es: nosotros_es,
@@ -42,19 +43,19 @@ export default function SpecsIndus() {
                     </Col>
                 </Row>
             </Container>
-            <Container className="relative" fluid>
-                <div className="nosotros-section_map">
-                    <img src={map.src} className="img-fluid d-none d-sm-block" />
-                </div>
-                <Container>
-                    <Row>
-                        <Col className="col-sm-7 col-12 nosotros-section_act"  >
-                            <ReactMarkdown>
-                                {nosotros.split("---")[2]}
-                            </ReactMarkdown>
-                        </Col>
-                    </Row>
-                </Container>
+            <Container className="relative nosotros-section" fluid>
+                <Row>
+                    <Col className="nosotros-section_act text-center"  >
+                        <ReactMarkdown>
+                            {nosotros.split("---")[2]}
+                        </ReactMarkdown>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                    <Image src={map} alt="map"></Image>
+                    </Col>
+                </Row>
             </Container>
         </>
     );
