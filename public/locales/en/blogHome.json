@@ -1,50 +1,50 @@
 {
-    "NAVBAR": {
-        "SEARCH": "Search",
-        "CATEGORIES": "Categories",
-        "NEWS": "$t(common:NEWS)",
-        "SUCCESS_STORIES": "$t(common:SUCCESS_STORIES)",
-        "EBOOK": "$t(common:EBOOK)",
-        "SECTORS": "Sectors"
-    },
-    "CATEGORY_NAV": {
-        "SELECT_CATEGORY": "Select category"
-    },
-    "LATEST_NEWS_SECTION": {
-        "TITLE": "Latest posts"
-    },
-    "PODCAST_SECTION": {
-        "TITLE": "$t(common:PODCAST)"
-    },
-    "CATEGORIES_SLUG": {
-        "casos-de-exito": "$t(common:SUCCESS_STORIES)",
-        "ebooks": "$t(common:EBOOK)",
-        "industrias": "$t(common:INDUSTRIES)",
-        "banca-y-seguros": "Banking and insurance",
-        "gobierno": "$t(common:GOVERNMENT)",
-        "retail": "$t(common:RETAIL)",
-        "salud": "$t(common:HEALTH)",
-        "telecomunicaciones": "$t(common:TELECOMMUNICATIONS)",
-        "utilities": "$t(common:UTILITIES)",
-        "noticias": "$t(common:ARTICLES)",
-        "novedades": "$t(common:NEWS)",
-        "podcast": "$t(common:PODCAST)",
-        "pt": "Português",
-        "es": "Español",
-        "en": "English"
-    },
-    "RELATED_POSTS_SECTION": {
-        "TITLE": "You might also like"
-    },
-    "NO_POSTS_MESSAGE": {
-        "MESSAGE" : "We appreciate your visit to our blog! Weekly, we bring innovative content here. Also, stay tuned to our social media channels to not miss any updates. To learn more about our solutions, visit <1>www.debmedia.com.</1>",
-        "INSTAGRAM_URL": "https://www.instagram.com/wearedebmedia_br/",
-        "LINKEDIN_URL": "https://www.linkedin.com/company/93208577/"
-    },
-    "SHARE_POST": {
-        "TITLE": "Share this article in any of the following social networks"
-    },
-    "SEARCH_PAGE": {
-        "SEARCH": "Search: {{searchTerm}}"
-    }
+  "NAVBAR": {
+    "SEARCH": "Search",
+    "CATEGORIES": "Categories",
+    "NEWS": "$t(common:NEWS)",
+    "SUCCESS_STORIES": "$t(common:SUCCESS_STORIES)",
+    "EBOOK": "$t(common:EBOOK)",
+    "SECTORS": "Sectors"
+  },
+  "CATEGORY_NAV": {
+    "SELECT_CATEGORY": "Select category"
+  },
+  "LATEST_NEWS_SECTION": {
+    "TITLE": "Latest posts"
+  },
+  "PODCAST_SECTION": {
+    "TITLE": "$t(common:PODCAST)"
+  },
+  "CATEGORIES_SLUG": {
+    "casos-de-exito": "$t(common:SUCCESS_STORIES)",
+    "ebooks": "$t(common:EBOOK)",
+    "industrias": "$t(common:INDUSTRIES)",
+    "banca-y-seguros": "Banking and insurance",
+    "gobierno": "$t(common:GOVERNMENT)",
+    "retail": "$t(common:RETAIL)",
+    "salud": "$t(common:HEALTH)",
+    "telecomunicaciones": "$t(common:TELECOMMUNICATIONS)",
+    "utilities": "$t(common:UTILITIES)",
+    "noticias": "$t(common:ARTICLES)",
+    "novedades": "$t(common:NEWS)",
+    "podcast": "$t(common:PODCAST)",
+    "pt": "Português",
+    "es": "Español",
+    "en": "English"
+  },
+  "RELATED_POSTS_SECTION": {
+    "TITLE": "You might also like"
+  },
+  "NO_POSTS_MESSAGE": {
+    "MESSAGE" : "We appreciate your visit to our blog! Weekly, we bring innovative content here. Also, stay tuned to our social media channels to not miss any updates. To learn more about our solutions, visit <1>www.debmedia.com.</1>",
+    "INSTAGRAM_URL": "https://www.instagram.com/wearedebmedia_br/",
+    "LINKEDIN_URL": "https://www.linkedin.com/company/93208577/"
+  },
+  "SHARE_POST": {
+    "TITLE": "Share this article in any of the following social networks"
+  },
+  "SEARCH_PAGE": {
+    "SEARCH": "Search: {{searchTerm}}"
+}
 }
