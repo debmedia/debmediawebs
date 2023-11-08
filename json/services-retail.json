@@ -25,14 +25,14 @@
       "url": "/preatendedor"
     },
     {
-      "title": "Pre atendedor",
+      "title": "Journey Optimizer",
       "image": {
         "url": "Preatendedor_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
       "key": "preaten",
-      "main": "Deriva a tus clientes a un portal de pre atención personalizable que los guía a la elección de su trámite fácilmente.",
+      "main": "Deriva a tus clientes a un Journey Optimizer que los guía a la elección de su trámite fácilmente.",
       "secu": "Configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
       "url": "/preatendedor"
     },
@@ -135,7 +135,7 @@
       "url": "/citasonline"
     },
     {
-      "title": "Fila virtual",
+      "title": "Sistema de Senhas",
       "image": {
         "url": "FilaVirtual_Sectores_PT.png",
         "width": 540,

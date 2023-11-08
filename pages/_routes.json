@@ -41,7 +41,7 @@
   },
   "fila-virtual": {
     "default": "fila-virtual",
-    "pt": "fila-virtual",
+    "pt": "senhas",
     "en": "virtual-queue"
   },
   "gobierno": {
@@ -70,7 +70,7 @@
     "en": "policy"
   },
   "preatendedor": {
-    "default": "preatendedor",
+    "default": "journey-optimizer",
     "pt": "portal-pre-atendimento",
     "en": "pre-service-website"
   },

@@ -55,7 +55,7 @@
       }
     },
     {
-      "name": "Pre atendedor",
+      "name": "Journey Optimizer",
       "url": "/preatendedor",
       "image": {
         "url": "pre.png",
@@ -93,7 +93,7 @@
       }
     },
     {
-      "name": "Fila Virtual",
+      "name": "Sistema de Gerenciamento de Senhas",
       "url": "/fila-virtual",
       "image": {
         "url": "mobile.png",

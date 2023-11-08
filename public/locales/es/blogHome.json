@@ -1,54 +1,54 @@
 {
-    "NAVBAR": {
-        "SEARCH": "Buscar",
-        "CATEGORIES": "Categorias",
-        "NEWS": "$t(common:NEWS)",
-        "SUCCESS_STORIES": "$t(common:SUCCESS_STORIES)",
-        "EBOOK": "$t(common:EBOOK)",
-        "SECTORS": "Sectores"
-    },
-    "CATEGORY_NAV": {
-        "SELECT_CATEGORY": "Seleccionar categoría"
-    },
-    "LATEST_NEWS_SECTION": {
-        "TITLE": "Últimas notas"
-    },
-    "PODCAST_SECTION": {
-        "TITLE": "$t(common:PODCAST)"
-    },
-    "CATEGORIES_SLUG": {
-        "casos-de-exito": "$t(common:SUCCESS_STORIES)",
-        "ebooks": "$t(common:EBOOK)",
-        "industrias": "$t(common:INDUSTRIES)",
-        "banca-y-seguros": "Banca y Seguros",
-        "gobierno": "$t(common:GOVERNMENT)",
-        "retail": "$t(common:RETAIL)",
-        "salud": "$t(common:HEALTH)",
-        "telecomunicaciones": "$t(common:TELECOMMUNICATIONS)",
-        "utilities": "$t(common:UTILITIES)",
-        "noticias": "$t(common:ARTICLES)",
-        "novedades": "$t(common:NEWS)",
-        "podcast": "$t(common:PODCAST)",
-        "pt": "Português",
-        "es": "Español",
-        "en": "English"
-    },
-    "RELATED_POSTS_SECTION":{
-        "TITLE": "También podría interesarte"
-    },
-    "AUTHOR_CARD": {
-        "MINUTES_READ_one": "{{count}} minute read",
-        "MINUTES_READ_other": "{{count}} minutes read"
-    },
-    "NO_POSTS_MESSAGE": {
-        "MESSAGE" : "¡Agradecemos por acceder a nuestro blog! Semanalmente, traemos contenidos innovadores aquí. Mantente conectado también a nuestras redes sociales para no perderte ninguna novedad. Para conocer más sobre nuestras soluciones, visita <1>www.debmedia.com</1>.",
-        "INSTAGRAM_URL": "https://www.instagram.com/wearedebmedia_br/",
-        "LINKEDIN_URL": "https://www.linkedin.com/company/93208577/"
-    },
-    "SHARE_POST": {
-        "TITLE": "Comparte este artículo en cualquiera de las siguientes redes sociales"
-    },
-    "SEARCH_PAGE": {
-        "SEARCH": "Buscar: {{searchTerm}}"
-    }
+  "NAVBAR": {
+    "SEARCH": "Buscar",
+    "CATEGORIES": "Categorias",
+    "NEWS": "$t(common:NEWS)",
+    "SUCCESS_STORIES": "$t(common:SUCCESS_STORIES)",
+    "EBOOK": "$t(common:EBOOK)",
+    "SECTORS": "Sectores"
+  },
+  "CATEGORY_NAV": {
+    "SELECT_CATEGORY": "Seleccionar categoría"
+  },
+  "LATEST_NEWS_SECTION": {
+    "TITLE": "Últimas notas"
+  },
+  "PODCAST_SECTION": {
+    "TITLE": "$t(common:PODCAST)"
+  },
+  "CATEGORIES_SLUG": {
+    "casos-de-exito": "$t(common:SUCCESS_STORIES)",
+    "ebooks": "$t(common:EBOOK)",
+    "industrias": "$t(common:INDUSTRIES)",
+    "banca-y-seguros": "Banca y Seguros",
+    "gobierno": "$t(common:GOVERNMENT)",
+    "retail": "$t(common:RETAIL)",
+    "salud": "$t(common:HEALTH)",
+    "telecomunicaciones": "$t(common:TELECOMMUNICATIONS)",
+    "utilities": "$t(common:UTILITIES)",
+    "noticias": "$t(common:ARTICLES)",
+    "novedades": "$t(common:NEWS)",
+    "podcast": "$t(common:PODCAST)",
+    "pt": "Português",
+    "es": "Español",
+    "en": "English"
+  },
+  "RELATED_POSTS_SECTION": {
+    "TITLE": "También podría interesarte"
+  },
+  "AUTHOR_CARD": {
+    "MINUTES_READ_one": "{{count}} minute read",
+    "MINUTES_READ_other": "{{count}} minutes read"
+  },
+  "NO_POSTS_MESSAGE": {
+    "MESSAGE" : "¡Agradecemos por acceder a nuestro blog! Semanalmente, traemos contenidos innovadores aquí. Mantente conectado también a nuestras redes sociales para no perderte ninguna novedad. Para conocer más sobre nuestras soluciones, visita <1>www.debmedia.com</1>.",
+    "INSTAGRAM_URL": "https://www.instagram.com/wearedebmedia_br/",
+    "LINKEDIN_URL": "https://www.linkedin.com/company/93208577/"
+  },
+  "SHARE_POST": {
+    "TITLE": "Comparte este artículo en cualquiera de las siguientes redes sociales"
+  },
+  "SEARCH_PAGE": {
+    "SEARCH": "Buscar: {{searchTerm}}"
+  }
 }

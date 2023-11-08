@@ -25,14 +25,14 @@
       "url": "/preatendedor"
     },
     {
-      "title": "Pre atendedor",
+      "title": "Journey Optimizer",
       "image": {
         "url": "Preatendedor_Sectores_ES.png",
         "width": 540,
         "height": 380
       },
       "key": "preaten",
-      "main": "Deriva a los pacientes a un portal de pre atención personalizable,",
+      "main": "Deriva a los pacientes a través de un Journey Optimizer",
       "secu": "guíalos fácilmente a la elección de su trámite y configura el recorrido que deben atravesar con botones, imágenes, pop ups y textos.",
       "url": "/preatendedor"
     },
@@ -135,7 +135,7 @@
       "url": "/citasonline"
     },
     {
-      "title": "Gestão de filas para a saúde.",
+      "title": "Gestão de Senhas para a saúde.",
       "image": {
         "url": "FilaVirtual_Sectores_PT.png",
         "width": 540,
