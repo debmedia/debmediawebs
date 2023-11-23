@@ -65,7 +65,7 @@ nav.navbar.navbar-expand-lg {
     }
 }
 
-.nav-item.show.dropdown a#basic-nav-dropdown {
+.nav-item.show.dropdown.deb-nav-dropdown > a {
     color: #232C61 ;
     font-weight: 600 !important;
 }
@@ -213,13 +213,17 @@ nav.navbar.navbar-expand-lg {
 
 .demo {
     background-color: #2F9FEE !important;
+    border:1px solid $color-accent;
     padding: .5em 1.2em !important;
     color: #fff !important;
-    border-radius: 20px;
+    border-radius: 0.25rem;
     text-align: center;
 }
 
-
+.fake-sign-up {
+    background-color: transparent!important;
+    color: $color-accent!important;
+}
 
 .ml-auto.navbar-nav a {
     margin-left: 13px;
