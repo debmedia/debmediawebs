@@ -80,10 +80,10 @@ export default function Home() {
                     />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                         <Nav activeKey={router.pathname} className="ml-auto">
-                            <Link href={"/"} passHref={true}>
+                            {/* <Link href={"/"} passHref={true}>
                                 <Nav.Link eventKey={"/"}>{t("NAVBAR.HOME")}</Nav.Link>
-                            </Link>
-                            <NavDropdown title={t("NAVBAR.SOLUTIONS.TITLE")} id="basic-nav-dropdown">
+                            </Link> */}
+                            <NavDropdown title={t("NAVBAR.SOLUTIONS.TITLE")} className="deb-nav-dropdown">
                                 <NavDropdown.Item onClick={() => setExpanded(false)}>
                                     <Link className="fulllink" href="/atencion-virtual">
                                         {t("NAVBAR.SOLUTIONS.VIRTUAL_ATTENTION")}
@@ -111,17 +111,19 @@ export default function Home() {
                                     <Link href="/encuestas">{t("NAVBAR.SOLUTIONS.SURVEYS")}</Link>
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Link href={`/clientes`} passHref={true}>
-                                <Nav.Link eventKey={`/clientes`}>{t("NAVBAR.CLIENTS")}</Nav.Link>
-                            </Link>
-                            <Link href={`/nosotros`} passHref={true}>
-                                <Nav.Link eventKey={`/nosotros`}>{t("NAVBAR.US")}</Nav.Link>
-                            </Link>
-                            <Link href={`/partners`} passHref={true}>
-                                <Nav.Link eventKey={`/partners`}>{t("NAVBAR.PARTNERS")}</Nav.Link>
-                            </Link>
+                            <NavDropdown title={t("NAVBAR.US")} id="us-nav-dropdown" className="deb-nav-dropdown">
+                                <Link href={`/clientes`} passHref={true}>
+                                    <NavDropdown.Item>{t("NAVBAR.CLIENTS")}</NavDropdown.Item>
+                                </Link>
+                                <Link href={`/nosotros`} passHref={true}>
+                                    <NavDropdown.Item>{t("NAVBAR.US")}</NavDropdown.Item>
+                                </Link>
+                                <Link href={`/partners`} passHref={true}>
+                                    <NavDropdown.Item>{t("NAVBAR.PARTNERS")}</NavDropdown.Item>
+                                </Link>
+                            </NavDropdown>
                             {BLOG_LOCALES.includes(router.locale) && (
-                                <NavDropdown title={t("NAVBAR.RESOURCES.TITLE")} id="basic-nav-dropdown">
+                                <NavDropdown title={t("NAVBAR.RESOURCES.TITLE")} className="deb-nav-dropdown">
                                     <Link href="/blog" passHref>
                                         <NavDropdown.Item onClick={() => setExpanded(false)}>
                                             {t("NAVBAR.RESOURCES.BLOG")}
@@ -146,6 +148,11 @@ export default function Home() {
                             )}
                             {/* Selector para mobile */}
                             <LanguageSelector className={"d-lg-none"} langs={langsMobile} />
+                            <Link href="/registrarse">
+                                <Nav.Link style={{ alignSelf: "center" }} href="#link" className="demo fake-sign-up text-nowrap">
+                                    Crear Cuenta
+                                </Nav.Link>
+                            </Link>
                             <Link href="/contacto">
                                 <Nav.Link style={{ alignSelf: "center" }} href="#link" className="demo text-nowrap">
                                     {t("common:REQUEST_A_DEMO")}
