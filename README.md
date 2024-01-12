@@ -1,3 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/db20d6ea-f6c0-4910-849b-fc38004f65b4/deploy-status)](https://app.netlify.com/sites/qa2-debmedia/deploys)
+
+# Página web de Debmedia
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
