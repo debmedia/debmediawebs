@@ -17,8 +17,6 @@ import SwiperCore, { Autoplay, FreeMode, Pagination } from "swiper";
 // install Swiper modules
 SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
-const basePath = "/asset/imgs/brands";
-
 export default function Brands() {
     const [images, setImages] = useState([]);
 
