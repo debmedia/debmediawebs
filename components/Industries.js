@@ -87,7 +87,7 @@ export default function Modern() {
                                             sm={4}
                                             offset={1}
                                             xs={12}
-                                            className={`industries-section_divs-indu ${card.class}`}>
+                                            className={`industries-section_divs-indu ${card.class} relative`}>
                                             <Image
                                                 src={card.bgImage}
                                                 layout="fill"
