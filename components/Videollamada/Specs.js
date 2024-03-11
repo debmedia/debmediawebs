@@ -5,6 +5,7 @@ import spec1 from '../../asset/imgs/videollamada/spec1.svg'
 import spec2 from '../../asset/imgs/videollamada/spec2.svg'
 import spec3 from '../../asset/imgs/videollamada/spec3.svg'
 import spec4 from '../../asset/imgs/videollamada/spec4.svg'
+import api_logos from '../../asset/imgs/partners/logos_api.png';
 import { useTranslation, Trans } from 'next-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -60,6 +61,7 @@ export default function Modern() {
                                         <p className="specs-section_videocall_parraf">
                                             <Trans t={t} i18nKey={t("SPEC.CAPTIONS", {returnObjects: true})[index]["SUBTITLE"]}/>
                                         </p>
+                                        <Image src={api_logos} alt="Integrations logos"/>
                                     </div>
 
                                 </Col>

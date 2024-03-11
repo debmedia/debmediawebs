@@ -7,6 +7,8 @@ import graficos_en from '../../asset/imgs/home/Metricas_Home_EN.svg'
 import channel from '../../asset/imgs/home/channels.svg'
 import { useTranslation, Trans } from 'next-i18next';
 import { useRouter } from "next-translate-routes/router";
+import api_logos from '../../asset/imgs/partners/logos_api.png';
+import Image from "next/image";
 
 const graficos_lang = {es: graficos_es, pt: graficos_pt, en: graficos_en};
 
@@ -39,8 +41,8 @@ export default function Modern() {
                                         <p className="modern-section_parraf">
                                             <Trans t={t} i18nKey="MODERN.CAPTION_1.PARAGRAPH"/>
                                         </p>
+                                        <Image src={api_logos} alt="Integrations logos"/>
                                     </div>
-
                                 </Col>
                             </Row>
                             <Row className="d-sm-flex reverse-lg">
