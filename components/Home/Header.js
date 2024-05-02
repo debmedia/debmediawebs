@@ -99,6 +99,7 @@ export default function Header() {
                     </Col>
                 </Row>
             </Container>
+            <NewNamePopup />
         </>
     );
 }
@@ -114,6 +115,25 @@ function MyVerticallyCenteredModal(props) {
             <Modal.Body>
                 <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/Kqr77nXvcXY?autoplay=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </Modal.Body>
+        </Modal>
+    );
+}
+
+
+function NewNamePopup(props) {
+    const [show, setShow] = React.useState(true);
+
+    const handleVideoEnd = () => {
+        setTimeout(() => {
+            setShow(false);
+        }, 1000);
+    };
+
+    return (
+        <Modal show={show} fullscreen={true} onHide={() => setShow(false)} dialogClassName="modal-falopa">
+            <div style={{background: "black", width:"100%", height:"100%"}}>
+                <video width="100%" height="100%" muted autoPlay src="/videos/Video Debmedia_Epañol.mp4" onEnded={handleVideoEnd} />
+            </div>
         </Modal>
     );
 }
