@@ -33,7 +33,7 @@ function NewNameVideoPopup() {
     return (
         <Modal show={show} fullscreen={true} onHide={handleOnClose} dialogClassName="modal-falopa">
             <div style={{background: "black", width:"100%", height:"100%"}}>
-                <video width="100%" height="100%" muted autoPlay src={`/videos/newNameVideo_${locale}.mp4`} onEnded={handleVideoEnd} disablepictureinpicture/>
+                <video width="100%" height="100%" muted autoPlay src={`/videos/newNameVideo_${locale}.mp4`} onEnded={handleVideoEnd} disablepictureinpicture style={{display: 'block'}}/>
             </div>
         </Modal>    
     );
