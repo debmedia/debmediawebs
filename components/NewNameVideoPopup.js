@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Modal } from 'react-bootstrap';
 // import videoPosterImage_en from '../asset/imgs/newNameVideoPoster_es.svg';
 // import videoPosterImage_es from '../asset/imgs/newNameVideoPoster_en.svg';
 // import videoPosterImage_pt from '../asset/imgs/newNameVideoPoster_pt.svg';
 import { useRouter } from 'next-translate-routes';
+import Video from './Video';
 
 const DELAY_TO_CLOSE_MODAL_AFTER_VIDEO_END_MILLISECONDS = 1000;
 
@@ -33,7 +34,15 @@ function NewNameVideoPopup() {
     return (
         <Modal show={show} fullscreen={true} onHide={handleOnClose} dialogClassName="modal-falopa">
             <div style={{background: "black", width:"100%", height:"100%"}}>
-                <video width="100%" height="100%" muted autoPlay src={`/videos/newNameVideo_${locale}.mp4`} onEnded={handleVideoEnd} disablepictureinpicture style={{display: 'block'}}/>
+                <Video 
+                src={`/videos/newNameVideo_${locale}.mp4`} 
+                onEnded={handleVideoEnd} 
+                isMuted={true} 
+                disablepictureinpicture
+                style={{display: 'block'}}
+                autoPlay
+                width="100%" height="100%"  
+                ></Video>
             </div>
         </Modal>    
     );
