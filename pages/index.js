@@ -11,6 +11,7 @@ import Level from "../components/Level"
 import Contact from "../components/Contact"
 import Posts from "../components/Posts"
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import NewNameVideoPopup from "../components/NewNameVideoPopup";
 
 
 
@@ -27,6 +28,7 @@ export default function Home() {
 
   return (
     <>
+      <NewNameVideoPopup />
       <Header />
       <Brands />
       <Market />
