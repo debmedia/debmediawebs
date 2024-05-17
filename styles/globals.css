@@ -16,8 +16,3 @@ a {
   box-sizing: border-box;
 }
 
-
-/* para que los modales se vean arriba del bot */
-.modal {
-  z-index: 19999!important;
-}
