@@ -25,7 +25,7 @@ function NewNameVideoPopup() {
     return (
         <Modal show={show} fullscreen={true} onHide={handleOnClose} dialogClassName="new-name-video-modal">
             <div style={{background: "black", width:"100%", height:"100%", position: "relative", overscrollBehavior: 'contain'}}>
-                <div style={{position: 'absolute', top: '0', right: '0', padding: '0.5rem'}}>
+                <div style={{position: 'absolute', top: '0', right: '0', padding: '0.5rem', zIndex: '1'}}>
                     <button onClick={handleOnClose}
                     className='modal-close-button' 
                     ><i className="bi bi-x-circle"></i></button>
