@@ -88,5 +88,5 @@
 /en/partners                                                                                               https://numia.co/en/partners                                                                                   301!
 
 # Reglas genericas
-/_next/*    /_next/:splat    200
-/*    https://numia.co/:splat    301
+#/_next/*    /_next/:splat    200
+#/*    https://numia.co/:splat    301
