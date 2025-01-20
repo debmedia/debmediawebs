@@ -670,6 +670,6 @@
 
 
 # Reglas genericas
-#/_next/*    /_next/:splat    200
+/blog      https://blog.numia.co
 /blog/*    https://blog.numia.co/:splat     301!
-/*    https://numia.co/:splat          301!
+/*         https://numia.co/:splat          301!
