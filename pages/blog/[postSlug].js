@@ -30,17 +30,9 @@ function httpToHttps(content) {
 }
 
 export async function getStaticPaths({locales}) {
-    let postSlugs;
-    let fallback;
-    // Solo si estamos en dev no buileamos todos los posts
-    if(process.env.CONTEXT && process.env.CONTEXT !== "dev") {
-        postSlugs = await getAllPostSlugs();
-        fallback = true;
-    } else {
-        //TODO: Sacar este 30 hardcodeado, tal vez pasarlo a una variable de ambiente
-        postSlugs = (await getPostsSlugs({first:30})).posts;
-        fallback = 'blocking';
-    }
+    //TODO: Sacar este 30 hardcodeado, tal vez pasarlo a una variable de ambiente
+    let postSlugs = (await getPostsSlugs({first:3})).posts;
+    let fallback = true;
     // Dios sabe porque a veces no tienen slug, si no tiene slug no se muestra
     postSlugs = postSlugs.filter((post) => {
         if(!post.slug) {

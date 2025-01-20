@@ -91,6 +91,7 @@
 
 
 # Blog
+/blog                                                                                                      https://blog.numia.co                                                            301!         
 /blog/categorias/industrias                                                                                https://blog.numia.co                                                             301!
 /blog/categorias/banca-y-seguros                                                                           https://blog.numia.co                                                           301!
 /blog/categorias/salud                                                                                     https://blog.numia.co                                                                     301!
@@ -669,5 +670,6 @@
 
 
 # Reglas genericas
-#/_next/*    /_next/:splat    200
-#/*    https://numia.co/:splat    301
+/blog      https://blog.numia.co            301!
+/blog/*    https://blog.numia.co/:splat     301!
+/*         https://numia.co/:splat          301!
