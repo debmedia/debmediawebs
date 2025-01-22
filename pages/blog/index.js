@@ -16,7 +16,7 @@ import { BLOG_LOCALES } from "../../constants/blog";
 import NoPostsMessage from "../../components/Blog/NoPostsMessage";
 
 export async function getStaticProps({ locale }) {
-    // si no es los locales del blog devolvemos not found
+    // Si no es los locales del blog devolvemos not found
     if (!BLOG_LOCALES.includes(locale)) return {
         notFound: true
     }
